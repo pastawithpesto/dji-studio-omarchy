@@ -3,6 +3,7 @@
 //! [`packet`]; camera timestamp units and coordinate conventions remain unknown.
 use std::io::{self, Read, Seek, SeekFrom};
 
+pub mod demux;
 pub mod packet;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

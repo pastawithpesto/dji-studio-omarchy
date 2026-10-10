@@ -168,7 +168,7 @@ fn normal_encoder_and_angle_errors_are_preserved() {
     assert!(output.status.success(), "{:?}", output);
     assert_eq!(
         output.stdout,
-        b"product=9 protobuf_package=oqb101 (schema registry only; decoding pending)\n"
+        b"product=9 protobuf_package=oqb101 (registry lookup; use --metadata for direct-track inspection)\n"
     );
     assert!(output.stderr.is_empty());
     let dir = TestDir::new();
