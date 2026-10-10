@@ -1,5 +1,67 @@
 //! Constant-speed time mapping. Curved-speed interpolation is not recovered yet.
-//! Positions and durations use microseconds. Valid positions are not clamped to a clip.
+//! Time-mapping positions and durations use microseconds and are not clamped to a clip.
+//! The keyframe index uses opaque timestamps whose units and axis are caller supplied.
+
+/// Independent input-validation policy for the borrowed keyframe index.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum KeyframeIndexError {
+    /// The latter element of the first descending adjacent pair.
+    Unsorted { index: usize },
+}
+
+/// Experimental lookup over borrowed, nondecreasing signed timestamps.
+///
+/// The slice and query must already share the same opaque axis. This API does
+/// not convert camera timestamps, packet PTS/DTS, or source/timeline positions.
+/// It returns indices into the original slice and never sorts or deduplicates.
+///
+/// Source: nle_core.dll build 1.0.0.30839, SHA-256
+/// 3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1,
+/// GetKeyframeAt 0x1800db580..0x1800db616; sol-review/nle-keyframe-decompile.json,
+/// REA ev_68b48f0f4bbc508fc4dbe8b3edc30e2228421ca1e822af2c1bd0dcf940e1d06b.
+/// Original assembly: sol-ui-review/resumed-20261010/keyframe-original-assembly.txt.
+/// Approved bounded contract: sol-ui-review/resumed-20261010/REPORT.md, Astra140.
+///
+/// Borrowing, sorted-input validation and i128 distance arithmetic are independent
+/// native policies. Widened distances deliberately differ from the vendor's
+/// wrapping subtraction at extreme spans. Timestamp units, producer duplicate
+/// legality, UI reachability, payload/interpolation and Windows parity are unknown.
+#[derive(Debug)]
+pub struct KeyframeTimeIndex<'a> {
+    timestamps: &'a [i64],
+}
+
+impl<'a> KeyframeTimeIndex<'a> {
+    /// Validate nondecreasing order in O(n) without allocating or changing the slice.
+    /// Empty slices and equal timestamps are accepted under the native policy.
+    pub fn new(timestamps: &'a [i64]) -> Result<Self, KeyframeIndexError> {
+        if let Some(index) = timestamps.windows(2).position(|pair| pair[0] > pair[1]) {
+            return Err(KeyframeIndexError::Unsorted { index: index + 1 });
+        }
+        Ok(Self { timestamps })
+    }
+
+    /// Return an original-slice index within five raw timestamp units in O(log n).
+    ///
+    /// The predecessor of the first timestamp >= query wins when within five;
+    /// otherwise that lower-bound record wins when within five. A qualifying
+    /// predecessor can therefore beat a closer or exact later record. Both
+    /// boundaries are inclusive. None means neither candidate qualifies.
+    pub fn lookup(&self, query: i64) -> Option<usize> {
+        let lower_bound = self.timestamps.partition_point(|&time| time < query);
+        if let Some(previous) = lower_bound.checked_sub(1)
+            && i128::from(query) - i128::from(self.timestamps[previous]) <= 5
+        {
+            return Some(previous);
+        }
+        if let Some(&next) = self.timestamps.get(lower_bound)
+            && i128::from(next) - i128::from(query) <= 5
+        {
+            return Some(lower_bound);
+        }
+        None
+    }
+}
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum TimeError {
