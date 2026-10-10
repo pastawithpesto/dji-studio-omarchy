@@ -1,0 +1,16 @@
+{
+  "basis": "Ten preserved exclusions in approved-byte-fixtures.json; concrete success domain remains522",
+  "cases": [
+    {"id":"fraction-one-half","api_domain":"runtime","expected":{"result":"error","kind":"UnsupportedReal","bits":"3fe0000000000000"}},
+    {"id":"real-two-to53","api_domain":"runtime","expected":{"result":"error","kind":"UnsupportedReal","bits":"4340000000000000"}},
+    {"id":"smallest-subnormal","api_domain":"runtime","expected":{"result":"error","kind":"UnsupportedReal","bits":"0000000000000001"}},
+    {"id":"positive-infinity","api_domain":"runtime","expected":{"result":"error","kind":"NonFiniteReal","bits":"7ff0000000000000"}},
+    {"id":"nan","api_domain":"runtime","expected":{"result":"error","kind":"NonFiniteReal","bits":"7ff8000000000000"}},
+    {"id":"invalid-utf8","api_domain":"not_representable","reason":"String requires valid UTF8; test-only bytes-to-String fixture construction rejects c080 without calling serialize."},
+    {"id":"lone-surrogate-utf8","api_domain":"not_representable","reason":"String requires valid UTF8; test-only fixture construction rejects eda080 without calling serialize."},
+    {"id":"raw-dom-fragment","api_domain":"not_representable","reason":"DomValue has no raw-fragment alternative; test-only fixture adapter rejects unsupported kind and retains its definition."},
+    {"id":"tagged-float-precision","api_domain":"not_representable","reason":"F64Bits contains bits only, no numeric metadata; strict test-only fixture adapter rejects extra high-tag field instead of dropping it."},
+    {"id":"nondefault-options","api_domain":"not_representable","reason":"serialize exposes only limits, no writer options; strict test-only fixture adapter rejects writer_options before converting input."}
+  ],
+  "limitations":"Explicit construction-domain boundary, not implementation of a JSON/DOM parser or vendor errors. No original fixture field is changed."
+}

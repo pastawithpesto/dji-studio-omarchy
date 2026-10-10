@@ -1,0 +1,528 @@
+{
+  "classification": "analytic/synthetic, hand-specified expected bytes; no DLL execution or camera/Windows project fixture",
+  "source_sha256": "3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1",
+  "success": [
+    {
+      "id": "null",
+      "input": {
+        "kind": "Null"
+      },
+      "expected_hex": "6e756c6c",
+      "byte_length": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "crc32_hex": "25cbfc4f",
+      "supporting_claims": [
+        "D02",
+        "D07"
+      ]
+    },
+    {
+      "id": "boolean-array",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Bool",
+            "value": true
+          },
+          {
+            "kind": "Bool",
+            "value": false
+          }
+        ]
+      },
+      "expected_hex": "5b747275652c66616c73655d",
+      "byte_length": 12,
+      "sha256": "153c9dbcc7025ecd7e50ce6d83f1995233dfc636bc869098e3a8d84288fd938a",
+      "crc32_hex": "f0b1a9b7",
+      "supporting_claims": [
+        "D02",
+        "D07"
+      ]
+    },
+    {
+      "id": "empty-object",
+      "input": {
+        "kind": "Object",
+        "pairs": []
+      },
+      "expected_hex": "7b7d",
+      "byte_length": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "crc32_hex": "a3a6bf43",
+      "supporting_claims": [
+        "D02"
+      ]
+    },
+    {
+      "id": "empty-array",
+      "input": {
+        "kind": "Array",
+        "elements": []
+      },
+      "expected_hex": "5b5d",
+      "byte_length": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "crc32_hex": "0d4cbb29",
+      "supporting_claims": [
+        "D02"
+      ]
+    },
+    {
+      "id": "order-a-b",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "a",
+            {
+              "kind": "I64",
+              "decimal": "1"
+            }
+          ],
+          [
+            "b",
+            {
+              "kind": "U64",
+              "decimal": "2"
+            }
+          ]
+        ]
+      },
+      "expected_hex": "7b2261223a312c2262223a327d",
+      "byte_length": 13,
+      "sha256": "43258cff783fe7036d8a43033f830adfc60ec037382473548ac742b888292777",
+      "crc32_hex": "cf41ce83",
+      "supporting_claims": [
+        "D02",
+        "D05"
+      ]
+    },
+    {
+      "id": "order-b-a",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "b",
+            {
+              "kind": "U64",
+              "decimal": "2"
+            }
+          ],
+          [
+            "a",
+            {
+              "kind": "I64",
+              "decimal": "1"
+            }
+          ]
+        ]
+      },
+      "expected_hex": "7b2262223a322c2261223a317d",
+      "byte_length": 13,
+      "sha256": "3fb75453225c732a76b7899ea2096dda1455189c89817239732182f73fe5a09f",
+      "crc32_hex": "b4a18672",
+      "supporting_claims": [
+        "D02",
+        "D05"
+      ]
+    },
+    {
+      "id": "duplicate-encounter-order",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "x",
+            {
+              "kind": "I64",
+              "decimal": "1"
+            }
+          ],
+          [
+            "x",
+            {
+              "kind": "I64",
+              "decimal": "2"
+            }
+          ]
+        ]
+      },
+      "expected_hex": "7b2278223a312c2278223a327d",
+      "byte_length": 13,
+      "sha256": "d38245cfdb5d2239d67fe2a719312768b668a6928d8d97d04fbce83215e50b44",
+      "crc32_hex": "30aabbee",
+      "supporting_claims": [
+        "D02",
+        "D05"
+      ]
+    },
+    {
+      "id": "all-control-bytes",
+      "input": {
+        "kind": "Utf8",
+        "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f"
+      },
+      "expected_hex": "225c75303030305c75303030315c75303030325c75303030335c75303030345c75303030355c75303030365c75303030375c625c745c6e5c75303030425c665c725c75303030455c75303030465c75303031305c75303031315c75303031325c75303031335c75303031345c75303031355c75303031365c75303031375c75303031385c75303031395c75303031415c75303031425c75303031435c75303031445c75303031455c753030314622",
+      "byte_length": 174,
+      "sha256": "108d2d6c93d54f740f812e5539576e85cb7e2a8c503150de83b2df1598fc4c03",
+      "crc32_hex": "201c9a9b",
+      "supporting_claims": [
+        "D03"
+      ]
+    },
+    {
+      "id": "slash-quote-backslash-del",
+      "input": {
+        "kind": "Utf8",
+        "hex": "2f225c7f"
+      },
+      "expected_hex": "222f5c225c5c7f22",
+      "byte_length": 8,
+      "sha256": "a6689e9c9e39467de4e9785d4ca0e3d2087594f97f5ae3b4524d560dcd3388f3",
+      "crc32_hex": "be7304cc",
+      "supporting_claims": [
+        "D03"
+      ]
+    },
+    {
+      "id": "utf8-two-three-four-and-separators",
+      "input": {
+        "kind": "Utf8",
+        "hex": "c3a9e99baaf09f98802fe280a8e280a9"
+      },
+      "expected_hex": "22c3a9e99baaf09f98802fe280a8e280a922",
+      "byte_length": 18,
+      "sha256": "2a0a2c42594ec4890aae584c3ad951f10ac0b8f1993cf4302480cd5bf8179109",
+      "crc32_hex": "833ac349",
+      "supporting_claims": [
+        "D03"
+      ]
+    },
+    {
+      "id": "escaped-object-key",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "a\"\\/\u0001",
+            {
+              "kind": "Utf8",
+              "hex": "6f6b"
+            }
+          ]
+        ]
+      },
+      "expected_hex": "7b22615c225c5c2f5c7530303031223a226f6b227d",
+      "byte_length": 21,
+      "sha256": "f81c9d7fa63edc4096477f14e64f250f3384a1b06afd1710628769dd5b24b73c",
+      "crc32_hex": "f6c3bf77",
+      "supporting_claims": [
+        "D02",
+        "D03"
+      ]
+    },
+    {
+      "id": "i64-min",
+      "input": {
+        "kind": "I64",
+        "decimal": "-9223372036854775808"
+      },
+      "expected_hex": "2d39323233333732303336383534373735383038",
+      "byte_length": 20,
+      "sha256": "85386477f3af47e4a0b308ee3b3a688df16e8b2228105dd7d4dcd42a9807cb78",
+      "crc32_hex": "ab25130b",
+      "supporting_claims": [
+        "D05"
+      ]
+    },
+    {
+      "id": "i64-max",
+      "input": {
+        "kind": "I64",
+        "decimal": "9223372036854775807"
+      },
+      "expected_hex": "39323233333732303336383534373735383037",
+      "byte_length": 19,
+      "sha256": "b34a1c30a715f6bf8b7243afa7fab883ce3612b7231716bdcbbdc1982e1aed29",
+      "crc32_hex": "42ea0ade",
+      "supporting_claims": [
+        "D05"
+      ]
+    },
+    {
+      "id": "u64-max",
+      "input": {
+        "kind": "U64",
+        "decimal": "18446744073709551615"
+      },
+      "expected_hex": "3138343436373434303733373039353531363135",
+      "byte_length": 20,
+      "sha256": "2cdb26265b4dc65e3b44d694f121fd6de99b9e4b8ae7f08d84bfa9537635ae43",
+      "crc32_hex": "bffe511a",
+      "supporting_claims": [
+        "D05"
+      ]
+    },
+    {
+      "id": "integer-zero",
+      "input": {
+        "kind": "I64",
+        "decimal": "0"
+      },
+      "expected_hex": "30",
+      "byte_length": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "crc32_hex": "f4dbdf21",
+      "supporting_claims": [
+        "D05"
+      ]
+    },
+    {
+      "id": "integer-one",
+      "input": {
+        "kind": "U64",
+        "decimal": "1"
+      },
+      "expected_hex": "31",
+      "byte_length": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "crc32_hex": "83dcefb7",
+      "supporting_claims": [
+        "D05"
+      ]
+    },
+    {
+      "id": "real-positive-zero",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "0000000000000000"
+      },
+      "expected_hex": "302e30",
+      "byte_length": 3,
+      "sha256": "8aed642bf5118b9d3c859bd4be35ecac75b6e873cce34e7b6f554b06f75550d7",
+      "crc32_hex": "f6f40502",
+      "supporting_claims": [
+        "D06"
+      ]
+    },
+    {
+      "id": "real-negative-zero",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "8000000000000000"
+      },
+      "expected_hex": "2d302e30",
+      "byte_length": 4,
+      "sha256": "c26617c7ccbcaa6631b45d851b8cf56e21d2ca624bdb1193afdbd4b560702cec",
+      "crc32_hex": "7aa974ef",
+      "supporting_claims": [
+        "D06"
+      ]
+    },
+    {
+      "id": "real-one",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3ff0000000000000"
+      },
+      "expected_hex": "312e30",
+      "byte_length": 3,
+      "sha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+      "crc32_hex": "f7366f35",
+      "supporting_claims": [
+        "D06"
+      ]
+    },
+    {
+      "id": "real-negative-one",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "bff0000000000000"
+      },
+      "expected_hex": "2d312e30",
+      "byte_length": 4,
+      "sha256": "f006c4915bce75dd9588871a11328f1acac2cba2af8b786e66f70b6301469193",
+      "crc32_hex": "7b6b1ed8",
+      "supporting_claims": [
+        "D06"
+      ]
+    },
+    {
+      "id": "real-two-to52",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "4330000000000000"
+      },
+      "expected_hex": "343530333539393632373337303439362e30",
+      "byte_length": 18,
+      "sha256": "0c67260f89954be7380946428869cad0ef56478ae19c4555eccbaa42441cc29f",
+      "crc32_hex": "881e4bc9",
+      "supporting_claims": [
+        "D06"
+      ]
+    },
+    {
+      "id": "real-largest-fast-integer",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "433fffffffffffff"
+      },
+      "expected_hex": "393030373139393235343734303939312e30",
+      "byte_length": 18,
+      "sha256": "a4fd9fc2323027471b13afa7731837f3bca9784c0391b60a4b50e0b0ede0f298",
+      "crc32_hex": "3f3e10bb",
+      "supporting_claims": [
+        "D06"
+      ]
+    },
+    {
+      "id": "nested-order-and-types",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "nodes",
+            {
+              "kind": "Array",
+              "elements": [
+                {
+                  "kind": "I64",
+                  "decimal": "1"
+                },
+                {
+                  "kind": "F64Bits",
+                  "hex": "3ff0000000000000"
+                },
+                {
+                  "kind": "Object",
+                  "pairs": []
+                },
+                {
+                  "kind": "Array",
+                  "elements": []
+                },
+                {
+                  "kind": "Utf8",
+                  "hex": "2f"
+                }
+              ]
+            }
+          ],
+          [
+            "last",
+            {
+              "kind": "Null"
+            }
+          ]
+        ]
+      },
+      "expected_hex": "7b226e6f646573223a5b312c312e302c7b7d2c5b5d2c222f225d2c226c617374223a6e756c6c7d",
+      "byte_length": 39,
+      "sha256": "5c754243ccf63dcf078869be101e0c8c09b37ec574de924d570672e8d46e2947",
+      "crc32_hex": "09971f97",
+      "supporting_claims": [
+        "D02",
+        "D03",
+        "D05",
+        "D06",
+        "D07"
+      ]
+    }
+  ],
+  "proposed_native_exclusions": [
+    {
+      "id": "fraction-one-half",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "future_native_error": "UnsupportedFloatDomain",
+      "vendor_status": "General finite path14e84c not fully classified; original output is not asserted here."
+    },
+    {
+      "id": "real-two-to53",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "4340000000000000"
+      },
+      "future_native_error": "UnsupportedFloatDomain",
+      "vendor_status": "Exponent exits proved exact-integer fast path; no guessed formatting."
+    },
+    {
+      "id": "smallest-subnormal",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "0000000000000001"
+      },
+      "future_native_error": "UnsupportedFloatDomain",
+      "vendor_status": "Subnormal/scientific path14f105 unclosed."
+    },
+    {
+      "id": "positive-infinity",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "7ff0000000000000"
+      },
+      "future_native_error": "NonFiniteFloat",
+      "vendor_status": "Default helper returns NULL at14e40d; wrapper literal-null behavior not reproduced by proposal."
+    },
+    {
+      "id": "nan",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "7ff8000000000000"
+      },
+      "future_native_error": "NonFiniteFloat",
+      "vendor_status": "Default helper returns NULL at14e40d; wrapper literal-null behavior not reproduced by proposal."
+    },
+    {
+      "id": "invalid-utf8",
+      "input": {
+        "kind": "Utf8",
+        "hex": "c080"
+      },
+      "future_native_error": "InvalidUtf8",
+      "vendor_status": "Ordinary-string guard rejects; internal fast/raw tag bypass exists and is outside domain."
+    },
+    {
+      "id": "lone-surrogate-utf8",
+      "input": {
+        "kind": "Utf8",
+        "hex": "eda080"
+      },
+      "future_native_error": "InvalidUtf8",
+      "vendor_status": "Ordinary-string three-byte guard rejects; no parser surrogate behavior claim."
+    },
+    {
+      "id": "raw-dom-fragment",
+      "input": {
+        "kind": "RawDom",
+        "hex": "6e6f742d6a736f6e"
+      },
+      "future_native_error": "UnsupportedDomKind",
+      "vendor_status": "Original tag1 copies verbatim; native proposal deliberately excludes it."
+    },
+    {
+      "id": "tagged-float-precision",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3ff0000000000000",
+        "numeric_tag_high32": "10000000"
+      },
+      "future_native_error": "UnsupportedNumericOptions",
+      "vendor_status": "Dispatch selects14f970; helper/body output and producer tag assignment are unclosed."
+    },
+    {
+      "id": "nondefault-options",
+      "writer_options": "00000002",
+      "input": {
+        "kind": "Utf8",
+        "hex": "c3a9"
+      },
+      "future_native_error": "UnsupportedWriterOptions",
+      "vendor_status": "Original Unicode escape table selection exists; proposal has no options API."
+    }
+  ]
+}

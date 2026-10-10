@@ -13,3 +13,5 @@ pub mod cube_lut;
 pub mod ui_resource;
 
 pub mod pano_plane;
+
+pub mod project_dom;

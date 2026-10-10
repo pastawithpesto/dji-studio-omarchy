@@ -1,0 +1,938 @@
+{
+  "classification": "Hand specified native-policy boundary/error fixtures; not vendor errors, no future serializer oracle",
+  "defaults": {
+    "max_output_bytes": 33554432,
+    "max_depth": 64,
+    "max_records": 100000
+  },
+  "cases": [
+    {
+      "id": "invalid-output-before-value",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "limits_override": {
+        "max_output_bytes": 33554433
+      },
+      "expected": {
+        "result": "error",
+        "kind": "InvalidLimits",
+        "field": "OutputBytes",
+        "requested": 33554433,
+        "maximum": 33554432
+      },
+      "independent_basis": "33_554_433 exceeds hard output maximum; configuration precedes value inspection."
+    },
+    {
+      "id": "invalid-depth-before-value",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "limits_override": {
+        "max_depth": 65
+      },
+      "expected": {
+        "result": "error",
+        "kind": "InvalidLimits",
+        "field": "Depth",
+        "requested": 65,
+        "maximum": 64
+      },
+      "independent_basis": "65 exceeds hard depth maximum before real classification."
+    },
+    {
+      "id": "invalid-records-before-value",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "limits_override": {
+        "max_records": 100001
+      },
+      "expected": {
+        "result": "error",
+        "kind": "InvalidLimits",
+        "field": "Records",
+        "requested": 100001,
+        "maximum": 100000
+      },
+      "independent_basis": "100001 exceeds hard record maximum."
+    },
+    {
+      "id": "invalid-config-field-order",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "limits_override": {
+        "max_output_bytes": 33554433,
+        "max_depth": 65,
+        "max_records": 100001
+      },
+      "expected": {
+        "result": "error",
+        "kind": "InvalidLimits",
+        "field": "OutputBytes",
+        "requested": 33554433,
+        "maximum": 33554432
+      },
+      "independent_basis": "Fixed configuration field order OutputBytes,Depth,Records."
+    },
+    {
+      "id": "null-exact-small-caps",
+      "input": {
+        "kind": "Null"
+      },
+      "limits_override": {
+        "max_output_bytes": 4,
+        "max_depth": 0,
+        "max_records": 1
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 4,
+        "expected_hex": "6e756c6c",
+        "crc32_hex": "25cbfc4f"
+      },
+      "independent_basis": "Root depth0,one value record,one4-byte atom."
+    },
+    {
+      "id": "null-output-minus-one",
+      "input": {
+        "kind": "Null"
+      },
+      "limits_override": {
+        "max_output_bytes": 3
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 3,
+        "attempted_bytes": 4
+      },
+      "independent_basis": "Null atom is one complete4-byte chunk."
+    },
+    {
+      "id": "null-zero-output",
+      "input": {
+        "kind": "Null"
+      },
+      "limits_override": {
+        "max_output_bytes": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 0,
+        "attempted_bytes": 4
+      },
+      "independent_basis": "Zero output is valid configuration but cannot contain atom."
+    },
+    {
+      "id": "null-zero-records",
+      "input": {
+        "kind": "Null"
+      },
+      "limits_override": {
+        "max_records": 0,
+        "max_output_bytes": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 0,
+        "attempted_records": 1
+      },
+      "independent_basis": "Root record precedes literal byte cost."
+    },
+    {
+      "id": "ascii-string-cap-exact",
+      "input": {
+        "kind": "String",
+        "value": "A"
+      },
+      "limits_override": {
+        "max_output_bytes": 3
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 3,
+        "expected_hex": "224122",
+        "crc32_hex": "f88a743c"
+      },
+      "independent_basis": "Two quote bytes and one literal byte."
+    },
+    {
+      "id": "ascii-string-closing-quote-over",
+      "input": {
+        "kind": "String",
+        "value": "A"
+      },
+      "limits_override": {
+        "max_output_bytes": 2
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 2,
+        "attempted_bytes": 3
+      },
+      "independent_basis": "Closing quote is the third byte."
+    },
+    {
+      "id": "control-string-cap-exact",
+      "input": {
+        "kind": "String",
+        "value": "\u0000"
+      },
+      "limits_override": {
+        "max_output_bytes": 8
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 8,
+        "expected_hex": "225c753030303022",
+        "crc32_hex": "1eac7753"
+      },
+      "independent_basis": "Two quotes plus one6-byte uppercase-control escape."
+    },
+    {
+      "id": "control-string-escape-chunk-over",
+      "input": {
+        "kind": "String",
+        "value": "\u0000"
+      },
+      "limits_override": {
+        "max_output_bytes": 6
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 6,
+        "attempted_bytes": 7
+      },
+      "independent_basis": "Opening quote1 plus whole6-byte escape attempts7 before closing quote."
+    },
+    {
+      "id": "control-string-closing-quote-over",
+      "input": {
+        "kind": "String",
+        "value": "\u0000"
+      },
+      "limits_override": {
+        "max_output_bytes": 7
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 7,
+        "attempted_bytes": 8
+      },
+      "independent_basis": "Escape fits7; closing quote attempts8."
+    },
+    {
+      "id": "utf8-string-cap-exact",
+      "input": {
+        "kind": "String",
+        "value": "é"
+      },
+      "limits_override": {
+        "max_output_bytes": 4
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 4,
+        "expected_hex": "22c3a922",
+        "crc32_hex": "1233d6f4"
+      },
+      "independent_basis": "UTF8 is two unescaped bytes plus two quotes."
+    },
+    {
+      "id": "utf8-string-closing-quote-over",
+      "input": {
+        "kind": "String",
+        "value": "é"
+      },
+      "limits_override": {
+        "max_output_bytes": 3
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 3,
+        "attempted_bytes": 4
+      },
+      "independent_basis": "Both UTF8 bytes fit; closing quote fails."
+    },
+    {
+      "id": "u64-whole-atom-cap-exact",
+      "input": {
+        "kind": "U64",
+        "decimal": "18446744073709551615"
+      },
+      "limits_override": {
+        "max_output_bytes": 20
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 20,
+        "expected_hex": "3138343436373434303733373039353531363135",
+        "crc32_hex": "bffe511a"
+      },
+      "independent_basis": "u64 maximum contains20 digits."
+    },
+    {
+      "id": "u64-whole-atom-cap-over",
+      "input": {
+        "kind": "U64",
+        "decimal": "18446744073709551615"
+      },
+      "limits_override": {
+        "max_output_bytes": 19
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 19,
+        "attempted_bytes": 20
+      },
+      "independent_basis": "Integer cost is one complete20-byte atom."
+    },
+    {
+      "id": "fraction-before-zero-output",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "limits_override": {
+        "max_output_bytes": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "UnsupportedReal",
+        "bits": "3fe0000000000000"
+      },
+      "independent_basis": "Domain check precedes atom cost."
+    },
+    {
+      "id": "record-before-fraction",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "limits_override": {
+        "max_records": 0,
+        "max_output_bytes": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 0,
+        "attempted_records": 1
+      },
+      "independent_basis": "Root record check precedes real classification."
+    },
+    {
+      "id": "nonfinite-before-zero-output",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "fff8000000001234"
+      },
+      "limits_override": {
+        "max_output_bytes": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "NonFiniteReal",
+        "bits": "fff8000000001234"
+      },
+      "independent_basis": "Exponent7ff classification preserves NaN sign/payload bits."
+    },
+    {
+      "id": "array-one-exact",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Null"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_output_bytes": 6,
+        "max_depth": 1,
+        "max_records": 2
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 6,
+        "expected_hex": "5b6e756c6c5d",
+        "crc32_hex": "3037fbb3"
+      },
+      "independent_basis": "Root+child2records; child depth1; brackets2+null4."
+    },
+    {
+      "id": "array-one-depth-over",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Null"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_depth": 0,
+        "max_records": 1
+      },
+      "expected": {
+        "result": "error",
+        "kind": "DepthLimit",
+        "limit": 0,
+        "attempted_depth": 1
+      },
+      "independent_basis": "Child depth is tested before its record increment."
+    },
+    {
+      "id": "array-one-record-over",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Null"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_records": 1
+      },
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 1,
+        "attempted_records": 2
+      },
+      "independent_basis": "Array root consumes record1; child attempts2."
+    },
+    {
+      "id": "array-one-close-over",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Null"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_output_bytes": 5
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 5,
+        "attempted_bytes": 6
+      },
+      "independent_basis": "Opening+null use5; close attempts6."
+    },
+    {
+      "id": "empty-nested-container-depth-one",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Array",
+            "elements": []
+          }
+        ]
+      },
+      "limits_override": {
+        "max_depth": 1,
+        "max_records": 2,
+        "max_output_bytes": 4
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 4,
+        "expected_hex": "5b5b5d5d",
+        "crc32_hex": "476e98be"
+      },
+      "independent_basis": "Empty nested container is a value at depth1; no depth2 entry."
+    },
+    {
+      "id": "opener-before-child-domain",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "3fe0000000000000"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_output_bytes": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 0,
+        "attempted_bytes": 1
+      },
+      "independent_basis": "Array opener fails before child is examined."
+    },
+    {
+      "id": "child-domain-after-opener",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "3fe0000000000000"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_output_bytes": 1
+      },
+      "expected": {
+        "result": "error",
+        "kind": "UnsupportedReal",
+        "bits": "3fe0000000000000"
+      },
+      "independent_basis": "Array opener fits; child domain is checked before its cost."
+    },
+    {
+      "id": "child-depth-before-domain",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "3fe0000000000000"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_depth": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "DepthLimit",
+        "limit": 0,
+        "attempted_depth": 1
+      },
+      "independent_basis": "Child depth guard precedes domain classification."
+    },
+    {
+      "id": "child-record-before-domain",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "3fe0000000000000"
+          }
+        ]
+      },
+      "limits_override": {
+        "max_records": 1
+      },
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 1,
+        "attempted_records": 2
+      },
+      "independent_basis": "Child record guard precedes domain classification."
+    },
+    {
+      "id": "object-key-value-exact",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ]
+        ]
+      },
+      "limits_override": {
+        "max_output_bytes": 9,
+        "max_depth": 1,
+        "max_records": 3
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 9,
+        "expected_hex": "7b22223a6e756c6c7d",
+        "crc32_hex": "0ebda21f"
+      },
+      "independent_basis": "Object/key/value3records; output1+2+1+4+1=9."
+    },
+    {
+      "id": "object-key-record-over",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ]
+        ]
+      },
+      "limits_override": {
+        "max_records": 1
+      },
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 1,
+        "attempted_records": 2
+      },
+      "independent_basis": "Object consumes1; key attempts2 before key quote cost."
+    },
+    {
+      "id": "object-value-record-over",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ]
+        ]
+      },
+      "limits_override": {
+        "max_records": 2
+      },
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 2,
+        "attempted_records": 3
+      },
+      "independent_basis": "Key fits2; member value attempts3."
+    },
+    {
+      "id": "object-key-no-depth-increase",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ]
+        ]
+      },
+      "limits_override": {
+        "max_depth": 0
+      },
+      "expected": {
+        "result": "error",
+        "kind": "DepthLimit",
+        "limit": 0,
+        "attempted_depth": 1
+      },
+      "independent_basis": "Key has no depth guard; member value is depth1."
+    },
+    {
+      "id": "object-colon-before-child-depth",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ]
+        ]
+      },
+      "limits_override": {
+        "max_depth": 0,
+        "max_output_bytes": 3
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 3,
+        "attempted_bytes": 4
+      },
+      "independent_basis": "Opener and key occupy3; colon attempts4 before value entry."
+    },
+    {
+      "id": "object-comma-before-second-key",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ],
+          [
+            "",
+            {
+              "kind": "F64Bits",
+              "hex": "3fe0000000000000"
+            }
+          ]
+        ]
+      },
+      "limits_override": {
+        "max_output_bytes": 8,
+        "max_records": 3
+      },
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 8,
+        "attempted_bytes": 9
+      },
+      "independent_basis": "First member uses8 before final close; comma attempts9 before second key record/domain."
+    },
+    {
+      "id": "duplicate-keys-count-independently",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ],
+          [
+            "",
+            {
+              "kind": "Null"
+            }
+          ]
+        ]
+      },
+      "limits_override": {
+        "max_output_bytes": 17,
+        "max_records": 5,
+        "max_depth": 1
+      },
+      "expected": {
+        "result": "success",
+        "byte_length": 17,
+        "expected_hex": "7b22223a6e756c6c2c22223a6e756c6c7d",
+        "crc32_hex": "f6823eef"
+      },
+      "independent_basis": "Root1+two key/value pairs4; member7*2+comma1+braces2=17."
+    },
+    {
+      "id": "hard-depth-exact",
+      "input": {
+        "generator": "singleton_array_chain",
+        "levels": 64,
+        "leaf": {
+          "kind": "Null"
+        }
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "success",
+        "byte_length": 132,
+        "output_pattern": {
+          "prefix": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[",
+          "repeat": "null",
+          "count": 1,
+          "suffix": "]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"
+        },
+        "crc32_hex": "85b621ca"
+      },
+      "independent_basis": "Depth64 leaf,65records,128brackets+4null=132."
+    },
+    {
+      "id": "hard-depth-one-over",
+      "input": {
+        "generator": "singleton_array_chain",
+        "levels": 65,
+        "leaf": {
+          "kind": "Null"
+        }
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "error",
+        "kind": "DepthLimit",
+        "limit": 64,
+        "attempted_depth": 65
+      },
+      "independent_basis": "Leaf at depth65 fails before record/type/output processing."
+    },
+    {
+      "id": "hard-array-records-exact",
+      "input": {
+        "generator": "array_repeat",
+        "count": 99999,
+        "element": {
+          "kind": "Null"
+        }
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "success",
+        "byte_length": 499996,
+        "output_pattern": {
+          "prefix": "[",
+          "repeat": "null,",
+          "count": 99998,
+          "suffix": "null]"
+        },
+        "crc32_hex": "55fabcbf"
+      },
+      "independent_basis": "1+99999=100000records;4N+(N-1)+2=5N+1."
+    },
+    {
+      "id": "hard-array-records-one-over",
+      "input": {
+        "generator": "array_repeat",
+        "count": 100000,
+        "element": {
+          "kind": "Null"
+        }
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 100000,
+        "attempted_records": 100001
+      },
+      "independent_basis": "100000th child attempts root+100000=100001."
+    },
+    {
+      "id": "hard-object-records-below",
+      "input": {
+        "generator": "object_repeat",
+        "count": 49999,
+        "key": "",
+        "value": {
+          "kind": "Null"
+        }
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "success",
+        "byte_length": 399993,
+        "output_pattern": {
+          "prefix": "{",
+          "repeat": "\"\":null,",
+          "count": 49998,
+          "suffix": "\"\":null}"
+        },
+        "crc32_hex": "764a3c35"
+      },
+      "independent_basis": "Root+2N=99999records;7N+(N-1)+2=8N+1."
+    },
+    {
+      "id": "hard-object-records-one-over",
+      "input": {
+        "generator": "object_repeat",
+        "count": 50000,
+        "key": "",
+        "value": {
+          "kind": "Null"
+        }
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "error",
+        "kind": "RecordLimit",
+        "limit": 100000,
+        "attempted_records": 100001
+      },
+      "independent_basis": "Last key is record100000; last value attempts100001."
+    },
+    {
+      "id": "hard-output-ascii-exact",
+      "input": {
+        "generator": "string_repeat",
+        "text": "a",
+        "count": 33554430
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "success",
+        "byte_length": 33554432,
+        "output_pattern": {
+          "prefix": "\"",
+          "repeat": "a",
+          "count": 33554430,
+          "suffix": "\""
+        },
+        "crc32_hex": "c02df28e"
+      },
+      "independent_basis": "InputN ASCII bytes plus two quotes reaches32MiB exactly."
+    },
+    {
+      "id": "hard-output-ascii-one-over",
+      "input": {
+        "generator": "string_repeat",
+        "text": "a",
+        "count": 33554431
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 33554432,
+        "attempted_bytes": 33554433
+      },
+      "independent_basis": "Opening+N ASCII reaches cap; closing quote attempts cap+1."
+    },
+    {
+      "id": "hard-output-escape-exact",
+      "input": {
+        "generator": "string_repeat",
+        "text": "\u0000",
+        "count": 5592405
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "success",
+        "byte_length": 33554432,
+        "output_pattern": {
+          "prefix": "\"",
+          "repeat": "\\u0000",
+          "count": 5592405,
+          "suffix": "\""
+        },
+        "crc32_hex": "a90f4c4d"
+      },
+      "independent_basis": "6*5592405+2=33554432."
+    },
+    {
+      "id": "hard-output-escape-one-over",
+      "input": {
+        "generator": "string_repeat",
+        "text": "\u0000",
+        "count": 5592406
+      },
+      "limits_override": {},
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 33554432,
+        "attempted_bytes": 33554437
+      },
+      "independent_basis": "Opening+5592405escapes=33554431; next6-byte escape attempts33554437."
+    }
+  ]
+}

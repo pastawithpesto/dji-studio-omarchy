@@ -1,0 +1,82 @@
+{
+  "classification": "Native private control-flow fault injection, not vendor/OS allocation observations",
+  "cases": [
+    {
+      "id": "reserve-refused-null",
+      "input": {
+        "kind": "Null"
+      },
+      "inject": "output_reserve_refuses",
+      "expected": {
+        "result": "error",
+        "kind": "Allocation",
+        "requested_bytes": 4
+      },
+      "reserve_calls": 1,
+      "no_success_output": true
+    },
+    {
+      "id": "reserve-refused-escaped-control",
+      "input": {
+        "kind": "String",
+        "value": "\u0000"
+      },
+      "inject": "output_reserve_refuses",
+      "expected": {
+        "result": "error",
+        "kind": "Allocation",
+        "requested_bytes": 8
+      },
+      "reserve_calls": 1,
+      "no_success_output": true
+    },
+    {
+      "id": "no-reserve-after-domain-error",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fe0000000000000"
+      },
+      "inject": "output_reserve_refuses",
+      "expected": {
+        "result": "error",
+        "kind": "UnsupportedReal",
+        "bits": "3fe0000000000000"
+      },
+      "reserve_calls": 0,
+      "no_success_output": true
+    },
+    {
+      "id": "no-reserve-after-output-error",
+      "input": {
+        "kind": "Null"
+      },
+      "limits_override": {
+        "max_output_bytes": 3
+      },
+      "inject": "output_reserve_refuses",
+      "expected": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 3,
+        "attempted_bytes": 4
+      },
+      "reserve_calls": 0,
+      "no_success_output": true
+    },
+    {
+      "id": "append-rejects-planned-length-overrun",
+      "private_append": {
+        "planned_length": 3,
+        "capacity_at_least": 4,
+        "initial_hex": "",
+        "chunk_hex": "6e756c6c"
+      },
+      "expected": {
+        "result": "error",
+        "kind": "InternalLengthMismatch"
+      },
+      "buffer_unchanged": true,
+      "no_success_output": true
+    }
+  ]
+}
