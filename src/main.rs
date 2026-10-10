@@ -1,16 +1,30 @@
 use std::{
     env,
+    ffi::OsStr,
     path::Path,
     process::{Command, ExitCode},
 };
 
+fn text_argument<'a>(value: &'a OsStr, kind: &str) -> Result<&'a str, String> {
+    value
+        .to_str()
+        .ok_or_else(|| format!("{kind} must be valid UTF-8"))
+}
+
 fn run() -> Result<(), String> {
-    let a: Vec<String> = env::args().skip(1).collect();
-    if a.first().is_some_and(|v| v == "--encoder") {
+    // Linux paths need not be UTF-8. Decode only the CLI's textual arguments.
+    let a: Vec<_> = env::args_os().skip(1).collect();
+    let option = a
+        .first()
+        .filter(|v| v.as_encoded_bytes().starts_with(b"--"))
+        .map(|v| text_argument(v, "Option"))
+        .transpose()?;
+    if option == Some("--encoder") {
         if a.len() != 2 {
             return Err("Usage: dji-reframe --encoder ENCODER_TAG".into());
         }
-        let entry = dji_reframe::metadata::registration(&a[1])
+        let encoder = text_argument(&a[1], "Encoder tag")?;
+        let entry = dji_reframe::metadata::registration(encoder)
             .ok_or("Unknown encoder; retain raw metadata rather than guessing a schema")?;
         println!(
             "product={} protobuf_package={} (schema registry only; decoding pending)",
@@ -18,7 +32,7 @@ fn run() -> Result<(), String> {
         );
         return Ok(());
     }
-    if a.first().is_some_and(|v| v == "--inspect") {
+    if option == Some("--inspect") {
         if a.len() != 2 {
             return Err("Usage: dji-reframe --inspect MP4".into());
         }
@@ -40,7 +54,7 @@ fn run() -> Result<(), String> {
         }
         return Ok(());
     }
-    if a.first().is_some_and(|v| v == "--help") {
+    if option == Some("--help") {
         println!(
             "dji-reframe INPUT OUTPUT [YAW PITCH HFOV]\ndji-reframe --encoder ENCODER_TAG\ndji-reframe --inspect MP4\nReframe an already stitched equirectangular video into 1920x1080 H.264.\nDefaults: yaw=0 pitch=0 horizontal FOV=90. Existing output is never overwritten.\nRequires FFmpeg with v360 and libx264. Raw DJI dual-lens footage is not supported yet."
         );
@@ -58,6 +72,7 @@ fn run() -> Result<(), String> {
     let mut view = [0.0_f64, 0.0, 90.0];
     if a.len() == 5 {
         for (i, v) in a[2..].iter().enumerate() {
+            let v = text_argument(v, "Angle")?;
             view[i] = v.parse().map_err(|_| format!("Invalid angle: {v}"))?;
         }
     }
@@ -70,6 +85,8 @@ fn run() -> Result<(), String> {
             return Err(format!("Angle must be finite and between {low} and {high}"));
         }
     }
+    // These projection/export defaults are independent prototype choices,
+    // not recovered DJI settings. See README.md for the evidence boundary.
     let vertical_fov =
         (2.0 * ((view[2].to_radians() / 2.0).tan() * 1080.0 / 1920.0).atan()).to_degrees();
     let filter = format!(
@@ -77,11 +94,9 @@ fn run() -> Result<(), String> {
         view[0], view[1], view[2]
     );
     let status = Command::new("ffmpeg")
+        .args(["-nostdin", "-n", "-i"])
+        .arg(&a[0])
         .args([
-            "-nostdin",
-            "-n",
-            "-i",
-            &a[0],
             "-map",
             "0:v:0",
             "-map",
@@ -98,8 +113,8 @@ fn run() -> Result<(), String> {
             "aac",
             "-movflags",
             "+faststart",
-            &a[1],
         ])
+        .arg(&a[1])
         .status()
         .map_err(|e| format!("Could not start FFmpeg: {e}"))?;
     if !status.success() {

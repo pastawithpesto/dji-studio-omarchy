@@ -58,9 +58,16 @@ fn round_time(value: f64) -> Result<i64, TimeError> {
     Ok(rounded as i64)
 }
 
-/// Recovered SpeedDurationAligned integer formula; preserves rational FPS
-/// without converting to a floating-point frame rate. Uses wider intermediates
-/// to reject overflow instead of wrapping. Negative-duration policy is unresolved.
+/// Recovered SpeedDurationAligned integer formula for ordinary positive FPS
+/// and nonoverflowing vendor arithmetic. Source: nle_core.dll build 1.0.0.30839,
+/// SHA-256 3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1,
+/// 0x1800f82c0; astra-review/nle-duration-alignment-assembly.json,
+/// REA ev_6dbb2d987fe9a7fff6f6e6aeef72db3ac5b69e4b2ac1fc0b58e7f5fe1e1f60d5.
+///
+/// Independent API policies: invalid FPS returns Err(InvalidFrameRate), whereas
+/// the recovered JLE paths return zero at 0x1800f831a. The i64 FPS inputs widen
+/// the recovered signed 32-bit domain; wider intermediates reject overflow
+/// instead of wrapping. Negative-duration policy and Windows parity are unresolved.
 pub fn align_duration_us(
     duration: i64,
     fps_numerator: i64,
