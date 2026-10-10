@@ -154,6 +154,50 @@ pub fn align_duration_us(
     i64::try_from(aligned).map_err(|_| TimeError::Overflow)
 }
 
+/// Independent native representation of an optional explicit range write.
+/// Values share one caller-selected opaque domain; this is not an FFI pair.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ExportRangePlan {
+    /// Omit the explicit write. No whole-project, reset or success meaning follows.
+    NoExplicitRangeWrite,
+    /// Preserve the supplied start and a positive, representable duration.
+    WriteRange { start: i64, duration: i64 },
+}
+
+/// Independent checked-duration policy, distinct from vendor wrapping subtraction.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ExportRangeError {
+    /// The mathematical positive difference exceeds i64::MAX.
+    DurationOverflow,
+}
+
+/// Plan a range write without allocation, side effects or timestamp conversion.
+///
+/// Return [`ExportRangePlan::NoExplicitRangeWrite`] when `end <= start`.
+/// Otherwise preserve `start` and compute mathematical `end - start` in i128,
+/// rejecting a positive duration above i64::MAX. Negative and zero values are
+/// admitted by the independent native value contract; producer legality is unknown.
+/// The caller decides applicability: no timeline/context lifecycle is modelled.
+///
+/// Source: nle_core.dll 1.0.0.30839, SHA256
+/// 3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1,
+/// function 0x18011ee00, signed branch/pair at 0x18011f559..0x18011f580,
+/// REA ev_1ec411b0cece4b20897bc7c0147cb20b261afdf17abf00e9620176ef42af2d0c.
+/// Approved EXPORT-RANGE-CONTRACT.md SHA256
+/// 0dd13adc37ca0ee43acf088aa61990fbdd1d1c4b9b3610f8e31dabe3b854daa0, Astra436.
+///
+/// The checked error deliberately differs from the vendor's 64-bit SUB:
+/// MIN-to-zero wraps to MIN; MIN-to-MAX wraps to -1. Units, defaults, concrete
+/// virtual-call behavior, renderer/output and Windows parity are not established.
+pub fn plan_export_range(start: i64, end: i64) -> Result<ExportRangePlan, ExportRangeError> {
+    if end <= start {
+        return Ok(ExportRangePlan::NoExplicitRangeWrite);
+    }
+    let duration = i64::try_from(i128::from(end) - i128::from(start))
+        .map_err(|_| ExportRangeError::DurationOverflow)?;
+    Ok(ExportRangePlan::WriteRange { start, duration })
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
