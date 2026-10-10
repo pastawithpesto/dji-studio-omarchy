@@ -11,3 +11,5 @@ pub mod calibration_grid;
 pub mod cube_lut;
 
 pub mod ui_resource;
+
+pub mod pano_plane;
