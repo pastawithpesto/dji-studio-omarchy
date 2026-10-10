@@ -11,6 +11,98 @@ fn text_argument<'a>(value: &'a OsStr, kind: &str) -> Result<&'a str, String> {
         .ok_or_else(|| format!("{kind} must be valid UTF-8"))
 }
 
+fn print_nested(
+    outer: Option<&dji_reframe::metadata::demux::OuterInventory>,
+    carrier: Option<&dji_reframe::metadata::demux::NestedCarrier>,
+    inner: Option<&dji_reframe::metadata::demux::InnerInventory>,
+    tracks: &[dji_reframe::metadata::demux::MetadataTrack],
+) -> usize {
+    use dji_reframe::metadata::demux::{CarrierOrigin, PacketOutcome};
+    if let Some(outer) = outer {
+        println!(
+            "outer_encoder={:?} selected_camd={:?} ignored_camd={:?}",
+            outer.encoder, outer.selected_camd_index, outer.ignored_camd_indexes
+        );
+        for stream in &outer.streams {
+            println!(
+                "outer_stream={} id={:?} tag={:?} time_base={}/{}",
+                stream.index,
+                stream.id,
+                stream.codec_tag_string,
+                stream.time_base.numerator,
+                stream.time_base.denominator
+            );
+        }
+    }
+    if let Some(carrier) = carrier {
+        println!(
+            "carrier_bytes={} origin={:?}",
+            carrier.bytes().len(),
+            carrier.origin()
+        );
+        if let CarrierOrigin::CamdStreamParts { parts, .. } = carrier.origin() {
+            for part in parts {
+                println!(
+                    "outer_part={} pts={:?} dts={:?} outer_position={:?} carrier_offset={} bytes={}",
+                    part.sequence,
+                    part.pts,
+                    part.dts,
+                    part.outer_source_position,
+                    part.carrier_offset,
+                    part.length
+                );
+            }
+        }
+    }
+    if let Some(inner) = inner {
+        println!(
+            "inner_encoder_diagnostic={:?} selected_indexes={:?} excess_indexes={:?}",
+            inner.encoder, inner.selected_track_indexes, inner.excess_track_indexes
+        );
+        for stream in &inner.streams {
+            println!(
+                "inner_stream={} id={:?} tag={:?} time_base={}/{}",
+                stream.index,
+                stream.id,
+                stream.codec_tag_string,
+                stream.time_base.numerator,
+                stream.time_base.denominator
+            );
+        }
+    }
+    let mut failed = 0;
+    for track in tracks {
+        println!(
+            "selected_inner_stream={} packets={}",
+            track.stream.index,
+            track.packets.len()
+        );
+        for (i, packet) in track.packets.iter().enumerate() {
+            let status = match &packet.outcome {
+                PacketOutcome::Decoded(decoded) => {
+                    format!("decoded {}", decoded.registration().package)
+                }
+                PacketOutcome::DecodeFailed(error) => {
+                    failed += 1;
+                    error.to_string()
+                }
+                PacketOutcome::MissingEncoder(_) => {
+                    failed += 1;
+                    "missing outer format encoder".into()
+                }
+            };
+            println!(
+                "inner_packet={i} pts={:?} dts={:?} carrier_position={:?} bytes={} status={status:?}",
+                packet.pts,
+                packet.dts,
+                packet.source_position,
+                packet.outcome.original_packet().len()
+            );
+        }
+    }
+    failed
+}
+
 fn run() -> Result<(), String> {
     // Linux paths need not be UTF-8. Decode only the CLI's textual arguments.
     let a: Vec<_> = env::args_os().skip(1).collect();
@@ -104,6 +196,55 @@ fn run() -> Result<(), String> {
             ))
         };
     }
+    if option == Some("--metadata-nested") {
+        if a.len() != 2 {
+            return Err("Usage: dji-reframe --metadata-nested INPUT".into());
+        }
+        use dji_reframe::metadata::demux::{
+            self, Ffprobe, NestedDisposition, NestedLimits, ProbeLimits,
+        };
+        match demux::inspect_nested(
+            Path::new(&a[1]),
+            &Ffprobe::new("/usr/bin/ffprobe"),
+            &ProbeLimits::default(),
+            &NestedLimits::default(),
+        ) {
+            Ok(report) => {
+                let failed = print_nested(
+                    Some(&report.outer),
+                    report.carrier.as_ref(),
+                    report.inner.as_ref(),
+                    &report.tracks,
+                );
+                match report.disposition {
+                    NestedDisposition::NoNestedCarrier => println!(
+                        "No selected camd stream or matching top-level carrier in this bounded inspection."
+                    ),
+                    NestedDisposition::NoInnerDirectTracks => println!(
+                        "Carrier has no direct inner djmd/xtmd tracks; deeper nesting was not inspected."
+                    ),
+                    NestedDisposition::InnerDirectTracks => println!(
+                        "Selected inner tracks inspected; packet counts above do not imply decoding of empty tracks."
+                    ),
+                }
+                if failed == 0 {
+                    return Ok(());
+                }
+                return Err(format!(
+                    "{failed} nested metadata packets could not be decoded; raw bytes retained by library API"
+                ));
+            }
+            Err(error) => {
+                print_nested(
+                    error.context.outer.as_ref(),
+                    error.context.carrier.as_ref(),
+                    error.context.inner.as_ref(),
+                    &error.context.completed_tracks,
+                );
+                return Err(error.to_string());
+            }
+        }
+    }
     if option == Some("--inspect") {
         if a.len() != 2 {
             return Err("Usage: dji-reframe --inspect MP4".into());
@@ -128,7 +269,7 @@ fn run() -> Result<(), String> {
     }
     if option == Some("--help") {
         println!(
-            "dji-reframe INPUT OUTPUT [YAW PITCH HFOV]\ndji-reframe --encoder ENCODER_TAG\ndji-reframe --inspect MP4\ndji-reframe --metadata INPUT\n--metadata inspects up to two direct djmd/xtmd tracks with FFprobe base64 support.\nNested metadata demux and camera/Windows compatibility are unverified.\n--inspect scans top-level nested box extents only.\nReframe an already stitched equirectangular video into 1920x1080 H.264.\nDefaults: yaw=0 pitch=0 horizontal FOV=90. Existing output is never overwritten.\nRequires FFmpeg with v360 and libx264. Raw DJI dual-lens footage is not supported yet."
+            "dji-reframe INPUT OUTPUT [YAW PITCH HFOV]\ndji-reframe --encoder ENCODER_TAG\ndji-reframe --inspect MP4\ndji-reframe --metadata INPUT\ndji-reframe --metadata-nested INPUT\n--metadata inspects up to two direct djmd/xtmd tracks with FFprobe base64 support.\n--metadata-nested inspects one carrier level using the outer encoder; no recursive processing.\nCamera/Windows compatibility is unverified.\n--inspect scans top-level nested box extents only.\nReframe an already stitched equirectangular video into 1920x1080 H.264.\nDefaults: yaw=0 pitch=0 horizontal FOV=90. Existing output is never overwritten.\nRequires FFmpeg with v360 and libx264. Raw DJI dual-lens footage is not supported yet."
         );
         return Ok(());
     }

@@ -2,7 +2,10 @@
 //! Contract: sol-review/resumed-demux-20261010/CONTRACT.md, Astra approval 98.
 //! Loader 0x18034c3d0 and packet forwarding 0x18034cb36–0x18034cb42 support
 //! the selected buffer boundary. Resource/error/inspection policies are native
-//! design; no nested import, assembled conversion or camera/Windows parity.
+//! design; no assembled conversion or camera/Windows parity.
+
+mod nested;
+pub use nested::*;
 
 use super::packet::{DecodedPacket, MetadataDecoder, PacketDecodeFailure};
 use base64::{Engine, engine::general_purpose::STANDARD};
@@ -281,6 +284,16 @@ impl Ffprobe {
         stage: ProbeStage,
         limits: &ProbeLimits,
     ) -> Result<Capture, DemuxError> {
+        self.capture_until(path, stage, limits, None)
+    }
+
+    fn capture_until(
+        &self,
+        path: &Path,
+        stage: ProbeStage,
+        limits: &ProbeLimits,
+        deadline: Option<Instant>,
+    ) -> Result<Capture, DemuxError> {
         let mut capture = Capture {
             stage,
             stdout: Vec::new(),
@@ -336,7 +349,9 @@ impl Ffprobe {
         let start = Instant::now();
         let (mut stdout_eof, mut stderr_eof, mut status) = (false, false, None);
         loop {
-            if start.elapsed() >= limits.timeout {
+            if start.elapsed() >= limits.timeout
+                || deadline.is_some_and(|end| Instant::now() >= end)
+            {
                 return Err(capture.failure(DemuxErrorKind::Timeout));
             }
             let mut progress = false;
@@ -382,9 +397,12 @@ impl Ffprobe {
                 };
             }
             if !progress {
-                thread::sleep(
-                    Duration::from_millis(5).min(limits.timeout.saturating_sub(start.elapsed())),
-                );
+                let delay =
+                    Duration::from_millis(5).min(limits.timeout.saturating_sub(start.elapsed()));
+                thread::sleep(match deadline {
+                    Some(end) => delay.min(end.saturating_duration_since(Instant::now())),
+                    None => delay,
+                });
             }
         }
     }
@@ -448,10 +466,22 @@ impl Source {
         stage: ProbeStage,
         limits: &ProbeLimits,
     ) -> Result<Capture, DemuxError> {
+        self.probe_until(tool, stage, limits, None)
+    }
+    fn probe_until(
+        &self,
+        tool: &Ffprobe,
+        stage: ProbeStage,
+        limits: &ProbeLimits,
+        deadline: Option<Instant>,
+    ) -> Result<Capture, DemuxError> {
         if !self.unchanged() {
             return Err(DemuxError::new(DemuxErrorKind::SourceChanged));
         }
-        let result = tool.capture(&self.path, stage, limits);
+        let result = match deadline {
+            None => tool.capture(&self.path, stage, limits),
+            Some(end) => tool.capture_until(&self.path, stage, limits, Some(end)),
+        };
         if !self.unchanged() {
             return Err(match result {
                 Ok(capture) => capture.failure(DemuxErrorKind::SourceChanged),
@@ -586,14 +616,19 @@ fn inventory(
     Ok((encoder, streams))
 }
 
-fn packets(
+struct RawTimedPacket {
+    pts: Option<i64>,
+    dts: Option<i64>,
+    source_position: Option<u64>,
+    bytes: Vec<u8>,
+}
+
+fn raw_packets(
     capture: &Capture,
     index: u32,
-    encoder: Option<&str>,
-    decoder: &MetadataDecoder,
     limits: &ProbeLimits,
     total: &mut usize,
-) -> Result<Vec<TimedPacket>, DemuxErrorKind> {
+) -> Result<Vec<RawTimedPacket>, DemuxErrorKind> {
     let document = document(capture)?;
     let records = document
         .get("packets")
@@ -658,22 +693,51 @@ fn packets(
         if bytes.len() != size {
             return Err(invalid("decoded packet length differs from declared size"));
         }
-        let outcome = match encoder {
-            Some(encoder) => match decoder.decode(encoder, bytes) {
-                Ok(packet) => PacketOutcome::Decoded(packet),
-                Err(error) => PacketOutcome::DecodeFailed(error),
-            },
-            None => PacketOutcome::MissingEncoder(bytes),
-        };
         *total = next_total;
-        packets.push(TimedPacket {
+        packets.push(RawTimedPacket {
             pts,
             dts,
             source_position,
-            outcome,
+            bytes,
         });
     }
     Ok(packets)
+}
+
+fn decode_packets(
+    packets: Vec<RawTimedPacket>,
+    encoder: Option<&str>,
+    decoder: &MetadataDecoder,
+) -> Vec<TimedPacket> {
+    packets
+        .into_iter()
+        .map(|packet| {
+            let outcome = match encoder {
+                Some(encoder) => match decoder.decode(encoder, packet.bytes) {
+                    Ok(packet) => PacketOutcome::Decoded(packet),
+                    Err(error) => PacketOutcome::DecodeFailed(error),
+                },
+                None => PacketOutcome::MissingEncoder(packet.bytes),
+            };
+            TimedPacket {
+                pts: packet.pts,
+                dts: packet.dts,
+                source_position: packet.source_position,
+                outcome,
+            }
+        })
+        .collect()
+}
+
+fn packets(
+    capture: &Capture,
+    index: u32,
+    encoder: Option<&str>,
+    decoder: &MetadataDecoder,
+    limits: &ProbeLimits,
+    total: &mut usize,
+) -> Result<Vec<TimedPacket>, DemuxErrorKind> {
+    raw_packets(capture, index, limits, total).map(|raw| decode_packets(raw, encoder, decoder))
 }
 
 /// Inspect complete selected direct metadata tracks of an unchanged local file.

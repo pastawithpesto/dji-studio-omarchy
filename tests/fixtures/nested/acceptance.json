@@ -1,0 +1,2039 @@
+{
+  "oracle_sha256": "99cdaac332461e4eb5be239b5e253d028120eaf8fe0bfbab6b827620d3be2c4e",
+  "source_generator_sha256": "4523f2a58d6868677a5b42b81a4121b7f059b3244ac01dceee20682df06a617a",
+  "contract_sha256": "f181baeefc320bb3ad4031d199ea1247c990e5f16ce6347e91187382f5701a95",
+  "cases": [
+    {
+      "id": "box-meta-normal.mp4",
+      "route": "top_level_box",
+      "sha256": "4ad44d40b5402db745f5e0ef4813e93005201beedb0589b31896db017284ef62",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "box": {
+        "tag": "META",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 1589
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/box-meta-normal.payload.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/box-meta-normal.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/box-meta-normal.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/box-meta-normal.payload.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/box-meta-normal.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "box-meta-extended.mp4",
+      "route": "top_level_box",
+      "sha256": "6ce2255d173779755ced8cdc1e4d816fb4d76258a4e92f1d0fa618840fc18ba4",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "box": {
+        "tag": "META",
+        "box_offset": 1544,
+        "header_bytes": 16,
+        "payload_offset": 1560,
+        "payload_length": 1589
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/box-meta-extended.payload.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/box-meta-extended.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/box-meta-extended.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/box-meta-extended.payload.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/box-meta-extended.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "box-meta-zero-to-eof.mp4",
+      "route": "top_level_box",
+      "sha256": "81d2e2f2987cbd648f9f63471e20930e16d686c08cc4c7d52031c10bcade3d72",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "box": {
+        "tag": "META",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 1589
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/box-meta-zero-to-eof.payload.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/box-meta-zero-to-eof.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/box-meta-zero-to-eof.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/box-meta-zero-to-eof.payload.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/box-meta-zero-to-eof.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "box-camd-normal.mp4",
+      "route": "top_level_box",
+      "sha256": "772be77f237aec19a387bd66f8b9b5817f7fa23ae27606bd978a8b7c41f998d1",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "box": {
+        "tag": "camd",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 1589
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/box-camd-normal.payload.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/box-camd-normal.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/box-camd-normal.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/box-camd-normal.payload.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/box-camd-normal.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "box-camd-extended.mp4",
+      "route": "top_level_box",
+      "sha256": "b489faae81533a222df0fe5dfee781e360ebb351b4e4ee1955f6a5bb105e89b6",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "box": {
+        "tag": "camd",
+        "box_offset": 1544,
+        "header_bytes": 16,
+        "payload_offset": 1560,
+        "payload_length": 1589
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/box-camd-extended.payload.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/box-camd-extended.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/box-camd-extended.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/box-camd-extended.payload.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/box-camd-extended.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "box-camd-zero-to-eof.mp4",
+      "route": "top_level_box",
+      "sha256": "521dc2464be2752f712b1190ff8eaefebddf676cefaac06b4c3f9536f83f5758",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "box": {
+        "tag": "camd",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 1589
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/box-camd-zero-to-eof.payload.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/box-camd-zero-to-eof.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/box-camd-zero-to-eof.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/box-camd-zero-to-eof.payload.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/box-camd-zero-to-eof.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "box-META-empty.mp4",
+      "route": "top_level_box",
+      "sha256": "afb315f9847bb2ec37644c0173622246938e48d7ffc27bbc03ffb2d88f7c0fbd",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "error": "empty",
+      "box": {
+        "tag": "META",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 0
+      },
+      "inner_inventory": {
+        "encoder": null,
+        "streams": [],
+        "exit_code": 1,
+        "metadata_packet_probes": []
+      }
+    },
+    {
+      "id": "box-META-truncated-inner.mp4",
+      "route": "top_level_box",
+      "sha256": "121c4e04e6bf5d8ca884d67dfdd12d011e653b6983ec4cd35fc46766f76242bf",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "error": "inner-probe",
+      "box": {
+        "tag": "META",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 384
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhy",
+      "carrier_sha256": "64fcc9d06871b853e63487d2ab3e5bdb2794683b01fd52d74b417f9d781ede8c",
+      "inner_inventory": {
+        "encoder": null,
+        "streams": [],
+        "exit_code": 1,
+        "metadata_packet_probes": []
+      }
+    },
+    {
+      "id": "box-camd-truncated-span.mp4",
+      "route": "top_level_box",
+      "sha256": "42a5003fa001859a855dab4c1131a73d1ea63202a9c0e79b97f1269771771712",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "error": "span"
+    },
+    {
+      "id": "camd-stream-default.mp4",
+      "route": "camd_stream",
+      "sha256": "f7e01422950415ee296c5eccb9f6bd548edd6d3d6fc2b567b9a5afd485d84ddd",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 529,
+          "sha256": "bb77651e115017f857f4e4fdda1544b3aa705df26dc94d8869681c9165564e1b"
+        },
+        {
+          "index": 1,
+          "outer_pos": "1278",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 529,
+          "length": 530,
+          "sha256": "ca788c5dd5f6cc2e255c6067bf6a16b621afe6b938b2e293bce78840072764e8"
+        },
+        {
+          "index": 2,
+          "outer_pos": "1808",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 1059,
+          "length": 530,
+          "sha256": "1e174593ee09314953441a4b227de2a232e6e9b4f8d092934ab078e573b0992c"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-default.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-default.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/camd-stream-default.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-default.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-default.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camd-stream-inner-different.mp4",
+      "route": "camd_stream",
+      "sha256": "e506bd411b7af1791b1062e6442374f66f0734fab120ccd554e333b4fcf8d380",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 533,
+          "sha256": "465d2b5ebc480eba09042c7642f3c340f57789dfaee381787d449fd610d2217f"
+        },
+        {
+          "index": 1,
+          "outer_pos": "1282",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 533,
+          "length": 533,
+          "sha256": "e096c0741766a685888d947bc3cc5cb51793387b1e0f55b654906d805e598f9b"
+        },
+        {
+          "index": 2,
+          "outer_pos": "1815",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 1066,
+          "length": 533,
+          "sha256": "c1e8d0b3942f17e56031eedd1218bc7cdd883acc02cb3fb093bbb67210b680b1"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACYW1vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABqdWR0YQAAAGJtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAADVpbHN0AAAALal0b28AAAAlZGF0YQAAAAEAAAAASU5ORVItT05MWS1ESUFHTk9TVElD",
+      "carrier_sha256": "1f92cd7ec58f911be6ddaeb9f41a671e296c72db47ef2598b02c2decbbafae85",
+      "inner_inventory": {
+        "encoder": "INNER-ONLY-DIAGNOSTIC",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-inner-different.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-inner-different.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/camd-stream-inner-different.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-inner-different.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-inner-different.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camd-stream-inner-missing.mp4",
+      "route": "camd_stream",
+      "sha256": "c5ae824cd6661526a7cfd4612001aaf4fda144990b00fae74a901a3ad17e1f92",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 515,
+          "sha256": "cd51a9c58e42802169836573e463f3738260b7ebb56741bde67c34dd737a4ba0"
+        },
+        {
+          "index": 1,
+          "outer_pos": "1264",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 515,
+          "length": 515,
+          "sha256": "c7447ad956d05a142733522474e720c1d1aabda7f1254ee4d8ae275799f6dbc8"
+        },
+        {
+          "index": 2,
+          "outer_pos": "1779",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 1030,
+          "length": 516,
+          "sha256": "18569a3f4f34445c637127f06849a27664ffbdeec27ae5d7d6f758ece431bb2d"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACLG1vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAAA1dWR0YQAAAC1tZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAA==",
+      "carrier_sha256": "e1269054799836d0aed2f88f41669d97474a948064e28788e21758bf88acd96f",
+      "inner_inventory": {
+        "encoder": null,
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-inner-missing.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-inner-missing.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/camd-stream-inner-missing.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-inner-missing.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-inner-missing.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camd-stream-first-of-two.mp4",
+      "route": "camd_stream",
+      "sha256": "c0acc178a931d9ff911ec0a8e2b087c6cac05500f43486dceb05acb08f2f7126",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          },
+          {
+            "index": 1,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x2",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 529,
+          "sha256": "bb77651e115017f857f4e4fdda1544b3aa705df26dc94d8869681c9165564e1b"
+        },
+        {
+          "index": 1,
+          "outer_pos": "1278",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 529,
+          "length": 530,
+          "sha256": "ca788c5dd5f6cc2e255c6067bf6a16b621afe6b938b2e293bce78840072764e8"
+        },
+        {
+          "index": 2,
+          "outer_pos": "1808",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 1059,
+          "length": 530,
+          "sha256": "1e174593ee09314953441a4b227de2a232e6e9b4f8d092934ab078e573b0992c"
+        }
+      ],
+      "camd_indexes": [
+        0,
+        1
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-first-of-two.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-first-of-two.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/camd-stream-first-of-two.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-first-of-two.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-first-of-two.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camd-stream-empty.mp4",
+      "route": "camd_stream",
+      "sha256": "7b5bb42c449c4b01ee099d7436f102f3153ca7e0d1cc639bd0846165887ab89a",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "error": "empty",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "index": 1,
+          "outer_pos": "749",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 0,
+          "length": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "index": 2,
+          "outer_pos": "749",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 0,
+          "length": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "inner_inventory": {
+        "encoder": null,
+        "streams": [],
+        "exit_code": 1,
+        "metadata_packet_probes": []
+      }
+    },
+    {
+      "id": "camd-stream-truncated-inner.mp4",
+      "route": "camd_stream",
+      "sha256": "5ed16f6ec3d4af2a1afa2ab19efaa1070c335bf39cf6a23d17c4ce749b5c89bf",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "error": "inner-probe",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 128,
+          "sha256": "a3e6d5912f3d22bd6ea74e2328132e04840336a3614249703b6ed4e5a8cbb27f"
+        },
+        {
+          "index": 1,
+          "outer_pos": "877",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 128,
+          "length": 128,
+          "sha256": "529bbe08b37e1b57afb49c6b84e8d8479a78f11238e0b4fb8a05b6060a10f644"
+        },
+        {
+          "index": 2,
+          "outer_pos": "1005",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 256,
+          "length": 128,
+          "sha256": "4ab7e0fb9e3f9a07fd02c89513691501d4763349d62db3481a8478852f15c106"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhy",
+      "carrier_sha256": "64fcc9d06871b853e63487d2ab3e5bdb2794683b01fd52d74b417f9d781ede8c",
+      "inner_inventory": {
+        "encoder": null,
+        "streams": [],
+        "exit_code": 1,
+        "metadata_packet_probes": []
+      }
+    },
+    {
+      "id": "camd-stream-wab530.mp4",
+      "route": "camd_stream",
+      "sha256": "cb016b4731dd3df694f133582318c91dde3678842c77a03ccfaf71ad9c93013e",
+      "outer_encoder_expected": "Osmo 360 II",
+      "outer_inventory": {
+        "encoder": "Osmo 360 II",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 554,
+          "sha256": "01d88a3a9b6900da4c1df7d6bec2280bbde661bef7e8e22f9d4af22a3776285d"
+        },
+        {
+          "index": 1,
+          "outer_pos": "1303",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 554,
+          "length": 555,
+          "sha256": "dc579fb5912a2f20fc6a2e68f62a1e1cf39f110b2a5f554ddf6999821b7a1581"
+        },
+        {
+          "index": 2,
+          "outer_pos": "1858",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 1109,
+          "length": 555,
+          "sha256": "9a0a5f83b6011c131a455201cb2f455587aba098c98755232f955cf1ccfa1943"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAQJbWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKPQo7ChhkdnRtX2VhZ2xlNF93YWI1MzAucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKCoiChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjICCAEa0AEKFAgLEPuAgICAgIAQGAIgASgBMLQkEjGqAQIIB7IBFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqugEPFQAAgD8dAAAAQCUAAEBAGoQBEj4KNAj+////DxAFGhQNAACAPxUAAIA+HQAAAL8lAABAPxoPDQAAgL8dAAAAPyUAAIC+JQAAAD4SAggCGgIIAxoCCBEiEwhOGg8NAACAvx0AAAA/JQAAgL4qKQjHgYCAgICAEBIeDQAAAD4VAACAPh0AAAA/JQAAoD8tAADAPzUAAOA/AAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABB4dG1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAAE8AAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAT3NtbyAzNjAgSUk=",
+      "carrier_sha256": "cd07b4a7284d076c58b900d478796fa5c06277c736bf2adf0ec3aa80c780ef3c",
+      "inner_inventory": {
+        "encoder": "Osmo 360 II",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "xtmd",
+            "codec_tag": "0x646d7478",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-wab530.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-wab530.inner.stream-0.stdout",
+            "stdout_sha256": "05c4814c9f447bcc779001491f6b6f5cf09fe972f2ba84d037bfe09ed211c0a8",
+            "stderr_path": "probes/camd-stream-wab530.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "316",
+                  "pos": "749",
+                  "data": "\nCj0KOwoYZHZ0bV9lYWdsZTRfd2FiNTMwLnByb3RvEhFzeW50aGV0aWMtbGlicmFyeUj9//////////8B\nmAYqEigqIgoZDQAA8UJVAADwRKIBDAAAAD4AAIC+AAAAPxIFDQAA+0IyAggBGtABChQICxD7gICAgICA\nEBgCIAEoATC0JBIxqgECCAeyARcNAACAPxUAAIA+HQAAAL8lAABAP5gGKroBDxUAAIA/HQAAAEAlAABA\nQBqEARI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+\nEgIIAhoCCAMaAggRIhMIThoPDQAAgL8dAAAAPyUAAIC+KikIx4GAgICAgBASHg0AAAA+FQAAgD4dAAAA\nPyUAAKA/LQAAwD81AADgPw==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-wab530.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "316",
+                "decoded_size": 316,
+                "sha256": "bd4a62b201ead8280a7d6b03422ed14b9f81a7dce269bced2cf512817e49ff0e",
+                "path": "extracted/camd-stream-wab530.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCj0KOwoYZHZ0bV9lYWdsZTRfd2FiNTMwLnByb3RvEhFzeW50aGV0aWMtbGlicmFyeUj9//////////8B\nmAYqEigqIgoZDQAA8UJVAADwRKIBDAAAAD4AAIC+AAAAPxIFDQAA+0IyAggBGtABChQICxD7gICAgICA\nEBgCIAEoATC0JBIxqgECCAeyARcNAACAPxUAAIA+HQAAAL8lAABAP5gGKroBDxUAAIA/HQAAAEAlAABA\nQBqEARI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+\nEgIIAhoCCAMaAggRIhMIThoPDQAAgL8dAAAAPyUAAIC+KikIx4GAgICAgBASHg0AAAA+FQAAgD4dAAAA\nPyUAAKA/LQAAwD81AADgPw==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camd-stream-two-inner-direct-tracks.mp4",
+      "route": "camd_stream",
+      "sha256": "e772b49bf4ced6df7341832e5da88f6641ce7ae3fb22ecd2acb43a98414017b7",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 2223,
+          "sha256": "9773b454c407879cabc45e5941b022a3f23d069e9b01e38655c05e86f6e3e48c"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAASvbWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIiChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgBMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7///8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgIIEQAAA+Btb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAD6AABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAABhnRyYWsAAABcdGtoZAAAAAcAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAASJtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAAAPoAAAD6FXEAAAAAAA6aGRscgAAAAAAAAAAbWV0YQAAAAAAAAAAAAAAAFN5bnRoZXRpYyBuZXN0ZWQgbWV0YWRhdGEAAAAAwG1pbmYAAAAMbm1oZAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAACIc3RibAAAACBzdHNkAAAAAAAAAAEAAAAQZGptZAAAAAAAAAABAAAAGHN0dHMAAAAAAAAAAQAAAAEAAAPoAAAAHHN0c2MAAAAAAAAAAQAAAAEAAAABAAAAAQAAABhzdHN6AAAAAAAAAAAAAAABAAAA8QAAABRzdGNvAAAAAAAAAAEAAALtAAABhnRyYWsAAABcdGtoZAAAAAcAAAAAAAAAAAAAAAIAAAAAAAAD6AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAASJtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAAAPoAAAD6FXEAAAAAAA6aGRscgAAAAAAAAAAbWV0YQAAAAAAAAAAAAAAAFN5bnRoZXRpYyBuZXN0ZWQgbWV0YWRhdGEAAAAAwG1pbmYAAAAMbm1oZAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAACIc3RibAAAACBzdHNkAAAAAAAAAAEAAAAQZGptZAAAAAAAAAABAAAAGHN0dHMAAAAAAAAAAQAAAAEAAAPoAAAAHHN0c2MAAAAAAAAAAQAAAAEAAAABAAAAAQAAABhzdHN6AAAAAAAAAAAAAAABAAAA8QAAABRzdGNvAAAAAAAAAAEAAAPeAAAAYHVkdGEAAABYbWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAbWRpcmFwcGwAAAAAAAAAAAAAAAAraWxzdAAAACOpdG9vAAAAG2RhdGEAAAABAAAAAERKSSBPc21vMzYw",
+      "carrier_sha256": "9773b454c407879cabc45e5941b022a3f23d069e9b01e38655c05e86f6e3e48c",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          },
+          {
+            "index": 1,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x2",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-two-inner-direct-tracks.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-two-inner-direct-tracks.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/camd-stream-two-inner-direct-tracks.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-two-inner-direct-tracks.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-two-inner-direct-tracks.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          },
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "1",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-two-inner-direct-tracks.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-two-inner-direct-tracks.inner.stream-1.stdout",
+            "stdout_sha256": "b3a1b9bc772657dfaed6fae466a28152c67c3cafa5499fdca43c5cfb9af60657",
+            "stderr_path": "probes/camd-stream-two-inner-direct-tracks.inner.stream-1.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 1,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "990",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-two-inner-direct-tracks.reconstructed-inner.mp4",
+            "selected_index": 1,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 1,
+                "pts": 0,
+                "dts": 0,
+                "pos": "990",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-two-inner-direct-tracks.inner.stream-1.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camd-stream-plus-meta-precedence.mp4",
+      "route": "camd_stream",
+      "sha256": "26f6a794e7446d73c2fb9d4c20a65016a2b7911a095002bbba7bbf5f6caf1620",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "camd",
+            "codec_tag": "0x646d6163",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 3000
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "independent synthetic FFprobe transport; no Windows/camera parity",
+      "parts": [
+        {
+          "index": 0,
+          "outer_pos": "749",
+          "outer_pts": 0,
+          "outer_dts": 0,
+          "carrier_offset": 0,
+          "length": 529,
+          "sha256": "bb77651e115017f857f4e4fdda1544b3aa705df26dc94d8869681c9165564e1b"
+        },
+        {
+          "index": 1,
+          "outer_pos": "1278",
+          "outer_pts": 1000,
+          "outer_dts": 1000,
+          "carrier_offset": 529,
+          "length": 530,
+          "sha256": "ca788c5dd5f6cc2e255c6067bf6a16b621afe6b938b2e293bce78840072764e8"
+        },
+        {
+          "index": 2,
+          "outer_pos": "1808",
+          "outer_pts": 2000,
+          "outer_dts": 2000,
+          "carrier_offset": 1059,
+          "length": 530,
+          "sha256": "1e174593ee09314953441a4b227de2a232e6e9b4f8d092934ab078e573b0992c"
+        }
+      ],
+      "camd_indexes": [
+        0
+      ],
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-plus-meta-precedence.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-plus-meta-precedence.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/camd-stream-plus-meta-precedence.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-plus-meta-precedence.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-plus-meta-precedence.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "first-META-before-camd.mp4",
+      "route": "top_level_box",
+      "sha256": "cb93c941af31fe4e74a817fed1676a7c79d4f85049a51524109c5560d51d3f8c",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "native/static first-match acceptance; not vendor runtime",
+      "box": {
+        "tag": "META",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 1589
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAO+bWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKNgo0ChFkdnRtX29xYjEwMS5wcm90bxIRc3ludGhldGljLWxpYnJhcnlI/f//////////AZgGKhIoMiIKGQ0AAPFCVQAA8ESiAQwAAAA+AACAvgAAAD8SBQ0AAPtCOgIIARqMAQoUCAsQ+4CAgICAgBAYAiABKAEwtCQSLkICCAdKFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqUg8VAACAPx0AAABAJQAAQEAaRBI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+EgIIAhoCCAMaAggRAAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABBkam1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAADxAAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAREpJIE9zbW8zNjA=",
+      "carrier_sha256": "7b0b0dc4275c3f2feeb13c8bb5c72093ea56fd383e5d9f14e43aa6fb951e2111",
+      "inner_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "djmd",
+            "codec_tag": "0x646d6a64",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-default.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-default.inner.stream-0.stdout",
+            "stdout_sha256": "c5f0c22cf4a1f3c037918f3fadd0ce9df955a86657ab4d05143502d921e30632",
+            "stderr_path": "probes/camd-stream-default.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "241",
+                  "pos": "749",
+                  "data": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-default.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "241",
+                "decoded_size": 241,
+                "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+                "path": "extracted/camd-stream-default.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCjYKNAoRZHZ0bV9vcWIxMDEucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKDIi\nChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjoCCAEajAEKFAgLEPuAgICAgIAQGAIgASgB\nMLQkEi5CAggHShcNAACAPxUAAIA+HQAAAL8lAABAP5gGKlIPFQAAgD8dAAAAQCUAAEBAGkQSPgo0CP7/\n//8PEAUaFA0AAIA/FQAAgD4dAAAAvyUAAEA/Gg8NAACAvx0AAAA/JQAAgL4lAAAAPhICCAIaAggDGgII\nEQ==\n"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "first-camd-before-META.mp4",
+      "route": "top_level_box",
+      "sha256": "981feded5271a7fad9811df081be0a42d505a145a58977c56bc84b4db3499b2a",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "native/static first-match acceptance; not vendor runtime",
+      "box": {
+        "tag": "camd",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 1664
+      },
+      "carrier_base64": "AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAQJbWRhdAAAAq0GBf//qdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNjUgcjMyMjIgYjM1NjA1YSAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMjUgLSBodHRwOi8vd3d3LnZpZGVvbGFuLm9yZy94MjY0Lmh0bWwgLSBvcHRpb25zOiBjYWJhYz0xIHJlZj0zIGRlYmxvY2s9MTowOjAgYW5hbHlzZT0weDM6MHgxMTMgbWU9aGV4IHN1Ym1lPTcgcHN5PTEgcHN5X3JkPTEuMDA6MC4wMCBtaXhlZF9yZWY9MSBtZV9yYW5nZT0xNiBjaHJvbWFfbWU9MSB0cmVsbGlzPTEgOHg4ZGN0PTEgY3FtPTAgZGVhZHpvbmU9MjEsMTEgZmFzdF9wc2tpcD0xIGNocm9tYV9xcF9vZmZzZXQ9LTIgdGhyZWFkcz0xIGxvb2thaGVhZF90aHJlYWRzPTEgc2xpY2VkX3RocmVhZHM9MCBucj0wIGRlY2ltYXRlPTEgaW50ZXJsYWNlZD0wIGJsdXJheV9jb21wYXQ9MCBjb25zdHJhaW5lZF9pbnRyYT0wIGJmcmFtZXM9MyBiX3B5cmFtaWQ9MiBiX2FkYXB0PTEgYl9iaWFzPTAgZGlyZWN0PTEgd2VpZ2h0Yj0xIG9wZW5fZ29wPTAgd2VpZ2h0cD0yIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAEGWIhAAV//73ye/Apuvb34EKPQo7ChhkdnRtX2VhZ2xlNF93YWI1MzAucHJvdG8SEXN5bnRoZXRpYy1saWJyYXJ5SP3//////////wGYBioSKCoiChkNAADxQlUAAPBEogEMAAAAPgAAgL4AAAA/EgUNAAD7QjICCAEa0AEKFAgLEPuAgICAgIAQGAIgASgBMLQkEjGqAQIIB7IBFw0AAIA/FQAAgD4dAAAAvyUAAEA/mAYqugEPFQAAgD8dAAAAQCUAAEBAGoQBEj4KNAj+////DxAFGhQNAACAPxUAAIA+HQAAAL8lAABAPxoPDQAAgL8dAAAAPyUAAIC+JQAAAD4SAggCGgIIAxoCCBEiEwhOGg8NAACAvx0AAAA/JQAAgL4qKQjHgYCAgICAEBIeDQAAAD4VAACAPh0AAAA/JQAAoD8tAADAPzUAAOA/AAACV21vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAGDdHJhawAAAFx0a2hkAAAABwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABH21kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAA+gAAAPoVcQAAAAAADdoZGxyAAAAAAAAAABtZXRhAAAAAAAAAAAAAAAAREpJIFN5bnRoZXRpYyBNZXRhZGF0YQAAAADAbWluZgAAAAxubWhkAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAAAIhzdGJsAAAAIHN0c2QAAAAAAAAAAQAAABB4dG1kAAAAAAAAAAEAAAAYc3R0cwAAAAAAAAABAAAAAQAAA+gAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAEAAAABAAAAGHN0c3oAAAAAAAAAAAAAAAEAAAE8AAAAFHN0Y28AAAAAAAAAAQAAAu0AAABgdWR0YQAAAFhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAACtpbHN0AAAAI6l0b28AAAAbZGF0YQAAAAEAAAAAT3NtbyAzNjAgSUk=",
+      "carrier_sha256": "cd07b4a7284d076c58b900d478796fa5c06277c736bf2adf0ec3aa80c780ef3c",
+      "inner_inventory": {
+        "encoder": "Osmo 360 II",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "xtmd",
+            "codec_tag": "0x646d7478",
+            "id": "0x1",
+            "time_base": "1/1000",
+            "duration_ts": 1000
+          }
+        ],
+        "exit_code": 0,
+        "metadata_packet_probes": [
+          {
+            "argv": [
+              "/usr/bin/ffprobe",
+              "-v",
+              "error",
+              "-protocol_whitelist",
+              "file",
+              "-of",
+              "json=string_validation=fail",
+              "-select_streams",
+              "0",
+              "-show_packets",
+              "-show_data",
+              "-data_dump_format",
+              "base64",
+              "-show_entries",
+              "packet=stream_index,pts,dts,pos,size,data",
+              "-i",
+              "/home/violence/Projects/dji-studio-omarchy/sol-review/swarm-20261010-2154/independent-reproduction/nested-v2/extracted/camd-stream-wab530.reconstructed-inner.mp4"
+            ],
+            "exit_code": 0,
+            "stdout_path": "probes/camd-stream-wab530.inner.stream-0.stdout",
+            "stdout_sha256": "05c4814c9f447bcc779001491f6b6f5cf09fe972f2ba84d037bfe09ed211c0a8",
+            "stderr_path": "probes/camd-stream-wab530.inner.stream-0.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_text": "",
+            "json": {
+              "packets": [
+                {
+                  "stream_index": 0,
+                  "pts": 0,
+                  "dts": 0,
+                  "size": "316",
+                  "pos": "749",
+                  "data": "\nCj0KOwoYZHZ0bV9lYWdsZTRfd2FiNTMwLnByb3RvEhFzeW50aGV0aWMtbGlicmFyeUj9//////////8B\nmAYqEigqIgoZDQAA8UJVAADwRKIBDAAAAD4AAIC+AAAAPxIFDQAA+0IyAggBGtABChQICxD7gICAgICA\nEBgCIAEoATC0JBIxqgECCAeyARcNAACAPxUAAIA+HQAAAL8lAABAP5gGKroBDxUAAIA/HQAAAEAlAABA\nQBqEARI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+\nEgIIAhoCCAMaAggRIhMIThoPDQAAgL8dAAAAPyUAAIC+KikIx4GAgICAgBASHg0AAAA+FQAAgD4dAAAA\nPyUAAKA/LQAAwD81AADgPw==\n"
+                }
+              ]
+            },
+            "input_path": "extracted/camd-stream-wab530.reconstructed-inner.mp4",
+            "selected_index": 0,
+            "decoded_packets": [
+              {
+                "packet_index": 0,
+                "stream_index": 0,
+                "pts": 0,
+                "dts": 0,
+                "pos": "749",
+                "size_reported": "316",
+                "decoded_size": 316,
+                "sha256": "bd4a62b201ead8280a7d6b03422ed14b9f81a7dce269bced2cf512817e49ff0e",
+                "path": "extracted/camd-stream-wab530.inner.stream-0.packet-0.bin",
+                "data_base64": "\nCj0KOwoYZHZ0bV9lYWdsZTRfd2FiNTMwLnByb3RvEhFzeW50aGV0aWMtbGlicmFyeUj9//////////8B\nmAYqEigqIgoZDQAA8UJVAADwRKIBDAAAAD4AAIC+AAAAPxIFDQAA+0IyAggBGtABChQICxD7gICAgICA\nEBgCIAEoATC0JBIxqgECCAeyARcNAACAPxUAAIA+HQAAAL8lAABAP5gGKroBDxUAAIA/HQAAAEAlAABA\nQBqEARI+CjQI/v///w8QBRoUDQAAgD8VAACAPh0AAAC/JQAAQD8aDw0AAIC/HQAAAD8lAACAviUAAAA+\nEgIIAhoCCAMaAggRIhMIThoPDQAAgL8dAAAAPyUAAIC+KikIx4GAgICAgBASHg0AAAA+FQAAgD4dAAAA\nPyUAAKA/LQAAwD81AADgPw==\n"
+              }
+            ]
+          }
+        ]
+      },
+      "transport_mismatch": true
+    },
+    {
+      "id": "first-empty-META-before-camd.mp4",
+      "route": "top_level_box",
+      "sha256": "f567c0ee299f14ba880042898cbed1e76a5d2a1692eaf7a3ad3b7bd83b0a0327",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "native/static first-match acceptance; not vendor runtime",
+      "box": {
+        "tag": "META",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 0
+      },
+      "error": "empty"
+    },
+    {
+      "id": "first-empty-camd-before-META.mp4",
+      "route": "top_level_box",
+      "sha256": "50b92f52cf10afec87ca95318c06ec3fb7ff499880bfb6ac6886fe1e59826543",
+      "outer_encoder_expected": "DJI Osmo360",
+      "outer_inventory": {
+        "encoder": "DJI Osmo360",
+        "streams": [
+          {
+            "index": 0,
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "id": "0x1",
+            "time_base": "1/16384",
+            "start_pts": 0,
+            "duration_ts": 16384
+          }
+        ],
+        "exit_code": 0
+      },
+      "claim": "native/static first-match acceptance; not vendor runtime",
+      "box": {
+        "tag": "camd",
+        "box_offset": 1544,
+        "header_bytes": 8,
+        "payload_offset": 1552,
+        "payload_length": 0
+      },
+      "error": "empty"
+    }
+  ]
+}
