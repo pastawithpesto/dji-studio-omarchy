@@ -1,0 +1,118 @@
+use std::{
+    env,
+    path::Path,
+    process::{Command, ExitCode},
+};
+
+fn run() -> Result<(), String> {
+    let a: Vec<String> = env::args().skip(1).collect();
+    if a.first().is_some_and(|v| v == "--encoder") {
+        if a.len() != 2 {
+            return Err("Usage: dji-reframe --encoder ENCODER_TAG".into());
+        }
+        let entry = dji_reframe::metadata::registration(&a[1])
+            .ok_or("Unknown encoder; retain raw metadata rather than guessing a schema")?;
+        println!(
+            "product={} protobuf_package={} (schema registry only; decoding pending)",
+            entry.product, entry.package
+        );
+        return Ok(());
+    }
+    if a.first().is_some_and(|v| v == "--inspect") {
+        if a.len() != 2 {
+            return Err("Usage: dji-reframe --inspect MP4".into());
+        }
+        let mut input = std::fs::File::open(&a[1]).map_err(|e| e.to_string())?;
+        let boxes =
+            dji_reframe::metadata::nested_containers(&mut input).map_err(|e| e.to_string())?;
+        if boxes.is_empty() {
+            println!(
+                "No top-level nested metadata container. Direct djmd/xtmd stream discovery is not implemented yet."
+            );
+        }
+        for item in boxes {
+            println!(
+                "{} offset={} bytes={}",
+                String::from_utf8_lossy(&item.tag),
+                item.payload_offset,
+                item.payload_len
+            );
+        }
+        return Ok(());
+    }
+    if a.first().is_some_and(|v| v == "--help") {
+        println!(
+            "dji-reframe INPUT OUTPUT [YAW PITCH HFOV]\ndji-reframe --encoder ENCODER_TAG\ndji-reframe --inspect MP4\nReframe an already stitched equirectangular video into 1920x1080 H.264.\nDefaults: yaw=0 pitch=0 horizontal FOV=90. Existing output is never overwritten.\nRequires FFmpeg with v360 and libx264. Raw DJI dual-lens footage is not supported yet."
+        );
+        return Ok(());
+    }
+    if a.len() != 2 && a.len() != 5 {
+        return Err("Usage: dji-reframe INPUT OUTPUT [YAW PITCH HFOV]".into());
+    }
+    if !Path::new(&a[0]).is_file() {
+        return Err("Input must be an existing file".into());
+    }
+    if Path::new(&a[1]).exists() {
+        return Err("Output already exists".into());
+    }
+    let mut view = [0.0_f64, 0.0, 90.0];
+    if a.len() == 5 {
+        for (i, v) in a[2..].iter().enumerate() {
+            view[i] = v.parse().map_err(|_| format!("Invalid angle: {v}"))?;
+        }
+    }
+    for (value, low, high) in [
+        (view[0], -180.0, 180.0),
+        (view[1], -90.0, 90.0),
+        (view[2], 1.0, 179.0),
+    ] {
+        if !value.is_finite() || !(low..=high).contains(&value) {
+            return Err(format!("Angle must be finite and between {low} and {high}"));
+        }
+    }
+    let vertical_fov =
+        (2.0 * ((view[2].to_radians() / 2.0).tan() * 1080.0 / 1920.0).atan()).to_degrees();
+    let filter = format!(
+        "v360=input=equirect:output=flat:w=1920:h=1080:yaw={}:pitch={}:h_fov={}:v_fov={vertical_fov}",
+        view[0], view[1], view[2]
+    );
+    let status = Command::new("ffmpeg")
+        .args([
+            "-nostdin",
+            "-n",
+            "-i",
+            &a[0],
+            "-map",
+            "0:v:0",
+            "-map",
+            "0:a?",
+            "-vf",
+            &filter,
+            "-c:v",
+            "libx264",
+            "-crf",
+            "20",
+            "-pix_fmt",
+            "yuv420p",
+            "-c:a",
+            "aac",
+            "-movflags",
+            "+faststart",
+            &a[1],
+        ])
+        .status()
+        .map_err(|e| format!("Could not start FFmpeg: {e}"))?;
+    if !status.success() {
+        return Err(format!("FFmpeg failed: {status}"));
+    }
+    Ok(())
+}
+fn main() -> ExitCode {
+    match run() {
+        Ok(()) => ExitCode::SUCCESS,
+        Err(e) => {
+            eprintln!("{e}");
+            ExitCode::FAILURE
+        }
+    }
+}
