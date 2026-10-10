@@ -1,7 +1,9 @@
 //! Metadata discovery boundaries recovered from VinceEditor.
-//! See sol-review/METADATA-PARSER-CONTRACT.md. This does not decode protobuf
-//! packets or establish camera timestamp units.
+//! See sol-review/METADATA-PARSER-CONTRACT.md. Packet decoding is exposed in
+//! [`packet`]; camera timestamp units and coordinate conventions remain unknown.
 use std::io::{self, Read, Seek, SeekFrom};
+
+pub mod packet;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Registration {

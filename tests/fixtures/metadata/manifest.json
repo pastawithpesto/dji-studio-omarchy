@@ -1,0 +1,534 @@
+{
+  "generator": "generate.py",
+  "protobuf_version": "6.31.0",
+  "implementation": "python",
+  "descriptor_set_sha256": "45bdd29930f3d10f46ed51a7ee3b8917e3806a4bc425f136c034908c4fc578bb",
+  "source_binary_sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+  "reference_build": "1.0.0.30839",
+  "fixtures": [
+    {
+      "file": "oqb101-complete.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "69577dd7536469173deb531e390f5cc875c0b2c7ea4df9d4de76f3d808aec17e",
+      "length": 241,
+      "wire_hex": "0a360a340a116476746d5f6f71623130312e70726f746f121173796e7468657469632d6c69627261727948fdffffffffffffffff0198062a122832220a190d0000f142550000f044a2010c0000003e000080be0000003f12050d0000fb423a0208011a8c010a14080b10fb8080808080801018022001280130b424122e420208074a170d0000803f150000803e1d000000bf250000403f98062a520f150000803f1d0000004025000040401a44123e0a3408feffffff0f10051a140d0000803f150000803e1d000000bf250000403f1a0f0d000080bf1d0000003f25000080be250000003e120208021a0208031a020811",
+      "expected": {
+        "proto_file_name": "dvtm_oqb101.proto",
+        "clip_timestamp": 18446744073709551613,
+        "frame_timestamp": 9007199254741115,
+        "frame_seq_num": 11,
+        "fused_timestamp_uint32": 4294967294,
+        "camera_quaternion_wxyz": [
+          1.0,
+          0.25,
+          -0.5,
+          0.75
+        ],
+        "fused_quaternions_wxyz": [
+          [
+            1.0,
+            0.25,
+            -0.5,
+            0.75
+          ],
+          [
+            -1.0,
+            0.0,
+            0.5,
+            -0.25
+          ]
+        ],
+        "presence": [
+          "clip_meta",
+          "stream_meta",
+          "frame_meta"
+        ],
+        "nested_unknown_field": {
+          "number": 99,
+          "varint": 42
+        },
+        "pano_field": 6,
+        "camera_attitude_field": 9
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "oqb101-unknown.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "4bbb769a246a84561283d555749eb2d1052269cf635b89639099cf5da3245f09",
+      "length": 276,
+      "wire_hex": "0a360a340a116476746d5f6f71623130312e70726f746f121173796e7468657469632d6c69627261727948fdffffffffffffffff0198062a122832220a190d0000f142550000f044a2010c0000003e000080be0000003f12050d0000fb423a0208011a8c010a14080b10fb8080808080801018022001280130b424122e420208074a170d0000803f150000803e1d000000bf250000403f98062a520f150000803f1d0000004025000040401a44123e0a3408feffffff0f10051a140d0000803f150000803e1d000000bf250000403f1a0f0d000080bf1d0000003f25000080be250000003e120208021a0208031a020811a006b424aa0606667574757265b50678563412b9068877665544332211c3060801c406",
+      "expected": {
+        "proto_file_name": "dvtm_oqb101.proto",
+        "clip_timestamp": 18446744073709551613,
+        "frame_timestamp": 9007199254741115,
+        "frame_seq_num": 11,
+        "fused_timestamp_uint32": 4294967294,
+        "camera_quaternion_wxyz": [
+          1.0,
+          0.25,
+          -0.5,
+          0.75
+        ],
+        "fused_quaternions_wxyz": [
+          [
+            1.0,
+            0.25,
+            -0.5,
+            0.75
+          ],
+          [
+            -1.0,
+            0.0,
+            0.5,
+            -0.25
+          ]
+        ],
+        "presence": [
+          "clip_meta",
+          "stream_meta",
+          "frame_meta"
+        ],
+        "nested_unknown_field": {
+          "number": 99,
+          "varint": 42
+        },
+        "pano_field": 6,
+        "camera_attitude_field": 9,
+        "top_unknown_field_numbers": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "oqb101-clip_meta-only.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "b9790bf811dad553cf6ee58564977106010e2ca3d71bc10df22e8710fcbf1625",
+      "length": 56,
+      "wire_hex": "0a360a340a116476746d5f6f71623130312e70726f746f121173796e7468657469632d6c69627261727948fdffffffffffffffff0198062a",
+      "expected": {
+        "presence": [
+          "clip_meta"
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "oqb101-stream_meta-only.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "566b23bc39cb9116b2183c9783a8264fefa12c0d50991f1296c5fad130456545",
+      "length": 42,
+      "wire_hex": "122832220a190d0000f142550000f044a2010c0000003e000080be0000003f12050d0000fb423a020801",
+      "expected": {
+        "presence": [
+          "stream_meta"
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "oqb101-frame_meta-only.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "5a18788e8c560ee50263f0a812a77044db687b5d7ae762ce2156b9dfc55c7cf6",
+      "length": 143,
+      "wire_hex": "1a8c010a14080b10fb8080808080801018022001280130b424122e420208074a170d0000803f150000803e1d000000bf250000403f98062a520f150000803f1d0000004025000040401a44123e0a3408feffffff0f10051a140d0000803f150000803e1d000000bf250000403f1a0f0d000080bf1d0000003f25000080be250000003e120208021a0208031a020811",
+      "expected": {
+        "presence": [
+          "frame_meta"
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "wab530-complete.pb",
+      "package": "wab530",
+      "classification": "descriptor_synthetic",
+      "sha256": "bd4a62b201ead8280a7d6b03422ed14b9f81a7dce269bced2cf512817e49ff0e",
+      "length": 316,
+      "wire_hex": "0a3d0a3b0a186476746d5f6561676c65345f7761623533302e70726f746f121173796e7468657469632d6c69627261727948fdffffffffffffffff0198062a12282a220a190d0000f142550000f044a2010c0000003e000080be0000003f12050d0000fb42320208011ad0010a14080b10fb8080808080801018022001280130b4241231aa01020807b201170d0000803f150000803e1d000000bf250000403f98062aba010f150000803f1d0000004025000040401a8401123e0a3408feffffff0f10051a140d0000803f150000803e1d000000bf250000403f1a0f0d000080bf1d0000003f25000080be250000003e120208021a0208031a0208112213084e1a0f0d000080bf1d0000003f25000080be2a2908c781808080808010121e0d0000003e150000803e1d0000003f250000a03f2d0000c03f350000e03f",
+      "expected": {
+        "proto_file_name": "dvtm_eagle4_wab530.proto",
+        "clip_timestamp": 18446744073709551613,
+        "frame_timestamp": 9007199254741115,
+        "frame_seq_num": 11,
+        "fused_timestamp_uint32": 4294967294,
+        "camera_quaternion_wxyz": [
+          1.0,
+          0.25,
+          -0.5,
+          0.75
+        ],
+        "fused_quaternions_wxyz": [
+          [
+            1.0,
+            0.25,
+            -0.5,
+            0.75
+          ],
+          [
+            -1.0,
+            0.0,
+            0.5,
+            -0.25
+          ]
+        ],
+        "presence": [
+          "clip_meta",
+          "stream_meta",
+          "frame_meta"
+        ],
+        "nested_unknown_field": {
+          "number": 99,
+          "varint": 42
+        },
+        "pano_field": 5,
+        "camera_attitude_field": 22
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "wab530-unknown.pb",
+      "package": "wab530",
+      "classification": "descriptor_synthetic",
+      "sha256": "31c4f6a7ec1611c7f021d2904874524ba5cc7c598cf584280331f4d436b85ca2",
+      "length": 351,
+      "wire_hex": "0a3d0a3b0a186476746d5f6561676c65345f7761623533302e70726f746f121173796e7468657469632d6c69627261727948fdffffffffffffffff0198062a12282a220a190d0000f142550000f044a2010c0000003e000080be0000003f12050d0000fb42320208011ad0010a14080b10fb8080808080801018022001280130b4241231aa01020807b201170d0000803f150000803e1d000000bf250000403f98062aba010f150000803f1d0000004025000040401a8401123e0a3408feffffff0f10051a140d0000803f150000803e1d000000bf250000403f1a0f0d000080bf1d0000003f25000080be250000003e120208021a0208031a0208112213084e1a0f0d000080bf1d0000003f25000080be2a2908c781808080808010121e0d0000003e150000803e1d0000003f250000a03f2d0000c03f350000e03fa006b424aa0606667574757265b50678563412b9068877665544332211c3060801c406",
+      "expected": {
+        "proto_file_name": "dvtm_eagle4_wab530.proto",
+        "clip_timestamp": 18446744073709551613,
+        "frame_timestamp": 9007199254741115,
+        "frame_seq_num": 11,
+        "fused_timestamp_uint32": 4294967294,
+        "camera_quaternion_wxyz": [
+          1.0,
+          0.25,
+          -0.5,
+          0.75
+        ],
+        "fused_quaternions_wxyz": [
+          [
+            1.0,
+            0.25,
+            -0.5,
+            0.75
+          ],
+          [
+            -1.0,
+            0.0,
+            0.5,
+            -0.25
+          ]
+        ],
+        "presence": [
+          "clip_meta",
+          "stream_meta",
+          "frame_meta"
+        ],
+        "nested_unknown_field": {
+          "number": 99,
+          "varint": 42
+        },
+        "pano_field": 5,
+        "camera_attitude_field": 22,
+        "top_unknown_field_numbers": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "wab530-clip_meta-only.pb",
+      "package": "wab530",
+      "classification": "descriptor_synthetic",
+      "sha256": "b0e92b7830bde67a352d30eecd2b031b2d46ff2a8005f26b85cf1ab03dd10915",
+      "length": 63,
+      "wire_hex": "0a3d0a3b0a186476746d5f6561676c65345f7761623533302e70726f746f121173796e7468657469632d6c69627261727948fdffffffffffffffff0198062a",
+      "expected": {
+        "presence": [
+          "clip_meta"
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "wab530-stream_meta-only.pb",
+      "package": "wab530",
+      "classification": "descriptor_synthetic",
+      "sha256": "a0ff568e9d4e761b798bec0323e516b3304678375a2c5f7179ea1721e59a72cf",
+      "length": 42,
+      "wire_hex": "12282a220a190d0000f142550000f044a2010c0000003e000080be0000003f12050d0000fb4232020801",
+      "expected": {
+        "presence": [
+          "stream_meta"
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "wab530-frame_meta-only.pb",
+      "package": "wab530",
+      "classification": "descriptor_synthetic",
+      "sha256": "45973904c3e1b1cb6755b578320d4b451794246ff0ad3ab89f641ceef658dc57",
+      "length": 211,
+      "wire_hex": "1ad0010a14080b10fb8080808080801018022001280130b4241231aa01020807b201170d0000803f150000803e1d000000bf250000403f98062aba010f150000803f1d0000004025000040401a8401123e0a3408feffffff0f10051a140d0000803f150000803e1d000000bf250000403f1a0f0d000080bf1d0000003f25000080be250000003e120208021a0208031a0208112213084e1a0f0d000080bf1d0000003f25000080be2a2908c781808080808010121e0d0000003e150000803e1d0000003f250000a03f2d0000c03f350000e03f",
+      "expected": {
+        "presence": [
+          "frame_meta"
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "empty.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "length": 0,
+      "wire_hex": "",
+      "expected": {
+        "presence": []
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "empty-frame.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "fdbb66f97af044e4b88b0bb0a4789f8f014f98b53f5fe11102bd19f45d53c45b",
+      "length": 2,
+      "wire_hex": "1a00",
+      "expected": {
+        "presence": [
+          "frame_meta"
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "all-unknown.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "7531b3011b83c89940e6492326ebf7f9d9ac8c927892efc661e8d49fe84de515",
+      "length": 35,
+      "wire_hex": "a006b424aa0606667574757265b50678563412b9068877665544332211c3060801c406",
+      "expected": {
+        "presence": [],
+        "top_unknown_field_numbers": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "noncanonical-unknown.pb",
+      "package": "oqb101",
+      "classification": "descriptor_synthetic",
+      "sha256": "1f87ec7472903e7b2fae5b32c2e12d0bd585cff6c5b0fd633073524ab2297765",
+      "length": 5,
+      "wire_hex": "a006b4a400",
+      "expected": {
+        "presence": [],
+        "top_unknown_field_numbers": [
+          100
+        ],
+        "varint": 4660
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "duplicate-frame.pb",
+      "package": "oqb101",
+      "classification": "standard_protobuf_merge",
+      "sha256": "ebfac62c10e9c7dd74e4034ca19b31b98e1f220646cf955b3522d29f0d239d60",
+      "length": 15,
+      "wire_hex": "1a040a0208011a070a05080210c801",
+      "expected": {
+        "presence": [
+          "frame_meta"
+        ],
+        "frame_seq_num": 2,
+        "frame_timestamp": 200
+      },
+      "python_accepts": true
+    },
+    {
+      "file": "truncated-key.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "76be8b528d0075f7aae98d6fa57a6d3c83ae480a8469e668d7b0af968995ac71",
+      "length": 1,
+      "wire_hex": "80",
+      "python_accepts": false,
+      "python_error": "DecodeError: Truncated message."
+    },
+    {
+      "file": "zero-key.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "length": 1,
+      "wire_hex": "00",
+      "python_accepts": false,
+      "python_error": "DecodeError: Field number 0 is illegal."
+    },
+    {
+      "file": "reserved-wire6.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "4d7b3ef7300acf70c892d8327db8272f54434adbc61a4e130a563cb59a0d0f47",
+      "length": 1,
+      "wire_hex": "0e",
+      "python_accepts": false,
+      "python_error": "DecodeError: Wrong wire type in tag."
+    },
+    {
+      "file": "reserved-wire7.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "dc0e9c3658a1a3ed1ec94274d8b19925c93e1abb7ddba294923ad9bde30f8cb8",
+      "length": 1,
+      "wire_hex": "0f",
+      "python_accepts": false,
+      "python_error": "DecodeError: Wrong wire type in tag."
+    },
+    {
+      "file": "truncated-varint.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "0e67e6640f458312b59a8f132f3529d4fa7b5caeaae74e4eb7e68e06ce3628db",
+      "length": 3,
+      "wire_hex": "a00680",
+      "python_accepts": false,
+      "python_error": "DecodeError: Truncated message."
+    },
+    {
+      "file": "overflow-varint.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "865244e31f1d507d3d93732344bd5fd792e90b9a269580d80dc9111a83bdaca8",
+      "length": 12,
+      "wire_hex": "a006ffffffffffffffffff02",
+      "python_accepts": true,
+      "python_error": null
+    },
+    {
+      "file": "truncated-message.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "b4d385cf68207087106f66fc8acc0af77d40b111ad413fa16407dbfbcd9c988b",
+      "length": 4,
+      "wire_hex": "1a050a00",
+      "python_accepts": false,
+      "python_error": "DecodeError: Truncated message."
+    },
+    {
+      "file": "invalid-nested-key.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "fe552215ca946959718b2f41b36f79424a86680d98780c4c47a9231f22cb8927",
+      "length": 3,
+      "wire_hex": "1a0100",
+      "python_accepts": false,
+      "python_error": "DecodeError: Field number 0 is illegal."
+    },
+    {
+      "file": "invalid-utf8.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "d60d18d7e2ac79b41f5a205f78ba1d48af5fdcd73020817e7304c0ac7d02bf46",
+      "length": 7,
+      "wire_hex": "0a050a030a01ff",
+      "python_accepts": false,
+      "python_error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte in field: ClipMetaHeader.proto_file_name"
+    },
+    {
+      "file": "malformed-tail.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "dbbd756cc0cc82957cdec77d980c49ce7a49a142b1ebc1e1c2dd0c562fcf39e3",
+      "length": 3,
+      "wire_hex": "1a00ff",
+      "python_accepts": false,
+      "python_error": "DecodeError: Truncated message."
+    },
+    {
+      "file": "overflow-length.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "8758844d5907209630bcdcc301b3f9fdb396e8ef69baf106c9b78b0c5f592fce",
+      "length": 11,
+      "wire_hex": "1affffffffffffffffff02",
+      "python_accepts": false,
+      "python_error": "DecodeError: Truncated message."
+    },
+    {
+      "file": "mismatched-group.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "f2bb30d2d15258ec2793a88fcf247d80295bf5a3f561417f63364cd0487c553c",
+      "length": 4,
+      "wire_hex": "c306cc06",
+      "python_accepts": false,
+      "python_error": "DecodeError: Missing group end tag."
+    },
+    {
+      "file": "unclosed-group.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "44edbbbe9d7a30fa69bdb1dadb4b5127f3cc7d3e4207cbcf99250c3b40e54e43",
+      "length": 4,
+      "wire_hex": "c3060801",
+      "python_accepts": false,
+      "python_error": "DecodeError: Missing group end tag."
+    },
+    {
+      "file": "unexpected-end-group.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "56084671f5634920df8e8c65702c08819c127382aa98035c187eafda967316d4",
+      "length": 2,
+      "wire_hex": "c406",
+      "python_accepts": false,
+      "python_error": "DecodeError: Unexpected end-group tag."
+    },
+    {
+      "file": "recursive-groups101.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "ba79ca3c6c034d4ffe66a39bd984919ab38c6a0b13ecfcc73c9554e9daccabf6",
+      "length": 404,
+      "wire_hex": "c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c306c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406c406",
+      "python_accepts": true,
+      "python_error": null
+    },
+    {
+      "file": "known-wrong-wire.pb",
+      "package": "oqb101",
+      "classification": "wire_or_runtime_policy_probe",
+      "sha256": "fb8da7eb5b1b399e7321179dac9e9f65773d7331e1e30554e3911e4325e1ef19",
+      "length": 2,
+      "wire_hex": "0801",
+      "python_accepts": true,
+      "python_error": null
+    }
+  ],
+  "limitations": "Constructed independent Python descriptor fixtures, not captured camera/Windows/vendor behavior. Wrong-wire and depth policies can differ between runtimes. Timestamp units and coordinate frames are unknown."
+}

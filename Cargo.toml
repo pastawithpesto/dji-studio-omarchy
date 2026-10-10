@@ -2,3 +2,6 @@
 name = "dji-reframe"
 version = "0.1.0"
 edition = "2024"
+
+[dependencies]
+prost-reflect = { version = "=0.16.5", default-features = false }
