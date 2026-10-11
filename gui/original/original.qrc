@@ -91,6 +91,7 @@
     <file alias="app_qrc/app_icon.png">resources/app_qrc/app_icon.png</file>
     <file alias="app_qrc/beauty_preset.json">resources/app_qrc/beauty_preset.json</file>
     <file alias="app_qrc/deviceIntroduce.png">resources/app_qrc/deviceIntroduce.png</file>
+    <file alias="app_qrc/i18n_data.json">resources/app_qrc/i18n_data.json</file>
     <file alias="app_qrc/icons/add_hover_key_frame.svg">resources/app_qrc/icons/add_hover_key_frame.svg</file>
     <file alias="app_qrc/icons/asteroid_select.svg">resources/app_qrc/icons/asteroid_select.svg</file>
     <file alias="app_qrc/icons/audio_highlight_btn_red.svg">resources/app_qrc/icons/audio_highlight_btn_red.svg</file>

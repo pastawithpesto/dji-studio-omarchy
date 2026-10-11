@@ -1,16 +1,13 @@
 {
   "bundle": {
     "alias_prefix": "/",
-    "excluded_localization_payloads": [
-      "/app_qrc/i18n_data.json",
-      "translation catalogs (.qm/.ts)"
-    ],
+    "excluded_localization_payloads": [],
     "main_alias": "/qml/Main.qml",
-    "original_app_qrc_asset_count": 210,
+    "original_app_qrc_asset_count": 211,
     "qml_file_count": 364,
     "qml_import_path": "qrc:/",
     "qmldir_file_count": 2,
-    "resource_count": 576
+    "resource_count": 577
   },
   "independent_qml_inventory_verification": {
     "duplicate_occurrence": "/Controls/TextInputOverlay.qml (same decoded bytes)",
@@ -41,6 +38,10 @@
     {
       "artifact": "sol-ui-independent-review/ui-parity-20261011/contracts/SOURCE-INVENTORY.json",
       "sha256": "c4dd5ad0c62ac4eb6176a1b8ccbbba17eb652f5d45061c42b79edf6ac907e12b"
+    },
+    {
+      "artifact": "sol-ui-independent-review/ui-parity-20261011/contracts/COMPILED-RESOURCE-IDENTITY.json",
+      "sha256": "8becc2a930ec73256cb9929acb617949fea64e6197b512f57f0f5fb90bfde587"
     }
   ],
   "limitations": [
@@ -49,11 +50,14 @@
     "RCC pack also has separate non-QML .pem/.qsb records; not included in this UI resource bundle."
   ],
   "localization": {
-    "catalog": "luna-review/luna-a-1/ui-parity-20261011/strings/strings-catalog.json",
-    "catalog_sha256": "11d52a46b4211116bd1675a10cf0e043602367d6fc5d46ade8cfa8361821379e",
-    "source_report": "luna-review/luna-a-1/ui-parity-20261011/strings/REPORT.md",
-    "source_report_sha256": "afb9e658039fed2f67573e883e972150335a32f535fac0435e114dc0da4a3e51",
-    "status": "not included: no reviewed original .qm/.ts catalog or translation mapping corpus was available; source qsTr keys remain exact in QML bytes, rendered locale strings remain unresolved."
+    "independent_identity_artifact": "sol-ui-independent-review/ui-parity-20261011/contracts/COMPILED-RESOURCE-IDENTITY.json",
+    "independent_review_message": 1210,
+    "locale_resolution": "unknown; runtime loader, fallback, and displayed values are unverified",
+    "source_artifact": "luna-review/luna-b-1/swarm-20261010-2154/embedded-assets-followup/recovered/compiled-02/app_qrc/i18n_data.json",
+    "source_bytes": 1806276,
+    "source_payload_raw_offset": 33261653,
+    "source_sha256": "03a039298a2a4b1ee0360b0248177e5c07b17146fbb8c5bcdf3edeb0848bc31c",
+    "status": "Original /app_qrc/i18n_data.json is included byte-for-byte. Its payload contains 1,980 keys and 16 exact locale-key spellings; both zh-Hant and zh_Hant occur. This is catalog content, not proof of the runtime lookup, selected locale, or rendered UI strings. No .qm/.ts catalog was found."
   },
   "purpose": "Exact original resource bundle inputs for recovered DJI Studio UI source; source bytes preserved verbatim.",
   "rcc_structure_extraction_review_message": 370,
@@ -1228,6 +1232,19 @@
       "source_manifest": "sol-ui-independent-review/swarm-20261010-2154/native-qml-flow-code/exact-source/gui/resource-manifest.json",
       "source_manifest_sha256": "443a67dc71ef6a07df4619a52507b1491267eaab3b999ba5f6b19dca5e2f1b98",
       "source_payload_raw_offset": 32737028
+    },
+    {
+      "alias": "/app_qrc/i18n_data.json",
+      "bytes": 1806276,
+      "category": "app_qrc",
+      "file": "resources/app_qrc/i18n_data.json",
+      "independent_payload_review_message": 1210,
+      "sha256": "03a039298a2a4b1ee0360b0248177e5c07b17146fbb8c5bcdf3edeb0848bc31c",
+      "source_artifact": "luna-review/luna-b-1/swarm-20261010-2154/embedded-assets-followup/recovered/compiled-02/app_qrc/i18n_data.json",
+      "source_exe_sha256": "e8732b263ea6486680a3007349b9c06a37cfb64c8797610743fd3b3831b0faf4",
+      "source_manifest": "sol-ui-independent-review/swarm-20261010-2154/native-qml-flow-code/exact-source/gui/resource-manifest.json",
+      "source_manifest_sha256": "443a67dc71ef6a07df4619a52507b1491267eaab3b999ba5f6b19dca5e2f1b98",
+      "source_payload_raw_offset": 33261653
     },
     {
       "alias": "/app_qrc/icons/add_hover_key_frame.svg",
