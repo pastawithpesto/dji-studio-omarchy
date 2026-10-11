@@ -17,3 +17,5 @@ pub mod pano_plane;
 pub mod project_dom;
 
 pub mod audio_prelog;
+
+pub mod number_format;

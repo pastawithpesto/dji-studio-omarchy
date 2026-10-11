@@ -1,0 +1,56 @@
+{
+  "build": "1.0.0.30839",
+  "binary_sha256": "3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1",
+  "function": "0x18014e370..0x18014f970 exclusive",
+  "body_sha256": "42c9ec2e7f6785736a0ebb149592a1e469c46cf32d0a35e04caea51547a80c78",
+  "rea_evidence_ids": [
+    "ev_30689caa6cacd6079d9054b25e32221af5f2992bdcfd10af528300c12eb044ba",
+    "ev_f20b0c77c3a4ee6c40b1206cc5005bd8ec06a66269be733978159f296cfc6a56"
+  ],
+  "table_pins": [
+    {
+      "path": "sol-calibration-review/swarm-20261010-2154/float-normal-core/cache.bin",
+      "sha256": "2c6014b09851384cc8d7a334304aa2d2c953e392e4e263f87d73a777e962d2ab"
+    },
+    {
+      "path": "sol-calibration-review/swarm-20261010-2154/float-normal-core/digit_pairs.bin",
+      "sha256": "bedfbc17dfedc3a783c817da8b2eec13baff8e36c4e6a61c346332973895315a"
+    },
+    {
+      "path": "sol-calibration-review/swarm-20261010-2154/float-normal-core/trim_count.bin",
+      "sha256": "b779fa9092319af0468210e34198f5073d7b30813fa18bc2ec557d2e7a41fcdf"
+    }
+  ],
+  "contracts": [
+    {
+      "path": "sol-calibration-review/swarm-20261010-2154/float-normal-core/WORD-CONTRACT.md",
+      "sha256": "38bb94e8ee259f6f6fc3fe8c6b5adb6af6a548b1622796133577de53dbed98f6"
+    },
+    {
+      "path": "sol-calibration-review/swarm-20261010-2154/float-normal-core/REPORT.md",
+      "sha256": "3c5aae5fbc43fa6f107a9e55911100550cc25a47692a90a50798ed9f34e34161"
+    },
+    {
+      "path": "sol-calibration-review/swarm-20261010-2154/float-normal-core/ARTIFACT-IDENTITIES.json",
+      "sha256": "9e678acf3571cce51d220ef16e85ec3f1c6894b81b99ff38e07d7681c5c1a50f"
+    },
+    {
+      "path": "sol-review/swarm-20261010-2154/number-format-contract/PROPOSED-CONTRACT-R1.md",
+      "sha256": "b29841962cb092792daf33818967fe52ca30e98c30778ac7882535bafe14d5c5"
+    },
+    {
+      "path": "sol-reviewer-review/swarm-20261010-2154/float-normal-core-review/REVIEW.md",
+      "sha256": "ad9c3ef56b396b30c9cab1d07fbfa6f7b285ddf82f636b10cced9c56ad5ea90d"
+    },
+    {
+      "path": "sol-reviewer-review/swarm-20261010-2154/number-format-r1/REVIEW.md",
+      "sha256": "6262062c7f94ec4e260ebb38f1595bd8d6beb3eec211095d2bc10e120684db57"
+    }
+  ],
+  "reviews": [
+    703,
+    727
+  ],
+  "grant": 746,
+  "limits": "Static source equations and native independent policy; no vendor execution/ABI/scratch/Windows/full parity or universal shortest theorem."
+}

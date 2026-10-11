@@ -1,0 +1,406 @@
+{
+  "authority": "Proposed independent native error/limit/output ownership policy, not vendor behavior.",
+  "failure_output_policy": "Caller destination and borrowed input unchanged on all errors; success changes exactly returned prefix.",
+  "cases": [
+    {
+      "bits": "0000000000000000",
+      "max_output_bytes": 64,
+      "destination_bytes": 3,
+      "expected": {
+        "bytes": "0.0",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "0000000000000000",
+      "max_output_bytes": 3,
+      "destination_bytes": 6,
+      "expected": {
+        "bytes": "0.0",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "0000000000000000",
+      "max_output_bytes": 2,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 2,
+        "required": 3
+      }
+    },
+    {
+      "bits": "0000000000000000",
+      "max_output_bytes": 3,
+      "destination_bytes": 2,
+      "expected": {
+        "error": "BufferTooSmall",
+        "available": 2,
+        "required": 3
+      }
+    },
+    {
+      "bits": "0000000000000000",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 0,
+        "required": 3
+      }
+    },
+    {
+      "bits": "0000000000000000",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "8000000000000000",
+      "max_output_bytes": 64,
+      "destination_bytes": 4,
+      "expected": {
+        "bytes": "-0.0",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "8000000000000000",
+      "max_output_bytes": 4,
+      "destination_bytes": 7,
+      "expected": {
+        "bytes": "-0.0",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "8000000000000000",
+      "max_output_bytes": 3,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 3,
+        "required": 4
+      }
+    },
+    {
+      "bits": "8000000000000000",
+      "max_output_bytes": 4,
+      "destination_bytes": 3,
+      "expected": {
+        "error": "BufferTooSmall",
+        "available": 3,
+        "required": 4
+      }
+    },
+    {
+      "bits": "8000000000000000",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 0,
+        "required": 4
+      }
+    },
+    {
+      "bits": "8000000000000000",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "3fb999999999999a",
+      "max_output_bytes": 64,
+      "destination_bytes": 3,
+      "expected": {
+        "bytes": "0.1",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "3fb999999999999a",
+      "max_output_bytes": 3,
+      "destination_bytes": 6,
+      "expected": {
+        "bytes": "0.1",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "3fb999999999999a",
+      "max_output_bytes": 2,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 2,
+        "required": 3
+      }
+    },
+    {
+      "bits": "3fb999999999999a",
+      "max_output_bytes": 3,
+      "destination_bytes": 2,
+      "expected": {
+        "error": "BufferTooSmall",
+        "available": 2,
+        "required": 3
+      }
+    },
+    {
+      "bits": "3fb999999999999a",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 0,
+        "required": 3
+      }
+    },
+    {
+      "bits": "3fb999999999999a",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "bfb999999999999a",
+      "max_output_bytes": 64,
+      "destination_bytes": 4,
+      "expected": {
+        "bytes": "-0.1",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "bfb999999999999a",
+      "max_output_bytes": 4,
+      "destination_bytes": 7,
+      "expected": {
+        "bytes": "-0.1",
+        "suffix_unchanged": true
+      }
+    },
+    {
+      "bits": "bfb999999999999a",
+      "max_output_bytes": 3,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 3,
+        "required": 4
+      }
+    },
+    {
+      "bits": "bfb999999999999a",
+      "max_output_bytes": 4,
+      "destination_bytes": 3,
+      "expected": {
+        "error": "BufferTooSmall",
+        "available": 3,
+        "required": 4
+      }
+    },
+    {
+      "bits": "bfb999999999999a",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "OutputLimit",
+        "limit": 0,
+        "required": 4
+      }
+    },
+    {
+      "bits": "bfb999999999999a",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "7ff0000000000000",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "7ff0000000000000"
+      }
+    },
+    {
+      "bits": "7ff0000000000000",
+      "max_output_bytes": 64,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "7ff0000000000000"
+      }
+    },
+    {
+      "bits": "7ff0000000000000",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "fff0000000000000",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "fff0000000000000"
+      }
+    },
+    {
+      "bits": "fff0000000000000",
+      "max_output_bytes": 64,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "fff0000000000000"
+      }
+    },
+    {
+      "bits": "fff0000000000000",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "7ff8000000000000",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "7ff8000000000000"
+      }
+    },
+    {
+      "bits": "7ff8000000000000",
+      "max_output_bytes": 64,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "7ff8000000000000"
+      }
+    },
+    {
+      "bits": "7ff8000000000000",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "fff8000000000001",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "fff8000000000001"
+      }
+    },
+    {
+      "bits": "fff8000000000001",
+      "max_output_bytes": 64,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "fff8000000000001"
+      }
+    },
+    {
+      "bits": "fff8000000000001",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "7ff0000000000001",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "7ff0000000000001"
+      }
+    },
+    {
+      "bits": "7ff0000000000001",
+      "max_output_bytes": 64,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "7ff0000000000001"
+      }
+    },
+    {
+      "bits": "7ff0000000000001",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    },
+    {
+      "bits": "fff0000000000001",
+      "max_output_bytes": 0,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "fff0000000000001"
+      }
+    },
+    {
+      "bits": "fff0000000000001",
+      "max_output_bytes": 64,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "NonFinite",
+        "bits": "fff0000000000001"
+      }
+    },
+    {
+      "bits": "fff0000000000001",
+      "max_output_bytes": 65,
+      "destination_bytes": 0,
+      "expected": {
+        "error": "InvalidLimit",
+        "provided": 65,
+        "maximum": 64
+      }
+    }
+  ]
+}

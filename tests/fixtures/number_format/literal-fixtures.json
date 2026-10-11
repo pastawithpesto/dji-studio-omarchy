@@ -1,0 +1,317 @@
+{
+  "authority": "52 independently defined mathematical/source-model fixtures, not vendor execution or Windows recordings. No peer script executed.",
+  "fixtures": [
+    {
+      "bits": "0000000000000000",
+      "expected": "0.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "8000000000000000",
+      "expected": "-0.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3fb999999999999a",
+      "expected": "0.1",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "bfb999999999999a",
+      "expected": "-0.1",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3fc0000000000000",
+      "expected": "0.125",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "bfc0000000000000",
+      "expected": "-0.125",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3fe0000000000000",
+      "expected": "0.5",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "bfe0000000000000",
+      "expected": "-0.5",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3ff0000000000000",
+      "expected": "1.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "bff0000000000000",
+      "expected": "-1.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3ff8000000000000",
+      "expected": "1.5",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "bff8000000000000",
+      "expected": "-1.5",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "4004000000000000",
+      "expected": "2.5",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "c004000000000000",
+      "expected": "-2.5",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "4024000000000000",
+      "expected": "10.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "c024000000000000",
+      "expected": "-10.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "4059000000000000",
+      "expected": "100.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "408f400000000000",
+      "expected": "1000.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "433fffffffffffff",
+      "expected": "9007199254740991.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "4340000000000000",
+      "expected": "9007199254740992.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3eb0c6f7a0b5ed8d",
+      "expected": "0.000001",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "beb0c6f7a0b5ed8d",
+      "expected": "-0.000001",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3e7ad7f29abcaf48",
+      "expected": "1e-7",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "be7ad7f29abcaf48",
+      "expected": "-1e-7",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "4415af1d78b58c40",
+      "expected": "100000000000000000000.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "c415af1d78b58c40",
+      "expected": "-100000000000000000000.0",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "444b1ae4d6e2ef50",
+      "expected": "1e21",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "c44b1ae4d6e2ef50",
+      "expected": "-1e21",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "54b249ad2594c37d",
+      "expected": "1e100",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "d4b249ad2594c37d",
+      "expected": "-1e100",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "2b2bff2ee48e0530",
+      "expected": "1e-100",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "ab2bff2ee48e0530",
+      "expected": "-1e-100",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "3ff3c0ca428c59fb",
+      "expected": "1.2345678901234567",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "bff3c0ca428c59fb",
+      "expected": "-1.2345678901234567",
+      "origin": "619 frozen-literals.json",
+      "basis": "Hand-written literal; input rounded from its exact rational value independently of formatter."
+    },
+    {
+      "bits": "0000000000000001",
+      "expected": "5e-324",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "8000000000000001",
+      "expected": "-5e-324",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "0000000000000002",
+      "expected": "1e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "8000000000000002",
+      "expected": "-1e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "0000000000000003",
+      "expected": "1.5e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "8000000000000003",
+      "expected": "-1.5e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "0000000000000004",
+      "expected": "2e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "8000000000000004",
+      "expected": "-2e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "000000000000000a",
+      "expected": "5e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "800000000000000a",
+      "expected": "-5e-323",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "000fffffffffffff",
+      "expected": "2.225073858507201e-308",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "800fffffffffffff",
+      "expected": "-2.225073858507201e-308",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "0010000000000000",
+      "expected": "2.2250738585072014e-308",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "8010000000000000",
+      "expected": "-2.2250738585072014e-308",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "7fefffffffffffff",
+      "expected": "1.7976931348623157e308",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "ffefffffffffffff",
+      "expected": "-1.7976931348623157e308",
+      "origin": "619 frozen-literals.json",
+      "basis": "Frozen IEEE boundary/minimum literal, independently rational-checked; not a Windows fixture."
+    },
+    {
+      "bits": "3e60000000000000",
+      "expected": "2.9802322387695312e-8",
+      "origin": "619 tie-literal-validation.json",
+      "basis": "Supplemental explicit exact nearest-even tie, frozen later than original 50."
+    },
+    {
+      "bits": "be60000000000000",
+      "expected": "-2.9802322387695312e-8",
+      "origin": "619 tie-literal-validation.json",
+      "basis": "Supplemental explicit exact nearest-even tie, frozen later than original 50."
+    }
+  ]
+}
