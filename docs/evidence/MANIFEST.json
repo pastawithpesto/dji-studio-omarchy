@@ -1,0 +1,62 @@
+[
+  {
+    "source_workspace_path": "sol-ui-independent-review/ui-parity-20261011/resource-repair-review/RESOURCE-REVIEW.md",
+    "repository_path": "docs/evidence/records/sol-ui-independent-review/ui-parity-20261011/resource-repair-review/RESOURCE-REVIEW.md",
+    "sha256": "db16f4f2c7b9958678506457502d0568ddab2b008f69cd76834476649630a385",
+    "bytes": 6952
+  },
+  {
+    "source_workspace_path": "astra-review/ui-parity-20261011/resource-final-milestone/CODE-REVIEW.md",
+    "repository_path": "docs/evidence/records/astra-review/ui-parity-20261011/resource-final-milestone/CODE-REVIEW.md",
+    "sha256": "8bafcccc75b80736f8cc5b1199ebc0cc2f9c2f817ec8c12d074a35c766dcef26",
+    "bytes": 4412
+  },
+  {
+    "source_workspace_path": "astra-review/ui-parity-20261011/resource-final-milestone/INTEGRATION-VERIFICATION.json",
+    "repository_path": "docs/evidence/records/astra-review/ui-parity-20261011/resource-final-milestone/INTEGRATION-VERIFICATION.json",
+    "sha256": "b84e13814f6a0a5a0ba61343f1ecc442c5956a371a7fa4abdcfb982eff59792f",
+    "bytes": 943
+  },
+  {
+    "source_workspace_path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/REPORT.md",
+    "repository_path": "docs/evidence/records/luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/REPORT.md",
+    "sha256": "3778678eed1c923c2acbb44cf1af9aefe5eca1197e5fb2c9e58ddf3b6b3fc00f",
+    "bytes": 7077
+  },
+  {
+    "source_workspace_path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/SEAL.json",
+    "repository_path": "docs/evidence/records/luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/SEAL.json",
+    "sha256": "5f301fa530d3f2377f473ec14aebf98924fb3210104b28464404ad27c9a62e02",
+    "bytes": 3280
+  },
+  {
+    "source_workspace_path": "sol-ui-independent-review/ui-parity-20261011/strings-export-final-review/STRINGS-REVIEW.md",
+    "repository_path": "docs/evidence/records/sol-ui-independent-review/ui-parity-20261011/strings-export-final-review/STRINGS-REVIEW.md",
+    "sha256": "227fec8e5b8c3bd0d763e95772cca590cf465e335bcfbedec97d5fd34a5f6dc0",
+    "bytes": 7805
+  },
+  {
+    "source_workspace_path": "sol-ui-independent-review/ui-parity-20261011/strings-export-final-review/EXPORT-REVIEW.md",
+    "repository_path": "docs/evidence/records/sol-ui-independent-review/ui-parity-20261011/strings-export-final-review/EXPORT-REVIEW.md",
+    "sha256": "7d0c3c2e1a1b90dc330c3a697a6d674039e8e756c95b15d08b96b2a1f6e22b11",
+    "bytes": 7005
+  },
+  {
+    "source_workspace_path": "luna-review/luna-b-3/ui-parity-20261011/fpsdetect-original-bytes/REPORT.md",
+    "repository_path": "docs/evidence/records/luna-review/luna-b-3/ui-parity-20261011/fpsdetect-original-bytes/REPORT.md",
+    "sha256": "45f21d7068ea30559c5e88c5f63c890fa4db382b8b1af0bdcf85b4dbec8ad4c6",
+    "bytes": 9512
+  },
+  {
+    "source_workspace_path": "luna-review/luna-b-3/ui-parity-20261011/projectstate-native-behavior/REPORT.md",
+    "repository_path": "docs/evidence/records/luna-review/luna-b-3/ui-parity-20261011/projectstate-native-behavior/REPORT.md",
+    "sha256": "9beb7c35d68e159fc7079e782e4bb89b69e28b88c19f6182bcc9ac2d3ec27daf",
+    "bytes": 9427
+  },
+  {
+    "source_workspace_path": "sol-ui-independent-review/ui-parity-20261011/structure-correction-review/REPORT.md",
+    "repository_path": "docs/evidence/records/sol-ui-independent-review/ui-parity-20261011/structure-correction-review/REPORT.md",
+    "sha256": "c63e855ab9c6cee095af298f5912a119eb49a96c29e8020a5fddbc84a0ea5724",
+    "bytes": 12919
+  }
+]

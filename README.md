@@ -1,42 +1,43 @@
-# Native Rust implementation
+# DJI Studio native reconstruction
 
-Early implementation, not full DJI Studio parity.
+Private research and native Linux implementation for DJI Studio 1.0.0.30839.
+The application is experimental. Full UI and processing parity are incomplete.
 
-`cargo build` builds the `dji-reframe` CLI. `dji-reframe INPUT OUTPUT [YAW PITCH HFOV]` projects already stitched equirectangular video via installed FFmpeg v360. It refuses existing output files. Input and output paths remain OS-native, including valid non-UTF-8 Unix filenames; flags, encoder tags and angles require UTF-8 and report ordinary CLI errors otherwise. Raw dual-lens stitching, stabilization and a GUI remain unimplemented.
+Read [status](docs/STATUS.md), [research instructions](docs/RESEARCH.md), and
+[contribution rules](CONTRIBUTING.md) before you start.
 
-The FFmpeg backend, flat projection, 1920x1080 output, yaw/pitch/HFOV defaults of 0/0/90, angle limits, horizontal-to-vertical pinhole FOV relation, H.264/libx264 with CRF 20, yuv420p, optional AAC audio and faststart are independent prototype design choices. They are not recovered DJI settings or evidence of vendor parity. Astra's review (`astra-review/communication-code-review/REVIEW.md`, R4) leaves projection orientation, rendered pixels, codec quality and hardware selection unverified. The prior historical synthetic-export claim had no linked fixture, command or FFmpeg identity and is not treated as validation evidence.
+## Reserve work first
 
-The timeline library implements positive constant-speed mapping with nonzero trim/timeline offsets and rational frame alignment from `astra-review/REPORT.md`. Signed halfway rounding and fractional-frame boundary tests pass. Curve interpolation and caller policy for reverse/zero speed remain unresolved. `align_duration_us` deliberately returns `Err(InvalidFrameRate)` for nonpositive FPS and accepts i64 FPS inputs; these are independent API policies. The pinned Windows build 1.0.0.30839 `nle_core.dll` (SHA-256 `3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1`) uses signed 32-bit FPS values and returns zero through JLE branches at `0x1800f82d4`/`0x1800f82dd` to `0x1800f831a`. Source: `astra-review/nle-duration-alignment-assembly.json`, REA `ev_6dbb2d987fe9a7fff6f6e6aeef72db3ac5b69e4b2ac1fc0b58e7f5fe1e1f60d5`. Checked wider arithmetic rejects overflow; equivalence is limited to ordinary positive representable rates and nonoverflowing vendor arithmetic. No real-camera behavioral equivalence has been validated.
+Open a draft PR before implementation. State the owner, task, and file scope.
+Read all open PRs immediately. Do not start work on a scope that another PR owns.
+The PR watchdog checks declared scopes when PRs change.
 
-`cargo test` runs the time-domain boundary checks and Unix CLI integration regressions. The CLI tests inspect a real non-UTF-8 pathname and use an isolated mock FFmpeg to verify exact input/output argument bytes and existing command defaults. These synthetic pathname/command checks validate native CLI handling only; they do not decode/export media or establish Windows, projection or codec parity.
+## Build
 
-`dji-reframe --metadata INPUT` experimentally inspects an unchanged local regular
-file with `/usr/bin/ffprobe`, using its `-data_dump_format base64` capability.
-It reports the exact format encoder, first up to two detected djmd/xtmd tracks,
-stream index/ID/tag/timebase, packet PTS/DTS/source position and decode status.
-The library `metadata::demux::inspect_direct` retains complete original packet
-bytes with successful or failed descriptor decoding. It supports the exact
-oqb101/wab530 registry dispatch; other encoders remain explicit outcomes. It
-performs no timestamp/axis conversion or cross-track synchronization. Additional
-matching tracks are reported as excess; camd-only nested import is unsupported.
-`--inspect` remains a top-level nested-container extent scanner; `--encoder`
-performs exact registry lookup.
+The CLI requires Rust with edition 2024 support. Media operations require FFmpeg.
+Metadata inspection requires FFprobe with base64 data output support.
 
-The probe transport, checked limits and error policies are native design under
-`sol-review/resumed-demux-20261010/CONTRACT.md` (Astra contract98), using recovered
-VinceEditor.dll1.0.0.30839 loader0x18034c3d0 and whole-packet forwarding
-0x18034cb36–0x18034cb42 (SHA2569450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42).
-CLI limits are64MiB stdout,64KiB stderr,256streams,10000packets/track,
-16MiB/packet,64MiB total packet bytes and30seconds/probe; callers may supply
-different limits. The library bounds both subprocess pipes before JSON parsing,
-reaps its direct child on failure, preserves OS path bytes, and detects ordinary
-source changes between probes. The identity checks are not an immutable snapshot
-and wire/output limits are not an exact decoded-memory maximum.
+```sh
+cargo build
+cargo test
+cargo run -- INPUT OUTPUT
+```
 
-The demux tests require installed FFprobe with base64 support and Python3. Twelve
-independent synthetic BMFF carriers are pinned in `tests/fixtures/demux/`, with
-matching one-track encoder/schema cases, selection and exact signed timing
-oracles. Mock probes cover malformed transport, resource limits, child cleanup
-and source changes. Mixed-schema carriers test transport only, since a shared
-global encoder still dispatches all packets. Camera files, the Windows reference,
-nested formats and DJI assembled conversion remain unverified.
+The CLI projects video that is already stitched. The output path must not exist.
+The GUI requires CMake 3.24 or later, Python 3, and Qt 6.11.2 with Core, Gui, Qml,
+Quick, QuickControls2, Multimedia, Svg, and Test modules.
+Use a new output directory for each build.
+
+```sh
+python3 gui/build.py --output /absolute/path/to/new-build
+/absolute/path/to/new-build/bundle/native-stitched-flow
+```
+
+See [GUI build details](gui/README.md). Historical validation in that file does
+not establish full parity. Current status is in [STATUS.md](docs/STATUS.md).
+
+## Repository language
+
+Write instructions, issues, PRs, and comments in concise technical English.
+Use short sentences. Do not use em dashes. Preserve exact original reference
+strings and binary data, including other languages. Do not translate evidence.

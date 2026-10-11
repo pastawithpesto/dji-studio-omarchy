@@ -1,0 +1,22 @@
+{
+  "decision": "VERIFIED SUBSET exact final source integration",
+  "root_message": 1281,
+  "source": {
+    "before": "98d6b6ea019cec6e8dc2940de1cba8f601b110d1",
+    "after": "9e021a401f94e5465f14885ae9b4b50fa1182583",
+    "canonical": "native"
+  },
+  "root_artifact": {
+    "path": "reconstruction/ui-parity-20261011/INTEGRATION.json",
+    "sha256": "de7b24cb211f726efcddfd5b35a66b4a60483d5529185342b6d759da1b3177ee",
+    "bytes": 931
+  },
+  "tracked_files_reopened": 2316,
+  "unchanged_base_files": 1735,
+  "added_gui_original_files": 581,
+  "disk_git_blob_mode_all_match": true,
+  "canonical_clean": true,
+  "source_manifest_sha256": "205465cb477182f27cb439d0c608c6ce516ec59012bb37bf8c79e9b11867ee00",
+  "resource_aliases": 577,
+  "limits": "Exact source-state corroboration only. No launch, runtime/window/PID observation, UI wiring/backend behavior/Windows/parity claim. Root runtime_ui statement is not independently tested by Astra."
+}

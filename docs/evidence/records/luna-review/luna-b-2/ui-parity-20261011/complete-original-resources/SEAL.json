@@ -1,0 +1,67 @@
+{
+  "schema": "luna-complete-original-resources-seal-v1",
+  "branch": "luna-b-2/complete-original-resources-20261011",
+  "base_commit": "9e021a401f94e5465f14885ae9b4b50fa1182583",
+  "source_commit": "632efe2a3e63296f30a980606d424284d8876a3c",
+  "worktree_clean": true,
+  "source_scope": "Only gui/original/** differs from base; 1,249 aliases/payloads added, existing 577 payloads preserved.",
+  "source_artifact_manifest": {
+    "path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/SOURCE-ARTIFACT-MANIFEST.json",
+    "bytes": 643856,
+    "sha256": "aafd2ecda95f14e6962d10246ad527b4c96e6d61a037eca2fb24dfd68c4c1501"
+  },
+  "report_artifact_manifest": {
+    "path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/REPORT-ARTIFACT-MANIFEST.json",
+    "bytes": 65655,
+    "sha256": "f0137e55f4666b04405f835263534c3df814f881a4115e5a1f3b60489097c38b"
+  },
+  "source_verification": {
+    "path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/source-verification.json",
+    "bytes": 1192276,
+    "sha256": "75bbd57413c65b41ad0f1e6161bfa9280c789279c18a0534b625b14322b94ec7"
+  },
+  "resource_checks": {
+    "path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/RESOURCE-CHECKS.json",
+    "bytes": 586939,
+    "sha256": "723ba320c885e4a1a423e20a7b2aa15a1bc1b6ea0efa7d5cde79a506d6bd382a"
+  },
+  "rcc_output": {
+    "path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/compiled-original.rcc",
+    "bytes": 15588458,
+    "sha256": "210385d7d5888146c6587d341297c5eb43679bbb9d11881951f7a9830186d5b9"
+  },
+  "report": {
+    "path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/REPORT.md",
+    "bytes": 7077,
+    "sha256": "3778678eed1c923c2acbb44cf1af9aefe5eca1197e5fb2c9e58ddf3b6b3fc00f"
+  },
+  "failed_probe_history": {
+    "path": "luna-review/luna-b-2/ui-parity-20261011/complete-original-resources/FAILED-PROBES.json",
+    "bytes": 3553,
+    "sha256": "1a95fdf6f1c5ceeed0141b29d3170f813fa9f5e8d9476772b78a91df80bdf6ed"
+  },
+  "authored_source_files": [
+    {
+      "path": "source-worktrees/luna-b-2-complete-original-resources-20261011/gui/original/OriginalResources.cmake",
+      "bytes": 3303,
+      "sha256": "51593764b44c8e823ece0a9e8e561028133ea2fac95e1a06622793536e0e2208"
+    },
+    {
+      "path": "source-worktrees/luna-b-2-complete-original-resources-20261011/gui/original/README.md",
+      "bytes": 3359,
+      "sha256": "7547a2e772c9014c696e12a7a8030ff84cf2d17d7b2e8c834f312a137b40388f"
+    },
+    {
+      "path": "source-worktrees/luna-b-2-complete-original-resources-20261011/gui/original/original.qrc",
+      "bytes": 217599,
+      "sha256": "071f5d7bbc119de70b64348adcc88080b64c970276a6a7547ce03c9328fd9570"
+    },
+    {
+      "path": "source-worktrees/luna-b-2-complete-original-resources-20261011/gui/original/source-provenance.json",
+      "bytes": 1426876,
+      "sha256": "8b06fb7b4620169733be30df38b793ba97447278a6e1ce32b8cd937f8a0eb1d6"
+    }
+  ],
+  "review_state": "Sol independent code review and Astra additional gate requested after immutable handoff; no self-approval.",
+  "limitations": "Resource byte/alias identity and bounded CMake/rcc validation only; no application build/runtime/QML closure/UI UX/Windows parity."
+}
