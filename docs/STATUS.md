@@ -1,31 +1,39 @@
-# Status at private handoff
+# Current status
 
-Reviewed source baseline: `9e021a401f94e5465f14885ae9b4b50fa1182583`.
-The handoff adds documentation and a PR watchdog. It does not change application behavior.
+The repository is public. PR 1 integrated the complete original resource bundle at
+`6f3dc07208bc2dc8026730cebacc2c9aa93af1db` after independent Sol High review and
+Astra High verification. All 3,585 tracked files match the approved integration tree.
 
 | Area | State | Next work |
 | --- | --- | --- |
 | Native CLI and experimental Qt GUI | Implemented in bounded parts | Compare with the pinned Windows build and original media |
-| Original resource subset | 577 aliases integrated and reviewed | Reuse the complete bundle branch |
-| Complete original resource bundle | 1,826 aliases authored, not independently approved | Review and integrate the existing change |
-| Original QML inventory | 410 QML aliases recovered | Resolve native controllers and runtime dependencies |
+| Complete original resource bundle | 1,826 aliases integrated and reviewed; 577 baseline payloads unchanged | Reuse the bundle, do not repeat extraction |
+| Original QML inventory | 410 QML aliases recovered | Recover missing native registrations and controllers |
 | Original locale catalog | 1,980 keys, 16 locale IDs, 30,537 values recovered | Verify runtime string selection and UI behavior |
-| String scan and export settings reports | Independent Sol source review complete | Obtain Astra milestone verification |
-| ProjectStateController and FpsDetect | New static findings, not reviewed | Verify native behavior claims before implementation |
-| Layout report | Corrections required | Fix the reported source citations and scope claims |
-| Full UI, DLL behavior, project compatibility, processing | Incomplete | Continue evidence-based implementation and reference tests |
+| Original Main startup and layout | New static reports under independent review | Resolve the missing native module API contracts |
+| Native controller behavior | Partial static findings | Review each bounded contract before implementation |
+| Full UI, DLL behavior, project compatibility, processing | Incomplete | Continue evidence-based implementation and reference comparisons |
 
-The complete bundle source is commit `632efe2a3e63296f30a980606d424284d8876a3c`
-on branch `research/complete-original-resources`. Its original author is Luna B2.
-Do not extract or author this bundle again. Use its task PR for review and integration.
-The original 577 payloads are preserved. Resource recovery does not make the
-original UI executable.
+The current GUI loads the experimental `NativeStitchedFlow.qml` entry. The complete
+resource bundle does not establish successful loading of original `Main.qml`.
+Resource preservation and runtime equivalence are separate results.
+
+## PR monitoring
+
+Hosted manual checks pass. Automatic PR event runs remain unverified. PR 2 reserves
+the trigger correction and must stay in draft until its automatic-run gate passes.
+A local read-only watchdog v2 is under independent Sol review after a delivery retry
+repair. No continuously running monitor is claimed at this checkpoint. Read open
+PR claims before edits and pushes; use a manual hosted check when needed.
+
+## Validation limits
 
 Historical validation includes 184 bounded backend tests and 19 headed GUI cases.
-These results apply to the recorded source and fixtures. They do not establish full
-vendor equivalence. No feature has a complete Windows reference comparison.
-There is no supported percentage for full reverse engineering or full implementation.
+These results apply to their recorded source and fixtures. No feature has a complete
+Windows reference comparison. There is no supported percentage for full reverse
+engineering or full implementation.
 
-Worker names in historical reports identify authors. They do not prove that an
-agent is currently running. Check the current PR owner and latest progress comment.
-See [evidence index](evidence/INDEX.md) for the included review records and limits.
+Worker names identify authors, not current running processes. See PR 3 for active
+task ownership and progress. See [resource review records](evidence/next-wave/README.md)
+for the newly approved resource scope and [historical evidence](evidence/INDEX.md)
+for earlier records. The complete local evidence archive is not included.

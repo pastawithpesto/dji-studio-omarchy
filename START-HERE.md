@@ -3,7 +3,7 @@
 This is the current entry document. README.md is a frozen historical build input.
 Its early status text is superseded by this document and docs/STATUS.md.
 
-Private research and native Linux implementation for DJI Studio 1.0.0.30839.
+Research and native Linux implementation for DJI Studio 1.0.0.30839.
 The application is experimental. Full UI and processing parity are incomplete.
 
 Read [status](docs/STATUS.md), [research instructions](docs/RESEARCH.md), and
@@ -13,7 +13,8 @@ Read [status](docs/STATUS.md), [research instructions](docs/RESEARCH.md), and
 
 Open a draft PR before implementation. State the owner, task, and file scope.
 Read all open PRs immediately. Do not start work on a scope that another PR owns.
-The PR watchdog checks declared scopes when PRs change.
+The hosted PR watchdog passes manual checks. Automatic PR events are not yet verified.
+Read the current monitoring status in docs/STATUS.md.
 
 ## Build
 

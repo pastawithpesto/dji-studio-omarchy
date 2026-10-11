@@ -2,7 +2,9 @@
 
 Owner: @pastawithpesto
 
-Reserve `docs/evidence/next-wave/**` and this task file for reviewed handoff records.
+Reserve `docs/evidence/next-wave/**`, this task file, `START-HERE.md`,
+`CONTRIBUTING.md`, `docs/STATUS.md`, and `docs/RESEARCH.md` for reviewed handoff
+records and current public status.
 Local work uses separate directories in the original project workspace.
 
 | Worker | Task | Local output |
@@ -22,3 +24,14 @@ Root records shared progress in the PR. Do not repeat completed resource extract
 Keep PR 1 as the resource integration reservation. Keep PR 2 as the hosted trigger
 fix reservation. This PR claims new handoff records, not those implementation files.
 Require independent Sol review and Astra High verification before a new milestone.
+
+## Current continuation
+
+PR 1 is merged after Sol and Astra approval. The exact reports are included in
+`docs/evidence/next-wave`. Do not repeat resource extraction.
+
+Two Sol High workers are reviewing watchdog v2 and the completed startup/layout
+reports. Luna High is recovering missing Main native registration records in
+`luna-review/luna-a-2/next-wave/main-registration`. This uses existing saved
+RAE/Ghidra evidence and pinned original bytes. GLM availability remains quota
+limited at the latest UI observation. These tasks use separate local output paths.

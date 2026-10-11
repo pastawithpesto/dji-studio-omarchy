@@ -30,8 +30,9 @@ It also checks changed and renamed files against the declared scope.
 
 ## PR watchdog
 
-The GitHub Actions workflow starts on PR creation, edits, commits, reopening,
-closure, and draft state changes. It reads all open PR claims. It reports invalid
+The GitHub Actions workflow is configured for PR creation, edits, commits, reopening,
+closure, and draft state changes. Automatic event execution remains unverified.
+Manual runs pass. It reads all open PR claims. It reports invalid
 claims, overlapping scopes, and changes outside the claimed scope. A manual run
 is also available in Actions. Queue delays can occur. This is a conflict detector,
 not a file lock or a substitute for reading the PR.

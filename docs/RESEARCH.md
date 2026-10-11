@@ -22,7 +22,7 @@ Do not assume that another computer has the same RAE service.
 | VinceEditor.dll | `9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42` |
 | nle_core.dll | `3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1` |
 
-The private repository contains source, recovered resources, fixtures, and selected
+The public repository contains source, recovered resources, fixtures, and selected
 handoff records. Original executables, DLLs, full Ghidra projects, models, and the
 complete local evidence archive are not included. Request a required artifact from
 the maintainer by path and SHA-256 before you repeat analysis. Some historical
