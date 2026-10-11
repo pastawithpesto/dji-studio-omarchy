@@ -359,6 +359,106 @@ class Runtime(unittest.TestCase):
             code,state,h=self.invoke(directory)
             self.assertEqual((code,state['failure_count'],h['next_attempt_seconds']),(0,0,30))
 
+    def test_nonobject_combined_http200_persists_retry_heartbeat_and_recovers(self):
+        actual_get = W.GitHub.get
+        for value in [None, [], [1], 'unexpected', 7, True]:
+            with self.subTest(value=value),tempfile.TemporaryDirectory() as d:
+                class Malformed(Fake):
+                    def get(self,path):
+                        if path.startswith('/commits/') and '/status?' in path:
+                            return actual_get(self,path)
+                        return super().get(path)
+                api=Malformed()
+                response=Transport().response(body=value)
+                with patch.object(W.subprocess,'run',return_value=response):
+                    code,state,h=self.invoke(Path(d),api=api)
+                self.assertEqual(code,2);self.assertEqual(state['failure_count'],1)
+                self.assertEqual(h['error'],'Combined status response must be an object')
+                self.assertEqual(h['next_attempt_seconds'],30);self.assertIsNone(h['result'])
+                self.assertNotIn('merge_intent',state);self.assertEqual(api.merges,[])
+                self.assertFalse((Path(d)/'events.jsonl').exists())
+                self.assertEqual(api.records[-1]['method'],'GET')
+                code,state,h=self.invoke(Path(d))
+                self.assertEqual((code,state['failure_count']),(0,0))
+                self.assertIsNone(h['error']);self.assertEqual(h['result']['action'],'eligible-dry-run')
+
+    def test_nonobject_merge_http200_intent_retry_restart_and_no_reissue(self):
+        actual_merge = W.GitHub.merge
+        for value in [None, [], [1], 'unexpected', 7, True]:
+            with self.subTest(value=value),tempfile.TemporaryDirectory() as d:
+                class Malformed(Fake):
+                    def merge(self,number,head):
+                        # Use the real constrained PUT transport under a subprocess mock.
+                        self.merges.append((number,head))
+                        return actual_merge(self,number,head)
+                api=Malformed(True);directory=Path(d)
+                with patch.object(W.subprocess,'run',return_value=Transport().response(body=value)) as run:
+                    code,state,h=self.invoke(directory,True,api)
+                self.assertEqual(code,2);self.assertEqual(api.merges,[(1,HEAD)])
+                self.assertEqual(run.call_count,1)
+                self.assertEqual(json.loads(run.call_args.kwargs['input']),{'sha':HEAD,'merge_method':'merge'})
+                self.assertEqual(state['merge_intent']['head'],HEAD)
+                self.assertEqual(h['merge_intent'],state['merge_intent'])
+                self.assertEqual((state['failure_count'],h['next_attempt_seconds']),(1,30))
+                self.assertEqual(h['error'],'Merge receipt must be an object; outcome uncertain')
+                self.assertFalse((directory/'events.jsonl').exists())
+                # Restart observes an open PR and must neither clear intent nor retry PUT.
+                restarted=Fake(True);code,state,h=self.invoke(directory,True,restarted)
+                self.assertEqual((code,state['failure_count'],h['next_attempt_seconds']),(2,2,60))
+                self.assertEqual(restarted.counts,{'/pulls/1':1});self.assertEqual(restarted.merges,[])
+                self.assertEqual(state['merge_intent']['head'],HEAD)
+                restarted.prs[1].update(state='closed',merged=True,merge_commit_sha='d'*40)
+                code,state,h=self.invoke(directory,True,restarted)
+                self.assertEqual(code,0);self.assertNotIn('merge_intent',state)
+                self.assertEqual(h['result']['action'],'reconciled-merge');self.assertEqual(restarted.merges,[])
+                self.assertEqual(state['failure_count'],0)
+
+    def test_malformed_object_merge_retains_intent(self):
+        for value in [{},{'merged':True,'sha':None},{'merged':False,'sha':'d'*40}]:
+            with self.subTest(value=value),tempfile.TemporaryDirectory() as d:
+                class Malformed(Fake):
+                    def merge(self,number,head):
+                        self.merges.append((number,head));return value
+                api=Malformed(True);code,state,h=self.invoke(Path(d),True,api)
+                self.assertEqual(code,2);self.assertEqual(api.merges,[(1,HEAD)])
+                self.assertEqual(h['error'],'Merge outcome uncertain');self.assertIn('merge_intent',state)
+
+    def test_programming_attribute_error_is_not_blanket_swallowed(self):
+        with tempfile.TemporaryDirectory() as d:
+            with self.assertRaises(AttributeError):
+                self.invoke(Path(d),evaluate=AttributeError('deliberate programming defect'))
+
+    def test_continuous_uncertain_receipt_heartbeats_no_second_put(self):
+        actual_merge=W.GitHub.merge
+        class Malformed(Fake):
+            def merge(self,number,head):
+                self.merges.append((number,head));return actual_merge(self,number,head)
+        first,second,third=Malformed(True),Fake(True),Fake(True)
+        third.prs[1].update(state='closed',merged=True,merge_commit_sha='d'*40)
+        handlers={};now=[1000];observations=[]
+        def register(signum,handler):handlers[signum]=handler
+        def sleep(seconds):now[0]+=seconds
+        def finish(name,count,page):handlers[W.signal.SIGTERM](None,None)
+        third.hook=finish
+        apis=iter([first,second,third])
+        def next_api(apply):observations.append(now[0]);return next(apis)
+        with tempfile.TemporaryDirectory() as d:
+            directory=Path(d);out=io.StringIO()
+            with patch.object(sys,'argv',['worker','--apply','--runtime',d]),patch.object(W,'GitHub',side_effect=next_api),patch.object(W.signal,'signal',side_effect=register),patch.object(W.time,'time',side_effect=lambda:now[0]),patch.object(W.time,'sleep',side_effect=sleep),patch.object(W.random,'uniform',return_value=0),patch.object(W.subprocess,'run',return_value=Transport().response(body=None)) as run,contextlib.redirect_stdout(out):
+                code=W.main()
+            beats=[json.loads(line) for line in out.getvalue().splitlines()]
+            self.assertEqual(code,0);self.assertEqual(observations,[1000,1030,1090])
+            self.assertEqual([h['attempts'] for h in beats],[1,2,3])
+            self.assertEqual([h['failure_count'] for h in beats],[1,2,0])
+            self.assertEqual([h['next_attempt_seconds'] for h in beats],[30,60,30])
+            self.assertTrue(all(h['mode']=='continuous' and h['apply'] is True for h in beats))
+            self.assertTrue(all(h['merge_intent'] for h in beats[:2]));self.assertIsNone(beats[2]['merge_intent'])
+            self.assertEqual(beats[2]['result']['action'],'reconciled-merge')
+            self.assertEqual(run.call_count,1);self.assertEqual(first.merges,[(1,HEAD)])
+            self.assertEqual(second.merges,[]);self.assertEqual(third.merges,[])
+            self.assertEqual(second.counts,{'/pulls/1':1});self.assertEqual(third.counts,{'/pulls/1':1})
+            self.assertTrue((directory/'stopped.json').exists())
+
     def test_uncertain_put_intent_survives_get403_and_no_remerge(self):
         with tempfile.TemporaryDirectory() as d:
             directory=Path(d)

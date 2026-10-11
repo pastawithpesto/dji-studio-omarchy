@@ -218,6 +218,7 @@ def reviews_allow(reviews, head):
 
 def checks(api, head):
     combined = api.get(f'/commits/{head}/status?per_page=100&page=1')
+    require(isinstance(combined, dict), 'Combined status response must be an object')
     require(combined.get('sha') == head and type(combined.get('total_count')) is int, 'Invalid combined status identity')
     statuses = api.pages(f'/commits/{head}/status', 10, 'statuses', head)
     require(len(statuses) == combined['total_count'], 'Status count race')
@@ -340,6 +341,7 @@ def evaluate(api, apply=False, intent=None):
             require(intent is not None, 'Durable merge intent required')
             intent(result)
             response = api.merge(int(number), result['head'])
+            require(isinstance(response, dict), 'Merge receipt must be an object; outcome uncertain')
             require(response.get('merged') is True and isinstance(response.get('sha'), str) and SHA.fullmatch(response['sha']), 'Merge outcome uncertain')
             result.update(action='merged', merge_sha=response['sha'])
         return result
