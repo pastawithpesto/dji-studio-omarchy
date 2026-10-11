@@ -24,4 +24,11 @@ Read START-HERE.md, CONTRIBUTING.md, docs/STATUS.md, and docs/RESEARCH.md first.
   separate. Compilation and synthetic tests do not prove vendor parity.
 - Mark a feature complete only after implementation, meaningful validation,
   independent review, Astra verification, and a reproducible Windows comparison.
-- Use concise technical English. Do not use em dashes. Keep original evidence exact.
+- Use ASD-STE100 Simplified Technical English for all new English text. Apply this
+  rule to chat, agent messages, documentation, PRs, issues, code comments, and
+  commit messages. Use the writing rules and dictionary in the
+  [official standard](https://www.asd-ste100.org/).
+- Use short, complete sentences and active voice. Put one instruction in each
+  sentence. Use the same technical term for the same item. Do not use em dashes.
+- Preserve exact evidence, source strings, code, paths, hashes, and addresses.
+  Do not rewrite reviewed records or translate original reference text.
