@@ -7,7 +7,7 @@
 /// Maximum request admitted by the unsigned guard at 0x180005d57.
 pub const MAX_BUCKET_REQUEST: u64 = 1 << 59;
 
-/// The count and mask calculated before the original bucket allocation.
+/// The scalar bucket count and mask. This type does not allocate memory.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub struct BucketLayout {
     pub count: u64,
