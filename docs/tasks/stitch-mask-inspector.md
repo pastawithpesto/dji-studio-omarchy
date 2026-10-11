@@ -28,3 +28,32 @@ Check all14 original masks against compressed-run histogram oracles.
 Run debug/release focused tests, formatting and Clippy.
 Request independent review of the exact tool and dependency identities.
 Keep the PR in draft. No merge or release is requested.
+
+## Build and use
+
+```sh
+rustc --edition=2024 -O tools/stitch_mask_inspect.rs -o target/stitch-mask-inspect
+target/stitch-mask-inspect FILE [MAX_DECODED_BYTES]
+```
+
+The command returns0 on success,2 for invalid arguments, and1 for input or
+output errors. Invalid masks report the decoder error kind and byte offset.
+
+## Validation
+
+Rust/Cargo1.98.1 on x86_64 Linux.
+
+- Debug CLI tests:6 passed,0 failed.
+- Release CLI tests:6 passed,0 failed.
+- All14 original input hashes and lengths match the fixture manifest.
+- Every original byte histogram matches an independent weighted-run calculation.
+- Original input bytes remain unchanged after inspection.
+- Tool and test Clippy checks pass with warnings denied.
+- Formatting and diff checks pass.
+
+The executable reports1920 by1920,18,779 encoded bytes and3,686,400 decoded
+bytes for102/mask_fisheye_master.bin. Byte0 occurs920,326 times.
+Byte255 occurs2,766,074 times. This example states raw byte counts only.
+The exact decoder source hash remains
+0a94d272bfffc318998f990e161f8ae12f957acdd92a001771c6d8f093a5b734.
+Independent tool and dependency code review remain pending.
