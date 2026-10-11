@@ -37,8 +37,9 @@ and a manifest under `docs/evidence/next-wave/window-position`. The full local
 evidence archive is not included. Static approval does not approve an adapter.
 
 The original layout, startup, registration, and SDK provenance packets have
-bounded milestone approvals. Qt geometry packets passed Sol review and await
-Astra verification. Controller packets remain in review or correction.
+bounded milestone approvals. Qt geometry packets passed Sol review in comms
+1578 and 1579 and Astra verification in comms 1598 and 1599. Controller packets
+remain in review or correction.
 New ForwardViewModel work must prove method targets and receiver identity.
 GLM and Kimi reports have separate correction and review work.
 

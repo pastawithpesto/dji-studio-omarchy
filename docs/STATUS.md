@@ -49,8 +49,9 @@ passed independent Sol review and Astra milestone verification. It covers three
 original routines. It does not establish native execution or Windows parity.
 
 Sol approved the separate Qt6Gui geometry and Qt6Core rectangle packets in comms
-1578 and 1579. Their Astra verification is pending at this checkpoint. Controller
-enum, helper, proxy predicate, and constructor packets have separate reviews.
+1578 and 1579. Astra verified these separate static milestones in comms 1598 and
+1599. Controller enum, helper, proxy predicate, and constructor packets have
+separate reviews.
 The helper report needs an explicit correction to an older comparison claim.
 Preserve historical reports and apply later corrections as separate records.
 
