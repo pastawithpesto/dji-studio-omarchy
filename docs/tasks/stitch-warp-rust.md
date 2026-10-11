@@ -30,3 +30,17 @@ boundary cases. Run debug/release focused tests, formatting and Clippy.
 Keep tests runnable without changing the integration owner's library exports.
 Request independent review of the exact final commit.
 Keep this PR in draft. No merge or release is authorized.
+
+## Validation result
+
+Rust1.98.1 and Cargo1.98.1.
+- cargo test --locked --test stitch_warp:8 passed,0 failed.
+- cargo test --locked --release --test stitch_warp:8 passed,0 failed.
+- /usr/bin/cargo-clippy clippy --locked --test stitch_warp -- -D warnings:passed.
+- rustfmt --edition2024 --check src/stitch_warp.rs tests/stitch_warp.rs:passed.
+- git diff --check:passed.
+
+The initial cargo clippy command selected an unconfigured rustup shim.
+The installed system cargo-clippy completed without changing toolchain settings.
+Library registration remains with the integration owner.
+The tests load this module directly so they can run before registration.
