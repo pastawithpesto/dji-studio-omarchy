@@ -427,21 +427,28 @@ fn mock_exact_argv_optional_timing_and_malformed_protobuf_retains_context() {
 }
 
 #[test]
-fn registered_unsupported_schema_does_not_guess_a_supported_decoder() {
+fn registered_new_root_decodes_its_own_fixture_without_schema_guessing() {
     let mut inventory = inventory_value();
     inventory["format"]["tags"]["encoder"] = json!("DJI Mini4 Pro");
-    let bytes = protobuf("oqb101");
+    let bytes = fs::read(
+        Path::new(env!("CARGO_MANIFEST_DIR"))
+            .join("tests/fixtures/metadata-ten-roots/wab140-all-fields.pb"),
+    )
+    .unwrap();
     let m = Mock::new(inventory, json!({"packets":[packet(&bytes)]}), "");
     let report = m.inspect(&ProbeLimits::default()).unwrap();
     let p = &report.tracks[0].packets[0];
-    let PacketOutcome::DecodeFailed(error) = &p.outcome else {
-        panic!()
+    let PacketOutcome::Decoded(decoded) = &p.outcome else {
+        panic!("new bound root failed")
     };
-    assert!(
-        matches!(error.kind(),PacketFailureKind::UnsupportedSchema(r) if r.package == "wab140")
+    assert_eq!(decoded.registration().package, "wab140");
+    assert_eq!(
+        decoded.message().descriptor().full_name(),
+        "wab140.ProductMeta"
     );
     assert_eq!(p.outcome.original_packet(), bytes);
     assert_eq!((p.pts, p.dts), (Some(-1), Some(144115188075868217)));
+    m.assert_reaped();
 }
 
 #[test]
@@ -641,15 +648,23 @@ fn mock_pipe_caps_failure_exit_timeout_and_source_change_reap_owned_child() {
         ("open(sys.argv[-1],'ab').write(b'changed')", "changed"),
     ] {
         let m = Mock::new(empty.clone(), json!({"packets":[]}), prefix);
+        // Native fixture amendment932: interpreter startup and event production
+        // have a bounded5s allowance for cap/exit/source-change cases. Deliberate
+        // timeout keeps the250ms stress deadline; exact expected kinds remain.
+        let deliberate_timeout = kind == "timeout";
         let limits = ProbeLimits {
             stdout_bytes: 64,
             stderr_bytes: 64,
-            timeout: Duration::from_millis(250),
+            timeout: if deliberate_timeout {
+                Duration::from_millis(250)
+            } else {
+                Duration::from_secs(5)
+            },
             ..ProbeLimits::default()
         };
         let start = Instant::now();
         let e = m.inspect(&limits).unwrap_err();
-        assert!(start.elapsed() < Duration::from_secs(2));
+        assert!(start.elapsed() < Duration::from_secs(if deliberate_timeout { 2 } else { 7 }));
         assert!(
             match kind {
                 "stderr" => matches!(e.kind, DemuxErrorKind::OutputLimit { pipe: "stderr", .. }),
@@ -691,4 +706,89 @@ fn mock_pipe_caps_failure_exit_timeout_and_source_change_reap_owned_child() {
     )
     .unwrap_err();
     assert!(matches!(e.kind, DemuxErrorKind::Input(_)));
+}
+
+#[test]
+fn every_new_root_direct_mock_preserves_identity_exact_timing_raw_bytes_and_failed_neighbors() {
+    // Literal packets from the independently approved descriptor corpus; this
+    // tests native transport composition and does not identify a real camera.
+    let registrations: Vec<_> = dji_reframe::metadata::REGISTRATIONS
+        .iter()
+        .filter(|r| !["oqb101", "wab530"].contains(&r.package))
+        .fold(Vec::new(), |mut roots, r| {
+            if !roots
+                .iter()
+                .any(|old: &&dji_reframe::metadata::Registration| old.package == r.package)
+            {
+                roots.push(r);
+            }
+            roots
+        });
+    assert_eq!(registrations.len(), 10);
+    for (index, r) in registrations.into_iter().enumerate() {
+        let bytes = fs::read(Path::new(env!("CARGO_MANIFEST_DIR")).join(format!(
+            "tests/fixtures/metadata-ten-roots/{}-all-fields.pb",
+            r.package
+        )))
+        .unwrap();
+        let malformed = fs::read(
+            Path::new(env!("CARGO_MANIFEST_DIR"))
+                .join("tests/fixtures/metadata-ten-roots/shared-malformed-tail.pb"),
+        )
+        .unwrap();
+        let mut inventory = inventory_value();
+        inventory["format"]["tags"]["encoder"] = json!(r.encoder);
+        let id = format!("0x{:x}", 256 + index);
+        let denominator = 90000 + index as i32;
+        inventory["streams"][0]["id"] = json!(id);
+        inventory["streams"][0]["time_base"] = json!(format!("1/{denominator}"));
+        let mut inputs = vec![packet(&bytes), packet(&malformed), packet(&bytes)];
+        for (ordinal, p) in inputs.iter_mut().enumerate() {
+            p["pos"] = json!((144115188075868217u64 + ordinal as u64).to_string());
+        }
+        let m = Mock::new(inventory, json!({"packets":inputs}), "");
+        let report = m.inspect(&ProbeLimits::default()).unwrap();
+        assert_eq!(report.encoder.as_deref(), Some(r.encoder));
+        assert_eq!(report.disposition, DirectDisposition::DirectTracks);
+        assert_eq!(report.tracks.len(), 1);
+        let track = &report.tracks[0];
+        assert_eq!(track.stream.index, 0);
+        assert_eq!(track.stream.id.as_deref(), Some(id.as_str()));
+        assert_eq!(track.stream.codec_tag_string, "djmd");
+        assert_eq!(
+            track.stream.time_base,
+            TimeBase {
+                numerator: 1,
+                denominator
+            }
+        );
+        assert_eq!(track.packets.len(), 3);
+        for (ordinal, p) in track.packets.iter().enumerate() {
+            assert_eq!(
+                (p.pts, p.dts, p.source_position),
+                (
+                    Some(-1),
+                    Some(144115188075868217),
+                    Some(144115188075868217 + ordinal as u64)
+                )
+            );
+            if ordinal == 1 {
+                assert_eq!(p.outcome.original_packet(), malformed);
+                assert!(
+                    matches!(&p.outcome,PacketOutcome::DecodeFailed(e) if matches!(e.kind(),PacketFailureKind::InvalidProtobuf(_)))
+                );
+            } else {
+                assert_eq!(p.outcome.original_packet(), bytes);
+                let PacketOutcome::Decoded(d) = &p.outcome else {
+                    panic!("new-root successful neighbor missing")
+                };
+                assert_eq!(d.registration(), *r);
+                assert_eq!(
+                    d.message().descriptor().full_name(),
+                    format!("{}.ProductMeta", r.package)
+                );
+            }
+        }
+        m.assert_reaped();
+    }
 }

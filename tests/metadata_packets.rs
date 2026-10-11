@@ -240,24 +240,19 @@ fn exact_descriptors_retain_schema_differences_and_singular_frame_type() {
 }
 
 #[test]
-fn all_relevant_exact_aliases_dispatch_and_other_packages_are_explicit() {
+fn all_thirty_two_exact_aliases_dispatch_without_normalization() {
     let decoder = decoder();
-    let mut supported = 0;
     for registration in REGISTRATIONS {
-        let result = decoder.decode(registration.encoder, fixture("empty-frame.pb"));
-        if ["oqb101", "wab530"].contains(&registration.package) {
-            let packet = result.unwrap();
-            assert_eq!(packet.registration(), *registration);
-            supported += 1;
-        } else {
-            let failure = result.unwrap_err();
-            assert!(
-                matches!(failure.kind(), PacketFailureKind::UnsupportedSchema(actual) if actual == registration)
-            );
-            assert_eq!(failure.into_original_packet(), fixture("empty-frame.pb"));
-        }
+        let bytes = fixture("empty-frame.pb");
+        let packet = decoder.decode(registration.encoder, bytes.clone()).unwrap();
+        assert_eq!(packet.registration(), *registration);
+        assert_eq!(packet.original_packet(), bytes);
+        assert_eq!(
+            packet.message().descriptor().full_name(),
+            format!("{}.ProductMeta", registration.package)
+        );
     }
-    assert_eq!(supported, 10);
+    assert_eq!(REGISTRATIONS.len(), 32);
     for encoder in ["osmo 360", "Osmo 360 ", "", "unknown camera"] {
         let failure = decoder
             .decode(encoder, fixture("malformed-tail.pb"))

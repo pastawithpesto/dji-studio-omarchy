@@ -1,7 +1,8 @@
 //! Experimental whole-buffer device metadata decoding.
 //!
 //! Contract: sol-review/resumed-metadata-20261010/CONTRACT.md, Astra bus approval
-//! 56. Exact descriptors and packet boundary are recovered static facts. This
+//! 56; twelve-root expansion: metadata-ten-root-contract/CONTRACT.md, independent
+//! Sol High approval 919 and author grant 924. Exact descriptors and packet boundary are recovered static facts. This
 //! API, size/error policy and use of prost-reflect are independent native design.
 //! It does not demux media, convert to assemble.ProductMeta, interpret camera
 //! timestamps, decrypt/decompress payloads or change quaternion components.
@@ -36,11 +37,10 @@ impl Error for DecoderInitError {
     }
 }
 
-/// A reusable decoder for the two evidenced 360-device schemas.
+/// A reusable decoder for the twelve explicitly bound product wire schemas.
 #[derive(Debug)]
 pub struct MetadataDecoder {
-    oqb101: MessageDescriptor,
-    wab530: MessageDescriptor,
+    roots: [(&'static str, MessageDescriptor); 12],
     max_packet_bytes: usize,
 }
 
@@ -56,10 +56,31 @@ impl MetadataDecoder {
                 .ok_or(DecoderInitError::MissingMessage(name))
         };
         Ok(Self {
-            oqb101: message("oqb101.ProductMeta")?,
-            wab530: message("wab530.ProductMeta")?,
+            // Fixed lexical allowlist from the approved original factory bindings.
+            // All descriptors belong to this one trusted pool.
+            roots: [
+                ("acb202", message("acb202.ProductMeta")?),
+                ("acb203", message("acb203.ProductMeta")?),
+                ("acb204", message("acb204.ProductMeta")?),
+                ("hgb212", message("hgb212.ProductMeta")?),
+                ("oqb101", message("oqb101.ProductMeta")?),
+                ("wab140", message("wab140.ProductMeta")?),
+                ("wab234", message("wab234.ProductMeta")?),
+                ("wab341", message("wab341.ProductMeta")?),
+                ("wab520", message("wab520.ProductMeta")?),
+                ("wab521", message("wab521.ProductMeta")?),
+                ("wab530", message("wab530.ProductMeta")?),
+                ("wmb261", message("wmb261.ProductMeta")?),
+            ],
             max_packet_bytes,
         })
+    }
+
+    fn root(&self, package: &str) -> Option<&MessageDescriptor> {
+        self.roots
+            .iter()
+            .find(|(allowed, _)| *allowed == package)
+            .map(|(_, descriptor)| descriptor)
     }
 
     /// Decode one complete, already-selected djmd/xtmd packet. No prefix is
@@ -73,11 +94,9 @@ impl MetadataDecoder {
         let decode = || {
             let registration = registration(encoder)
                 .ok_or_else(|| PacketFailureKind::UnknownEncoder(encoder.to_owned()))?;
-            let descriptor = match registration.package {
-                "oqb101" => &self.oqb101,
-                "wab530" => &self.wab530,
-                _ => return Err(PacketFailureKind::UnsupportedSchema(registration)),
-            };
+            let descriptor = self
+                .root(registration.package)
+                .ok_or(PacketFailureKind::UnsupportedSchema(registration))?;
             if original_packet.len() > self.max_packet_bytes {
                 return Err(PacketFailureKind::PacketTooLarge {
                     limit: self.max_packet_bytes,
@@ -185,6 +204,32 @@ impl Error for PacketDecodeFailure {
         match &self.kind {
             PacketFailureKind::InvalidProtobuf(error) => Some(error),
             _ => None,
+        }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::MetadataDecoder;
+
+    #[test]
+    fn private_root_selector_is_an_explicit_fail_closed_allowlist() {
+        let decoder = MetadataDecoder::new(0).unwrap();
+        assert_eq!(decoder.roots.len(), 12);
+        for (package, descriptor) in &decoder.roots {
+            assert_eq!(descriptor.full_name(), format!("{package}.ProductMeta"));
+            assert!(decoder.root(package).is_some());
+        }
+        for package in [
+            "wab020",
+            "metadata",
+            "assemble",
+            "ClipMetaHeader",
+            "ACB202",
+            "acb202 ",
+            "",
+        ] {
+            assert!(decoder.root(package).is_none(), "{package}");
         }
     }
 }

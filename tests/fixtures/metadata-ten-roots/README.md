@@ -1,0 +1,9 @@
+# Descriptor-supported twelve-root metadata test corpus
+
+Original build1.0.0.30839 VinceEditor SHA2569450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42; descriptor-set SHA25645bdd29930f3d10f46ed51a7ee3b8917e3806a4bc425f136c034908c4fc578bb. Factory root chains reviewed in bus793; this corpus is an independent Python protobuf6.31.0 observation and inherited native malformed-input policy, not a camera/Windows/vendor execution fixture.
+
+124 packet files: nine per registered package plus16 shared malformed/depth cases. manifest.json is the approved COMPACT-FIXTURE-MANIFEST copied exactly; EXPECTED-TYPES.json supplies recursive message_type_ref templates and FIELD-CATALOG.json pins exact reachable field names/numbers/labels/types/packed options. All108 positive expected trees expand exactly to the preserved full Python observations. Integer64 expectations use decimal strings, floating values use little-endian bit hex, bytes use hex. Unknown fields are separately specified; raw original packet bytes are always authoritative.
+
+Synthetic all-fields values populate every reachable declared field with raw width/enum/string/list values, including a deliberately different proto_file_name. These values have no inferred units, valid-camera/physical meaning, checksum validity or alternate schema routing. The decoder must choose the exact root from the format encoder registry only. Noncanonical, malformed and unknown-field cases follow the qualified pinned native dependency policy.
+
+Generation and exact provenance are preserved at sol-review/swarm-20261010-2154/metadata-ten-root-contract/{generate_fixtures.py,compact_manifest.py,SOURCE-PINS.json,CONTRACT.md}. No native source fixture bytes existed before author approval/grant; historical metadata fixtures remain unchanged.

@@ -452,14 +452,11 @@ fn outer_encoder_is_authoritative_and_failed_neighbors_retain_exact_wire_and_tim
                 Some("unknown camera") => assert!(
                     matches!(&p.outcome,PacketOutcome::DecodeFailed(e) if matches!(e.kind(),PacketFailureKind::UnknownEncoder(_)))
                 ),
-                Some("DJI Mini4 Pro") => assert!(
-                    matches!(&p.outcome,PacketOutcome::DecodeFailed(e) if matches!(e.kind(),PacketFailureKind::UnsupportedSchema(_)))
-                ),
                 Some(_) if i == 1 => assert!(
                     matches!(&p.outcome,PacketOutcome::DecodeFailed(e) if matches!(e.kind(),PacketFailureKind::InvalidProtobuf(_)))
                 ),
                 Some(_) => assert!(
-                    matches!(&p.outcome,PacketOutcome::Decoded(d) if d.registration().package=="oqb101")
+                    matches!(&p.outcome,PacketOutcome::Decoded(d) if d.registration().encoder == encoder.unwrap())
                 ),
             }
         }
@@ -962,4 +959,91 @@ fn actual_unknown_outer_encoder_cli_exits_failure_after_preserving_all_statuses(
     assert!(text.contains("carrier_bytes="));
     assert!(text.contains("inner_packet=0"));
     assert!(text.contains("unknown encoder"));
+}
+
+#[test]
+fn every_new_root_nested_mock_uses_outer_encoder_and_preserves_failed_neighbors_and_carrier() {
+    let registrations: Vec<_> = dji_reframe::metadata::REGISTRATIONS
+        .iter()
+        .filter(|r| !["oqb101", "wab530"].contains(&r.package))
+        .fold(Vec::new(), |mut roots, r| {
+            if !roots
+                .iter()
+                .any(|old: &&dji_reframe::metadata::Registration| old.package == r.package)
+            {
+                roots.push(r);
+            }
+            roots
+        });
+    assert_eq!(registrations.len(), 10);
+    for (ordinal, r) in registrations.into_iter().enumerate() {
+        let bytes = fs::read(Path::new(env!("CARGO_MANIFEST_DIR")).join(format!(
+            "tests/fixtures/metadata-ten-roots/{}-all-fields.pb",
+            r.package
+        )))
+        .unwrap();
+        let malformed = fs::read(
+            Path::new(env!("CARGO_MANIFEST_DIR"))
+                .join("tests/fixtures/metadata-ten-roots/shared-malformed-tail.pb"),
+        )
+        .unwrap();
+        let index = ordinal as u32 + 2;
+        let mut inner_stream = stream(index, "xtmd");
+        inner_stream["time_base"] = json!("1/90000");
+        let mut documents = vec![json!({"packets":[]}); index as usize + 1];
+        documents[index as usize] =
+            json!({"packets":[packet(index,&bytes),packet(index,&malformed),packet(index,&bytes)]});
+        let m = Mock::new(
+            inventory(Some(r.encoder), vec![stream(3, "camd")]),
+            inventory(Some("Osmo 360 II"), vec![inner_stream.clone()]),
+            documents,
+            "",
+        );
+        let report = m.inspect(&ProbeLimits::default()).unwrap();
+        assert_eq!(report.disposition, NestedDisposition::InnerDirectTracks);
+        assert_eq!(report.outer.encoder.as_deref(), Some(r.encoder));
+        assert_eq!(
+            report.inner.as_ref().unwrap().encoder.as_deref(),
+            Some("Osmo 360 II")
+        );
+        assert_eq!(
+            report.carrier.as_ref().unwrap().bytes(),
+            b"independent mock carrier"
+        );
+        let CarrierOrigin::CamdStreamParts { stream, parts } =
+            report.carrier.as_ref().unwrap().origin()
+        else {
+            panic!("declared camd stream must take precedence over the META box")
+        };
+        assert_eq!(stream.index, 3);
+        assert_eq!(stream.codec_tag_string, "camd");
+        assert_eq!(parts.len(), 1);
+        assert_eq!(parts[0].sequence, 0);
+        assert_eq!(
+            (parts[0].pts, parts[0].dts, parts[0].outer_source_position),
+            (Some(-1), Some(144115188075868217), Some(u64::MAX))
+        );
+        assert_eq!((parts[0].carrier_offset, parts[0].length), (0, 24));
+        assert_eq!(report.tracks.len(), 1);
+        let track = &report.tracks[0];
+        assert_streams(std::slice::from_ref(&track.stream), &json!([inner_stream]));
+        assert_eq!(track.packets.len(), 3);
+        for (position, p) in track.packets.iter().enumerate() {
+            assert_eq!(
+                (p.pts, p.dts, p.source_position),
+                (Some(-1), Some(144115188075868217), Some(u64::MAX))
+            );
+            if position == 1 {
+                assert_eq!(p.outcome.original_packet(), malformed);
+                assert!(
+                    matches!(&p.outcome,PacketOutcome::DecodeFailed(e) if matches!(e.kind(),PacketFailureKind::InvalidProtobuf(_)))
+                );
+            } else {
+                assert_eq!(p.outcome.original_packet(), bytes);
+                assert!(matches!(&p.outcome,PacketOutcome::Decoded(d) if d.registration()==*r));
+            }
+        }
+        m.transport.empty();
+        m.reaped();
+    }
 }

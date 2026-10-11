@@ -1,0 +1,7886 @@
+{
+  "acb202.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb202.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb202.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb202.FrameMeta",
+      "packed": false
+    }
+  ],
+  "acb202.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    }
+  ],
+  "ClipMetaHeader": [
+    {
+      "name": "proto_file_name",
+      "number": 1,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "library_proto_version",
+      "number": 2,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "product_proto_version",
+      "number": 3,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "product_sn",
+      "number": 5,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "product_firmware_version",
+      "number": 6,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "meta_encryption_type",
+      "number": 7,
+      "type": 14,
+      "label": 1,
+      "type_name": "ClipMetaHeader.MetaEncryptionType",
+      "packed": false
+    },
+    {
+      "name": "meta_compression_type",
+      "number": 8,
+      "type": 14,
+      "label": 1,
+      "type_name": "ClipMetaHeader.MetaCompressionType",
+      "packed": false
+    },
+    {
+      "name": "clip_timestamp",
+      "number": 9,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "product_name",
+      "number": 10,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "ClipStreamsMeta": [
+    {
+      "name": "video_stream_num",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "audio_stream_num",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb202.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    }
+  ],
+  "StreamMetaHeader": [
+    {
+      "name": "stream_id",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "stream_type",
+      "number": 2,
+      "type": 14,
+      "label": 1,
+      "type_name": "StreamMetaHeader.StreamType",
+      "packed": false
+    },
+    {
+      "name": "stream_name",
+      "number": 3,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "VideoStreamMeta": [
+    {
+      "name": "resolution_width",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "resolution_height",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "framerate",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "is_bit_depth_valid",
+      "number": 4,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "bit_depth",
+      "number": 5,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "bit_format",
+      "number": 6,
+      "type": 14,
+      "label": 1,
+      "type_name": "VideoStreamMeta.BitFormatType",
+      "packed": false
+    },
+    {
+      "name": "video_stream_type",
+      "number": 7,
+      "type": 14,
+      "label": 1,
+      "type_name": "VideoStreamMeta.VideoStreamType",
+      "packed": false
+    },
+    {
+      "name": "video_codec_type",
+      "number": 8,
+      "type": 14,
+      "label": 1,
+      "type_name": "VideoStreamMeta.VideoCodecType",
+      "packed": false
+    }
+  ],
+  "acb202.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb202.FrameMetaOfCamera",
+      "packed": false
+    }
+  ],
+  "FrameMetaHeader": [
+    {
+      "name": "frame_seq_num",
+      "number": 1,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "frame_timestamp",
+      "number": 2,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "stream_id",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "check_code_enable",
+      "number": 4,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "check_code_type",
+      "number": 5,
+      "type": 14,
+      "label": 1,
+      "type_name": "FrameMetaHeader.CheckCodeType",
+      "packed": false
+    },
+    {
+      "name": "check_code",
+      "number": 6,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb202.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 30,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "current_underwater_confidence",
+      "number": 31,
+      "type": 11,
+      "label": 1,
+      "type_name": "CurrentUnderwaterConfidence",
+      "packed": false
+    }
+  ],
+  "MetaHeaderOfDevice": [
+    {
+      "name": "device_id",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "device_type",
+      "number": 2,
+      "type": 14,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice.DeviceType",
+      "packed": false
+    },
+    {
+      "name": "device_sub_type",
+      "number": 3,
+      "type": 14,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice.DeviceSubType",
+      "packed": false
+    },
+    {
+      "name": "device_name",
+      "number": 4,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "device_frequency",
+      "number": 5,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "device_timestamp",
+      "number": 6,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "ExposureIndex": [
+    {
+      "name": "exposure_index",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "ISO": [
+    {
+      "name": "iso",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "ExposureTime": [
+    {
+      "name": "exposure_time",
+      "number": 1,
+      "type": 5,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "DigitalZoomRatio": [
+    {
+      "name": "digital_zoom_ratio",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "WhiteBalanceCCT": [
+    {
+      "name": "white_balance_cct",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "Orientation": [
+    {
+      "name": "orientation",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "Orientation.OrientationType",
+      "packed": false
+    }
+  ],
+  "CurrentUnderwaterConfidence": [
+    {
+      "name": "current_underwater_confidence",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb203.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb203.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb203.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb203.FrameMeta",
+      "packed": false
+    }
+  ],
+  "acb203.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    },
+    {
+      "name": "distortion_coefficients",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "LensDistortionCoefficients",
+      "packed": false
+    },
+    {
+      "name": "sensor_readout_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameReadOutTime",
+      "packed": false
+    },
+    {
+      "name": "sensor_read_direction",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorReadDirection",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "eis_status",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EisStatus",
+      "packed": false
+    },
+    {
+      "name": "imu_sampling_rate",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "IMUSamplingRate",
+      "packed": false
+    },
+    {
+      "name": "sensor_fps",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameRate",
+      "packed": false
+    }
+  ],
+  "LensDistortionCoefficients": [
+    {
+      "name": "coeffients",
+      "number": 1,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "SensorFrameReadOutTime": [
+    {
+      "name": "readout_time",
+      "number": 1,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "SensorReadDirection": [
+    {
+      "name": "direction",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "SensorReadDirection.SenorReadDirectionType",
+      "packed": false
+    }
+  ],
+  "DigitalFocalLength": [
+    {
+      "name": "focal_length",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EisStatus": [
+    {
+      "name": "status",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "EisStatus.EisStatusType",
+      "packed": false
+    }
+  ],
+  "IMUSamplingRate": [
+    {
+      "name": "imu_sampling_rate",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "SensorFrameRate": [
+    {
+      "name": "sensor_frame_rate",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb203.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "fov_type",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "FOVType",
+      "packed": false
+    }
+  ],
+  "ColorMode": [
+    {
+      "name": "color_mode",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "ColorMode.ColorModeType",
+      "packed": false
+    }
+  ],
+  "FOVType": [
+    {
+      "name": "fov_type",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "FOVType.FOVTypeType",
+      "packed": false
+    }
+  ],
+  "acb203.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb203.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb203.FrameMetaOfIMU",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb203.FrameMetaOfGimbal",
+      "packed": false
+    }
+  ],
+  "acb203.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "current_underwater_confidence",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "CurrentUnderwaterConfidence",
+      "packed": false
+    },
+    {
+      "name": "camera_attitude",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "camera_acc",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "Accelerometer",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoising",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    }
+  ],
+  "Quaternion": [
+    {
+      "name": "quaternion_w",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "quaternion_x",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "quaternion_y",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "quaternion_z",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "Accelerometer": [
+    {
+      "name": "accelerometer_x",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "accelerometer_y",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "accelerometer_z",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "Sharpness": [
+    {
+      "name": "sharpness",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "NoiseReductionApplied": [
+    {
+      "name": "noise_reduction_applied",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb203.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    }
+  ],
+  "DeviceAttitude": [
+    {
+      "name": "timestamp",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "vsync",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 3,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "offset",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb203.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gps_basic",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    }
+  ],
+  "GpsBasic": [
+    {
+      "name": "gps_coordinates",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "PositionCoord",
+      "packed": false
+    },
+    {
+      "name": "gps_altitude_mm",
+      "number": 2,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gps_status",
+      "number": 3,
+      "type": 14,
+      "label": 1,
+      "type_name": "GpsBasic.GpsStatus",
+      "packed": false
+    },
+    {
+      "name": "gps_altitude_type",
+      "number": 4,
+      "type": 14,
+      "label": 1,
+      "type_name": "GpsBasic.GpsAltType",
+      "packed": false
+    },
+    {
+      "name": "gps_time_valid",
+      "number": 5,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gps_time",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsTime",
+      "packed": false
+    }
+  ],
+  "PositionCoord": [
+    {
+      "name": "position_coord_unit",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "PositionCoord.PositionCoordUnit",
+      "packed": false
+    },
+    {
+      "name": "latitude",
+      "number": 2,
+      "type": 1,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "longitude",
+      "number": 3,
+      "type": 1,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "GpsTime": [
+    {
+      "name": "time",
+      "number": 1,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "Velocity": [
+    {
+      "name": "velocity_x",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "velocity_y",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "velocity_z",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb204.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb204.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb204.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb204.FrameMeta",
+      "packed": false
+    }
+  ],
+  "acb204.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    },
+    {
+      "name": "distortion_coefficients",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "LensDistortionCoefficients",
+      "packed": false
+    },
+    {
+      "name": "sensor_readout_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameReadOutTime",
+      "packed": false
+    },
+    {
+      "name": "sensor_read_direction",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorReadDirection",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "eis_status",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EisStatus",
+      "packed": false
+    },
+    {
+      "name": "imu_sampling_rate",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "IMUSamplingRate",
+      "packed": false
+    },
+    {
+      "name": "sensor_fps",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameRate",
+      "packed": false
+    },
+    {
+      "name": "ITD_value",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "ITDValue",
+      "packed": false
+    },
+    {
+      "name": "LRO_value",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "LROValue",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    }
+  ],
+  "ITDValue": [
+    {
+      "name": "ITD_value",
+      "number": 1,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "LROValue": [
+    {
+      "name": "LRO_value",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "FNumber": [
+    {
+      "name": "f_number",
+      "number": 1,
+      "type": 13,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "acb204.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "fov_type",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "FOVType",
+      "packed": false
+    }
+  ],
+  "acb204.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb204.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb204.FrameMetaOfIMU",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb204.FrameMetaOfGimbal",
+      "packed": false
+    },
+    {
+      "name": "ebike_frame_meta",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "acb204.FrameMetaOfEbike",
+      "packed": false
+    }
+  ],
+  "acb204.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "current_underwater_confidence",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "CurrentUnderwaterConfidence",
+      "packed": false
+    },
+    {
+      "name": "camera_attitude",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "camera_acc",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "Accelerometer",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoising",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    },
+    {
+      "name": "camera_baro",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "Barometer",
+      "packed": false
+    },
+    {
+      "name": "equivalent_focal_length",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "EquivalentFocalLength",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    }
+  ],
+  "Barometer": [
+    {
+      "name": "is_in_water",
+      "number": 1,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "altitude_dm",
+      "number": 2,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "atmospheric_hpa",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EquivalentFocalLength": [
+    {
+      "name": "equivalent_focal_length",
+      "number": 1,
+      "type": 5,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "acb204.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    },
+    {
+      "name": "IMU_vsync_pos",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ImuVsyncPos",
+      "packed": false
+    }
+  ],
+  "ImuVsyncPos": [
+    {
+      "name": "vsync_pos",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "acb204.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gps_basic",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    }
+  ],
+  "acb204.FrameMetaOfEbike": [
+    {
+      "name": "ebike_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "ebike_gps",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeGps",
+      "packed": false
+    },
+    {
+      "name": "ebike_acc",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeAcc",
+      "packed": false
+    },
+    {
+      "name": "tilt_angle",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeTiltAngle",
+      "packed": false
+    },
+    {
+      "name": "motor_power",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMotorPower",
+      "packed": false
+    },
+    {
+      "name": "pedaling_power",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePedalingPower",
+      "packed": false
+    },
+    {
+      "name": "cadence",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeCadence",
+      "packed": false
+    },
+    {
+      "name": "motor_torque",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMotorTorque",
+      "packed": false
+    },
+    {
+      "name": "pedaling_torque",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePedalingTorque",
+      "packed": false
+    },
+    {
+      "name": "slope",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeSlope",
+      "packed": false
+    },
+    {
+      "name": "mileage",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMileage",
+      "packed": false
+    },
+    {
+      "name": "speed",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeSpeed",
+      "packed": false
+    },
+    {
+      "name": "heart_rate",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "HeartRate",
+      "packed": false
+    },
+    {
+      "name": "pressure",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePressure",
+      "packed": false
+    },
+    {
+      "name": "calories",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeCalories",
+      "packed": false
+    }
+  ],
+  "EbikeGps": [
+    {
+      "name": "gps_basic",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    }
+  ],
+  "EbikeAcc": [
+    {
+      "name": "ebike_acc",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "Accelerometer",
+      "packed": false
+    }
+  ],
+  "EbikeTiltAngle": [
+    {
+      "name": "tilt_angle",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikeMotorPower": [
+    {
+      "name": "power",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikePedalingPower": [
+    {
+      "name": "power",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikeCadence": [
+    {
+      "name": "cadence",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikeMotorTorque": [
+    {
+      "name": "torque",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikePedalingTorque": [
+    {
+      "name": "torque",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikeSlope": [
+    {
+      "name": "slope",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikeMileage": [
+    {
+      "name": "mileage",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikeSpeed": [
+    {
+      "name": "speed",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "HeartRate": [
+    {
+      "name": "heartrate",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikePressure": [
+    {
+      "name": "pressure",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "EbikeCalories": [
+    {
+      "name": "calories",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "hgb212.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "hgb212.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "hgb212.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "hgb212.FrameMeta",
+      "packed": false
+    }
+  ],
+  "hgb212.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    },
+    {
+      "name": "ITD_value",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ITDValue",
+      "packed": false
+    },
+    {
+      "name": "LRO_value",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "LROValue",
+      "packed": false
+    },
+    {
+      "name": "sensor_res",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorRes",
+      "packed": false
+    }
+  ],
+  "SensorRes": [
+    {
+      "name": "sensor_width",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "sensor_height",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "hgb212.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "hgb212.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    }
+  ],
+  "hgb212.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoise",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    }
+  ],
+  "DeviceVersion": [
+    {
+      "name": "device_hw_version",
+      "number": 1,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "device_sw_version",
+      "number": 2,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "hgb212.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "hgb212.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "hgb212.FrameMetaOfIMU",
+      "packed": false
+    }
+  ],
+  "hgb212.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 25,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoising",
+      "number": 26,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 30,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "beauty_params",
+      "number": 31,
+      "type": 11,
+      "label": 1,
+      "type_name": "BeautyParams",
+      "packed": false
+    },
+    {
+      "name": "equivalent_focal_length",
+      "number": 32,
+      "type": 11,
+      "label": 1,
+      "type_name": "EquivalentFocalLength",
+      "packed": false
+    },
+    {
+      "name": "white_balance_tint",
+      "number": 33,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceTint",
+      "packed": false
+    },
+    {
+      "name": "aec_eagle",
+      "number": 34,
+      "type": 11,
+      "label": 1,
+      "type_name": "AecEagle",
+      "packed": false
+    },
+    {
+      "name": "track_roi_rect_list_tk",
+      "number": 35,
+      "type": 11,
+      "label": 1,
+      "type_name": "TrackRoiRectList2DTracking",
+      "packed": false
+    },
+    {
+      "name": "focus_distance",
+      "number": 36,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocusDistance",
+      "packed": false
+    }
+  ],
+  "BeautyParams": [
+    {
+      "name": "enable",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "face_temperature",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "face_whiten",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "face_smooth",
+      "number": 4,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "face_reshape",
+      "number": 5,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "WhiteBalanceTint": [
+    {
+      "name": "white_balance_tint",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "AecEagle": [
+    {
+      "name": "lv",
+      "number": 1,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "atomic_gain_info",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "AtomicGainInfo",
+      "packed": false
+    },
+    {
+      "name": "gac_gain_info",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "GacGainInfo",
+      "packed": false
+    }
+  ],
+  "AtomicGainInfo": [
+    {
+      "name": "sensor_again",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "sensor_dgain",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "isp_dgain",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "cg_ratio",
+      "number": 4,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "sensor_again_s",
+      "number": 5,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "isp_dgain_s",
+      "number": 6,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "sensor_dgain_s",
+      "number": 7,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "GacGainInfo": [
+    {
+      "name": "gac_enable",
+      "number": 1,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "isp_dgain",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gamma_dgain",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "ccm_dgain",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "drc_gtm_dgain",
+      "number": 5,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "drc_in_dgain",
+      "number": 6,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "drc_gamma_dgain",
+      "number": 7,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gamma_knee_dgain",
+      "number": 8,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "dsp_dgain",
+      "number": 9,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "TrackRoiRectList2DTracking": [
+    {
+      "name": "is_check_valid",
+      "number": 1,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roi_frame_id",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "real_frame_id",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "main_roi_id",
+      "number": 4,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roi_rect_face_list",
+      "number": 5,
+      "type": 11,
+      "label": 3,
+      "type_name": "TrackRoiRect2D",
+      "packed": false
+    },
+    {
+      "name": "roi_rect_body_list",
+      "number": 6,
+      "type": 11,
+      "label": 3,
+      "type_name": "TrackRoiRect2D",
+      "packed": false
+    }
+  ],
+  "TrackRoiRect2D": [
+    {
+      "name": "roi_id",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "confidence",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roi_type",
+      "number": 3,
+      "type": 14,
+      "label": 1,
+      "type_name": "CAM_ROI_TYPE",
+      "packed": false
+    },
+    {
+      "name": "roi_rect",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "CoordinateRect2D",
+      "packed": false
+    }
+  ],
+  "CoordinateRect2D": [
+    {
+      "name": "x",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "y",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "w",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "h",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "FocusDistance": [
+    {
+      "name": "focus_unit",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "FocusDistance.FocusUnit",
+      "packed": false
+    },
+    {
+      "name": "focus_distance",
+      "number": 2,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "hgb212.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    },
+    {
+      "name": "IMU_vsync_pos",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ImuVsyncPos",
+      "packed": false
+    }
+  ],
+  "oqb101.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "oqb101.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "oqb101.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "oqb101.FrameMeta",
+      "packed": false
+    }
+  ],
+  "oqb101.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    },
+    {
+      "name": "distortion_coefficients",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "LensDistortionCoefficients",
+      "packed": false
+    },
+    {
+      "name": "sensor_readout_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameReadOutTime",
+      "packed": false
+    },
+    {
+      "name": "sensor_read_direction",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorReadDirection",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "eis_status",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EisStatus",
+      "packed": false
+    },
+    {
+      "name": "imu_sampling_rate",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "IMUSamplingRate",
+      "packed": false
+    },
+    {
+      "name": "sensor_fps",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameRate",
+      "packed": false
+    },
+    {
+      "name": "ITD_value",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "ITDValue",
+      "packed": false
+    },
+    {
+      "name": "LRO_value",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "LROValue",
+      "packed": false
+    },
+    {
+      "name": "sensor_res",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorRes",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "style_filter_mode",
+      "number": 16,
+      "type": 11,
+      "label": 1,
+      "type_name": "StyleFilterMode",
+      "packed": false
+    },
+    {
+      "name": "yltm_enable",
+      "number": 17,
+      "type": 11,
+      "label": 1,
+      "type_name": "YltmEnable",
+      "packed": false
+    }
+  ],
+  "StyleFilterMode": [
+    {
+      "name": "mode",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "YltmEnable": [
+    {
+      "name": "enable",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "oqb101.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "fov_type",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "FOVType",
+      "packed": false
+    },
+    {
+      "name": "pano_dewarp_params",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "PanoDewarpParams",
+      "packed": false
+    },
+    {
+      "name": "extri_lens_mode",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExtriLensMode",
+      "packed": false
+    },
+    {
+      "name": "shading_calib_mode_num",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "ShadingCalibModeNum",
+      "packed": false
+    }
+  ],
+  "PanoDewarpParams": [
+    {
+      "name": "native_refine_slave",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_master",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_slave",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_master",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "lens_guards_slave",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "lens_guards_master",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "water_proof_above_water_slave",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "water_proof_above_water_master",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "water_proof_under_water_slave",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "water_proof_under_water_master",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_slave",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_master",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_07_slave",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_07_master",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_09_slave",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_09_master",
+      "number": 16,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_11_slave",
+      "number": 17,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_11_master",
+      "number": 18,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_12_5_slave",
+      "number": 19,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_12_5_master",
+      "number": 20,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_14_slave",
+      "number": 21,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_14_master",
+      "number": 22,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_16_slave",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    },
+    {
+      "name": "native_refine_far_16_master",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "DewarpParams",
+      "packed": false
+    }
+  ],
+  "DewarpParams": [
+    {
+      "name": "fx",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "fy",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "cx",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "cy",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k1",
+      "number": 5,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k2",
+      "number": 6,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k3",
+      "number": 7,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k4",
+      "number": 8,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "xi",
+      "number": 9,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "width",
+      "number": 10,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "height",
+      "number": 11,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "yaw",
+      "number": 12,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "pitch",
+      "number": 13,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roll",
+      "number": 14,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k5",
+      "number": 15,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k6",
+      "number": 16,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k7",
+      "number": 17,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k8",
+      "number": 18,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "k9",
+      "number": 19,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "p",
+      "number": 20,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "q",
+      "number": 21,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "occlusion_pt_x",
+      "number": 22,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "occlusion_pt_y",
+      "number": 23,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "lens_model",
+      "number": 24,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "temperature",
+      "number": 25,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "cam_imu_extri_q",
+      "number": 26,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "tangent_coeff",
+      "number": 27,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "cam_extri_q",
+      "number": 28,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "cam_imu_cali_enable",
+      "number": 29,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "temp_compen_enable",
+      "number": 30,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "temp_compen_k",
+      "number": 31,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gimbal_yaw_h1",
+      "number": 32,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gimbal_yaw_h2",
+      "number": 33,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gimbal_self_cail_param",
+      "number": 34,
+      "type": 11,
+      "label": 1,
+      "type_name": "GimbalSelfCailParams",
+      "packed": false
+    },
+    {
+      "name": "temp_compen_k_order",
+      "number": 35,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "GimbalSelfCailParams": [
+    {
+      "name": "flag",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gimbal_yaw_h1",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gimbal_yaw_h2",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "ExtriLensMode": [
+    {
+      "name": "mode",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "ExtriLensMode.ExtriLensModeType",
+      "packed": false
+    }
+  ],
+  "ShadingCalibModeNum": [
+    {
+      "name": "num",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "oqb101.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "oqb101.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "oqb101.FrameMetaOfIMU",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "oqb101.FrameMetaOfGimbal",
+      "packed": false
+    },
+    {
+      "name": "ebike_frame_meta",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "oqb101.FrameMetaOfEbike",
+      "packed": false
+    }
+  ],
+  "oqb101.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "current_underwater_confidence",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "CurrentUnderwaterConfidence",
+      "packed": false
+    },
+    {
+      "name": "camera_attitude",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "camera_acc",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "Accelerometer",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoising",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    },
+    {
+      "name": "track_ret",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "TrackResultBox",
+      "packed": false
+    },
+    {
+      "name": "aec_ae",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "AecAe",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 16,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "equivalent_focal_length",
+      "number": 17,
+      "type": 11,
+      "label": 1,
+      "type_name": "EquivalentFocalLength",
+      "packed": false
+    }
+  ],
+  "TrackResultBox": [
+    {
+      "name": "vertex_top_left",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate",
+      "packed": false
+    },
+    {
+      "name": "vertex_top_right",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate",
+      "packed": false
+    },
+    {
+      "name": "vertex_bottom_left",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate",
+      "packed": false
+    },
+    {
+      "name": "vertex_bottom_right",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate",
+      "packed": false
+    }
+  ],
+  "Coordinate": [
+    {
+      "name": "fx",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "fy",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "AecAe": [
+    {
+      "name": "lv",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "lux_idx",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "short_linear_gain",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "middle_linear_gain",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "long_linear_gain",
+      "number": 5,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "adrc_gain",
+      "number": 6,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "dark_boost_gain",
+      "number": 7,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "ae_mode",
+      "number": 8,
+      "type": 14,
+      "label": 1,
+      "type_name": "AeMode",
+      "packed": false
+    },
+    {
+      "name": "yltm_enable_flag",
+      "number": 9,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "SensorTemperature": [
+    {
+      "name": "sensor_temperature",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "oqb101.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceMultiAttitude",
+      "packed": false
+    },
+    {
+      "name": "IMU_vsync_pos",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ImuVsyncPos",
+      "packed": false
+    }
+  ],
+  "DeviceMultiAttitude": [
+    {
+      "name": "current_frame",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    },
+    {
+      "name": "prev_frame",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    },
+    {
+      "name": "next_frame",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    }
+  ],
+  "oqb101.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gps_basic",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    }
+  ],
+  "oqb101.FrameMetaOfEbike": [
+    {
+      "name": "ebike_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "ebike_gps",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeGps",
+      "packed": false
+    },
+    {
+      "name": "ebike_acc",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeAcc",
+      "packed": false
+    },
+    {
+      "name": "tilt_angle",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeTiltAngle",
+      "packed": false
+    },
+    {
+      "name": "motor_power",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMotorPower",
+      "packed": false
+    },
+    {
+      "name": "pedaling_power",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePedalingPower",
+      "packed": false
+    },
+    {
+      "name": "cadence",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeCadence",
+      "packed": false
+    },
+    {
+      "name": "motor_torque",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMotorTorque",
+      "packed": false
+    },
+    {
+      "name": "pedaling_torque",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePedalingTorque",
+      "packed": false
+    },
+    {
+      "name": "slope",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeSlope",
+      "packed": false
+    },
+    {
+      "name": "mileage",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMileage",
+      "packed": false
+    },
+    {
+      "name": "speed",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeSpeed",
+      "packed": false
+    },
+    {
+      "name": "heart_rate",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "HeartRate",
+      "packed": false
+    },
+    {
+      "name": "pressure",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePressure",
+      "packed": false
+    },
+    {
+      "name": "calories",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeCalories",
+      "packed": false
+    }
+  ],
+  "wab140.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab140.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab140.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab140.FrameMeta",
+      "packed": false
+    }
+  ],
+  "wab140.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    }
+  ],
+  "wab140.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab140.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    }
+  ],
+  "wab140.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    }
+  ],
+  "wab140.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab140.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "drone_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab140.FrameMetaOfDrone",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab140.FrameMetaOfGimbal",
+      "packed": false
+    }
+  ],
+  "wab140.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 30,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "exposure_value",
+      "number": 31,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureValue",
+      "packed": false
+    },
+    {
+      "name": "color_temp_atmosphere",
+      "number": 32,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorTempAtmosphere",
+      "packed": false
+    },
+    {
+      "name": "focal_length",
+      "number": 33,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocalLength",
+      "packed": false
+    },
+    {
+      "name": "absolute_altitude",
+      "number": 36,
+      "type": 11,
+      "label": 1,
+      "type_name": "AbsoluteAltitude",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 37,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "sensor_active_size",
+      "number": 38,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorActiveSize",
+      "packed": false
+    }
+  ],
+  "ExposureValue": [
+    {
+      "name": "exposure_value",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "ColorTempAtmosphere": [
+    {
+      "name": "color_temp_atmosphere",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "FocalLength": [
+    {
+      "name": "focal_length",
+      "number": 1,
+      "type": 5,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "AbsoluteAltitude": [
+    {
+      "name": "absolute_altitude_m",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "SensorActiveSize": [
+    {
+      "name": "sensor_active_physical_width_um",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "sensor_active_physical_height_um",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab140.FrameMetaOfDrone": [
+    {
+      "name": "drone_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gps",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "relative_altitude",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "RelativeAltitude",
+      "packed": false
+    },
+    {
+      "name": "fcm_data",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "FCMData",
+      "packed": false
+    },
+    {
+      "name": "battery",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "Battery_Info",
+      "packed": false
+    },
+    {
+      "name": "rc_mode",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "RC_Mode",
+      "packed": false
+    },
+    {
+      "name": "barr_dist",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "Barrier_Distance",
+      "packed": false
+    }
+  ],
+  "EulerAngle": [
+    {
+      "name": "pitch_decidegree",
+      "number": 1,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roll_decidegree",
+      "number": 2,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "yaw_decidegree",
+      "number": 3,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "RelativeAltitude": [
+    {
+      "name": "relative_altitude_mm",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "is_relative_altitude_valid",
+      "number": 2,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "FCMData": [
+    {
+      "name": "timestamp",
+      "number": 1,
+      "type": 6,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "center_x",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "center_y",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "min_x",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "min_y",
+      "number": 5,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "max_x",
+      "number": 6,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "max_y",
+      "number": 7,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "relative_direction",
+      "number": 8,
+      "type": 14,
+      "label": 1,
+      "type_name": "FCMData.BodyRelativeDirection",
+      "packed": false
+    },
+    {
+      "name": "dest_direction",
+      "number": 9,
+      "type": 14,
+      "label": 1,
+      "type_name": "FCMData.BodyRelativeDirection",
+      "packed": false
+    },
+    {
+      "name": "movement",
+      "number": 10,
+      "type": 14,
+      "label": 1,
+      "type_name": "FCMData.Drone_Movement",
+      "packed": false
+    },
+    {
+      "name": "relative_horizontal_distance_m",
+      "number": 11,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "relative_height_m",
+      "number": 12,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "target_speed_mps",
+      "number": 13,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "move_exec_state",
+      "number": 14,
+      "type": 14,
+      "label": 1,
+      "type_name": "FCMData.Movement_Exec_State",
+      "packed": false
+    },
+    {
+      "name": "exit_reason",
+      "number": 15,
+      "type": 14,
+      "label": 1,
+      "type_name": "FCMData.Exit_Reason",
+      "packed": false
+    },
+    {
+      "name": "score",
+      "number": 16,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "camera_movements",
+      "number": 17,
+      "type": 14,
+      "label": 1,
+      "type_name": "FCMData.Camera_Movement_Type",
+      "packed": false
+    },
+    {
+      "name": "object_movements",
+      "number": 18,
+      "type": 14,
+      "label": 1,
+      "type_name": "FCMData.Object_Movement_Type",
+      "packed": false
+    }
+  ],
+  "Battery_Info": [
+    {
+      "name": "battery_percent",
+      "number": 1,
+      "type": 7,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "RC_Mode": [
+    {
+      "name": "rc_mode",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "RC_Mode.Rc_Mode_Enum",
+      "packed": false
+    }
+  ],
+  "Barrier_Distance": [
+    {
+      "name": "below_tof_state",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "Barrier_Distance.Tof_State",
+      "packed": false
+    },
+    {
+      "name": "below_dist_cm",
+      "number": 2,
+      "type": 15,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab140.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gimbal_mode",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GimbalMode",
+      "packed": false
+    },
+    {
+      "name": "gimbal_attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gimbal_pose_quaternions",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    }
+  ],
+  "GimbalMode": [
+    {
+      "name": "gimbal_mode",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "GimbalMode.GimbalModeType",
+      "packed": false
+    }
+  ],
+  "wab234.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab234.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab234.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab234.FrameMeta",
+      "packed": false
+    }
+  ],
+  "wab234.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    }
+  ],
+  "wab234.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab234.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    }
+  ],
+  "wab234.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    }
+  ],
+  "wab234.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab234.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "drone_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab234.FrameMetaOfDrone",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab234.FrameMetaOfGimbal",
+      "packed": false
+    }
+  ],
+  "wab234.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 30,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "exposure_value",
+      "number": 31,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureValue",
+      "packed": false
+    },
+    {
+      "name": "color_temp_atmosphere",
+      "number": 32,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorTempAtmosphere",
+      "packed": false
+    },
+    {
+      "name": "focal_length",
+      "number": 33,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocalLength",
+      "packed": false
+    },
+    {
+      "name": "absolute_altitude",
+      "number": 36,
+      "type": 11,
+      "label": 1,
+      "type_name": "AbsoluteAltitude",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 37,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "sensor_active_size",
+      "number": 38,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorActiveSize",
+      "packed": false
+    }
+  ],
+  "wab234.FrameMetaOfDrone": [
+    {
+      "name": "drone_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gps",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "relative_altitude",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "RelativeAltitude",
+      "packed": false
+    },
+    {
+      "name": "fcm_data",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "FCMData",
+      "packed": false
+    }
+  ],
+  "wab234.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gimbal_mode",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GimbalMode",
+      "packed": false
+    },
+    {
+      "name": "gimbal_attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gimbal_pose_quaternions",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    }
+  ],
+  "wab341.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.FrameMeta",
+      "packed": false
+    }
+  ],
+  "wab341.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    }
+  ],
+  "wab341.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    }
+  ],
+  "wab341.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "eND_sn",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ENdSerialNumber",
+      "packed": false
+    }
+  ],
+  "ENdSerialNumber": [
+    {
+      "name": "eND_sn",
+      "number": 1,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab341.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "drone_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.FrameMetaOfDrone",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.FrameMetaOfGimbal",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab341.FrameMetaOfIMU",
+      "packed": false
+    }
+  ],
+  "wab341.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 30,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "exposure_value",
+      "number": 31,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureValue",
+      "packed": false
+    },
+    {
+      "name": "color_temp_atmosphere",
+      "number": 32,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorTempAtmosphere",
+      "packed": false
+    },
+    {
+      "name": "focal_length",
+      "number": 33,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocalLength",
+      "packed": false
+    },
+    {
+      "name": "absolute_altitude",
+      "number": 36,
+      "type": 11,
+      "label": 1,
+      "type_name": "AbsoluteAltitude",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 37,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "sensor_active_size",
+      "number": 38,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorActiveSize",
+      "packed": false
+    }
+  ],
+  "wab341.FrameMetaOfDrone": [
+    {
+      "name": "drone_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gps",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "relative_altitude",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "RelativeAltitude",
+      "packed": false
+    },
+    {
+      "name": "fcm_data",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "FCMData",
+      "packed": false
+    }
+  ],
+  "wab341.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gimbal_mode",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GimbalMode",
+      "packed": false
+    },
+    {
+      "name": "gimbal_attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gimbal_pose_quaternions",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    }
+  ],
+  "wab341.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    },
+    {
+      "name": "IMU_vsync_pos",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ImuVsyncPos",
+      "packed": false
+    }
+  ],
+  "wab520.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab520.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab520.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab520.FrameMeta",
+      "packed": false
+    }
+  ],
+  "wab520.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    },
+    {
+      "name": "distortion_coefficients",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "LensDistortionCoefficients",
+      "packed": false
+    },
+    {
+      "name": "sensor_readout_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameReadOutTime",
+      "packed": false
+    },
+    {
+      "name": "sensor_read_direction",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorReadDirection",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "eis_status",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EisStatus",
+      "packed": false
+    },
+    {
+      "name": "imu_sampling_rate",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "IMUSamplingRate",
+      "packed": false
+    },
+    {
+      "name": "sensor_fps",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameRate",
+      "packed": false
+    },
+    {
+      "name": "ITD_value",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "ITDValue",
+      "packed": false
+    },
+    {
+      "name": "LRO_value",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "LROValue",
+      "packed": false
+    }
+  ],
+  "wab520.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab520.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    },
+    {
+      "name": "fov_type",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "FOVType",
+      "packed": false
+    }
+  ],
+  "wab520.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "device_sn",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceSN",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoise",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    }
+  ],
+  "DeviceSN": [
+    {
+      "name": "device_sn",
+      "number": 1,
+      "type": 9,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab520.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab520.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab520.FrameMetaOfIMU",
+      "packed": false
+    },
+    {
+      "name": "drone_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab520.FrameMetaOfDrone",
+      "packed": false
+    }
+  ],
+  "wab520.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "exposure_value",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureValue",
+      "packed": false
+    },
+    {
+      "name": "color_temp_atmosphere",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorTempAtmosphere",
+      "packed": false
+    },
+    {
+      "name": "focal_length",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocalLength",
+      "packed": false
+    },
+    {
+      "name": "absolute_altitude",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "AbsoluteAltitude",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "sensor_active_size",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorActiveSize",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "sensor_shift_param",
+      "number": 16,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorShiftParam",
+      "packed": false
+    },
+    {
+      "name": "fancy_mode",
+      "number": 17,
+      "type": 11,
+      "label": 1,
+      "type_name": "FancyMode",
+      "packed": false
+    }
+  ],
+  "SensorShiftParam": [
+    {
+      "name": "sensor_shift_arr",
+      "number": 1,
+      "type": 13,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "sensor_shift_arr_with_roll",
+      "number": 2,
+      "type": 13,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "sensor_shift_arr_without_roll",
+      "number": 3,
+      "type": 13,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "sensor_shift_arr_only_yaw",
+      "number": 4,
+      "type": 13,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "sensor_shift_ctrl_type",
+      "number": 5,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "FancyMode": [
+    {
+      "name": "timestamp",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "fancy_mode_type",
+      "number": 2,
+      "type": 14,
+      "label": 1,
+      "type_name": "FancyMode.FancyModeType",
+      "packed": false
+    },
+    {
+      "name": "fancy_mode_act_cnt",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab520.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    }
+  ],
+  "wab520.FrameMetaOfDrone": [
+    {
+      "name": "drone_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gps",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "relative_altitude",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "RelativeAltitude",
+      "packed": false
+    },
+    {
+      "name": "battery",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "Battery_Info",
+      "packed": false
+    },
+    {
+      "name": "rc_mode",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "RC_Mode",
+      "packed": false
+    },
+    {
+      "name": "barr_dist",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "Barrier_Distance",
+      "packed": false
+    },
+    {
+      "name": "fai_degree",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "FaiDegree",
+      "packed": false
+    }
+  ],
+  "FaiDegree": [
+    {
+      "name": "fai_g_deg",
+      "number": 1,
+      "type": 5,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab521.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.FrameMeta",
+      "packed": false
+    }
+  ],
+  "wab521.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    },
+    {
+      "name": "distortion_coefficients",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "LensDistortionCoefficients",
+      "packed": false
+    },
+    {
+      "name": "sensor_readout_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameReadOutTime",
+      "packed": false
+    },
+    {
+      "name": "sensor_read_direction",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorReadDirection",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "eis_status",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EisStatus",
+      "packed": false
+    },
+    {
+      "name": "imu_sampling_rate",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "IMUSamplingRate",
+      "packed": false
+    },
+    {
+      "name": "sensor_fps",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameRate",
+      "packed": false
+    },
+    {
+      "name": "ITD_value",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "ITDValue",
+      "packed": false
+    },
+    {
+      "name": "LRO_value",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "LROValue",
+      "packed": false
+    }
+  ],
+  "wab521.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    },
+    {
+      "name": "fov_type",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "FOVType",
+      "packed": false
+    }
+  ],
+  "wab521.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "device_sn",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceSN",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoise",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    },
+    {
+      "name": "camera_controller_scene",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "CameraControllerScene",
+      "packed": false
+    }
+  ],
+  "CameraControllerScene": [
+    {
+      "name": "camera_controller_scene",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "CameraControllerScene.CameraControllerSceneScene",
+      "packed": false
+    }
+  ],
+  "wab521.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.FrameMetaOfIMU",
+      "packed": false
+    },
+    {
+      "name": "drone_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.FrameMetaOfDrone",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab521.FrameMetaOfGimbal",
+      "packed": false
+    }
+  ],
+  "wab521.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "exposure_value",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureValue",
+      "packed": false
+    },
+    {
+      "name": "color_temp_atmosphere",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorTempAtmosphere",
+      "packed": false
+    },
+    {
+      "name": "focal_length",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocalLength",
+      "packed": false
+    },
+    {
+      "name": "absolute_altitude",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "AbsoluteAltitude",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "sensor_active_size",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorActiveSize",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "sensor_shift_param",
+      "number": 16,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorShiftParam",
+      "packed": false
+    },
+    {
+      "name": "fancy_mode",
+      "number": 17,
+      "type": 11,
+      "label": 1,
+      "type_name": "FancyMode",
+      "packed": false
+    }
+  ],
+  "wab521.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    }
+  ],
+  "wab521.FrameMetaOfDrone": [
+    {
+      "name": "drone_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gps",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "relative_altitude",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "RelativeAltitude",
+      "packed": false
+    },
+    {
+      "name": "battery",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "Battery_Info",
+      "packed": false
+    },
+    {
+      "name": "rc_mode",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "RC_Mode",
+      "packed": false
+    },
+    {
+      "name": "barr_dist",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "Barrier_Distance",
+      "packed": false
+    },
+    {
+      "name": "fai_degree",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "FaiDegree",
+      "packed": false
+    }
+  ],
+  "wab521.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gimbal_attitude",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    }
+  ],
+  "wab530.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.FrameMeta",
+      "packed": false
+    }
+  ],
+  "wab530.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    },
+    {
+      "name": "distortion_coefficients",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "LensDistortionCoefficients",
+      "packed": false
+    },
+    {
+      "name": "sensor_readout_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameReadOutTime",
+      "packed": false
+    },
+    {
+      "name": "sensor_read_direction",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorReadDirection",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "eis_status",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "EisStatus",
+      "packed": false
+    },
+    {
+      "name": "imu_sampling_rate",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "IMUSamplingRate",
+      "packed": false
+    },
+    {
+      "name": "sensor_fps",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorFrameRate",
+      "packed": false
+    },
+    {
+      "name": "ITD_value",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "ITDValue",
+      "packed": false
+    },
+    {
+      "name": "LRO_value",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "LROValue",
+      "packed": false
+    },
+    {
+      "name": "sensor_res",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorRes",
+      "packed": false
+    },
+    {
+      "name": "style_filter_mode",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "StyleFilterMode",
+      "packed": false
+    },
+    {
+      "name": "flat_res",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "FlatRes",
+      "packed": false
+    },
+    {
+      "name": "yltm_enable",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "YltmEnable",
+      "packed": false
+    }
+  ],
+  "FlatRes": [
+    {
+      "name": "flat_width",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "flat_height",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab530.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    },
+    {
+      "name": "fov_type",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "FOVType",
+      "packed": false
+    },
+    {
+      "name": "pano_dewarp_params",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "PanoDewarpParams",
+      "packed": false
+    },
+    {
+      "name": "extri_lens_mode",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExtriLensMode",
+      "packed": false
+    }
+  ],
+  "wab530.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "device_sn",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceSN",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoise",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    }
+  ],
+  "wab530.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "imu_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.FrameMetaOfIMU",
+      "packed": false
+    },
+    {
+      "name": "drone_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.FrameMetaOfDrone",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.FrameMetaOfGimbal",
+      "packed": false
+    },
+    {
+      "name": "ebike_frame_meta",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "wab530.FrameMetaOfEbike",
+      "packed": false
+    }
+  ],
+  "wab530.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "exposure_value",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureValue",
+      "packed": false
+    },
+    {
+      "name": "color_temp_atmosphere",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorTempAtmosphere",
+      "packed": false
+    },
+    {
+      "name": "focal_length",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocalLength",
+      "packed": false
+    },
+    {
+      "name": "absolute_altitude",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "AbsoluteAltitude",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "sensor_active_size",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorActiveSize",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_focal_length",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalFocalLength",
+      "packed": false
+    },
+    {
+      "name": "sensor_shift_param",
+      "number": 16,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorShiftParam",
+      "packed": false
+    },
+    {
+      "name": "fancy_mode",
+      "number": 17,
+      "type": 11,
+      "label": 1,
+      "type_name": "FancyMode",
+      "packed": false
+    },
+    {
+      "name": "liveview_hfov",
+      "number": 18,
+      "type": 11,
+      "label": 1,
+      "type_name": "LiveViewHfov",
+      "packed": false
+    },
+    {
+      "name": "aec_eagle",
+      "number": 19,
+      "type": 11,
+      "label": 1,
+      "type_name": "AecEagle",
+      "packed": false
+    },
+    {
+      "name": "expo_balance_mode",
+      "number": 20,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExpoBalanceMode",
+      "packed": false
+    },
+    {
+      "name": "current_underwater_confidence",
+      "number": 21,
+      "type": 11,
+      "label": 1,
+      "type_name": "CurrentUnderwaterConfidence",
+      "packed": false
+    },
+    {
+      "name": "camera_attitude",
+      "number": 22,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "camera_acc",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "Accelerometer",
+      "packed": false
+    },
+    {
+      "name": "sharpness",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "Sharpness",
+      "packed": false
+    },
+    {
+      "name": "denoising",
+      "number": 25,
+      "type": 11,
+      "label": 1,
+      "type_name": "NoiseReductionApplied",
+      "packed": false
+    },
+    {
+      "name": "track_ret",
+      "number": 26,
+      "type": 11,
+      "label": 1,
+      "type_name": "TrackResultBox",
+      "packed": false
+    },
+    {
+      "name": "aec_ae",
+      "number": 27,
+      "type": 11,
+      "label": 1,
+      "type_name": "AecAe",
+      "packed": false
+    },
+    {
+      "name": "track_result_box_3d",
+      "number": 28,
+      "type": 11,
+      "label": 1,
+      "type_name": "TrackResultBox3D",
+      "packed": false
+    },
+    {
+      "name": "track_roi_box_list_sur",
+      "number": 29,
+      "type": 11,
+      "label": 1,
+      "type_name": "TrackRoiBoxListSurround",
+      "packed": false
+    }
+  ],
+  "LiveViewHfov": [
+    {
+      "name": "lv_hfov",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "lv_hfov_camera",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "lv_view_site",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "lv_frame_ratio",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "ExpoBalanceMode": [
+    {
+      "name": "mode",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "TrackResultBox3D": [
+    {
+      "name": "vertex_top_left",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate3D",
+      "packed": false
+    },
+    {
+      "name": "vertex_top_right",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate3D",
+      "packed": false
+    },
+    {
+      "name": "vertex_bottom_left",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate3D",
+      "packed": false
+    },
+    {
+      "name": "vertex_bottom_right",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Coordinate3D",
+      "packed": false
+    }
+  ],
+  "Coordinate3D": [
+    {
+      "name": "x",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "y",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "z",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "TrackRoiBoxListSurround": [
+    {
+      "name": "is_check_valid",
+      "number": 1,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roi_frame_id",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "real_frame_id",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "main_roi_id",
+      "number": 4,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roi_box_face_list",
+      "number": 5,
+      "type": 11,
+      "label": 3,
+      "type_name": "TrackRoiBox",
+      "packed": false
+    },
+    {
+      "name": "roi_box_body_list",
+      "number": 6,
+      "type": 11,
+      "label": 3,
+      "type_name": "TrackRoiBox",
+      "packed": false
+    }
+  ],
+  "TrackRoiBox": [
+    {
+      "name": "roi_id",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "roi_box",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "TrackResultBox3D",
+      "packed": false
+    }
+  ],
+  "wab530.FrameMetaOfIMU": [
+    {
+      "name": "IMU_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "IMU_attitude_after_fusion",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceMultiAttitude",
+      "packed": false
+    },
+    {
+      "name": "IMU_vsync_pos",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ImuVsyncPos",
+      "packed": false
+    },
+    {
+      "name": "IMU_single_attitude_after_fusion",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceAttitude",
+      "packed": false
+    },
+    {
+      "name": "IMU_single_attitude_raw_data",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceRawAttitude",
+      "packed": false
+    }
+  ],
+  "DeviceRawAttitude": [
+    {
+      "name": "timestamp",
+      "number": 1,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "imu_raw_data",
+      "number": 2,
+      "type": 11,
+      "label": 3,
+      "type_name": "ImuRawData",
+      "packed": false
+    }
+  ],
+  "ImuRawData": [
+    {
+      "name": "gyro_x",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gyro_y",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "gyro_z",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "acc_x",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "acc_y",
+      "number": 5,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "acc_z",
+      "number": 6,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab530.FrameMetaOfDrone": [
+    {
+      "name": "drone_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gps",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "relative_altitude",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "RelativeAltitude",
+      "packed": false
+    },
+    {
+      "name": "battery",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "Battery_Info",
+      "packed": false
+    },
+    {
+      "name": "rc_mode",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "RC_Mode",
+      "packed": false
+    },
+    {
+      "name": "barr_dist",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "Barrier_Distance",
+      "packed": false
+    },
+    {
+      "name": "fai_degree",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "FaiDegree",
+      "packed": false
+    },
+    {
+      "name": "fcm_data",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "FCMData",
+      "packed": false
+    },
+    {
+      "name": "gimbal_angle_deviation",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "GimbalAngleDeviation",
+      "packed": false
+    },
+    {
+      "name": "filming_target_position",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "UavToTargetPos",
+      "packed": false
+    },
+    {
+      "name": "tracking_info",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "TrackingInfo",
+      "packed": false
+    },
+    {
+      "name": "flight_pose_navi",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "FlightPoseNavi",
+      "packed": false
+    }
+  ],
+  "GimbalAngleDeviation": [
+    {
+      "name": "x_deviation",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "y_deviation",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "z_deviation",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "UavToTargetPos": [
+    {
+      "name": "time_stamp_us",
+      "number": 1,
+      "type": 4,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "drone_coord_navi",
+      "number": 2,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    },
+    {
+      "name": "q_drone2navi",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "phi_g",
+      "number": 4,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "target_type",
+      "number": 5,
+      "type": 14,
+      "label": 1,
+      "type_name": "UavToTargetPos.TargetType",
+      "packed": false
+    },
+    {
+      "name": "q_target2navi",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "is_target_coord_valid",
+      "number": 7,
+      "type": 8,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "target_coord_navi",
+      "number": 8,
+      "type": 2,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "TrackingInfo": [
+    {
+      "name": "tracking_mode",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "sub_tracking_mode",
+      "number": 2,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "id",
+      "number": 3,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "obj_class",
+      "number": 4,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "center_x",
+      "number": 5,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "center_y",
+      "number": 6,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "width",
+      "number": 7,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "height",
+      "number": 8,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "FlightPoseNavi": [
+    {
+      "name": "imu_flag",
+      "number": 1,
+      "type": 13,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "position",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Position",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "quaternion",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    },
+    {
+      "name": "rtk_pos_flag",
+      "number": 5,
+      "type": 13,
+      "label": 3,
+      "type_name": null,
+      "packed": true
+    }
+  ],
+  "Position": [
+    {
+      "name": "position_x",
+      "number": 1,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "position_y",
+      "number": 2,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    },
+    {
+      "name": "position_z",
+      "number": 3,
+      "type": 2,
+      "label": 1,
+      "type_name": null,
+      "packed": false
+    }
+  ],
+  "wab530.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gps_basic",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    }
+  ],
+  "wab530.FrameMetaOfEbike": [
+    {
+      "name": "ebike_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "ebike_gps",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeGps",
+      "packed": false
+    },
+    {
+      "name": "ebike_acc",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeAcc",
+      "packed": false
+    },
+    {
+      "name": "tilt_angle",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeTiltAngle",
+      "packed": false
+    },
+    {
+      "name": "motor_power",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMotorPower",
+      "packed": false
+    },
+    {
+      "name": "pedaling_power",
+      "number": 6,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePedalingPower",
+      "packed": false
+    },
+    {
+      "name": "cadence",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeCadence",
+      "packed": false
+    },
+    {
+      "name": "motor_torque",
+      "number": 8,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMotorTorque",
+      "packed": false
+    },
+    {
+      "name": "pedaling_torque",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePedalingTorque",
+      "packed": false
+    },
+    {
+      "name": "slope",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeSlope",
+      "packed": false
+    },
+    {
+      "name": "mileage",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeMileage",
+      "packed": false
+    },
+    {
+      "name": "speed",
+      "number": 12,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeSpeed",
+      "packed": false
+    },
+    {
+      "name": "heart_rate",
+      "number": 13,
+      "type": 11,
+      "label": 1,
+      "type_name": "HeartRate",
+      "packed": false
+    },
+    {
+      "name": "pressure",
+      "number": 14,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikePressure",
+      "packed": false
+    },
+    {
+      "name": "calories",
+      "number": 15,
+      "type": 11,
+      "label": 1,
+      "type_name": "EbikeCalories",
+      "packed": false
+    }
+  ],
+  "wmb261.ProductMeta": [
+    {
+      "name": "clip_meta",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "wmb261.ClipMeta",
+      "packed": false
+    },
+    {
+      "name": "stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wmb261.StreamMeta",
+      "packed": false
+    },
+    {
+      "name": "frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wmb261.FrameMeta",
+      "packed": false
+    }
+  ],
+  "wmb261.ClipMeta": [
+    {
+      "name": "clip_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "clip_streams_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "ClipStreamsMeta",
+      "packed": false
+    }
+  ],
+  "wmb261.StreamMeta": [
+    {
+      "name": "stream_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "StreamMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_stream_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wmb261.StreamMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "video_stream_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "VideoStreamMeta",
+      "packed": false
+    }
+  ],
+  "wmb261.StreamMetaOfCamera": [
+    {
+      "name": "device_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "device_version",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "DeviceVersion",
+      "packed": false
+    },
+    {
+      "name": "color_mode",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorMode",
+      "packed": false
+    },
+    {
+      "name": "way_point_status",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "WayPointStatus",
+      "packed": false
+    }
+  ],
+  "WayPointStatus": [
+    {
+      "name": "status",
+      "number": 1,
+      "type": 14,
+      "label": 1,
+      "type_name": "WayPointStatus.WayPointStatusType",
+      "packed": false
+    }
+  ],
+  "wmb261.FrameMeta": [
+    {
+      "name": "frame_meta_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "FrameMetaHeader",
+      "packed": false
+    },
+    {
+      "name": "camera_frame_meta",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "wmb261.FrameMetaOfCamera",
+      "packed": false
+    },
+    {
+      "name": "drone_frame_meta",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "wmb261.FrameMetaOfDrone",
+      "packed": false
+    },
+    {
+      "name": "gimbal_frame_meta",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "wmb261.FrameMetaOfGimbal",
+      "packed": false
+    }
+  ],
+  "wmb261.FrameMetaOfCamera": [
+    {
+      "name": "camera_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "exposure_index",
+      "number": 7,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureIndex",
+      "packed": false
+    },
+    {
+      "name": "iso",
+      "number": 9,
+      "type": 11,
+      "label": 1,
+      "type_name": "ISO",
+      "packed": false
+    },
+    {
+      "name": "exposure_time",
+      "number": 10,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureTime",
+      "packed": false
+    },
+    {
+      "name": "f_number",
+      "number": 11,
+      "type": 11,
+      "label": 1,
+      "type_name": "FNumber",
+      "packed": false
+    },
+    {
+      "name": "digital_zoom_ratio",
+      "number": 23,
+      "type": 11,
+      "label": 1,
+      "type_name": "DigitalZoomRatio",
+      "packed": false
+    },
+    {
+      "name": "white_balance_cct",
+      "number": 24,
+      "type": 11,
+      "label": 1,
+      "type_name": "WhiteBalanceCCT",
+      "packed": false
+    },
+    {
+      "name": "orientation",
+      "number": 30,
+      "type": 11,
+      "label": 1,
+      "type_name": "Orientation",
+      "packed": false
+    },
+    {
+      "name": "exposure_value",
+      "number": 31,
+      "type": 11,
+      "label": 1,
+      "type_name": "ExposureValue",
+      "packed": false
+    },
+    {
+      "name": "color_temp_atmosphere",
+      "number": 32,
+      "type": 11,
+      "label": 1,
+      "type_name": "ColorTempAtmosphere",
+      "packed": false
+    },
+    {
+      "name": "focal_length",
+      "number": 33,
+      "type": 11,
+      "label": 1,
+      "type_name": "FocalLength",
+      "packed": false
+    },
+    {
+      "name": "absolute_altitude",
+      "number": 36,
+      "type": 11,
+      "label": 1,
+      "type_name": "AbsoluteAltitude",
+      "packed": false
+    },
+    {
+      "name": "sensor_temperature",
+      "number": 37,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorTemperature",
+      "packed": false
+    },
+    {
+      "name": "sensor_active_size",
+      "number": 38,
+      "type": 11,
+      "label": 1,
+      "type_name": "SensorActiveSize",
+      "packed": false
+    }
+  ],
+  "wmb261.FrameMetaOfDrone": [
+    {
+      "name": "drone_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "velocity",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "Velocity",
+      "packed": false
+    },
+    {
+      "name": "attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gps",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "GpsBasic",
+      "packed": false
+    },
+    {
+      "name": "relative_altitude",
+      "number": 5,
+      "type": 11,
+      "label": 1,
+      "type_name": "RelativeAltitude",
+      "packed": false
+    }
+  ],
+  "wmb261.FrameMetaOfGimbal": [
+    {
+      "name": "gimbal_dev_header",
+      "number": 1,
+      "type": 11,
+      "label": 1,
+      "type_name": "MetaHeaderOfDevice",
+      "packed": false
+    },
+    {
+      "name": "gimbal_mode",
+      "number": 2,
+      "type": 11,
+      "label": 1,
+      "type_name": "GimbalMode",
+      "packed": false
+    },
+    {
+      "name": "gimbal_attitude",
+      "number": 3,
+      "type": 11,
+      "label": 1,
+      "type_name": "EulerAngle",
+      "packed": false
+    },
+    {
+      "name": "gimbal_pose_quaternions",
+      "number": 4,
+      "type": 11,
+      "label": 1,
+      "type_name": "Quaternion",
+      "packed": false
+    }
+  ]
+}
