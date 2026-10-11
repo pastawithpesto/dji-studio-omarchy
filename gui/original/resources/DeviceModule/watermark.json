@@ -1,0 +1,258 @@
+[
+    {
+        "productName": "DJI",
+        "deviceName": [
+            "DJI general"
+        ],
+        "seriesName": "common",
+        "category": "common",
+        "resources": [
+            {
+                "icon": "icon_dji.png",
+                "drawImage": "draw_dji.png",
+                "slug": "dji"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Action 3",
+        "deviceName": [
+            "OsmoAction3"
+        ],
+        "seriesName": "Action",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_action3_1.png",
+                "drawImage": "draw_osmo_action3_1.png",
+                "slug": "osmo_action3_1"
+            },
+            {
+                "icon": "icon_osmo_action3_2.png",
+                "drawImage": "draw_osmo_action3_2.png",
+                "slug": "osmo_action3_2"
+            },
+            {
+                "icon": "icon_osmo_action3_3.png",
+                "drawImage": "draw_osmo_action3_3.png",
+                "slug": "osmo_action3_3"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Action 4",
+        "deviceName": [
+            "OsmoAction4"
+        ],
+        "seriesName": "Action",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_action4_1.png",
+                "drawImage": "draw_osmo_action4_1.png",
+                "slug": "osmo_action4_1"
+            },
+            {
+                "icon": "icon_osmo_action4_2.png",
+                "drawImage": "draw_osmo_action4_2.png",
+                "slug": "osmo_action4_2"
+            },
+            {
+                "icon": "icon_osmo_action4_3.png",
+                "drawImage": "draw_osmo_action4_3.png",
+                "slug": "osmo_action4_3"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Action 5 Pro",
+        "deviceName": [
+            "OsmoAction5 Pro"
+        ],
+        "seriesName": "Action",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_action5_1.png",
+                "drawImage": "draw_osmo_action5_1.png",
+                "slug": "osmo_action5_1"
+            },
+            {
+                "icon": "icon_osmo_action5_2.png",
+                "drawImage": "draw_osmo_action5_2.png",
+                "slug": "osmo_action5_2"
+            },
+            {
+                "icon": "icon_osmo_action5_3.png",
+                "drawImage": "draw_osmo_action5_3.png",
+                "slug": "osmo_action5_3"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Action 6",
+        "deviceName": [
+            "OsmoAction6"
+        ],
+        "seriesName": "Action",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_action6_1.png",
+                "drawImage": "draw_osmo_action6_1.png",
+                "slug": "osmo_action6_1"
+            },
+            {
+                "icon": "icon_osmo_action6_2.png",
+                "drawImage": "draw_osmo_action6_2.png",
+                "slug": "osmo_action6_2"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Pocket 3",
+        "deviceName": [
+            "OsmoPocket3"
+        ],
+        "seriesName": "Pocket",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_pocket3_1.png",
+                "drawImage": "draw_osmo_pocket3_1.png",
+                "slug": "osmo_pocket3_1"
+            },
+            {
+                "icon": "icon_osmo_pocket3_2.png",
+                "drawImage": "draw_osmo_pocket3_2.png",
+                "slug": "osmo_pocket3_2"
+            },
+            {
+                "icon": "icon_osmo_pocket3_3.png",
+                "drawImage": "draw_osmo_pocket3_3.png",
+                "slug": "osmo_pocket3_3"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Pocket 4",
+        "deviceName": [
+            "OsmoPocket4"
+        ],
+        "seriesName": "Pocket",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_pocket4_1.png",
+                "drawImage": "draw_osmo_pocket4_1.png",
+                "slug": "osmo_pocket4_1"
+            },
+            {
+                "icon": "icon_osmo_pocket4_2.png",
+                "drawImage": "draw_osmo_pocket4_2.png",
+                "slug": "osmo_pocket4_2"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Pocket 4P",
+        "deviceName": [
+            "OsmoPocket4P"
+        ],
+        "seriesName": "Pocket",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_pocket4P_1.png",
+                "drawImage": "draw_osmo_pocket4P_1.png",
+                "slug": "osmo_pocket4P_1"
+            },
+            {
+                "icon": "icon_osmo_pocket4P_2.png",
+                "drawImage": "draw_osmo_pocket4P_2.png",
+                "slug": "osmo_pocket4P_2"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo 360",
+        "deviceName": [
+            "Osmo 360"
+        ],
+        "seriesName": "360",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_360_1.png",
+                "drawImage": "draw_osmo_360_1.png",
+                "slug": "osmo_360_1"
+            },
+            {
+                "icon": "icon_osmo_360_2.png",
+                "drawImage": "draw_osmo_360_2.png",
+                "slug": "osmo_360_2"
+            }
+        ]
+    },
+    {
+        "productName": "Osmo Nano",
+        "deviceName": [
+            "Osmo Nano"
+        ],
+        "seriesName": "Nano",
+        "category": "handheld",
+        "resources": [
+            {
+                "icon": "icon_osmo_nano_1.png",
+                "drawImage": "draw_osmo_nano_1.png",
+                "slug": "osmo_nano_1"
+            },
+            {
+                "icon": "icon_osmo_nano_2.png",
+                "drawImage": "draw_osmo_nano_2.png",
+                "slug": "osmo_nano_2"
+            }
+        ]
+    },
+    {
+        "productName": "Avata 360",
+        "deviceName": [
+            "Avata360"
+        ],
+        "seriesName": "Avata",
+        "category": "drone",
+        "resources": [
+            {
+                "icon": "icon_avata_360_1.png",
+                "drawImage": "draw_avata_360_1.png",
+                "slug": "avata_360_1"
+            },
+            {
+                
+                "icon": "icon_avata_360_2.png",
+                "drawImage": "draw_avata_360_2.png",
+                "slug": "avata_360_2"
+            }
+        ]
+    },
+  {
+    "productName": "Osmo 360 II",
+    "deviceName": [
+      "Osmo 360 II"
+    ],
+    "seriesName": "360",
+    "category": "handheld",
+    "resources": [
+      {
+        "icon": "icon_osmo_3602_1.png",
+        "drawImage": "draw_osmo_3602_1.png",
+        "slug": "osmo_3602_1"
+      },
+      {
+        "icon": "icon_osmo_3602_2.png",
+        "drawImage": "draw_osmo_3602_2.png",
+        "slug": "osmo_3602_2"
+      }
+    ]
+  }
+]
