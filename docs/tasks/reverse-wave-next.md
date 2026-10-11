@@ -30,8 +30,9 @@ Require independent Sol review and Astra High verification before a new mileston
 PR 1 is merged after Sol and Astra approval. The exact reports are included in
 `docs/evidence/next-wave`. Do not repeat resource extraction.
 
-Two Sol High workers are reviewing watchdog v2 and the completed startup/layout
-reports. Luna High is recovering missing Main native registration records in
+Watchdog v2 passed independent Sol review and root verified its running process,
+advancing heartbeats and actual comms delivery. Astra operational verification is
+pending. A Sol High worker is reviewing the completed startup/layout reports. Luna High is recovering missing Main native registration records in
 `luna-review/luna-a-2/next-wave/main-registration`. This uses existing saved
 RAE/Ghidra evidence and pinned original bytes. GLM availability remains quota
 limited at the latest UI observation. These tasks use separate local output paths.

@@ -22,9 +22,13 @@ Resource preservation and runtime equivalence are separate results.
 
 Hosted manual checks pass. Automatic PR event runs remain unverified. PR 2 reserves
 the trigger correction and must stay in draft until its automatic-run gate passes.
-A local read-only watchdog v2 is under independent Sol review after a delivery retry
-repair. No continuously running monitor is claimed at this checkpoint. Read open
-PR claims before edits and pushes; use a manual hosted check when needed.
+The local read-only watchdog v2 passed independent Sol review and is running as
+`dji-pr-watchdog-next-wave.service` on the maintainer host. Root verified two
+advancing healthy continuous heartbeats and actual comms delivery on 2026-10-11.
+It polls every 30 seconds when healthy and backs off on failures. Monitoring
+depends on that user service and API access. Astra operational verification is
+pending at this checkpoint. Read open PR claims before edits and pushes; use a
+manual hosted check when needed.
 
 ## Validation limits
 
