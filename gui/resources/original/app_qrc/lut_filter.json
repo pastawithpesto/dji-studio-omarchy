@@ -1,0 +1,514 @@
+{
+  "version": "1.0.0.0",
+  "assets": [
+    {
+      "category": "handheld",
+      "seriesName": "Pocket",
+      "productName": "Osmo Pocket 4P",
+      "deviceName": [
+        "OsmoPocket4P"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG 2",
+          "slug": "LOG_Pocket4P_DLog2",
+          "path": "DLog2_to_Rec709_V1_6413"
+        },
+        {
+          "name": "D-LOG",
+          "slug": "LOG_Pocket4P_DLog",
+          "path": "DLog_to_Rec709_V1_1369"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Pocket",
+      "productName": "Osmo Pocket 4",
+      "deviceName": [
+        "OsmoPocket4"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG",
+          "slug": "LOG_Pocket4_DLog",
+          "path": "DLog_to_Rec709_V1_1369"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Pocket",
+      "productName": "Osmo Pocket 3",
+      "deviceName": [
+        "OsmoPocket3"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Pocket3_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Pocket",
+      "productName": "Osmo Pocket 2",
+      "deviceName": [
+        "OsmoPocket2"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_Pocket2_DCinelike",
+          "path": "DCinelike_to_Rec709_op2"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Pocket",
+      "productName": "Osmo Pocket",
+      "deviceName": [
+        "OsmoPocket"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_Pocket_DCinelike",
+          "path": "DCinelike_to_Rec709_op2"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Action",
+      "productName": "Osmo Action 6",
+      "deviceName": [
+        "OsmoAction6"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_AC6_DLogM",
+          "path": "DLogM_to_Rec709_LUT_737"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Action",
+      "productName": "Osmo Action 5 Pro",
+      "deviceName": [
+        "OsmoAction5 Pro"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_AC5Pro_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Action",
+      "productName": "Osmo Action 4",
+      "deviceName": [
+        "OsmoAction4"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_AC4_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Action",
+      "productName": "Osmo Action 3",
+      "deviceName": [
+        "OsmoAction3"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_AC3_DCinelike",
+          "path": "DCinelike_to_Rec709_ac"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Action",
+      "productName": "Osmo Action 2",
+      "deviceName": [
+        "OsmoAction2"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_AC2_DCinelike",
+          "path": "DCinelike_to_Rec709_ac"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Action",
+      "productName": "Osmo Action",
+      "deviceName": [
+        "OsmoAction"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_AC_DCinelike",
+          "path": "DCinelike_to_Rec709_ac"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "360",
+      "productName": "Osmo 360",
+      "deviceName": [
+        "OsmoOQ001",
+        "Osmo360",
+        "Osmo 360",
+        "OsmoOQ"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Osmo360_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "360",
+      "productName": "Osmo 360 II",
+      "deviceName": [
+        "Osmo 360 II"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Osmo360_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "handheld",
+      "seriesName": "Nano",
+      "productName": "Osmo Nano",
+      "deviceName": [
+        "Osmo Nano"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Nano_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mavic",
+      "productName": "DJI Mavic 4 Pro",
+      "deviceName": [
+        "Mavic4 Pro"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG",
+          "slug": "LOG_Mavic4Pro_DLog",
+          "path": "DLog_to_Rec709_V1_1369"
+        },
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Mavic4Pro_DLogM",
+          "path": "DLogM_to_Rec709_V1_1369"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mavic",
+      "productName": "DJI Mavic 3 Pro",
+      "deviceName": [
+        "Mavic3 Pro"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG",
+          "slug": "LOG_Mavic3Pro_DLog",
+          "path": "DLog_to_Rec709_V1_1369"
+        },
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Mavic3Pro_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mavic",
+      "productName": "DJI Mavic 3 Classic",
+      "deviceName": [
+        "Mavic3 Classic"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG",
+          "slug": "LOG_Mavic3Classic_DLog",
+          "path": "DLog_to_Rec709_V1_1369"
+        },
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Mavic3Classic_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mavic",
+      "productName": "DJI Mavic 3",
+      "deviceName": [
+        "Mavic3"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG",
+          "slug": "LOG_Mavic3_DLog",
+          "path": "DLog_to_Rec709_V1_1369"
+        },
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Mavic3_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mavic",
+      "productName": "DJI Mavic Air 2",
+      "deviceName": [
+        "Mavic Air 2"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_Mavic2Air_DCinelike",
+          "path": "DCinelike_to_Rec709_avata"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mavic",
+      "productName": "DJI Mavic 2 Pro",
+      "deviceName": [
+        "Mavic2"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Mavic2Pro_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mavic",
+      "productName": "DJI Mavic 2 Zoom",
+      "deviceName": [
+        "Mavic2 Zoom"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_Mavic2Zoom_DCinelike",
+          "path": "DCinelike_to_Rec709_avata"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Air",
+      "productName": "DJI Air 3S",
+      "deviceName": [
+        "Air3s"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Air3S_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Air",
+      "productName": "DJI Air 3",
+      "deviceName": [
+        "Air3"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Air3_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Air",
+      "productName": "DJI Air 2S",
+      "deviceName": [
+        "Air2s"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Air2S_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mini",
+      "productName": "DJI Mini 5 Pro",
+      "deviceName": [
+        "Mini5 Pro"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Mini5Pro_DLogM",
+          "path": "DLogM_to_Rec709_V1_1369"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mini",
+      "productName": "DJI Mini 4 Pro",
+      "deviceName": [
+        "Mini4"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Mini4Pro_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Mini",
+      "productName": "DJI Mini 3 Pro",
+      "deviceName": [
+        "Mini3 Pro"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_Mini3Pro_DCinelike",
+          "path": "DCinelike_to_Rec709_avata"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Lito",
+      "productName": "DJI Lito X1",
+      "deviceName": [
+        "Lito X1"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_LitoX1_DLogM",
+          "path": "DLogM_to_Rec709_V1_1369"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Flip",
+      "productName": "DJI Flip",
+      "deviceName": [
+        "Flip"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Flip_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Avata",
+      "productName": "DJI Avata 360",
+      "deviceName": [
+        "DJI Avata360",
+        "DJIFCA188"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Avata360_DLogM",
+          "path": "DLogM_to_Rec709_V1_1369"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Avata",
+      "productName": "DJI Avata 2",
+      "deviceName": [
+        "Avata2"
+      ],
+      "resources": [
+        {
+          "name": "D-LOG M",
+          "slug": "LOG_Avata2_DLogM",
+          "path": "DLogM_to_Rec709_V1_1018"
+        }
+      ]
+    },
+    {
+      "category": "drone",
+      "seriesName": "Avata",
+      "productName": "DJI Avata",
+      "deviceName": [
+        "Avata"
+      ],
+      "resources": [
+        {
+          "name": "D-Cinelike",
+          "slug": "LOG_Avata_DCinelike",
+          "path": "DCinelike_to_Rec709_avata"
+        }
+      ]
+    }
+  ]
+}

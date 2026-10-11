@@ -1,0 +1,4 @@
+module app_qrc
+
+singleton ColorsConfig           1.0     ColorsConfig.qml
+singleton RadiusConfig           1.0     RadiusConfig.qml

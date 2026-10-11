@@ -1,0 +1,2 @@
+# Frozen recovered resources retain every original byte, including CRLF/spaces.
+resources/** -text -diff
