@@ -68,3 +68,14 @@ Do not add version 0 or 1 support, raw fallback, file I/O, GL, FFI, unsafe code,
 7. Push a draft PR. Obtain independent review of the exact candidate. Do not merge or claim feature parity.
 
 The work is complete only for the bounded decoder implementation and its checks. Camera input and paired Windows output are unavailable. This task cannot establish full stitching parity.
+
+## Candidate validation
+
+The final focused checks pass on x86_64 Linux with rustc 1.98.1, Cargo 1.98.1, and the system Clippy driver 0.1.98.
+
+- `rustfmt --check --edition 2024 src/stitch_mask.rs tests/stitch_mask.rs`: pass.
+- `RUSTC=/usr/bin/clippy-driver cargo check --test stitch_mask`: pass with no warnings.
+- `cargo test --test stitch_mask`: pass, 5 tests, 0 failures.
+- `cargo build`: pass.
+
+The `cargo clippy --test stitch_mask` shim could not select a toolchain because rustup has no configured default. The system Clippy driver checked the focused target instead. The 32-bit dimension-product overflow case is conditional and did not run on this x86_64 target. A real allocator failure is nondeterministic, so tests exercise the allocation limit boundary and do not force `AllocationFailed`.
