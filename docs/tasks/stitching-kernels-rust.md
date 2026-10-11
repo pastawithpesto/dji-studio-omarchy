@@ -88,3 +88,17 @@ seam-mask construction, mask-byte conversion, camera calibration, lens defaults,
 flow dimensions, shader runtime behavior, GPU equality, original-camera output,
 Windows parity, project compatibility, or vendor malformed-input behavior.
 No merge, release, or feature-completion claim is part of this task.
+
+## Implementation status
+
+The six functions and their focused integration harness are implemented.
+Nine focused tests pass in debug and release builds. The fixture pins exact
+binary32 oracle bits for the reviewed linear, band, buffer, color, and Gaussian
+cases. The tests also cover branch edges, the low-band cap, band-step limits,
+dimension errors, invalid domains, nonfinite inputs, and nonfinite results.
+
+Direct `rustfmt --edition 2024 --check` and `git diff --check` pass. The installed
+Clippy driver passes on the stitching test target with warnings denied. The
+standard `cargo clippy` entry point cannot select a toolchain in this shell.
+The test-target-only Clippy invocation and initial toolchain errors are recorded
+in the owned continuation packet.
