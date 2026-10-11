@@ -72,3 +72,10 @@ Root-owned canonical documentation changes remain preserved.
 Complete this bounded integration only after exact combined checks, separate
 independent code review, and milestone verification. Feature completion needs
 reproducible original camera and Windows comparison and remains open.
+
+## Registration candidate
+
+Draft PR16 reserves the two exact owned paths. Current watchdog snapshot
+`snapshot-20261011T230000388492Z-4d0a9114.json` includes PR16 and reports no errors or collisions.
+Registration exports all three available supported modules. No author module,
+test, fixture, or dependency changed. Combined validation and final review follow.
