@@ -144,7 +144,7 @@ class Policy(unittest.TestCase):
         api=Fake(True);api.statuses=[{'context':'legacy','state':'failure','id':8}];self.refused(api)
 
     def test_status_only_success_and_failing_test_merge(self):
-        api=Fake();api.runs=[];api.statuses=[{'context':'legacy','state':'success','id':8}]
+        api=Fake();api.runs=[];api.statuses=[{'context':'agent-review/verified','state':'success','id':8,'creator':{'login':'pastawithpesto','id':23729105},'target_url':'https://github.com/pastawithpesto/dji-studio-omarchy/pull/1#pullrequestreview-1'}]
         self.assertEqual(W.evaluate(api)['action'],'eligible-dry-run')
         api=Fake(True)
         api.hook=lambda name,count,page: {'total_count':1,'check_runs':[dict(api.runs[0],head_sha=MERGE,conclusion='failure')]} if name.endswith('/check-runs') and MERGE in name else None

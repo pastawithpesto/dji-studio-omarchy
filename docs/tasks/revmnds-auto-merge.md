@@ -45,3 +45,7 @@ tests, root launch argv and the remaining nontransactional API race window.
 
 Authored source and mocked tests are not independent approval or a real merge.
 Keep PR4 in draft until both review gates pass. Root handles upload and activation.
+When hosted events are unavailable, root can record an accurately named
+agent-review/verified success status on the current head after actual reviews
+and validation, linking their evidence. This is an agent-gate attestation, not
+hosted CI. The worker never creates it or spawns reviewers on its own.

@@ -41,6 +41,16 @@ succeed. At least one status/check must exist on the head itself. Pending,
 neutral, skipped, cancelled or ambiguous duplicate latest checks block. This
 strict policy can delay PRs whose checks run only on the test-merge commit.
 
+Hosted PR events are still unverified. After the actual independent Sol source
+review, Astra verification and relevant validation pass, root records two GitHub
+attestations on the current head: the owner APPROVED review and a success commit
+status named `agent-review/verified`, linking the review evidence. That status
+attests completed agent gates; it must not be described as a hosted CI run. The
+worker can accept this successful head status, while still requiring every other
+returned status/check to succeed. It never creates reviews or commit statuses.
+Periodic polling does not start agent reviews. Root coordinates those through
+the addressed comms bus, then records the actual completed gates on GitHub.
+
 This initial version supports an unprotected main branch with no active branch
 rules only. Protected branches and any active ruleset are refused. This avoids
 using an owner's permissions to bypass a rule the worker cannot independently
