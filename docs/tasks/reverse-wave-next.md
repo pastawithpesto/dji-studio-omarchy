@@ -27,12 +27,22 @@ Require independent Sol review and Astra High verification before a new mileston
 
 ## Current continuation
 
-PR 1 is merged after Sol and Astra approval. The exact reports are included in
-`docs/evidence/next-wave`. Do not repeat resource extraction.
+PR 1 is merged after Sol and Astra approval. Do not repeat resource extraction.
+The local watchdog is active and passed Astra operational verification in comms
+1387. Hosted automatic event execution remains unverified in PR 2.
 
-Watchdog v2 passed independent Sol review and root verified its running process,
-advancing heartbeats and actual comms delivery. Astra operational verification is
-pending. A Sol High worker is reviewing the completed startup/layout reports. Luna High is recovering missing Main native registration records in
-`luna-review/luna-a-2/next-wave/main-registration`. This uses existing saved
-RAE/Ghidra evidence and pinned original bytes. GLM availability remains quota
-limited at the latest UI observation. These tasks use separate local output paths.
+WindowPositionDetector analysis passed independent Sol review in comms 1553 and
+Astra milestone verification in comms 1580. This PR adds exact selected reports
+and a manifest under `docs/evidence/next-wave/window-position`. The full local
+evidence archive is not included. Static approval does not approve an adapter.
+
+The original layout, startup, registration, and SDK provenance packets have
+bounded milestone approvals. Qt geometry packets passed Sol review and await
+Astra verification. Controller packets remain in review or correction.
+New ForwardViewModel work must prove method targets and receiver identity.
+GLM and Kimi reports have separate correction and review work.
+
+The worker table above records the initial allocation. It is not a live process
+list. Read current PR comments and actual comms receipts before taking a task.
+Use the latest verified remote main for new work. Preserve exact vendor pins and
+historical reports. Keep this PR in draft while continuation remains open.
