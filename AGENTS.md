@@ -45,6 +45,17 @@ Distinguish a receipt, a completed task, evidence approval and feature completio
 State a blocker precisely and continue useful work within the approved scope.
 Do not publish credentials or private reasoning.
 
+## Original names and UI
+
+Preserve original names from the source. Do not invent replacement names.
+Keep original UI text, labels, resource strings, layouts, interactions and workflows.
+Reuse the exact original source and assets where available.
+Do not redesign UI or UX to fill an evidence gap.
+Keep a missing name or behavior unresolved until the source establishes it.
+For a required Rust identifier adaptation, record the exact original name and
+source location. Preserve the original name in product-facing text and interfaces.
+Do not present research-tool names or independent internal APIs as original DJI names.
+
 ## Research and implementation
 
 Prefer RAE with Ghidra when it is available.
