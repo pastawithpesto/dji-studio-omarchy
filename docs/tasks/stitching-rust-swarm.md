@@ -34,9 +34,11 @@ Those checks are independent Rust policy, not recovered vendor error behavior.
 Test processing equations only with independently supported contracts.
 Do not invent lens parameters, seams, model keys, or GPU semantics.
 
-The source reservation includes src/stitch_mask.rs, src/stitching.rs,
+The planned source scopes are src/stitch_mask.rs, src/stitching.rs,
 src/stitching/**, src/lib.rs, tests/stitch_mask.rs, tests/stitching.rs,
 tests/fixtures/stitching/**, and this task plan.
+Each source author must reserve its own files in a separate draft PR.
+This coordination PR reserves only this task plan.
 Keep other source scopes unchanged.
 Keep the PR in draft.
 No merge or release is authorized by this task.
