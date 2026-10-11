@@ -1,0 +1,8 @@
+module Config
+
+singleton Colors            1.0     Colors.qml
+singleton Instance          1.0     Instance.qml
+singleton UiUtils           1.0     UiUtils.qml
+singleton CommonUtils       1.0     CommonUtils.qml
+singleton ExportCacheHelper 1.0     ExportCacheHelper.qml
+singleton TransitionConstants 1.0   TransitionConstants.qml
