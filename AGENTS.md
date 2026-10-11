@@ -1,6 +1,6 @@
 # Agent instructions
 
-Read README.md, CONTRIBUTING.md, docs/STATUS.md, and docs/RESEARCH.md first.
+Read START-HERE.md, CONTRIBUTING.md, docs/STATUS.md, and docs/RESEARCH.md first.
 
 - Reserve the task in a draft PR before implementation. Read all open PR claims
   at task start, after long tool calls, before edits, and before each push.
