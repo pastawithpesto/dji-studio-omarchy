@@ -79,3 +79,42 @@ Draft PR16 reserves the two exact owned paths. Current watchdog snapshot
 `snapshot-20261011T230000388492Z-4d0a9114.json` includes PR16 and reports no errors or collisions.
 Registration exports all three available supported modules. No author module,
 test, fixture, or dependency changed. Combined validation and final review follow.
+
+## Combined validation result
+
+Local tested candidate: `882f3fe1146bdc9daa68f40388f164b23fc31f11`.
+Local tested tree: `84a528c967fb9669f6fceb18ab6f2a15c0caa99d`.
+Validation branch: `validation/luna-audit-stitching-20261011`.
+Worktree: `source-worktrees/luna-audit-stitch-validation-20261011`.
+Each exact author commit is an ancestor. All 25 author paths are byte-identical
+to their author commit blobs. No author source, test, fixture, or plan was edited.
+
+Checks on Arch Linux x86_64, Rust/Cargo 1.98.1:
+
+- System Cargo fmt check over all targets: pass.
+- `cargo build --locked`: pass.
+- System Cargo Clippy over all targets, with warnings denied: pass.
+- `cargo test --locked`: 206 passed, 0 failed, 0 ignored.
+- `git diff --check`: pass.
+- A separate public library API probe: pass. It exercises mask decoding and
+  a declared native allocation error, warp, linear blend, band weights, buffer
+  coordinates, band color, Gaussian accumulation, and AI dimensions.
+
+The author suites still load their modules by path. The public probe links the
+registered library. It uses reviewed rational and binary32 oracle values.
+All 14 original mask resources pass the author input and expanded hash checks.
+System binaries and an owned target directory avoid unconfigured Rustup shims.
+No toolchain, dependency, camera, or vendor runtime was changed.
+
+This result adds documentation after testing. The final candidate must preserve
+the tested `src`, `tests`, and Cargo blobs. Final source hashes and exact candidate
+identities are in the owned integration handoff packet and PR16.
+Fresh main at this checkpoint: `91f1fd620a7a0aea74db49a03be240ee59681401`.
+Check time: `2026-10-11T23:04:02.029053+00:00`.
+Main ancestry passes. Both owned worktrees are clean before this result update.
+
+Root exact code review2196 passed. PR12 and PR15 code review, final independent
+sol-fast-transfer review, and sol-milestone verification remain pending.
+No real allocator failure or 32-bit target was tested. Original camera and paired
+Windows output remain unavailable. These tests establish bounded native behavior.
+They do not establish UI, project, GPU, camera, or complete stitching equivalence.
