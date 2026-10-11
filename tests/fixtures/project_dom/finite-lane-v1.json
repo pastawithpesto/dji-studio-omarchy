@@ -1,0 +1,2114 @@
+{
+  "classification": "proposed_contract_acceptance_only; static hand/source-literal composition, no application tests executed",
+  "legacy_success_count": 23,
+  "finite_literal_count": 52,
+  "new_composition_cases": [
+    {
+      "id": "finite-literal-0-0000000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "0000000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 28,
+      "crc32_hex": "e46cb78e",
+      "sha256": "3c91e58152305ce14afe77350b65509c9fcea49851ff675665acf69e49464517",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-1-8000000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "8000000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "b5c74523",
+      "sha256": "b750508845d770e608cb8292075ac4ab17b4dd9aca9f48937887d6b625d36c78",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-2-3fb999999999999a",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c302e312c31383434363734343037333730393535313631355d",
+      "byte_length": 28,
+      "crc32_hex": "7f1f5d5a",
+      "sha256": "7272b6316ec552ee0c29e9f1a2e1960eb98c5aaf9c24b67eb166b249e6bbace9",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-3-bfb999999999999a",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "bfb999999999999a"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d302e312c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "2eb4aff7",
+      "sha256": "6cfd6ab42abdf6098ea55d34c3d749428ee6ac0a05e67fd9982126c728fe9ba8",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-4-3fc0000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fc0000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c302e3132352c31383434363734343037333730393535313631355d",
+      "byte_length": 30,
+      "crc32_hex": "8659d732",
+      "sha256": "bc1d24cbe142b64d09a0fdd9a1fb061ee0b769350c9453d9ee17cb5b120cfa03",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-5-bfc0000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "bfc0000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d302e3132352c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "ce43d70d",
+      "sha256": "60077e8c8e2c0d997e1df0bdc85eb0d6a9192039aad3cf67e4cd6c640d69bf52",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-6-3fe0000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fe0000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c302e352c31383434363734343037333730393535313631355d",
+      "byte_length": 28,
+      "crc32_hex": "7f43fcc9",
+      "sha256": "2cbf3f495047c69760c69c88dbef1afe3417b88fc8c8e912810873b544535115",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-7-bfe0000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "bfe0000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d302e352c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "2ee80e64",
+      "sha256": "eae47ed87747637873d3e12f3a23020beeac9e0b7824c1bf19f807a8d1cb9ca8",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-8-3ff0000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3ff0000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c312e302c31383434363734343037333730393535313631355d",
+      "byte_length": 28,
+      "crc32_hex": "41e72780",
+      "sha256": "cb8249d9a02ed887e4f03fd78c27be817cdbca3cf16be0925ed7ce66db69c056",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-9-bff0000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "bff0000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d312e302c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "104cd52d",
+      "sha256": "900cfa6e9017e70a503a964782140f335f54b78e5e3cb342acf56d0d9e6e188d",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-10-3ff8000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3ff8000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c312e352c31383434363734343037333730393535313631355d",
+      "byte_length": 28,
+      "crc32_hex": "dac86cc7",
+      "sha256": "242592a5f2958277bae9b9379e393b20edb0040b77657c0078bf3f458d561073",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-11-bff8000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "bff8000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d312e352c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "8b639e6a",
+      "sha256": "cb8fd1ce02497a675a0e47dd39c08392ee205211eea470eb9a34afc3fe0fa1ce",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-12-4004000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "4004000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c322e352c31383434363734343037333730393535313631355d",
+      "byte_length": 28,
+      "crc32_hex": "ef25da94",
+      "sha256": "0bf5e42452a4166feddd4c97cacddebb7f441f66ff67bdec4b3f2355335eeb5c",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-13-c004000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "c004000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d322e352c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "be8e2839",
+      "sha256": "112cede33e7177a0d651558ab2a58349f2e81f36cff22dab146a9fabdf3bd3e4",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-14-4024000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "4024000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c31302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "6028a539",
+      "sha256": "59e53ac4648fce306265d6ce729a0d3b37cfab0890c82f420f969336f7afb01f",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-15-c024000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "c024000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d31302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 30,
+      "crc32_hex": "c81ed19e",
+      "sha256": "5c10f9378ae4566f5b9e09f9c650340678fe8b392c0ecf63085bafdac9cba73b",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-16-4059000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "4059000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c3130302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 30,
+      "crc32_hex": "d2b46193",
+      "sha256": "2dac46efdbc7a76ea6bb833e63d0299f5671d2bd0ade52aedb09b1c1d8c92d44",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-17-408f400000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "408f400000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c313030302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "e405b7a1",
+      "sha256": "15ed26053a389601acb81992e3674b47a8113ce30624027c4b58f3b5feb952e3",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-18-433fffffffffffff",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "433fffffffffffff"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c393030373139393235343734303939312e302c31383434363734343037333730393535313631355d",
+      "byte_length": 43,
+      "crc32_hex": "7663c8e2",
+      "sha256": "6173e3ec383781b498ff2f3e6b60f5a8913f385bd384e2771d4771b0fd4cc3d1",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-19-4340000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "4340000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c393030373139393235343734303939322e302c31383434363734343037333730393535313631355d",
+      "byte_length": 43,
+      "crc32_hex": "438e7eb1",
+      "sha256": "761656e7119bebe910e74ec46beb5b4e2fac86ebaacf659be48e0ebe7fdcc11e",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-20-3eb0c6f7a0b5ed8d",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3eb0c6f7a0b5ed8d"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c302e3030303030312c31383434363734343037333730393535313631355d",
+      "byte_length": 33,
+      "crc32_hex": "ad19c2e7",
+      "sha256": "a87a002f8a8e9d770da1620ebeec3e4bfe0cfe527613235187b3c84e5b796042",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-21-beb0c6f7a0b5ed8d",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "beb0c6f7a0b5ed8d"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d302e3030303030312c31383434363734343037333730393535313631355d",
+      "byte_length": 34,
+      "crc32_hex": "7f4c9978",
+      "sha256": "3011b8a04c6b6551daa54f287b691de9bc1a7b7671fbea96460a76a9b266bbfb",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-22-3e7ad7f29abcaf48",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3e7ad7f29abcaf48"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c31652d372c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "f383f2dd",
+      "sha256": "419a578fccd452ea81ded71f5cdcf7d073c0406e040ed64f17d4d283fda98c79",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-23-be7ad7f29abcaf48",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "be7ad7f29abcaf48"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d31652d372c31383434363734343037333730393535313631355d",
+      "byte_length": 30,
+      "crc32_hex": "5bb5867a",
+      "sha256": "3a06facf76e5fa4f1867236fc2feea788e087e9d4a645e86969448a5604555a4",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-24-4415af1d78b58c40",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "4415af1d78b58c40"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c3130303030303030303030303030303030303030302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 48,
+      "crc32_hex": "c28e8917",
+      "sha256": "5895defdfd95757b4e63aa2cf7962faeff8cd2a6c2ef9af7c4225f68e2691b3e",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-25-c415af1d78b58c40",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "c415af1d78b58c40"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d3130303030303030303030303030303030303030302e302c31383434363734343037333730393535313631355d",
+      "byte_length": 49,
+      "crc32_hex": "50f2fa1f",
+      "sha256": "3f9cd33142321e23f7765ca8556a5ebe2070af32d76b3ef26da13c9f0e19ec31",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-26-444b1ae4d6e2ef50",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "444b1ae4d6e2ef50"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c316532312c31383434363734343037333730393535313631355d",
+      "byte_length": 29,
+      "crc32_hex": "8237f453",
+      "sha256": "045598445b5789e3473b670904b26b09378629dbb236d0b5d7297c9eedfa47a7",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-27-c44b1ae4d6e2ef50",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "c44b1ae4d6e2ef50"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d316532312c31383434363734343037333730393535313631355d",
+      "byte_length": 30,
+      "crc32_hex": "2a0180f4",
+      "sha256": "c235a3ad59c935f2d279759a7595c3b8bffebb65e5bfe8146ade45cdba0b1f7b",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-28-54b249ad2594c37d",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "54b249ad2594c37d"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c31653130302c31383434363734343037333730393535313631355d",
+      "byte_length": 30,
+      "crc32_hex": "c965ec5c",
+      "sha256": "7af9dec55a1322bbcdb15432686774d9f43e13c2cc7359737d4fcfd04fb7cbfe",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-29-d4b249ad2594c37d",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "d4b249ad2594c37d"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d31653130302c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "817fec63",
+      "sha256": "12a30abfcee3c472d702bede96c5b824717d258e1905ca30fec9b8dcd388e2ea",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-30-2b2bff2ee48e0530",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "2b2bff2ee48e0530"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c31652d3130302c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "9d3d00b5",
+      "sha256": "b2cc51d2c328b07dd48e76cbc766773a1525121fdc3d09a3be95edc2ff5d3aa8",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-31-ab2bff2ee48e0530",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "ab2bff2ee48e0530"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d31652d3130302c31383434363734343037333730393535313631355d",
+      "byte_length": 32,
+      "crc32_hex": "2b133788",
+      "sha256": "175f4f2e27c76b1562eae86c4632dc15ee9b15e4488c4e7e5d084f7fc45a37bb",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-32-3ff3c0ca428c59fb",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3ff3c0ca428c59fb"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c312e323334353637383930313233343536372c31383434363734343037333730393535313631355d",
+      "byte_length": 43,
+      "crc32_hex": "f25912f1",
+      "sha256": "fc4c39902231356a0ccb82084c9e30632a568df27a58973a196587f654a785d7",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-33-bff3c0ca428c59fb",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "bff3c0ca428c59fb"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d312e323334353637383930313233343536372c31383434363734343037333730393535313631355d",
+      "byte_length": 44,
+      "crc32_hex": "1364f1f0",
+      "sha256": "d8be6c726119f35d39980d91a70cd504f5bab96736b8333884611181bf18b094",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-34-0000000000000001",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "0000000000000001"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c35652d3332342c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "d2ebbf00",
+      "sha256": "a6dd40ca0363e6941ef1092bc6087c8434086687c8902ede06b3b3eaf4e76e13",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-35-8000000000000001",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "8000000000000001"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d35652d3332342c31383434363734343037333730393535313631355d",
+      "byte_length": 32,
+      "crc32_hex": "64c5883d",
+      "sha256": "38d91ec64f97da96a5b0c07735696b10f9d33f7382d32294ca96f273f96d743e",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-36-0000000000000002",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "0000000000000002"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c31652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "a285d3da",
+      "sha256": "e33f42f76debb10a8d047953518afefe0b12b73da478292c0de10a57fe5fd4c9",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-37-8000000000000002",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "8000000000000002"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d31652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 32,
+      "crc32_hex": "14abe4e7",
+      "sha256": "46598ea4fc503c5ff625d775b82c6360fc9aa2a9c0066268821ff6db914c8f59",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-38-0000000000000003",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "0000000000000003"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c312e35652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 33,
+      "crc32_hex": "56b3b7fa",
+      "sha256": "617455a56379f9d5bcca85f552b81fae6ffa16032c7c50ce4a65a8b32cd85d5e",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-39-8000000000000003",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "8000000000000003"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d312e35652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 34,
+      "crc32_hex": "84e6ec65",
+      "sha256": "6bd09c8e1c42a0b62f9976a1850b6a24dfe2e6b4f33ee31a301c66ca6e9593e3",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-40-0000000000000004",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "0000000000000004"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c32652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "a05bd4fd",
+      "sha256": "51eebe74f3198cd8ad14c20af64425dab789a9761889e20fb1727c1d2440beb0",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-41-8000000000000004",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "8000000000000004"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d32652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 32,
+      "crc32_hex": "1675e3c0",
+      "sha256": "01c6aecdc566be5f08192608eaa8e4e9fa70dd6845d9b9007c088750e70b8add",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-42-000000000000000a",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "000000000000000a"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c35652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 31,
+      "crc32_hex": "a45227ae",
+      "sha256": "4eb71dd1617d768eb1b7709dfe14608b3b45ae08d608abe5a595bd1123da87e9",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-43-800000000000000a",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "800000000000000a"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d35652d3332332c31383434363734343037333730393535313631355d",
+      "byte_length": 32,
+      "crc32_hex": "127c1093",
+      "sha256": "1f8648e1d71768fb13dd8da3bc7b34e268da6b4898c8a8739efe210b710e4cb0",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-44-000fffffffffffff",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "000fffffffffffff"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c322e323235303733383538353037323031652d3330382c31383434363734343037333730393535313631355d",
+      "byte_length": 47,
+      "crc32_hex": "74b525e6",
+      "sha256": "66e25f7606cd9d70496b39238b87cab420ea75f218a1fc6bdc50259e0104b4db",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-45-800fffffffffffff",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "800fffffffffffff"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d322e323235303733383538353037323031652d3330382c31383434363734343037333730393535313631355d",
+      "byte_length": 48,
+      "crc32_hex": "da48b62a",
+      "sha256": "dd2799f09b2a34a2a90d86ee166770c989318c163475dd3e094605bcaf254a54",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-46-0010000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "0010000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c322e32323530373338353835303732303134652d3330382c31383434363734343037333730393535313631355d",
+      "byte_length": 48,
+      "crc32_hex": "f6188e56",
+      "sha256": "b91b3ad4c551591518a8eeb08011a87bb4c6c6c3d248ea7a12e4e9c87eda866a",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-47-8010000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "8010000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d322e32323530373338353835303732303134652d3330382c31383434363734343037333730393535313631355d",
+      "byte_length": 49,
+      "crc32_hex": "6464fd5e",
+      "sha256": "524fc65388a1613b2eab371003b114e609eef0148a675c0b222de89b6cdb273b",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-48-7fefffffffffffff",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "7fefffffffffffff"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c312e37393736393331333438363233313537653330382c31383434363734343037333730393535313631355d",
+      "byte_length": 47,
+      "crc32_hex": "09b554f3",
+      "sha256": "374cafd58237a258e0f7fc3b43cb77dec09559a8181720b8398983b452b6fee8",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-49-ffefffffffffffff",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "ffefffffffffffff"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d312e37393736393331333438363233313537653330382c31383434363734343037333730393535313631355d",
+      "byte_length": 48,
+      "crc32_hex": "a748c73f",
+      "sha256": "b7149b308c193c019dc0170671fc298b40dc42e701b0f932c7ec6a044e6d7808",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-50-3e60000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3e60000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c322e39383032333232333837363935333132652d382c31383434363734343037333730393535313631355d",
+      "byte_length": 46,
+      "crc32_hex": "0694b5dc",
+      "sha256": "e163d73348065b88cb326753f88d85c15581c688be50548c6d7450c7a3156f58",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "finite-literal-51-be60000000000000",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "value": 1
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "be60000000000000"
+          },
+          {
+            "kind": "U64",
+            "value": "18446744073709551615"
+          }
+        ]
+      },
+      "expected_hex": "5b312c2d322e39383032333232333837363935333132652d382c31383434363734343037333730393535313631355d",
+      "byte_length": 47,
+      "crc32_hex": "2a6d3334",
+      "sha256": "799d34cbbc920f6a69fc2a4680c157c94e9e7a71bce8bd576bf6b2776f7935f7",
+      "basis": "52 reviewed literals + preserved array/I64/U64 byte rules, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-null",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Null"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b6e756c6c2c302e315d",
+      "byte_length": 10,
+      "crc32_hex": "f401420e",
+      "sha256": "a0784efbe35cefe8d905d88d09f78c784ae46501a1b8b888f8ee49416ee8f52b",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-boolean-array",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Array",
+            "elements": [
+              {
+                "kind": "Bool",
+                "value": true
+              },
+              {
+                "kind": "Bool",
+                "value": false
+              }
+            ]
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b5b747275652c66616c73655d2c302e315d",
+      "byte_length": 18,
+      "crc32_hex": "56c51a5f",
+      "sha256": "2af9601eb2eaf6ca56f332c3222d35c8e7dba4f22f0667f27e30108a0d4d492d",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-empty-object",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Object",
+            "pairs": []
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b7b7d2c302e315d",
+      "byte_length": 8,
+      "crc32_hex": "21f3d182",
+      "sha256": "51864a28ece3b6a926a90d28833a8cda86bc2ebb87d2acb14ade6132d79c7715",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-empty-array",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Array",
+            "elements": []
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b5b5d2c302e315d",
+      "byte_length": 8,
+      "crc32_hex": "e9e2ed28",
+      "sha256": "5f57ab2a263c87af12e8ac5f1f2f54391ec98d0e79bd538aa9416daea7f72457",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-order-a-b",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Object",
+            "pairs": [
+              [
+                "a",
+                {
+                  "kind": "I64",
+                  "decimal": "1"
+                }
+              ],
+              [
+                "b",
+                {
+                  "kind": "U64",
+                  "decimal": "2"
+                }
+              ]
+            ]
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b7b2261223a312c2262223a327d2c302e315d",
+      "byte_length": 19,
+      "crc32_hex": "c72cb985",
+      "sha256": "df702e0f857766c0adefd4753f48668bfca134121247abf91e0ee392b8146a09",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-order-b-a",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Object",
+            "pairs": [
+              [
+                "b",
+                {
+                  "kind": "U64",
+                  "decimal": "2"
+                }
+              ],
+              [
+                "a",
+                {
+                  "kind": "I64",
+                  "decimal": "1"
+                }
+              ]
+            ]
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b7b2262223a322c2261223a317d2c302e315d",
+      "byte_length": 19,
+      "crc32_hex": "89f1c027",
+      "sha256": "ddbc84e96b71e89aba320c9fdac2d4ec86ed0b056b99d105ba02c34d0fed03da",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-duplicate-encounter-order",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Object",
+            "pairs": [
+              [
+                "x",
+                {
+                  "kind": "I64",
+                  "decimal": "1"
+                }
+              ],
+              [
+                "x",
+                {
+                  "kind": "I64",
+                  "decimal": "2"
+                }
+              ]
+            ]
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b7b2278223a312c2278223a327d2c302e315d",
+      "byte_length": 19,
+      "crc32_hex": "ccfc98e4",
+      "sha256": "7b1d75251f0d4b9563fbbe8e3542090689500302ab7203074e61b4be5f320ffc",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-all-control-bytes",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Utf8",
+            "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b225c75303030305c75303030315c75303030325c75303030335c75303030345c75303030355c75303030365c75303030375c625c745c6e5c75303030425c665c725c75303030455c75303030465c75303031305c75303031315c75303031325c75303031335c75303031345c75303031355c75303031365c75303031375c75303031385c75303031395c75303031415c75303031425c75303031435c75303031445c75303031455c7530303146222c302e315d",
+      "byte_length": 180,
+      "crc32_hex": "e8a005a3",
+      "sha256": "5d1715a3e1924f43d4012003630d29ec60dd937dc3a5db731117dd2ba77b3db9",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-slash-quote-backslash-del",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Utf8",
+            "hex": "2f225c7f"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b222f5c225c5c7f222c302e315d",
+      "byte_length": 14,
+      "crc32_hex": "eae6842f",
+      "sha256": "76794335af84ed81c8a916455345d1b54014c197396632103d9a006924e8d8f3",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-utf8-two-three-four-and-separators",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Utf8",
+            "hex": "c3a9e99baaf09f98802fe280a8e280a9"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b22c3a9e99baaf09f98802fe280a8e280a9222c302e315d",
+      "byte_length": 24,
+      "crc32_hex": "d9e0a2cc",
+      "sha256": "39fe3fa1c42437222ca9a42d13c7ed6306422d9b4e94883795625f03b05bd0eb",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-escaped-object-key",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Object",
+            "pairs": [
+              [
+                "a\"\\/\u0001",
+                {
+                  "kind": "Utf8",
+                  "hex": "6f6b"
+                }
+              ]
+            ]
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b7b22615c225c5c2f5c7530303031223a226f6b227d2c302e315d",
+      "byte_length": 27,
+      "crc32_hex": "34d79711",
+      "sha256": "fba2782de71a66c1e63865451985313fe446431294b2d977e0dfc0a5a2de329f",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-i64-min",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "decimal": "-9223372036854775808"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b2d393232333337323033363835343737353830382c302e315d",
+      "byte_length": 26,
+      "crc32_hex": "1ab0e843",
+      "sha256": "c81cb4d4b5a4f2c56a43ead023f41c0eef29786867a62e94193d458662b10067",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-i64-max",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "decimal": "9223372036854775807"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b393232333337323033363835343737353830372c302e315d",
+      "byte_length": 25,
+      "crc32_hex": "5cfc88d9",
+      "sha256": "ada7bf969609cd98617ce5b43e627dab97346eef35a345a0892320ce87fdcfe6",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-u64-max",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "U64",
+            "decimal": "18446744073709551615"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b31383434363734343037333730393535313631352c302e315d",
+      "byte_length": 26,
+      "crc32_hex": "d95fcb43",
+      "sha256": "9573a2c447982f56b357d7f4a60b42181e8aa5fb5d79cf7a3039e4735d9024bf",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-integer-zero",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "I64",
+            "decimal": "0"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b302c302e315d",
+      "byte_length": 7,
+      "crc32_hex": "ad8a1e2b",
+      "sha256": "4fdf5f0e1e202891fdb68435bb4f9c1e7ddb9601a69047dcf71322b62c91d5f0",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-integer-one",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "U64",
+            "decimal": "1"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b312c302e315d",
+      "byte_length": 7,
+      "crc32_hex": "66d6cd8e",
+      "sha256": "8e42c971ad421fd03d38fd20ad9fd21e8cd86f038122cc9acc158243354deac3",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-real-positive-zero",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "0000000000000000"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b302e302c302e315d",
+      "byte_length": 9,
+      "crc32_hex": "1d75a6a1",
+      "sha256": "b85988ca26b27f1bd0813ec8cdc5226c54a327875c6b5c2fbfc6c10b93e0adb8",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-real-negative-zero",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "8000000000000000"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b2d302e302c302e315d",
+      "byte_length": 10,
+      "crc32_hex": "dabb1d99",
+      "sha256": "b01417bf086308a49faf432fef8ed915f4cfecbb209e4616343c7057d8b531ad",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-real-one",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "3ff0000000000000"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b312e302c302e315d",
+      "byte_length": 9,
+      "crc32_hex": "d1dfa63f",
+      "sha256": "eec0fe3e14bd170e98f8bb8e6b10c1335d4c456a42b29aa47b5e984806866c2b",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-real-negative-one",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "bff0000000000000"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b2d312e302c302e315d",
+      "byte_length": 10,
+      "crc32_hex": "16111d07",
+      "sha256": "a87d2139334506cbde6c74f54520b7bb1ab75075ef8322888bbcf8fc5b8c256b",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-real-two-to52",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "4330000000000000"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b343530333539393632373337303439362e302c302e315d",
+      "byte_length": 24,
+      "crc32_hex": "9c5bbb7d",
+      "sha256": "f3c31d4cad179dbe06baa29bd1349a9a2ef727f3c1cd00ea4eabbf42e1adc1e6",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-real-largest-fast-integer",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "F64Bits",
+            "hex": "433fffffffffffff"
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b393030373139393235343734303939312e302c302e315d",
+      "byte_length": 24,
+      "crc32_hex": "908cfeee",
+      "sha256": "537c01f25d6daa305e2e67c243fa87fa9cd2636369bac2b5feaa74148ebeecc5",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "legacy-plus-fraction-nested-order-and-types",
+      "input": {
+        "kind": "Array",
+        "elements": [
+          {
+            "kind": "Object",
+            "pairs": [
+              [
+                "nodes",
+                {
+                  "kind": "Array",
+                  "elements": [
+                    {
+                      "kind": "I64",
+                      "decimal": "1"
+                    },
+                    {
+                      "kind": "F64Bits",
+                      "hex": "3ff0000000000000"
+                    },
+                    {
+                      "kind": "Object",
+                      "pairs": []
+                    },
+                    {
+                      "kind": "Array",
+                      "elements": []
+                    },
+                    {
+                      "kind": "Utf8",
+                      "hex": "2f"
+                    }
+                  ]
+                }
+              ],
+              [
+                "last",
+                {
+                  "kind": "Null"
+                }
+              ]
+            ]
+          },
+          {
+            "kind": "F64Bits",
+            "hex": "3fb999999999999a"
+          }
+        ]
+      },
+      "expected_hex": "5b7b226e6f646573223a5b312c312e302c7b7d2c5b5d2c222f225d2c226c617374223a6e756c6c7d2c302e315d",
+      "byte_length": 45,
+      "crc32_hex": "29d9d5a1",
+      "sha256": "b4bb9f101eeea3a056c0ac526251aea747a99afd8a4ee49986b345127f3b6640",
+      "basis": "23 frozen successful value bytes + reviewed fractional literal, hand concatenation",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "duplicate-type-and-negative-zero",
+      "input": {
+        "kind": "Object",
+        "pairs": [
+          [
+            "z",
+            {
+              "kind": "U64",
+              "value": 1
+            }
+          ],
+          [
+            "a",
+            {
+              "kind": "F64Bits",
+              "hex": "3ff0000000000000"
+            }
+          ],
+          [
+            "z",
+            {
+              "kind": "F64Bits",
+              "hex": "8000000000000000"
+            }
+          ]
+        ]
+      },
+      "expected_hex": "7b227a223a312c2261223a312e302c227a223a2d302e307d",
+      "byte_length": 24,
+      "crc32_hex": "64b2cfb3",
+      "sha256": "5f8637a8c5390858722cec9f507154812041f3ed32154eb0172cab5ef7ae8686",
+      "basis": "Hand literal; preserve encounter-order duplicate keys and integer/real signs",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    }
+  ],
+  "finite_neighbor_delta": [
+    {
+      "id": "former-unsupported-neighbor-3fefffffffffffff",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3fefffffffffffff"
+      },
+      "expected_hex": "302e39393939393939393939393939393939",
+      "byte_length": 18,
+      "crc32_hex": "7b55ae0d",
+      "sha256": "12d5191c859deac9fee6fecae738d2458bd085951ec1486febd820c1f618f172",
+      "basis": "Existing exact reviewer830 source-equation expectation TSV; future writer composition only",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "former-unsupported-neighbor-3ff0000000000001",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "3ff0000000000001"
+      },
+      "expected_hex": "312e30303030303030303030303030303032",
+      "byte_length": 18,
+      "crc32_hex": "349e16f5",
+      "sha256": "19119a03721db7fc2a2f06afad179bdd384cc44b54e1d4f4f57e374c5b44fbd0",
+      "basis": "Existing exact reviewer830 source-equation expectation TSV; future writer composition only",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "former-unsupported-neighbor-4340000000000001",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "4340000000000001"
+      },
+      "expected_hex": "393030373139393235343734303939342e30",
+      "byte_length": 18,
+      "crc32_hex": "39f5d250",
+      "sha256": "48d5921c6f799acbfe21a957a19e41a45844608966d197472cacc67b91020507",
+      "basis": "Existing exact reviewer830 source-equation expectation TSV; future writer composition only",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    },
+    {
+      "id": "former-unsupported-neighbor-8000000000000001",
+      "input": {
+        "kind": "F64Bits",
+        "hex": "8000000000000001"
+      },
+      "expected_hex": "2d35652d333234",
+      "byte_length": 7,
+      "crc32_hex": "8ed265ef",
+      "sha256": "046f4049d09944fcb2efbf2ddb0ea8f05e0204591d6d02c9106efc88190fa7f9",
+      "basis": "Existing exact reviewer830 source-equation expectation TSV; future writer composition only",
+      "status": "analytic_acceptance_plan_not_executed_native_or_vendor"
+    }
+  ],
+  "historical_expectation_deltas": [
+    {
+      "old_id": "fraction-one-half",
+      "old": "UnsupportedReal",
+      "new": {
+        "result": "success",
+        "hex": "302e35"
+      }
+    },
+    {
+      "old_id": "real-two-to53",
+      "old": "UnsupportedReal",
+      "new": {
+        "result": "success",
+        "hex": "393030373139393235343734303939322e30"
+      }
+    },
+    {
+      "old_id": "smallest-subnormal",
+      "old": "UnsupportedReal",
+      "new": {
+        "result": "success",
+        "hex": "35652d333234"
+      }
+    },
+    {
+      "old_id": "fraction-before-zero-output",
+      "old": "UnsupportedReal",
+      "new": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 0,
+        "attempted_bytes": 3
+      }
+    },
+    {
+      "old_id": "child-domain-after-opener",
+      "old": "UnsupportedReal",
+      "new": {
+        "result": "error",
+        "kind": "OutputLimit",
+        "limit": 1,
+        "attempted_bytes": 4
+      }
+    },
+    {
+      "old_id": "no-reserve-after-domain-error",
+      "old": "UnsupportedReal;reserve_calls0",
+      "new": {
+        "result": "error",
+        "kind": "Allocation",
+        "requested_bytes": 3,
+        "reserve_calls": 1
+      }
+    }
+  ],
+  "additional_required_controls": [
+    "NonFiniteReal bit preservation with zero output cap and reserve denial: reserve_calls0",
+    "Each private helper NumberError -> InternalLengthMismatch; no fallback/truncation/partial bytes",
+    "25-byte finite numeric atom under global caps24/25; container comma/opener/closer cost precedence",
+    "Depth64, records100000, output32MiB, invalid-limit field order unchanged",
+    "Raw CRC six cases unchanged; input borrowed immutable; no generic JSON map adapter"
+  ],
+  "limits": "No shortest theorem, parser behavior, version/envelope/file/save-reopen/runtime/Windows parity inferred."
+}

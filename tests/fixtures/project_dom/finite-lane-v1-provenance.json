@@ -1,0 +1,44 @@
+{
+  "instruction": 939,
+  "check_grant": 941,
+  "contract_bus": 876,
+  "independent_contract_review": 935,
+  "base": "3ecf5c5fd7146447b4c18dc3021fb64a31941e03",
+  "source_binary": {
+    "build": "1.0.0.30839",
+    "sha256": "3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1",
+    "writers": [
+      "180150b70..180153190",
+      "180153190..180157517"
+    ],
+    "default_finite_calls": [
+      "180151c5c",
+      "180152fc2",
+      "180155e53",
+      "1801573f5"
+    ],
+    "helper": "18014e370..18014f970"
+  },
+  "pins": {
+    "sol-fast-review/project-json-writer-contract/ACCEPTANCE-PLAN.json": "86d5b343e02b6de01959fd2b4ae8b39d70998fa90342302badacf194ec4aa046",
+    "sol-fast-review/project-json-writer-contract/CONTRACT-R1.md": "b0c53cad61eb4f1b33d57fcdc73c464a23f0c68610a137fa1fe455cbdfff43bf",
+    "sol-reviewer-review/swarm-20261010-2154/finite-dom-contract-review/REVIEW.md": "f15f3538714e6b583974bdc41e83fe20f0e7e92279740857e8833729c0942b1b",
+    "sol-fast-review/project-json-writer-contract/SOURCE-CORROBORATION.json": "236da66c57394830041b10b29dc40837b43507cada7b36956da7a4b025f0cfa2",
+    "sol-fast-review/project-json-writer-contract/SOURCE-PINS.json": "3fd20ff0db0fe2d870f4bbe95a90dae27a0a2921e148bb099b68d9e8d58832b6"
+  },
+  "classification": "Static/source-equation expected bytes; native capacity/error/allocation are independent design; no vendor execution or Windows/project parity",
+  "historical_files": {
+    "README.md": "decf68a4af87cab6c679ee15a465583535b6cea45072e5a4f4b4a03b57542d57",
+    "approved-byte-fixtures.json": "0c2abe8c2c0da0aca286b506a77b67fb9bfd22ed90f24d498150780ccbd60460",
+    "bounds-fixtures.json": "1062a86bec9a7731192ddc4347f88ca2ff00a1840fc8eee820a871fa52c3826d",
+    "exclusions-api-map.json": "00e191a0585f0240a4eff863750880a3e9f66cf120d66a13078d3f7cce058fab",
+    "fault-fixtures.json": "5e8392ea71803af063dc33c8a3e1cf6ee813bc88910fa95cbfa9245bfc941228",
+    "raw-crc-fixtures.json": "9bb835e2ee3fe12cdc7ef4f9c75086f318f675601c888fa7490e175d1ac05ef1"
+  },
+  "long_span": {
+    "bits": "bec0000000000001",
+    "expected": "-0.0000019073486328125004",
+    "length": 25,
+    "basis": "Independently reviewed830 tests/number_format.rs exact-rational interval oracle; unchanged base fixture control"
+  }
+}

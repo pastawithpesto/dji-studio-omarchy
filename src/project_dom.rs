@@ -1,12 +1,14 @@
 //! Restricted ordered typed-value serialization, not a project parser or writer.
 //!
 //! Successful bytes use the original nle_core.dll 150b70/153190 rules and only
-//! the proven 14e370 integral-real domain. CRC covers the returned data bytes
+//! the reviewed finite 14e370 logical formatter. CRC covers the returned data bytes
 //! (131500), not an envelope. Source SHA256:
 //! 3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1.
 //! See tests/fixtures/project_dom/README.md for approved contracts and limits.
+//! Finite extension: finite-lane-v1.json, contract876/review935; source727/830.
 //! Ownership, caps, error order and fallible allocation are native design.
 
+use crate::number_format::{NumberError, format_finite_bits};
 use std::fmt;
 
 pub const MAX_OUTPUT_BYTES: usize = 33_554_432;
@@ -236,12 +238,16 @@ impl Sink for Emitter {
     }
 }
 
-struct Traversal {
+struct Traversal<'f, F> {
     limits: DomLimits,
     records: usize,
+    format_real: &'f F,
 }
 
-impl Traversal {
+impl<F> Traversal<'_, F>
+where
+    F: for<'a> Fn(&u64, &'a mut [u8], usize) -> Result<&'a [u8], NumberError>,
+{
     fn record(&mut self) -> Result<(), DomError> {
         let attempted = self
             .records
@@ -277,8 +283,16 @@ impl Traversal {
             DomValue::U64(value) => number(false, *value, false, sink),
             DomValue::String(value) => quoted(value, sink),
             DomValue::F64Bits(bits) => {
-                let (negative, magnitude) = integral_real(*bits)?;
-                number(negative, magnitude, true, sink)
+                if (bits >> 52) & 0x7ff == 0x7ff {
+                    return Err(DomError::NonFiniteReal { bits: *bits });
+                }
+                // Both traversals use the exact public formatter, a fully
+                // initialized local destination and its fixed native cap64.
+                // The global DOM budget applies only to the complete atom.
+                let mut destination = [0; 64];
+                let prefix = (self.format_real)(bits, &mut destination, 64)
+                    .map_err(|_| DomError::InternalLengthMismatch)?;
+                sink.chunk(prefix)
             }
             DomValue::Array(values) => {
                 sink.chunk(b"[")?;
@@ -311,26 +325,6 @@ fn child_depth(parent: usize) -> Result<usize, DomError> {
     parent
         .checked_add(1)
         .ok_or(DomError::InternalLengthMismatch)
-}
-
-fn integral_real(bits: u64) -> Result<(bool, u64), DomError> {
-    let exponent = (bits >> 52) & 0x7ff;
-    if exponent == 0x7ff {
-        return Err(DomError::NonFiniteReal { bits });
-    }
-    let negative = bits >> 63 != 0;
-    if bits & 0x7fff_ffff_ffff_ffff == 0 {
-        return Ok((negative, 0));
-    }
-    if !(1023..=1075).contains(&exponent) {
-        return Err(DomError::UnsupportedReal { bits });
-    }
-    let shift = 1075 - exponent;
-    let significand = (bits & 0x000f_ffff_ffff_ffff) | (1u64 << 52);
-    if significand & ((1u64 << shift) - 1) != 0 {
-        return Err(DomError::UnsupportedReal { bits });
-    }
-    Ok((negative, significand >> shift))
 }
 
 fn number<S: Sink>(
@@ -388,7 +382,9 @@ fn quoted<S: Sink>(value: &str, sink: &mut S) -> Result<(), DomError> {
     sink.chunk(b"\"")
 }
 
-/// Serialize only the restricted approved domain. Complete preflight precedes
+/// Serialize the approved typed domain, including every finite F64Bits value.
+/// Nonfinite bits are rejected; no parser or precision metadata is supplied.
+/// Complete preflight precedes
 /// the sole fallible reserve. Every error retains input and returns no output.
 pub fn serialize(value: &DomValue, limits: DomLimits) -> Result<SerializedDom, DomError> {
     serialize_with_reserve(value, limits, |bytes, length| {
@@ -403,12 +399,31 @@ fn serialize_with_reserve(
     limits: DomLimits,
     reserve: impl FnOnce(&mut Vec<u8>, usize) -> Result<(), ()>,
 ) -> Result<SerializedDom, DomError> {
+    serialize_with_formatter(value, limits, reserve, &format_finite_bits)
+}
+
+// Private invariant seam: production supplies only the reviewed public helper.
+// Tests can fail a helper call without changing the numeric module or public API.
+fn serialize_with_formatter<F>(
+    value: &DomValue,
+    limits: DomLimits,
+    reserve: impl FnOnce(&mut Vec<u8>, usize) -> Result<(), ()>,
+    format_real: &F,
+) -> Result<SerializedDom, DomError>
+where
+    F: for<'a> Fn(&u64, &'a mut [u8], usize) -> Result<&'a [u8], NumberError>,
+{
     validate_limits(limits)?;
     let mut counter = Counter {
         bytes: 0,
         maximum: limits.max_output_bytes,
     };
-    Traversal { limits, records: 0 }.value(value, 0, &mut counter)?;
+    Traversal {
+        limits,
+        records: 0,
+        format_real,
+    }
+    .value(value, 0, &mut counter)?;
     let mut emitter = Emitter {
         bytes: Vec::new(),
         planned: counter.bytes,
@@ -416,7 +431,12 @@ fn serialize_with_reserve(
     reserve(&mut emitter.bytes, emitter.planned).map_err(|()| DomError::Allocation {
         requested_bytes: emitter.planned,
     })?;
-    Traversal { limits, records: 0 }.value(value, 0, &mut emitter)?;
+    Traversal {
+        limits,
+        records: 0,
+        format_real,
+    }
+    .value(value, 0, &mut emitter)?;
     if emitter.bytes.len() != emitter.planned {
         return Err(DomError::InternalLengthMismatch);
     }
@@ -436,6 +456,10 @@ mod tests {
     fn reservation_refusal_preserves_input_and_occurs_after_preflight() {
         let fixture: serde_json::Value = serde_json::from_str(include_str!(
             "../tests/fixtures/project_dom/fault-fixtures.json"
+        ))
+        .unwrap();
+        let plan: serde_json::Value = serde_json::from_str(include_str!(
+            "../tests/fixtures/project_dom/finite-lane-v1.json"
         ))
         .unwrap();
         for case in fixture["cases"].as_array().unwrap() {
@@ -461,7 +485,13 @@ mod tests {
                 calls.set(calls.get() + 1);
                 Err(())
             });
-            let expected = &case["expected"];
+            let delta = plan["historical_expectation_deltas"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .find(|delta| delta["old_id"] == case["id"])
+                .map(|delta| &delta["new"]);
+            let expected = delta.unwrap_or(&case["expected"]);
             let error = match expected["kind"].as_str().unwrap() {
                 "Allocation" => DomError::Allocation {
                     requested_bytes: expected["requested_bytes"].as_u64().unwrap() as usize,
@@ -476,8 +506,179 @@ mod tests {
                 kind => panic!("unexpected error {kind}"),
             };
             assert_eq!(result, Err(error), "{}", case["id"]);
-            assert_eq!(calls.get(), case["reserve_calls"].as_u64().unwrap());
+            let reserve_calls = delta
+                .map(|delta| &delta["reserve_calls"])
+                .unwrap_or(&case["reserve_calls"]);
+            assert_eq!(calls.get(), reserve_calls.as_u64().unwrap());
             assert_eq!(format!("{value:?}"), before);
+        }
+    }
+
+    fn injected_formatter(
+        failure: NumberError,
+        fail_at: usize,
+        calls: &Cell<usize>,
+    ) -> impl for<'a> Fn(&u64, &'a mut [u8], usize) -> Result<&'a [u8], NumberError> {
+        move |bits, destination, maximum| {
+            assert_eq!(maximum, 64);
+            assert_eq!(destination, &[0; 64]);
+            calls.set(calls.get() + 1);
+            if calls.get() == fail_at {
+                Err(failure)
+            } else {
+                format_finite_bits(bits, destination, maximum)
+            }
+        }
+    }
+
+    #[test]
+    fn every_helper_error_stops_preflight_or_discards_partial_emission() {
+        use crate::number_format::InvariantStage;
+        let failures = [
+            NumberError::InvalidLimit {
+                provided: 65,
+                maximum: 64,
+            },
+            NumberError::NonFinite {
+                bits: 0xfff8_1234_5678_9abc,
+            },
+            NumberError::InvariantViolation {
+                stage: InvariantStage::CacheIndex,
+            },
+            NumberError::InvariantViolation {
+                stage: InvariantStage::Coefficient,
+            },
+            NumberError::InvariantViolation {
+                stage: InvariantStage::DigitRange,
+            },
+            NumberError::InvariantViolation {
+                stage: InvariantStage::Span,
+            },
+            NumberError::OutputLimit {
+                limit: 0,
+                required: 3,
+            },
+            NumberError::BufferTooSmall {
+                available: 0,
+                required: 3,
+            },
+        ];
+        let input = DomValue::Array(vec![
+            DomValue::F64Bits(0x3fe0_0000_0000_0000),
+            DomValue::F64Bits(0x8000_0000_0000_0000),
+        ]);
+        let before = format!("{input:?}");
+        // Two preflight calls, then two emission calls. The last failure is
+        // after an emitted numeric prefix and comma, which must stay private.
+        for failure in failures {
+            for fail_at in 1..=4 {
+                let calls = Cell::new(0);
+                let reserves = Cell::new(0);
+                let formatter = injected_formatter(failure, fail_at, &calls);
+                let limits = DomLimits {
+                    // A helper error must precede this exhausted atom budget.
+                    max_output_bytes: if fail_at == 1 { 1 } else { MAX_OUTPUT_BYTES },
+                    ..DomLimits::default()
+                };
+                let result = serialize_with_formatter(
+                    &input,
+                    limits,
+                    |bytes, length| {
+                        assert_eq!(length, 10); // Literal [0.5,-0.0].
+                        reserves.set(reserves.get() + 1);
+                        bytes.try_reserve_exact(length).map_err(|_| ())
+                    },
+                    &formatter,
+                );
+                assert_eq!(result, Err(DomError::InternalLengthMismatch));
+                assert_eq!(calls.get(), fail_at);
+                assert_eq!(reserves.get(), usize::from(fail_at > 2));
+                assert_eq!(format!("{input:?}"), before);
+            }
+        }
+    }
+
+    #[test]
+    fn guard_and_earlier_limits_never_call_formatter_or_reserve() {
+        for bits in [
+            0x7ff0_0000_0000_0000,
+            0xfff0_0000_0000_0000,
+            0x7ff0_0000_0000_0001,
+            0xfff8_1234_5678_9abc,
+        ] {
+            let input = DomValue::F64Bits(bits);
+            let calls = Cell::new(0);
+            let formatter = injected_formatter(
+                NumberError::InvariantViolation {
+                    stage: crate::number_format::InvariantStage::Span,
+                },
+                1,
+                &calls,
+            );
+            let reserves = Cell::new(0);
+            assert_eq!(
+                serialize_with_formatter(
+                    &input,
+                    DomLimits {
+                        max_output_bytes: 0,
+                        ..DomLimits::default()
+                    },
+                    |_, _| {
+                        reserves.set(reserves.get() + 1);
+                        Err(())
+                    },
+                    &formatter,
+                ),
+                Err(DomError::NonFiniteReal { bits })
+            );
+            assert_eq!(calls.get(), 0);
+            assert_eq!(reserves.get(), 0);
+            assert_eq!(input, DomValue::F64Bits(bits));
+        }
+        let finite = DomValue::F64Bits(0x3fe0_0000_0000_0000);
+        for (limits, expected) in [
+            (
+                DomLimits {
+                    max_output_bytes: MAX_OUTPUT_BYTES + 1,
+                    ..DomLimits::default()
+                },
+                DomError::InvalidLimits {
+                    field: LimitField::OutputBytes,
+                    requested: MAX_OUTPUT_BYTES + 1,
+                    maximum: MAX_OUTPUT_BYTES,
+                },
+            ),
+            (
+                DomLimits {
+                    max_records: 0,
+                    ..DomLimits::default()
+                },
+                DomError::RecordLimit {
+                    limit: 0,
+                    attempted_records: 1,
+                },
+            ),
+        ] {
+            let calls = Cell::new(0);
+            let formatter = injected_formatter(
+                NumberError::OutputLimit {
+                    limit: 0,
+                    required: 3,
+                },
+                1,
+                &calls,
+            );
+            assert_eq!(
+                serialize_with_formatter(
+                    &finite,
+                    limits,
+                    |_, _| panic!("unexpected reserve"),
+                    &formatter
+                ),
+                Err(expected)
+            );
+            assert_eq!(calls.get(), 0);
+            assert_eq!(finite, DomValue::F64Bits(0x3fe0_0000_0000_0000));
         }
     }
 

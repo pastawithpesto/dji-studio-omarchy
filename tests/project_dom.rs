@@ -188,6 +188,56 @@ fn assert_crc(bytes: &[u8], actual: dji_reframe::project_dom::DomSignature, expe
     assert_eq!(signature(bytes), actual);
 }
 
+fn finite_plan() -> Value {
+    corpus(include_str!("fixtures/project_dom/finite-lane-v1.json"))
+}
+
+// Apply only the reviewed keyed deltas; historical fixture bytes stay frozen.
+fn finite_delta<'a>(plan: &'a Value, id: &Value) -> Option<&'a Value> {
+    plan["historical_expectation_deltas"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .find(|delta| delta["old_id"] == *id)
+        .map(|delta| &delta["new"])
+}
+
+// The approved composition plan has literal integer `value` fields as well
+// as unchanged historical `decimal` definitions. Keep this adapter separate
+// from the historical safe-construction/exclusion adapter above.
+fn planned_typed(node: &Value) -> DomValue {
+    match node["kind"].as_str().unwrap() {
+        "I64" if node.get("value").is_some() => DomValue::I64(node["value"].as_i64().unwrap()),
+        "U64" if node.get("value").is_some() => DomValue::U64(
+            node["value"]
+                .as_u64()
+                .unwrap_or_else(|| node["value"].as_str().unwrap().parse().unwrap()),
+        ),
+        "Array" => DomValue::Array(
+            node["elements"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .map(planned_typed)
+                .collect(),
+        ),
+        "Object" => DomValue::Object(
+            node["pairs"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .map(|pair| {
+                    (
+                        pair[0].as_str().unwrap().to_owned(),
+                        planned_typed(&pair[1]),
+                    )
+                })
+                .collect(),
+        ),
+        _ => typed(node).unwrap(),
+    }
+}
+
 #[test]
 fn approved_literal_bytes_order_types_and_signatures() {
     let fixtures = corpus(include_str!(
@@ -218,12 +268,13 @@ fn approved_literal_bytes_order_types_and_signatures() {
 #[test]
 fn exact_native_caps_counts_and_error_precedence() {
     let fixtures = corpus(include_str!("fixtures/project_dom/bounds-fixtures.json"));
+    let plan = finite_plan();
     let cases = fixtures["cases"].as_array().unwrap();
     assert_eq!(cases.len(), 46);
     for case in cases {
         let input = generated(&case["input"]);
         let result = serialize(&input, limits(&case["limits_override"]));
-        let expected = &case["expected"];
+        let expected = finite_delta(&plan, &case["id"]).unwrap_or(&case["expected"]);
         if expected["result"] == "error" {
             assert_eq!(result, Err(error(expected)), "{}", case["id"]);
         } else {
@@ -260,7 +311,7 @@ fn exact_native_caps_counts_and_error_precedence() {
 }
 
 #[test]
-fn all_ten_exclusions_are_errors_or_rejected_construction() {
+fn historical_exclusions_apply_only_reviewed_finite_deltas() {
     let corpus = corpus(include_str!(
         "fixtures/project_dom/approved-byte-fixtures.json"
     ));
@@ -268,6 +319,7 @@ fn all_ten_exclusions_are_errors_or_rejected_construction() {
         serde_json::from_str::<Value>(include_str!("fixtures/project_dom/exclusions-api-map.json"))
             .unwrap();
     let cases = map["cases"].as_array().unwrap();
+    let plan = finite_plan();
     assert_eq!(cases.len(), 10);
     for mapping in cases {
         let case = corpus["proposed_native_exclusions"]
@@ -278,12 +330,20 @@ fn all_ten_exclusions_are_errors_or_rejected_construction() {
             .unwrap();
         if mapping["api_domain"] == "runtime" {
             let input = definition(case).unwrap();
-            assert_eq!(
-                serialize(&input, DomLimits::default()),
-                Err(error(&mapping["expected"])),
-                "{}",
-                case["id"]
-            );
+            let before = format!("{input:?}");
+            if let Some(delta) = finite_delta(&plan, &case["id"]) {
+                assert_eq!(delta["result"], "success");
+                let result = serialize(&input, DomLimits::default()).unwrap();
+                assert_eq!(result.bytes, hex(delta["hex"].as_str().unwrap()));
+            } else {
+                assert_eq!(
+                    serialize(&input, DomLimits::default()),
+                    Err(error(&mapping["expected"])),
+                    "{}",
+                    case["id"]
+                );
+            }
+            assert_eq!(format!("{input:?}"), before);
         } else {
             let expected = match case["id"].as_str().unwrap() {
                 "invalid-utf8" | "lone-surrogate-utf8" => ConstructionError::InvalidUtf8,
@@ -314,7 +374,7 @@ fn raw_crc_hashes_every_byte_and_preserves_fixed_hex_width() {
 }
 
 #[test]
-fn integral_real_boundary_bits_never_use_a_general_float_formatter() {
+fn preserved_integral_neighbor_literals() {
     // Literal neighbors of the approved integral path, not generated outputs.
     for (bits, text) in [
         (0xc33f_ffff_ffff_ffff, "-9007199254740991.0"),
@@ -323,15 +383,161 @@ fn integral_real_boundary_bits_never_use_a_general_float_formatter() {
         let result = serialize(&DomValue::F64Bits(bits), DomLimits::default()).unwrap();
         assert_eq!(result.bytes, text.as_bytes());
     }
-    for bits in [
-        0x3fef_ffff_ffff_ffff,
-        0x3ff0_0000_0000_0001,
-        0x4340_0000_0000_0001,
-        0x8000_0000_0000_0001,
+}
+
+#[test]
+fn all_eighty_independently_pinned_finite_compositions_and_neighbors() {
+    let plan = finite_plan();
+    let compositions = plan["new_composition_cases"].as_array().unwrap();
+    let neighbors = plan["finite_neighbor_delta"].as_array().unwrap();
+    assert_eq!(compositions.len(), 76);
+    assert_eq!(neighbors.len(), 4);
+    assert_eq!(
+        plan["historical_expectation_deltas"]
+            .as_array()
+            .unwrap()
+            .len(),
+        6
+    );
+    for case in compositions.iter().chain(neighbors) {
+        let input = planned_typed(&case["input"]);
+        let before = format!("{input:?}");
+        let result = serialize(&input, DomLimits::default()).unwrap();
+        assert_eq!(
+            result.bytes,
+            hex(case["expected_hex"].as_str().unwrap()),
+            "{}",
+            case["id"]
+        );
+        assert_eq!(result.bytes.len(), usize_field(&case["byte_length"]));
+        assert_crc(
+            &result.bytes,
+            result.signature,
+            case["crc32_hex"].as_str().unwrap(),
+        );
+        assert_eq!(format!("{input:?}"), before);
+    }
+}
+
+#[test]
+fn twenty_five_byte_atom_and_container_punctuation_have_distinct_costs() {
+    // Frozen830 independent exact-rational interval oracle, not native output.
+    let bits = 0xbec0_0000_0000_0001;
+    let text = "-0.0000019073486328125004";
+    assert_eq!(text.len(), 25);
+    let root = DomValue::F64Bits(bits);
+    let array = DomValue::Array(vec![DomValue::I64(1), DomValue::F64Bits(bits)]);
+    let object = DomValue::Object(vec![("x".to_owned(), DomValue::F64Bits(bits))]);
+    for (input, cap, attempted) in [
+        (&root, 24, 25),
+        (&array, 2, 3),  // Comma fails before real calculation.
+        (&array, 3, 28), // Numeric atom is one whole chunk.
+        (&array, 27, 28),
+        (&array, 28, 29), // Only the closer fails.
+        (&object, 4, 5),  // Colon fails before real calculation.
+        (&object, 5, 30),
+        (&object, 29, 30),
+        (&object, 30, 31),
+    ] {
+        let before = format!("{input:?}");
+        assert_eq!(
+            serialize(
+                input,
+                DomLimits {
+                    max_output_bytes: cap,
+                    ..DomLimits::default()
+                }
+            ),
+            Err(DomError::OutputLimit {
+                limit: cap,
+                attempted_bytes: attempted
+            })
+        );
+        assert_eq!(format!("{input:?}"), before);
+    }
+    for (input, cap, expected) in [
+        (&root, 25, text.to_owned()),
+        (&array, 29, format!("[1,{text}]")),
+        (&object, 31, format!("{{\"x\":{text}}}")),
+    ] {
+        let result = serialize(
+            input,
+            DomLimits {
+                max_output_bytes: cap,
+                ..DomLimits::default()
+            },
+        )
+        .unwrap();
+        assert_eq!(result.bytes, expected.as_bytes());
+        assert_eq!(result.bytes.len(), cap);
+    }
+}
+
+#[test]
+fn newly_finite_values_preserve_depth_record_and_nonfinite_precedence() {
+    let bits = 0x3fe0_0000_0000_0000;
+    let input = DomValue::Array(vec![DomValue::F64Bits(bits)]);
+    for (max_depth, max_records, expected) in [
+        (
+            0,
+            1,
+            DomError::DepthLimit {
+                limit: 0,
+                attempted_depth: 1,
+            },
+        ),
+        (
+            1,
+            1,
+            DomError::RecordLimit {
+                limit: 1,
+                attempted_records: 2,
+            },
+        ),
     ] {
         assert_eq!(
-            serialize(&DomValue::F64Bits(bits), DomLimits::default()),
-            Err(DomError::UnsupportedReal { bits })
+            serialize(
+                &input,
+                DomLimits {
+                    max_depth,
+                    max_records,
+                    ..DomLimits::default()
+                }
+            ),
+            Err(expected)
+        );
+    }
+    for bits in [
+        0x7ff0_0000_0000_0000,
+        0xfff0_0000_0000_0000,
+        0x7ff0_0000_0000_0001,
+        0xfff8_1234_5678_9abc,
+    ] {
+        let input = DomValue::F64Bits(bits);
+        assert_eq!(
+            serialize(
+                &input,
+                DomLimits {
+                    max_output_bytes: 0,
+                    ..DomLimits::default()
+                }
+            ),
+            Err(DomError::NonFiniteReal { bits })
+        );
+        assert_eq!(input, DomValue::F64Bits(bits));
+        // Earlier container punctuation retains priority over a later NaN.
+        assert_eq!(
+            serialize(
+                &DomValue::Array(vec![input]),
+                DomLimits {
+                    max_output_bytes: 0,
+                    ..DomLimits::default()
+                }
+            ),
+            Err(DomError::OutputLimit {
+                limit: 0,
+                attempted_bytes: 1
+            })
         );
     }
 }
