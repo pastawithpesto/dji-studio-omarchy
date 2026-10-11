@@ -28,3 +28,20 @@ before enabling the worker. Document service lifetime and polling limits.
 A periodic hosted workflow or local worker may perform the check. Do not claim
 hosted automatic operation until a real scheduled or PR event run is verified.
 No application source or frozen README change is part of this task.
+
+## Author implementation
+
+The local Python worker and policy fixtures are in tools/pr_acceptance. It defaults
+to dry-run; root activation requires explicit --apply after independent Sol source
+review and Astra verification. No hosted workflow is added. The existing read-only
+watchdog is unchanged. The worker saves merge intent, rereads current gates and
+uses an expected-head SHA merge without executing PR code.
+
+This first version refuses protected main branches or active branch rules until
+a separately reviewed policy adapter exists. All returned latest checks/statuses
+on the head and test-merge commit must pass, with at least one head check/status.
+See tools/pr_acceptance/README.md for polling bounds, reconciliation, reproducible
+tests, root launch argv and the remaining nontransactional API race window.
+
+Authored source and mocked tests are not independent approval or a real merge.
+Keep PR4 in draft until both review gates pass. Root handles upload and activation.
