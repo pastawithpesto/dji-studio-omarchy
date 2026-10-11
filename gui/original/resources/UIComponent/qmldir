@@ -1,0 +1,51 @@
+module UIComponent
+linktarget UIComponentplugin
+optional plugin UIComponentplugin
+classname UIComponentPlugin
+typeinfo UIComponent.qmltypes
+prefer :/UIComponent/
+ContainerComponent 1.0 UIControls/ContainerComponent/ContainerComponent.qml
+ContainerComponentItem 1.0 UIControls/ContainerComponent/ContainerComponentItem.qml
+UIContainer 1.0 UIControls/ContainerComponent/UIContainer.qml
+EnumTabsView 1.0 UIControls/MenuPage/EnumTabsView.qml
+MenuPageView 1.0 UIControls/MenuPage/MenuPageView.qml
+TextTabItemView 1.0 UIControls/MenuPage/TextTabs/TextTabItemView.qml
+UIButton 1.0 UIControls/UIButton.qml
+UICard 1.0 UIControls/UICard.qml
+UICheckBox 1.0 UIControls/UICheckBox.qml
+UICollectionViewCellView 1.0 UIControls/UICollectionView/UICollectionViewCellView.qml
+UICollectionViewDragCover 1.0 UIControls/UICollectionView/UICollectionViewDragCover.qml
+UICollectionViewFooterView 1.0 UIControls/UICollectionView/UICollectionViewFooterView.qml
+UICollectionViewHeaderView 1.0 UIControls/UICollectionView/UICollectionViewHeaderView.qml
+UIDialog 1.0 UIControls/UIDialog/UIDialog.qml
+UIDivider 1.0 UIControls/UIDivider.qml
+UIHelpIcon 1.0 UIControls/UIHelpIcon.qml
+UIIcon 1.0 UIControls/UIIcon.qml
+UIIconButton 1.0 UIControls/UIIconButton.qml
+UIImage 1.0 UIControls/UIImage.qml
+UIInput 1.0 UIControls/UIInput.qml
+UIMenu 1.0 UIControls/UIMenu/UIMenu.qml
+UIMenuItem 1.0 UIControls/UIMenu/UIMenuItem.qml
+UIMessageBox 1.0 UIControls/UIMessageBox/UIMessageBox.qml
+UIMessageBoxHost 1.0 UIControls/UIMessageBox/UIMessageBoxHost.qml
+UINumberInput 1.0 UIControls/UINumberInput.qml
+UIProgress 1.0 UIControls/UIProgress.qml
+UIRadio 1.0 UIControls/UIRadio.qml
+UIScrollBar 1.0 UIControls/UIScrollBar.qml
+UIScrollView 1.0 UIControls/UIScrollView.qml
+UIMultiSelect 1.0 UIControls/UISelect/Select/UIMultiSelect.qml
+UISelect 1.0 UIControls/UISelect/Select/UISelect.qml
+UISelectMultiPopup 1.0 UIControls/UISelect/Select/UISelectMultiPopup.qml
+UISelectPopup 1.0 UIControls/UISelect/Select/UISelectPopup.qml
+UIDelegateTemplate 1.0 UIControls/UISelect/UIDelegateTemplate.qml
+UIMultiDelegateTemplate 1.0 UIControls/UISelect/UIMultiDelegateTemplate.qml
+UISelectTemplate 1.0 UIControls/UISelect/UISelectTemplate.qml
+UISlider 1.0 UIControls/UISlider.qml
+UISpinner 1.0 UIControls/UISpinner.qml
+UISwitch 1.0 UIControls/UISwitch.qml
+UIText 1.0 UIControls/UIText.qml
+UITextArea 1.0 UIControls/UITextArea.qml
+UIToast 1.0 UIControls/UIToast/UIToast.qml
+UIToastHost 1.0 UIControls/UIToast/UIToastHost.qml
+UITooltip 1.0 UIControls/UITooltip.qml
+
