@@ -11,7 +11,7 @@ calibration and texture input producers, and AI profile selection.
 GPT-6.1 Sol High prepares a bounded Rust contract.
 An independent Sol High reviewer checks the evidence and contract before code.
 Luna High implements the supported mask decoder in Rust.
-GPT-6.1 Sol High implements only supported stitching kernels in Rust.
+GPT-6 Luna High implements only supported stitching kernels in Rust.
 A separate Sol High integrator owns library registration and combined validation.
 An independent Sol High reviewer checks the exact final commit.
 Astra High verifies the reviewed milestone.
