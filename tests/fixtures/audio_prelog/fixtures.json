@@ -1,0 +1,311 @@
+{
+ "schema_version": 3,
+ "feature": "neural-analysis-autoedit/audio-input-abi",
+ "target": {
+  "binary": "extracted/1.0.0.30839/audio_highlight.dll",
+  "sha256": "14c3f88484c3a0fe673fcf19494f3394aad102a7e220ba464520e127eda166e3"
+ },
+ "helper": {
+  "name": "FUN_180013780",
+  "entry": "0x180013780"
+ },
+ "evidence": {
+  "assembly": "FUN_180013780.asm sha256 8337e5d1253ce36e1817224c88e544d0dea308427ea9118c75a1ab16b6e99fe0",
+  "decompile_evidence": "ev_c2f7589039a6e2606d54ebc1d73b4bdc64c3bca0358205ede4017d96a75829d6",
+  "review": "astra primary #615 (audio-revision3 REVIEW.md + verification.json), root relay #616"
+ },
+ "simulation": {
+  "rounding": "RNE assumed for all fp ops (analytic assumption)",
+  "threshold_compare": "binary64-direct: widen_f64(rms_f32) < 1e-10_binary64 (0x3DDB7CDFD9D7BDBB)",
+  "ordering": "f32 square -> f64 accumulate -> f64 divide -> f64 sqrt -> f32 round -> widen -> comisd(binary64 1e-10) -> f32 log10f -> f32 x20",
+  "validation": "every declared output-sample bit, rms bits and sentinel branch re-derived independently from the input formula and frozen ordering; generator aborts on any mismatch (astra #615)"
+ },
+ "buffer_policy": {
+  "input_readable_bytes": "count*2",
+  "output_writable_bytes": "count*4",
+  "nonoverlap": "conservative accepted/native contract; not a proof that every overlap corrupts (count=1 identical-pointer counterexample); arbitrary-pointer overlap undefined",
+  "invalid_count": "outside the contract; no universal guaranteed-fault claim; byte-size/address arithmetic must be representable",
+  "count_cap": "no cap in the helper; 16000 is the reviewed caller constant"
+ },
+ "deferred": "log10f scalar results deferred (no math-library reference bound); F4 +0.0 rests on the log(1)=+0 special-case assumption; everything through rms_f32 bits and every output-sample bit frozen exact",
+ "fixture_count": 12,
+ "fixtures": [
+  {
+   "fixture_id": "F1-count0",
+   "input": {
+    "count": 0,
+    "pattern": "none"
+   },
+   "output_untouched": true,
+   "expected_out": {
+    "kind": "untouched",
+    "output_untouched": true
+   },
+   "rms_f32_bits": null,
+   "sentinel_branch": true,
+   "return": {
+    "bits": "0xc2c80000",
+    "value": -100.0,
+    "class": "exact-sentinel"
+   },
+   "derivation": "count==0: both loops skipped, no output stores, sentinel branch taken"
+  },
+  {
+   "fixture_id": "F2-allzero-16000",
+   "input": {
+    "count": 16000,
+    "pattern": "all int16 0"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0x00000000",
+    "count": 16000
+   },
+   "rms_f32_bits": "0x00000000",
+   "sentinel_branch": true,
+   "return": {
+    "bits": "0xc2c80000",
+    "value": -100.0,
+    "class": "exact-sentinel"
+   },
+   "derivation": "sum=0 -> rms_f32=0x00000000; widened 0.0 < 1e-10 binary64 -> sentinel"
+  },
+  {
+   "fixture_id": "T1-count1-max32767",
+   "input": {
+    "count": 1,
+    "pattern": "all int16 32767 (pure tail path)"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0x3f7ffe00",
+    "count": 1
+   },
+   "rms_f32_bits": "0x3f7ffe00",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -0.00026507636037961915
+   },
+   "derivation": "rounded f32 square 0x3f7ffc00; final rms re-rounds to ideal 0x3f7ffe00 (does not discriminate square rounding at final RMS - see M2)"
+  },
+  {
+   "fixture_id": "T2-count2-max32767",
+   "input": {
+    "count": 2,
+    "pattern": "all int16 32767 (pure tail path)"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0x3f7ffe00",
+    "count": 2
+   },
+   "rms_f32_bits": "0x3f7ffe00",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -0.00026507636037961915
+   },
+   "derivation": "rounded f32 square 0x3f7ffc00; final rms re-rounds to ideal 0x3f7ffe00 (does not discriminate square rounding at final RMS - see M2)"
+  },
+  {
+   "fixture_id": "T3-count3-max32767",
+   "input": {
+    "count": 3,
+    "pattern": "all int16 32767 (pure tail path)"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0x3f7ffe00",
+    "count": 3
+   },
+   "rms_f32_bits": "0x3f7ffe00",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -0.00026507636037961915
+   },
+   "derivation": "rounded f32 square 0x3f7ffc00; final rms re-rounds to ideal 0x3f7ffe00 (does not discriminate square rounding at final RMS - see M2)"
+  },
+  {
+   "fixture_id": "T4-count4-max32767",
+   "input": {
+    "count": 4,
+    "pattern": "all int16 32767 (unrolled 4 + tail 0)"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0x3f7ffe00",
+    "count": 4
+   },
+   "rms_f32_bits": "0x3f7ffe00",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -0.00026507636037961915
+   },
+   "derivation": "rounded f32 square 0x3f7ffc00; final rms re-rounds to ideal 0x3f7ffe00 (does not discriminate square rounding at final RMS - see M2)"
+  },
+  {
+   "fixture_id": "T5-count5-max32767",
+   "input": {
+    "count": 5,
+    "pattern": "all int16 32767 (unrolled 4 + tail 1)"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0x3f7ffe00",
+    "count": 5
+   },
+   "rms_f32_bits": "0x3f7ffe00",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -0.00026507636037961915
+   },
+   "derivation": "rounded f32 square 0x3f7ffc00; final rms re-rounds to ideal 0x3f7ffe00 (does not discriminate square rounding at final RMS - see M2)"
+  },
+  {
+   "fixture_id": "F3-count16000-max32767",
+   "input": {
+    "count": 16000,
+    "pattern": "all int16 32767"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0x3f7ffe00",
+    "count": 16000
+   },
+   "rms_f32_bits": "0x3f7ffe00",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -0.00026507636037961915
+   },
+   "derivation": "count-invariance vs T1-T5: identical rms bits 0x3f7ffe00 = ideal f32 of 32767/32768"
+  },
+  {
+   "fixture_id": "F4-negfullscale-16000",
+   "input": {
+    "count": 16000,
+    "pattern": "all int16 -32768"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "repeat",
+    "value_bits": "0xbf800000",
+    "count": 16000
+   },
+   "rms_f32_bits": "0x3f800000",
+   "sentinel_branch": false,
+   "return": {
+    "bits": "0x00000000",
+    "value": 0.0,
+    "class": "exact-log-specialcase"
+   },
+   "derivation": "f=-1.0 exact; mean=1.0; sqrt=1.0; log10f(1.0)=+0 mathematical/standard-library special-case assumption"
+  },
+  {
+   "fixture_id": "M2-mixed-22020-27612",
+   "input": {
+    "count": 2,
+    "pattern": "sample[0]=22020, sample[1]=27612 (pure tail path)"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "literal",
+    "values_bits": [
+     "0x3f2c0800",
+     "0x3f57b800"
+    ],
+    "note": "first 2 of count; remainder follows the input pattern"
+   },
+   "rms_f32_bits": "0x3f431a07",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -2.359579600593506
+   },
+   "derivation": "GENUINE discriminator: rounded-f32-square RMS 0x3f431a07 vs exact-square RMS 0x3f431a08 (independently re-derived and assertion-checked)",
+   "discriminator": {
+    "rounded_square_rms_bits": "0x3f431a07",
+    "exact_square_rms_bits": "0x3f431a08",
+    "differ": true
+   }
+  },
+  {
+   "fixture_id": "F6-unit-pulse-16000",
+   "input": {
+    "count": 16000,
+    "pattern": "sample[0]=1, rest 0"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "literal",
+    "values_bits": [
+     "0x38000000",
+     "0x00000000",
+     "0x00000000",
+     "0x00000000",
+     "0x00000000",
+     "0x00000000",
+     "0x00000000",
+     "0x00000000"
+    ],
+    "note": "first 8 of count; remainder follows the input pattern"
+   },
+   "rms_f32_bits": "0x348186e2",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -132.35019899343146
+   },
+   "derivation": "rms_f32 >= 1e-10: sentinel NOT taken; computed dB below -100 returned unclamped"
+  },
+  {
+   "fixture_id": "F7-alternating-pm1-16000",
+   "input": {
+    "count": 16000,
+    "pattern": "even +1, odd -1"
+   },
+   "output_untouched": false,
+   "expected_out": {
+    "kind": "literal",
+    "values_bits": [
+     "0x38000000",
+     "0xb8000000",
+     "0x38000000",
+     "0xb8000000",
+     "0x38000000",
+     "0xb8000000",
+     "0x38000000",
+     "0xb8000000"
+    ],
+    "note": "first 8 of count; remainder follows the input pattern"
+   },
+   "rms_f32_bits": "0x38000000",
+   "sentinel_branch": false,
+   "return": {
+    "bits": null,
+    "class": "deferred-log10f",
+    "analytic_reference_db": -90.30899869919436
+   },
+   "derivation": "output samples +2^-15/-2^-15 (0x38000000/0xb8000000); rms exactly 2^-15 (0x38000000); log10f deferred"
+  }
+ ]
+}
