@@ -21,6 +21,7 @@ OWNER = {'login': 'pastawithpesto', 'id': 23729105}
 AUTHOR = {'login': 'revmnds', 'id': 278795669}
 GH = '/home/violence/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gh'
 CLAIMS_SHA = 'a82816161fa1ae5afe92de9a8302ee394ee9d36105aa9b0454308a3f8b773f30'
+ATTESTATION = 'agent-review/verified'
 MAX_CALLS = 128
 MAX_SECONDS = 180
 SHA = re.compile(r'[0-9a-f]{40}')
@@ -130,13 +131,14 @@ class GitHub:
         require(type(number) is int and number > 0, 'Invalid PR number')
         return self.request(f'/pulls/{number}/merge', {'sha': sha(head), 'merge_method': 'merge'})
 
-    def pages(self, path, limit, key=None):
+    def pages(self, path, limit, key=None, expected_sha=None):
         output = []
         expected = None
         for page in range(1, limit + 1):
             value = self.get(path + ('&' if '?' in path else '?') + f'per_page=100&page={page}')
             if key:
                 require(isinstance(value, dict) and type(value.get('total_count')) is int and value['total_count'] >= 0, 'Missing paginated count')
+                require(expected_sha is None or value.get('sha') == expected_sha, 'Paginated commit identity changed')
                 count = value['total_count']
                 require(expected is None or expected == count, 'Paginated count changed')
                 expected = count
@@ -217,7 +219,7 @@ def reviews_allow(reviews, head):
 def checks(api, head):
     combined = api.get(f'/commits/{head}/status?per_page=100&page=1')
     require(combined.get('sha') == head and type(combined.get('total_count')) is int, 'Invalid combined status identity')
-    statuses = api.pages(f'/commits/{head}/status', 10, 'statuses')
+    statuses = api.pages(f'/commits/{head}/status', 10, 'statuses', head)
     require(len(statuses) == combined['total_count'], 'Status count race')
     unique(statuses, 'context')
     require(all(isinstance(s['context'], str) and s['context'] and type(s['id']) is int and s['id'] > 0 for s in statuses), 'Invalid status identity')
@@ -235,6 +237,48 @@ def checks(api, head):
     return {'statuses': statuses, 'runs': runs}
 
 
+def protection_policy(value):
+    """Exact root1427 GET policy. Missing/unknown fields require a new review."""
+    endpoint = 'https://api.github.com/repos/' + REPO + '/branches/main/protection'
+    expected = {
+        'url': endpoint,
+        'required_status_checks': {
+            'url': endpoint + '/required_status_checks', 'strict': True,
+            'contexts': [ATTESTATION],
+            'contexts_url': endpoint + '/required_status_checks/contexts',
+            'checks': [{'context': ATTESTATION, 'app_id': None}]},
+        'required_pull_request_reviews': {
+            'url': endpoint + '/required_pull_request_reviews',
+            'dismiss_stale_reviews': True, 'require_code_owner_reviews': False,
+            'require_last_push_approval': False, 'required_approving_review_count': 0},
+        'required_signatures': {'url': endpoint + '/required_signatures', 'enabled': False},
+        'enforce_admins': {'url': endpoint + '/enforce_admins', 'enabled': True},
+        **{key: {'enabled': False} for key in (
+            'required_linear_history', 'allow_force_pushes', 'allow_deletions',
+            'block_creations', 'required_conversation_resolution', 'lock_branch',
+            'allow_fork_syncing')},
+        'restrictions': None}
+    require(isinstance(value, dict), 'Missing branch protection policy')
+    # GitHub omits restrictions for this personal repository's null restriction.
+    # Only this observed omission is normalized; no other defaults are invented.
+    normalized = {'restrictions': None, **value}
+    require(fingerprint(normalized) == fingerprint(expected), 'Branch protection differs from pinned policy')
+    return normalized
+
+
+def up_to_date(api, base, head):
+    comparison = api.get(f'/compare/{base}...{head}')
+    require(comparison['base_commit']['sha'] == base and comparison['merge_base_commit']['sha'] == base,
+            'Head does not contain the current main commit')
+    require(type(comparison['ahead_by']) is int and comparison['ahead_by'] >= 0 and
+            type(comparison['behind_by']) is int and comparison['behind_by'] == 0 and
+            type(comparison['total_commits']) is int and comparison['total_commits'] == comparison['ahead_by'] and
+            comparison['status'] == ('ahead' if comparison['ahead_by'] else 'identical'),
+            'Ambiguous or outdated head ancestry')
+    return {key: comparison[key] for key in ('status', 'ahead_by', 'behind_by', 'total_commits')} | {
+        'base': base, 'merge_base': comparison['merge_base_commit']['sha'], 'head': head}
+
+
 def validate(api, snapshot, number):
     pr = snapshot['prs'][str(number)]
     require(user(pr['user'], AUTHOR), 'Other author')
@@ -247,22 +291,27 @@ def validate(api, snapshot, number):
     gate(user(permission['user'], AUTHOR) and permission['permission'] in {'write', 'admin'} and permission['user']['permissions']['push'] is True, 'Author lacks current write permission')
     branch = api.get('/branches/main')
     require(branch['name'] == 'main' and sha(branch['commit']['sha']) == base, 'Base branch moved')
-    # Do not rely on an owner's permission to bypass branch/ruleset requirements.
-    # Supporting rule-managed branches requires a separately reviewed policy adapter.
-    gate(branch['protected'] is False, 'Protected branch requires separate policy support')
+    require(branch['protected'] is True, 'Main branch protection is absent or ambiguous')
+    protection = protection_policy(api.get('/branches/main/protection'))
+    rulesets = api.pages('/rulesets?includes_parents=true', 5)
+    require(not rulesets, 'Repository or inherited rulesets differ from pinned policy')
     rules = api.pages('/rules/branches/main', 5)
     require(isinstance(rules, list), 'Missing active branch rules')
     gate(not rules, 'Active branch rules require separate policy support')
     gate(pr['mergeable'] is True and pr['mergeable_state'] == 'clean', 'Mergeability or policy not clean')
+    ancestry = up_to_date(api, base, head)
     reviews = api.pages(f'/pulls/{number}/reviews', 10)
     reviews_allow(reviews, head)
     head_checks = checks(api, head)
-    gate(head_checks['statuses'] or head_checks['runs'], 'No passing head checks')
+    attested = [s for s in head_checks['statuses'] if s['context'] == ATTESTATION]
+    gate(len(attested) == 1 and attested[0]['state'] == 'success' and user(attested[0].get('creator'), OWNER),
+         'Missing successful current-head owner attestation status')
     merge_head = sha(pr['merge_commit_sha'])
     merge_checks = checks(api, merge_head) if merge_head != head else head_checks
     return {'pr': pr_identity(pr), 'mergeable': pr['mergeable'], 'mergeable_state': pr['mergeable_state'],
             'merge_head': merge_head, 'permission': permission, 'repo': {'full_name': repo['full_name'], 'owner': repo['owner'], 'allow_merge_commit': repo['allow_merge_commit']},
-            'base': branch['commit']['sha'], 'protected': branch['protected'], 'rules': rules,
+            'base': branch['commit']['sha'], 'protected': branch['protected'], 'protection': protection,
+            'rules': rules, 'rulesets': rulesets, 'ancestry': ancestry,
             'reviews': reviews, 'checks': {'head': head_checks, 'merge': merge_checks}}
 
 

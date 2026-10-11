@@ -37,11 +37,18 @@ review and Astra verification. No hosted workflow is added. The existing read-on
 watchdog is unchanged. The worker saves merge intent, rereads current gates and
 uses an expected-head SHA merge without executing PR code.
 
-This first version refuses protected main branches or active branch rules until
-a separately reviewed policy adapter exists. All returned latest checks/statuses
-on the head and test-merge commit must pass, with at least one head check/status.
-See tools/pr_acceptance/README.md for polling bounds, reconciliation, reproducible
-tests, root launch argv and the remaining nontransactional API race window.
+The protected-policy followup supersedes the historical unprotected candidate
+bd64a431, which remains preserved and must not be activated. Require the exact
+root1427 normalized main protection GET, strict named status, admin enforcement,
+no force pushes or deletion, no repository/inherited rulesets and no active rules. Unknown, missing, stronger or
+weaker policies refuse. Require the owner-created agent-review/verified success
+commit status on the current head in addition to the owner approval. Root records
+it only after actual independent reviews, validation and current full claims.
+All other returned checks/statuses on the head and test-merge commit must pass.
+Verify head ancestry contains current main and mergeability is clean. Reread and
+compare policy and gate identities before the expected-head merge.
+See tools/pr_acceptance/README.md for the exact policy, polling bounds,
+reconciliation, reproduction and remaining nontransactional race window.
 
 Authored source and mocked tests are not independent approval or a real merge.
 Keep PR4 in draft until both review gates pass. Root handles upload and activation.

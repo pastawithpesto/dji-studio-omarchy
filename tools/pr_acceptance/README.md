@@ -37,12 +37,14 @@ No branch is checked out and no PR code is executed.
 
 Mergeability must be true with mergeable_state=clean. All returned latest status
 contexts and check runs on the current head and current test-merge commit must
-succeed. At least one status/check must exist on the head itself. Pending,
+succeed. The current head must carry the successful commit status named
+`agent-review/verified` from the pinned owner login and numeric ID. A check run
+with that name cannot substitute for the commit status. Pending,
 neutral, skipped, cancelled or ambiguous duplicate latest checks block. This
 strict policy can delay PRs whose checks run only on the test-merge commit.
 
 Hosted PR events are still unverified. After the actual independent Sol source
-review, Astra verification and relevant validation pass, root records two GitHub
+review, Astra verification, relevant validation and current full claims pass, root records two GitHub
 attestations on the current head: the owner APPROVED review and a success commit
 status named `agent-review/verified`, linking the review evidence. That status
 attests completed agent gates; it must not be described as a hosted CI run. The
@@ -51,16 +53,36 @@ returned status/check to succeed. It never creates reviews or commit statuses.
 Periodic polling does not start agent reviews. Root coordinates those through
 the addressed comms bus, then records the actual completed gates on GitHub.
 
-This initial version supports an unprotected main branch with no active branch
-rules only. Protected branches and any active ruleset are refused. This avoids
-using an owner's permissions to bypass a rule the worker cannot independently
-validate. A future policy adapter needs separate review. The read-only live
-observation during authorship confirmed protected=false and no active rules;
-these conditions are rechecked, not assumed indefinitely.
+This protected-policy adapter supports only root instruction1427's normalized
+main protection GET. Required status contexts and checks must each contain exactly
+`agent-review/verified`, with strict=true and checks app_id=null. The request
+used app_id=-1; the worker accepts only the observed GET normalization null.
+Admin enforcement must be true. Force pushes and deletions must be false.
+Required PR reviews must be enabled with count0, dismiss_stale_reviews=true,
+code_owner=false and last_push_approval=false. The worker separately enforces the
+current-head owner approval despite the server review count0.
+
+Signatures, linear history, creation blocking, conversation resolution, branch
+locking and fork syncing must all be explicitly false. Restrictions must be null
+or omitted, as observed for this personal repository. That omission is the only
+normalized default. All other missing fields, unknown controls, extra checks,
+app bindings, bypass allowances, URL identity changes and any repository or
+inherited ruleset (even disabled) or active branch rule fail
+closed. Stronger policies also require a separate reviewed adapter. Protection
+and all gate identities are read twice and included in the compared attestation.
+No policy mutation is implemented.
+
+The branch GET must explicitly report protected=true and its current commit must
+match the PR base SHA. A read-only compare of that base with the exact head must
+show the base as the merge base, behind_by=0 and coherent ahead/identical counts.
+Together with strict protection and clean mergeability this rejects outdated
+heads. Comparison metadata is used only for ancestry, not file inventory.
+The historical unprotected candidate bd64a431 is preserved and must not be
+activated. Authored support is pending independent Sol review and Astra verification.
 
 An unmet complete gate skips that candidate and permits another candidate to be
 examined. API/schema/completeness failures stop the cycle. The complete claims
-snapshot and permission/review/check identities are read twice and compared.
+snapshot and permission/protection/ancestry/review/check identities are read twice and compared.
 A final PR detail read precedes a REST PUT merge with the expected head SHA and
 merge_method=merge. At most one PR merges per cycle. There is no admin or bypass
 option. Repository merge commits must be enabled.
@@ -89,7 +111,8 @@ python3 -B tools/pr_acceptance/worker.py --once --runtime /absolute/path/to/new-
 The tests use fixed independent expected outcomes, mocked transport and mocked
 merge receipts. No tests mutate GitHub or start a service. They include stale
 approval, identity spoofing, current veto, check/claim/file gaps, pagination,
-API errors, race windows, explicit mutation flags, persisted retry and uncertain
+exact protected policy, every policy leaf changed or omitted, named owner status,
+ancestry, policy/status races, API errors, explicit mutation flags, persisted retry and uncertain
 merge reconciliation. A passing mocked merge is not a real merge proof.
 
 After both reviews, root may start a dedicated transient user service with an
@@ -114,7 +137,7 @@ current API state and exact merge commit, not a heartbeat alone.
 Healthy cycles wait at least30 seconds after completion. Each cycle permits at
 most128 requests, at most180 seconds before starting a request, and25 seconds per
 request. One in-flight request can extend that bound to205 seconds. Open PR lists
-use at most5 pages, file inventories30, reviews/status/checks10, rules5, all with
+use at most5 pages, file inventories30, reviews/status/checks10, rules/rulesets5, all with
 100 records per page. A terminal short page is required; exact-limit full pages
 are refused. Thus 3,000-file PRs cannot pass. Retry grows30/60/120/240/480/900
 seconds plus jitter, with Retry-After/reset as a lower bound. Next-attempt time
@@ -145,6 +168,8 @@ The existing read-only watcher continues to supply claim notifications.
 - [Combined commit status](https://docs.github.com/en/rest/commits/statuses#get-the-combined-status-for-a-specific-reference)
 - [Current collaborator permission](https://docs.github.com/en/rest/collaborators/collaborators#get-repository-permissions-for-a-user)
 - [Branch identity/protection](https://docs.github.com/en/rest/branches/branches#get-a-branch)
+- [Exact protected branch policy](https://docs.github.com/en/rest/branches/branch-protection#get-branch-protection)
+- [Commit ancestry comparison](https://docs.github.com/en/rest/commits/commits#compare-two-commits)
 - [Active branch rules](https://docs.github.com/en/rest/repos/rules#get-rules-for-a-branch)
 
 These API contracts support transport design, not DJI behavior or Windows parity.

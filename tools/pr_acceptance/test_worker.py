@@ -19,6 +19,11 @@ import worker as W
 HEAD, BASE, MERGE = 'a' * 40, 'b' * 40, 'c' * 40
 
 
+def protection():
+    # Literal observed root policy oracle, independent of the worker builder.
+    return json.loads('''{"url":"https://api.github.com/repos/pastawithpesto/dji-studio-omarchy/branches/main/protection","required_status_checks":{"url":"https://api.github.com/repos/pastawithpesto/dji-studio-omarchy/branches/main/protection/required_status_checks","strict":true,"contexts":["agent-review/verified"],"contexts_url":"https://api.github.com/repos/pastawithpesto/dji-studio-omarchy/branches/main/protection/required_status_checks/contexts","checks":[{"context":"agent-review/verified","app_id":null}]},"required_pull_request_reviews":{"url":"https://api.github.com/repos/pastawithpesto/dji-studio-omarchy/branches/main/protection/required_pull_request_reviews","dismiss_stale_reviews":true,"require_code_owner_reviews":false,"require_last_push_approval":false,"required_approving_review_count":0},"required_signatures":{"url":"https://api.github.com/repos/pastawithpesto/dji-studio-omarchy/branches/main/protection/required_signatures","enabled":false},"enforce_admins":{"url":"https://api.github.com/repos/pastawithpesto/dji-studio-omarchy/branches/main/protection/enforce_admins","enabled":true},"required_linear_history":{"enabled":false},"allow_force_pushes":{"enabled":false},"allow_deletions":{"enabled":false},"block_creations":{"enabled":false},"required_conversation_resolution":{"enabled":false},"lock_branch":{"enabled":false},"allow_fork_syncing":{"enabled":false}}''')
+
+
 def review(n=1, login='pastawithpesto', uid=23729105, state='APPROVED', head=HEAD):
     return {'id': n, 'user': {'login': login, 'id': uid}, 'state': state, 'commit_id': head, 'submitted_at': f'2026-10-11T06:{n:02}:00Z'}
 
@@ -39,9 +44,15 @@ class Fake(W.GitHub):
         self.files = {1: [{'filename': 'area1/file', 'status': 'modified'}]}
         self.reviews = [review()]
         self.permission = {'permission': 'write', 'user': {'login': 'revmnds', 'id': 278795669, 'permissions': {'push': True}}}
-        self.branch = {'name': 'main', 'protected': False, 'commit': {'sha': BASE}}
+        self.branch = {'name': 'main', 'protected': True, 'commit': {'sha': BASE}}
+        self.protection = protection()
+        self.comparison = {'base_commit': {'sha': BASE}, 'merge_base_commit': {'sha': BASE},
+                           'status': 'ahead', 'ahead_by': 1, 'behind_by': 0, 'total_commits': 1}
         self.rules = []
-        self.statuses = []
+        self.rulesets = []
+        self.statuses = [{'context':'agent-review/verified','state':'success','id':8,
+                         'creator':{'login':'pastawithpesto','id':23729105},
+                         'target_url':'https://github.com/pastawithpesto/dji-studio-omarchy/pull/1#pullrequestreview-1'}]
         self.runs = [{'id': 70, 'name': 'unit', 'head_sha': HEAD, 'status': 'completed', 'conclusion': 'success', 'app': {'id': 15368}}]
         self.hook = None
         self.counts = {}
@@ -59,7 +70,10 @@ class Fake(W.GitHub):
         elif name == '/pulls': data = list(self.prs.values()) if page == 1 else []
         elif name == '/collaborators/revmnds/permission': data = self.permission
         elif name == '/branches/main': data = self.branch
+        elif name == '/branches/main/protection': data = self.protection
+        elif name.startswith('/compare/'): data = self.comparison
         elif name == '/rules/branches/main': data = self.rules if page == 1 else []
+        elif name == '/rulesets': data = self.rulesets if page == 1 else []
         elif name.startswith('/pulls/'):
             parts=name.split('/'); number=int(parts[2])
             data = self.reviews if name.endswith('/reviews') else self.files[number] if name.endswith('/files') else self.prs[number]
@@ -134,13 +148,14 @@ class Policy(unittest.TestCase):
             api=Fake(True);api.prs[1][key]=value;self.refused(api)
         api=Fake(True);api.prs[1]['base']['ref']='release';self.refused(api)
         api=Fake(True);api.prs[1]['base']['repo']['full_name']='other/repo';self.refused(api)
-        api=Fake(True);api.branch['protected']=True;self.refused(api)
+        api=Fake(True);api.branch['protected']=False;self.refused(api)
         api=Fake(True);api.rules=[{'type':'required_status_checks'}];self.refused(api)
+        api=Fake(True);api.rulesets=[{'id':1,'enforcement':'disabled'}];self.refused(api)
 
     def test_failed_pending_neutral_skipped_and_missing_checks(self):
         for status,conclusion in [('completed','failure'),('in_progress',None),('completed','neutral'),('completed','skipped'),('completed','cancelled')]:
             api=Fake(True);api.runs[0].update(status=status,conclusion=conclusion);self.refused(api)
-        api=Fake(True);api.runs=[];self.refused(api)
+        api=Fake(True);api.runs=[];api.statuses=[];self.refused(api)
         api=Fake(True);api.statuses=[{'context':'legacy','state':'failure','id':8}];self.refused(api)
 
     def test_status_only_success_and_failing_test_merge(self):
@@ -199,6 +214,92 @@ class Policy(unittest.TestCase):
         api.hook=lambda name,count,page: [] if name=='/pulls/1/reviews' else None
         result=W.evaluate(api,True,lambda e:None)
         self.assertEqual(result['pr'],2);self.assertEqual(api.merges,[(2,HEAD)])
+
+    def test_exact_protection_policy_with_observed_null_omission(self):
+        for explicit in [False,True]:
+            api=Fake()
+            if explicit:api.protection['restrictions']=None
+            result=W.evaluate(api)
+            self.assertEqual(result['action'],'eligible-dry-run')
+            self.assertEqual(api.counts['/branches/main/protection'],2)
+            self.assertEqual(api.counts['/compare/'+BASE+'...'+HEAD],2)
+            self.assertEqual(api.merges,[])
+
+    def test_every_protection_leaf_change_missing_and_unknown_refuses(self):
+        def leaves(value,path=()):
+            if isinstance(value,dict):
+                for k,v in value.items():yield from leaves(v,path+(k,))
+            elif isinstance(value,list):
+                for k,v in enumerate(value):yield from leaves(v,path+(k,))
+            else:yield path,value
+        def locate(value,path):
+            for key in path[:-1]:value=value[key]
+            return value,path[-1]
+        for path,value in leaves(protection()):
+            for action in ['change','delete']:
+                with self.subTest(path=path,action=action):
+                    api=Fake(True);obj,key=locate(api.protection,path)
+                    if action=='delete':del obj[key]
+                    else:obj[key]=(not value) if type(value) is bool else 1 if value is None or type(value) is int else 'unknown'
+                    self.refused(api)
+        for path in [(),('required_status_checks',),('required_pull_request_reviews',),('enforce_admins',),('required_status_checks','checks',0)]:
+            api=Fake(True);obj=api.protection
+            for key in path:obj=obj[key]
+            obj['unknown_policy']=True;self.refused(api)
+        for field in list(protection()):
+            api=Fake(True);del api.protection[field];self.refused(api)
+        for name in ['restrictions','bypass_pull_request_allowances']:
+            api=Fake(True);api.protection[name]={'users':[{'login':'pastawithpesto'}]};self.refused(api)
+        api=Fake(True);api.protection['required_pull_request_reviews']['required_approving_review_count']=False;self.refused(api)
+        api=Fake(True);api.protection['required_status_checks']['checks'][0]['app_id']=-1;self.refused(api)
+
+    def test_required_named_status_is_current_successful_owner_status(self):
+        for changes in [{'context':'other'},{'state':'pending'},{'state':'error'},{'state':'failure'},
+                        {'creator':{'login':'other','id':23729105}},
+                        {'creator':{'login':'pastawithpesto','id':4}}, {'creator':None}]:
+            api=Fake(True);api.statuses[0].update(changes);self.refused(api)
+        api=Fake(True);api.statuses=[];api.runs[0]['name']='agent-review/verified';self.refused(api)
+        api=Fake(True);api.hook=lambda name,count,page: {'sha':'e'*40,'state':'success','total_count':1,'statuses':api.statuses} if name.endswith('/status') and HEAD in name else None
+        self.refused(api)
+        api=Fake(True);api.hook=lambda name,count,page: {'sha':HEAD,'state':'success','total_count':2,'statuses':api.statuses} if name.endswith('/status') and HEAD in name else None
+        self.refused(api)
+        api=Fake(True);api.hook=lambda name,count,page: {'sha':'e'*40,'state':'success','total_count':1,'statuses':api.statuses} if name.endswith('/status') and HEAD in name and count==2 else None
+        self.refused(api)
+
+    def test_strict_up_to_date_ancestry_and_unknown_mergeability(self):
+        for changes in [{'status':'behind'},{'status':'diverged'},{'behind_by':1},{'ahead_by':True},
+                        {'total_commits':2},{'base_commit':{'sha':'e'*40}},
+                        {'merge_base_commit':{'sha':'e'*40}}]:
+            api=Fake(True);api.comparison.update(changes);self.refused(api)
+        for key in Fake().comparison:
+            api=Fake(True);del api.comparison[key];self.refused(api)
+        for state in ['behind','unknown','dirty','has_hooks','blocked']:
+            api=Fake(True);api.prs[1]['mergeable_state']=state;self.refused(api)
+        api=Fake();api.comparison.update(status='identical',ahead_by=0,total_commits=0)
+        self.assertEqual(W.evaluate(api)['action'],'eligible-dry-run')
+
+    def test_protection_rules_ancestry_and_attestation_races(self):
+        for kind in ['protection','rules','rulesets','ancestry','attestation','attestationcreator']:
+            api=Fake(True)
+            def mutate(name,count,page):
+                if kind=='protection' and name=='/branches/main/protection' and count==2:api.protection['enforce_admins']['enabled']=False
+                if kind=='rules' and name=='/rules/branches/main' and count==2:api.rules=[{'type':'required_signatures'}]
+                if kind=='rulesets' and name=='/rulesets' and count==2:api.rulesets=[{'id':1,'enforcement':'active'}]
+                if kind=='ancestry' and name.startswith('/compare/') and count==2:api.comparison.update(status='ahead',ahead_by=2,total_commits=2)
+                if kind.startswith('attestation') and name.endswith('/status') and HEAD in name and count==3:
+                    if kind=='attestation':api.statuses[0]['id']=9
+                    else:api.statuses[0]['creator']['id']=9
+            api.hook=mutate;self.refused(api)
+
+    def test_protection_api_error_and_rules_incomplete_page(self):
+        api=Fake(True)
+        def error(name,count,page):
+            if name=='/branches/main/protection':raise W.Unavailable('Protection GET denied',http_status=403)
+        api.hook=error;self.refused(api)
+        api=Fake(True);api.hook=lambda name,count,page: [{}]*100 if name=='/rules/branches/main' else None
+        self.refused(api)
+        api=Fake(True);api.hook=lambda name,count,page: [{}]*100 if name=='/rulesets' else None
+        self.refused(api)
 
 
 class Transport(unittest.TestCase):
