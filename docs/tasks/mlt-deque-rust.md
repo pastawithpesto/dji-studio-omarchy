@@ -19,9 +19,11 @@ The original source is MLT build 1.0.0.30839, SHA-256 `59a83da5816e60a196289801f
 
 The review approves all 25 deque APIs for their original normal-return branches and same-kind typed operations. Stored cursor and count are qwords. Exported count and index values use the signed low dword. Integer pushes initialize four payload bytes, and integer reads consume four bytes. Other upper slot bytes are undefined for mixed-kind reads. Pointer and double reads use eight bytes. Pointer ownership and callbacks are not established.
 
+The saved Ghidra FunctionManager signature for `mlt_deque_insert_at` is `int __fastcall mlt_deque_insert_at(Deque * param_1, void * param_2, int param_3)`. It is not a recovered public header declaration. The root Wine harness also calls the pointer payload before the signed index. The Rust function keeps that observed order.
+
 Tagged Rust entries and explicit safe allocation/type errors are independent safety adaptations. They do not claim C prototype, Windows ABI, callback reentrancy, foreign-pointer lifetime, malformed inner `Impl`, or exception parity. The implementation must not invent those contracts or return success for unsupported cases.
 
-Root is preparing original-DLL deque operation sequence fixtures through Wine. Until those arrive, use tests derived from the approved static contracts. Compare the reference fixtures before requesting final review.
+The pinned original-DLL Wine fixture now covers 481 operation and callback records. Its source and raw output are copied under `tests/fixtures/mlt/deque/`, with exact hashes and environment limits. The test replays null wrapper, pointer, typed-int, double, and sorted groups. It compares each status, count, payload bits, and comparator call. The typed-int group does not read unassigned upper32 slot bits. Wine uses native MSVC dependencies and builtin UCRT/OS services. It does not establish Windows parity.
 
 ## Plan and completion checks
 

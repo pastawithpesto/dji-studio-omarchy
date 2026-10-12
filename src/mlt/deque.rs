@@ -414,10 +414,13 @@ pub fn mlt_deque_pop_back_int(deque: Option<&mut MltDeque>) -> Result<i32, Deque
 }
 
 /// Original name: `mlt_deque_insert_at` (`0x180017290`).
+/// The observed parameter order is payload, then signed index. This order is
+/// supported by the saved function-manager signature and Wine reference calls;
+/// it does not establish an original public header declaration.
 pub fn mlt_deque_insert_at(
     deque: Option<&mut MltDeque>,
-    index: i32,
     value: *mut c_void,
+    index: i32,
 ) -> Result<i32, DequeError> {
     let Some(deque) = deque else { return Ok(1) };
     let Some(index) = deque.valid_index(index, true) else {

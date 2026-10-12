@@ -171,7 +171,7 @@
       },
       "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017290/assembly.json",
       "assembly_artifact_hash_verified": true,
-      "approved_normal_return_contract": "Null wrapper returns 1. Accept signed index 0 through count inclusive, insert pointer payload and return 0. Invalid index returns 1. Null payload is accepted."
+      "approved_normal_return_contract": "Observed payload pointer parameter precedes signed index (Ghidra signature is not a recovered public header). Null wrapper returns 1. Accept signed index 0 through count inclusive, insert pointer payload and return 0. Invalid index returns 1. Null payload is accepted."
     },
     {
       "name": "mlt_deque_peek",
@@ -746,5 +746,24 @@
       "instruction_count": 86,
       "decoded_instruction_bytes_match": true
     }
+  },
+  "original_reference_fixture": {
+    "packet": "reconstruction/root-mlt-complete-rea640-20261011/reference-deque",
+    "root_manifest_sha256": "f3eea0eb95fd1858db1bc3325c40998ed756f61407b59cfcde6828210b9d826c",
+    "case_path": "tests/fixtures/mlt/deque/original-DEQUE-CASES.json",
+    "case_sha256": "8fa90ecdd9a82cde0f1602e62b6f6c55b2de613d21230c7c108f40e678281509",
+    "raw_output_path": "tests/fixtures/mlt/deque/original-WINE-DEQUE-FINAL.jsonl",
+    "raw_output_sha256": "5cdc5c19d5690419a53fbb60014f76ac56caf067d383de40a8aa8635a601741e",
+    "case_records": 481,
+    "groups": {
+      "null": 24,
+      "pointer": 365,
+      "int": 32,
+      "double": 32,
+      "sorted": 28
+    },
+    "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+    "environment": "Native original DLL under Wine 11.17 with native MSVC dependencies and builtin Wine UCRT/OS services. Not Windows parity.",
+    "comparison": "tests/mlt_deque.rs replays every record and compares statuses, counts, values, full pointer/double bits, and comparator arguments/order. Int comparisons read only the signed low 32 bits. init.created and close.completed are checked as events, not return values."
   }
 }
