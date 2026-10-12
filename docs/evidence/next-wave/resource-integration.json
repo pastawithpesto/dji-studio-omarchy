@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-10-11T05:57:04.011853+00:00",
+  "commit": "6f3dc07208bc2dc8026730cebacc2c9aa93af1db",
+  "approved_head": "782541268cdc73acb5e76dbf22fa1683f686510e",
+  "trees_equal": true,
+  "verified_files": 3585,
+  "clean": true,
+  "sol_review": 1350,
+  "astra_review": 1363,
+  "claim_check_run": 38116380462,
+  "limits": "Resource integration only. Original Main startup and full UI/Windows parity unverified."
+}
