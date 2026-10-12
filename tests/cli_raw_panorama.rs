@@ -87,16 +87,14 @@ fn fixture(path: &Path, cameras: &[(u32, u32, u32)], preview: bool, audio: bool)
     if audio {
         command.args(["-map", &format!("{}:a:0", first_audio + 1)]);
     }
-    command.args(["-c:v", "libx264"]);
+    command.args(["-c:v", "libx264", "-pix_fmt", "yuv420p"]);
     if preview {
-        command.args(["-c:v:0", "mjpeg"]);
+        command.args(["-c:v:0", "mjpeg", "-pix_fmt:v:0", "yuvj420p"]);
     }
     command
         .args([
             "-threads:v",
             "1",
-            "-pix_fmt",
-            "yuv420p",
             "-c:a",
             "aac",
             "-t",

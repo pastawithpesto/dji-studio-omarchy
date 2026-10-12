@@ -53,10 +53,14 @@ fn raw_camera_pair(input: &Path) -> Result<[u64; 2], String> {
             stream["codec_type"] == "video"
                 && stream["codec_name"] != "mjpeg"
                 && stream["disposition"]["attached_pic"].as_u64().unwrap_or(0) == 0
-                && stream["disposition"]["timed_thumbnails"].as_u64().unwrap_or(0) == 0
+                && stream["disposition"]["timed_thumbnails"]
+                    .as_u64()
+                    .unwrap_or(0)
+                    == 0
         })
         .collect();
-    let pair_error = "Raw panorama input must have exactly two matching square camera video streams";
+    let pair_error =
+        "Raw panorama input must have exactly two matching square camera video streams";
     if cameras.len() != 2 {
         return Err(pair_error.into());
     }
@@ -111,7 +115,9 @@ fn raw_panorama(input: &Path, output: &Path) -> Result<(), String> {
     let filter = format!(
         "[0:{left}][0:{right}]hstack=inputs=2:shortest=1,v360=input=dfisheye:output=equirect:w=2048:h=1024[panorama]"
     );
-    eprintln!("Experimental raw panorama preview. DJI lens calibration and seam correction are not applied.");
+    eprintln!(
+        "Experimental raw panorama preview. DJI lens calibration and seam correction are not applied."
+    );
     let status = Command::new("ffmpeg")
         .args(["-nostdin", "-n", "-i"])
         .arg(input)
