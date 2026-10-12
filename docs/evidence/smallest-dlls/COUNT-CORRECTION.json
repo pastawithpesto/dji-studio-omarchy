@@ -1,0 +1,22 @@
+{
+  "kind": "additive_report_wording_correction",
+  "original_REPORT_sha256": "99f9497af4012ebfbfe0c43dbce82006036813e62d0e575d26dd56ebb084cd13",
+  "defect": "The final report paragraph says146 native body ranges.146 is the native procedure/body count; complete inclusive ranges have152 records.",
+  "corrected": "146 native provider function bodies with152 complete inclusive byte-range records, all matching original source. These are provider boundaries and are not a whole-CRT semantic or runtime completeness claim.",
+  "per_DLL": [
+    {
+      "DLL": "msvcp140_codecvt_ids.dll",
+      "native_functions": 53,
+      "captured_body_range_records": 55,
+      "distinct_body_ranges": 55,
+      "captured_range_bytes": 3034
+    },
+    {
+      "DLL": "msvcp140_1.dll",
+      "native_functions": 93,
+      "captured_body_range_records": 97,
+      "distinct_body_ranges": 97,
+      "captured_range_bytes": 3949
+    }
+  ]
+}

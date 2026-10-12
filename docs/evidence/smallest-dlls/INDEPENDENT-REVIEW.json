@@ -1,0 +1,1517 @@
+{
+  "worker": "sol-2",
+  "author": "root",
+  "instruction": 2952,
+  "reviewed_utc": "2026-10-12T04:24:18.768611+00:00",
+  "disposition": "approved",
+  "approval_scope": "Exact bounded static facts in sealed REPORT99f9497a/FINDINGS1ad1672a/MANIFESTa38866c0 with mandatory additive scope188c6acf and count75e534ac corrections. Capture approval does not approve full CRT semantics.",
+  "packet_pins": {
+    "REPORT.md": "99f9497af4012ebfbfe0c43dbce82006036813e62d0e575d26dd56ebb084cd13",
+    "FINDINGS.json": "1ad1672ae85a6efa78fc38912a5a2913a00e3001e8c5655fd5602b8b81e572f6",
+    "MANIFEST.json": "a38866c0c54a9b78cf280ba4fe1dd1e2d8ce6e9d5f4f0ee07d7beac5294cf831",
+    "SCOPE-CLARIFICATION.json": "188c6acf9a83a5eada1e0881a2052f32600d4f4989b46c1d2f2018a1c4f8f2b0",
+    "COUNT-CORRECTION.json": "75e534acd7e51d0b5fa61dcb8fca8137aa55a0018a19cbe1f0c6eba6351b5d5a"
+  },
+  "source_tuples": [
+    {
+      "repository": "https://github.com/pastawithpesto/dji-studio-omarchy.git",
+      "worktree": "/home/violence/Projects/dji-studio-omarchy/native",
+      "branch": "main",
+      "HEAD": "91f1fd620a7a0aea74db49a03be240ee59681401",
+      "fresh_main": "2ff7205a6019474e83662edb7bf18a123dcc31cd",
+      "check_utc": "2026-10-12T04:22:52.591866+00:00",
+      "main_is_ancestor": false,
+      "ancestry_exit": 1,
+      "status": "dirty",
+      "status_porcelain": " M AGENTS.md\n M AUTHORS.md\n M docs/RESEARCH.md\n?? source-worktrees/\n"
+    },
+    {
+      "repository": "https://github.com/pastawithpesto/dji-studio-omarchy.git",
+      "worktree": "/home/violence/Projects/dji-studio-omarchy/source-worktrees/root-smallest-dlls-20261012",
+      "branch": "work/root-smallest-dlls-20261012",
+      "HEAD": "81f2f120a701931dc368bf63687a79647f102507",
+      "fresh_main": "2ff7205a6019474e83662edb7bf18a123dcc31cd",
+      "check_utc": "2026-10-12T04:22:52.632000+00:00",
+      "main_is_ancestor": true,
+      "ancestry_exit": 0,
+      "status": "clean",
+      "status_porcelain": ""
+    }
+  ],
+  "watchdog": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-12T03:59:56Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/pastawithpesto/dji-studio-omarchy/actions/runs/38201949711/job/114657079975",
+      "name": "claims",
+      "startedAt": "2026-10-12T03:59:36Z",
+      "status": "COMPLETED",
+      "workflowName": "PR work watchdog"
+    }
+  ],
+  "claims": [
+    {
+      "id": "source_and_immutable_identity",
+      "claim": "All43 complete original hashes and1175 immutable manifest files match. REPORT, FINDINGS and MANIFEST match the exact assigned seals.",
+      "disposition": "approved",
+      "evidence": [
+        "INPUT-MANIFEST.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-debug-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-debug-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-debug-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-util-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-util-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-util-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-file-l2-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-file-l2-1-0.dll-llvm.stdout",
+        "api-ms-win-core-file-l2-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-interlocked-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-interlocked-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-interlocked-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-profile-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-profile-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-profile-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-datetime-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-datetime-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-datetime-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-file-l1-2-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-file-l1-2-0.dll-llvm.stdout",
+        "api-ms-win-core-file-l1-2-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-handle-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-handle-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-handle-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-errorhandling-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-errorhandling-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-errorhandling-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-namedpipe-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-namedpipe-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-namedpipe-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-string-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-string-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-string-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-console-l1-2-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-console-l1-2-0.dll-llvm.stdout",
+        "api-ms-win-core-console-l1-2-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-memory-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-memory-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-memory-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-environment-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-environment-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-environment-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-locale-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-locale-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-locale-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-utility-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-utility-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-utility-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-console-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-console-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-console-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-processthreads-l1-1-1.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-processthreads-l1-1-1.dll-llvm.stdout",
+        "api-ms-win-core-processthreads-l1-1-1.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-synch-l1-2-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-synch-l1-2-0.dll-llvm.stdout",
+        "api-ms-win-core-synch-l1-2-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-heap-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-heap-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-heap-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-rtlsupport-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-rtlsupport-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-rtlsupport-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-timezone-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-timezone-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-timezone-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-libraryloader-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-libraryloader-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-libraryloader-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-process-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-process-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-process-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-heap-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-heap-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-heap-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-processenvironment-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-processenvironment-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-processenvironment-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-sysinfo-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-sysinfo-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-sysinfo-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-conio-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-conio-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-conio-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-filesystem-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-filesystem-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-filesystem-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-synch-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-synch-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-synch-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-processthreads-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-processthreads-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-processthreads-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-time-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-time-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-time-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-localization-l1-2-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-localization-l1-2-0.dll-llvm.stdout",
+        "api-ms-win-core-localization-l1-2-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-core-file-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-core-file-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-core-file-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-convert-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-convert-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-convert-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-runtime-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-runtime-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-runtime-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-stdio-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-stdio-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-stdio-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-string-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-string-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-string-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-multibyte-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-multibyte-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-multibyte-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-math-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-math-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-math-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "extracted/1.0.0.30839/api-ms-win-crt-private-l1-1-0.dll:code_free",
+      "claim": "Zero code size and entry point. No executable/code sections. No ordinary/delay import, exception, TLS or CLR directories. All16 directory values and exact section flags agree with independent PE parsing, LLVM and binutils.",
+      "disposition": "approved",
+      "evidence": [
+        "api-ms-win-crt-private-l1-1-0.dll-llvm.stdout",
+        "api-ms-win-crt-private-l1-1-0.dll-binutils.stdout",
+        "FORWARDER-HEADER-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "forwarding_routes",
+      "claim": "All2960 named EAT slots contain exact in-directory forwarder strings. Fresh LLVM and binutils match every ordinal, name, RVA and target.",
+      "disposition": "approved",
+      "evidence": [
+        "FORWARDING-ROUTE-DISPOSITIONS.json"
+      ],
+      "limitations": "Windows target implementations, loader resolution and execution are unresolved."
+    },
+    {
+      "id": "?id@?$codecvt@_SDU_Mbstatet@@@std@@2V0locale@2@A",
+      "claim": "Ordinal1 is a data export at0x180003058. Its file-backed eight bytes are zero. LLVM demangling agrees with the exact original decorated name.",
+      "disposition": "approved",
+      "evidence": [
+        "PE-CHECKS.json",
+        "codecvt-demangle-0.stdout"
+      ],
+      "limitations": "Initial file bytes do not establish consumer mutation, locale::id layout, synchronization or lifetime invariants."
+    },
+    {
+      "id": "?id@?$codecvt@_S_QU_Mbstatet@@@std@@2V0locale@2@A",
+      "claim": "Ordinal2 is a data export at0x180003040. Its file-backed eight bytes are zero. LLVM demangling agrees with the exact original decorated name.",
+      "disposition": "approved",
+      "evidence": [
+        "PE-CHECKS.json",
+        "codecvt-demangle-1.stdout"
+      ],
+      "limitations": "Initial file bytes do not establish consumer mutation, locale::id layout, synchronization or lifetime invariants."
+    },
+    {
+      "id": "?id@?$codecvt@_UDU_Mbstatet@@@std@@2V0locale@2@A",
+      "claim": "Ordinal3 is a data export at0x180003050. Its file-backed eight bytes are zero. LLVM demangling agrees with the exact original decorated name.",
+      "disposition": "approved",
+      "evidence": [
+        "PE-CHECKS.json",
+        "codecvt-demangle-2.stdout"
+      ],
+      "limitations": "Initial file bytes do not establish consumer mutation, locale::id layout, synchronization or lifetime invariants."
+    },
+    {
+      "id": "?id@?$codecvt@_U_QU_Mbstatet@@@std@@2V0locale@2@A",
+      "claim": "Ordinal4 is a data export at0x180003048. Its file-backed eight bytes are zero. LLVM demangling agrees with the exact original decorated name.",
+      "disposition": "approved",
+      "evidence": [
+        "PE-CHECKS.json",
+        "codecvt-demangle-3.stdout"
+      ],
+      "limitations": "Initial file bytes do not establish consumer mutation, locale::id layout, synchronization or lifetime invariants."
+    },
+    {
+      "id": "codecvt_no_exported_conversion",
+      "claim": "All four EAT slots are data. No conversion algorithm is exported.",
+      "disposition": "approved",
+      "evidence": [
+        "PE-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "msvcp140_codecvt_ids.dll:capture",
+      "claim": "All53 native provider procedures are captured with3034 exact source bytes. Inclusive ranges, dossier/pseudocode/assembly/bytes Evidence IDs and snapshot records agree with the immutable bundle.",
+      "disposition": "approved",
+      "evidence": [
+        "BODY-CHECKS.json",
+        "msvcp140_codecvt_ids.dll-INSTRUCTION-WITNESSES.json",
+        "SUPPLEMENT-CHECKS.json"
+      ],
+      "limitations": "Provider boundaries are captured. Counts do not certify every CRT path or whole-DLL semantic completeness. All provider warnings remain in the type/limit ledger."
+    },
+    {
+      "id": "msvcp140_1.dll:capture",
+      "claim": "All93 native provider procedures are captured with3949 exact source bytes. Inclusive ranges, dossier/pseudocode/assembly/bytes Evidence IDs and snapshot records agree with the immutable bundle.",
+      "disposition": "approved",
+      "evidence": [
+        "BODY-CHECKS.json",
+        "msvcp140_1.dll-INSTRUCTION-WITNESSES.json",
+        "SUPPLEMENT-CHECKS.json"
+      ],
+      "limitations": "Provider boundaries are captured. Counts do not certify every CRT path or whole-DLL semantic completeness. All provider warnings remain in the type/limit ledger."
+    },
+    {
+      "id": "codecvt_lifecycle",
+      "claim": "Entry1340 conditionally calls1380 for reason1 and tail-jumps120c. Internal1000 calls DisableThreadLibraryCalls IAT2008 only for EDX1, returns its zero failure or EAX1 otherwise.",
+      "disposition": "approved",
+      "evidence": [
+        "msvcp140_codecvt_ids.dll-INSTRUCTION-WITNESSES.json",
+        "msvcp140_codecvt_ids.dll-llvm-imports.stdout"
+      ],
+      "limitations": "External calls, attach/detach effects, failure propagation through the full CRT and runtime lifetime parity are unresolved."
+    },
+    {
+      "id": "_Aligned_get_default_resource",
+      "disposition": "approved",
+      "claim": "_Aligned_get_default_resource returns the nonzero qword at0x180005260 in RAX. Zero returns0x180005000.",
+      "witnesses": [
+        {
+          "address": "0x180001100",
+          "dossier_evidence_id": "ev_44299c8c36873fbaef52109aa1941d510f88da9d32fbd7cea23edf6312fef572",
+          "assembly_evidence_id": "ev_50c7369a6744d4ee18d6b310b6625dc1536026c1c30982958d7ed3304271c243",
+          "pseudo_evidence_id": "ev_8a052f4941bb8b894f63d34f32bc8a553915857bc600e9a0c65131a39bf73169",
+          "assembly": [
+            "0x180001100: MOV RAX, qword ptr [0x180005260]",
+            "0x180001107: NOP",
+            "0x180001108: TEST RAX, RAX",
+            "0x18000110b: JNZ 0x180001114",
+            "0x18000110d: LEA RAX, [0x180005000]",
+            "0x180001114: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "_Aligned_new_delete_resource",
+      "disposition": "approved",
+      "claim": "_Aligned_new_delete_resource returns0x180005000 in RAX.",
+      "witnesses": [
+        {
+          "address": "0x180001120",
+          "dossier_evidence_id": "ev_5ef6a54d03417329e94c22b9f8f0038393d8e3c067528cee6cd9153432f8d991",
+          "assembly_evidence_id": "ev_d500d37b8bb35245788599d882e88046abe2f9975ff637bbd9e75438f951f27f",
+          "pseudo_evidence_id": "ev_b483e76a59d56d38a7c3ed76137fd06df0d18345af8bb49b182e0bf90920e508",
+          "assembly": [
+            "0x180001120: LEA RAX, [0x180005000]",
+            "0x180001127: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "_Aligned_set_default_resource",
+      "disposition": "approved",
+      "claim": "_Aligned_set_default_resource exchanges RCX with the shared qword0x180005260. It stores a new zero RCX without substitution. RAX returns the old value when nonzero, otherwise0x180005000. Memory XCHG is atomic at the instruction boundary. Object lifetime and a higher-level threading contract remain unresolved.",
+      "witnesses": [
+        {
+          "address": "0x180001130",
+          "dossier_evidence_id": "ev_0a4b5421e5261586a30b8a2fea02dd9935175e66c67fa0deb9132d37f9553c55",
+          "assembly_evidence_id": "ev_ce7b0d8b66b563b5514465b65606167824548b79bdcdb0e1a8b93dec0b6e55ec",
+          "pseudo_evidence_id": "ev_4c39be093ea191b25864470bbc8784864892c81363a26483127482081e9b1fc4",
+          "assembly": [
+            "0x180001130: XCHG qword ptr [0x180005260], RCX",
+            "0x180001137: MOV RAX, RCX",
+            "0x18000113a: TEST RCX, RCX",
+            "0x18000113d: JNZ 0x180001146",
+            "0x18000113f: LEA RAX, [0x180005000]",
+            "0x180001146: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "_Unaligned_get_default_resource",
+      "disposition": "approved",
+      "claim": "_Unaligned_get_default_resource returns the nonzero qword at0x180005260 in RAX. Zero returns0x180005008.",
+      "witnesses": [
+        {
+          "address": "0x180001150",
+          "dossier_evidence_id": "ev_7bd5348f4cb2a9c6eb1eb01552c1d95181a61d9d8e1e900071c91f0fc669b3b7",
+          "assembly_evidence_id": "ev_2d8abfd301b283ff384c849d560a17fc78d8b2b7bc51ac04264272b6d53d26e6",
+          "pseudo_evidence_id": "ev_62048dd57506ee9d6752e5b5bf400abbf8d48eb4df5d726ebc8c7cffa3889f51",
+          "assembly": [
+            "0x180001150: MOV RAX, qword ptr [0x180005260]",
+            "0x180001157: NOP",
+            "0x180001158: TEST RAX, RAX",
+            "0x18000115b: JNZ 0x180001164",
+            "0x18000115d: LEA RAX, [0x180005008]",
+            "0x180001164: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "_Unaligned_new_delete_resource",
+      "disposition": "approved",
+      "claim": "_Unaligned_new_delete_resource returns0x180005008 in RAX.",
+      "witnesses": [
+        {
+          "address": "0x180001170",
+          "dossier_evidence_id": "ev_77081ea5c870ba5bfd3e23a583112165e789bc2c080ca43b60aed1568843ebf2",
+          "assembly_evidence_id": "ev_477d11af2c63489e4caae817ab8388accb6b0e65f1d92e19cfe37d42c726c344",
+          "pseudo_evidence_id": "ev_34a5d750c35823619d6d8d0d053e9d477719f925b9806a7d5d38e3b71bacd6b6",
+          "assembly": [
+            "0x180001170: LEA RAX, [0x180005008]",
+            "0x180001177: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "_Unaligned_set_default_resource",
+      "disposition": "approved",
+      "claim": "_Unaligned_set_default_resource exchanges RCX with the shared qword0x180005260. It stores a new zero RCX without substitution. RAX returns the old value when nonzero, otherwise0x180005008. Memory XCHG is atomic at the instruction boundary. Object lifetime and a higher-level threading contract remain unresolved.",
+      "witnesses": [
+        {
+          "address": "0x180001180",
+          "dossier_evidence_id": "ev_417132ec5faac461de40b6c2986ea5ad06e8e77c9319a6c12c87deee2a91838c",
+          "assembly_evidence_id": "ev_923eb4a056c31a24afc5d526ebb0b3e5ff49d6030157d33a48ce5beb5d7dbf0c",
+          "pseudo_evidence_id": "ev_eb40541891b75ad6cac16ba3ea95ae9fe8216f54b86433b8c810e42ef1095d08",
+          "assembly": [
+            "0x180001180: XCHG qword ptr [0x180005260], RCX",
+            "0x180001187: MOV RAX, RCX",
+            "0x18000118a: TEST RCX, RCX",
+            "0x18000118d: JNZ 0x180001196",
+            "0x18000118f: LEA RAX, [0x180005008]",
+            "0x180001196: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "null_memory_resource",
+      "disposition": "approved",
+      "claim": "null_memory_resource returns0x180005010 in RAX.",
+      "witnesses": [
+        {
+          "address": "0x1800011a0",
+          "dossier_evidence_id": "ev_73117a35d9f7c5c3d1fba12f3be7841d88b805b467b3eef269d0bf2d6fdc70f8",
+          "assembly_evidence_id": "ev_c4a8ba263880883a849ff7093c2af2433cbf236b3696a0242bde431b88be9631",
+          "pseudo_evidence_id": "ev_b0b658536d9ff03bb06ef004e91e3392dd96315eb64c54355920f094733a410b",
+          "assembly": [
+            "0x1800011a0: LEA RAX, [0x180005010]",
+            "0x1800011a7: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "object_tables",
+      "disposition": "approved",
+      "claim": "Source qwords5000/5008/5010 point to3240/3218/3268 respectively. Four exact pointer slots are [1000,1060,10b0,10f0], [1000,1090,10e0,10f0], [1030,1080,10d0,10f0] with image base0x180000000. First-slot routines test DL bit0, pass size8 to1254 conditionally and return original RCX in RAX. These operations do not establish complete object field types.",
+      "witnesses": [
+        {
+          "address": "0x180001000",
+          "dossier_evidence_id": "ev_373d81c807bacf88517ef6c55934cf284353ee22eafc4e5b0999beb2ee538f17",
+          "assembly_evidence_id": "ev_dde40c02bb3c1b86e5448714545e0a99352fe8795574d820aabf315832d287d6",
+          "pseudo_evidence_id": "ev_4fc631dafc26752a1abddbf9da3e27472cb3b07e34dbfdaf25eae67d29e84a4e",
+          "assembly": [
+            "0x180001000: PUSH RBX",
+            "0x180001002: SUB RSP, 0x20",
+            "0x180001006: MOV RBX, RCX",
+            "0x180001009: TEST DL, 0x1",
+            "0x18000100c: JZ 0x180001018",
+            "0x18000100e: MOV EDX, 0x8",
+            "0x180001013: CALL 0x180001254",
+            "0x180001018: MOV RAX, RBX",
+            "0x18000101b: ADD RSP, 0x20",
+            "0x18000101f: POP RBX",
+            "0x180001020: RET"
+          ]
+        },
+        {
+          "address": "0x180001030",
+          "dossier_evidence_id": "ev_f60b1af44e123a6c65d495a601680400ed8e9562f0b587c947406fd51e39a74d",
+          "assembly_evidence_id": "ev_3eb076a211dcf4fd29a55ab7fdc6973a7dd7fe97cd2f132e9d794ce10f7a7da1",
+          "pseudo_evidence_id": "ev_3eb770ad21bb0beb53f05fe68d96ab21935597d156dbf53cf6d5bfa98139e570",
+          "assembly": [
+            "0x180001030: PUSH RBX",
+            "0x180001032: SUB RSP, 0x20",
+            "0x180001036: MOV RBX, RCX",
+            "0x180001039: TEST DL, 0x1",
+            "0x18000103c: JZ 0x180001048",
+            "0x18000103e: MOV EDX, 0x8",
+            "0x180001043: CALL 0x180001254",
+            "0x180001048: MOV RAX, RBX",
+            "0x18000104b: ADD RSP, 0x20",
+            "0x18000104f: POP RBX",
+            "0x180001050: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "aligned_allocation",
+      "disposition": "approved",
+      "claim": "1060 passes original RDX as size in RCX. CMP R8,16/JBE chooses malloc helper11cc for unsigned alignment<=16. Larger alignment moves R8 to RDX and tail-jumps1208. Alignment0 is included in this static branch; validity is external.",
+      "witnesses": [
+        {
+          "address": "0x180001060",
+          "dossier_evidence_id": "ev_4335692f00e4031f7f5602dad430dca580f95cb786c21b7bd14ac1357d55340c",
+          "assembly_evidence_id": "ev_e8de2ade95088ab97cde9532ea49b38d6683f067fb053c9e054d84d060b24744",
+          "pseudo_evidence_id": "ev_bbec035684598a42b39d657042d343dcf3c5699438c8708bb80e4947dc162613",
+          "assembly": [
+            "0x180001060: MOV RAX, RDX",
+            "0x180001063: MOV RCX, RDX",
+            "0x180001066: CMP R8, 0x10",
+            "0x18000106a: JBE 0x180001074",
+            "0x18000106c: MOV RDX, R8",
+            "0x18000106f: JMP 0x180001208",
+            "0x180001074: JMP 0x1800011cc"
+          ]
+        },
+        {
+          "address": "0x1800011cc",
+          "dossier_evidence_id": "ev_9e7916a3ac522e951ba5df0dc1204063665ddfcb5aa841bf87e4e23bb257a6bd",
+          "assembly_evidence_id": "ev_732d78fb14f044546a912ff0229e8d4c255ca1b1f3325d78d9a67fb23df95411",
+          "pseudo_evidence_id": "ev_b67e2357b9f11b475d5a92e23dc87496e79e5f906c758f9171f5cd7e5664b36d",
+          "assembly": [
+            "0x1800011cc: PUSH RBX",
+            "0x1800011ce: SUB RSP, 0x20",
+            "0x1800011d2: MOV RBX, RCX",
+            "0x1800011d5: JMP 0x1800011e6",
+            "0x1800011d7: MOV RCX, RBX",
+            "0x1800011da: CALL 0x180001f84",
+            "0x1800011df: TEST EAX, EAX",
+            "0x1800011e1: JZ 0x1800011f6",
+            "0x1800011e3: MOV RCX, RBX",
+            "0x1800011e6: CALL 0x180001f8a",
+            "0x1800011eb: TEST RAX, RAX",
+            "0x1800011ee: JZ 0x1800011d7",
+            "0x1800011f0: ADD RSP, 0x20",
+            "0x1800011f4: POP RBX",
+            "0x1800011f5: RET",
+            "0x1800011f6: CMP RBX, -0x1",
+            "0x1800011fa: JZ 0x180001202",
+            "0x1800011fc: CALL 0x180001744",
+            "0x180001202: CALL 0x180001764"
+          ]
+        },
+        {
+          "address": "0x180001208",
+          "dossier_evidence_id": "ev_02f1c9d669f4a8b177b512ac2d95c1d3c6ea1b589babe91477fb3a1abe5b5779",
+          "assembly_evidence_id": "ev_f83ab8f0ac85aa083768ef3be17cc2cf53850622464a884002225c1d32263b55",
+          "pseudo_evidence_id": "ev_17722ad21ac175d03fcc096224e570d0386ef6d57fd98f15bd09dc3742758ea4",
+          "assembly": [
+            "0x180001208: MOV qword ptr [RSP + 0x8], RBX",
+            "0x18000120d: PUSH RDI",
+            "0x18000120e: SUB RSP, 0x20",
+            "0x180001212: MOV RDI, RDX",
+            "0x180001215: MOV RBX, RCX",
+            "0x180001218: JMP 0x18000122c",
+            "0x18000121a: MOV RCX, RBX",
+            "0x18000121d: CALL 0x180001f84",
+            "0x180001222: TEST EAX, EAX",
+            "0x180001224: JZ 0x180001241",
+            "0x180001226: MOV RDX, RDI",
+            "0x180001229: MOV RCX, RBX",
+            "0x18000122c: CALL 0x180001f90",
+            "0x180001231: TEST RAX, RAX",
+            "0x180001234: JZ 0x18000121a",
+            "0x180001236: MOV RBX, qword ptr [RSP + 0x30]",
+            "0x18000123b: ADD RSP, 0x20",
+            "0x18000123f: POP RDI",
+            "0x180001240: RET",
+            "0x180001241: CMP RBX, -0x1",
+            "0x180001245: JZ 0x18000124d",
+            "0x180001247: CALL 0x180001744",
+            "0x18000124d: CALL 0x180001764"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "unaligned_allocation",
+      "disposition": "approved",
+      "claim": "1090 uses CMP R8,16/JA. Above16 calls11c5, the MSVCP140.dll ?_Xbad_alloc@std@@YAXXZ IAT thunk3070. At<=16 it tail-jumps11cc. External throw behavior is not observed.",
+      "witnesses": [
+        {
+          "address": "0x180001090",
+          "dossier_evidence_id": "ev_6b758b5e870981aec1e679fdfabe27b1a50dd175e463bb2da075e557f1990c0c",
+          "assembly_evidence_id": "ev_95e55f7e1db94e079135cc2ee1a14f160aedd91cbdb06ea41ba060fee36b28e8",
+          "pseudo_evidence_id": "ev_329ff91970823b354a0586153025d4d04d9d31dc6e8b287da0a57f6e13b3427f",
+          "assembly": [
+            "0x180001090: SUB RSP, 0x28",
+            "0x180001094: CMP R8, 0x10",
+            "0x180001098: JA 0x1800010a6",
+            "0x18000109a: MOV RCX, RDX",
+            "0x18000109d: ADD RSP, 0x28",
+            "0x1800010a1: JMP 0x1800011cc",
+            "0x1800010a6: CALL 0x1800011c5"
+          ]
+        },
+        {
+          "address": "0x1800011c5",
+          "dossier_evidence_id": "ev_7711479018ba5b0817874e60a41abac0bf1bc21bcc04a3a0d21bec3098b7f70d",
+          "assembly_evidence_id": "ev_329db3c8eda053b007350c5e6fda928f2bfcfc38d3d79f9c5dc7883631489244",
+          "pseudo_evidence_id": "ev_88de574898def30cc400ee99e71830c00c7ca7ae79c9cc94bb58dba56f64de53",
+          "assembly": [
+            "0x1800011c5: JMP qword ptr [0x180003070]"
+          ]
+        },
+        {
+          "address": "0x1800011cc",
+          "dossier_evidence_id": "ev_9e7916a3ac522e951ba5df0dc1204063665ddfcb5aa841bf87e4e23bb257a6bd",
+          "assembly_evidence_id": "ev_732d78fb14f044546a912ff0229e8d4c255ca1b1f3325d78d9a67fb23df95411",
+          "pseudo_evidence_id": "ev_b67e2357b9f11b475d5a92e23dc87496e79e5f906c758f9171f5cd7e5664b36d",
+          "assembly": [
+            "0x1800011cc: PUSH RBX",
+            "0x1800011ce: SUB RSP, 0x20",
+            "0x1800011d2: MOV RBX, RCX",
+            "0x1800011d5: JMP 0x1800011e6",
+            "0x1800011d7: MOV RCX, RBX",
+            "0x1800011da: CALL 0x180001f84",
+            "0x1800011df: TEST EAX, EAX",
+            "0x1800011e1: JZ 0x1800011f6",
+            "0x1800011e3: MOV RCX, RBX",
+            "0x1800011e6: CALL 0x180001f8a",
+            "0x1800011eb: TEST RAX, RAX",
+            "0x1800011ee: JZ 0x1800011d7",
+            "0x1800011f0: ADD RSP, 0x20",
+            "0x1800011f4: POP RBX",
+            "0x1800011f5: RET",
+            "0x1800011f6: CMP RBX, -0x1",
+            "0x1800011fa: JZ 0x180001202",
+            "0x1800011fc: CALL 0x180001744",
+            "0x180001202: CALL 0x180001764"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "successful_allocation_RAX",
+      "disposition": "approved",
+      "claim": "11cc and1208 test allocator RAX and return success after restoring nonvolatile registers and RSP. They do not overwrite RAX. Their tail-jump callers therefore preserve successful allocation RAX despite void pseudocode. This is a machine return fact, not a recovered C++ prototype.",
+      "witnesses": [
+        {
+          "address": "0x180001060",
+          "dossier_evidence_id": "ev_4335692f00e4031f7f5602dad430dca580f95cb786c21b7bd14ac1357d55340c",
+          "assembly_evidence_id": "ev_e8de2ade95088ab97cde9532ea49b38d6683f067fb053c9e054d84d060b24744",
+          "pseudo_evidence_id": "ev_bbec035684598a42b39d657042d343dcf3c5699438c8708bb80e4947dc162613",
+          "assembly": [
+            "0x180001060: MOV RAX, RDX",
+            "0x180001063: MOV RCX, RDX",
+            "0x180001066: CMP R8, 0x10",
+            "0x18000106a: JBE 0x180001074",
+            "0x18000106c: MOV RDX, R8",
+            "0x18000106f: JMP 0x180001208",
+            "0x180001074: JMP 0x1800011cc"
+          ]
+        },
+        {
+          "address": "0x180001090",
+          "dossier_evidence_id": "ev_6b758b5e870981aec1e679fdfabe27b1a50dd175e463bb2da075e557f1990c0c",
+          "assembly_evidence_id": "ev_95e55f7e1db94e079135cc2ee1a14f160aedd91cbdb06ea41ba060fee36b28e8",
+          "pseudo_evidence_id": "ev_329ff91970823b354a0586153025d4d04d9d31dc6e8b287da0a57f6e13b3427f",
+          "assembly": [
+            "0x180001090: SUB RSP, 0x28",
+            "0x180001094: CMP R8, 0x10",
+            "0x180001098: JA 0x1800010a6",
+            "0x18000109a: MOV RCX, RDX",
+            "0x18000109d: ADD RSP, 0x28",
+            "0x1800010a1: JMP 0x1800011cc",
+            "0x1800010a6: CALL 0x1800011c5"
+          ]
+        },
+        {
+          "address": "0x1800011cc",
+          "dossier_evidence_id": "ev_9e7916a3ac522e951ba5df0dc1204063665ddfcb5aa841bf87e4e23bb257a6bd",
+          "assembly_evidence_id": "ev_732d78fb14f044546a912ff0229e8d4c255ca1b1f3325d78d9a67fb23df95411",
+          "pseudo_evidence_id": "ev_b67e2357b9f11b475d5a92e23dc87496e79e5f906c758f9171f5cd7e5664b36d",
+          "assembly": [
+            "0x1800011cc: PUSH RBX",
+            "0x1800011ce: SUB RSP, 0x20",
+            "0x1800011d2: MOV RBX, RCX",
+            "0x1800011d5: JMP 0x1800011e6",
+            "0x1800011d7: MOV RCX, RBX",
+            "0x1800011da: CALL 0x180001f84",
+            "0x1800011df: TEST EAX, EAX",
+            "0x1800011e1: JZ 0x1800011f6",
+            "0x1800011e3: MOV RCX, RBX",
+            "0x1800011e6: CALL 0x180001f8a",
+            "0x1800011eb: TEST RAX, RAX",
+            "0x1800011ee: JZ 0x1800011d7",
+            "0x1800011f0: ADD RSP, 0x20",
+            "0x1800011f4: POP RBX",
+            "0x1800011f5: RET",
+            "0x1800011f6: CMP RBX, -0x1",
+            "0x1800011fa: JZ 0x180001202",
+            "0x1800011fc: CALL 0x180001744",
+            "0x180001202: CALL 0x180001764"
+          ]
+        },
+        {
+          "address": "0x180001208",
+          "dossier_evidence_id": "ev_02f1c9d669f4a8b177b512ac2d95c1d3c6ea1b589babe91477fb3a1abe5b5779",
+          "assembly_evidence_id": "ev_f83ab8f0ac85aa083768ef3be17cc2cf53850622464a884002225c1d32263b55",
+          "pseudo_evidence_id": "ev_17722ad21ac175d03fcc096224e570d0386ef6d57fd98f15bd09dc3742758ea4",
+          "assembly": [
+            "0x180001208: MOV qword ptr [RSP + 0x8], RBX",
+            "0x18000120d: PUSH RDI",
+            "0x18000120e: SUB RSP, 0x20",
+            "0x180001212: MOV RDI, RDX",
+            "0x180001215: MOV RBX, RCX",
+            "0x180001218: JMP 0x18000122c",
+            "0x18000121a: MOV RCX, RBX",
+            "0x18000121d: CALL 0x180001f84",
+            "0x180001222: TEST EAX, EAX",
+            "0x180001224: JZ 0x180001241",
+            "0x180001226: MOV RDX, RDI",
+            "0x180001229: MOV RCX, RBX",
+            "0x18000122c: CALL 0x180001f90",
+            "0x180001231: TEST RAX, RAX",
+            "0x180001234: JZ 0x18000121a",
+            "0x180001236: MOV RBX, qword ptr [RSP + 0x30]",
+            "0x18000123b: ADD RSP, 0x20",
+            "0x18000123f: POP RDI",
+            "0x180001240: RET",
+            "0x180001241: CMP RBX, -0x1",
+            "0x180001245: JZ 0x18000124d",
+            "0x180001247: CALL 0x180001744",
+            "0x18000124d: CALL 0x180001764"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "deallocation",
+      "disposition": "approved",
+      "claim": "10b0 uses unsigned R9<=16 to route1254/17a4/1fa2 to free IAT30c0; >16 routes125c/17ac/1fa8 to _aligned_free IAT30d0. Payload RDX becomes RCX.10e0 routes unconditionally to free with RDX payload. Additional size/alignment registers are forwarded but external signatures and field types are not inferred from them.",
+      "witnesses": [
+        {
+          "address": "0x1800010b0",
+          "dossier_evidence_id": "ev_35021200235e7518ec9fc168b36e39f1195e66db39a0165d7d4a1db71e19c82c",
+          "assembly_evidence_id": "ev_c111b89645a62d0ffc6acbf4f5a6066478b5679899ca6c2e2d046e3dc60933b6",
+          "pseudo_evidence_id": "ev_c45013fe53cb8d5c4ad024eb14589e580e959f138ef20d486feaf91ecf03f9a2",
+          "assembly": [
+            "0x1800010b0: MOV R10, RDX",
+            "0x1800010b3: MOV RAX, R8",
+            "0x1800010b6: MOV RDX, RAX",
+            "0x1800010b9: MOV RCX, R10",
+            "0x1800010bc: CMP R9, 0x10",
+            "0x1800010c0: JBE 0x1800010ca",
+            "0x1800010c2: MOV R8, R9",
+            "0x1800010c5: JMP 0x18000125c",
+            "0x1800010ca: JMP 0x180001254"
+          ]
+        },
+        {
+          "address": "0x1800010e0",
+          "dossier_evidence_id": "ev_470504c93127ced33ed157de107bc5435829469ee100073d62db1689c5f687a6",
+          "assembly_evidence_id": "ev_3064d183f1fabc8c7bf661b8f6c504964592b1696867d5511ac20b16d38ffd13",
+          "pseudo_evidence_id": "ev_712104ccad022fa48fe22701682dfe13dc90ed73d48ec8b255c0f3b8ef6072e9",
+          "assembly": [
+            "0x1800010e0: MOV RCX, RDX",
+            "0x1800010e3: MOV RDX, R8",
+            "0x1800010e6: JMP 0x180001254"
+          ]
+        },
+        {
+          "address": "0x180001254",
+          "dossier_evidence_id": "ev_43e50bf2660ffda043a2e7bca3fd09a3deda2d3e74472fed45864e7a78d494df",
+          "assembly_evidence_id": "ev_1e77c7bcd886fc3878bb72a2ed5acbcaaa6b96c6cdd4f8e44a09f9a9cdab97ce",
+          "pseudo_evidence_id": "ev_9f007ab1bc08bcd08f8ff1e9309fcd3b2ff5df0864bd3fbdaff372442ead00c5",
+          "assembly": [
+            "0x180001254: JMP 0x1800017a4"
+          ]
+        },
+        {
+          "address": "0x18000125c",
+          "dossier_evidence_id": "ev_9d677a88d0875a70f0ad103547fa7642799978fb71a32ea9f7ed9c26c7026086",
+          "assembly_evidence_id": "ev_f9ff1afd45ebb3cdf565cf20a04b4ac07645b77771835bdace4e356f34b4ae0f",
+          "pseudo_evidence_id": "ev_0e6a9871de17cd535b760a559063aa83b7775f2d3daf840c09c8ef4057df6cc8",
+          "assembly": [
+            "0x18000125c: MOV RDX, R8",
+            "0x18000125f: JMP 0x1800017ac"
+          ]
+        },
+        {
+          "address": "0x1800017a4",
+          "dossier_evidence_id": "ev_c70f8148f9440eb695559db4d852e00e68c2892160786c346321d25f06d12c86",
+          "assembly_evidence_id": "ev_c918b9fcfaa9cafd7da5514a84d3ff958ad5bf3e3d706d41f16aa95e99b7e617",
+          "pseudo_evidence_id": "ev_dd265f58ed7704a578d7d38170b21b50bda43977d276dd734a9e71603edff11f",
+          "assembly": [
+            "0x1800017a4: JMP 0x180001fa2"
+          ]
+        },
+        {
+          "address": "0x1800017ac",
+          "dossier_evidence_id": "ev_34079c782c49ebae14a735daa4e72237a0343b10dbc23f6e7ea952edb0b65033",
+          "assembly_evidence_id": "ev_0ed94e55888750dc9be85a0fe8b9594e7007fe71745a10bd23e539274e03a028",
+          "pseudo_evidence_id": "ev_535f2d082dba9364db86553f89bc981c4a0c27b721d1048f5d87a621657cc8a9",
+          "assembly": [
+            "0x1800017ac: JMP 0x180001fa8"
+          ]
+        },
+        {
+          "address": "0x180001fa2",
+          "dossier_evidence_id": "ev_2719781261bba554858e75bcd8e9868406f39a333eac6c445125c0ef4fde027f",
+          "assembly_evidence_id": "ev_a96ebc4d35353e7a869bbbb380da0daed194fe0a46be778be85ce3281fb5b9aa",
+          "pseudo_evidence_id": "ev_59d7d57fd7baf720965e9e49ff91086ddfc7c62f2f32ca0445ece003a5e5a074",
+          "assembly": [
+            "0x180001fa2: JMP qword ptr [0x1800030c0]"
+          ]
+        },
+        {
+          "address": "0x180001fa8",
+          "dossier_evidence_id": "ev_3cf07b4d2f738d4efc6354ee1f25aba4f17976beac7bb50f80b8fd02075a4523",
+          "assembly_evidence_id": "ev_7c2cb5b3144d5bd9c5ed42a237c3a6b176651c3dc63e563782c230b2fa5960cb",
+          "pseudo_evidence_id": "ev_da926c1f4ea6483263773958e424fe7b80140033f52eea18eb184cbb4b30099e",
+          "assembly": [
+            "0x180001fa8: JMP qword ptr [0x1800030d0]"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "null_operations",
+      "disposition": "approved",
+      "claim": "1080 calls the bad-allocation thunk11c5.10d0 contains exactly RET0, encoded c20000. It makes no visible data store or allocator call.",
+      "witnesses": [
+        {
+          "address": "0x180001080",
+          "dossier_evidence_id": "ev_75c37931c72ef1d2d896bb68d5c23844c333f2cf5c2b9948733cee5b9ff9d4ad",
+          "assembly_evidence_id": "ev_ce13e96c2dc13b2ba2ab60be11f98e7e0659c55f8b927085cee40af9c65388a1",
+          "pseudo_evidence_id": "ev_53d77413c5b9266478df26618887ac52bb2bb529204188d61fd64df7818a106b",
+          "assembly": [
+            "0x180001080: SUB RSP, 0x28",
+            "0x180001084: CALL 0x1800011c5"
+          ]
+        },
+        {
+          "address": "0x1800010d0",
+          "dossier_evidence_id": "ev_7f335217cd002071d1cc10ac847f7182484eb0a3d5c7ea8fa296883b724ba3a4",
+          "assembly_evidence_id": "ev_9601d5a96646be180234839a7c81280023473f37ff642265c57ee9f89822a9b5",
+          "pseudo_evidence_id": "ev_23602de6377592abc8cc1da4d03e4707277ddea1df6a0ddd0af2678b3c082fe2",
+          "assembly": [
+            "0x1800010d0: RET 0x0"
+          ]
+        },
+        {
+          "address": "0x1800011c5",
+          "dossier_evidence_id": "ev_7711479018ba5b0817874e60a41abac0bf1bc21bcc04a3a0d21bec3098b7f70d",
+          "assembly_evidence_id": "ev_329db3c8eda053b007350c5e6fda928f2bfcfc38d3d79f9c5dc7883631489244",
+          "pseudo_evidence_id": "ev_88de574898def30cc400ee99e71830c00c7ca7ae79c9cc94bb58dba56f64de53",
+          "assembly": [
+            "0x1800011c5: JMP qword ptr [0x180003070]"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "pointer_equality_AL",
+      "disposition": "approved",
+      "claim": "10f0 CMP RCX,RDX; SETE AL; RET assigns only the low byte. Equal yields AL1; unequal yields AL0. Upper RAX bits remain unspecified by this sequence.",
+      "witnesses": [
+        {
+          "address": "0x1800010f0",
+          "dossier_evidence_id": "ev_c2e697b02027139658621652ff1f10e9b2271ad3be90bc2e8b49150f05f02b22",
+          "assembly_evidence_id": "ev_64aa6643ed5a78dd82ab10f6277fa23e625b0fe29582f5a5485110caf5017d8b",
+          "pseudo_evidence_id": "ev_4b24b9d412dec60ebb29834655e166427f6486a13a1d57f050bf084653acda97",
+          "assembly": [
+            "0x1800010f0: CMP RCX, RDX",
+            "0x1800010f3: SETZ AL",
+            "0x1800010f6: RET"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "allocation_retry",
+      "disposition": "approved",
+      "claim": "11cc calls malloc through1f8a/IAT30b8;1208 calls _aligned_malloc through1f90/IAT30d8. A zero allocator result invokes _callnewh through1f84/IAT30c8 with size in RCX. Nonzero EAX retries with original size and aligned helper original alignment. Zero EAX selects the size test. Handler/allocator internals, errno, zero-size policy and eventual progress remain unresolved.",
+      "witnesses": [
+        {
+          "address": "0x1800011cc",
+          "dossier_evidence_id": "ev_9e7916a3ac522e951ba5df0dc1204063665ddfcb5aa841bf87e4e23bb257a6bd",
+          "assembly_evidence_id": "ev_732d78fb14f044546a912ff0229e8d4c255ca1b1f3325d78d9a67fb23df95411",
+          "pseudo_evidence_id": "ev_b67e2357b9f11b475d5a92e23dc87496e79e5f906c758f9171f5cd7e5664b36d",
+          "assembly": [
+            "0x1800011cc: PUSH RBX",
+            "0x1800011ce: SUB RSP, 0x20",
+            "0x1800011d2: MOV RBX, RCX",
+            "0x1800011d5: JMP 0x1800011e6",
+            "0x1800011d7: MOV RCX, RBX",
+            "0x1800011da: CALL 0x180001f84",
+            "0x1800011df: TEST EAX, EAX",
+            "0x1800011e1: JZ 0x1800011f6",
+            "0x1800011e3: MOV RCX, RBX",
+            "0x1800011e6: CALL 0x180001f8a",
+            "0x1800011eb: TEST RAX, RAX",
+            "0x1800011ee: JZ 0x1800011d7",
+            "0x1800011f0: ADD RSP, 0x20",
+            "0x1800011f4: POP RBX",
+            "0x1800011f5: RET",
+            "0x1800011f6: CMP RBX, -0x1",
+            "0x1800011fa: JZ 0x180001202",
+            "0x1800011fc: CALL 0x180001744",
+            "0x180001202: CALL 0x180001764"
+          ]
+        },
+        {
+          "address": "0x180001208",
+          "dossier_evidence_id": "ev_02f1c9d669f4a8b177b512ac2d95c1d3c6ea1b589babe91477fb3a1abe5b5779",
+          "assembly_evidence_id": "ev_f83ab8f0ac85aa083768ef3be17cc2cf53850622464a884002225c1d32263b55",
+          "pseudo_evidence_id": "ev_17722ad21ac175d03fcc096224e570d0386ef6d57fd98f15bd09dc3742758ea4",
+          "assembly": [
+            "0x180001208: MOV qword ptr [RSP + 0x8], RBX",
+            "0x18000120d: PUSH RDI",
+            "0x18000120e: SUB RSP, 0x20",
+            "0x180001212: MOV RDI, RDX",
+            "0x180001215: MOV RBX, RCX",
+            "0x180001218: JMP 0x18000122c",
+            "0x18000121a: MOV RCX, RBX",
+            "0x18000121d: CALL 0x180001f84",
+            "0x180001222: TEST EAX, EAX",
+            "0x180001224: JZ 0x180001241",
+            "0x180001226: MOV RDX, RDI",
+            "0x180001229: MOV RCX, RBX",
+            "0x18000122c: CALL 0x180001f90",
+            "0x180001231: TEST RAX, RAX",
+            "0x180001234: JZ 0x18000121a",
+            "0x180001236: MOV RBX, qword ptr [RSP + 0x30]",
+            "0x18000123b: ADD RSP, 0x20",
+            "0x18000123f: POP RDI",
+            "0x180001240: RET",
+            "0x180001241: CMP RBX, -0x1",
+            "0x180001245: JZ 0x18000124d",
+            "0x180001247: CALL 0x180001744",
+            "0x18000124d: CALL 0x180001764"
+          ]
+        },
+        {
+          "address": "0x180001f84",
+          "dossier_evidence_id": "ev_a84106acb9d2354da44cb51f313bbad9e34b63c0f6039f7d03949f63410586dc",
+          "assembly_evidence_id": "ev_8608deaadf0b7a6c1e7bcce0a769218a04fd97e22f6a39ef284e3d0a30499650",
+          "pseudo_evidence_id": "ev_bf42f8d13bc36c4ce8c29ae1c851cf76903b6052b79faee045bff146222d8536",
+          "assembly": [
+            "0x180001f84: JMP qword ptr [0x1800030c8]"
+          ]
+        },
+        {
+          "address": "0x180001f8a",
+          "dossier_evidence_id": "ev_40cea1ef054a498407f84dd3063ff2ef0502e0942ef97efec4114916d748e8b8",
+          "assembly_evidence_id": "ev_1d9da2f88dd2acb2fc45d79565b8f8a3f770e94c7e55a4d94de19ec29b9a2921",
+          "pseudo_evidence_id": "ev_5b96ba6ba80fb11eeaac610b5b5b2a48aba554cc2fc618e9bad84eb1e92e1ad1",
+          "assembly": [
+            "0x180001f8a: JMP qword ptr [0x1800030b8]"
+          ]
+        },
+        {
+          "address": "0x180001f90",
+          "dossier_evidence_id": "ev_386dfefc7942b591ac8c87cbeb76d291a6f833dfefee6fcf6e08da669b0d0000",
+          "assembly_evidence_id": "ev_76362ada39bfb210ff6e3fcd95bad7700ad85f0835a48a840bf36c275d603992",
+          "pseudo_evidence_id": "ev_ecf8160a92bc53075e3615b025d7865080d9bfbddd300b074c00ba49462d8a73",
+          "assembly": [
+            "0x180001f90: JMP qword ptr [0x1800030d8]"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "throw_construction",
+      "disposition": "approved",
+      "claim": "After handler EAX0, CMP RBX,-1 selects UINT64_MAX route1764, otherwise1744.1744 constructs via163c with bad allocation string32e8, table32d8 and raw ThrowInfo3e60.1764 constructs via1698 with bad array new length string3310, table3300 and raw ThrowInfo3ee8. Each uses stack RSP+20 as RCX, sets RDX to its throw record, then calls1f72, an IAT3090 jump to _CxxThrowException. Both constructor bodies write qword+0,+8,+10 and return RCX. Raw metadata links the exact corresponding RTTI names. No field ownership/type, complete exception ABI, unwind behavior or external no-return proof is claimed.",
+      "witnesses": [
+        {
+          "address": "0x1800011cc",
+          "dossier_evidence_id": "ev_9e7916a3ac522e951ba5df0dc1204063665ddfcb5aa841bf87e4e23bb257a6bd",
+          "assembly_evidence_id": "ev_732d78fb14f044546a912ff0229e8d4c255ca1b1f3325d78d9a67fb23df95411",
+          "pseudo_evidence_id": "ev_b67e2357b9f11b475d5a92e23dc87496e79e5f906c758f9171f5cd7e5664b36d",
+          "assembly": [
+            "0x1800011cc: PUSH RBX",
+            "0x1800011ce: SUB RSP, 0x20",
+            "0x1800011d2: MOV RBX, RCX",
+            "0x1800011d5: JMP 0x1800011e6",
+            "0x1800011d7: MOV RCX, RBX",
+            "0x1800011da: CALL 0x180001f84",
+            "0x1800011df: TEST EAX, EAX",
+            "0x1800011e1: JZ 0x1800011f6",
+            "0x1800011e3: MOV RCX, RBX",
+            "0x1800011e6: CALL 0x180001f8a",
+            "0x1800011eb: TEST RAX, RAX",
+            "0x1800011ee: JZ 0x1800011d7",
+            "0x1800011f0: ADD RSP, 0x20",
+            "0x1800011f4: POP RBX",
+            "0x1800011f5: RET",
+            "0x1800011f6: CMP RBX, -0x1",
+            "0x1800011fa: JZ 0x180001202",
+            "0x1800011fc: CALL 0x180001744",
+            "0x180001202: CALL 0x180001764"
+          ]
+        },
+        {
+          "address": "0x180001208",
+          "dossier_evidence_id": "ev_02f1c9d669f4a8b177b512ac2d95c1d3c6ea1b589babe91477fb3a1abe5b5779",
+          "assembly_evidence_id": "ev_f83ab8f0ac85aa083768ef3be17cc2cf53850622464a884002225c1d32263b55",
+          "pseudo_evidence_id": "ev_17722ad21ac175d03fcc096224e570d0386ef6d57fd98f15bd09dc3742758ea4",
+          "assembly": [
+            "0x180001208: MOV qword ptr [RSP + 0x8], RBX",
+            "0x18000120d: PUSH RDI",
+            "0x18000120e: SUB RSP, 0x20",
+            "0x180001212: MOV RDI, RDX",
+            "0x180001215: MOV RBX, RCX",
+            "0x180001218: JMP 0x18000122c",
+            "0x18000121a: MOV RCX, RBX",
+            "0x18000121d: CALL 0x180001f84",
+            "0x180001222: TEST EAX, EAX",
+            "0x180001224: JZ 0x180001241",
+            "0x180001226: MOV RDX, RDI",
+            "0x180001229: MOV RCX, RBX",
+            "0x18000122c: CALL 0x180001f90",
+            "0x180001231: TEST RAX, RAX",
+            "0x180001234: JZ 0x18000121a",
+            "0x180001236: MOV RBX, qword ptr [RSP + 0x30]",
+            "0x18000123b: ADD RSP, 0x20",
+            "0x18000123f: POP RDI",
+            "0x180001240: RET",
+            "0x180001241: CMP RBX, -0x1",
+            "0x180001245: JZ 0x18000124d",
+            "0x180001247: CALL 0x180001744",
+            "0x18000124d: CALL 0x180001764"
+          ]
+        },
+        {
+          "address": "0x18000163c",
+          "dossier_evidence_id": "ev_601b8408d31ee596f53e1071251dbba6ead51e9a60d5b55cc79c55496e378e6f",
+          "assembly_evidence_id": "ev_ffa552b52f8bd0d7077ad5015eaeebca176e15c18a581e9653327aa4079b2b22",
+          "pseudo_evidence_id": "ev_922512309f037a955e2a1c52130de10a10fe4a8bb1f4f92798e8f9aee545d2f0",
+          "assembly": [
+            "0x18000163c: AND qword ptr [RCX + 0x10], 0x0",
+            "0x180001641: LEA RAX, [0x1800032e8]",
+            "0x180001648: MOV qword ptr [RCX + 0x8], RAX",
+            "0x18000164c: LEA RAX, [0x1800032d8]",
+            "0x180001653: MOV qword ptr [RCX], RAX",
+            "0x180001656: MOV RAX, RCX",
+            "0x180001659: RET"
+          ]
+        },
+        {
+          "address": "0x180001698",
+          "dossier_evidence_id": "ev_c1a8ea6cda2bcc60af446920cba2dbcc45883aea4a5ac13a5a427b413f62667f",
+          "assembly_evidence_id": "ev_aaebb1c2c1d299feefafe99720cbcc34e492465c0b9af0c51cd9d1a1a57098c0",
+          "pseudo_evidence_id": "ev_61bf57db7fe76318b238b0a473b7465235f41965c0d7ea5b551e26e59007ca0a",
+          "assembly": [
+            "0x180001698: AND qword ptr [RCX + 0x10], 0x0",
+            "0x18000169d: LEA RAX, [0x180003310]",
+            "0x1800016a4: MOV qword ptr [RCX + 0x8], RAX",
+            "0x1800016a8: LEA RAX, [0x180003300]",
+            "0x1800016af: MOV qword ptr [RCX], RAX",
+            "0x1800016b2: MOV RAX, RCX",
+            "0x1800016b5: RET"
+          ]
+        },
+        {
+          "address": "0x180001744",
+          "dossier_evidence_id": "ev_db6e8cc0be404535878d8fa2a57b50e093082af80d116d669fb175201d4d713a",
+          "assembly_evidence_id": "ev_a24afc915fbc89d7efd6ef51dd93139063cae693c9cfbd0676b6919f38f259e1",
+          "pseudo_evidence_id": "ev_791e87158bb7731ea788bd1fe5bba9a4fbffa4d9448c99d8100ef45c813a74b2",
+          "assembly": [
+            "0x180001744: SUB RSP, 0x48",
+            "0x180001748: LEA RCX, [RSP + 0x20]",
+            "0x18000174d: CALL 0x18000163c",
+            "0x180001752: LEA RDX, [0x180003e60]",
+            "0x180001759: LEA RCX, [RSP + 0x20]",
+            "0x18000175e: CALL 0x180001f72"
+          ]
+        },
+        {
+          "address": "0x180001764",
+          "dossier_evidence_id": "ev_aa44470b159c7a014890230215f5b7b5ceeca025706104b26557528e2ad1c8f6",
+          "assembly_evidence_id": "ev_2d9f788f2d8776a557c045eee29ca9af6bd26402429537c798d22cc1eb461aae",
+          "pseudo_evidence_id": "ev_6d24f8858d536351fc99840fb2645d1d6bc22e7d9a899e5bf28d29902e8afa83",
+          "assembly": [
+            "0x180001764: SUB RSP, 0x48",
+            "0x180001768: LEA RCX, [RSP + 0x20]",
+            "0x18000176d: CALL 0x180001698",
+            "0x180001772: LEA RDX, [0x180003ee8]",
+            "0x180001779: LEA RCX, [RSP + 0x20]",
+            "0x18000177e: CALL 0x180001f72"
+          ]
+        },
+        {
+          "address": "0x180001f72",
+          "dossier_evidence_id": "ev_25e3e3083d853185cccb08017b38e5b45b5d2d0d8b49e913fe6d868328e2b44d",
+          "assembly_evidence_id": "ev_8fee2d67a9c6a32abdaaaa2599c3e7fcaaa606e5b264c7718b4a45a1a7ef53e9",
+          "pseudo_evidence_id": "ev_1374fcc278019af2865eb6ca7b0a7432298f9de4dc425dc9e23f56e56a6a977f",
+          "assembly": [
+            "0x180001f72: JMP qword ptr [0x180003090]"
+          ]
+        }
+      ],
+      "limitations": "Static machine operations only. Caller validity, external execution and full C++ ABI remain unresolved."
+    },
+    {
+      "id": "saved_tools",
+      "claim": "Saved evidence is pinned to upstreama1b5d51a8dfb7fff6272d91270c16b95555c2643, REA6.4.0 and Ghidra12.1.4. Snapshot and bundle hashes remain exact. No new provider session or decompilation occurred.",
+      "disposition": "approved",
+      "evidence": [
+        "INPUT-MANIFEST.json",
+        "SUPPLEMENT-CHECKS.json"
+      ],
+      "limitations": "This review reuses saved evidence offline. It does not certify a current live MCP server or latest upstream today. No installation or session was opened."
+    },
+    {
+      "id": "snapshot_bundle_difference",
+      "claim": "Codecvt snapshot has220 records. Its exported bundle has262. All220 snapshot records are exact preserved members;42 additional records are PE resource captures. MSVCP140_1 snapshot and bundle have377 identical records.",
+      "disposition": "approved",
+      "evidence": [
+        "SUPPLEMENT-CHECKS.json"
+      ],
+      "limitations": "Successful saved record identities are verified offline. No restore or new provider session was performed."
+    },
+    {
+      "id": "data_probe_correction",
+      "claim": "DATA-PROBE-CORRECTION remains immutable. It records an unused-loop KeyError after the codecvt data save and bounded completion of only the missing MSVCP data packet. Successful source witnesses remain exact.",
+      "disposition": "approved",
+      "evidence": [
+        "INPUT-MANIFEST.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "original_report_range_wording",
+      "claim": "The original final paragraph says146 native body ranges. This wording needs correction:146 counts bodies;152 counts inclusive ranges.",
+      "disposition": "changes_requested",
+      "evidence": [
+        "COUNT-CORRECTION.json"
+      ],
+      "limitations": "Static source facts only.",
+      "resolved_by": "Author additive COUNT-CORRECTION75e534ac, approved below. Original history remains unchanged."
+    },
+    {
+      "id": "count_correction",
+      "claim": "Additive correction correctly states53+93=146 bodies,55+97=152 ranges and3034+3949=6983 bytes.",
+      "disposition": "approved",
+      "evidence": [
+        "COUNT-CORRECTION.json",
+        "BODY-CHECKS.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "scope_clarification",
+      "claim": "The selection is41 API-set family files plus the two smallest non-api files. It is not the first43 DLLs in size order. Codecvt overall rank40 and MSVCP140_1 rank42 agree with preserved242-file order.",
+      "disposition": "approved",
+      "evidence": [
+        "CLARIFICATION-REVIEW.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "external_semantics",
+      "claim": "External handler, allocator, exception and Windows target implementation behavior remains unobserved.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "types_ABI",
+      "claim": "Full resource object types, field ownership, exception layout/ABI, consumer locale ID invariants and C++ threading/lifetime semantics remain unresolved.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "terminal_no_return",
+      "claim": "Ghidra terminal-call observations and hasNoReturn metadata do not prove external calls cannot return or throw exactly as modeled. Void allocation pseudocode is not a return contract.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "full_CRT",
+      "claim": "Full CRT/runtime semantic review remains incomplete despite complete provider-body capture.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "reconstruction_parity",
+      "claim": "Rust reconstruction, Windows behavior and whole-app/media/UI/project parity are outside this static review.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    }
+  ],
+  "exact_route_dispositions": "FORWARDING-ROUTE-DISPOSITIONS.json",
+  "exact_body_dispositions": "BODY-CHECKS.json",
+  "input_manifest": "INPUT-MANIFEST.json",
+  "output_manifest": "OUTPUT-MANIFEST.json",
+  "method": "Independent bounded PE parser, fresh LLVM/binutils output, source byte comparisons, immutable Evidence-ID record equality, manual machine-contract review. No author script execution.",
+  "limitations": [
+    "Static approval only. No new imports, provider sessions, vendor execution, application changes, merge or release.",
+    "The incorrect initial range wording is preserved and resolved only by the separately pinned author correction."
+  ]
+}

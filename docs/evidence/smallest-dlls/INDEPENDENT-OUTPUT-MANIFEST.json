@@ -1,0 +1,1292 @@
+{
+  "worker": "sol-2",
+  "created_utc": "2026-10-12T04:26:25.940861+00:00",
+  "excludes_self": true,
+  "outputs": [
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/BODY-CHECKS.json",
+      "bytes": 630809,
+      "sha256": "7ae968d2a6d44b28d7eeea7d28e28559193b9f730be6efdbc439ae92f4da5a6b"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/CHECK-SUMMARY.json",
+      "bytes": 176,
+      "sha256": "61a0fd7e38ebf0e252d1549f6de3e879f794c6236455c348e5f22ca420d5d62f"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/CLARIFICATION-REVIEW.json",
+      "bytes": 313,
+      "sha256": "9635b59819b1d9d727b8788f8c8743ea5c107d99dbd1f53832862c6721870ed3"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/COMMANDS.json",
+      "bytes": 32723,
+      "sha256": "63dce8e0c5713c873a81b7d3338e201433da6bb51503635f745921d23ae60f55"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/CONTINUATION-STATE.json",
+      "bytes": 686,
+      "sha256": "0f89cff10366a02afd46f324294a003c48fdb7d0ecfe9e671f9f076d8fc5ed89"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/CONTRACT-CHECKS.json",
+      "bytes": 37459,
+      "sha256": "99621d964ab3cbe6c5a1a6178adccee5953c335e6a61636fd56dfd8a1ea9f4f1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/EXCEPTION-SOURCE-DATA.json",
+      "bytes": 4985,
+      "sha256": "754024707e8522a679ca88c6c4af8742451d39c77b75beed700b183dd512dc3c"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/FAILURE-AND-CORRECTION-LEDGER.json",
+      "bytes": 1234,
+      "sha256": "3dab50bee4300e6b65c520972ce31ba9f5b8a1f0c1cb03503544e3b5a7e5ffa1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/FORWARDER-HEADER-CHECKS.json",
+      "bytes": 9687,
+      "sha256": "d58dc1e87c444a31a0dbc309cc71ff745ad684767021e2418183039af248803e"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/FORWARDING-ROUTE-DISPOSITIONS.json",
+      "bytes": 1859947,
+      "sha256": "1949a974f389b57cc974b9acc3fc54951efb802de1c627bf7ec756befc03dc9d"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/INPUT-MANIFEST.json",
+      "bytes": 277588,
+      "sha256": "7249b4069ac5cd8c60205364d9ea5000a5d8db22516ea41db9aed9529759daf6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/OPEN-PRS-current.json",
+      "bytes": 38529,
+      "sha256": "e815374df71977dead097a27d0d698e92a1e929f25a6b0ae502df55b84a198dc"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/PE-CHECKS.json",
+      "bytes": 925673,
+      "sha256": "7c91927f5c8a4f03dd44e196eb8e8c5d0c69b93dac722383c35db360d90865df"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/PR-COMMENT.md",
+      "bytes": 2725,
+      "sha256": "85db0fd3e41a4dbb565f57a202bc06ca32bec6edc8e2c473720ef316675a8d95"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/PR32-current.json",
+      "bytes": 3850,
+      "sha256": "a19acc87d9df8db6d3374f31d2577bb5a6ed90997f386741196268bf4557d491"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.json",
+      "bytes": 76652,
+      "sha256": "c0d372ccd05ef571847548b11cbf413eb0f4475cd14b9ef5235cc9b4aa9ab591"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.md",
+      "bytes": 7326,
+      "sha256": "57391358b2e097e351b612c643ecc3e66e8b55756d5a731a29ec0d1ad7f36337"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/SOURCE-TUPLES.json",
+      "bytes": 1048,
+      "sha256": "3d28d82c59fb96e0c76a06bbd927eb47e6a6a7e8ef69a8f9cdf6e082ec49c0c8"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/SUPPLEMENT-CHECKS.json",
+      "bytes": 12458,
+      "sha256": "4029c9f2c102fd4ac8750bf590aacbf3f7408d185b6ad35a74c05194a09d1119"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-1-0.dll-binutils.stdout",
+      "bytes": 5857,
+      "sha256": "eaa858c3c92a65b04333b10f4209b47cd45a73dd1e6076aad67482ad8d9c2db9"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-1-0.dll-llvm.stdout",
+      "bytes": 4774,
+      "sha256": "79e402b5fba6808a76413fdef5e6ab2c88ab7629d820909bf195d954697157d9"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-2-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-2-0.dll-binutils.stdout",
+      "bytes": 6188,
+      "sha256": "25df4f095e465c515ca8ee69147a33f24368ee368cea9926d79a830de16c8fa6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-2-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-console-l1-2-0.dll-llvm.stdout",
+      "bytes": 5032,
+      "sha256": "14f206f3b68080ba7cc050228cd7393c9edc43c608e3f3ede7ddb65eea5e4e91"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-datetime-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-datetime-l1-1-0.dll-binutils.stdout",
+      "bytes": 4701,
+      "sha256": "99ac3ee383850f2382cda5c4e0c9fc90fb020737d27a94ac40890641427ae2a2"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-datetime-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-datetime-l1-1-0.dll-llvm.stdout",
+      "bytes": 3859,
+      "sha256": "e6871b9807d97de0768c4084ca0d35bb14e295746c605e7e3b23b2eedd4cf287"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-debug-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-debug-l1-1-0.dll-binutils.stdout",
+      "bytes": 4703,
+      "sha256": "d71064c13f0f6fac419a7b5262cc50675eb33402dae9dc9ed5dbb941c058a7c1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-debug-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-debug-l1-1-0.dll-llvm.stdout",
+      "bytes": 3870,
+      "sha256": "4dc89af881026d6bc49813c763db222f408f275eee71011acf2b4a2ed08df1d4"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-errorhandling-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-errorhandling-l1-1-0.dll-binutils.stdout",
+      "bytes": 5083,
+      "sha256": "2f6993eb2beefc62a736f7693bc2de17bb592ecebf49187d9ff10b257c580c60"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-errorhandling-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-errorhandling-l1-1-0.dll-llvm.stdout",
+      "bytes": 4151,
+      "sha256": "668a03030cba1767e46569eada2c60ebf8c47f1ca25e23b001aa1a3540204e04"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-1-0.dll-binutils.stdout",
+      "bytes": 12922,
+      "sha256": "db0d20b3d1fdea972f771eb6b4015f9dd7eff32001a28721821b391c646d83aa"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-1-0.dll-llvm.stdout",
+      "bytes": 10387,
+      "sha256": "456e0c881a548bdafc952fc544ffe49e6d6615d8b314aa128c6851a0245a3993"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-2-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-2-0.dll-binutils.stdout",
+      "bytes": 4749,
+      "sha256": "affd2047a93eae109053e2abaf9231b088d5d9dfbe9ffc23594d6b9c4c66673f"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-2-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l1-2-0.dll-llvm.stdout",
+      "bytes": 3919,
+      "sha256": "24c4b6674501265762caaa978dc0e60081d2f61888ee6afed9d8376ee8b9e13a"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l2-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l2-1-0.dll-binutils.stdout",
+      "bytes": 5504,
+      "sha256": "5c8b7238dfc5221da1f97952049b757d1af4025d1c99c996107f5ff87f48371d"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l2-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-file-l2-1-0.dll-llvm.stdout",
+      "bytes": 4502,
+      "sha256": "38a4e2c5912d626f0f6195b46932cff55669a76cacc847e3f6853ed6e161a6ea"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-handle-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-handle-l1-1-0.dll-binutils.stdout",
+      "bytes": 4835,
+      "sha256": "961c647aeabbb4b65b23ba6553e1cbcd9ce6ba6a4628450cd6a553711337c81b"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-handle-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-handle-l1-1-0.dll-llvm.stdout",
+      "bytes": 3975,
+      "sha256": "d2d3ef3a4600613669926cd94ade0d52d317207c6d143678e5feb3e229d970c2"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-heap-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-heap-l1-1-0.dll-binutils.stdout",
+      "bytes": 5937,
+      "sha256": "dfe76f08050a84fde4dcba0876d3c7f2b358604b48b3df803c77d031d3235606"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-heap-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-heap-l1-1-0.dll-llvm.stdout",
+      "bytes": 4814,
+      "sha256": "d87f61bd33d33e0c75234a19d78e79bcceafeda13f119f4954c5aa3d0d2ee274"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-interlocked-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-interlocked-l1-1-0.dll-binutils.stdout",
+      "bytes": 5022,
+      "sha256": "f66d9f6ae409e7534340833bc678f604f125133eec60ad727c734f2fa944c3d6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-interlocked-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-interlocked-l1-1-0.dll-llvm.stdout",
+      "bytes": 4121,
+      "sha256": "0b2d321c2fa3cc9a8d615197a408b539a3bd780f2a44c04d7a1f61d7259ebfa6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-libraryloader-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-libraryloader-l1-1-0.dll-binutils.stdout",
+      "bytes": 6924,
+      "sha256": "347cd7c2799951ca835f2db19de2d1d0c4a44560c2f89dacb6e11097565e2dc0"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-libraryloader-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-libraryloader-l1-1-0.dll-llvm.stdout",
+      "bytes": 5608,
+      "sha256": "33bfc1f6c9abfe7e84426a96eb166c05243692c90fa0f5540ad0bc0a162a5732"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-localization-l1-2-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-localization-l1-2-0.dll-binutils.stdout",
+      "bytes": 11130,
+      "sha256": "ab1f61a5603c4ff2342bcb0d96809d10053749e4cfb18b7d661bd7675c6845b6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-localization-l1-2-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-localization-l1-2-0.dll-llvm.stdout",
+      "bytes": 8954,
+      "sha256": "01cf2272ba6af148ce573c78b294f5dcf0598e1696e21df9a91b25af0eca3237"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-memory-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-memory-l1-1-0.dll-binutils.stdout",
+      "bytes": 6106,
+      "sha256": "e113d377c7501108a7a93e86c18d821edd249651dfb106fe10c6a57c52ecea88"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-memory-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-memory-l1-1-0.dll-llvm.stdout",
+      "bytes": 4977,
+      "sha256": "13e470b9bed0e81721d251771f06b3f9296e89483c17ab21f2cff91e03a72954"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-namedpipe-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-namedpipe-l1-1-0.dll-binutils.stdout",
+      "bytes": 5465,
+      "sha256": "c46a28a754fd32de779a69b5ec4a7d4b7b631ebc1c8795ef73407fa054cd1939"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-namedpipe-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-namedpipe-l1-1-0.dll-llvm.stdout",
+      "bytes": 4472,
+      "sha256": "ac4c6b62b9bdb5204dbbeddb1cd4533fe490ebd24c57ea5bf1ba5f2f5fc9d642"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processenvironment-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processenvironment-l1-1-0.dll-binutils.stdout",
+      "bytes": 6864,
+      "sha256": "cd7b0b3f56ea2d5f0644f591b6324bc43658d788ae891cbea10cca40f3c3b8cd"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processenvironment-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processenvironment-l1-1-0.dll-llvm.stdout",
+      "bytes": 5580,
+      "sha256": "8590eb750517964cec699c5337210a1db9f2cd9d06e2bae8e748c7d9971e7fd6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-0.dll-binutils.stdout",
+      "bytes": 10040,
+      "sha256": "eaa346c4b18e04feca83ae980c479027770d94172c7a838402b8b0653d851b14"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-0.dll-llvm.stdout",
+      "bytes": 8098,
+      "sha256": "890c25d52cd829e10224f35e0f884008ee6cf111e85f93fb43f8e86583a62d0c"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-1.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-1.dll-binutils.stdout",
+      "bytes": 6053,
+      "sha256": "e31b6d771e43be1fd3b830d0aa811bae30215a7f2197a140dc7fc74517e5f22f"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-1.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-processthreads-l1-1-1.dll-llvm.stdout",
+      "bytes": 4948,
+      "sha256": "c81ef2ab81845d096641efca405d64ccbfcd3b36913e81ff3c1c9e65f82a1d4d"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-profile-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-profile-l1-1-0.dll-binutils.stdout",
+      "bytes": 4515,
+      "sha256": "c4772cf2224a9b243e6834c377fa6312be56fb3dbd74d8936b5604da8f2e4d39"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-profile-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-profile-l1-1-0.dll-llvm.stdout",
+      "bytes": 3726,
+      "sha256": "6c46627eaa7c754585d96387e07789e4c0068d7ebf0cc7509c7b8438dde8edb5"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-rtlsupport-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-rtlsupport-l1-1-0.dll-binutils.stdout",
+      "bytes": 5781,
+      "sha256": "be8867b780cccd6f4e73a407b260ad6c0fcd51692b95fc547bf71b70204dc25e"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-rtlsupport-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-rtlsupport-l1-1-0.dll-llvm.stdout",
+      "bytes": 4712,
+      "sha256": "a6a564b4fa604b9358778f0c09be0cfbb57067963c5a7604934b9a0439ac0bdd"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-string-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-string-l1-1-0.dll-binutils.stdout",
+      "bytes": 5169,
+      "sha256": "0138b33fbe63c165510c093d091d6fc4308560dd0c893b381f9205cec2fbfc4b"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-string-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-string-l1-1-0.dll-llvm.stdout",
+      "bytes": 4233,
+      "sha256": "2699886de14f2364fe9668c3aa1eaf096daf657cd9fcd8e56c12ac4e0bfd2a27"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-1-0.dll-binutils.stdout",
+      "bytes": 9104,
+      "sha256": "73bcfc705c887aec3d721682170bd21ac8b8ddf1bd9475eaf0e3aaf81203cfc5"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-1-0.dll-llvm.stdout",
+      "bytes": 7381,
+      "sha256": "a6793dfe8c54a83162c17ca36dc5b27bc4bf467d89cd0cf0e25ca3509b25a4b1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-2-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-2-0.dll-binutils.stdout",
+      "bytes": 6368,
+      "sha256": "03c447fb3d10ad0b8503b4487ca0461b5154e1053c48ddaa62373e50b54c4ded"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-2-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-synch-l1-2-0.dll-llvm.stdout",
+      "bytes": 5218,
+      "sha256": "bd4033b75591301ef51cb1c2c07170298741a27516462ae42fe0fe28e4a4fc35"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-sysinfo-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-sysinfo-l1-1-0.dll-binutils.stdout",
+      "bytes": 6891,
+      "sha256": "f88c90a22f2f547bdbd901030e2b8ddf15e26bb6788d45fb57d986fd5f868895"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-sysinfo-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-sysinfo-l1-1-0.dll-llvm.stdout",
+      "bytes": 5616,
+      "sha256": "fe692c0c45f3315ee49788113a8ef6dc66929be058a3eace903c80e00ea39f94"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-timezone-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-timezone-l1-1-0.dll-binutils.stdout",
+      "bytes": 6088,
+      "sha256": "6c6935027b332678b5729b6dc0508658d6f4130c9936de90b639ddec3e749acb"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-timezone-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-timezone-l1-1-0.dll-llvm.stdout",
+      "bytes": 5025,
+      "sha256": "7be15d208ca0bf5b9e2d04afbcc79c9954d32ecf8acb963fa28fadfb6dc360c9"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-util-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-util-l1-1-0.dll-binutils.stdout",
+      "bytes": 4792,
+      "sha256": "12f65fcb2d751a6565f568a0281559392932028a4648008500b5d2cc96fcb645"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-util-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-core-util-l1-1-0.dll-llvm.stdout",
+      "bytes": 3937,
+      "sha256": "2d26ce7a77bf47787ee903c37f6a3a1ab05aac8f6043fa773bfe4d47484bf407"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-conio-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-conio-l1-1-0.dll-binutils.stdout",
+      "bytes": 7549,
+      "sha256": "861db4803c39a155f03b6d2b8a3208eac0fc2d82ae4dcd7cfc66425797dd52d9"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-conio-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-conio-l1-1-0.dll-llvm.stdout",
+      "bytes": 6091,
+      "sha256": "4f3b3f0da6485abcb6d67e5fe8a893f0c43e34600dcd27baefbcbdac7d46c80a"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-convert-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-convert-l1-1-0.dll-binutils.stdout",
+      "bytes": 16328,
+      "sha256": "4acfa6a8bf8e70563a654c04eda54617d6032b1fcd82e57aabcb6f973d472f9c"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-convert-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-convert-l1-1-0.dll-llvm.stdout",
+      "bytes": 12683,
+      "sha256": "0b459f0eaec72fe8b1472b80cd0b42ea6df592f5b4734c82e90c9f41862b0023"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-environment-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-environment-l1-1-0.dll-binutils.stdout",
+      "bytes": 6105,
+      "sha256": "09be635aef85751943319e0a03d32d8dd04f75cdfa279c32d4d5cfbec9385d43"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-environment-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-environment-l1-1-0.dll-llvm.stdout",
+      "bytes": 4917,
+      "sha256": "ca9ca2e76ff4583db0f0d39beebfbf6d8594281e8f69a6077110cc9fc11dd5ea"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-filesystem-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-filesystem-l1-1-0.dll-binutils.stdout",
+      "bytes": 10950,
+      "sha256": "8bb9b73bef00ccf19a5d05dfc88969e3247e467fde2a3df728a2362253e05c55"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-filesystem-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-filesystem-l1-1-0.dll-llvm.stdout",
+      "bytes": 8638,
+      "sha256": "caf0ae61809a2026209c8784751d22fb0a1c3cb02b2ae2894642a448fc67867f"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-heap-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-heap-l1-1-0.dll-binutils.stdout",
+      "bytes": 7142,
+      "sha256": "f03163036364ec216a2f0d8ee73b26f882eb3d10b3b2b7a5c41bb5c941ff3f84"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-heap-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-heap-l1-1-0.dll-llvm.stdout",
+      "bytes": 5759,
+      "sha256": "7015b6034276b10da149c45eb36ad1f6728e0521bfe7ef12b3df8fe2a09166e5"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-locale-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-locale-l1-1-0.dll-binutils.stdout",
+      "bytes": 6537,
+      "sha256": "1663d5e5d4ac8b7740b386689f0c4811ffd729297ef9d21962e83119a3d48487"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-locale-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-locale-l1-1-0.dll-llvm.stdout",
+      "bytes": 5315,
+      "sha256": "19339b84fc60d3a212afe0d7c28bd833261ca6fbb640805e011246b31f0bcfe0"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-math-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-math-l1-1-0.dll-binutils.stdout",
+      "bytes": 31773,
+      "sha256": "b8ed0f5f930600edab1ec2e16be308e81ca2dfe5ced086a8422460fc6d65a767"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-math-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-math-l1-1-0.dll-llvm.stdout",
+      "bytes": 24274,
+      "sha256": "e00d764570f4fd4d2f6ca3bf56d5babddfc3c5bf53835809202b9ab42a1b78e2"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-multibyte-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-multibyte-l1-1-0.dll-binutils.stdout",
+      "bytes": 25017,
+      "sha256": "3bd2fc4527702125848c85c1f4a08a048ecc821e5c43bb6b68962bfbe40ee085"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-multibyte-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-multibyte-l1-1-0.dll-llvm.stdout",
+      "bytes": 19572,
+      "sha256": "b051823e0a60bb6ca47403cd639a6487db2462823a668aebeaa37f2e4561d031"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-private-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-private-l1-1-0.dll-binutils.stdout",
+      "bytes": 127554,
+      "sha256": "251fc92e5e6d9ab5aef758e53a142ab3caf846c0ee4fe14e30a0e9ec46143684"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-private-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-private-l1-1-0.dll-llvm.stdout",
+      "bytes": 100792,
+      "sha256": "550cf007b49543b94adcef3b9abd25715ddbafdeab14691aedbdc8122b0947f8"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-process-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-process-l1-1-0.dll-binutils.stdout",
+      "bytes": 7807,
+      "sha256": "0f86a0235809fa7e10b81ef1e8f4b67fbb92e82781acf5419babe060e24e1234"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-process-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-process-l1-1-0.dll-llvm.stdout",
+      "bytes": 6200,
+      "sha256": "1e44be00d592b6e41ea89e30c6e333ba2159c5a4da8f857f4a4204303ccd46ca"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-runtime-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-runtime-l1-1-0.dll-binutils.stdout",
+      "bytes": 15795,
+      "sha256": "5404c49e7d8a8b37b2eb94de0ee707ff5700db4e7585f717b33d205e87d36b70"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-runtime-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-runtime-l1-1-0.dll-llvm.stdout",
+      "bytes": 12563,
+      "sha256": "e7cffeab5510fbbe649ebfb1e5dc559d4c63676eac74f8d2ef52fcec5071e7af"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-stdio-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-stdio-l1-1-0.dll-binutils.stdout",
+      "bytes": 20780,
+      "sha256": "f2925baf7e699f52f38f590220a69c14517ce7fd100299d2d6c9a1e71b7375db"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-stdio-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-stdio-l1-1-0.dll-llvm.stdout",
+      "bytes": 16289,
+      "sha256": "94845dd46e6e225816916dae9f019f4470728bae72c6906e534c2dd57dc72060"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-string-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-string-l1-1-0.dll-binutils.stdout",
+      "bytes": 22087,
+      "sha256": "32d3319e3c111ea65d256919a4eb31174df00318202a06439f6a5969908df563"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-string-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-string-l1-1-0.dll-llvm.stdout",
+      "bytes": 17156,
+      "sha256": "0cf6cc6d53e253b5f1e6018d4eedb4ecac854aa8ffb3b743e43e1199870c7bb7"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-time-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-time-l1-1-0.dll-binutils.stdout",
+      "bytes": 11635,
+      "sha256": "d15721a418c8745e9b280eede574b002d10824b71a2c66e5cf782f8fd7ef725d"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-time-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-time-l1-1-0.dll-llvm.stdout",
+      "bytes": 9174,
+      "sha256": "bbbc3f7389ef2f9f31f7351c279ba46cab698c397bcc617a3952399a04e52212"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-utility-l1-1-0.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-utility-l1-1-0.dll-binutils.stdout",
+      "bytes": 7153,
+      "sha256": "388e480c431150cfb04e7b13cfa4752ffa407998393a12d7fd5ff8db60646203"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-utility-l1-1-0.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/api-ms-win-crt-utility-l1-1-0.dll-llvm.stdout",
+      "bytes": 5689,
+      "sha256": "797c07ea08126c1dc0d1718a637692666c54833306577c945eb0044156a98190"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-0.stdout",
+      "bytes": 138,
+      "sha256": "26e4da39aeccc719140d4d049a3bfbb5e2530fc3003649a4a93f2d10f6b27f5a"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-1.stdout",
+      "bytes": 142,
+      "sha256": "0a3e31ef95ffb6f884ba8bc5a201fd5a2c4d13626efcc41c67b27a176544da63"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-2.stdout",
+      "bytes": 138,
+      "sha256": "c7fe6db7bff30cf429807a05a512c5683451b1c6c8ac7b8eb7514f21f6d464a0"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-3.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/codecvt-demangle-3.stdout",
+      "bytes": 142,
+      "sha256": "4702b2937eab03253e3385253e3124b297a3735404a6e860a5cda624bc8b3028"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-AGENTS.md",
+      "bytes": 5438,
+      "sha256": "a3a7804bb0c2011af14abb9837e8c82eb5741abd3f313488a2cac43a1e08c98c"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-coordination_REA-WORKFLOW.md",
+      "bytes": 8212,
+      "sha256": "13599676a8690041acd0531f06d57f013697d95c576c55ba5911cecc65d65757"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-coordination_protocol.json",
+      "bytes": 3825,
+      "sha256": "b25a8f631b6e523daf34ab2f3d3a19d9ccb21151e13a8d204973f9c2d82480f5"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-native_AGENTS.md",
+      "bytes": 5440,
+      "sha256": "0374e8ecc89faa6398182700e6632bf20c30500db35ab417a67468f286ad72ae"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-native_CONTRIBUTING.md",
+      "bytes": 2505,
+      "sha256": "fc2c81b0421cbd09029c158fa87985f0b5b15cd3e07046054940c21dbd2c83fd"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-native_START-HERE.md",
+      "bytes": 1752,
+      "sha256": "09461d323442b92cb848af83a80e84d45ec382aea1f50b5d01527f1f386f31de"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-native_docs_RESEARCH.md",
+      "bytes": 2435,
+      "sha256": "6d31b218dbc96d3d45e0d6e715534b58999b1848e7732d6ab4ee0573437036c6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-native_docs_STATUS.md",
+      "bytes": 2257,
+      "sha256": "f6e93677061b7146e82a674c54c924b44ba82ff41a81eaa97e9185978286bba1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context-reconstruction_root-smallest-dlls-20261012_independent-review-queue_sol-2_SPEC.json",
+      "bytes": 2567,
+      "sha256": "8d2b60ce4b13615a23219dfa0108d71e83721af0abf36a9162b6d331aa83d4ac"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/context.py",
+      "bytes": 2130,
+      "sha256": "b0de1946fb83e026f2993d5bf2ea63a055cbcbde96711c5f6af88af71ca01ff0"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/contracts.py",
+      "bytes": 8056,
+      "sha256": "e971f5b1713810ca8ea7b87a8b45f09268cb44833117a97b081288d6613ddf42"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/contracts.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/contracts.stdout",
+      "bytes": 36,
+      "sha256": "1f266e9a1b2df70f4977d87c61b81464c3e83f6fce1152715f59e6006ac126ee"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/final-fetch.stderr",
+      "bytes": 104,
+      "sha256": "374e8cc46de3a3c9897b22c9fbeca0df79c8f50585c026a06e000ec9d5eeecba"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/final-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/inbox-final.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/inbox-final.stdout",
+      "bytes": 418449,
+      "sha256": "4f0416410c32c48ba466aa7b193ba3608ec806ff1e6b81b5e5ddd5760c32c856"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/llvm-objdump-version.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/llvm-objdump-version.stdout",
+      "bytes": 1748,
+      "sha256": "837742f66081340792605e22bc03a8f81725b99ed55f3418af01156c80469e05"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/llvm-readobj-version.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/llvm-readobj-version.stdout",
+      "bytes": 66,
+      "sha256": "9de788ef46b2f54af9191b2cc9d54cb3bc03919a8fbbfd1921c71cb5b4087b86"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/llvm-undname-version.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/llvm-undname-version.stdout",
+      "bytes": 66,
+      "sha256": "9de788ef46b2f54af9191b2cc9d54cb3bc03919a8fbbfd1921c71cb5b4087b86"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-INSTRUCTION-WITNESSES.json",
+      "bytes": 244578,
+      "sha256": "eb4a794582b1d498e79e43fd638421ae1123b58bbdb47387c307166ee8defcb1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+      "bytes": 229123,
+      "sha256": "1e0d71565ef1341ab1a4ade8d39f7ef4c434292a2692c250451fdd5bbeb2c69d"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-binutils.stdout",
+      "bytes": 28383,
+      "sha256": "71b298099714db408d6d5908a25689c11396e4c8b9ef0ed1106300e34e9e5213"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-data.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-data.stdout",
+      "bytes": 49935,
+      "sha256": "2af11179afc152e3cbab693b755c3ccabcc650382117e472846b5b1988bc9c93"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-disassembly.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-disassembly.stdout",
+      "bytes": 74016,
+      "sha256": "a3bfc99e4352b46734f584f17627fc225f0adcd0437399df641b835160157a4d"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-llvm-disassembly.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-llvm-disassembly.stdout",
+      "bytes": 83962,
+      "sha256": "085e95eb42900b0042374cadf2f5b74fd7f64e4dcef09e856b07142b7a484c16"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-llvm-imports.stdout",
+      "bytes": 1755,
+      "sha256": "e4ef88b4737696163dbc13cbf992f1c27d9462f230a1111b33dfae0a21acfea8"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_1.dll-llvm.stdout",
+      "bytes": 5773,
+      "sha256": "3acf59c219c6c898fc8e8bbcb4e099025f1aaa522680fb9220f9485df32a7c64"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-INSTRUCTION-WITNESSES.json",
+      "bytes": 186798,
+      "sha256": "d32d30edfe4efdb6ee1c2203065eb2aa413e79825d1f5937a7807cdfb6eff090"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json",
+      "bytes": 129209,
+      "sha256": "7b8c3c4097b633724779922791a07a95a52115bef71a1e573fed58c818b720b7"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-binutils.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-binutils.stdout",
+      "bytes": 20878,
+      "sha256": "3cad4882609d5f8b1db51ce5348d168692bbc0250bba33f64daef95f3b32c084"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-data.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-data.stdout",
+      "bytes": 33890,
+      "sha256": "28d8df690c2ddfcfbc1c247cbb86e4efe6a20fd0b284445fbccf1be76a069204"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-disassembly.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-disassembly.stdout",
+      "bytes": 52570,
+      "sha256": "e2d542d6386a780d0791bb2cc20ff224efa4c13653b74568b8df26db83f1bef6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-llvm-disassembly.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-llvm-disassembly.stdout",
+      "bytes": 58677,
+      "sha256": "0a55df9eb245c81524bfda7e979ca6a2a9eb739f8b3b2daf76959d63e87af257"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-llvm-imports.stdout",
+      "bytes": 1285,
+      "sha256": "ca84bac26387afcfafbb1b30a2712aed5d548a73c388b1b7348669dee5da8856"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-llvm.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/msvcp140_codecvt_ids.dll-llvm.stdout",
+      "bytes": 5632,
+      "sha256": "471aa163674399771558f62971e2caf04e83136a45ef51ca880820fb6e0d5bac"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/objdump-version.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/objdump-version.stdout",
+      "bytes": 277,
+      "sha256": "c575129f4af68dd7870193821fd333f2aabcf74ca6fd9f1e94c436526a47c3a8"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/open-prs-final.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/open-prs-final.stdout",
+      "bytes": 38529,
+      "sha256": "e815374df71977dead097a27d0d698e92a1e929f25a6b0ae502df55b84a198dc"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/pr32-final.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/pr32-final.stdout",
+      "bytes": 3850,
+      "sha256": "a19acc87d9df8db6d3374f31d2577bb5a6ed90997f386741196268bf4557d491"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/seal_review.py",
+      "bytes": 10564,
+      "sha256": "21f06c4c46f160c9354214e0d25dcf1d5e0f17e5ad39619c7779584395f35c9b"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/supplement-initial.py",
+      "bytes": 5084,
+      "sha256": "05f6dc5b620c5a813ec0b8d0652d5fe3fceace2bd2d91565cb237a46bbc338e2"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/supplement-initial.stderr",
+      "bytes": 706,
+      "sha256": "bdaf3b76dee9b84bfe7c8b294378ad4adb34057a1b1a979f76b1441348d24469"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/supplement.py",
+      "bytes": 5368,
+      "sha256": "7d7f0674abf92c5123a7270c302601b1b572e881d53aaf092fbd7f197f7c43ed"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/supplement.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/supplement.stdout",
+      "bytes": 29,
+      "sha256": "52388317e2bd1ed6571259bd24aaca3167fd3a6a0d20a59e61783cd4245fbddb"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/verify-initial.py",
+      "bytes": 10362,
+      "sha256": "e92d80876310967cd8d83e981c769be3f0248141714675ae2ef433e8ed3ab8e2"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/verify-initial.stderr",
+      "bytes": 475,
+      "sha256": "36e6f9b686046a841349e71640cb68c3a86c7f35c5fde016e7b3fe504eee196e"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/verify.py",
+      "bytes": 10363,
+      "sha256": "a163373b1925b404b8ea287d85fbf5889ebb74eae3496d1f2f69c85ca5d69447"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/verify.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/independent-review/verify.stdout",
+      "bytes": 136,
+      "sha256": "7a8b1d34d872dfce160f69b204750df812dc26b8a1578fc3e01165cb78810168"
+    }
+  ]
+}

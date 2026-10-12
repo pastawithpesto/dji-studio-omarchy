@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-12T02:13:17.289361+00:00",
+  "reviewer": "/root/sol_mid_benchmark_milestone",
+  "disposition": "approved_static_contract",
+  "candidate_pins": {
+    "CONTRACT.md": "5e0bf31515b7630513a05ba6ca9c28328863de6106d7c9fed51746ffb21958f5",
+    "REVIEW-PACKET-MANIFEST.json": "8f6603278c37329d44d11d77ccc057125824d2ffdd877a2f93dc1e3bb866fbb9",
+    "PROVENANCE.json": "dd4b3a6f029958b01dc31ce181ca8501a8a03d42b211c68b9d8f0386871deb73"
+  },
+  "source_sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1",
+  "source_bytes": 3130552,
+  "source_base": {
+    "utc": "2026-10-12T02:13:17.289361+00:00",
+    "repository": "https://github.com/pastawithpesto/dji-studio-omarchy.git",
+    "canonical_worktree": "/home/violence/Projects/dji-studio-omarchy/native",
+    "branch": "main",
+    "HEAD": "91f1fd620a7a0aea74db49a03be240ee59681401",
+    "fresh_main": "91f1fd620a7a0aea74db49a03be240ee59681401",
+    "fresh_main_ancestor": true,
+    "canonical_status": " M AGENTS.md\n M AUTHORS.md\n M docs/RESEARCH.md\n?? source-worktrees/\n",
+    "author_plan_commit": "7b499137ad475c64ada9997781d847de65d02a08",
+    "author_branch": "work/oss-crc64-rust-20261012",
+    "review_scope": "Owned artifact directory only; no source edits"
+  },
+  "verified_manifest_files": 104,
+  "verified_raw_calls": 47,
+  "verified_provider_byte_ranges": 16,
+  "verified_original_bytes": 1139,
+  "body_lengths": {
+    "ComputeCRC64": 293,
+    "CombineCRC64": 294,
+    "table-generator": 400,
+    "table-init": 12,
+    "matrix-square": 62,
+    "matrix-times": 25
+  },
+  "static_arithmetic_checks": {
+    "one_bit_operator_basis_checks": 64,
+    "compute_slicing_prefix_tail_cases": 816,
+    "combine_opcode_vs_forward_polynomial_cases": 90,
+    "seeded_concatenation_and_incremental_cases": 100
+  },
+  "approved_behavior": [
+    "Original named export chains resolve to the substantive ComputeCRC64 and CombineCRC64 bodies. Complete provider body witnesses cover all Compute pdata fragments, full Combine body, generator, init and64-column matrix helpers.",
+    "Compute uses reflected polynomialC96C5795D7870F42, incoming/final complement, increasing byte order, byte prefix/tail and little-endian slicing tables7through0. Zero count performs no buffer read and returns the incoming seed.",
+    "Combine zero len2 returnscrc1 regardlesscrc2. Nonzero count uses all64 unsigned bits, logical shifts and GF2 matrix squaring; no complement. Result is shiftedcrc1XORcrc2, includingbit63/u64MAX counts.",
+    "Safe Rust slices, base-table processing for every byte, immutable compile-time table and stack matrices are explicit independent safety/lifecycle choices. Exact original names remain public; no C++ABI claimed."
+  ],
+  "retained_limits": [
+    "Initializer pointer/stub/generator links are byte-backed. The enclosing CRT-array identity and loader execution remain unproved by static analysis.",
+    "Decompiler qword-pointer inference is overridden by original movzbl byte loads; undefined database signatures and security-cookie injection warning remain preserved.",
+    "Unsealed original-DLL fixture results are not reviewed or approved. Failed oracle alignment observations remain history; corrected independently sealed fixtures must gate implementation validation.",
+    "Author code, exact candidate commit, debug/release tests, formatting and Clippy still require independent review after implementation.",
+    "Only two-function normal-return arithmetic is approved; no entireSDK, foreignABI, invalidpointer, network, UI, media, camera or Windows/application parity approval."
+  ],
+  "author_implementation_gate": "Static contract supports root granting implementation within PR30 declared paths. This reviewer has not authored source and does not approve implementation or fixtures.",
+  "watchdog_checks": [
+    {
+      "run": 38194229947,
+      "conclusion": "success",
+      "head": "91f1fd620a7a0aea74db49a03be240ee59681401"
+    },
+    {
+      "run": 38194066022,
+      "conclusion": "success",
+      "head": "7b499137ad475c64ada9997781d847de65d02a08"
+    }
+  ]
+}
