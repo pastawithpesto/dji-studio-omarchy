@@ -60,8 +60,9 @@ machine results. They claim no Windows ABI.
 - `pub fn __std_atomic_wait_get_deadline(input: u64, clock: impl FnMut() -> u64) -> u64`
 - `pub fn __std_atomic_wait_get_remaining_timeout(deadline: u64, clock: impl FnMut() -> u64) -> u64`
 
-Both return the observed `RAX` bits as `u64`. The caller supplies the
-single time sample. Sentinel inputs return without sampling the clock:
+Both return the observed `RAX` bits as `u64`. The caller supplies a
+clock as an `FnMut() -> u64` closure, which the function samples once on
+each finite path and never on a sentinel path. Sentinel inputs return
 `u64::MAX` for the deadline function and `0x0000_0000_FFFF_FFFF` for the
 remaining function. Finite inputs sample exactly once. The deadline
 function wraps with `wrapping_add`. The remaining function uses an
@@ -69,7 +70,8 @@ unsigned comparison, returns 0 at or above the deadline with equality
 included, and clamps the unsigned difference at `REMAINING_TIMEOUT_CAP`
 (`0x337F_9800`), the only new named constant. No remaining result sets a
 bit above bit 31. The module adds no wait loop, clock origin, OS clock,
-trait, callbacks, or runtime integration.
+trait, or runtime integration, and no callbacks beyond the supplied
+clock.
 
 ## Candidate checks (exact results)
 

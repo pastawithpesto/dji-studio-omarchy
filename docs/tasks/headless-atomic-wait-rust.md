@@ -57,3 +57,12 @@ ancestor of this branch before edits. PR45 claims watchdog passed on head
 Record: `docs/evidence/headless-atomic-wait-rust/REPORT.md`. The candidate
 commit stays on this branch. No push. Independent review of the exact commit
 is the next gate.
+
+2026-10-12 correction: prior candidate
+`98708212e110f568e67569e955c47d4c4a2e239a` passed independent Sol checks with
+no behavior defect: 10 focused tests and 17,283 original-instruction vectors
+in debug and optimized builds, plus panic-clock sentinel checks. This
+correction fixes an incorrect signedness remark in the
+`remaining_treats_values_as_unsigned` test comment and clarifies the clock
+and callback wording in `REPORT.md`. No function body, test expectation,
+test count, dependency, or sealed record changed.

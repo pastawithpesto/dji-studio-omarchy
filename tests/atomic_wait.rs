@@ -243,7 +243,12 @@ fn deadline_wraps_through_zero() {
 
 #[test]
 fn remaining_treats_values_as_unsigned() {
-    // A signed comparison would read 0xf000... as negative and return 0.
+    // Both values here read as negative i64, so signed and unsigned
+    // comparisons agree on this pair and both return the cap. The pair
+    // that distinguishes the comparison is the later cap case with
+    // deadline u64::MAX - 1 and tick 0: a signed compare reads that
+    // deadline as -2, treats the clock value 0 as expired, and would
+    // return 0, while the unsigned compare returns the cap.
     let (clock, calls) = counting_clock(0x8000_0000_0000_0000);
     assert_eq!(
         __std_atomic_wait_get_remaining_timeout(0xf000_0000_0000_0000, clock),
