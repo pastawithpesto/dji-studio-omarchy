@@ -1,0 +1,58 @@
+{
+  "files": {
+    "docs/evidence/dialog-file-filter/CORRECTION-R1.md": {
+      "sha256": "01eb39e3a2e9f04fbce1d345e2ed5f83877ed112a122a1b50ff85f2786373659",
+      "size_bytes": 5637
+    },
+    "docs/evidence/dialog-file-filter/INDEPENDENT-VERIFICATION.json": {
+      "sha256": "9fb5c48713fb3afc2ad7a7521aac4ccfcbd1a3ddcf4ae79e0b7de48f607af292",
+      "size_bytes": 13542
+    },
+    "docs/evidence/dialog-file-filter/MANIFEST.json": {
+      "sha256": "c3d0c02dc4bda50ee2109084f299c6167942231afce3659dfcdea5ad8b44f943",
+      "size_bytes": 2164
+    },
+    "docs/evidence/dialog-file-filter/REPORT.md": {
+      "sha256": "96467217c435458fb1f355237d07e30555d019c743d8eecb889e618e8d2add42",
+      "size_bytes": 13971
+    },
+    "docs/evidence/dialog-file-filter/SOURCE-MAP.json": {
+      "sha256": "efe04342d5ef2e7ae00687b68094214221220c21f920978c4646979710d4e944",
+      "size_bytes": 92494
+    },
+    "docs/tasks/dialog-file-filter.md": {
+      "sha256": "03856e20bdc44082b14f4ab251d5c7ed11ebf970ba38d508fbee7f08662d5468",
+      "size_bytes": 4950
+    }
+  },
+  "format": "dialog-file-filter-revision-manifest-v1",
+  "purpose": "Supplement, without replacing, the original published report and its immutable original manifest.",
+  "revision": "R1",
+  "source": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll",
+    "sha256": "580d8be7657cd4b074b5d4ee43bc8c325d501aea737ef15c13e41f62bd0da263",
+    "size_bytes": 45240
+  },
+  "supersedes": {
+    "affected_claim": "H01 signed-width parse guard and middle-view start/length wording",
+    "original_manifest_sha256": "c3d0c02dc4bda50ee2109084f299c6167942231afce3659dfcdea5ad8b44f943",
+    "original_report_sha256": "96467217c435458fb1f355237d07e30555d019c743d8eecb889e618e8d2add42",
+    "report_section": "docs/evidence/dialog-file-filter/REPORT.md#filter-list-helper-and-comparison-helpers"
+  },
+  "witness": {
+    "byte_count": 44,
+    "corrected_instruction_va_inclusive": [
+      "0x18000264c",
+      "0x180002677"
+    ],
+    "function": "H01-FUN_180002580",
+    "function_source_map_sha256": "efe04342d5ef2e7ae00687b68094214221220c21f920978c4646979710d4e944",
+    "function_va_inclusive": [
+      "0x180002580",
+      "0x1800028a0"
+    ],
+    "independent_disassembler": "LLVM llvm-objdump 22.1.8",
+    "sha256": "5bd37729523c771e0bc543351258a41edba1315131dd4121e3d5f8c415f46a3c",
+    "source_file_offset": "0x1a4c"
+  }
+}
