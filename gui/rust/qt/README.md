@@ -35,7 +35,12 @@ The earlier autocxx generated Rust incompatibility does not apply: that Rust
 output is not compiled. Failed earlier probes remain in the local evidence.
 
 Build requirements are Qt 6 Core, Gui and Qml development packages, `qmake6`,
-a C++ compiler and libclang. Set `QMAKE` for an alternate compatible installation.
+a C++ compiler and libclang. On Linux, LLVM LLD is the recommended linker.
+Install the package that provides both `lld` and `ld.lld`. The pinned Qt build
+helper probes `lld` and then selects `-fuse-ld=lld`. Its gold fallback failed to
+resolve generated initializer symbols in the hosted Rust 1.90 / Qt 6.4 test.
+The pure ordered-call tests do not call Qt registration to force linkage.
+Set `QMAKE` for an alternate compatible installation.
 Use an external build directory. The native test must run on a process main
 thread; its Cargo target sets `harness = false`.
 
