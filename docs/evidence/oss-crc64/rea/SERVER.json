@@ -1,0 +1,16 @@
+{
+  "server": {
+    "name": "rea",
+    "version": "6.4.0"
+  },
+  "settings": {
+    "GHIDRA_INSTALL_DIR": "/home/violence/Projects/dji-studio-omarchy/tools/ghidra_12.1.4_PUBLIC",
+    "JAVA_HOME": "/home/violence/Projects/dji-studio-omarchy/tools/jdk21/usr/lib/jvm/java-21-openjdk",
+    "GHIDRA_HEADLESS_MAXMEM": "768M",
+    "REA_ANALYSIS_PROVIDER": "ghidra",
+    "REA_GHIDRA_STARTUP_TIMEOUT_MS": "480000"
+  },
+  "pkg": "/home/violence/Projects/dji-studio-omarchy/tools/root-oss-crc64-rea-20261012",
+  "packageVersion": "6.4.0",
+  "transport_pid": 2819161
+}
