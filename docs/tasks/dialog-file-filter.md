@@ -12,7 +12,7 @@ Evidence manifest SHA-256: `c3d0c02dc4bda50ee2109084f299c6167942231afce3659dfcde
 
 ## Correction R1
 
-The original report and its manifest remain unchanged. Read the [H01 signed-width correction](../evidence/dialog-file-filter/CORRECTION-R1.md) with the report: R1 supersedes the earlier H01 parse-guard and middle-view start/length wording with the captured signed low-32-bit guard and wrapped arithmetic. The [revision manifest](../evidence/dialog-file-filter/REVISION-MANIFEST-R1.json) pins the correction, this updated task record, and the original packet hashes.
+The original report and its manifest remain unchanged. Read the [H01 signed-width correction](../evidence/dialog-file-filter/CORRECTION-R1.md) with the report: R1 supersedes the earlier H01 parse-guard and middle-view start/length wording with the captured signed low-32-bit guard and wrapped arithmetic. [R2](../evidence/dialog-file-filter/CORRECTION-R2.md) corrects only R1's printed byte-block transcription, endpoint, count, and digest; it preserves R1's arithmetic rule and examples. The [R1 revision manifest](../evidence/dialog-file-filter/REVISION-MANIFEST-R1.json) and [R2 revision manifest](../evidence/dialog-file-filter/REVISION-MANIFEST-R2.json) pin each additive update and the original packet hashes.
 
 ## Source and tools
 
