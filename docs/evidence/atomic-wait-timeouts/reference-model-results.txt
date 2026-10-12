@@ -1,0 +1,12 @@
+PASS: 11 static arithmetic cases
+zero-duration-deadline -> 0x64
+deadline-is-now -> 0x0
+deadline-in-past -> 0x0
+one-unit-remaining -> 0x1
+just-below-cap -> 0x337f97ff
+exact-cap -> 0x337f9800
+above-cap -> 0x337f9800
+infinite-timeout-input -> 0xffffffffffffffff
+infinite-deadline-is-32-bit-infinite -> 0xffffffff
+finite-addition-collides-with-infinite-sentinel -> 0xffffffffffffffff
+finite-addition-wraps-to-zero -> 0x0
