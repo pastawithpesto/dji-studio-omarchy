@@ -59,6 +59,7 @@ Do not present research-tool names or independent internal APIs as original DJI 
 ## Research and implementation
 
 Prefer REA with Ghidra when it is available.
+Read the [REA workflow and benchmark policy](docs/REA-WORKFLOW.md).
 Use the latest upstream REA from the [official repository](https://github.com/morluto/rea).
 At task start and resume, fetch its default branch and update an owned
 installation to the newest upstream commit before new analysis.
