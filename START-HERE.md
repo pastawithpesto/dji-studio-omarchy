@@ -13,7 +13,7 @@ Read [status](docs/STATUS.md), [research instructions](docs/RESEARCH.md), and
 
 Open a draft PR before implementation. State the owner, task, and file scope.
 Read all open PRs immediately. Do not start work on a scope that another PR owns.
-The hosted PR watchdog passes manual checks. Automatic PR events are not yet verified.
+The hosted PR watchdog has successful manual and automatic PR target-event runs.
 Read the current monitoring status in docs/STATUS.md.
 
 ## Build

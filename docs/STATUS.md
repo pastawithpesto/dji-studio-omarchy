@@ -2,7 +2,8 @@
 
 The repository is public. PR 1 integrated the complete original resource bundle at
 `6f3dc07208bc2dc8026730cebacc2c9aa93af1db` after independent Sol High review and
-Astra High verification. All 3,585 tracked files match the approved integration tree.
+Astra High verification. The PR1 integration check verified all 3,585 files in
+that recorded tree. This historical count does not describe later main revisions.
 
 | Area | State | Next work |
 | --- | --- | --- |
@@ -20,9 +21,13 @@ Resource preservation and runtime equivalence are separate results.
 
 ## PR monitoring
 
-Hosted manual checks pass. Automatic PR event runs remain unverified. PR 2 reserves
-the trigger correction and must stay in draft until its automatic-run gate passes.
-The local read-only watchdog v2 passed independent Sol review and is running as
+Hosted manual and automatic checks have passed. The existing read-only
+`pull_request_target` trigger is verified by
+[run38194148483](https://github.com/pastawithpesto/dji-studio-omarchy/actions/runs/38194148483)
+on2026-10-12 for PR28 head `0813f8e3ec1c6126c2f46c57a2e8bdd2ee01b607`.
+PR2 records the additive correction to its earlier unverified status. Read the
+latest check on each current candidate; an old successful snapshot is insufficient.
+The local read-only watchdog v2 passed independent Sol review and was observed as
 `dji-pr-watchdog-next-wave.service` on the maintainer host. Root verified two
 advancing healthy continuous heartbeats and actual comms delivery on 2026-10-11.
 It polls every 30 seconds when healthy and backs off on failures. Monitoring
