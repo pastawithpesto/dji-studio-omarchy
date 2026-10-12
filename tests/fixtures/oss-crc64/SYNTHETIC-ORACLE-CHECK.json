@@ -1,0 +1,20 @@
+{
+  "evidence_kind": "analyst_generated_synthetic_crosscheck_not_original_export_output",
+  "input_fixture_sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624",
+  "method": {
+    "compute": "Per-bit reflected recurrence; polynomial 0xC96C5795D7870F42, initial and final complement.",
+    "combine": "GF(2) matrix exponentiation of the one-zero-bit operator; O(log2(length2)) and no length2-sized buffer.",
+    "source": "Static byte-chain and body inspection plus the independent PE export identity; this script did not call the DLL."
+  },
+  "counts": {
+    "compute": 3153,
+    "combine": 600,
+    "valid_joins": 24
+  },
+  "mismatches": {
+    "compute": [],
+    "combine": [],
+    "valid_joins": []
+  },
+  "all_match": true
+}
