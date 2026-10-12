@@ -1,0 +1,38 @@
+[
+  {
+    "begin": "0x1b4850",
+    "end_exclusive": "0x1b4976",
+    "unwind_rva": "0x265680",
+    "pdata_file_offset": 3051372
+  },
+  {
+    "begin": "0x1b49c0",
+    "end_exclusive": "0x1b4b50",
+    "unwind_rva": "0x2655f4",
+    "pdata_file_offset": 3051384
+  },
+  {
+    "begin": "0x1b4bc0",
+    "end_exclusive": "0x1b4c02",
+    "unwind_rva": "0x265610",
+    "pdata_file_offset": 3051396
+  },
+  {
+    "begin": "0x1b4c02",
+    "end_exclusive": "0x1b4cbc",
+    "unwind_rva": "0x265618",
+    "pdata_file_offset": 3051408
+  },
+  {
+    "begin": "0x1b4cbc",
+    "end_exclusive": "0x1b4ce5",
+    "unwind_rva": "0x265630",
+    "pdata_file_offset": 3051420
+  },
+  {
+    "begin": "0x1b4d40",
+    "end_exclusive": "0x1b4d7e",
+    "unwind_rva": "0x265678",
+    "pdata_file_offset": 3051432
+  }
+]
