@@ -1,0 +1,38 @@
+{
+  "reviewer": "root",
+  "role": "independent audit verification",
+  "source_main": "13357262099643200bffa435bce7a14528cf8d14",
+  "module_sha_checks": {
+    "src/stitching.rs": true,
+    "src/stitch_warp.rs": true,
+    "src/stitch_mask.rs": true
+  },
+  "logs": {
+    "stitching-debug.log": {
+      "passed_counts": [
+        5,
+        8,
+        9
+      ],
+      "total": 22,
+      "sha256": "d9e8b124ab362e9e6efda661c9c9924424019d86eb2fccb942bb404555dc86ed"
+    },
+    "stitching-release.log": {
+      "passed_counts": [
+        5,
+        8,
+        9
+      ],
+      "total": 22,
+      "sha256": "5889c82e65b7da65d5e89814c693fee1d54b4629b64ef1bae8fff3a7cb863549"
+    }
+  },
+  "reviewed_audit_sha256": "6917385b8ad4a518af58eb1cc56f0a1fffcae9fa9436974530ae2b23d81a51c8",
+  "verdict": "bounded stitching modules tested; full stitching incomplete",
+  "reviewed_utc": "2026-10-12T19:49:34.611930+00:00",
+  "limits": [
+    "No duplicate Rust test run during performance cohort",
+    "No camera/Windows comparison rerun",
+    "No vendor execution"
+  ]
+}
