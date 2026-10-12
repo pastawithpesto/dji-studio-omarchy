@@ -15,7 +15,7 @@ fn tool() -> &'static Path {
             .join("target")
             .join(format!("mask-inspect-cli-test-{}", std::process::id()));
         fs::create_dir_all(executable.parent().unwrap()).unwrap();
-        let result = Command::new("/usr/bin/rustc")
+        let result = Command::new("rustc")
             .args(["--edition=2024", "-O", "-D", "warnings"])
             .arg(root.join("tools/stitch_mask_inspect.rs"))
             .arg("-o")
