@@ -12,5 +12,8 @@ fn main() {
             std::process::exit(2);
         }
     };
-    std::process::exit(original_qml_host::run(check_only, || Ok(())));
+    std::process::exit(original_qml_host::run(check_only, || {
+        window_position_detector_qt::register_types();
+        Ok(())
+    }));
 }

@@ -5,6 +5,7 @@ edition = "2024"
 publish = false
 
 [dependencies]
+window-position-detector-qt = { path = "../qt" }
 cxx-qt = "=0.10.0"
 cxx-qt-lib = { version = "=0.10.0", features = ["qt_gui", "qt_qml"] }
 
