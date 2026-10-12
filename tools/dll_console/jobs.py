@@ -335,10 +335,12 @@ User directions:
                 if job['status'] in ('running', 'paused'):
                     proc = self.processes.get(job['id'])
                     code = proc.poll() if proc else None
-                    self.read_events(job, final=code is not None)
+                    owned = self.owned_process(job)
+                    group = self.group_alive(job)
+                    self.read_events(job, final=code is not None or (not owned and not group))
                     if job['status'] == 'paused':
                         continue
-                    if not self.owned_process(job) and not self.group_alive(job):
+                    if not owned and not group:
                         log = Path(job.get('log', ''))
                         if log.is_file() and self.offsets.get(job['id'], 0) < log.stat().st_size:
                             continue

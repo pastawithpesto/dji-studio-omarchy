@@ -373,6 +373,25 @@ class QueueTests(unittest.TestCase):
         self.assertNotEqual(self.queue.jobs[job['id']]['status'], 'completed')
         self.assertNotIn('turn_completed', self.queue.jobs[job['id']])
 
+    def test_restored_gone_worker_with_final_partial_line_is_interrupted(self):
+        event = json.dumps({'type': 'turn.completed', 'usage': {'input_tokens': 7}})
+        job, _ = self.running_job_with_log(event.encode())
+        restored = jobs.Queue(self.project, self.runtime, FakeCatalog(), launch=False)
+        with patch.object(restored, 'owned_process', return_value=False), patch.object(restored, 'group_alive', return_value=False):
+            restored.tick()
+        self.assertEqual(restored.jobs[job['id']]['status'], 'interrupted')
+        self.assertEqual(restored.jobs[job['id']]['usage']['input_tokens'], 7)
+
+    def test_live_external_worker_does_not_override_blocked_original_hash(self):
+        app = object.__new__(server.App)
+        app.project = self.project
+        app.catalog = SimpleNamespace(module=lambda ident: {'parts': [{'id': 'internals', 'research': 'blocked', 'owner_feature': 'thumbnailprovider-kimi-k3', 'statusSource': 'Original DLL hash differs from the catalog pin'}]})
+        app.queue = SimpleNamespace(snapshot=lambda: [], external_blocker=lambda *args: 'Active assignment')
+        with patch('server.load_json', return_value={'state': 'launched', 'pid': 77}), patch('server.workers', return_value=[{'pid': 77, 'model': 'nvidia/moonshotai/kimi-k3#high'}]):
+            result = app.module('ThumbnailProvider.dll')
+        self.assertEqual(result['parts'][0]['research'], 'blocked')
+        self.assertIn('Original DLL hash', result['parts'][0]['statusSource'])
+
     def test_job_directory_symlink_cannot_expose_or_launch_outside_artifacts(self):
         job = self.queue.enqueue(valid_request())
         root = self.queue.output / job['id']

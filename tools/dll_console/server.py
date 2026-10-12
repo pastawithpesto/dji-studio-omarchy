@@ -145,7 +145,7 @@ class App:
                         dispatch = load_json(self.project / 'reconstruction/kimi-thumbnailprovider-20261012/DISPATCH.json', {})
                         active = dispatch.get('state') == 'launched' and any(w['pid'] == dispatch.get('pid') and 'kimi-k3' in w['model'] for w in workers())
                         part['owner'] = 'Kimi K3 High · ' + ('running' if active else 'recorded assignment')
-                        if active:
+                        if active and part['research'] in ('missing', 'unreviewed'):
                             part['research'] = 'running'
         return result
 
