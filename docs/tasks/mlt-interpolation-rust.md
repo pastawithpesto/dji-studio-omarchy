@@ -33,12 +33,12 @@ Original reference pins:
 
 - Initial reference manifest: `161dde5718d667e458f2f5b269627590b744e818d3c8e3d09e560b6cd0b41cf6`.
 - Interpolation extension manifest: `aff5bd1110eafd1b1f89c6dadfa622df4623cea621f11bd60844956ab7766fec`.
-- The extension has nine binary64 input/output rows for each of these five direct names. The original `mlt_circular_ease_in` numeric approval covers finite inputs where `1 - t*t` is nonnegative. Its one negative-radicand row remains a Wine observation, not a numeric contract case.
+- The two sealed packets provide nine binary64 input/output rows for each of these five direct names. The initial packet covers circular-in and cublic linear. The extension covers discrete, linear, and smooth. The original `mlt_circular_ease_in` numeric approval covers finite inputs where `1 - t*t` is nonnegative. Its one negative-radicand row remains a Wine observation, not a numeric contract case.
 - The reference DLL ran under Wine 11.17. Native MSVC runtime dependencies were used in the later run, with Wine UCRT and Windows services. This does not establish Windows parity.
 
 ## Implementation constraints
 
-Keep each operation in the approved binary64 order. Do not add a clamp, iteration cap, NaN policy, or new error behavior. Keep `FUN_18001a320` internal; it is a REA label, not an original export. Do not implement the signed selector dispatcher, even though its graph has a separate bounded approval.
+Keep each operation in the approved binary64 order. For smooth interpolation, compute `t*t`, then `t+t`, then `3.0-(t+t)`, then multiply that factor by `t*t`. Do not add a clamp, iteration cap, NaN policy, or new error behavior. Keep `FUN_18001a320` internal; it is a REA label, not an original export. Do not implement the signed selector dispatcher, even though its graph has a separate bounded approval.
 
 ## Completion check
 
