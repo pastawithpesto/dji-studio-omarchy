@@ -1,3 +1,29 @@
+# Application language
+
+Implement application behavior in Rust. Keep the original UI in QML.
+Preserve original names, text, layout, assets, interactions and workflows.
+Do not add handwritten C or C++ source or inline C or C++ payloads.
+Do not implement application behavior in another language or move it into an
+external wrapper to bypass this rule. Research and coordination tools are separate
+from application code.
+
+Qt and binding libraries are external dependencies. Build-generated bindings
+and resource code must stay outside tracked source. Rust API declarations are
+permitted. Report these dependencies accurately; the stack still contains C++.
+
+The application language CI job checks tracked C/C++ source, other common source
+languages under src and gui, and known inline C++ macros in Rust files.
+Three existing C research files have exact content pins in the checker. They are
+frozen evidence, not application implementations. No directory is exempt.
+Review must also check that behavior stays in Rust and original QML is unchanged.
+Run the same check locally:
+
+```sh
+rustc --edition=2024 -D warnings tools/check_application_language.rs \
+  -o /tmp/dji-application-language
+/tmp/dji-application-language
+```
+
 # Work reservation
 
 1. Read docs/STATUS.md and all open PRs, including drafts.
