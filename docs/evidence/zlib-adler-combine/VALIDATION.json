@@ -1,0 +1,354 @@
+{
+  "source_sha256": "45aafddc3e0b0efabe80e75b259e3111d92e6c096c6756e51d8b9221ed3c90ca",
+  "instruction_rows_verified": 75,
+  "modeled_code_spans": [
+    {
+      "start": "0x180001770",
+      "end_exclusive": "0x180001778"
+    },
+    {
+      "start": "0x180001790",
+      "end_exclusive": "0x18000186a"
+    }
+  ],
+  "exhaustive_boundary_cartesian_cases": 1200,
+  "deterministic_random_cases": 4096,
+  "seed": "0xAD1E2026",
+  "model_cases_passed": 5296,
+  "input_digest_sha256": "dd288ab964a3650cf6a0affb9b3ec17d20ababaa41f84e8116f84cc7ba282c72",
+  "concatenation_oracle": "Python system zlib.adler32 on byte arrays; not the vendor DLL",
+  "concatenation_cases_passed": 49,
+  "concat_cases": [
+    {
+      "left_bytes": 0,
+      "right_bytes": 0,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "left_bytes": 0,
+      "right_bytes": 1,
+      "actual": 6422626,
+      "expected": 6422626
+    },
+    {
+      "left_bytes": 0,
+      "right_bytes": 1,
+      "actual": 65537,
+      "expected": 65537
+    },
+    {
+      "left_bytes": 0,
+      "right_bytes": 5,
+      "actual": 103547413,
+      "expected": 103547413
+    },
+    {
+      "left_bytes": 0,
+      "right_bytes": 256,
+      "actual": 2918612865,
+      "expected": 2918612865
+    },
+    {
+      "left_bytes": 0,
+      "right_bytes": 1024,
+      "actual": 2040986670,
+      "expected": 2040986670
+    },
+    {
+      "left_bytes": 0,
+      "right_bytes": 75300,
+      "actual": 2420549622,
+      "expected": 2420549622
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 0,
+      "actual": 6422626,
+      "expected": 6422626
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 1,
+      "actual": 19202243,
+      "expected": 19202243
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 1,
+      "actual": 12845154,
+      "expected": 12845154
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 5,
+      "actual": 141754998,
+      "expected": 141754998
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 256,
+      "actual": 258441186,
+      "expected": 258441186
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 1024,
+      "actual": 4262984847,
+      "expected": 4262984847
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 75300,
+      "actual": 182233175,
+      "expected": 182233175
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 0,
+      "actual": 65537,
+      "expected": 65537
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 1,
+      "actual": 6488162,
+      "expected": 6488162
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 1,
+      "actual": 131073,
+      "expected": 131073
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 5,
+      "actual": 103612949,
+      "expected": 103612949
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 256,
+      "actual": 2918678401,
+      "expected": 2918678401
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 1024,
+      "actual": 2041052206,
+      "expected": 2041052206
+    },
+    {
+      "left_bytes": 1,
+      "right_bytes": 75300,
+      "actual": 2420615158,
+      "expected": 2420615158
+    },
+    {
+      "left_bytes": 5,
+      "right_bytes": 0,
+      "actual": 103547413,
+      "expected": 103547413
+    },
+    {
+      "left_bytes": 5,
+      "right_bytes": 1,
+      "actual": 144835190,
+      "expected": 144835190
+    },
+    {
+      "left_bytes": 5,
+      "right_bytes": 1,
+      "actual": 138478101,
+      "expected": 138478101
+    },
+    {
+      "left_bytes": 5,
+      "right_bytes": 5,
+      "actual": 381420585,
+      "expected": 381420585
+    },
+    {
+      "left_bytes": 5,
+      "right_bytes": 256,
+      "actual": 3359670677,
+      "expected": 3359670677
+    },
+    {
+      "left_bytes": 5,
+      "right_bytes": 1024,
+      "actual": 3494575682,
+      "expected": 3494575682
+    },
+    {
+      "left_bytes": 5,
+      "right_bytes": 75300,
+      "actual": 4245662218,
+      "expected": 4245662218
+    },
+    {
+      "left_bytes": 256,
+      "right_bytes": 0,
+      "actual": 2918612865,
+      "expected": 2918612865
+    },
+    {
+      "left_bytes": 256,
+      "right_bytes": 1,
+      "actual": 770146274,
+      "expected": 770146274
+    },
+    {
+      "left_bytes": 256,
+      "right_bytes": 1,
+      "actual": 763789185,
+      "expected": 763789185
+    },
+    {
+      "left_bytes": 256,
+      "right_bytes": 5,
+      "actual": 835682709,
+      "expected": 835682709
+    },
+    {
+      "left_bytes": 256,
+      "right_bytes": 256,
+      "actual": 3815571201,
+      "expected": 3815571201
+    },
+    {
+      "left_bytes": 256,
+      "right_bytes": 1024,
+      "actual": 1166900157,
+      "expected": 1166900157
+    },
+    {
+      "left_bytes": 256,
+      "right_bytes": 75300,
+      "actual": 3258197893,
+      "expected": 3258197893
+    },
+    {
+      "left_bytes": 1024,
+      "right_bytes": 0,
+      "actual": 2040986670,
+      "expected": 2040986670
+    },
+    {
+      "left_bytes": 1024,
+      "right_bytes": 1,
+      "actual": 1984232591,
+      "expected": 1984232591
+    },
+    {
+      "left_bytes": 1024,
+      "right_bytes": 1,
+      "actual": 1977875502,
+      "expected": 1977875502
+    },
+    {
+      "left_bytes": 1024,
+      "right_bytes": 5,
+      "actual": 1828650562,
+      "expected": 1828650562
+    },
+    {
+      "left_bytes": 1024,
+      "right_bytes": 256,
+      "actual": 1668250557,
+      "expected": 1668250557
+    },
+    {
+      "left_bytes": 1024,
+      "right_bytes": 1024,
+      "actual": 3798726762,
+      "expected": 3798726762
+    },
+    {
+      "left_bytes": 1024,
+      "right_bytes": 75300,
+      "actual": 696230962,
+      "expected": 696230962
+    },
+    {
+      "left_bytes": 75300,
+      "right_bytes": 0,
+      "actual": 2420549622,
+      "expected": 2420549622
+    },
+    {
+      "left_bytes": 75300,
+      "right_bytes": 1,
+      "actual": 950839383,
+      "expected": 950839383
+    },
+    {
+      "left_bytes": 75300,
+      "right_bytes": 1,
+      "actual": 944482294,
+      "expected": 944482294
+    },
+    {
+      "left_bytes": 75300,
+      "right_bytes": 5,
+      "actual": 3731401226,
+      "expected": 3731401226
+    },
+    {
+      "left_bytes": 75300,
+      "right_bytes": 256,
+      "actual": 1025714053,
+      "expected": 1025714053
+    },
+    {
+      "left_bytes": 75300,
+      "right_bytes": 1024,
+      "actual": 89891890,
+      "expected": 89891890
+    },
+    {
+      "left_bytes": 75300,
+      "right_bytes": 75300,
+      "actual": 1818841082,
+      "expected": 1818841082
+    }
+  ],
+  "malformed_examples": [
+    {
+      "a": 4294967295,
+      "b": 4294967295,
+      "length": 0,
+      "result": 1900556
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "length": 0,
+      "result": 0
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "length": 0,
+      "result": 1
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "length": 2147483648,
+      "result": 4294967295
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "length": 4294967295,
+      "result": 4294967295
+    }
+  ],
+  "limits": [
+    "Finite checks, not exhaustive input proof.",
+    "No vendor execution or DJI call-site reachability test.",
+    "Malformed checksum fields are modeled as raw u32 values."
+  ]
+}

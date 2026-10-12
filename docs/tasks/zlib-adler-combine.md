@@ -39,3 +39,22 @@ The initial base is freshly fetched main
 Completion means a reviewed bounded static packet. It does not mean complete zlib,
 Windows execution, DJI call-site use, media behavior or application parity.
 No merge or release is requested by this research task.
+
+## Delivered packet
+
+The report and source map recover the exported wrapper and checksum helper from
+fresh REA/Ghidra evidence. Provider bytes match the original file. The instruction
+model and arithmetic agree on 5296 cases. All 49 byte-array concatenation cases
+match the independent system zlib oracle. The complete local packet remains at
+`reconstruction/root-zlib-adler-combine-20261012`; its initial manifest is
+`0b96b36912ee4f971f72989d45d4813eb6a22c9ba17ada60496c3a8e95fb1643`.
+
+The publication corrects one initial padding-count statement additively. The
+initial sealed report stays unchanged. Arithmetic and validation did not change.
+The published manifest is
+`e89ab841e97025235ef08d5294bbfea67781bc1f4e99cbe7fec2c86c8b1be13e`.
+
+The owned branch integrated current main
+`88dd9cd280a7a454c536c6d7d1c9d1184d07b65c` without rewriting prior commits.
+The packet is submitted for independent Astra High review. No approval or merge
+is inferred from its submission.
