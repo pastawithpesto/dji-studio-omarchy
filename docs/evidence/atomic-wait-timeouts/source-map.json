@@ -1,0 +1,101 @@
+{
+  "source": {
+    "path": "DJI Studio 1.0.0.30839/extracted/1.0.0.30839/msvcp140_atomic_wait.dll",
+    "size_bytes": 57376,
+    "sha256": "ae430f3b65c5fc88643b30a344289bfda29811279379c1537cec19983c0938ae",
+    "pe_format": "PE32+",
+    "machine": "AMD64",
+    "image_base": "0x180000000"
+  },
+  "exports": [
+    {
+      "name": "__std_atomic_wait_get_deadline",
+      "ordinal": 11,
+      "rva": "0x15c0",
+      "va": "0x1800015c0",
+      "body": {
+        "start_va": "0x1800015c0",
+        "end_va_inclusive": "0x1800015e0",
+        "length_bytes": 33,
+        "file_offset": "0x9c0",
+        "sha256": "91a621460251e107081a5c4abe58a32f74745cd2b6d93cc8fca49a9dca158b88",
+        "bytes_hex": "40534883ec204883c8ff488bd9483bc87409ff15f83a00004803c34883c4205bc3"
+      },
+      "ghidra_inferred_signature_only": "longlong __fastcall __std_atomic_wait_get_deadline(longlong param_1)",
+      "rea_ghidra_evidence_ids": [
+        "ev_209bd7420d4f44455daadb705efb3e8627bb253a7456ffc5aa8f36a97af1547f",
+        "ev_f5a8e55e4c33fc4114a120d66271e76d2171ec4c66b1b1083d0b8446f372df95",
+        "ev_7022277816ecc376228177154e8a556f5508328aa8538be7211296d4788627a7"
+      ],
+      "machine_return_observation": "RAX for this 64-bit target; see the return-width field below."
+    },
+    {
+      "name": "__std_atomic_wait_get_remaining_timeout",
+      "ordinal": 12,
+      "rva": "0x15f0",
+      "va": "0x1800015f0",
+      "body": {
+        "start_va": "0x1800015f0",
+        "end_va_inclusive": "0x180001627",
+        "length_bytes": 56,
+        "file_offset": "0x9f0",
+        "sha256": "2090187ba92fcec6d04afdfdf1e278feaeb834ad6bef76ad6b7f1c62370516ad",
+        "bytes_hex": "40534883ec20488bd94883f9ff750583c8ffeb1eff15c63a0000483bc3720433c0eb0f482bd8b800987f33483bd877028bc34883c4205bc3"
+      },
+      "ghidra_inferred_signature_only": "ulonglong __fastcall __std_atomic_wait_get_remaining_timeout(ulonglong param_1)",
+      "rea_ghidra_evidence_ids": [
+        "ev_57a5b4512cdb28567a23bcdf9bb783737250e6eb651b1f4a038c376ce4e15817",
+        "ev_cfa7bf064740881669fa11b832625e8548c6536b3231b5047d4850b89907d00c",
+        "ev_546496283496dc3c2ed6dfe17638d66e448ba2c1facd44637d0ff55564a4d4a4"
+      ],
+      "machine_return_observation": "Every branch writes EAX before RET; an EAX write zero-extends into RAX, so the observed machine result is 32-bit and zero-extended. The formal source return type is not established."
+    }
+  ],
+  "time_source": {
+    "api": "KERNEL32.dll!GetTickCount64",
+    "iat_va": "0x1800050d0",
+    "rva": "0x50d0",
+    "file_offset": "0x3ed0",
+    "raw_file_bytes": "0672000000000000",
+    "sha256": "658b14e7d48dcadae73091f12ff5809cfd70a3b281ea75bc6eb7a290f66184fc",
+    "caller_call_sites": [
+      "0x1800015d2",
+      "0x180001604"
+    ],
+    "note": "PE import inventory and both indirect calls resolve to this named import. Raw on-disk IAT bytes are not a resolved runtime function pointer."
+  },
+  "units": {
+    "dll_bytes": "Numeric values and arithmetic are observed in target bytes.",
+    "api_contract": {
+      "purpose": "External API contract only; DLL function/import target itself is proven by PE import table and instructions.",
+      "api": "Kernel32 GetTickCount64",
+      "facts": {
+        "return_type": "ULONGLONG",
+        "unit": "milliseconds since system start",
+        "system_sleep_and_hibernation": "elapsed time includes time spent in sleep or hibernation",
+        "resolution": "typically limited to system timer resolution, 10 to 16 ms"
+      },
+      "sources": [
+        {
+          "title": "GetTickCount64 function (sysinfoapi.h)",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-gettickcount64",
+          "used_for": [
+            "return type",
+            "millisecond unit",
+            "elapsed since system start",
+            "timer resolution"
+          ]
+        },
+        {
+          "title": "Windows Time",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/windows-time",
+          "used_for": [
+            "GetTickCount64 includes time spent in sleep or hibernation"
+          ]
+        }
+      ],
+      "retrieved_utc": "2026-10-12T06:46Z",
+      "limit": "This API documentation does not establish whole-library behavior, actual thread wakeups, or complete Windows equivalence."
+    }
+  }
+}
