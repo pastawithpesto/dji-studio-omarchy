@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>DLL Research Console</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="DLL Research Console home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">DLL Research Console</span>
+      </a>
+      <div class="connection-state" id="connection-state" role="status" aria-live="polite">
+        <span class="status-dot unknown"></span><span>Connecting</span>
+      </div>
+      <div class="top-metrics">
+        <div class="metric"><span class="metric-label">Reported usage</span><strong id="usage-total">Unknown</strong></div>
+        <div class="metric"><span class="metric-label">Active slots</span><strong id="slot-count">Unknown</strong></div>
+        <div class="metric metric-limit"><span class="metric-label">Rate limits</span><strong id="rate-limits">Unknown</strong></div>
+      </div>
+      <button class="icon-button" id="refresh-button" type="button" aria-label="Refresh data" title="Refresh data">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9A7 7 0 0 1 18 6l2 2M4 16l2 2a7 7 0 0 0 12.4-3"/></svg>
+      </button>
+    </header>
+
+    <div class="workspace">
+      <aside class="module-rail" aria-label="DLL catalog">
+        <div class="rail-heading">
+          <div><span class="eyebrow">Workspace</span><h1>DLL catalog</h1></div>
+          <span class="count-pill" id="module-count">—</span>
+        </div>
+        <label class="search-field rail-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input id="module-search" type="search" placeholder="Find a DLL" autocomplete="off" aria-label="Search DLLs">
+          <kbd>/</kbd>
+        </label>
+        <div class="filter-row" role="group" aria-label="Filter DLLs by category">
+          <button class="filter-button active" type="button" data-module-filter="all">All</button>
+          <button class="filter-button" type="button" data-module-filter="application">Application</button>
+          <button class="filter-button" type="button" data-module-filter="dependency">Libraries</button>
+        </div>
+        <div class="module-list" id="module-list" aria-live="polite">
+          <div class="empty-state compact"><span class="skeleton-line"></span><span class="skeleton-line short"></span></div>
+        </div>
+        <div class="rail-footer"><span class="tiny-led"></span><span id="updated-at">Waiting for live project data</span></div>
+      </aside>
+
+      <main class="main-area">
+        <section class="module-header" aria-live="polite">
+          <div class="module-title-wrap">
+            <div class="module-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3.8h9l5 5V20H5z"/><path d="M14 4v5h5M8 13h8M8 16.5h5"/></svg></div>
+            <div class="module-title-copy"><div class="title-line"><h2 id="active-module-name">Select a DLL</h2><span class="category-chip" id="active-category">—</span></div><div class="module-subtitle" id="active-module-meta">Module details appear when project data is available.</div></div>
+          </div>
+          <div class="module-hash"><span class="metric-label">SHA-256</span><code id="active-hash">Unknown</code></div>
+        </section>
+
+        <nav class="view-tabs" aria-label="Module views">
+          <button class="view-tab active" type="button" data-view="work"> <span class="tab-icon map-icon" aria-hidden="true"></span> Work map</button>
+          <button class="view-tab" type="button" data-view="binary"><span class="tab-icon binary-icon" aria-hidden="true"></span> Binary map</button>
+          <button class="view-tab" type="button" data-view="exports"><span class="tab-icon export-icon" aria-hidden="true"></span> Exports <span class="tab-count" id="export-count">—</span></button>
+          <div class="tab-spacer"></div>
+          <span class="selection-readout" id="selection-readout">0 selected</span>
+        </nav>
+
+        <div class="content-grid">
+          <section class="view-panel map-panel" id="view-panel" aria-live="polite">
+            <div class="panel-toolbar">
+              <div><span class="eyebrow" id="view-kicker">Coverage by source scope</span><h3 id="view-title">Work map</h3></div>
+              <label class="search-field local-search" id="scope-search-wrap">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+                <input id="scope-search" type="search" placeholder="Search scopes" autocomplete="off" aria-label="Search work scopes">
+              </label>
+            </div>
+            <div class="map-legend" id="map-legend">
+              <span><i class="legend-swatch reviewed"></i>Reviewed static</span><span><i class="legend-swatch pending"></i>In progress / unknown</span><span><i class="legend-swatch missing"></i>Missing</span>
+              <span class="legend-hint">Shift-click to add or remove multiple scopes</span>
+            </div>
+            <div class="scope-canvas" id="scope-canvas">
+              <div class="empty-state"><div class="empty-symbol">?</div><strong>Waiting for project state</strong><p>Live module and research records will appear here.</p></div>
+            </div>
+          </section>
+
+          <aside class="detail-panel" aria-label="Selected scope details">
+            <div class="detail-heading"><div><span class="eyebrow">Selection</span><h3 id="detail-title">Scope details</h3></div><button class="text-button" id="clear-selection" type="button">Clear</button></div>
+            <div class="detail-content" id="detail-content">
+              <div class="empty-state detail-empty"><div class="empty-symbol outline">⌖</div><strong>Choose a scope</strong><p>Select a work area, binary section, or export to inspect its source facts and evidence.</p></div>
+            </div>
+          </aside>
+        </div>
+
+        <section class="lower-grid">
+          <section class="activity-panel panel-card">
+            <div class="panel-card-heading"><div><span class="eyebrow">Project feed</span><h3>Live activity</h3></div><span class="live-label"><i></i>LIVE</span></div>
+            <div class="activity-list" id="activity-list"><div class="empty-inline">No activity reported yet.</div></div>
+          </section>
+          <section class="usage-panel panel-card">
+            <div class="panel-card-heading"><div><span class="eyebrow">Observed sessions</span><h3>Usage &amp; limits</h3></div><span class="source-tag">Reported data</span></div>
+            <div class="usage-summary" id="usage-summary"><div class="empty-inline">Usage details are unknown until reported by the project.</div></div>
+          </section>
+          <section class="jobs-panel panel-card">
+            <div class="panel-card-heading"><div><span class="eyebrow">Execution status</span><h3>Workers &amp; queue</h3></div><span class="queue-count" id="job-count">0 jobs</span></div>
+            <div class="worker-list" id="worker-list"><div class="empty-inline">No workers reported.</div></div>
+            <div class="queue-subheading"><span>Console queue</span><span>Owned jobs only</span></div>
+            <div class="job-list" id="job-list"><div class="empty-inline">No queued jobs reported.</div></div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <aside class="command-drawer" aria-label="Research task command">
+      <div class="drawer-left">
+        <div class="drawer-title"><span class="drawer-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg></span><div><span class="eyebrow">Scoped task</span><h2>Command console</h2></div></div>
+        <div class="selection-summary" id="drawer-selection"><span class="selection-count">0</span><span>Select one or more scopes above</span></div>
+        <div class="drawer-fields">
+          <label class="control-label">Model<select id="model-select"><option value="luna">Luna</option><option value="sol">Sol</option><option value="astra">Astra</option><option value="kimi">Kimi</option></select></label>
+          <label class="control-label">Action<select id="action-select"><option value="research">Research</option><option value="review">Review</option></select></label>
+        </div>
+        <label class="notes-label" for="task-notes">Optional notes</label>
+        <textarea id="task-notes" rows="2" placeholder="Add a short task direction…"></textarea>
+      </div>
+      <div class="drawer-right">
+        <div class="preview-heading"><div><span class="eyebrow">Generated assignment</span><span id="preview-state" class="preview-state">Select a scope to preview</span></div><div class="preview-tools"><button class="small-button" id="copy-prompt" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Copy prompt</button></div></div>
+        <textarea id="prompt-preview" class="prompt-preview" spellcheck="false" readonly placeholder="A readable scoped prompt will appear here after preview." aria-label="Generated assignment preview"></textarea>
+        <p class="preview-hint">To change the task, edit Optional notes above. The queued request follows those notes and the selected scope.</p>
+        <div class="drawer-actions"><span class="form-error" id="form-error" role="alert"></span><button class="queue-button" id="queue-task" type="button" disabled><span>Queue task</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button></div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <dialog class="artifact-dialog" id="artifact-dialog">
+    <div class="artifact-dialog-head"><div><span class="eyebrow">Source evidence</span><h2 id="artifact-title">Evidence</h2></div><button class="icon-button" id="close-artifact" type="button" aria-label="Close evidence"><span aria-hidden="true">×</span></button></div>
+    <pre id="artifact-content"></pre>
+  </dialog>
+</body>
+</html>

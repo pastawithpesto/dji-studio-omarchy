@@ -11,10 +11,10 @@ CLI process metadata and reported usage. Distinguish static contracts, applicati
 implementation and reference comparisons. Do not invent completion percentages.
 
 Provide a selectable DLL/part map, binary section map, original export search,
-evidence links, missing-work details and editable scoped task prompts. Queue
+evidence links, missing-work details and generated scoped task prompts with editable directions. Queue
 explicit user assignments to fixed supported Codex/OpenCode models, honor shared
 worker limits and avoid duplicate active ownership. Keep job outputs isolated.
-Allow cancel/resume only for console-owned jobs. Preserve other workers.
+Allow pause/resume only for console-owned jobs. Preserve other workers.
 Bind only to loopback and validate local mutation requests. Never expose
 credentials, private reasoning or arbitrary shell execution through the browser.
 
