@@ -47,6 +47,9 @@ Do not publish credentials or private reasoning.
 
 ## Original names and UI
 
+Write GUI application code in Rust and QML.
+Do not add C++ application code.
+
 Preserve original names from the source. Do not invent replacement names.
 Keep original UI text, labels, resource strings, layouts, interactions and workflows.
 Reuse the exact original source and assets where available.
