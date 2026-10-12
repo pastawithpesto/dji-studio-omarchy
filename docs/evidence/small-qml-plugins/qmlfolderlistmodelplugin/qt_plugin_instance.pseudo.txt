@@ -1,0 +1,44 @@
+
+QObject * qt_plugin_instance(void)
+
+{
+  int iVar1;
+  ExternalRefCountData *_Memory;
+  QQmlEngineExtensionPlugin *this;
+  ExternalRefCountData *pEVar2;
+  
+                    /* 0x1160  1  qt_plugin_instance */
+  if ((*(int *)(*(longlong *)((longlong)ThreadLocalStoragePointer + (ulonglong)_tls_index * 8) + 4)
+       < DAT_180005210) && (_Init_thread_header(&DAT_180005210), DAT_180005210 == -1)) {
+    atexit(FUN_1800024b0);
+    _Init_thread_footer(&DAT_180005210);
+  }
+  if (((DAT_180005200 == (ExternalRefCountData *)0x0) || (*(int *)(DAT_180005200 + 4) == 0)) ||
+     (pEVar2 = DAT_180005200, DAT_180005208 == (QObject *)0x0)) {
+    this = (QQmlEngineExtensionPlugin *)FUN_180001338(0x18);
+    QQmlEngineExtensionPlugin::QQmlEngineExtensionPlugin(this,(QObject *)0x0);
+    *(undefined ***)this = QmlFolderListModelPlugin::vftable;
+    *(undefined ***)(this + 0x10) = QmlFolderListModelPlugin::vftable;
+    pEVar2 = QtSharedPointer::ExternalRefCountData::getAndRef((QObject *)this);
+    _Memory = DAT_180005200;
+    DAT_180005208 = (QObject *)this;
+    if (DAT_180005200 != (ExternalRefCountData *)0x0) {
+      LOCK();
+      iVar1 = *(int *)DAT_180005200;
+      *(int *)DAT_180005200 = *(int *)DAT_180005200 + -1;
+      DAT_180005200 = pEVar2;
+      UNLOCK();
+      pEVar2 = DAT_180005200;
+      if (iVar1 == 1) {
+        free(_Memory);
+        pEVar2 = DAT_180005200;
+      }
+    }
+  }
+  DAT_180005200 = pEVar2;
+  if ((DAT_180005200 != (ExternalRefCountData *)0x0) && (*(int *)(DAT_180005200 + 4) != 0)) {
+    return DAT_180005208;
+  }
+  return (QObject *)0x0;
+}
+

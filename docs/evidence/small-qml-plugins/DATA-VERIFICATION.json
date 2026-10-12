@@ -1,0 +1,104 @@
+[
+  {
+    "target": "labsanimationplugin",
+    "source_sha256": "4b0be3a96703da2a82b91b34f07a6750e6ffdab6ffb3f3966c997cc648b89425",
+    "regions": [
+      {
+        "section": ".rdata",
+        "address": "0x180003000",
+        "length": 7486,
+        "file_offset": 6656,
+        "sha256": "e1baae0c924ff5102e9178a45c80aab9c1a709e105406bb69e8b4a6bf163efaa",
+        "evidence_id": "ev_24452b787fce6cf035b69c260f4c4ded7e0e1e966063411f0fd468a6302959c0",
+        "original_bytes_match": true
+      },
+      {
+        "section": ".pdata",
+        "address": "0x180006000",
+        "length": 636,
+        "file_offset": 14848,
+        "sha256": "585f9ea1cada5ddcd1bb9de806a4d68760302d0b4cd4a25bb1e414bc1f1d6849",
+        "evidence_id": "ev_c5bdd179d508665f9a868be237d3f5a2a59ac56b62e1d2f793512c06b6998130",
+        "original_bytes_match": true
+      },
+      {
+        "section": ".qtmetad",
+        "address": "0x180007000",
+        "length": 113,
+        "file_offset": 15872,
+        "sha256": "e8cc9eda4eeb7c7cd04909c3dcaa1c51002485668c5e5a314ec73ba3d84f42f9",
+        "evidence_id": "ev_35ca55c36177965b3e24bcaf57cdb48e3369a59dae6488f93138ea23fbadea99",
+        "original_bytes_match": true
+      }
+    ],
+    "method": "New provider data queries after importing matching same-tool analysis snapshot; no repeated function decompilation."
+  },
+  {
+    "target": "qmlfolderlistmodelplugin",
+    "source_sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+    "regions": [
+      {
+        "section": ".rdata",
+        "address": "0x180003000",
+        "length": 7514,
+        "file_offset": 6656,
+        "sha256": "25c77ffd8a60f5fcb069b118eb7854f129af113acd814117cfb6f1bb3d19dc95",
+        "evidence_id": "ev_ba88c12a9cf7d63d29a745dafb35456cdc59af1e23aeabfc0faf19d60d1634bf",
+        "original_bytes_match": true
+      },
+      {
+        "section": ".pdata",
+        "address": "0x180006000",
+        "length": 636,
+        "file_offset": 14848,
+        "sha256": "71433f34d6878ba2ebc85f84819020169ab881c29c939b1de942b53438e2d118",
+        "evidence_id": "ev_3cfd3fb45d20d0dbdf2cf1f173cddce116d02f79e7f0ef058f1cfc312af8f969",
+        "original_bytes_match": true
+      },
+      {
+        "section": ".qtmetad",
+        "address": "0x180007000",
+        "length": 123,
+        "file_offset": 15872,
+        "sha256": "076d9cb58da1546da1aeea1e507cc503c32545bcb67923f12f8f78a6209e2284",
+        "evidence_id": "ev_cbaa860aec3e9236f5c14ea93816c9d1834d45a3f9e4a2a8152cb4b7f66ea8e0",
+        "original_bytes_match": true
+      }
+    ],
+    "method": "New provider data queries after importing matching same-tool analysis snapshot; no repeated function decompilation."
+  },
+  {
+    "target": "labsmodelsplugin",
+    "source_sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+    "regions": [
+      {
+        "section": ".rdata",
+        "address": "0x180003000",
+        "length": 7478,
+        "file_offset": 6656,
+        "sha256": "18b857c7b1031da7210b0f87019089f9e30eea9fa5ebc83dee7bb7a1f6a59099",
+        "evidence_id": "ev_6d5803c74a73fcbecc01b4e344fe86cf570f83bc12e14951ac3f3607f2c0409b",
+        "original_bytes_match": true
+      },
+      {
+        "section": ".pdata",
+        "address": "0x180006000",
+        "length": 636,
+        "file_offset": 14848,
+        "sha256": "585f9ea1cada5ddcd1bb9de806a4d68760302d0b4cd4a25bb1e414bc1f1d6849",
+        "evidence_id": "ev_b27065f2afb89d7254664a50d62dd6fe0fe772ed53607d11c8b23703d5f159b5",
+        "original_bytes_match": true
+      },
+      {
+        "section": ".qtmetad",
+        "address": "0x180007000",
+        "length": 113,
+        "file_offset": 15872,
+        "sha256": "406e6aef1b85b3f02185ad2e54077e0d9b3cf64ba2758c7bf9a7ec81756aa011",
+        "evidence_id": "ev_99243f103fc377319262ee93b3aafdbfc1551b22a1cae166fa632a59f8ec3c4f",
+        "original_bytes_match": true
+      }
+    ],
+    "method": "New provider data queries after importing matching same-tool analysis snapshot; no repeated function decompilation."
+  }
+]

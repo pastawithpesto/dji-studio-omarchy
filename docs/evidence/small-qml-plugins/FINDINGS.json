@@ -1,0 +1,149 @@
+{
+  "build": "1.0.0.30839",
+  "tool": {
+    "upstream_commit": "4573e8cf35de822bfc5feabcc89ec3717c247c8c",
+    "package_version": "6.4.0",
+    "server": {
+      "name": "rea",
+      "version": "6.4.0"
+    },
+    "node": "v26.9.0",
+    "heap": "768M",
+    "ghidra": "12.1.4",
+    "launcher_sha256": "d9d9ddf93ea61619fb20e619c218a004fb1f17e823f142f0be9f851ca7030480",
+    "runtime_sha256": "580481c9160e0facc1c0b765060bde383f069954a99afbfb425d8d335f359e06",
+    "method": "Baseline separate dossier, pseudocode and assembly calls. No optimization adopted."
+  },
+  "claim_type": "recovered_static_fact",
+  "native_capture": {
+    "functions": 309,
+    "ranges": 318,
+    "unique_bytes": 14826,
+    "pdata_entries": 159,
+    "included_thunks": 93,
+    "direct_external_thunks": 84,
+    "internal_free_alias_thunks": 6,
+    "internal_guard_dispatch_thunks": 3
+  },
+  "data_capture": {
+    "regions": 9,
+    "bytes": 24735
+  },
+  "targets": [
+    {
+      "name": "labsanimationplugin",
+      "source_sha256": "4b0be3a96703da2a82b91b34f07a6750e6ffdab6ffb3f3966c997cc648b89425",
+      "functions": 103,
+      "import_thunks": 31,
+      "ranges": 106,
+      "range_bytes": 4942,
+      "unique_function_bytes": 4942,
+      "pdata_entries_covered": 53,
+      "warnings": 40,
+      "metadata": {
+        "source_sha256": "4b0be3a96703da2a82b91b34f07a6750e6ffdab6ffb3f3966c997cc648b89425",
+        "metadata_address": "0x180007000",
+        "returned_payload_address": "0x18000700c",
+        "returned_payload_length": 101,
+        "header": {
+          "format": 1,
+          "qt_major": 6,
+          "qt_minor": 5,
+          "requirements": 0
+        },
+        "CBOR": {
+          "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+          "3": "QtLabsAnimationPlugin",
+          "uri": [
+            "Qt.labs.animation"
+          ]
+        },
+        "metadata_sha256": "e8cc9eda4eeb7c7cd04909c3dcaa1c51002485668c5e5a314ec73ba3d84f42f9",
+        "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+      },
+      "all_byte_witnesses_pass": true
+    },
+    {
+      "name": "qmlfolderlistmodelplugin",
+      "source_sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+      "functions": 103,
+      "import_thunks": 31,
+      "ranges": 106,
+      "range_bytes": 4942,
+      "unique_function_bytes": 4942,
+      "pdata_entries_covered": 53,
+      "warnings": 40,
+      "metadata": {
+        "source_sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+        "metadata_address": "0x180007000",
+        "returned_payload_address": "0x18000700c",
+        "returned_payload_length": 111,
+        "header": {
+          "format": 1,
+          "qt_major": 6,
+          "qt_minor": 5,
+          "requirements": 0
+        },
+        "CBOR": {
+          "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+          "3": "QmlFolderListModelPlugin",
+          "uri": [
+            "Qt.labs.folderlistmodel"
+          ]
+        },
+        "metadata_sha256": "076d9cb58da1546da1aeea1e507cc503c32545bcb67923f12f8f78a6209e2284",
+        "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+      },
+      "all_byte_witnesses_pass": true
+    },
+    {
+      "name": "labsmodelsplugin",
+      "source_sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+      "functions": 103,
+      "import_thunks": 31,
+      "ranges": 106,
+      "range_bytes": 4942,
+      "unique_function_bytes": 4942,
+      "pdata_entries_covered": 53,
+      "warnings": 40,
+      "metadata": {
+        "source_sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+        "metadata_address": "0x180007000",
+        "returned_payload_address": "0x18000700c",
+        "returned_payload_length": 101,
+        "header": {
+          "format": 1,
+          "qt_major": 6,
+          "qt_minor": 5,
+          "requirements": 0
+        },
+        "CBOR": {
+          "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+          "3": "QtQmlLabsModelsPlugin",
+          "uri": [
+            "Qt.labs.qmlmodels"
+          ]
+        },
+        "metadata_sha256": "406e6aef1b85b3f02185ad2e54077e0d9b3cf64ba2758c7bf9a7ec81756aa011",
+        "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+      },
+      "all_byte_witnesses_pass": true
+    }
+  ],
+  "external_boundaries": [
+    "Qt6LabsAnimation.dll",
+    "Qt6LabsFolderListModel.dll",
+    "Qt6LabsQmlModels.dll",
+    "Qt6Qml.dll",
+    "Qt6Core.dll",
+    "CRT allocator and initialization routines"
+  ],
+  "limits": [
+    "Provider-discovered functions only",
+    "Decompiler types and indirect-transfer warnings preserved",
+    "No external module algorithm recovery",
+    "No loader or Windows execution",
+    "No native implementation or parity claim"
+  ],
+  "correction": "THUNK-COUNT-CORRECTION.json"
+}

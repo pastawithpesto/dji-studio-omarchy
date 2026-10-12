@@ -11,3 +11,5 @@ Use the latest official REA upstream with Ghidra in an owned installation. Prese
 Keep raw analysis local under `reconstruction/root-small-qml-plugins-20261012`. Publish selected report and source identities only after independent review. This task owns this plan and `docs/evidence/small-qml-plugins/**`. No native implementation, vendor execution, dashboard publication or main merge is part of this research.
 
 Completion check: original hashes stay unchanged; LLVM and binutils export routes agree; every claimed analyzed range matches original bytes; coverage and missing boundaries are explicit; independent source-evidence review and separate milestone verification pass.
+
+Analysis candidate:309 provider-discovered executable functions,318 body ranges and9 data regions match original bytes. Full raw packet and snapshots remain sealed locally; selected corrected report, indexes and export output are copied into the evidence scope. Initial thunk wording is corrected additively. Latest upstream4573e8cf, package/server6.4.0 and Ghidra12.1.4. Independent packet/publication review and separate verification are pending. This is not runtime or application completion.

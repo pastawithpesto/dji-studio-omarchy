@@ -1,0 +1,3849 @@
+{
+  "source_sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+  "functions": [
+    {
+      "address": "0x180001000",
+      "name": "_guard_check_icall",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001000",
+            "end": "0x180001002"
+          }
+        ],
+        "total_bytes": 3,
+        "span_bytes": 3,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001000",
+          "length": 3,
+          "file_offset": 1024,
+          "sha256": "b6cbececf1b07e74f37d57710c68c31f0b92cb08d51093252b321b07542e177b",
+          "evidence_id": "ev_2556b64d4398e6ff9813bb19a2e1428dee09ccb747ec4a248b182df2505db4ce"
+        }
+      ],
+      "evidence_ids": [
+        "ev_8b2821f9d0a2b738ebbcfbc928a6095cfaecc12b63932d03ed7fa1218d804eb2",
+        "ev_a24f5fe2dfe0e0254822a13d91a79f01649cec00b482990cda2b2e5075c019d0",
+        "ev_784d2e65ecb777e34fdc479733a9332a43ca73093109b8dc4ca531a94ac3dc23"
+      ]
+    },
+    {
+      "address": "0x180001010",
+      "name": "FUN_180001010",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001010",
+            "end": "0x180001017"
+          }
+        ],
+        "total_bytes": 8,
+        "span_bytes": 8,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001010",
+          "length": 8,
+          "file_offset": 1040,
+          "sha256": "a0a401a347119de0466dfe59b0828369963bdb6da4ed836d606b341ad57d8dc0",
+          "evidence_id": "ev_4faf977b05d4409aa8999785c13100b7cff7667b36b0c3d4a2f713823000cd17"
+        }
+      ],
+      "evidence_ids": [
+        "ev_6b5413b81e299786e6f3227c9d244d13e76f83bf832c7e2715f9db3792b162ae",
+        "ev_a430f674698cfb0298da87a3419c88f26c562e4f94614cea2f09b20dc8505362",
+        "ev_533ab3046e61a3a41c7c425e1f17714545b9d75c633352e3105b48b22cf50f6c"
+      ]
+    },
+    {
+      "address": "0x180001020",
+      "name": "FUN_180001020",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001020",
+            "end": "0x18000105f"
+          }
+        ],
+        "total_bytes": 64,
+        "span_bytes": 64,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001020",
+          "length": 64,
+          "file_offset": 1056,
+          "sha256": "c0cb04659c529f6263d730ff9a9627b355ad55e9ad594f97a1428ee4a8bc1896",
+          "evidence_id": "ev_2556c46326543af5e4454394e264d2af4ba937b1905141f3aa9411cbb9466ce5"
+        }
+      ],
+      "evidence_ids": [
+        "ev_765bda9e7e3e7df2c9d5176ef970dbc5a23d10c5cbf70a5777c1ae9cd31237d9",
+        "ev_cbf7a9da738fa81909c3c891d37a590a141e9bf48e7eca0a61942de4c700af89",
+        "ev_e7b6c50fd63e18241d083a179bffbf1093a20f39d893170c465fba65ec4f9761"
+      ]
+    },
+    {
+      "address": "0x180001060",
+      "name": "FUN_180001060",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001060",
+            "end": "0x180001072"
+          }
+        ],
+        "total_bytes": 19,
+        "span_bytes": 19,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001060",
+          "length": 19,
+          "file_offset": 1120,
+          "sha256": "3ea8445133ca535ffa02603033aae03417125a1d48c2e853c7fa2a7abc31b4f2",
+          "evidence_id": "ev_89b067d92bbc20de21e58abe754ba077ffae10710b6a2d7b36d83097ca44182f"
+        }
+      ],
+      "evidence_ids": [
+        "ev_72d83b7aa967319c6970e006d73b4511fa7bb4f3c07a53ec13b38ecd64cf2f90",
+        "ev_9271554ba368db258509a71464a4fabb3079b6ace1f74416a9f7c406f5b0757f",
+        "ev_510112e96877ef0237f83a91976e3a9a02b1f3d02c12dd2ef234a21234b43076"
+      ]
+    },
+    {
+      "address": "0x180001080",
+      "name": "FUN_180001080",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001080",
+            "end": "0x180001087"
+          }
+        ],
+        "total_bytes": 8,
+        "span_bytes": 8,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001080",
+          "length": 8,
+          "file_offset": 1152,
+          "sha256": "611ec16ba75e8abbc3f1958aa480853e2e6bb623b0106f66091dc2491bf324eb",
+          "evidence_id": "ev_d12116c419154a3f9f4a69b1f2a066e098e5c315868e0e8a7adc54e90bd723ee"
+        }
+      ],
+      "evidence_ids": [
+        "ev_afea95a4c978dfc3b576572734be9290057897fee41be556469a1d5a7272536d",
+        "ev_234ef068a3d9caf5ac7c4d73660d6d6575c55d692663bf7c86e702748668a01a",
+        "ev_05ecbe9a5374fbc6ab63b3edf57fa9257364fabfebbf10e44bffef8791ea669f"
+      ]
+    },
+    {
+      "address": "0x180001090",
+      "name": "FUN_180001090",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001090",
+            "end": "0x180001098"
+          }
+        ],
+        "total_bytes": 9,
+        "span_bytes": 9,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001090",
+          "length": 9,
+          "file_offset": 1168,
+          "sha256": "86285014e0e7f1dec4567c0f8ea5a6a0e8ca54edac53900e440086f6659b61ff",
+          "evidence_id": "ev_bddf1ec8844f28f05946992f2b6f4bb9760e3e91bd29c3c9880a60f6f8846521"
+        }
+      ],
+      "evidence_ids": [
+        "ev_9fa0287b549ec7af5761b82d296d56af578205b8ee443fe591c6a5e8404858fd",
+        "ev_0ffb31da3fd73d654791342e71b354c7d6ef736a51a17e3291ee104efd657e0b",
+        "ev_f32799b0e5a7bf5c18a9b6260b823b0574a1137bdca1c729deeda74f53fdb762"
+      ]
+    },
+    {
+      "address": "0x1800010a0",
+      "name": "FUN_1800010a0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800010a0",
+            "end": "0x1800010d4"
+          }
+        ],
+        "total_bytes": 53,
+        "span_bytes": 53,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800010a0",
+          "length": 53,
+          "file_offset": 1184,
+          "sha256": "95abe1c290f621b45578830e52d7ea1f84903827848747307e647e10bcfb26f7",
+          "evidence_id": "ev_bdf8f6ded235ba4b713cd7ecc0fb87c7a48733a0034cf7485c8207a9acbdee3c"
+        }
+      ],
+      "evidence_ids": [
+        "ev_07291501c1fb4630a2766bd8679d95f6986695bb2e3d653e02b6554d5b7f4184",
+        "ev_ac920f5cfce173b5046db246a2eff0ada46d63d57caa3c81a9cf64557ed781e5",
+        "ev_246b037db34f8c4584f072ccd55646750bbc65c678ef7949553702f39d3cd037"
+      ]
+    },
+    {
+      "address": "0x1800010e0",
+      "name": "FUN_1800010e0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800010e0",
+            "end": "0x1800010f9"
+          }
+        ],
+        "total_bytes": 26,
+        "span_bytes": 26,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800010e0",
+          "length": 26,
+          "file_offset": 1248,
+          "sha256": "9bfe20a7e26086fb814a167ac5d716db9c9bc1f151794c23c3396af090214022",
+          "evidence_id": "ev_9b262232359fe38c659c79bcca01659700adee8a9c7281ea144a7c70bab72b2e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_e268f9fe828e63f167e9ae8d249671b1d64c9805148308f82e833d50d4e65c22",
+        "ev_ba7834487cc55804b55d69065c2da75c6afe49ed63577f8391ef25d062cce756",
+        "ev_43098064fe2653644031dbbb4bb91c4b18286d88d618dc61d4eb3d51558a02fb"
+      ]
+    },
+    {
+      "address": "0x180001100",
+      "name": "QT6QML.DLL::QQmlEngineExtensionPlugin::qt_metacall",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x2"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001100",
+            "end": "0x180001106"
+          }
+        ],
+        "total_bytes": 7,
+        "span_bytes": 7,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001100",
+          "length": 7,
+          "file_offset": 1280,
+          "sha256": "b79a1cec82993827b07f103605bb1e78fa4e540589bc721d0733fbc966fd7293",
+          "evidence_id": "ev_c8aa7ad2e5a870399026c52a4c318f0b463d8501ee3ded8d5b55eb6ce62858ce"
+        }
+      ],
+      "evidence_ids": [
+        "ev_0eca4c591a2b8693ddb3fe723f5f42b84e02c431948cecba11fca591714b68f5",
+        "ev_1dd3f814929ecf3b809aa8df68937a7b74ef3261fed973520ddc3ede1a9cd011",
+        "ev_436c5af3ca60a0fa8a61a63a5c4204bbfcc2f9d47b187a5708b8434ca1a3fcd4"
+      ]
+    },
+    {
+      "address": "0x180001110",
+      "name": "FUN_180001110",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001110",
+            "end": "0x180001157"
+          }
+        ],
+        "total_bytes": 72,
+        "span_bytes": 72,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001110",
+          "length": 72,
+          "file_offset": 1296,
+          "sha256": "e5b467c55652d774c4bb39990d6a71dcfccc9b2b60a3d00b16157bfb09f8982b",
+          "evidence_id": "ev_41691b1832bf6f7851645d423fe77554f88c0dd9c27b35e09b60b885e9485d31"
+        }
+      ],
+      "evidence_ids": [
+        "ev_5a64e0bec79da1bd729f9486c78adb34d09ada00ed4b1ca2baa90ee218b53833",
+        "ev_31ee3f6ccaa93357350c62b683bf56f8acbcd41823a5edacf21554c4eb4245d0",
+        "ev_6915fc07d2a99b07930550b171d6f68d39dfbf6df107af50a2aea1b6407c81b0"
+      ]
+    },
+    {
+      "address": "0x180001160",
+      "name": "qt_plugin_instance",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001160",
+            "end": "0x180001281"
+          }
+        ],
+        "total_bytes": 290,
+        "span_bytes": 290,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001160",
+          "length": 290,
+          "file_offset": 1376,
+          "sha256": "e75d9cfd2a3057af65ef87e7e009f162de42b6303a477bec08d18b773f30c9ff",
+          "evidence_id": "ev_1d4b87fa3b77b2f4dd82a1665c42d9c0f9565db45f15118dcf958f4f9b7a9e86"
+        }
+      ],
+      "evidence_ids": [
+        "ev_279e86d8749744f358e802bb6aa1fdc617de9f9eabc61e721e2435a4d233d7b3",
+        "ev_828b779039ddd14c7abdcb06c654e3959b521ccdc357b204376a000380e3ff28",
+        "ev_e1278f2b18a7243a286a907861124f88e5a014f329a44d83e645defc813dfa8e"
+      ]
+    },
+    {
+      "address": "0x180001290",
+      "name": "qt_plugin_query_metadata_v2",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001290",
+            "end": "0x1800012a5"
+          }
+        ],
+        "total_bytes": 22,
+        "span_bytes": 22,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001290",
+          "length": 22,
+          "file_offset": 1680,
+          "sha256": "00a43e87ee4d56735015d3b8430955915457d41f7e77f000dcd5d3117f6f066a",
+          "evidence_id": "ev_1dcb008949fb6620cd4e40d839e07724b53c873b828500be41028d2c8b662698"
+        }
+      ],
+      "evidence_ids": [
+        "ev_84fab34d6943ea48f05f99da33d09e11ca56ef12c18b21d79a53492d6a8177eb",
+        "ev_89e799cecc74747c11fbde6b08a6f5a8f53fe94580dc80f08694270faf42d8f1",
+        "ev_55073d2f30ce143811cb8b5bffb839abbb44b6cb174a042f4890e870710e37ec"
+      ]
+    },
+    {
+      "address": "0x1800012b0",
+      "name": "QT6LABSFOLDERLISTMODEL.DLL::qml_register_types_Qt_labs_folderlistmodel",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x1"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800012b0",
+            "end": "0x1800012b5"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800012b0",
+          "length": 6,
+          "file_offset": 1712,
+          "sha256": "e11620d209cfa16c7e03c421c57aea910f3340f821d71e65f40a31db7c6ce62f",
+          "evidence_id": "ev_4c33a9b8a8702b1d65d11465b14707c13cb5b8132f43bab3e81464af6265fe17"
+        }
+      ],
+      "evidence_ids": [
+        "ev_b75ee5f4d3d267f668a4943cb1de6e6062d3e0261613c2515b17eec13e19e373",
+        "ev_9f8030ebf06322ea128b5eb38a32cb820b1e31e60bb5ba147c46dbefa67264c5",
+        "ev_60bfc54cc21920ae43e54f4909e9eb880459d37ab71e607cb99dca2140f553bb"
+      ]
+    },
+    {
+      "address": "0x1800012c0",
+      "name": "QT6QML.DLL::QQmlEngineExtensionPlugin::initializeEngine",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x5"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800012c0",
+            "end": "0x1800012c5"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800012c0",
+          "length": 6,
+          "file_offset": 1728,
+          "sha256": "1e0fc222a60356b9567698514c3403a2c476c87007b8eaa35b8f7b03a900085f",
+          "evidence_id": "ev_17d8b434fd431d73e577ebcfb218906e18a3ac187e09cd171ea49f86e99c256d"
+        }
+      ],
+      "evidence_ids": [
+        "ev_08a19dfc52400353baaaa4eec8cb539ed4408691d5ed74149449f6ffd1c0e5d0",
+        "ev_54460c067971e1a94be2c943a4048d77aa4828c27e493478af750ad0d4bc1b8b",
+        "ev_2f596a5b9765836d8fee12ac4598cf46768619f3de4c602d36a65ce5d34a8fbc"
+      ]
+    },
+    {
+      "address": "0x1800012d0",
+      "name": "QT6CORE.DLL::QObject::childEvent",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0xe"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800012d0",
+            "end": "0x1800012d5"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800012d0",
+          "length": 6,
+          "file_offset": 1744,
+          "sha256": "86ffcb46984c32ad02a39cbc888168977c065fa9426342fa180f0f5bd97c3d23",
+          "evidence_id": "ev_7adeb6b87cd36b0cf0bcea4a094778d4809502e6bdaab7c8c53ed500f26ec865"
+        }
+      ],
+      "evidence_ids": [
+        "ev_c0c5e5e03bd67075194fd173b91301ee2ff3f6c2050ab7cf08fb4fb65230105d",
+        "ev_510b2fc8d5b284a24a91a7222db4af0dc6b8847f20082e647bc99380b08d3566",
+        "ev_f50701f79d43b2ec07f9952776710821b4b566cb76afb9bd9466df4ae5a5b84c"
+      ]
+    },
+    {
+      "address": "0x1800012e0",
+      "name": "QT6CORE.DLL::QObject::connectNotify",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0xd"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800012e0",
+            "end": "0x1800012e5"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800012e0",
+          "length": 6,
+          "file_offset": 1760,
+          "sha256": "587fa040780df8f1d68eb30405ac855ecc2bd0930150864f1ab1039817d108d9",
+          "evidence_id": "ev_83bc5138d31ed924aa89a4d0051285e5164f1e042c59671de7beaffe368ba238"
+        }
+      ],
+      "evidence_ids": [
+        "ev_429123bc20b7cce697dcc0ff5758e5f8f9f9bb0c846f745d01eedec146f4f46e",
+        "ev_2da541f26929a0312245563df1d93b31cc230d1ae677c0bd0741a787dabb3a6b",
+        "ev_d262ada2bc2a34cdff01a82a89881cad7dba863d58a609465e3864243419993b"
+      ]
+    },
+    {
+      "address": "0x1800012f0",
+      "name": "QT6CORE.DLL::QObject::customEvent",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0xc"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800012f0",
+            "end": "0x1800012f5"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800012f0",
+          "length": 6,
+          "file_offset": 1776,
+          "sha256": "624c13ad40655cd71de0abfd6272385eedeba0b55c12c3229e5fc3a46b541155",
+          "evidence_id": "ev_c31a390042bfd7fffe931c4ab346972e1de5f97cd3cbb3934c7167ac99e5d262"
+        }
+      ],
+      "evidence_ids": [
+        "ev_ac4639457b40719089099b5874f6750e5adcdddb8276008a00ce0db5ee14f67c",
+        "ev_2f789cb6caba685dcb505537e4cccca5aa359edc123641149b9b7c7ca48854be",
+        "ev_a641c8c4fe1f0094443a4d49cdd6659ab6773035e0c60f21dcbcdd4c3e869296"
+      ]
+    },
+    {
+      "address": "0x180001300",
+      "name": "QT6CORE.DLL::QObject::disconnectNotify",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0xb"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001300",
+            "end": "0x180001305"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001300",
+          "length": 6,
+          "file_offset": 1792,
+          "sha256": "7ad30393e7bb1388da1bc7f7086b486481418cdcf84f12a3b802e556e0367723",
+          "evidence_id": "ev_7c4303d340f46e4bb75009493a8de81ce044cb1fdd07568270f0b31fd1f691a7"
+        }
+      ],
+      "evidence_ids": [
+        "ev_e2c50e83ab23e8d6b9100fbc760b33f506ab90a7c0f28f8dcd7595c10807bab6",
+        "ev_cbe2e39c571e5480b1548fca1a3a0b062be4a43960aab4ebff15d481d8a5a647",
+        "ev_e1dfd5f975061eb717528c9b4fb52f80e19781862f64a50e736f8ac95316708b"
+      ]
+    },
+    {
+      "address": "0x180001310",
+      "name": "QT6CORE.DLL::QObject::event",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0xa"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001310",
+            "end": "0x180001315"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001310",
+          "length": 6,
+          "file_offset": 1808,
+          "sha256": "a7e0182fbd955abd98a03059937e0c3ce9bec78b2fe54439c02d52bd11f3e619",
+          "evidence_id": "ev_673a16f7ac1bc882b1a6d9bdf245c648e9c1985ecd2288d4c46ee59db87616e6"
+        }
+      ],
+      "evidence_ids": [
+        "ev_4816ad56a7ac1c2b1cc9be93008afce7a2acf1a967e29781f9258ba8f1af137b",
+        "ev_3cef1feb0a7e820e03ff7df14fe172adb805ea73111d2933b7ab4091f48d6265",
+        "ev_6cd158de5411e68be5a69bbdca87139656da93e09e190af410f00b22d3d0d81c"
+      ]
+    },
+    {
+      "address": "0x180001320",
+      "name": "QT6CORE.DLL::QObject::eventFilter",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x9"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001320",
+            "end": "0x180001325"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001320",
+          "length": 6,
+          "file_offset": 1824,
+          "sha256": "3cdc8ff48eeac1cddaaf2c3383be0e0a2515c9517cd984d28c97a3b04c51f3b6",
+          "evidence_id": "ev_8ad33a03d93498eb4ad2aa7816abf4a8f19b35261c0bddfc338dc13d4f0b93a5"
+        }
+      ],
+      "evidence_ids": [
+        "ev_5b75bf538f689e30aa068aada4bfd113be55790d819fb716dc15c48a6fb8ea64",
+        "ev_be4664b0858154e0e5f281522164e1d9330299395bfd5f5354e6c47ea550cfd6",
+        "ev_983e1d200ad6c5d2ed4d2ab3be87e7420c9491a7a332a99bdcf29e49053a5c5e"
+      ]
+    },
+    {
+      "address": "0x180001330",
+      "name": "QT6CORE.DLL::QObject::timerEvent",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x8"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001330",
+            "end": "0x180001335"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001330",
+          "length": 6,
+          "file_offset": 1840,
+          "sha256": "6ce5f51a6258fad0b6b5d8fc0fe7d8e9f3dbcc33b6ccd1f5ad40a39a39080b8d",
+          "evidence_id": "ev_f423d8ece7780dbbafeb20ba6cf4820cdeed864a0947546560a30ac0e3595b7a"
+        }
+      ],
+      "evidence_ids": [
+        "ev_2b10be679bbc46a1febbd46c84ae98ac71f2001dd08bb0e4a8c5fee36b17f874",
+        "ev_1a68fb947a5dd6a08a186bb0e2d555c04f3d48413463e44c1320bd0bc3585a30",
+        "ev_35c4f15568ea46a2beaa0f6636f7dba0871bafd2591e1aee79d3ff90c877707f"
+      ]
+    },
+    {
+      "address": "0x180001338",
+      "name": "FUN_180001338",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001338",
+            "end": "0x18000136c"
+          },
+          {
+            "start": "0x18000136e",
+            "end": "0x180001372"
+          }
+        ],
+        "total_bytes": 58,
+        "span_bytes": 59,
+        "non_contiguous": true,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001338",
+          "length": 53,
+          "file_offset": 1848,
+          "sha256": "057b6bca419ada639c24c5276a1f8e2f2b7e1e281b3c019dc413864171df6728",
+          "evidence_id": "ev_89073dc3f6c236d3b006b18cabd17165b246083f8be9e48b73e0131e298a98cc"
+        },
+        {
+          "address": "0x18000136e",
+          "length": 5,
+          "file_offset": 1902,
+          "sha256": "5512d94789f1798362e15e60969c827ad04e3545c9a300843f8b4ce457d19e1c",
+          "evidence_id": "ev_4dbb5b0ea54dec3a439147b9bb1e5dc204ace91456b5865316cea9ee9ccd5a3d"
+        }
+      ],
+      "evidence_ids": [
+        "ev_8106854babe31d6d08bca058a51c6e37bf5b85780d14f246169c705f669de378",
+        "ev_98fd5cf9291fc24d0aa73f757972092fe224b7e50288b2497c34c1be7ee649a2",
+        "ev_bba75a62cf0764e67f39773c24037c7de67c881c4a5047ef7ca51f48d6b14f89"
+      ]
+    },
+    {
+      "address": "0x180001374",
+      "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "0x180002388"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001374",
+            "end": "0x180001378"
+          }
+        ],
+        "total_bytes": 5,
+        "span_bytes": 5,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001374",
+          "length": 5,
+          "file_offset": 1908,
+          "sha256": "afb687cb0868a409a2b054430c7d86f9dc054970044c32f3f2ed8846c3cd8684",
+          "evidence_id": "ev_75628719232649d08e4464aa103232f1563e6b5add22986d615ece7302a3e350"
+        }
+      ],
+      "evidence_ids": [
+        "ev_b2317950e485c0b9ced4bb00ba21321357d9864b8cac164664ca1fe87a7f5b37",
+        "ev_13a808b9ee9bfdf91e9109634d66bc80586179269a172183462779dc6ab3398f",
+        "ev_54e184c4f921b980a41dcdb5e2e13bb21f9d848e6434c10f4b3575d6cc4adb1f"
+      ]
+    },
+    {
+      "address": "0x18000137c",
+      "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "0x180001374"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000137c",
+            "end": "0x180001380"
+          }
+        ],
+        "total_bytes": 5,
+        "span_bytes": 5,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000137c",
+          "length": 5,
+          "file_offset": 1916,
+          "sha256": "cb20b0bdcd87287b71788380cc107e139438e4cfe401d353e92485f69e43b5d5",
+          "evidence_id": "ev_622e6b85dd828d0aa28af62be42d03ce4b32041203648a3ac6a71f4cea0b4781"
+        }
+      ],
+      "evidence_ids": [
+        "ev_55c472996baf192cb537f838b31d17b11634c0625781b0a892e3389def21a8f2",
+        "ev_acd54560a8c13b9fb91e1108121b5c31fb1008b3d1e4df68e17fc304ecf69c2e",
+        "ev_1c681b43ba7f49ed2283c74dd4a64049a8a912d15e4011fc98e15b88ba80f942"
+      ]
+    },
+    {
+      "address": "0x180001384",
+      "name": "__scrt_acquire_startup_lock",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001384",
+            "end": "0x1800013bc"
+          }
+        ],
+        "total_bytes": 57,
+        "span_bytes": 57,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001384",
+          "length": 57,
+          "file_offset": 1924,
+          "sha256": "4241b719cacc244ff38cd051b3e75aea46f37d80f52af0659b4a00c0de3c0629",
+          "evidence_id": "ev_e054b6249210d5731683df2b6cc762677de1c5de9eba8b799668303888262873"
+        }
+      ],
+      "evidence_ids": [
+        "ev_0684adc91ccb9a0a0863cfe82f9aa5cd9bafd2c5a22f7021e2e0059a4ecdf75b",
+        "ev_86ee0202476e0e630b4d267329f7ff820cae040dd512d0d16842e6d3d1e8f1f2",
+        "ev_9488fa5dcb6affc1ad88bfab60b611317fe0f0bf2dbf4b3b1e05493710fa99c1"
+      ]
+    },
+    {
+      "address": "0x1800013c0",
+      "name": "__scrt_dllmain_after_initialize_c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800013c0",
+            "end": "0x1800013f3"
+          }
+        ],
+        "total_bytes": 52,
+        "span_bytes": 52,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800013c0",
+          "length": 52,
+          "file_offset": 1984,
+          "sha256": "5289d5d9305570ab6aa45205c92441a6945d9d26447e0c3f6b9cb27138680f93",
+          "evidence_id": "ev_bb11c8343a4108a8a884dc075578820ec9b2a9f5cc71f360788766d4150461a2"
+        }
+      ],
+      "evidence_ids": [
+        "ev_ba4dfd8bf699c40b8853cfa1b3efb61dcbe6e17ff964349c1f5af63e17bbb1fe",
+        "ev_7a2515f5f4abb3c53384caaf3ed36c045f69d7c35a143c2431f09afb515152d3",
+        "ev_e0bc16ab60421ae8f606c0d7d369dd1ad1c57b89b38014c5463c3c8998c4cc1b"
+      ]
+    },
+    {
+      "address": "0x1800013f4",
+      "name": "FUN_1800013f4",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800013f4",
+            "end": "0x180001408"
+          }
+        ],
+        "total_bytes": 21,
+        "span_bytes": 21,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800013f4",
+          "length": 21,
+          "file_offset": 2036,
+          "sha256": "78fc5af949845cd436feedfa11fd1181241512f9664a1186594a7b2f0861d98c",
+          "evidence_id": "ev_ac0ce9c8393279746e79b383775cb3e89ef8559f833f9ced11edca64f14d77bf"
+        }
+      ],
+      "evidence_ids": [
+        "ev_a43642d297e193ad6022f86ff0f3d56caf33985ac09fd2b627269734defbca69",
+        "ev_53f2c22b7caab51b26d6b1497ec922d1e14c167857fc9671ab3c43c0900a81e5",
+        "ev_6081d0a956f84bf1a738a6b8560fb4c4866517429014b9f26f80f6a568fa92a7"
+      ]
+    },
+    {
+      "address": "0x18000140c",
+      "name": "FUN_18000140c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000140c",
+            "end": "0x180001433"
+          }
+        ],
+        "total_bytes": 40,
+        "span_bytes": 40,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000140c",
+          "length": 40,
+          "file_offset": 2060,
+          "sha256": "7a373dcfd3cc03484c23b1d4f9ee5c520ab23185de20ce18764c3fc617eaa238",
+          "evidence_id": "ev_d9b94e0a5401869ba3dcb930c2c82339bd52982ef1afdb7b7e6c01894507bf95"
+        }
+      ],
+      "evidence_ids": [
+        "ev_6f71aa968423f86bc132fb1e4d539513ed80829499eb59c2c4db972cdc30bb64",
+        "ev_c57b93bd1b4f199f08ddb36c78e3569c5f519641d4316c519a58443672818a72",
+        "ev_7160e57ccf8440523420db3b071e02b51db2dbc733b1826f7bf346fade700839"
+      ]
+    },
+    {
+      "address": "0x180001434",
+      "name": "FUN_180001434",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001434",
+            "end": "0x180001448"
+          }
+        ],
+        "total_bytes": 21,
+        "span_bytes": 21,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001434",
+          "length": 21,
+          "file_offset": 2100,
+          "sha256": "a2a1a324d709e7f7f65c78bebec3be812e7d880f4dab14597b19bbf6aa3cde02",
+          "evidence_id": "ev_84a58864d4db7c5c172a5ba273113c06448373df79756b0091f8357d1585a845"
+        }
+      ],
+      "evidence_ids": [
+        "ev_ccc16037f6f1243d7c7cebc144d0d29a335938e48a5fbb00ba6ea70fdf0d722a",
+        "ev_3b4c98bf0e8abe02da6774c5e945ec9cc7fae18a5b2e98441dcf67bd683026f4",
+        "ev_c7650cee8657fea27b9ae888f11021c027b19e1ee24510bf64081793fa92b4a1"
+      ]
+    },
+    {
+      "address": "0x18000144c",
+      "name": "__scrt_dllmain_exception_filter",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000144c",
+            "end": "0x1800014ab"
+          }
+        ],
+        "total_bytes": 96,
+        "span_bytes": 96,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000144c",
+          "length": 96,
+          "file_offset": 2124,
+          "sha256": "f9985bc8658715736dd3546ae682a0b805d64c1fb01f6fe04678e6c7f7ea27b7",
+          "evidence_id": "ev_4bfbed169623d86d36e88da05878dbe724749a7b2ad2c688604698ac3916f07a"
+        }
+      ],
+      "evidence_ids": [
+        "ev_78c1fcecb87b8a78c03bdc2d18b2ab3bbda71875af76526a5736c80565beb3bd",
+        "ev_edd02f1db9b5bc88c191a802bb8c459053fd541560a468046eaf31487ff5486f",
+        "ev_cf535136494a2e83d49061659626d6cf31405efbdc4c4f81b4e9e472db91405c"
+      ]
+    },
+    {
+      "address": "0x1800014ac",
+      "name": "__scrt_dllmain_uninitialize_c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800014ac",
+            "end": "0x1800014db"
+          }
+        ],
+        "total_bytes": 48,
+        "span_bytes": 48,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800014ac",
+          "length": 48,
+          "file_offset": 2220,
+          "sha256": "7f8c5ad2149ea12599fe2f311e751da6e072c35ae2c50348a4ec958d3bf60873",
+          "evidence_id": "ev_86c329ca7346e8c7cae012b9f9b13b1ceb4e1a5ace19e0d6647aafd4733ad7fd"
+        }
+      ],
+      "evidence_ids": [
+        "ev_7d8981a373d4c91274e348df1661cf0d5aff9fcc53607c70f05bad539af076d2",
+        "ev_7469074d6964b3d5f03f89a44d85e04e6aabc21bbf082a5e3dc6e6818b0805e4",
+        "ev_2eb7fd8c1612282f86b8804f92bac1615fa7b548ee21bcb05e0b78693631570c"
+      ]
+    },
+    {
+      "address": "0x1800014dc",
+      "name": "FUN_1800014dc",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800014dc",
+            "end": "0x1800014ef"
+          }
+        ],
+        "total_bytes": 20,
+        "span_bytes": 20,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800014dc",
+          "length": 20,
+          "file_offset": 2268,
+          "sha256": "5e7b4908bb1fdec95dc6964aff5191de29e169ccdcca64d29e89bf5d6757264b",
+          "evidence_id": "ev_519cd78d33ddca2833797923ce338ea13f32377de327f03c3a4a6f60faf85190"
+        }
+      ],
+      "evidence_ids": [
+        "ev_7f5ee439c299e6857bbfcadf3ddbf1cd017ad50dc6b7233c8fe40ea73dbbdc3e",
+        "ev_1f7c2b9682459c27e8388a48f73f2dde2e142f08e51d3301623d222543072631",
+        "ev_d99e303499f9e4156172aeaa6baae3d6e7c832bd3c489deb4144d4db71a56e86"
+      ]
+    },
+    {
+      "address": "0x1800014f0",
+      "name": "__scrt_initialize_crt",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800014f0",
+            "end": "0x180001538"
+          }
+        ],
+        "total_bytes": 73,
+        "span_bytes": 73,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800014f0",
+          "length": 73,
+          "file_offset": 2288,
+          "sha256": "441ebe7e3daf8be2aac96bdebec4e7c4b4f2605e3ca08315a70f7f3fcdd9e312",
+          "evidence_id": "ev_882ae02933a65094061f98d8e7e0048285e3193f670695f27e07eeec0cf763fb"
+        }
+      ],
+      "evidence_ids": [
+        "ev_5471f61a98f335b2134deecc5e9ff52fd1077e428a25530a6f428978e82504b5",
+        "ev_b91158c820707a12693647543f136dbd59f7b4a1b327d76afd7f40a798aa7bef",
+        "ev_fcbfefc9be9817b7872fe30fde6044cbbc1de295d07774af3d379a9ce0581b28"
+      ]
+    },
+    {
+      "address": "0x18000153c",
+      "name": "FUN_18000153c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000153c",
+            "end": "0x1800015c6"
+          }
+        ],
+        "total_bytes": 139,
+        "span_bytes": 139,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000153c",
+          "length": 139,
+          "file_offset": 2364,
+          "sha256": "10cec0c06f92a7f19ec1f1b372538e780a7b9bd4b84246f44fa3f09828495249",
+          "evidence_id": "ev_b65235e917fe2cd467e3b959a45a5daefb864df7332c84338e30ea0a8a11c119"
+        }
+      ],
+      "evidence_ids": [
+        "ev_ffac785a68f74ff11a4fc38b69acb61ee7820b9758f9c623bedb13ef9ddfdd3d",
+        "ev_d600d8fb6770fe73341f4744a4868a3a85de8c0ac552b9b30e2e29fe84aba957",
+        "ev_a591b82156d361e1e48900d83c9ce5a4cb8d2e47fe60000418468aed5a69dcc7"
+      ]
+    },
+    {
+      "address": "0x1800015c8",
+      "name": "__scrt_is_nonwritable_in_current_image",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800015c8",
+            "end": "0x180001658"
+          },
+          {
+            "start": "0x18000165b",
+            "end": "0x18000165f"
+          }
+        ],
+        "total_bytes": 150,
+        "span_bytes": 152,
+        "non_contiguous": true,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800015c8",
+          "length": 145,
+          "file_offset": 2504,
+          "sha256": "f4776549b3c85dded1ba8b0081e0c4f0bde3c1eda46653de9a52d83106b73122",
+          "evidence_id": "ev_9408fe32e0b934be106dd570a82aec5ae5e4929ed6dd57f988feea25c6bf686d"
+        },
+        {
+          "address": "0x18000165b",
+          "length": 5,
+          "file_offset": 2651,
+          "sha256": "ebf314b76e5d29d2de83c1f5902f72c4543751eae0bb7513d5ad0ed7f0805bc8",
+          "evidence_id": "ev_605c8811702f42771abf12e8fb20de72b8df6d10fa364cc2ed1772e351e13a1d"
+        }
+      ],
+      "evidence_ids": [
+        "ev_46a9626491ad0575608b87ffd6bf517d72808988047c6b4ee3ef8d7046c9f376",
+        "ev_44130a7bc071ee83679a32b61a59222d56a666763a79e993981c272d58b040d6",
+        "ev_f7c096f481171c59941436bd5a450e2a051926abfaf227f3c3545d6e9eb816e4"
+      ]
+    },
+    {
+      "address": "0x180001660",
+      "name": "__scrt_release_startup_lock",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001660",
+            "end": "0x180001683"
+          }
+        ],
+        "total_bytes": 36,
+        "span_bytes": 36,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001660",
+          "length": 36,
+          "file_offset": 2656,
+          "sha256": "00800fedff99663782870d870d04f8edac2275e54ab107e5122ffc1e4e195272",
+          "evidence_id": "ev_2657d8a57eac9381a33054972aab248f67fa9664634a31a63133e0fa29a88ac9"
+        }
+      ],
+      "evidence_ids": [
+        "ev_3fd9be2674af165b862bc606440e308b7abb134252e5df3ea50f53a82c808619",
+        "ev_faaf4f26c730e7398a9dc3097920a2f667e39bf5db720291dd3416488713ef50",
+        "ev_c66b801fbcf844191dea1bb6d35d078e4f29764d56189bcc763392400f2dab9b"
+      ]
+    },
+    {
+      "address": "0x180001684",
+      "name": "__scrt_uninitialize_crt",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001684",
+            "end": "0x1800016ac"
+          }
+        ],
+        "total_bytes": 41,
+        "span_bytes": 41,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001684",
+          "length": 41,
+          "file_offset": 2692,
+          "sha256": "56cb1037380857771b48a608dc0f1f240d97b35584240f11f5289a72d03c15a7",
+          "evidence_id": "ev_b82999327f2e166a48ac2a5778a950edd405a8f23d6b9b94e8acfb37bc70b68e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_9bad80a289d2b9c40df5e2e4e06a91b92f1582dfd216f3ddc40c5cd378bfa662",
+        "ev_4e8b21cc0d7c14e112ff45d3c4df2a611a4e0561f227900aea43b564758c5a23",
+        "ev_414d4a870ba7d7836039236dae872fb611ef2a7dafad2316473039e174a9cfad"
+      ]
+    },
+    {
+      "address": "0x1800016b0",
+      "name": "_onexit",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800016b0",
+            "end": "0x1800016e9"
+          }
+        ],
+        "total_bytes": 58,
+        "span_bytes": 58,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800016b0",
+          "length": 58,
+          "file_offset": 2736,
+          "sha256": "937e47f2e6894d875f9ff51c95321d29d0d1ad2a0065bf036eb8639ef1f5c50e",
+          "evidence_id": "ev_47fd963b177681173d1cbe2bd175306aefa7cae574b01f40193c6b3176f62e8f"
+        }
+      ],
+      "evidence_ids": [
+        "ev_5e0d561e108ba0b6e000a692f4bd0e052e9a783304520f9206736f05c91d8a7f",
+        "ev_c1fd7464da64132cbc58ad8c0c642a6d804ae92f5c4a28405eed8b7ac4154760",
+        "ev_2561a17d5e94fb55c778981c5f08e1d426f0e8cd2cd23aa98ff58076e1b096fc"
+      ]
+    },
+    {
+      "address": "0x1800016ec",
+      "name": "atexit",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800016ec",
+            "end": "0x180001702"
+          }
+        ],
+        "total_bytes": 23,
+        "span_bytes": 23,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800016ec",
+          "length": 23,
+          "file_offset": 2796,
+          "sha256": "5f6cc60cffa0d65bf26b38ba33118b937cb50452fa2562be76f41b421fcbe20d",
+          "evidence_id": "ev_70a2689a3d4682ca9ffb530af24744184f526d7c4dbe0e8b0fa036140427e524"
+        }
+      ],
+      "evidence_ids": [
+        "ev_258a3e65e7ab67ae08abe57eb73bc94f6891d6707c095d594d2dc81583b12c76",
+        "ev_cbcaabd74b54b097dc7dbd71eb33f2f03044adb7a7b737623f64718c0637f4c8",
+        "ev_4d0a4851d8a6806e10fa65b0e246fd1a3404e4687213b119b9b1992b12aaee6f"
+      ]
+    },
+    {
+      "address": "0x180001710",
+      "name": "FUN_180001710",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001710",
+            "end": "0x1800017df"
+          }
+        ],
+        "total_bytes": 208,
+        "span_bytes": 208,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001710",
+          "length": 208,
+          "file_offset": 2832,
+          "sha256": "78f58881304c1b6b87d65ce26f7bd9c13dfec11121aa67bc32d55a7ad9a924af",
+          "evidence_id": "ev_ee7de80eda753464acf5916d6d94fcba0166d1dfc49c4d3454deb5ae761ea4ee"
+        }
+      ],
+      "evidence_ids": [
+        "ev_f7f2c458fa80777843ede4449e790d136b2347a2164748bfc1fa1cd670ff9318",
+        "ev_6dcabe1db2471a7e855eb8b5cd526c8d7e96a85edd05fb20b84c25aa9c6e67f5",
+        "ev_e831dc4f23eefc15ae6e1f91eb3374902eb731774866137b757ca12d056fba30"
+      ]
+    },
+    {
+      "address": "0x1800017e0",
+      "name": "FUN_1800017e0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800017e0",
+            "end": "0x180001807"
+          }
+        ],
+        "total_bytes": 40,
+        "span_bytes": 40,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800017e0",
+          "length": 40,
+          "file_offset": 3040,
+          "sha256": "d72f3d532094ee26118410ba9e4cd48ae0637a6d5959b4a546612220231acee7",
+          "evidence_id": "ev_737b39a0fc9e424fac321d957e2364b1690a0768a44c634b14cf960145286e3c"
+        }
+      ],
+      "evidence_ids": [
+        "ev_404381405ff2d05ee5406fdc9d1c94cdd655e2c1503dc48244056972e11ce514",
+        "ev_16a2ee5a8399ea28198f18028b96dbe021f5415d704818df60abd30846ac6f44",
+        "ev_c7278fb38da0bcae6fcd55c666083958fbc6476fe7aa70da033da378f752213f"
+      ]
+    },
+    {
+      "address": "0x180001808",
+      "name": "_Init_thread_footer",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001808",
+            "end": "0x180001867"
+          }
+        ],
+        "total_bytes": 96,
+        "span_bytes": 96,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001808",
+          "length": 96,
+          "file_offset": 3080,
+          "sha256": "f344de0bc31e8fbe6adaf35d3e864f30ceeeaa19e6b5e65c480d7e98b96bb217",
+          "evidence_id": "ev_cff12bbeaa5973cce1b720513f911a37d74b678fde2e8f195b0fd78ca38e9853"
+        }
+      ],
+      "evidence_ids": [
+        "ev_351249f42ef124904cb054b2d75dd91b58a46e5f71cee7f85f1cd76fb82183ab",
+        "ev_d709291de8a1a07e91463e088bfd2554ff9ba46fa9aa2c1bf70adf6f03da74dd",
+        "ev_a859b685b74f835183419d8befee742d4b483a5e1bec51aad2d331f2a1ba0628"
+      ]
+    },
+    {
+      "address": "0x180001868",
+      "name": "_Init_thread_header",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001868",
+            "end": "0x1800018ce"
+          }
+        ],
+        "total_bytes": 103,
+        "span_bytes": 103,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001868",
+          "length": 103,
+          "file_offset": 3176,
+          "sha256": "c4c3ef0837771b2a8a46de055569a2b52936cf767f1748231e7ca6e1303ab8f6",
+          "evidence_id": "ev_eabbfc71584f952ae66ba2d3a1a69f95fb96849e88475b7ae285833e8e17c22e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_1eb3e8b7f216c1572e9e9fac623d3d17c1b12422e459bee734c857130322b168",
+        "ev_7c55d50a6f46bc2d918f8f88d73f5afb6255044f4a3768b3f9364d7e2fe502e7",
+        "ev_dd0b6f165e35c503bc9e62e3405fe835b5e4036e191145a49ceeca5442cbf283"
+      ]
+    },
+    {
+      "address": "0x1800018d0",
+      "name": "_Init_thread_notify",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800018d0",
+            "end": "0x180001910"
+          }
+        ],
+        "total_bytes": 65,
+        "span_bytes": 65,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800018d0",
+          "length": 65,
+          "file_offset": 3280,
+          "sha256": "0673d475df55184749be210275df1f3ecb7f581d9788d915999c3d84307a34f1",
+          "evidence_id": "ev_19386c83d9951feae57392748e8e2115a9591ef07533b12f232804ffbdf1aa1c"
+        }
+      ],
+      "evidence_ids": [
+        "ev_89fbdb09f501cc54e4678f3b72a5f83600d886ab4151d301ef3fe7440103cd95",
+        "ev_85de7a70264a369b5f961d7c5de3c03a27b71366807e83d83d01c7dd5cdb0bad",
+        "ev_d5f40cfc5d7b2779f17456118d7638367841ffae67e3775af552d6877c17c54d"
+      ]
+    },
+    {
+      "address": "0x180001914",
+      "name": "_Init_thread_wait",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001914",
+            "end": "0x180001976"
+          }
+        ],
+        "total_bytes": 99,
+        "span_bytes": 99,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001914",
+          "length": 99,
+          "file_offset": 3348,
+          "sha256": "9d16888e686d70b72d603ca6f2a718d04d9c09937a5dc211328d547dd0d3733a",
+          "evidence_id": "ev_b7bb7afab62a681e006a6060290eae08887ed7c9e7e738623b6830cd0f2e5d6e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_0f47a9cf1cfba90ed08c3c3d83a74263c5cadc6fabf874209e26509fbdf6fc3d",
+        "ev_8e091fd78c344e05f7ab0fbf6611391820db4a7016b05f5c32b120c4cd3374bb",
+        "ev_7e4d03714c1c7d9ac13553ac41f96b2095ca18b93b06c504e107aee50874274e"
+      ]
+    },
+    {
+      "address": "0x180001980",
+      "name": "FUN_180001980",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001980",
+            "end": "0x1800019aa"
+          }
+        ],
+        "total_bytes": 43,
+        "span_bytes": 43,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001980",
+          "length": 43,
+          "file_offset": 3456,
+          "sha256": "525d63e1bd69fd1a3edfafa5e29268cc376be7753da2c6823d4e06495547230a",
+          "evidence_id": "ev_b9ecec2250f0917bd2e9faab113cf0f03167b0db8614d45e7ccda984c6e33d0f"
+        }
+      ],
+      "evidence_ids": [
+        "ev_127ab511bc41c460edd0f7dcb35497a97eb03df33631aec440e7475990cb528d",
+        "ev_dc5ec2a3f88fd577b6105972c9d0520354ab2dcc67c6a8481d7e9442a12f03fd",
+        "ev_7804b38ccab7a9720e6abd39c79f70181cbba6bfa6f09f2d85a04304724d18f6"
+      ]
+    },
+    {
+      "address": "0x1800019b0",
+      "name": "FUN_1800019b0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800019b0",
+            "end": "0x1800019ff"
+          }
+        ],
+        "total_bytes": 80,
+        "span_bytes": 80,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800019b0",
+          "length": 80,
+          "file_offset": 3504,
+          "sha256": "d19cc9938717b9b9cbd49d1fd26a92fb471141539f5f350f21a1c012049e9b62",
+          "evidence_id": "ev_2ae205b08985416a26ed1354c426ce0e1904d7708b597df43d09e0a84a6c6394"
+        }
+      ],
+      "evidence_ids": [
+        "ev_e55d13287605d669148288d671be486e45c2413c3e085f740789d7373adc454b",
+        "ev_1a1c2a8b0eb4fae77c40100bc2830184e7f677ab3478743fe1cd974687da483c",
+        "ev_e6c7f157a0ce7afe61ed34a7d21b5d4c94afaa02efa57b44c5648832aeff7807"
+      ]
+    },
+    {
+      "address": "0x180001a00",
+      "name": "FUN_180001a00",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001a00",
+            "end": "0x180001b15"
+          }
+        ],
+        "total_bytes": 278,
+        "span_bytes": 278,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001a00",
+          "length": 278,
+          "file_offset": 3584,
+          "sha256": "c054158e11981714ea99733b4b449a6ad444b8cb86b81c9bc522bffc931644e8",
+          "evidence_id": "ev_9e1d1a11ecec9735fd33e0a3fecd0bc186285232359e82c46cae8b7c6e7c527f"
+        }
+      ],
+      "evidence_ids": [
+        "ev_4f484680532c9035ce5e30b5fa607a21a01b03cc4b5991e1f98f43d0853c7fb4",
+        "ev_75bd58801e91613f9fe7b724cc579708aab6fda21bff4f033f89c0f0eee832d4",
+        "ev_9c7fda528d4a18040f5d42f72f76dff5f8da8efc6193a0f7571825b5e072cd78"
+      ]
+    },
+    {
+      "address": "0x180001b18",
+      "name": "FUN_180001b18",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001b18",
+            "end": "0x180001b9b"
+          }
+        ],
+        "total_bytes": 132,
+        "span_bytes": 132,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001b18",
+          "length": 132,
+          "file_offset": 3864,
+          "sha256": "0c18d67acaf198e17e907ce4e534c9c5358ffb9777f604b7f4e3e94b7c92a489",
+          "evidence_id": "ev_73d52ee8d94056262e5b6e3bf97cd13b2c2a280ac0a74791a0624288a7516975"
+        }
+      ],
+      "evidence_ids": [
+        "ev_b18cb5775498f9647683188df716f93d11cbb991308b1c001c727b6fa8ad2ef5",
+        "ev_cb9ea2d37ff772d8cdaf5176f836c5f1a4caaf2e24c60c09260282f04afb1728",
+        "ev_f59b73bf570dfda6705bf71f47f3bde4cb637e078d923a25a6f7770a973ba107"
+      ]
+    },
+    {
+      "address": "0x180001b9c",
+      "name": "dllmain_dispatch",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001b9c",
+            "end": "0x180001cb6"
+          },
+          {
+            "start": "0x180001cbd",
+            "end": "0x180001ccc"
+          }
+        ],
+        "total_bytes": 299,
+        "span_bytes": 305,
+        "non_contiguous": true,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001b9c",
+          "length": 283,
+          "file_offset": 3996,
+          "sha256": "a4f237088f5c2bf30404c785fea1e265785522650fe1c8bd86deb46992b4c2ef",
+          "evidence_id": "ev_bd350881d167963ead2a9380e227a7370fca58bd54c80212ec19e06a0934674f"
+        },
+        {
+          "address": "0x180001cbd",
+          "length": 16,
+          "file_offset": 4285,
+          "sha256": "f6c2624bf8689ebb0726a0ee4c2db4781ffb08e03be5c1afd33a3e8e960a9702",
+          "evidence_id": "ev_88d503970b0cc046c15c7d7e4bcad743ad4fbd337e7b845037165adfcd8cd8bc"
+        }
+      ],
+      "evidence_ids": [
+        "ev_a5a15bbbeb4a0fe9980086271be19e21180feb9fbe8a2f66c1f3adce0cd62c66",
+        "ev_4cd38cc2a47f8aac58dbe9b0bf0013d84007f595f5a46c708f0b8e763140cd7b",
+        "ev_22425b64df45985556c51448bafc153b5239482ebcdd2fe2c035e6294fc34971"
+      ]
+    },
+    {
+      "address": "0x180001cd0",
+      "name": "entry",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001cd0",
+            "end": "0x180001d0c"
+          }
+        ],
+        "total_bytes": 61,
+        "span_bytes": 61,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001cd0",
+          "length": 61,
+          "file_offset": 4304,
+          "sha256": "d70ebc6dc2ecd36a525444beb24ecfa25fac97aa7b3403a299fa775fc2d4025e",
+          "evidence_id": "ev_3b1cb96aec2783838a9704c0481c7ca3f852e040fb1fe611a0492a9e23174120"
+        }
+      ],
+      "evidence_ids": [
+        "ev_e14e13e4c7b05c3a863f99228b73a243bbb3a289df475345b9dbb4d0f2742b0d",
+        "ev_2eedfb5af1628bb8ec347202155a29f4149b4bc414c4cc199e5761b8191ca88e",
+        "ev_89fe39c136adf818eda1aa2ee4b518c0dd9d449849ddf1c46013c67c06fc4980"
+      ]
+    },
+    {
+      "address": "0x180001d10",
+      "name": "FUN_180001d10",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001d10",
+            "end": "0x180001d4b"
+          }
+        ],
+        "total_bytes": 60,
+        "span_bytes": 60,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001d10",
+          "length": 60,
+          "file_offset": 4368,
+          "sha256": "dc15485924f00a6a1c380cb38082c0305b7d766ca8888f03d5f2d84c798d320c",
+          "evidence_id": "ev_bbc3f683788e072ae9c3506e7120078ffa414b8d2e1efa1b23721e84e3f16cbc"
+        }
+      ],
+      "evidence_ids": [
+        "ev_9888e82f2940d581b35026136db5d354a569639bef9480dda87635030caa487f",
+        "ev_f5bc93f412352856544fceeac0644e6426bf699b2fb0626ae806e962e8a61ab0",
+        "ev_f33288c7d64cdce10ab266b2400c4be4b7400d6c711775e41214258981184639"
+      ]
+    },
+    {
+      "address": "0x180001d4c",
+      "name": "FUN_180001d4c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001d4c",
+            "end": "0x180001d69"
+          }
+        ],
+        "total_bytes": 30,
+        "span_bytes": 30,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001d4c",
+          "length": 30,
+          "file_offset": 4428,
+          "sha256": "0da24c1f796a36170878dbfe8a1787dab5533e37e06d985b4d36364165f4c430",
+          "evidence_id": "ev_8af3528cd4d46ed0759478b68708c65d47cb8f9c1238f89872b548dfcfab5f61"
+        }
+      ],
+      "evidence_ids": [
+        "ev_880d4a94f48cac6716e94e18f65c6d16c60239652dc21d9a7ee3b6cef1aee266",
+        "ev_adde9d4978cf519d5dd1d021245ca3550ed4b3f16f11c3ba815bbe39845be033",
+        "ev_078621350e104a62e066fc204fccdedbb5da866c448f2ec6c89233da9963a78e"
+      ]
+    },
+    {
+      "address": "0x180001d6c",
+      "name": "FUN_180001d6c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001d6c",
+            "end": "0x180001da7"
+          }
+        ],
+        "total_bytes": 60,
+        "span_bytes": 60,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001d6c",
+          "length": 60,
+          "file_offset": 4460,
+          "sha256": "72de8201568065915d27fe533adf563639038461e25f47fb655ab797a762b85c",
+          "evidence_id": "ev_9fcd7400617bce037916e5a2c23e7be0ec33008e73bde095aa7223157a20787c"
+        }
+      ],
+      "evidence_ids": [
+        "ev_630f4c9548e4f1bc19c960fc40173d06f084d735d5676b3d53b03553d8ec4846",
+        "ev_190f6d0fea61f25661647a3ccae081239bcc410186568e05404fa3df9b2db58b",
+        "ev_3ecb77d1509073288010e6206e0fd6f034eae57883528bafd2efbdc6541b27c1"
+      ]
+    },
+    {
+      "address": "0x180001da8",
+      "name": "FUN_180001da8",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001da8",
+            "end": "0x180001dc5"
+          }
+        ],
+        "total_bytes": 30,
+        "span_bytes": 30,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001da8",
+          "length": 30,
+          "file_offset": 4520,
+          "sha256": "35ef4fff39f2b0b6e2d5aaf0791ba7e1413083db29acb1764c1bbb4123c849b1",
+          "evidence_id": "ev_689db001331fdf574bc8289ec6d2b484b0d4b7cfb2140ce5da96b77d7c3ef05c"
+        }
+      ],
+      "evidence_ids": [
+        "ev_f8b77943c872bc6008c2dfa00e7048556f0df8bd1628aea53b9687959af0644e",
+        "ev_0e48ffb59ce8b230c36a14b6040967da587370e478a69d95771ebcb81802b914",
+        "ev_ed1020f48b516b547994c1e7b374707157805cc136f4b220508474655eac8c7d"
+      ]
+    },
+    {
+      "address": "0x180001dc8",
+      "name": "std::exception::exception",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001dc8",
+            "end": "0x180001df9"
+          }
+        ],
+        "total_bytes": 50,
+        "span_bytes": 50,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001dc8",
+          "length": 50,
+          "file_offset": 4552,
+          "sha256": "930c98126d0bdbef82a85b22c0bf5a16e6598fa8e2debf721a0611f3168c0397",
+          "evidence_id": "ev_f109de023a65d3e64484d76cb017f0b2d0ce26453d045518061acc29fc8fd0d7"
+        }
+      ],
+      "evidence_ids": [
+        "ev_8a4bba6bd66f6bd8a507d47cbc622fbe02f07fd3c6a3e78be2c222f41f8c337c",
+        "ev_4bf4766583222bacf72df12b9de5b04e28a72c0a96d37c3965eeb88e4be3941a",
+        "ev_c18979c36e54e9be9f24a408791b25638f91265cb6f5f7b2f11969bdb30989ed"
+      ]
+    },
+    {
+      "address": "0x180001e10",
+      "name": "FUN_180001e10",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001e10",
+            "end": "0x180001e51"
+          }
+        ],
+        "total_bytes": 66,
+        "span_bytes": 66,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001e10",
+          "length": 66,
+          "file_offset": 4624,
+          "sha256": "f62bfc7ab9e6e53ec02d8249888de3192ef8ab760686cbaa30a3f60ecba8a393",
+          "evidence_id": "ev_1f864c70b3cdda74c78dfcccf143113daca2937d03798b58e0d4a62f42db62ee"
+        }
+      ],
+      "evidence_ids": [
+        "ev_e86c857cac0130b28f46df5b3a3eb885adbb706b9884c4e074f9716904fb5527",
+        "ev_4b10c78eaed44a94f458a737ada39db8ea2696de3e6c125d96677d008a335161",
+        "ev_a371a49f5435d157a5c01cb8387411118fb81fd06fc9650334a958965d605714"
+      ]
+    },
+    {
+      "address": "0x180001e54",
+      "name": "FUN_180001e54",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001e54",
+            "end": "0x180001e72"
+          }
+        ],
+        "total_bytes": 31,
+        "span_bytes": 31,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001e54",
+          "length": 31,
+          "file_offset": 4692,
+          "sha256": "12a0edafbbefb6db4bd78412b76f727680cf07bb8aabd7b7910e79a9c79f3a60",
+          "evidence_id": "ev_32d0127980e0600724e33edb37438bfd8d9ddf80bb8fbca5c9bed357771868e0"
+        }
+      ],
+      "evidence_ids": [
+        "ev_381db113b5df6451e03ea275eca5e7c94035df47baa653cff95d3dbc438716f6",
+        "ev_b277537ab36d4c5ef5e5024c3b0173d8c904621abcc8aa4866f0f28a0e2724a2",
+        "ev_d88a5ce82c1266a79c43626554343b0cc81eb1f92a54b28b748c26e0199a17c5"
+      ]
+    },
+    {
+      "address": "0x180001e74",
+      "name": "FUN_180001e74",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001e74",
+            "end": "0x180001e92"
+          }
+        ],
+        "total_bytes": 31,
+        "span_bytes": 31,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001e74",
+          "length": 31,
+          "file_offset": 4724,
+          "sha256": "fcc8c9eed0af09e440c184c15f88fc2bd04546a1f6fd4e5c69de76448c7561d9",
+          "evidence_id": "ev_6ef1accacaf7f4fdfd019d252c36d6de749c53d40f884240b9e7def2bd43fef4"
+        }
+      ],
+      "evidence_ids": [
+        "ev_9c96445aa04cff05c85f686b25bf9a18fa0f314c744b4b267f82fee99aa477d7",
+        "ev_07e4f7218e7658a690d9ac20a18bfd47aefc524d66d6471e7587a8ab3f78a125",
+        "ev_97489080f3e5a5307d4748c17b07f4fd1d664901df5980b54e3379c9842ecb9d"
+      ]
+    },
+    {
+      "address": "0x180001ea0",
+      "name": "FUN_180001ea0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001ea0",
+            "end": "0x180001eb1"
+          }
+        ],
+        "total_bytes": 18,
+        "span_bytes": 18,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001ea0",
+          "length": 18,
+          "file_offset": 4768,
+          "sha256": "ce701c9c7710619e49a3b915939c301ef1e8ebecff7b8172d9fc700fd525eb32",
+          "evidence_id": "ev_d7c8f4d955d6ca5334a5d402feca5c1adcbf9aa06443535e6394a4461bace6c3"
+        }
+      ],
+      "evidence_ids": [
+        "ev_bba1231f3788ef2ebee5a8952c224b74915e942120405d332cc3f066ed6a151d",
+        "ev_d8b19ae5c674dca34baf62cc6e861c6c213dfc6c4a8df9a97be4a27960000024",
+        "ev_f68aeceb810462615f9ded1aff071ea4a94ec7dc81f39803bbf3c837f1ff264e"
+      ]
+    },
+    {
+      "address": "0x180001eb4",
+      "name": "__isa_available_init",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180001eb4",
+            "end": "0x180002054"
+          }
+        ],
+        "total_bytes": 417,
+        "span_bytes": 417,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180001eb4",
+          "length": 417,
+          "file_offset": 4788,
+          "sha256": "25992899004ba94fea1bd8764ebecb3646cf0cacfd498663d5e3d20de31b13b2",
+          "evidence_id": "ev_307afc4349728e7afb34ee959829328d003ce63f50070be7c5c68006b819b3ea"
+        }
+      ],
+      "evidence_ids": [
+        "ev_989f2d04e9e6ed4066baa9d79544f1721ead8dd1b55f89e08405827f73b8fdcd",
+        "ev_b632c53e08df41710c48cacaebb451b51056ddf516f343908f7987d5386b4b1b",
+        "ev_5a76b890aba04d2c4e26e9253d1aac88cc038b852f92c8c853a0026c39f09229"
+      ]
+    },
+    {
+      "address": "0x180002058",
+      "name": "FUN_180002058",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002058",
+            "end": "0x18000205d"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002058",
+          "length": 6,
+          "file_offset": 5208,
+          "sha256": "2db31f4e09597946e56e859813bfdad7046d457c32332c3a882654d1e3ffdf67",
+          "evidence_id": "ev_51e01370be9fcf79c66d817f5e7741f9d5eb19af92cd995dae476a1cffed050c"
+        }
+      ],
+      "evidence_ids": [
+        "ev_7866a524f0de1569ac7613e157de5a23367d3235adaf8a13d4e9fef63112b690",
+        "ev_5805e4362eb15fdc80d6f80b7c56ce2f0477b7308cea46358d2ed2cae37590b9",
+        "ev_76ff444163ce3133d8d7c4bbc6192739841383c53592247562ab58b09fff5bcf"
+      ]
+    },
+    {
+      "address": "0x180002060",
+      "name": "__scrt_is_ucrt_dll_in_use",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002060",
+            "end": "0x18000206b"
+          }
+        ],
+        "total_bytes": 12,
+        "span_bytes": 12,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002060",
+          "length": 12,
+          "file_offset": 5216,
+          "sha256": "e37cf4bc8451f22a0f4c4669fc75fdb3d1fbc03029af208538de50b808b126cb",
+          "evidence_id": "ev_1122bc1649ace22238a8c6608634a6eaf5d8e62250289c69a35e6fa3f25eb090"
+        }
+      ],
+      "evidence_ids": [
+        "ev_1407291fa438acf887481c9294d123d2fb8b3f83239492b10a2342e075765028",
+        "ev_634e3970641f9a9a27fff2b6413f805cbcab7504611f2da55a0be5fae3210395",
+        "ev_09806b866fdfe7ddd6b69afd745daa8374a98a5beefad7d03a770d6092bc04db"
+      ]
+    },
+    {
+      "address": "0x18000206c",
+      "name": "FUN_18000206c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000206c",
+            "end": "0x180002073"
+          }
+        ],
+        "total_bytes": 8,
+        "span_bytes": 8,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000206c",
+          "length": 8,
+          "file_offset": 5228,
+          "sha256": "b6063deb95a85724144d4102775917a372453213a9f596658d4f16d281150a06",
+          "evidence_id": "ev_5f5f1c1b4ba4bb2eedb77646664965082fa2833f6e5ad2ba604546f38804dad8"
+        }
+      ],
+      "evidence_ids": [
+        "ev_a4e80b1f180595fab8d946e3930bf5900f85321ef9bc6e19492cf66d06330555",
+        "ev_a0223c30e7a15e44520ee0a985b082aabd405c8b9de57e078aeb3b83d59e6a20",
+        "ev_e032f9bec3abcfcc0968fb518837bc0460b6953fc47105ee486ffb3e363d730a"
+      ]
+    },
+    {
+      "address": "0x180002074",
+      "name": "FUN_180002074",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002074",
+            "end": "0x1800021be"
+          }
+        ],
+        "total_bytes": 331,
+        "span_bytes": 331,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002074",
+          "length": 331,
+          "file_offset": 5236,
+          "sha256": "6bd419271f8011838f29d63bc0b0eb11f3b69ed7486e7843a731ce72afe4ce58",
+          "evidence_id": "ev_5634c66e6aba38df43a50a87fc754a655033f002d5160d89a1c10a03b1ad66aa"
+        }
+      ],
+      "evidence_ids": [
+        "ev_b4422cef2b8281d80f3ffd7dabf41cec06ae9d7824ff58daec63669c05695ae6",
+        "ev_2e9fcacf696e1a7df75f005aeb8d3b8d513ade313ed0f532d3d5340ccfb8a87b",
+        "ev_d97c36bebc1a448c3c0c2fc24f54ec09657b9d04336ffd9d934ab5b86bd3cddb"
+      ]
+    },
+    {
+      "address": "0x1800021c0",
+      "name": "__security_init_cookie",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800021c0",
+            "end": "0x18000226b"
+          }
+        ],
+        "total_bytes": 172,
+        "span_bytes": 172,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800021c0",
+          "length": 172,
+          "file_offset": 5568,
+          "sha256": "31bcfdc6824855170be6144a8ba705ae0997262feb844924b35a3eb020889b58",
+          "evidence_id": "ev_16e8fd7ce1731f220bbca97139cc22edfc3bf3b3a8faee055ce691a286d9b115"
+        }
+      ],
+      "evidence_ids": [
+        "ev_35c775a2e16cc347353a7ee2c4e7613eb2a5a7374aaedab05b93c269d20f63fe",
+        "ev_10b9a48b9ddcd7a14fcb5bed1078985a224c0fbee79ec9648faf7b549675b661",
+        "ev_03720f29731c238212b542e9f24e43543ebfc324904ef0eb3deeb0b79e1acfba"
+      ]
+    },
+    {
+      "address": "0x18000226c",
+      "name": "DllMain",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000226c",
+            "end": "0x18000228e"
+          }
+        ],
+        "total_bytes": 35,
+        "span_bytes": 35,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000226c",
+          "length": 35,
+          "file_offset": 5740,
+          "sha256": "f4ad3c0f42d3330a5e113a6530708b7ac10a30c7abe31bace23ff0aeb4fc6a0c",
+          "evidence_id": "ev_0bfa33a1358f4ad5c00b2c426d49110a29fb28b1ba3b6fccc2644b6dfde389a0"
+        }
+      ],
+      "evidence_ids": [
+        "ev_82a8420c92042cf782655e677723ba608bc917f3dc7e295ead956439bf915aa6",
+        "ev_5d7353aaa9280abf5f961c9b07825f4bbf1f83735d395fac14efeb9e8afc09d5",
+        "ev_d09c5b0128a593fe15aea08d026468ceb2084753facf4b370c0c88fc77e8a7be"
+      ]
+    },
+    {
+      "address": "0x180002290",
+      "name": "FUN_180002290",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002290",
+            "end": "0x18000229d"
+          }
+        ],
+        "total_bytes": 14,
+        "span_bytes": 14,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002290",
+          "length": 14,
+          "file_offset": 5776,
+          "sha256": "39ceecdf644468072eb6bfdab7dbb7075f711d3f5caa73f51d56663b6bae440a",
+          "evidence_id": "ev_63d70fc3fb094a0ac159d06e621f8962354a656813b26c47982735cd1882b4db"
+        }
+      ],
+      "evidence_ids": [
+        "ev_344f46aee7408ef2dc9284712c6a31316cdb36ce51aae0017e31db31fe596590",
+        "ev_5a5b40eeb850b0e046037b813495cc928e1bfbd2efea4f8bcae93812888c2ef6",
+        "ev_aef12b1561f465646360845d08619bfddbe698b115c3ac56ea210ecc9cbed8c2"
+      ]
+    },
+    {
+      "address": "0x1800022a0",
+      "name": "FUN_1800022a0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800022a0",
+            "end": "0x1800022ab"
+          }
+        ],
+        "total_bytes": 12,
+        "span_bytes": 12,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800022a0",
+          "length": 12,
+          "file_offset": 5792,
+          "sha256": "f91aeb9476e7cafa0e279fb53a79a573de285e97d29b9949a8cc69ab3bdb4956",
+          "evidence_id": "ev_4460a475fadcb62860fdfc9f9794a6077249f794ac6e1668804ac425cb3fd75e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_65f452ba9ca8d95cd111bec3735e0708a93c9778bca0038c67386962706dcff1",
+        "ev_5c4ba1cab96c2f6be4b04bd572aa3455ed343957691fd99bec884632085f7ec0",
+        "ev_f68739855d7e79b169977eae426b99fb588cdb5d7d34cb63c2177766f85e4f8c"
+      ]
+    },
+    {
+      "address": "0x1800022ac",
+      "name": "FUN_1800022ac",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800022ac",
+            "end": "0x1800022b3"
+          }
+        ],
+        "total_bytes": 8,
+        "span_bytes": 8,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800022ac",
+          "length": 8,
+          "file_offset": 5804,
+          "sha256": "302861ef362cef1afa012de0c12675a9784c15c98e167fb39d6ed8a127cc7439",
+          "evidence_id": "ev_e7e5cf8ee3767ae423749b2a39fc24961fa5a9fb79db3cf7e0543a3d63032479"
+        }
+      ],
+      "evidence_ids": [
+        "ev_c956667347164b8b09dadf803cbfee4bd877897b3eb7fbb18271126a05f3c930",
+        "ev_341cc6cadc195444b0fcebac084030dba7b4b832d961f7a289a7ebe2f616ae53",
+        "ev_32a68cc0d0b15ff5e8197ae975835f295e4f7f050e86aeb0eff7e591de8be7a1"
+      ]
+    },
+    {
+      "address": "0x1800022b4",
+      "name": "FUN_1800022b4",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800022b4",
+            "end": "0x1800022bb"
+          }
+        ],
+        "total_bytes": 8,
+        "span_bytes": 8,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800022b4",
+          "length": 8,
+          "file_offset": 5812,
+          "sha256": "302861ef362cef1afa012de0c12675a9784c15c98e167fb39d6ed8a127cc7439",
+          "evidence_id": "ev_75249f719bb8a6bcd52296c8a2ca25d1c2d8afb98fa3b277ab0f18a43d3ad171"
+        }
+      ],
+      "evidence_ids": [
+        "ev_ff3b49643634f1949eaa0e676eba2d6799f48f8b4046fe2f2847febe0488a906",
+        "ev_11b7dd75bb21310c764eb4af19a89ca79842f1d9ecd5c00345406875cda20b14",
+        "ev_ba906afc02ea340b80cc073a998356a6bea364852a77edca045b5dc6e3a2ec2b"
+      ]
+    },
+    {
+      "address": "0x1800022bc",
+      "name": "FUN_1800022bc",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800022bc",
+            "end": "0x1800022d6"
+          }
+        ],
+        "total_bytes": 27,
+        "span_bytes": 27,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800022bc",
+          "length": 27,
+          "file_offset": 5820,
+          "sha256": "722307b930be54a778fa5e8dc823dd697700e25ace4a287456e7d77dc59a8a7e",
+          "evidence_id": "ev_8a7b9989dbaa9770528590ce443a442602180661d88681cf46ec0182417956f4"
+        }
+      ],
+      "evidence_ids": [
+        "ev_846fc1bdc643877d29bbef14efdba70c49a18ce399112ed6299bfb4d0cb83b5e",
+        "ev_8b34bc91a3a74c062fc1cb4d21f1c86e356f382348bbf28a04a86b54ced733e7",
+        "ev_e8f8b537a8003110ba28ecde441a40682537e329ca8ce6b223ec89cbbedca4c4"
+      ]
+    },
+    {
+      "address": "0x1800022d8",
+      "name": "FUN_1800022d8",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800022d8",
+            "end": "0x1800022df"
+          }
+        ],
+        "total_bytes": 8,
+        "span_bytes": 8,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800022d8",
+          "length": 8,
+          "file_offset": 5848,
+          "sha256": "8b5f676411ff29693c197c7c1594fd99b3fbe81af7df4652c97f080b6c25f6f0",
+          "evidence_id": "ev_005c1ca4eb43dbe392188996e32744e9287eee5cc579100a890f971758ca5e67"
+        }
+      ],
+      "evidence_ids": [
+        "ev_8a223b6ea0006b625e0da2f165f00dbc34b6f6378c3d84d5a52f899871e14157",
+        "ev_9abed96098ea94aa52940306eabe4430d8226ee20d56d801ff08386f03fbb97f",
+        "ev_540dccab6de577d4b415d5ace3628493e256d747db3b076ba2bbd1aa00f819bb"
+      ]
+    },
+    {
+      "address": "0x1800022e0",
+      "name": "FUN_1800022e0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800022e0",
+            "end": "0x18000231b"
+          }
+        ],
+        "total_bytes": 60,
+        "span_bytes": 60,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800022e0",
+          "length": 60,
+          "file_offset": 5856,
+          "sha256": "76dc3197ab501875fad66b03df3fe26a83f2a07b16841c284cc847105aa26ae4",
+          "evidence_id": "ev_623581771e9042029f9a47ce9d5da3df8fce7ae2b8f3855c63c39edf3d79ab4a"
+        }
+      ],
+      "evidence_ids": [
+        "ev_4b913a7d105b5c9755ee4665e9a6cc6b5b04e6c2b3db007c3bb2b9c3acb10527",
+        "ev_d7aeb801daa2b357d757439c511818465eefb05c862ec3c3836bc06979941213",
+        "ev_c8fa25fe78f5aef4a12cca2398e766503a0084452ea0fbdc8c821807c17ec04e"
+      ]
+    },
+    {
+      "address": "0x18000231c",
+      "name": "FUN_18000231c",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000231c",
+            "end": "0x180002357"
+          }
+        ],
+        "total_bytes": 60,
+        "span_bytes": 60,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000231c",
+          "length": 60,
+          "file_offset": 5916,
+          "sha256": "1a55f3a4be307e5d4a25908287b7145318b334a2283163726d9604e795c8b59c",
+          "evidence_id": "ev_c5d7d12a40cf0d6798913b7aacd81bd1f0c7a647913cd4f916eebd6c1e3e2231"
+        }
+      ],
+      "evidence_ids": [
+        "ev_f24937c1ea2cd8072d31e7bcc2cfe362a77df0988957b268b3e809b0ab1cbf07",
+        "ev_aa1e469d9642b0a030c317b8eeec85ad83dadc936f43da59a887f84070521530",
+        "ev_6d2e2de9c4c411115ab477dcbba22836d55c22f5a3df99cc75a9c1509955702a"
+      ]
+    },
+    {
+      "address": "0x18000235e",
+      "name": "VCRUNTIME140.DLL::__std_exception_copy",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x12"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000235e",
+            "end": "0x180002363"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000235e",
+          "length": 6,
+          "file_offset": 5982,
+          "sha256": "a6881dfdf849ff20540ef85dd1cb22889151a611adf3821cb1b92fd5d51e0881",
+          "evidence_id": "ev_cd6c08d67cd6ccab2486b5c4a30bc7f03228141a4cda80aec408bb6dc1e74f2a"
+        }
+      ],
+      "evidence_ids": [
+        "ev_028a456a50a4e09890470c9f85d16c7295bc55031b5fc5b563e51cce99f2fff8",
+        "ev_f3cc47582a304b47cf788348f649bf0258fd6020377d8e1b329d68eb3e06156f",
+        "ev_c46117c98ecfccbe01bbb06bb2e842919b135dba986d561953652e980c35a5be"
+      ]
+    },
+    {
+      "address": "0x180002364",
+      "name": "VCRUNTIME140.DLL::__std_exception_destroy",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x13"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002364",
+            "end": "0x180002369"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002364",
+          "length": 6,
+          "file_offset": 5988,
+          "sha256": "d7270faac80dff22b8e7d292b18787376736b2fa449dfc39e66582df580404c0",
+          "evidence_id": "ev_104b569b41925eaef169dc0492fb91009c0a9a2bb43e657c511280a779c4f33b"
+        }
+      ],
+      "evidence_ids": [
+        "ev_efad546326362d6d1fafb0eae954219f87b66bcd2e70ec25fa170f8fba4b2712",
+        "ev_a904040bf4fc581a5cbf173e76a0922b61c29d3d54f0bcc06fc4dd9c9cc912d2",
+        "ev_d8baa0a5b310785fa6e89f2ae1a43a1b42cc5ba7e27f94b77fd43f8e0c2d3cbf"
+      ]
+    },
+    {
+      "address": "0x18000236a",
+      "name": "VCRUNTIME140.DLL::_CxxThrowException",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x14"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000236a",
+            "end": "0x18000236f"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000236a",
+          "length": 6,
+          "file_offset": 5994,
+          "sha256": "4138e73ea765c09b2cab3785d55fd2fd7bfbaf81185f36b65e76cb5a84fa9053",
+          "evidence_id": "ev_c170b3ebc63227bc076ab065f21ee9e03cd2078b134a555efafcfa1404932765"
+        }
+      ],
+      "evidence_ids": [
+        "ev_3327f62c2fefe4cc717eb0f9636b5fd8d67ae9ce1e6872ef719f389d500ce9a7",
+        "ev_4669c897527ddaccc53c9095b535af580920b4c359a85d7e20ec97e69a3b96d5",
+        "ev_81c3c9863a318966f0e530f10808e726e96081f4dc891c49bb2eb7a13780da30"
+      ]
+    },
+    {
+      "address": "0x180002370",
+      "name": "VCRUNTIME140.DLL::memset",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x15"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002370",
+            "end": "0x180002375"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002370",
+          "length": 6,
+          "file_offset": 6000,
+          "sha256": "e55a2c936d832e96efb0ce75a3faa62c278b0b7389a11833e9fd60c92e52c9fd",
+          "evidence_id": "ev_6317206250585ef69eab773640c004deb83fbdae4b41a4a5f7afbb4162571f15"
+        }
+      ],
+      "evidence_ids": [
+        "ev_97a82d4bedc0157ea60eec5873449cf9cf6584fb2a61075b567638ab024f5f87",
+        "ev_aeb4023477b826e2b6c78c539527057b34cbca3382da375bbd795a281a13360c",
+        "ev_287a1672f92cc889b342887a95478b3b64eb7af56bb339c881051772b9fb2bfc"
+      ]
+    },
+    {
+      "address": "0x180002376",
+      "name": "VCRUNTIME140.DLL::__std_type_info_destroy_list",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x16"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002376",
+            "end": "0x18000237b"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002376",
+          "length": 6,
+          "file_offset": 6006,
+          "sha256": "21e3d169817d38dfae56634919d5712ccb95a6e6ac5ac163b92c146ce5425ea6",
+          "evidence_id": "ev_b9622c27b44a387722aae48f886a0dbc2d55bd3e83730792daa98dadf925e0b8"
+        }
+      ],
+      "evidence_ids": [
+        "ev_003d7ccfb31f0062cc6bf617e10dacbb5ab277789cac9c16d6768caba0457c1a",
+        "ev_39b6411f8d4b5c2b17494c0ed058ec078111a00773cb039a60fd45959bdef8d7",
+        "ev_88e65c6743db98c062fc65c9face749446fb4393751ce79003dc09e6d2e977ac"
+      ]
+    },
+    {
+      "address": "0x18000237c",
+      "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::_callnewh",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x17"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000237c",
+            "end": "0x180002381"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000237c",
+          "length": 6,
+          "file_offset": 6012,
+          "sha256": "c506d655c576aecd183b2c56cea7d4c2a4737c3de0e4d155af3a0ecc38915d75",
+          "evidence_id": "ev_8c58631ac969640b880b38b387722444735ed9703f9342cd4712ccad428b0eac"
+        }
+      ],
+      "evidence_ids": [
+        "ev_e1e7cbfe13cad5a2ad271ea24a4eff2f118da0c05e3efe64b0ae5a91c7726e91",
+        "ev_a86ee828d87dce42c3540ecce5ef16d2ae49fd71a0bbd682edf7fae084408b42",
+        "ev_9ad06cc826b1b82f9abbf9d4dc237cd5b205b98ccdae10e82ac86a856bd2b4ac"
+      ]
+    },
+    {
+      "address": "0x180002382",
+      "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::malloc",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x18"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002382",
+            "end": "0x180002387"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002382",
+          "length": 6,
+          "file_offset": 6018,
+          "sha256": "1ac7effb21c8fb1bebd24134d546e8160e980240bf4b000dcda1b49407692435",
+          "evidence_id": "ev_92d52a6bfe7db19d2ee5c6b7e89d4ed86f2f3906fa7a73ada675b930bf6b30cb"
+        }
+      ],
+      "evidence_ids": [
+        "ev_b63a6ee6286177e4d124247218d4e1be0c8bdf206ae0b3c23aeadbdf3b291fff",
+        "ev_c114bca7085966c088261cb1cd1ee015b7bea5575b747abdd93fd1e481dde527",
+        "ev_8f756315e58e63d72cab4c2c78b0eb13fc3b8f905ff01f858e60ea9147a96dbf"
+      ]
+    },
+    {
+      "address": "0x180002388",
+      "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x19"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002388",
+            "end": "0x18000238d"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002388",
+          "length": 6,
+          "file_offset": 6024,
+          "sha256": "d90eec0e154dcdc10774efca3ad35e5fd92c390c51a6e4c3e3f11f116ff3642e",
+          "evidence_id": "ev_64e99ebef115372e7205205c01ea8cf533a27fcfe80e7c9027f6b1b648f94b4d"
+        }
+      ],
+      "evidence_ids": [
+        "ev_e102afc9d43e4620e091c563bfbfe4bde44e5539715c34c8c734a617fc0f61bc",
+        "ev_3d0964f6d6b5ae33adb21341f87762a3675387bca2b9ead2c1b13cae2aea237b",
+        "ev_ca2e28ae1e59389eb6aea6a3f3bd6ca07ec3e3aefd7e66639598832a92806f9c"
+      ]
+    },
+    {
+      "address": "0x18000238e",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_seh_filter_dll",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x1e"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000238e",
+            "end": "0x180002393"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000238e",
+          "length": 6,
+          "file_offset": 6030,
+          "sha256": "788fdc10eb6e00ca4a19507b66fb5a4fa66953e7da2c1b24183da6172fd7a3c8",
+          "evidence_id": "ev_ca4f66812aa955fd27569a5e12e9974c938ed2b910e2d0e9382639b1852f5f8f"
+        }
+      ],
+      "evidence_ids": [
+        "ev_6f61c962f01a5eab99248bc8f0809ec5b3b9b17cabed4c939c60da9dce6b17fd",
+        "ev_64546c7f11051f23c1deb9b2563b3867c7c0bb10a60a3c220b4f50a84732c0d2",
+        "ev_b5ffbdff91359cf6a3296c6302f459b90907195e06ace40b7c85b0886e21a6b6"
+      ]
+    },
+    {
+      "address": "0x180002394",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_configure_narrow_argv",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x1d"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002394",
+            "end": "0x180002399"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002394",
+          "length": 6,
+          "file_offset": 6036,
+          "sha256": "c126e6c0e0f102b47a80cab3893ba349620571abe08c9e5e9fe2f9b6a221aa78",
+          "evidence_id": "ev_0a43d40957209376098105ccf73fe81f16f3e575300c319dff77a51882debfce"
+        }
+      ],
+      "evidence_ids": [
+        "ev_38da8194af5fe33fc73ac0854c1034879be243fb83ece136ba43f165a978f20d",
+        "ev_af8485f93693351be434ad5d36b4cc795a7430ea9bce9ee356ae1ecabbeca98c",
+        "ev_39c56717f2692af13e988c44c159df242efe70200b1efad0947c1ed714e9247e"
+      ]
+    },
+    {
+      "address": "0x18000239a",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_initialize_narrow_environment",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x1a"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000239a",
+            "end": "0x18000239f"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000239a",
+          "length": 6,
+          "file_offset": 6042,
+          "sha256": "1ac7effb21c8fb1bebd24134d546e8160e980240bf4b000dcda1b49407692435",
+          "evidence_id": "ev_32f7862ba95ee1854be1fc5085cdbfc8a7d90d7d7fde377429e59d14ea17a46e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_3ce84ba9ac37ba5edae1634761abea760ddc2141017a0f7b1ca501056d6d4f38",
+        "ev_ce2184fbd9558406999078fbb42583ec912c01e4420f1a64ea2e74b71c5ccce1",
+        "ev_a42fe92454fdc3be8d379714d715d3ab97d858387b8521757ccafe809d8336d1"
+      ]
+    },
+    {
+      "address": "0x1800023a0",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_initialize_onexit_table",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x1b"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023a0",
+            "end": "0x1800023a5"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023a0",
+          "length": 6,
+          "file_offset": 6048,
+          "sha256": "d90eec0e154dcdc10774efca3ad35e5fd92c390c51a6e4c3e3f11f116ff3642e",
+          "evidence_id": "ev_6f40aecc664684ab6c8055394db77117a36213a438f92f8f3126174e9d7e6baa"
+        }
+      ],
+      "evidence_ids": [
+        "ev_cb17dd692dc2d18a774734331559b0fd0c03beec495c62037dd95e0304678f5f",
+        "ev_7d6e45a79c15f3b9c56030744d98b8ecbd64c83c09d95d31f691caa17f717545",
+        "ev_c3cc0437a9c20fd0dd72fcbe6d4f9cfde06481ede48851fefab0945da167340f"
+      ]
+    },
+    {
+      "address": "0x1800023a6",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_register_onexit_function",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x23"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023a6",
+            "end": "0x1800023ab"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023a6",
+          "length": 6,
+          "file_offset": 6054,
+          "sha256": "72018aadd499e36a62a9b7adf362044206fa4aa9b455102bfff6915f398be95b",
+          "evidence_id": "ev_a5c17a7e777226a20b0c7f6f63285678faddf15312bacdad03c264ebc8ec226c"
+        }
+      ],
+      "evidence_ids": [
+        "ev_ae4866d470db8aade4300ca315406e0e0c29e00356c3d1137845e3971c0c64ba",
+        "ev_261499357f4a365a5021868744427aa1f752ed14a7e53318210eedd2b2a3c8a2",
+        "ev_1d19cc163601824f51a91e16110ba9823b8d94f3cc2cad89009ab99df429e5bc"
+      ]
+    },
+    {
+      "address": "0x1800023ac",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_execute_onexit_table",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x22"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023ac",
+            "end": "0x1800023b1"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023ac",
+          "length": 6,
+          "file_offset": 6060,
+          "sha256": "b42cc808322966a273ad9185cde10b3d2ec518f49d8f42aa5f2946b22619847b",
+          "evidence_id": "ev_08eabe425b899ca75ba9a6d42abb7ed3e281fe73c9b4f1c290484777cb386434"
+        }
+      ],
+      "evidence_ids": [
+        "ev_79ceb46490a1702dc143f01650d1ec74dc9d7f4e8a649560aa209fa342fb8ea9",
+        "ev_e90be136d43c17ce21682fca1d44c3a1e34d9e272d1909bfe5bafa2494d66541",
+        "ev_5ce1d3801a9c776e7f53dc7ec82a9a128c8913cfa54bf75775bfbec4c10d4672"
+      ]
+    },
+    {
+      "address": "0x1800023b2",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_crt_atexit",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x1c"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023b2",
+            "end": "0x1800023b7"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023b2",
+          "length": 6,
+          "file_offset": 6066,
+          "sha256": "ecca84c57039983638e0feae92c684e736f979da486b3411ea02b878933ee4d7",
+          "evidence_id": "ev_1b3815eb74ca8f21a8cbbf1e3762d493768dd4f6188a434b584476b5f0ff9ec7"
+        }
+      ],
+      "evidence_ids": [
+        "ev_ab8b0b028c80370af7b028ac6e099e2b70e386c05b788ca2f650bc9d22ab55bb",
+        "ev_cc5d842f6d567a12a593cec931b3f3fe30f6d4062dbbebd508dce2b68498a7e5",
+        "ev_6c30a91cdcacdb858ea3431c51ec08faa11132796721d4375e7682df68486cee"
+      ]
+    },
+    {
+      "address": "0x1800023b8",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_cexit",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x21"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023b8",
+            "end": "0x1800023bd"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023b8",
+          "length": 6,
+          "file_offset": 6072,
+          "sha256": "64a911b18d352481fecaa5becc006fc71296b551fc239837635b5e1df4916e8c",
+          "evidence_id": "ev_27c21c2d518a7868530e24964e0d0f85325239e1f235df4ae14e833083e696f5"
+        }
+      ],
+      "evidence_ids": [
+        "ev_10ed6e7896847af967b81366adaff5dba896b76bec1c597200f4c38f3e1a39e5",
+        "ev_76b86fe433248cec5b9a9df7bcad0eea6d82c8c0a150adb26310075c9a7540be",
+        "ev_9f20fe259d7fbabe177d27cf618ccbb4e550b90737abc4fd061c0c51a88ca24d"
+      ]
+    },
+    {
+      "address": "0x1800023be",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_initterm",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x20"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023be",
+            "end": "0x1800023c3"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023be",
+          "length": 6,
+          "file_offset": 6078,
+          "sha256": "f0cf0d77caa5cc622615c29294f1732f2e71f8ca27499a05ed2bb5ab233e8677",
+          "evidence_id": "ev_3f762cd9649ca7127d55a8da063f5ddaaee0aecebb3635e4691a1a094e5fa32e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_a6c3548a1367316154840d4f3c075bcec8e7d01cdcc34a228927a7a653147502",
+        "ev_b199cb4d35106cbcfc2669f3c6dfd03c28e11fbfe4261c1506862ca7250206f6",
+        "ev_6427a6c046154626037a8306af4b809911741ca2c09622b070d9ed2848cc3826"
+      ]
+    },
+    {
+      "address": "0x1800023c4",
+      "name": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_initterm_e",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "EXTERNAL:0x1f"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023c4",
+            "end": "0x1800023c9"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023c4",
+          "length": 6,
+          "file_offset": 6084,
+          "sha256": "c506d655c576aecd183b2c56cea7d4c2a4737c3de0e4d155af3a0ecc38915d75",
+          "evidence_id": "ev_d5146469d54ebc47d0d44a7da4bd9018f831e6836d78f87a9ac44e9a1f8396f1"
+        }
+      ],
+      "evidence_ids": [
+        "ev_11a6906c246ddd472f9e0944b202cb7753562f1ca114b26fe6c67695d112d32d",
+        "ev_47e6c599648487122bbcfe4103984803ebaa158cd7094eacd329f8fb593ad22c",
+        "ev_3b20542c38b2eb5019288e74c31374e1b882abbc5ab61361890dd563cf7cac81"
+      ]
+    },
+    {
+      "address": "0x1800023cc",
+      "name": "FUN_1800023cc",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023cc",
+            "end": "0x1800023ce"
+          }
+        ],
+        "total_bytes": 3,
+        "span_bytes": 3,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023cc",
+          "length": 3,
+          "file_offset": 6092,
+          "sha256": "e18aacce29affcdddaa5f641ac1ec12552e0fe9d066e6408941b1792818b8619",
+          "evidence_id": "ev_0027032c8ef85bdc48d6c783f33ba4ffad193fdc8d9a759f3952e24257f208ac"
+        }
+      ],
+      "evidence_ids": [
+        "ev_74bdfcd9ccbbbb9943f433673ad57e0e28c60b3cd67f318b7d4cc09dd4eaf493",
+        "ev_56c0ce6697b0862e53f778d48a3db26b592403de1f899146274b90bae074f3d7",
+        "ev_b2a823d780ba6bff910ab6ec06eb8292a0795ecc5143520c9c6f47588fd59a9c"
+      ]
+    },
+    {
+      "address": "0x1800023d0",
+      "name": "FUN_1800023d0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023d0",
+            "end": "0x1800023d2"
+          }
+        ],
+        "total_bytes": 3,
+        "span_bytes": 3,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023d0",
+          "length": 3,
+          "file_offset": 6096,
+          "sha256": "4bc724f3b1d0caf4fe369c18cba3102e6c4ea057f63fe1587e3973134a7f755e",
+          "evidence_id": "ev_c67f7b9fe586b9e93060c8f70d46a2c78340fe4b5b9c1b6b333a22079e577b36"
+        }
+      ],
+      "evidence_ids": [
+        "ev_b8092e054b95ddef0c0972ef6a220992264ad32843a94195bfd91a5b572381fa",
+        "ev_063e46fbc7afd02d0213a11493493b60663840f7b3ba45ef22917dab96aa48af",
+        "ev_a5f50448c77b071e685aaf31a0640f56c4087063d0d73899666f205103e39711"
+      ]
+    },
+    {
+      "address": "0x1800023f0",
+      "name": "_guard_dispatch_icall",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800023f0",
+            "end": "0x1800023f1"
+          }
+        ],
+        "total_bytes": 2,
+        "span_bytes": 2,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800023f0",
+          "length": 2,
+          "file_offset": 6128,
+          "sha256": "b5916d40205265465cce91e2cd0704bf6e1e36263acfe53c729a06f296e9f353",
+          "evidence_id": "ev_6f255d8bac8ae4bf5ffc7393e612da42370415a8a2c43fbe22cdbcc44ea9158d"
+        }
+      ],
+      "evidence_ids": [
+        "ev_25bbd703186471816c5f1567345b8d38c13fdd967d146a220666f84f7360bf01",
+        "ev_7ec2284f44430a13e95a454e4a0548b632c414c1b86bcaadcee6ed544403bae5",
+        "ev_1f48e37313a2cb46b9ca5bbf27cf85affa8a4127f9d769c777a47ff1c1060cf7"
+      ]
+    },
+    {
+      "address": "0x180002410",
+      "name": "_guard_dispatch_icall",
+      "classification": {
+        "external": false,
+        "thunk": true,
+        "thunk_target": "0x1800023f0"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002410",
+            "end": "0x180002415"
+          }
+        ],
+        "total_bytes": 6,
+        "span_bytes": 6,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002410",
+          "length": 6,
+          "file_offset": 6160,
+          "sha256": "e55a2c936d832e96efb0ce75a3faa62c278b0b7389a11833e9fd60c92e52c9fd",
+          "evidence_id": "ev_c17f862c02a54bd179988f386337320f263b24fab1cbbae0952e885e209e4834"
+        }
+      ],
+      "evidence_ids": [
+        "ev_3e01dbd80bb7e94e013ffb54ef05198ce5221868a28e078c82f84084bcac836a",
+        "ev_42a2f74f5ebf17d6b1d30f27ec6a0fe5e20b59d94e9cf18641e8e73bf77163b1",
+        "ev_c5a168ddc310e5eab74c5da6b81d15cc5e876cd85f89d8467d8f71a1f0e1598e"
+      ]
+    },
+    {
+      "address": "0x180002416",
+      "name": "FUN_180002416",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002416",
+            "end": "0x18000242c"
+          }
+        ],
+        "total_bytes": 23,
+        "span_bytes": 23,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002416",
+          "length": 23,
+          "file_offset": 6166,
+          "sha256": "ae464cebb5503374ba7680fba456d05cc5dc61429eafe9ea62c843eb9a70f741",
+          "evidence_id": "ev_39f9e421bc8054bf3472ad838c4e35319f3b549807d89c343ab84f8879045ca7"
+        }
+      ],
+      "evidence_ids": [
+        "ev_13566f049cfb9015a6afd60fc870322e044954350d793f91390a3f34af69c234",
+        "ev_e0bda7d3d7ca81a322913ed3b1aea3f03f143a994837c2ae8709a2ce3bac2112",
+        "ev_f4e9b07c9b60a597d42ca8ab327a7bc028b5558f9a8073d503550677b75d6e1e"
+      ]
+    },
+    {
+      "address": "0x18000242e",
+      "name": "FUN_18000242e",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000242e",
+            "end": "0x180002443"
+          }
+        ],
+        "total_bytes": 22,
+        "span_bytes": 22,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000242e",
+          "length": 22,
+          "file_offset": 6190,
+          "sha256": "960e9ef78232dd2e61ce5449ae44e896af9e2c34419104e52795635af60f677b",
+          "evidence_id": "ev_f2179c10258f00442d48e7e0e6596e04a771ec4ee55b73bd31f7cea5c82705c1"
+        }
+      ],
+      "evidence_ids": [
+        "ev_59a079f496a01328ea7ed4c8160d11e3dc03c0b9bbf1c02695c5a5d687c5861f",
+        "ev_8c6bb47aaa59458a318641ef23e6cdaed2adeecf5586ac0d5b8e8508a6ef5689",
+        "ev_cc1a7a1365ded0f4d1fd14e6b00200e989c262ea3c788586933e1afbb81dd3b3"
+      ]
+    },
+    {
+      "address": "0x180002445",
+      "name": "FUN_180002445",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002445",
+            "end": "0x18000245c"
+          }
+        ],
+        "total_bytes": 24,
+        "span_bytes": 24,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002445",
+          "length": 24,
+          "file_offset": 6213,
+          "sha256": "661d4aad5499345c0da275fde794cf572b672c6742fa08d9c4961fcf6be780b5",
+          "evidence_id": "ev_66465a33e2d187dc415681b58873d73f42631735709d7c1baa10c2e55f347417"
+        }
+      ],
+      "evidence_ids": [
+        "ev_10b2b361d4070fa85d337104a40c6fa6b30e23957915819539ca34fcbea5533e",
+        "ev_dfec1ba4ef4f3c5b873911f854533a6c2e9603ddeb2fa135ed34b35c02fe8eaf",
+        "ev_8c5c6fda61b1e56732933343106445e478106ae8635e6cd719a168c6cafdb11a"
+      ]
+    },
+    {
+      "address": "0x18000245e",
+      "name": "FUN_18000245e",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x18000245e",
+            "end": "0x180002470"
+          }
+        ],
+        "total_bytes": 19,
+        "span_bytes": 19,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x18000245e",
+          "length": 19,
+          "file_offset": 6238,
+          "sha256": "ab79c76cf3673a66ef843b4c43638ebaed0ba449e360a944e51cf848a098ca2b",
+          "evidence_id": "ev_9e14bdee93dbf5af3bd73c0338d643778fdbff995e75127a3d6dfe89fdd8674e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_c3d61d8a90398457083f1de0f79f0265153c886ab17b2efaba2bcf20374ac6b7",
+        "ev_c3b3033a990010418a9b7e6f5fa0a4e96cb39244b04033265f3013fb73bd7b58",
+        "ev_b555b5fac644e2ea75ad058d6f8792ea1d83331c8d33dcd418bd00d5359c8aef"
+      ]
+    },
+    {
+      "address": "0x180002472",
+      "name": "FUN_180002472",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x180002472",
+            "end": "0x1800024a6"
+          }
+        ],
+        "total_bytes": 53,
+        "span_bytes": 53,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x180002472",
+          "length": 53,
+          "file_offset": 6258,
+          "sha256": "788b07fa714ee63fe4a6b52a35f9552484902188030ec380b32b740b3fcacbdd",
+          "evidence_id": "ev_bc6c5c04e4f31f5506750c21a0df1351336f4f984768df4849336882fe71a684"
+        }
+      ],
+      "evidence_ids": [
+        "ev_6b502d88092a2f858cbad4f470f14a139a31c573be3dd3f13daf1f3a76009643",
+        "ev_8db85eea7cb1d0f47edf97473a989a456a30253182843b6323181c84df1bf525",
+        "ev_1f0cbb2e2a1b3e012c950577849631692bfca6fd021ca130475f5ae99a1bce4a"
+      ]
+    },
+    {
+      "address": "0x1800024b0",
+      "name": "FUN_1800024b0",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1800024b0",
+            "end": "0x1800024da"
+          }
+        ],
+        "total_bytes": 43,
+        "span_bytes": 43,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "witnesses": [
+        {
+          "address": "0x1800024b0",
+          "length": 43,
+          "file_offset": 6320,
+          "sha256": "e37f4694ad38a323b339c3b492a51dddb87ca46aa8277613be35c8085ff456e2",
+          "evidence_id": "ev_e67c6d25b9dd47881c0d8c34260134be1bf4dd7b20368b6d1109b24558b4a53e"
+        }
+      ],
+      "evidence_ids": [
+        "ev_f58a351354374c39a9a4cd699c6140bca8985aaa79fbe8e8058f28a6200076e2",
+        "ev_aaf2e0f69b3edfe0b73952ce91b9eb6457da8381b3046125c1e49f84ce347825",
+        "ev_2394cbf5f265d8c6f6187595dd88ca7ef95fed16b5047873b7cf3ec84e0ce6f8"
+      ]
+    }
+  ]
+}
