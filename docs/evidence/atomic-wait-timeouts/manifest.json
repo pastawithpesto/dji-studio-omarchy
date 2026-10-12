@@ -1,0 +1,15 @@
+{
+  "schema": "atomic-wait-timeout-evidence-manifest-v1",
+  "source_sha256": "ae430f3b65c5fc88643b30a344289bfda29811279379c1537cec19983c0938ae",
+  "files": {
+    "REPORT.md": "9eb627a640ea69e21e8522ef6614294aa40f158172ad10000d198ce2a933ec17",
+    "__std_atomic_wait_get_deadline.ghidra.asm": "3c68ed7be4d06fb53c45ae304ec30e4ea2885a570bc6b724b6a4835b5ff855bb",
+    "__std_atomic_wait_get_deadline.pseudo.c": "1ae79b39176a8906cc67e0a527ded39fb8fb54788af8f931bcc5d273a0c49a31",
+    "__std_atomic_wait_get_remaining_timeout.ghidra.asm": "ce05d1aaf55cd8cd89583f20910505ab55be6bfc9063485fc2ad332250d72a0e",
+    "__std_atomic_wait_get_remaining_timeout.pseudo.c": "75bb376c4afbfb827b54a45137bde4032c2a4a75889b23ea2d415204bfb00ba8",
+    "reference-model-results.txt": "c3fc027feef46c3dcc0b6fb1324caad5bc17012fbcf90562db16343921708642",
+    "reference_model.py": "08a1e9a63f981873635529dede4526c45c82a5e523f6b2126f648cde29ab0f1c",
+    "source-map.json": "3cd5c3065b3f70957f0f6ada5e6f22fe4e6eda891f73ade61efc1f59b616fb89",
+    "validation.json": "27f35d5b00273a0ed535985463847c2e90d490aaf2f05e9839aa57a19a5df85f"
+  }
+}

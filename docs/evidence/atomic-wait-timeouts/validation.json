@@ -1,0 +1,97 @@
+{
+  "schema": "atomic-wait-timeout-static-validation-v1",
+  "source": {
+    "path": "DJI Studio 1.0.0.30839/extracted/1.0.0.30839/msvcp140_atomic_wait.dll",
+    "size_bytes": 57376,
+    "expected_sha256": "ae430f3b65c5fc88643b30a344289bfda29811279379c1537cec19983c0938ae",
+    "original_sha256_at_final_validation": "ae430f3b65c5fc88643b30a344289bfda29811279379c1537cec19983c0938ae",
+    "raw_copy_sha256": "ae430f3b65c5fc88643b30a344289bfda29811279379c1537cec19983c0938ae",
+    "matches": true
+  },
+  "independent_pe_inventory": {
+    "llvm": "LLVM readobj/objdump output identifies ordinals 11 and 12 at RVAs 0x15c0 and 0x15f0; both relevant names and GetTickCount64 import are present.",
+    "gnu": "GNU objdump independently identifies the same exports and named import.",
+    "result": "pass"
+  },
+  "captured_bytes": [
+    {
+      "name": "__std_atomic_wait_get_deadline",
+      "va": "0x1800015c0",
+      "rva": "0x15c0",
+      "file_offset": "0x9c0",
+      "length": 33,
+      "sha256": "91a621460251e107081a5c4abe58a32f74745cd2b6d93cc8fca49a9dca158b88",
+      "rehashed_from_original": "pass"
+    },
+    {
+      "name": "__std_atomic_wait_get_remaining_timeout",
+      "va": "0x1800015f0",
+      "rva": "0x15f0",
+      "file_offset": "0x9f0",
+      "length": 56,
+      "sha256": "2090187ba92fcec6d04afdfdf1e278feaeb834ad6bef76ad6b7f1c62370516ad",
+      "rehashed_from_original": "pass"
+    }
+  ],
+  "disassembly_and_pseudocode": {
+    "rea_ghidra_evidence_ids": [
+      "ev_209bd7420d4f44455daadb705efb3e8627bb253a7456ffc5aa8f36a97af1547f",
+      "ev_f5a8e55e4c33fc4114a120d66271e76d2171ec4c66b1b1083d0b8446f372df95",
+      "ev_7022277816ecc376228177154e8a556f5508328aa8538be7211296d4788627a7",
+      "ev_57a5b4512cdb28567a23bcdf9bb783737250e6eb651b1f4a038c376ce4e15817",
+      "ev_cfa7bf064740881669fa11b832625e8548c6536b3231b5047d4850b89907d00c",
+      "ev_546496283496dc3c2ed6dfe17638d66e448ba2c1facd44637d0ff55564a4d4a4"
+    ],
+    "captured_files_match_raw_records": true,
+    "llvm_byte_bearing_disassembly_checked": "pass"
+  },
+  "time_source": {
+    "named_import": "KERNEL32.dll!GetTickCount64",
+    "iat_va": "0x1800050d0",
+    "call_sites": [
+      "0x1800015d2",
+      "0x180001604"
+    ],
+    "raw_iat_slot_sha256": "658b14e7d48dcadae73091f12ff5809cfd70a3b281ea75bc6eb7a290f66184fc",
+    "result": "pass"
+  },
+  "analysis_provenance": {
+    "rea_upstream": "https://github.com/morluto/rea.git",
+    "rea_main_commit": "fa87dd2aac3eaeb49875c54e93ec18c98cc92e4d",
+    "rea_package_and_server": "6.4.0",
+    "ghidra": "12.1.4",
+    "node": "v26.9.0",
+    "java": "21.0.12.1",
+    "configured_headless_heap_limit": "768M",
+    "type": "one baseline static analysis"
+  },
+  "synthetic_input_model": {
+    "file": "reference_model.py",
+    "cases": 11,
+    "result": "pass",
+    "vendor_dll_loaded_or_executed": false
+  },
+  "claim_scope": {
+    "current_main": "ad90db13d7fff5745baa5ec84ff1b7c31a19ac35",
+    "current_main_is_ancestor": true,
+    "open_pr_count": 18,
+    "other_claim_conflicts": [],
+    "claim_snapshot": "local reconstruction raw/open-prs-before-publication.json",
+    "watchdog_prior_pass": {
+      "head": "4f5216c4aa984237dfd9929a615820bf98702582",
+      "run": "38214760856",
+      "result": "pass"
+    },
+    "final_candidate_watchdog": "pending after push"
+  },
+  "declared_scope": [
+    "docs/tasks/atomic-wait-timeouts.md",
+    "docs/evidence/atomic-wait-timeouts/**"
+  ],
+  "limits": [
+    "No vendor execution or observed timing.",
+    "No formal C/C++ prototype inferred from Ghidra types.",
+    "No whole-library, wait-loop, thread wakeup, scheduler, or Windows-equivalence claim.",
+    "The time unit is taken from the separately cited Microsoft API documentation; the DLL source bytes establish only arithmetic on values returned by its import."
+  ]
+}
