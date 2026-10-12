@@ -49,5 +49,5 @@ Obtain independent review of the corrected claim before you use it for implement
 ## Check field writes after a copy
 
 Trace each store between an object copy and the next consumer call.
-Record each changed field offset, write width, and source value.
+Record each changed field offset, write width, and source register or expression.
 Verify each store against the original instructions before you state the consumer contract.
