@@ -1,0 +1,38 @@
+{
+  "excluded_numeric_assertions": {
+    "input_bits": "0x3ff8000000000000",
+    "name": "mlt_circular_ease_in",
+    "reason": "negative radicand is a recorded Wine observation and outside the approved numeric contract"
+  },
+  "files": [
+    {
+      "bytes": 1660,
+      "path": "README.md",
+      "sha256": "d389a230e212a8002f19a3180ad61d04ae1071b0ecfdd0e05e58de5c660fcb31"
+    },
+    {
+      "bytes": 1899,
+      "path": "wine-initial-reference.jsonl",
+      "sha256": "6f97f09d84a98c1ad6fa4efead6a3b4a8bb9be158d7c34e8ec1b1a357af22e86"
+    },
+    {
+      "bytes": 2853,
+      "path": "wine-interpolation-extension.jsonl",
+      "sha256": "30275d510d1c3e2ce357e4baf00be55dbef3db53e497ef1955210cdc97cd0c40"
+    }
+  ],
+  "initial_reference_manifest_sha256": "161dde5718d667e458f2f5b269627590b744e818d3c8e3d09e560b6cd0b41cf6",
+  "interpolation_reference_manifest_sha256": "aff5bd1110eafd1b1f89c6dadfa622df4623cea621f11bd60844956ab7766fec",
+  "numeric_assertions": 44,
+  "original_dll": "DJI Studio 1.0.0.30839 mltframework-win.dll",
+  "rows": 45,
+  "rows_by_name": {
+    "mlt_circular_ease_in": 9,
+    "mlt_cublic_linear_ease_in_out": 9,
+    "mlt_discrete_interpolation": 9,
+    "mlt_linear_interpolation": 9,
+    "mlt_smooth_interpolation": 9
+  },
+  "runtime": "Wine 11.17; no Windows parity",
+  "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c"
+}
