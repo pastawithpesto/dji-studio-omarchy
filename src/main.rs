@@ -11,6 +11,141 @@ fn text_argument<'a>(value: &'a OsStr, kind: &str) -> Result<&'a str, String> {
         .ok_or_else(|| format!("{kind} must be valid UTF-8"))
 }
 
+fn frame_rate(value: &serde_json::Value) -> Option<(u64, u64)> {
+    let (numerator, denominator) = value.as_str()?.split_once('/')?;
+    let numerator = numerator.parse().ok()?;
+    let denominator = denominator.parse().ok()?;
+    if numerator == 0 || denominator == 0 {
+        return None;
+    }
+    Some((numerator, denominator))
+}
+
+fn raw_camera_pair(input: &Path) -> Result<[u64; 2], String> {
+    let probe = Command::new("ffprobe")
+        .args([
+            "-v",
+            "error",
+            "-show_entries",
+            "stream=index,codec_type,codec_name,width,height,avg_frame_rate:stream_disposition=attached_pic,timed_thumbnails",
+            "-of",
+            "json",
+            "-i",
+        ])
+        .arg(input)
+        .output()
+        .map_err(|e| format!("Could not start FFprobe: {e}"))?;
+    if !probe.status.success() {
+        return Err(format!(
+            "FFprobe failed: {}: {}",
+            probe.status,
+            String::from_utf8_lossy(&probe.stderr).trim()
+        ));
+    }
+    let inventory: serde_json::Value = serde_json::from_slice(&probe.stdout)
+        .map_err(|e| format!("Invalid FFprobe stream list: {e}"))?;
+    let streams = inventory["streams"]
+        .as_array()
+        .ok_or("FFprobe did not return a stream list")?;
+    let cameras: Vec<_> = streams
+        .iter()
+        .filter(|stream| {
+            stream["codec_type"] == "video"
+                && stream["codec_name"] != "mjpeg"
+                && stream["disposition"]["attached_pic"].as_u64().unwrap_or(0) == 0
+                && stream["disposition"]["timed_thumbnails"].as_u64().unwrap_or(0) == 0
+        })
+        .collect();
+    let pair_error = "Raw panorama input must have exactly two matching square camera video streams";
+    if cameras.len() != 2 {
+        return Err(pair_error.into());
+    }
+    let first = cameras[0];
+    let second = cameras[1];
+    let width = first["width"].as_u64().ok_or(pair_error)?;
+    let height = first["height"].as_u64().ok_or(pair_error)?;
+    let codec = first["codec_name"].as_str().ok_or(pair_error)?;
+    let left_rate = frame_rate(&first["avg_frame_rate"]).ok_or(pair_error)?;
+    let right_rate = frame_rate(&second["avg_frame_rate"]).ok_or(pair_error)?;
+    if width == 0
+        || width != height
+        || second["width"].as_u64() != Some(width)
+        || second["height"].as_u64() != Some(height)
+        || second["codec_name"].as_str() != Some(codec)
+        || u128::from(left_rate.0) * u128::from(right_rate.1)
+            != u128::from(right_rate.0) * u128::from(left_rate.1)
+    {
+        return Err(pair_error.into());
+    }
+    let indexes = [
+        first["index"].as_u64().ok_or(pair_error)?,
+        second["index"].as_u64().ok_or(pair_error)?,
+    ];
+    if indexes[0] == indexes[1] {
+        return Err(pair_error.into());
+    }
+    Ok(indexes)
+}
+
+fn raw_panorama(input: &Path, output: &Path) -> Result<(), String> {
+    if !input.is_file() {
+        return Err("Input must be an existing file".into());
+    }
+    match output.symlink_metadata() {
+        Ok(_) => return Err("Output already exists".into()),
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => {}
+        Err(e) => return Err(format!("Could not check output path: {e}")),
+    }
+    // Absolute paths prevent FFmpeg from reading a path as an option or URL.
+    let input = if input.is_absolute() {
+        input.to_path_buf()
+    } else {
+        env::current_dir().map_err(|e| e.to_string())?.join(input)
+    };
+    let output = if output.is_absolute() {
+        output.to_path_buf()
+    } else {
+        env::current_dir().map_err(|e| e.to_string())?.join(output)
+    };
+    let [left, right] = raw_camera_pair(&input)?;
+    let filter = format!(
+        "[0:{left}][0:{right}]hstack=inputs=2:shortest=1,v360=input=dfisheye:output=equirect:w=2048:h=1024[panorama]"
+    );
+    eprintln!("Experimental raw panorama preview. DJI lens calibration and seam correction are not applied.");
+    let status = Command::new("ffmpeg")
+        .args(["-nostdin", "-n", "-i"])
+        .arg(input)
+        .args([
+            "-filter_complex",
+            &filter,
+            "-map",
+            "[panorama]",
+            "-map",
+            "0:a:0?",
+            "-c:v",
+            "libx264",
+            "-crf",
+            "20",
+            "-pix_fmt",
+            "yuv420p",
+            "-fps_mode",
+            "passthrough",
+            "-c:a",
+            "aac",
+            "-movflags",
+            "+faststart",
+            "-f",
+            "mp4",
+        ])
+        .arg(output)
+        .status()
+        .map_err(|e| format!("Could not start FFmpeg: {e}"))?;
+    if !status.success() {
+        return Err(format!("FFmpeg failed: {status}"));
+    }
+    Ok(())
+}
+
 fn print_nested(
     outer: Option<&dji_reframe::metadata::demux::OuterInventory>,
     carrier: Option<&dji_reframe::metadata::demux::NestedCarrier>,
@@ -111,6 +246,12 @@ fn run() -> Result<(), String> {
         .filter(|v| v.as_encoded_bytes().starts_with(b"--"))
         .map(|v| text_argument(v, "Option"))
         .transpose()?;
+    if option == Some("--raw-panorama") {
+        if a.len() != 3 {
+            return Err("Usage: dji-reframe --raw-panorama INPUT OUTPUT".into());
+        }
+        return raw_panorama(Path::new(&a[1]), Path::new(&a[2]));
+    }
     if option == Some("--encoder") {
         if a.len() != 2 {
             return Err("Usage: dji-reframe --encoder ENCODER_TAG".into());
@@ -269,7 +410,7 @@ fn run() -> Result<(), String> {
     }
     if option == Some("--help") {
         println!(
-            "dji-reframe INPUT OUTPUT [YAW PITCH HFOV]\ndji-reframe --encoder ENCODER_TAG\ndji-reframe --inspect MP4\ndji-reframe --metadata INPUT\ndji-reframe --metadata-nested INPUT\n--metadata inspects up to two direct djmd/xtmd tracks with FFprobe base64 support.\n--metadata-nested inspects one carrier level using the outer encoder; no recursive processing.\nCamera/Windows compatibility is unverified.\n--inspect scans top-level nested box extents only.\nReframe an already stitched equirectangular video into 1920x1080 H.264.\nDefaults: yaw=0 pitch=0 horizontal FOV=90. Existing output is never overwritten.\nRequires FFmpeg with v360 and libx264. Raw DJI dual-lens footage is not supported yet."
+            "dji-reframe INPUT OUTPUT [YAW PITCH HFOV]\ndji-reframe --raw-panorama INPUT OUTPUT\ndji-reframe --encoder ENCODER_TAG\ndji-reframe --inspect MP4\ndji-reframe --metadata INPUT\ndji-reframe --metadata-nested INPUT\n--metadata inspects up to two direct djmd/xtmd tracks with FFprobe base64 support.\n--metadata-nested inspects one carrier level using the outer encoder; no recursive processing.\nCamera/Windows compatibility is unverified.\n--inspect scans top-level nested box extents only.\nReframe an already stitched equirectangular video into 1920x1080 H.264.\nDefaults: yaw=0 pitch=0 horizontal FOV=90. Existing output is never overwritten.\n--raw-panorama writes an experimental 2048x1024 H.264/AAC MP4 preview from two matching square camera streams.\nThe preview can have visible seam and lens errors. DJI Studio parity is unverified.\nRequires FFmpeg with v360 and libx264. The raw panorama mode also requires FFprobe."
         );
         return Ok(());
     }
