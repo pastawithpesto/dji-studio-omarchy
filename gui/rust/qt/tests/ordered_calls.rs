@@ -60,10 +60,10 @@ impl Screens for TestScreens {
             .push(format!("screen[{index}].geometry"));
         self.reads += 1;
         let rectangle = self.rectangles[index];
-        if self.reads == 1 {
-            if let Some(replacement) = self.replacement {
-                self.rectangles[index] = replacement;
-            }
+        if self.reads == 1
+            && let Some(replacement) = self.replacement
+        {
+            self.rectangles[index] = replacement;
         }
         rectangle
     }
