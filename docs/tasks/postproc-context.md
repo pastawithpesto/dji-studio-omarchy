@@ -15,16 +15,16 @@ The target is `/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/
 
 ## Existing evidence
 
-The coordinator's initial inventory found no matching saved target claim. I will inspect compatible local evidence before a new import. I will preserve the shared REA installation and all peer analysis sessions.
+The initial local REA evidence search and the filtered evidence-bundle query returned no record matching the pinned target SHA-256. I used a private REA install under `tools/luna-postproc-rea-20261012`; the shared REA installation and peer sessions were left unchanged.
 
-## Next steps
+## Research performed
 
-1. Fetch the official REA default branch and update only the owned installation.
-2. Record the REA commit, package version, running MCP version, Ghidra version, settings, binary hash, and source locations.
-3. Inspect the current PE export table with LLVM and compare the names independently with the REA/Ghidra view.
-4. Reuse matching saved evidence. If none exists, request and acquire the shared Ghidra import lock before importing the pinned DLL.
-5. Decompile the bounded exports and only the small helpers needed to establish their contracts. Check the pseudocode against assembly and original source bytes.
-6. Record a source map, validation results, evidence provenance, and unresolved limits under `docs/evidence/postproc-context/`.
+- Installed official REA `main` at `fa87dd2aac3eaeb49875c54e93ec18c98cc92e4d` in the owned tool directory. The private MCP server reported version 6.4.0, MCP SDK 2.3.1, and aligned package/catalog identity.
+- Compared LLVM `llvm-readobj` output with an independent PE parser. All ten names, ordinals, and RVAs matched; the parser mapped them to file offsets. Ghidra 12.1.4’s imported-name inventory contains every name once at the matching VA.
+- Acquired and released the shared Ghidra lock nonblocking for two private sessions. The selected five code exports are JMP thunks, so the second capture covered only their direct implementation targets. The context initializer at `0x18000a970` remains outside scope.
+- Matched all five exported thunk bodies and all five implementation bodies byte-for-byte to the original DLL using REA/Ghidra reads and an independent PE section mapper. The `postproc_ffversion` read also matched the source bytes. The source SHA-256 was unchanged before and after both captures.
+- Published the bounded report, complete selected pseudocode/assembly and evidence IDs, source-byte map, tool pins, and offline validator in [`docs/evidence/postproc-context/`](../evidence/postproc-context/report.md). The offline validator passes against the pinned original DLL.
+- The PR stays in draft while independent source and milestone reviews are pending.
 
 ## Completion check
 
@@ -41,3 +41,5 @@ HEAD and freshly fetched `origin/main`: `54081edf52f23231500db222136eae0a681e653
 Checked at: `2026-10-12T01:27:38-05:00`
 Main ancestry: verified; main is the branch base.
 Status: clean before this task-plan edit.
+
+The task-only reservation is commit `727505e95e03e99ff4496e5a0a1129f5da7da52c`. Subsequent base updates were merged normally. The evidence edit began after fetching `ad90db13d7fff5745baa5ec84ff1b7c31a19ac35`, reviewing all open claims, and observing a successful claim watchdog on head `a756fdcbd17d3a4d53959110e976473bf0c94386` (run `38215252693`).

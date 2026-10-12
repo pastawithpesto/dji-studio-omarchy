@@ -1,0 +1,65 @@
+{
+  "task_identity": "luna-postproc-20261012",
+  "capture_started_utc": "2026-10-12T06:46:25.890Z",
+  "source": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/postproc-58.dll",
+    "sha256": "fcb300de9e4702545991c4487e0ee90728090f22f3639c4bf6adc0bd4a03617b",
+    "size_bytes": 99512
+  },
+  "rea": {
+    "upstream_repository": "https://github.com/morluto/rea",
+    "upstream_default_branch": "main",
+    "upstream_commit": "fa87dd2aac3eaeb49875c54e93ec18c98cc92e4d",
+    "package": "rea-agents",
+    "package_version": "6.4.0",
+    "package_manager_declared": "npm@11.16.0",
+    "private_installation": "/home/violence/Projects/dji-studio-omarchy/tools/luna-postproc-rea-20261012",
+    "server_command": "/home/violence/Projects/dji-studio-omarchy/tools/luna-postproc-rea-20261012/scripts/rea.mjs",
+    "server_sha256": "d9d9ddf93ea61619fb20e619c218a004fb1f17e823f142f0be9f851ca7030480",
+    "runtime_sha256": "9c75ade7e87ed6e2cf3340f2b9d6ea91a3ebaa2f0322c5767ade550271e65c25",
+    "mcp_server_version": {
+      "name": "rea",
+      "version": "6.4.0"
+    },
+    "mcp_sdk_version": "2.3.1",
+    "protocol_version": "2025-11-25",
+    "tool_count": 173,
+    "tool_schema_sha256_local_probe": "3e1971608f2f7ba278f835cb741f7d432efc9fa4bf38d79b2ff19d9d311ce4af",
+    "server_catalog_digests": {
+      "tools_sha256": "54e4698937d769f939af564f459652b00083c739f76bdd71c7caf4e8c1777b9f",
+      "prompts_sha256": "5296f0301566cadaf89243e774512011f11045af36d48405f76a3ff9a8947ac2",
+      "combined_sha256": "b89fe7ea45a843d782a7680180e8accd1a8defa173bd9a5390b01abbc7d9312e"
+    },
+    "server_reported_build_commit": null,
+    "skill_identity": {
+      "name": "reverse-engineer-anything",
+      "expected_version": "39"
+    }
+  },
+  "runtime": {
+    "node": "v26.9.0",
+    "npm_used_for_dependency_install": "11.16.0 via npm exec --package=npm@11.16.0 -- npm ci",
+    "ghidra_version": "12.1.4",
+    "ghidra_install_dir": "/home/violence/Projects/dji-studio-omarchy/tools/ghidra_12.1.4_PUBLIC",
+    "java_version": "21.0.12.1",
+    "java_home": "/home/violence/Projects/dji-studio-omarchy/tools/jdk21/usr/lib/jvm/java-21-openjdk",
+    "llvm_readobj": "22.1.8",
+    "llvm_objdump": "22.1.8"
+  },
+  "analysis_configuration": {
+    "provider": "ghidra",
+    "headless_heap": "768M",
+    "startup_timeout_ms": 600000,
+    "lock": "/home/violence/Projects/dji-studio-omarchy/coordination/ghidra-import.lock",
+    "lock_method": "fcntl.flock(LOCK_EX | LOCK_NB), held only while each private Ghidra import/session was active",
+    "temp_directory": "/home/violence/Projects/dji-studio-omarchy/reconstruction/luna-postproc-20261012/rea-tmp",
+    "private_stdio_only": true,
+    "shared_rea_installation_modified": false
+  },
+  "limits": [
+    "Ghidra types and calling conventions are provisional decompiler observations.",
+    "The binary was not executed and no caller-driven runtime behavior was tested.",
+    "The context helper at 0x18000a970 was not analyzed; its argument contract is reported only as a call boundary.",
+    "No whole-DLL, processing-output, pixel/filter, or DJI Studio equivalence is claimed."
+  ]
+}
