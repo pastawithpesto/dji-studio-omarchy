@@ -1,0 +1,84 @@
+{
+  "method": "Offline PE32+ export-directory and section parsing, direct E9 rel32 decoding, no REA/Ghidra provider.",
+  "source": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll",
+    "bytes": 3130552,
+    "sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1",
+    "machine": "AMD64",
+    "image_base": "0x180000000"
+  },
+  "exports": {
+    "ComputeCRC64": {
+      "export_name": "?ComputeCRC64@OSS@AlibabaCloud@@YA_K_KPEAX0@Z",
+      "ordinal": 1737,
+      "export_rva": "0xc9a0",
+      "jumps": [
+        {
+          "rva": "0xc9a0",
+          "file_offset": 48544,
+          "bytes_hex": "e9bb370700",
+          "target_rva": "0x80160"
+        },
+        {
+          "rva": "0x80160",
+          "file_offset": 521568,
+          "bytes_hex": "e913d7f8ff",
+          "target_rva": "0xd878"
+        },
+        {
+          "rva": "0xd878",
+          "file_offset": 52344,
+          "bytes_hex": "e9936d1a00",
+          "target_rva": "0x1b4610"
+        },
+        {
+          "rva": "0x1b4610",
+          "file_offset": 1784336,
+          "bytes_hex": "e9ab050000",
+          "target_rva": "0x1b4bc0"
+        }
+      ],
+      "body_rva": "0x1b4bc0",
+      "first_body_bytes_hex": "4057488d3dd71e12004d8bd84c8bd248f7d14d85c0742141f6c207741b410fb6"
+    },
+    "CombineCRC64": {
+      "export_name": "?CombineCRC64@OSS@AlibabaCloud@@YA_K_K00@Z",
+      "ordinal": 1726,
+      "export_rva": "0x55c4",
+      "jumps": [
+        {
+          "rva": "0x55c4",
+          "file_offset": 18884,
+          "bytes_hex": "e9d7aa0700",
+          "target_rva": "0x800a0"
+        },
+        {
+          "rva": "0x800a0",
+          "file_offset": 521376,
+          "bytes_hex": "e91861f8ff",
+          "target_rva": "0x61bd"
+        },
+        {
+          "rva": "0x61bd",
+          "file_offset": 21949,
+          "bytes_hex": "e97ee41a00",
+          "target_rva": "0x1b4640"
+        },
+        {
+          "rva": "0x1b4640",
+          "file_offset": 1784384,
+          "bytes_hex": "e90b020000",
+          "target_rva": "0x1b4850"
+        }
+      ],
+      "body_rva": "0x1b4850",
+      "first_body_bytes_hex": "48895c24084889742410574881ec30040000488b053f9311004833c448898424"
+    }
+  },
+  "abi_basis": {
+    "ComputeCRC64": "Decorated signature YA_K_KPEAX0@Z denotes unsigned 64-bit return; arguments are unsigned 64-bit, pointer, unsigned 64-bit.",
+    "CombineCRC64": "Decorated signature YA_K_K00@Z denotes unsigned 64-bit return and three unsigned 64-bit arguments.",
+    "call_test": "The x64 Windows PE harness uses matching function-pointer types and resolved both exact names with GetProcAddress. Calls and returns completed for the fixture corpus.",
+    "limits": "Register mapping is the Microsoft x64 ABI interpretation. Wine execution does not establish native Windows or DJI application parity."
+  }
+}

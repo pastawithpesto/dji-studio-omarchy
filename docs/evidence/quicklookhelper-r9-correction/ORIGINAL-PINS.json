@@ -1,0 +1,134 @@
+{
+  "pins": [
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/REPORT.md",
+      "bytes": 8169,
+      "sha256": "12835129d9e5d15f67bf07951947a9b7a5080d70367a60dd53b5f3cce12ccebf"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/findings.json",
+      "bytes": 18805,
+      "sha256": "0bad4f4ff9c4088ce8b735b3b75082436c4ea7c34d02f31d5b565c6b6ee693c8"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/MANIFEST.json",
+      "bytes": 30934,
+      "sha256": "71e8e36bb819c2ddbd716135933cab8531e788f696c595061c3220a5425bc2ee"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/REPORT.md",
+      "bytes": 8698,
+      "sha256": "088186c5f35e086bc038e813582d8ce9c5498e0533310d6d569b59a51552feff"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/MANIFEST.json",
+      "bytes": 16809,
+      "sha256": "50c568a718ca963e5558c25a3f510211ad202b1e0addd4954e37de8bf49b03f8"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/ROOT-REPORT.md",
+      "bytes": 3205,
+      "sha256": "703bed8c2078f3daccea5ff128ce868f94664757eda15e85cc6f7921d2fa463c"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/ROOT-MANIFEST.json",
+      "bytes": 671002,
+      "sha256": "f7487369ffd52f4f823b168df8ab37fa39ee949d58115479f2fe26f68e2b0354"
+    },
+    {
+      "path": "reconstruction/root-astra-more-prs-20261012/PR21-VERDICT.md",
+      "bytes": 5457,
+      "sha256": "e102dd9cca481b2f991fe9176b53c8e64e5eded78ea019bf49f89feef9e41f22"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/milestone-review/SUPPLEMENTAL-CHECKS.json",
+      "bytes": 77161,
+      "sha256": "51d7eb1c6a914af2ac1c1c6b1e24039c0bbf8885f0ae7eb365cfb5f5f36c981c"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-luna-three-20261012/configuration/correction-r1/MANIFEST.json",
+      "bytes": 9734,
+      "sha256": "a4ca2e81d13b26c7f4a797de40f8fe8a541ece4a56b6deb826ab21c8a7aa68a0"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-luna-three-20261012/configuration/correction-r1/REPORT.md",
+      "bytes": 8307,
+      "sha256": "41fac7b5d1eae8c9d946c5ad464df9486846e526dea3f4b531ebb099bb3690c4"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-luna-three-20261012/configuration/correction-r1/CONTRACT.json",
+      "bytes": 15756,
+      "sha256": "121fe01f06bd95349529eaed01adb59d966705ecf808a5c2b58d588c2e38b95e"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-luna-three-20261012/luna-contract-review-20261012/configuration/REVIEW.md",
+      "bytes": 4153,
+      "sha256": "62e4aabce9e23fe3dfdb5b99c0f4519a1b1446e653eaf9362bdcf9b812e69984"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-luna-three-20261012/luna-contract-review-20261012/configuration/REVIEW-MANIFEST.json",
+      "bytes": 883,
+      "sha256": "61245cc147f2a367d09e0be238a529c8dddeb074f10ff494dc9d07f1f928f98d"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-luna-three-20261012/hooks/correction-r1/MANIFEST.json",
+      "bytes": 5326,
+      "sha256": "2ff564811592df566a0c05c415379a33990485bbba2b8b922001b2a11f36c2cd"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-luna-three-20261012/luna-contract-review-20261012/hooks/REVIEW.md",
+      "bytes": 3936,
+      "sha256": "6f1564161177d2d5e9ea5fcb98c56381b479fd6f152ee8da6d128c30b4d54802"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180006aa0/ASSEMBLY.json",
+      "bytes": 8720,
+      "sha256": "f3b7678b021626c8fee0d8ccdceee8a6d4e0a3a07a514bee9fd66722ac7ee095"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180001753/ASSEMBLY.json",
+      "bytes": 6717,
+      "sha256": "ccc8dcb5e23c6b882d87f6ceab40fbe981311d543640a4d609137edda8c40a81"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800025b0/ASSEMBLY.json",
+      "bytes": 38036,
+      "sha256": "071bc8c22ef3bb641bfa3717043e1680b25b8a8e7d4077cc4c4aee19bb838a50"
+    }
+  ],
+  "saved_records": [
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180006aa0/ASSEMBLY.json",
+      "file_sha256": "f3b7678b021626c8fee0d8ccdceee8a6d4e0a3a07a514bee9fd66722ac7ee095",
+      "evidence_id": "ev_731119bf0f58b0b89f048803c06797734ed17101e2ff485c09ae777bc268ca3c",
+      "provider": "Ghidra",
+      "provider_version": "12.1.4",
+      "source_sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b",
+      "operation": "procedure_assembly",
+      "copy_path": "saved/180006aa0-ASSEMBLY.json"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180001753/ASSEMBLY.json",
+      "file_sha256": "ccc8dcb5e23c6b882d87f6ceab40fbe981311d543640a4d609137edda8c40a81",
+      "evidence_id": "ev_98a7117f8b480ce582071fc50df6c1dbe56dc26ca9e8c20f6634b49cd66bd07c",
+      "provider": "Ghidra",
+      "provider_version": "12.1.4",
+      "source_sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b",
+      "operation": "procedure_assembly",
+      "copy_path": "saved/180001753-ASSEMBLY.json"
+    },
+    {
+      "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800025b0/ASSEMBLY.json",
+      "file_sha256": "071bc8c22ef3bb641bfa3717043e1680b25b8a8e7d4077cc4c4aee19bb838a50",
+      "evidence_id": "ev_c6556465643640c60275044c898e8a757da4dc4070ba4bbcc9015b0441bb6d63",
+      "provider": "Ghidra",
+      "provider_version": "12.1.4",
+      "source_sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b",
+      "operation": "procedure_assembly",
+      "copy_path": "saved/1800025b0-ASSEMBLY.json"
+    }
+  ],
+  "saved_rea_version": "6.4.0",
+  "saved_ghidra_version": "12.1.4",
+  "mode": "offline saved evidence and original byte inspection; no new decompilation; no live upstream or MCP freshness claimed"
+}
