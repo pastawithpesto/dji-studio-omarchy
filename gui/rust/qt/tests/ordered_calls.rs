@@ -42,6 +42,7 @@ struct TestScreens {
     rectangles: Vec<Rect>,
     primary: Option<usize>,
     reads: usize,
+    replacement: Option<Rect>,
 }
 impl Screens for TestScreens {
     type Screen = usize;
@@ -58,7 +59,13 @@ impl Screens for TestScreens {
             .borrow_mut()
             .push(format!("screen[{index}].geometry"));
         self.reads += 1;
-        self.rectangles[index]
+        let rectangle = self.rectangles[index];
+        if self.reads == 1 {
+            if let Some(replacement) = self.replacement {
+                self.rectangles[index] = replacement;
+            }
+        }
+        rectangle
     }
 }
 fn fixture(list: Vec<Option<usize>>, rectangles: Vec<Rect>) -> (TestWindow, TestScreens, Log) {
@@ -77,6 +84,7 @@ fn fixture(list: Vec<Option<usize>>, rectangles: Vec<Rect>) -> (TestWindow, Test
             rectangles,
             primary: None,
             reads: 0,
+            replacement: None,
         },
         log,
     )
@@ -167,6 +175,8 @@ fn reset_tie_keeps_first_and_rereads_selected_geometry_and_window_sizes() {
         vec![Some(0), Some(1)],
         vec![rect(0, 0, 100, 100), rect(0, 0, 200, 200)],
     );
+    window.widths = vec![40, 120];
+    window.heights = vec![20, 90];
     adapter::reset_window_to_best_screen(Some(&mut window), &mut screens);
     assert_eq!(
         *log.borrow(),
@@ -183,6 +193,15 @@ fn reset_tie_keeps_first_and_rereads_selected_geometry_and_window_sizes() {
             "window.setPosition"
         ]
     );
-    assert_eq!(window.moved, Some(Position { x: 30, y: 40 }));
+    assert_eq!(window.moved, Some(Position { x: -20, y: 10 }));
     assert!(window.widths.is_empty() && window.heights.is_empty());
+}
+
+#[test]
+fn reset_uses_the_selected_screen_geometry_from_the_second_read() {
+    let (mut window, mut screens, _) = fixture(vec![Some(0)], vec![rect(0, 0, 100, 100)]);
+    screens.replacement = Some(rect(1000, 2000, 200, 100));
+    adapter::reset_window_to_best_screen(Some(&mut window), &mut screens);
+    assert_eq!(window.moved, Some(Position { x: 1080, y: 2040 }));
+    assert_eq!(screens.reads, 2);
 }
