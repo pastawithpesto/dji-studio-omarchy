@@ -58,7 +58,13 @@ Do not present research-tool names or independent internal APIs as original DJI 
 
 ## Research and implementation
 
-Prefer RAE with Ghidra when it is available.
+Prefer REA with Ghidra when it is available.
+Use the latest upstream REA from the [official repository](https://github.com/morluto/rea).
+At task start and resume, fetch its default branch and update an owned
+installation to the newest upstream commit before new analysis.
+Record the upstream commit, package version and running MCP server version.
+Preserve other workers' installations and active sessions.
+Keep saved evidence pinned to the tool version that produced it.
 Verify access and reuse matching saved evidence before an import.
 Request a required import or resource grant through comms.
 Pin the original build, source hashes, artifacts, function addresses or observation
