@@ -40,7 +40,9 @@ shader blobs, source slots, raw offsets, NUL terminators, and hashes.
 The AI dimension predicate is in the same original DLL at
 `0x1801c1b90..0x1801c1d0b`. The signed positivity checks are at
 `0x1801c1ba1` and `0x1801c1bac`. Equality checks are at `0x1801c1bb4` and
-`0x1801c1bb9`. The error returns are at `0x1801c1bbe` and `0x1801c1cfe`.
+`0x1801c1bb9`. The zero success return is at `0x1801c1bbe` (`33 c0`, `xor eax,eax`).
+The failure return is at `0x1801c1cfe` (`b8 56 d4 f6 ff`,
+`mov eax,0xfff6d456`).
 Sol-Ghidra reviewed the exact original span. Its saved RAE ID is
 `ev_638d086419486be852e9ae3f632306dba34b143570af609729d2959e960c1439` for
 shader host context and `ev_c37cbab125f8fab3a48e1f2078cce9c694e44be81e49d3e251dea2075f534433`
@@ -102,3 +104,14 @@ Clippy driver passes on the stitching test target with warnings denied. The
 standard `cargo clippy` entry point cannot select a toolchain in this shell.
 The test-target-only Clippy invocation and initial toolchain errors are recorded
 in the owned continuation packet.
+
+## Additive D1 correction
+
+The original author report `001-code-candidate/REPORT.md` remains frozen.
+Its lines 44-45 incorrectly classify the success address as an error return.
+The corrected classification above is supported by the original DLL bytes.
+The original report SHA-256 is
+`d14fb73a7c10cb5966209596e48def736d3b082025394c3b6ea963bb7b696562`.
+This correction changes documentation only. The scalar source, tests and fixture
+remain byte-identical to candidate `6e4db183bdd2b19980a92f8ea79adc8b6cb6608e`.
+Independent review of the corrected candidate remains required.
