@@ -21,15 +21,17 @@ Run workers in waves within the session limit. Queued work is not running work.
 Publish receipts, findings, blockers, and handoffs through the addressed local bus.
 Root records shared progress in the PR. Do not repeat completed resource extraction.
 
-Keep PR 1 as the resource integration reservation. Keep PR 2 as the hosted trigger
-fix reservation. This PR claims new handoff records, not those implementation files.
+PR1 resource integration is merged. PR2 records verified hosted trigger execution.
+This PR claims selected handoff records, not those implementation files.
 Require independent Sol review and Astra High verification before a new milestone.
 
 ## Current continuation
 
 PR 1 is merged after Sol and Astra approval. Do not repeat resource extraction.
-The local watchdog is active and passed Astra operational verification in comms
-1387. Hosted automatic event execution remains unverified in PR 2.
+The local watchdog passed historical Astra operational verification in comms1387.
+Hosted automatic `pull_request_target` execution is verified by
+[run38194148483](https://github.com/pastawithpesto/dji-studio-omarchy/actions/runs/38194148483).
+Read current monitoring results before inferring present service health.
 
 WindowPositionDetector analysis passed independent Sol review in comms 1553 and
 Astra milestone verification in comms 1580. This PR adds exact selected reports
@@ -46,4 +48,6 @@ GLM and Kimi reports have separate correction and review work.
 The worker table above records the initial allocation. It is not a live process
 list. Read current PR comments and actual comms receipts before taking a task.
 Use the latest verified remote main for new work. Preserve exact vendor pins and
-historical reports. Keep this PR in draft while continuation remains open.
+historical reports. This PR delivers the selected documentation handoff only.
+Future continuation work requires its own current PR claim. This documentation
+merge does not complete the ongoing reverse engineering work.
