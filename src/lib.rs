@@ -19,3 +19,9 @@ pub mod project_dom;
 pub mod audio_prelog;
 
 pub mod number_format;
+
+pub mod stitch_mask;
+
+pub mod stitch_warp;
+
+pub mod stitching;
