@@ -1,0 +1,55 @@
+{
+  "evidence_kind": "additive_observed_wine_loader_trace_for_sealed_original_export_fixture",
+  "trace_started_utc_date": "2026-10-12",
+  "source_dll": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll",
+    "sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1"
+  },
+  "sealed_fixture": {
+    "path_from_parent": "../ORIGINAL-EXPORT-FIXTURE.json",
+    "sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624",
+    "sealed_raw_stdout_sha256": "f67abd8001e3bf57b955f8af4f3d1d8d99a0d0523749e52f7079ef3c5071692c"
+  },
+  "execution": {
+    "working_directory": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/runtime-trace",
+    "prefix": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/runtime-trace/wineprefix",
+    "command": "WINEPREFIX=/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/runtime-trace/wineprefix WINEDEBUG=+loaddll wine ./original_exports.exe > observed-loader-trace.tsv 2> loaddll.trace.log",
+    "wine_version": "wine-11.17",
+    "tool_versions": {
+      "clang": "clang version 22.1.8",
+      "linker": "LLD 22.1.8",
+      "python": "Python 3.14.7"
+    },
+    "initialization_note": "wineboot emitted an RpcSs service warning; the owned-prefix direct harness execution completed successfully. See wineboot.stderr and wineboot.stdout."
+  },
+  "harness_artifact_sha256": {
+    "original_exports.c": "84986c36099d60e06b9c5e50ae2c85b9755454ba0bdad9e69b39fde8abd14dd2",
+    "original_exports.obj": "110f117e9eb13fb3113928dc744dc37fc90e20bbedf4a55376f775073f8759ec",
+    "original_exports.exe": "27e125faf08e9bc57122fa4e2425dfae740df98d28e6597be6f761ea0f600c4d",
+    "cases.tsv": "a28252e6002a2baae0397c1cfce64848cb1a39e200ca48656f6db192b78db38a"
+  },
+  "trace_and_result": {
+    "loaddll.trace.log_sha256": "44eca73b3920fbd841cdfe5600039ada6ea81e3e692af23beae8aab59f1f459f",
+    "observed-loader-trace.tsv_sha256": "d17be8e7eee85e93dcdb60ada27906077e20f2790464a2248f4b3b8d328918f4",
+    "loader_manifest_sha256": "b3d03808aba2cc5ad5b5a8f09802791dc23281b5fbb16de3f580213f3dad6cc7",
+    "rows": 3729,
+    "compute_calls": 3153,
+    "combine_calls": 576,
+    "results_match_sealed_fixture_by_case_id_and_all_fields": true,
+    "harness_process_trace_id": "0024",
+    "loaded_modules": 26,
+    "unresolved_implementation_files": 0,
+    "loader_events_and_images": "RUNTIME-LOADER-MANIFEST.json"
+  },
+  "supporting_files_sha256": {
+    "resolve_loads.py": "a4f5f34d73a6d4b218ed2ac56902e57492c6270112edd1676a6e5b822c59bd1e",
+    "wineboot.stderr": "9d014d7c31bb1bf5780dc84373860781bccdcec0f227abe826ac3137342e77ac",
+    "wineboot.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "This is a Wine 11.17 run and does not establish native Windows behavior or DJI Studio process module selection.",
+    "Only the bounded CRC export harness was executed; no network or upload methods were called.",
+    "No export timing was measured.",
+    "The loader trace covers the harness process only; Wine service and desktop processes are excluded."
+  ]
+}

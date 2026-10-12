@@ -1,0 +1,62 @@
+{
+  "source": "Exact copies of the independently authored sealed original-DLL fixture. No Wine execution by Rust author.",
+  "fixture_sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624",
+  "source_dll_sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1",
+  "files": [
+    {
+      "path": "ORIGINAL-EXPORT-FIXTURE.json",
+      "sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624",
+      "bytes": 1186675
+    },
+    {
+      "path": "PE-EXPORT-AND-CHAIN.json",
+      "sha256": "b75e37e94c9b4654af305e44f5f31d30b7706ce1bec2361b5623ba53bbd305a8",
+      "bytes": 2881
+    },
+    {
+      "path": "README.md",
+      "sha256": "8c85a91a565572c1618842dd834de5e7e6080c0b318267434c8d2cd9e61518b4",
+      "bytes": 2497
+    },
+    {
+      "path": "SEAL-RECEIPT.json",
+      "sha256": "8f76f6659eb5248d165df1d5f6889e34be7fe10048ecc49bab5467546ca1a536",
+      "bytes": 6751
+    },
+    {
+      "path": "SYNTHETIC-ORACLE-CHECK.json",
+      "sha256": "b9412ec9f7762adc1b74fbcc56abc7d0c46a5b99c5d4706d1b92370fadcc17c1",
+      "bytes": 750
+    },
+    {
+      "path": "build_fixture.py",
+      "sha256": "3244d041df8a9e72c95d1bbfec388fab10afd939c1e6da432718e6c49e12cc93",
+      "bytes": 11905
+    },
+    {
+      "path": "initial-cases.tsv",
+      "sha256": "a28252e6002a2baae0397c1cfce64848cb1a39e200ca48656f6db192b78db38a",
+      "bytes": 158164
+    },
+    {
+      "path": "join-cases.tsv",
+      "sha256": "01db1476e78be50453035b27dc0a328b05d584ebae6a1c536733b14b7bd6f640",
+      "bytes": 1584
+    },
+    {
+      "path": "join-observed.tsv",
+      "sha256": "49a4a1c95ee08bffe51ea90fcb8148124237c7889f24fddb5e5dd6482699df93",
+      "bytes": 1896
+    },
+    {
+      "path": "observed.tsv",
+      "sha256": "f67abd8001e3bf57b955f8af4f3d1d8d99a0d0523749e52f7079ef3c5071692c",
+      "bytes": 212947
+    },
+    {
+      "path": "original_exports.c",
+      "sha256": "84986c36099d60e06b9c5e50ae2c85b9755454ba0bdad9e69b39fde8abd14dd2",
+      "bytes": 6971
+    }
+  ]
+}
