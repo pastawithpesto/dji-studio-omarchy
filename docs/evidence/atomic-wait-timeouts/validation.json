@@ -76,13 +76,29 @@
     "current_main_is_ancestor": true,
     "open_pr_count": 18,
     "other_claim_conflicts": [],
-    "claim_snapshot": "local reconstruction raw/open-prs-before-publication.json",
+    "claim_snapshot": "local reconstruction raw/open-prs-before-gate-record.json",
     "watchdog_prior_pass": {
       "head": "4f5216c4aa984237dfd9929a615820bf98702582",
       "run": "38214760856",
       "result": "pass"
     },
-    "final_candidate_watchdog": "pending after push"
+    "final_candidate_watchdog": "pending after push",
+    "watchdog": {
+      "pre_analysis_pass": {
+        "head": "4f5216c4aa984237dfd9929a615820bf98702582",
+        "run": "38214760856",
+        "result": "success"
+      },
+      "published_snapshot_pass": {
+        "head": "ba71d0955f922b75b7490a3846f09f8ffd125afa",
+        "run": "38215555549",
+        "claims_job": "success",
+        "url": "https://github.com/pastawithpesto/dji-studio-omarchy/actions/runs/38215555549",
+        "result": "success"
+      },
+      "note": "The next documentation-only commit records this exact-head pass and will receive its own claims check."
+    },
+    "open_pr_count_at_record": "18"
   },
   "declared_scope": [
     "docs/tasks/atomic-wait-timeouts.md",
