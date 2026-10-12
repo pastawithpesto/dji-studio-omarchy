@@ -5,6 +5,7 @@ import datetime
 import hmac
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
+import os
 from pathlib import Path
 import secrets
 import selectors
@@ -13,7 +14,7 @@ import subprocess
 import threading
 import time
 from urllib.parse import parse_qs, urlsplit
-from data import Catalog, MODELS, activity, observed_usage, workers
+from data import Catalog, MODELS, activity, alive, load_json, observed_usage, workers
 from jobs import Queue, utc
 
 
@@ -28,41 +29,54 @@ class Usage:
     def limits(self):
         if not shutil.which('codex'):
             return None, None
-        proc = subprocess.Popen(['codex', 'app-server', '--listen', 'stdio://'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True, start_new_session=True)
+        proc = subprocess.Popen(['codex', 'app-server', '--listen', 'stdio://'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, start_new_session=True)
         selector = selectors.DefaultSelector()
         selector.register(proc.stdout, selectors.EVENT_READ)
+        os.set_blocking(proc.stdout.fileno(), False)
         def send(value):
-            proc.stdin.write(json.dumps(value) + '\n')
+            proc.stdin.write((json.dumps(value) + '\n').encode())
             proc.stdin.flush()
         limit, summary = None, None
         try:
             send(dict(id=1, method='initialize', params={'clientInfo': {'name': 'dll_research_console', 'title': 'DLL Research Console', 'version': '0.1.0'}, 'capabilities': {'experimentalApi': True}}))
             deadline = time.monotonic() + 18
             waiting = {1}
+            buffer = b''
             while waiting and time.monotonic() < deadline and proc.poll() is None:
                 if not selector.select(0.5):
                     continue
-                line = proc.stdout.readline()
-                if not line:
+                block = os.read(proc.stdout.fileno(), 65536)
+                if not block:
                     break
-                item = json.loads(line)
-                if not isinstance(item, dict):
-                    continue
-                ident = item.get('id')
-                if ident not in waiting:
-                    continue
-                waiting.remove(ident)
-                if ident == 1:
-                    if 'error' in item:
-                        break
-                    send({'method': 'initialized'})
-                    send({'id': 2, 'method': 'account/rateLimits/read'})
-                    send({'id': 3, 'method': 'account/usage/read'})
-                    waiting.update((2, 3))
-                elif ident == 2:
-                    limit = item.get('result', {}).get('rateLimits')
-                elif ident == 3:
-                    summary = item.get('result', {}).get('summary')
+                buffer += block
+                if len(buffer) > 1_000_000:
+                    break
+                while b'\n' in buffer:
+                    line, buffer = buffer.split(b'\n', 1)
+                    try:
+                        item = json.loads(line)
+                    except ValueError:
+                        continue
+                    if not isinstance(item, dict):
+                        continue
+                    ident = item.get('id')
+                    if ident not in waiting:
+                        continue
+                    waiting.remove(ident)
+                    result = item.get('result', {})
+                    result = result if isinstance(result, dict) else {}
+                    if ident == 1:
+                        if 'error' in item:
+                            waiting.clear()
+                            break
+                        send({'method': 'initialized'})
+                        send({'id': 2, 'method': 'account/rateLimits/read'})
+                        send({'id': 3, 'method': 'account/usage/read'})
+                        waiting.update((2, 3))
+                    elif ident == 2:
+                        limit = result.get('rateLimits')
+                    elif ident == 3:
+                        summary = result.get('summary')
         except (OSError, ValueError, BrokenPipeError):
             pass
         finally:
@@ -121,18 +135,24 @@ class App:
                 for part in result['parts']:
                     if part['id'] in job['parts']:
                         part['owner'] = MODELS[job['model']]['name'] + ' · ' + job['status']
+                        if job['status'] == 'running' and self.queue.owned_process(self.queue.jobs[job['id']]) and part['research'] in ('missing', 'unreviewed'):
+                            part['research'] = 'running'
         if ident == 'ThumbnailProvider.dll':
             blocker = self.queue.external_blocker(ident, [dict(id='internals')], 'research')
             if blocker:
                 for part in result['parts']:
                     if part.get('owner_feature') == 'thumbnailprovider-kimi-k3':
-                        part['owner'] = 'Kimi K3 High · existing assignment'
+                        dispatch = load_json(self.project / 'reconstruction/kimi-thumbnailprovider-20261012/DISPATCH.json', {})
+                        active = dispatch.get('state') == 'launched' and any(w['pid'] == dispatch.get('pid') and 'kimi-k3' in w['model'] for w in workers())
+                        part['owner'] = 'Kimi K3 High · ' + ('running' if active else 'recorded assignment')
+                        if active:
+                            part['research'] = 'running'
         return result
 
     def job_artifact(self, ident, name):
         if ident not in self.queue.jobs or name not in ('FINAL.txt', 'REPORT.md', 'CONTRACT.json', 'REVIEW.md', 'REVIEW.json', 'MANIFEST.json', 'PROGRESS.json'):
             raise ValueError('Unknown public job artifact')
-        root = (self.queue.output / ident).resolve()
+        root = self.queue.output_dir(ident)
         path = (root / name).resolve()
         if not path.is_relative_to(root) or not path.is_file():
             raise ValueError('Artifact has not been produced')
@@ -180,7 +200,7 @@ class Handler(BaseHTTPRequestHandler):
             if url.path == '/api/module':
                 return self.reply(app.module(query.get('id', [''])[0]))
             if url.path == '/api/artifact':
-                return self.reply(app.catalog.artifact(query.get('path', [''])[0]), mime='text/plain; charset=utf-8')
+                return self.reply({'text': app.catalog.artifact(query.get('path', [''])[0]).decode('utf-8', errors='replace')})
             bits = url.path.strip('/').split('/')
             if len(bits) == 5 and bits[:2] == ['api', 'jobs'] and bits[3] == 'artifact':
                 return self.reply(app.job_artifact(bits[2], bits[4]), mime='text/plain; charset=utf-8')

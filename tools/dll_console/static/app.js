@@ -774,9 +774,30 @@
       renderWorkers();
       renderJobs();
       renderModelAvailability();
-      if (modelState.moduleId && (!modelState.module || !safeArray(data.modules).some((m) => String(m.id) === modelState.moduleId))) {
+      if (modelState.moduleId && modelState.module) {
+        const id = modelState.moduleId;
+        const generation = modelState.moduleRequest;
+        const fresh = await requestJson(`/api/module?id=${encodeURIComponent(id)}`);
+        if (generation === modelState.moduleRequest && id === modelState.moduleId) {
+          modelState.module = fresh;
+          const available = new Set([...safeArray(fresh.parts).map(p => String(p.id)), ...safeArray(fresh.exports).map(e => `export:${e.va}`)]);
+          for (const selected of selectedIds()) if (!available.has(selected)) modelState.selected.delete(selected);
+          const detail = modelState.detailSelection;
+          if (detail?.kind === 'part') {
+            const updated = safeArray(fresh.parts).find(p => String(p.id) === detail.id);
+            modelState.detailSelection = updated ? { kind: 'part', id: detail.id, data: updated } : null;
+          }
+          const activeScope = ui.scopeCanvas.contains(document.activeElement) ? document.activeElement.getAttribute('aria-label') : null;
+          renderModuleHeader(); renderView(); renderDetail(); renderSelection();
+          if (activeScope) {
+            const restored = Array.from(ui.scopeCanvas.querySelectorAll('button')).find(button => button.getAttribute('aria-label') === activeScope);
+            restored?.focus({ preventScroll: true });
+          }
+          if (selectedIds().length) schedulePreview();
+        }
+      } else if (modelState.moduleId) {
         await loadModule(modelState.moduleId);
-      } else if (!modelState.moduleId && safeArray(data.modules).length) {
+      } else if (safeArray(data.modules).length) {
         await loadModule(data.modules[0].id || data.modules[0].name);
       }
     } catch (error) {
@@ -793,7 +814,7 @@
   async function openArtifact(path, label) {
     if (typeof path !== 'string' || !path) return toast('Evidence path was not supplied.', true);
     ui.artifactTitle.textContent = label || path;
-    ui.artifactContent.textContent = 'Loading approved text artifact…';
+    ui.artifactContent.textContent = 'Loading source evidence…';
     if (!ui.artifactDialog.open) ui.artifactDialog.showModal();
     try {
       const data = await requestJson(`/api/artifact?path=${encodeURIComponent(path)}`);

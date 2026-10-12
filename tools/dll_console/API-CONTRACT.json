@@ -25,7 +25,7 @@
   "POST /api/jobs": {"request": "Same as preview", "response": {"job": "New durable queued job"}},
   "POST /api/jobs/ID/pause": {"response": {"job": "Only console-owned job is paused; artifacts retained"}},
   "POST /api/jobs/ID/resume": {"response": {"job": "Paused or failed job queued on its exact original model"}},
-  "GET /api/artifact?path=URL_ENCODED_PATH": "Text-only approved evidence artifact; no arbitrary filesystem browse or reasoning logs",
+  "GET /api/artifact?path=URL_ENCODED_PATH": {"text": "Allowlisted source evidence. Approval is a separate part state. No arbitrary filesystem browse or reasoning logs."},
   "errors": {"error": "Human-readable message; HTTP 400/403/404/409"},
   "frontend": "Buildless HTML/CSS/JS, static/index.html, static/app.js, static/style.css. No dependencies, external fonts or image fetches. All supplied data rendered as text, never raw HTML. Research states reviewed/unreviewed/missing/running/blocked. Implementation states missing/branch/integrated. Reference states missing/wine/validated. Model ids luna, sol, astra, kimi. Fixed phase selectors research/review. Poll every 8 seconds; preserve selection and user edits. Do not show fake percent-complete or quota."
 }

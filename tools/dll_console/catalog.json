@@ -276,7 +276,7 @@
           "0x1800011b0",
           "0x1800011d0"
         ],
-        "research": "running",
+        "research": "unreviewed",
         "implementation": "missing",
         "reference": "missing",
         "missing": [
@@ -292,7 +292,7 @@
         ],
         "review_json": null,
         "owner_feature": "thumbnailprovider-kimi-k3",
-        "statusSource": "The independent export review explicitly excludes these method bodies and decoding behavior."
+        "statusSource": "The independent export review explicitly excludes these method bodies and decoding behavior. This is a recorded assignment. Running requires a verified live worker."
       },
       {
         "id": "remaining-thumbnail-surface",
@@ -491,7 +491,7 @@
         "group": "Services and timeline",
         "detail": "The current task queue assigns additive corrections to the changes-requested service/timeline contracts. No exact corrected independent disposition or Rust implementation is recorded in this catalog.",
         "addresses": [],
-        "research": "running",
+        "research": "unreviewed",
         "implementation": "missing",
         "reference": "missing",
         "missing": [
@@ -506,7 +506,7 @@
           }
         ],
         "owner_feature": "mlt-service-contract-corrections",
-        "statusSource": "Current task queue routes bounded contract corrections; no approved correction packet is claimed."
+        "statusSource": "Current task queue routes bounded contract corrections; no approved correction packet is claimed. This is a recorded assignment. Running requires a verified live worker."
       },
       {
         "id": "event-contracts",
@@ -514,7 +514,7 @@
         "group": "Events",
         "detail": "An independent event-contract review is queued; no approved event contract or implementation is included here.",
         "addresses": [],
-        "research": "running",
+        "research": "unreviewed",
         "implementation": "missing",
         "reference": "missing",
         "missing": [
@@ -529,7 +529,7 @@
           }
         ],
         "owner_feature": "mlt-event-scalar-contract",
-        "statusSource": "Queue assignment only; no review result is inferred."
+        "statusSource": "Queue assignment only; no review result is inferred. This is a recorded assignment. Running requires a verified live worker."
       },
       {
         "id": "pool-cache-graph-and-other-apis",

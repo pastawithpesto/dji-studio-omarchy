@@ -1,6 +1,8 @@
 """Focused stdlib regression tests for the local DLL console's boundaries."""
 import hashlib
 import http.client
+import io
+import os
 import json
 import struct
 import sqlite3
@@ -283,7 +285,7 @@ class QueueTests(unittest.TestCase):
 
     def test_opencode_step_finish_stop_completes_successful_turn(self):
         event = {'type': 'step_finish', 'sessionID': 'ses_abc123',
-                 'part': {'reason': 'stop', 'tokens': {'input': 17, 'output': 4}}}
+                 'part': {'reason': 'stop', 'tokens': {'input': 17, 'output': 4, 'reasoning': 2, 'cache': {'read': 5, 'write': 3}}}}
         job, _ = self.running_job_with_log((json.dumps(event) + '\n').encode())
 
         class FinishedProcess:
@@ -295,7 +297,31 @@ class QueueTests(unittest.TestCase):
             self.queue.tick()
         self.assertEqual(self.queue.jobs[job['id']]['status'], 'completed')
         self.assertEqual(self.queue.jobs[job['id']]['session'], 'ses_abc123')
-        self.assertEqual(self.queue.jobs[job['id']]['usage'], {'input_tokens': 17, 'output_tokens': 4})
+        self.assertEqual(self.queue.jobs[job['id']]['usage'], {'input_tokens': 25, 'output_tokens': 6, 'cached_input_tokens': 5})
+
+    def test_terminal_state_waits_for_all_events_and_late_error(self):
+        noise = (json.dumps({'type': 'item.started'}) + '\n') * 200
+        end = json.dumps({'type': 'turn.completed', 'usage': {'input_tokens': 7}}) + '\n'
+        for late_error in (False, True):
+            with self.subTest(late_error=late_error):
+                body = noise + end + (json.dumps({'type': 'error'}) + '\n' if late_error else '')
+                job, _ = self.running_job_with_log(body.encode())
+                self.queue.processes[job['id']] = SimpleNamespace(poll=lambda: 0)
+                with patch.object(self.queue, 'owned_process', return_value=False), patch.object(self.queue, 'group_alive', return_value=False):
+                    self.queue.tick()
+                    self.assertEqual(job['status'], 'running')
+                    self.queue.tick()
+                self.assertEqual(job['status'], 'failed' if late_error else 'completed')
+                self.assertEqual(job['usage']['input_tokens'], 7)
+
+    def test_final_json_record_without_newline_is_consumed(self):
+        event = json.dumps({'type': 'turn.completed', 'usage': {'output_tokens': 3}})
+        job, _ = self.running_job_with_log(event.encode())
+        self.queue.processes[job['id']] = SimpleNamespace(poll=lambda: 0)
+        with patch.object(self.queue, 'owned_process', return_value=False), patch.object(self.queue, 'group_alive', return_value=False):
+            self.queue.tick()
+        self.assertEqual(job['status'], 'completed')
+        self.assertEqual(job['usage']['output_tokens'], 3)
 
     def test_reasoning_and_tool_log_content_never_enters_public_state_or_artifacts(self):
         secrets_in_log = ('private_reasoning_marker_91d4', 'private_tool_result_marker_70ba')
@@ -346,6 +372,25 @@ class QueueTests(unittest.TestCase):
             self.queue.tick()
         self.assertNotEqual(self.queue.jobs[job['id']]['status'], 'completed')
         self.assertNotIn('turn_completed', self.queue.jobs[job['id']])
+
+    def test_job_directory_symlink_cannot_expose_or_launch_outside_artifacts(self):
+        job = self.queue.enqueue(valid_request())
+        root = self.queue.output / job['id']
+        (root / 'TASK.txt').unlink()
+        root.rmdir()
+        outside = self.project / 'outside'
+        outside.mkdir()
+        (outside / 'REPORT.md').write_text('private outside report')
+        root.symlink_to(outside, target_is_directory=True)
+        app = object.__new__(server.App)
+        app.queue = self.queue
+        with self.assertRaisesRegex(ValueError, 'owned location'):
+            app.job_artifact(job['id'], 'REPORT.md')
+        self.assertEqual(self.queue.snapshot()[0]['artifacts'], [])
+        with patch('jobs.subprocess.Popen') as launch:
+            self.queue.launch(self.queue.jobs[job['id']])
+            launch.assert_not_called()
+        self.assertEqual(self.queue.jobs[job['id']]['status'], 'failed')
 
     def test_queued_pause_resume_and_job_state_survive_restarts(self):
         job = self.queue.enqueue(valid_request(('part-b',), action='review', model='astra', notes='resume fixture'))
@@ -402,9 +447,9 @@ class UsageTests(unittest.TestCase):
         opencode_dir.mkdir(parents=True)
         db = sqlite3.connect(opencode_dir / 'opencode.db')
         try:
-            db.execute('CREATE TABLE session_v2 (id TEXT, model TEXT, tokens_input INTEGER, tokens_output INTEGER, tokens_cache_read INTEGER, time_updated INTEGER, directory TEXT)')
-            db.execute('INSERT INTO session_v2 VALUES (?, ?, ?, ?, ?, ?, ?)',
-                       ('open-session', '{"id":"kimi-k3"}', 12, 3, 8, 100000, str(self.project)))
+            db.execute('CREATE TABLE session_v2 (id TEXT, model TEXT, tokens_input INTEGER, tokens_output INTEGER, tokens_cache_read INTEGER, time_updated INTEGER, directory TEXT, tokens_reasoning INTEGER, tokens_cache_write INTEGER)')
+            db.execute('INSERT INTO session_v2 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                       ('open-session', '{"id":"kimi-k3"}', 12, 3, 8, 100000, str(self.project), 2, 4))
             db.commit()
         finally:
             db.close()
@@ -413,10 +458,37 @@ class UsageTests(unittest.TestCase):
         ids = [entry['id'] for entry in result['sessions']]
         self.assertEqual(ids.count('same-thread'), 1)
         self.assertEqual(len(ids), 3)
-        self.assertEqual(result['total_tokens'], 120)
-        self.assertEqual(result['input_tokens'], 82)
-        self.assertEqual(result['output_tokens'], 33)
+        self.assertEqual(result['total_tokens'], 134)
+        self.assertEqual(result['input_tokens'], 94)
+        self.assertEqual(result['output_tokens'], 35)
         self.assertEqual(result['cached_tokens'], 28)
+
+    def test_quota_partial_json_does_not_block_past_deadline(self):
+        read_fd, write_fd = os.pipe()
+        reader = os.fdopen(read_fd, 'rb', buffering=0)
+        os.write(write_fd, b'{"id":1')
+        terminated = []
+        proc = SimpleNamespace(stdin=io.BytesIO(), stdout=reader, poll=lambda: None,
+                               terminate=lambda: terminated.append(True), wait=lambda **_: 0)
+        usage = object.__new__(server.Usage)
+        values = iter((0, 0, 19))
+        result = []
+        try:
+            with patch('server.shutil.which', return_value='/fixture/codex'), patch('server.subprocess.Popen', return_value=proc), patch('server.time.monotonic', side_effect=lambda: next(values, 19)):
+                thread = threading.Thread(target=lambda: result.append(usage.limits()), daemon=True)
+                thread.start()
+                thread.join(timeout=1)
+                stopped = not thread.is_alive()
+                if not stopped:
+                    os.write(write_fd, b'}\n')
+                    thread.join(timeout=1)
+                self.assertTrue(stopped, 'A partial line must not defeat the quota deadline')
+                self.assertTrue(terminated, 'The console must terminate its own quota process')
+                self.assertEqual(result, [(None, None)])
+        finally:
+            os.close(write_fd)
+            reader.close()
+
 
 
 class HttpGuardTests(unittest.TestCase):
@@ -426,6 +498,7 @@ class HttpGuardTests(unittest.TestCase):
         cls.server.daemon_threads = True
         cls.server.app = SimpleNamespace(
             csrf='fixture-session-token',
+            catalog=SimpleNamespace(artifact=lambda relative: b'fixture source evidence'),
             queue=SimpleNamespace(preview=lambda request: ({'selection_summary': 'Part A', 'scope_blocker': None}, None, [])),
         )
         cls.thread = threading.Thread(target=cls.server.serve_forever, daemon=True)
@@ -455,6 +528,15 @@ class HttpGuardTests(unittest.TestCase):
         payload = response.read()
         conn.close()
         return status, payload
+
+    def test_evidence_route_returns_the_json_text_contract(self):
+        conn = http.client.HTTPConnection('127.0.0.1', self.port, timeout=3)
+        conn.request('GET', '/api/artifact?path=fixture.md', headers={'Connection': 'close'})
+        response = conn.getresponse()
+        self.assertEqual(response.status, 200)
+        self.assertTrue(response.getheader('Content-Type').startswith('application/json'))
+        self.assertEqual(json.loads(response.read()), {'text': 'fixture source evidence'})
+        conn.close()
 
     def test_mutation_accepts_exact_local_host_origin_and_session_token(self):
         status, payload = self.post(

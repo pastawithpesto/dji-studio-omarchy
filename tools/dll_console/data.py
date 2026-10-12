@@ -188,7 +188,7 @@ def activity(project):
 
 def observed_usage(project, home=None):
     home = Path(home or Path.home())
-    result = dict(total_tokens=0, input_tokens=0, output_tokens=0, cached_tokens=0, sessions=[], note='Reported project sessions; quota and billing are separate.')
+    result = dict(total_tokens=0, input_tokens=0, output_tokens=0, cached_tokens=0, sessions=[], note='Reported project sessions; quota and billing are separate. Codex quota only; OpenCode quota is unknown.')
     seen = set()
     for path in sorted(home.joinpath('.codex').glob('state*.sqlite'), reverse=True):
         try:
@@ -219,8 +219,10 @@ def observed_usage(project, home=None):
             continue
     try:
         with readonly_db(home / '.local/share/opencode/opencode.db') as db:
-            rows = db.execute('SELECT id,model,tokens_input,tokens_output,tokens_cache_read,time_updated,directory FROM session_v2').fetchall()
-        for ident, model, inp, out, cached, updated, cwd in rows:
+            columns = {row[1] for row in db.execute('PRAGMA table_info(session_v2)')}
+            optional = [name if name in columns else '0' for name in ('tokens_reasoning', 'tokens_cache_write')]
+            rows = db.execute('SELECT id,model,tokens_input,tokens_output,tokens_cache_read,time_updated,directory,' + ','.join(optional) + ' FROM session_v2').fetchall()
+        for ident, model, inp, out, cached, updated, cwd, reasoning, cache_write in rows:
             if not isinstance(cwd, str) or not Path(cwd).is_relative_to(Path(project).resolve()):
                 continue
             try:
@@ -229,7 +231,9 @@ def observed_usage(project, home=None):
                 continue
             if not isinstance(parsed, dict):
                 continue
-            result['sessions'].append(dict(id=ident, model=parsed.get('id', 'OpenCode'), provider='OpenCode', total_tokens=(inp or 0) + (out or 0), input_tokens=inp or 0, output_tokens=out or 0, cached_tokens=cached or 0, updated_at=updated / 1000))
+            normalized_input = (inp or 0) + (cached or 0) + (cache_write or 0)
+            normalized_output = (out or 0) + (reasoning or 0)
+            result['sessions'].append(dict(id=ident, model=parsed.get('id', 'OpenCode'), provider='OpenCode', total_tokens=normalized_input + normalized_output, input_tokens=normalized_input, output_tokens=normalized_output, cached_tokens=cached or 0, updated_at=updated / 1000))
     except (sqlite3.Error, OSError, ValueError, TypeError):
         pass
     for field in ('total_tokens', 'input_tokens', 'output_tokens', 'cached_tokens'):

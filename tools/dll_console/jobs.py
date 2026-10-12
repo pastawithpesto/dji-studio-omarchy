@@ -46,13 +46,19 @@ class Queue:
         self.output.mkdir(parents=True, exist_ok=True)
         self.lock = threading.RLock()
         self.jobs = {p.stem: load_json(p) for p in self.control.glob('*.json')}
-        self.jobs = {k: v for k, v in self.jobs.items() if isinstance(v, dict) and v.get('id') == k and re.fullmatch(r'[0-9a-f]{32}', k) and v.get('model') in MODELS and v.get('status') in ('queued', 'running', 'paused', 'failed', 'interrupted', 'completed') and v.get('action') in ('research', 'review') and isinstance(v.get('parts'), list) and isinstance(v.get('created_at'), str) and isinstance(v.get('dll'), str)}
+        self.jobs = {k: v for k, v in self.jobs.items() if isinstance(v, dict) and v.get('id') == k and re.fullmatch(r'[0-9a-f]{32}', k) and v.get('model') in MODELS and v.get('status') in ('queued', 'running', 'paused', 'failed', 'interrupted', 'completed') and v.get('action') in ('research', 'review') and isinstance(v.get('parts'), list) and isinstance(v.get('created_at'), str) and isinstance(v.get('dll'), str) and 1 <= len(v['parts']) <= 40 and all(isinstance(part, str) for part in v['parts']) and isinstance(v.get('notes', ''), str) and len(v.get('notes', '')) <= 8000 and isinstance(v.get('attempt', 0), int) and v.get('attempt', 0) >= 0 and (not v.get('session') or isinstance(v['session'], str) and re.fullmatch(r'(?:[0-9a-fA-F-]{36}|ses_[a-zA-Z0-9]+)', v['session']))}
         self.processes = {}
         self.offsets = {}
         self.closed = False
         if launch:
             self.thread = threading.Thread(target=self.loop, daemon=True)
             self.thread.start()
+
+    def output_dir(self, ident):
+        expected = self.output / ident
+        if expected.resolve() != expected or not expected.is_dir():
+            raise ValueError('Job output folder no longer matches its owned location')
+        return expected
 
     def save(self, job):
         job['updated_at'] = utc()
@@ -67,7 +73,12 @@ class Queue:
             for job in sorted(self.jobs.values(), key=lambda j: j['created_at'], reverse=True):
                 public = {k: v for k, v in job.items() if k not in ('log', 'start_ticks', 'reported_error', 'turn_completed')}
                 public['owned'] = True
-                root = self.output / job['id']
+                try:
+                    root = self.output_dir(job['id'])
+                except ValueError:
+                    public['artifacts'] = []
+                    result.append(public)
+                    continue
                 public['artifacts'] = [dict(label=name, url=f"/api/jobs/{job['id']}/artifact/{name}") for name in ('FINAL.txt', 'REPORT.md', 'CONTRACT.json', 'REVIEW.md', 'REVIEW.json', 'MANIFEST.json', 'PROGRESS.json') if (root / name).is_file() and (root / name).resolve().is_relative_to(root.resolve())]
                 result.append(public)
             return result
@@ -208,7 +219,12 @@ User directions:
         return record
 
     def launch(self, job):
-        output = self.output / job['id']
+        try:
+            output = self.output_dir(job['id'])
+        except ValueError:
+            job.update(status='failed', reason='Job output folder no longer matches its owned location')
+            self.save(job)
+            return
         if not self.source_identity(output)['verified']:
             job.update(status='failed', reason='Fresh source check failed before launch')
             self.save(job)
@@ -251,7 +267,7 @@ User directions:
             job.update(status='failed', reason='CLI could not start; no automatic retry or model fallback')
             self.save(job)
 
-    def read_events(self, job):
+    def read_events(self, job, final=False):
         path = Path(job.get('log', ''))
         if not path.is_file():
             return
@@ -268,7 +284,7 @@ User directions:
                         line = stream.readline(1_000_001)
                     self.offsets[job['id']] = stream.tell()
                     continue
-                if not line.endswith(b'\n'):
+                if not line.endswith(b'\n') and not final:
                     self.offsets[job['id']] = begin
                     break
                 self.offsets[job['id']] = stream.tell()
@@ -291,16 +307,25 @@ User directions:
                         job['turn_completed'] = True
                     tokens = part.get('tokens', {})
                     if isinstance(tokens, dict):
-                        for dest, key in [('input_tokens', 'input'), ('output_tokens', 'output')]:
-                            if isinstance(tokens.get(key), int) and tokens[key] >= 0:
-                                job['usage'][dest] = job['usage'].get(dest, 0) + tokens[key]
+                        safe = lambda value: value if isinstance(value, int) and value >= 0 else 0
+                        cache = tokens.get('cache', {})
+                        cache = cache if isinstance(cache, dict) else {}
+                        normalized = dict(input_tokens=safe(tokens.get('input')) + safe(cache.get('read')) + safe(cache.get('write')),
+                                          output_tokens=safe(tokens.get('output')) + safe(tokens.get('reasoning')),
+                                          cached_input_tokens=safe(cache.get('read')))
+                        for key, value in normalized.items():
+                            job['usage'][key] = job['usage'].get(key, 0) + value
                 if item.get('type') in ('error', 'turn.failed'):
                     job['reported_error'] = True
-        receipt = load_json(self.output / job['id'] / 'RECEIPT.json')
+        try:
+            output = self.output_dir(job['id'])
+        except ValueError:
+            return
+        receipt = load_json(output / 'RECEIPT.json')
         if isinstance(receipt, dict) and receipt.get('task_id', receipt.get('id')) == job['id']:
             job['receipt'] = True
             job['reason'] = 'Worker receipt recorded; scoped task is running'
-        progress = load_json(self.output / job['id'] / 'PROGRESS.json')
+        progress = load_json(output / 'PROGRESS.json')
         if isinstance(progress, dict) and isinstance(progress.get('summary'), str):
             job['progress'] = progress['summary'][:1200]
 
@@ -308,12 +333,15 @@ User directions:
         with self.lock:
             for job in self.jobs.values():
                 if job['status'] in ('running', 'paused'):
-                    self.read_events(job)
                     proc = self.processes.get(job['id'])
                     code = proc.poll() if proc else None
+                    self.read_events(job, final=code is not None)
                     if job['status'] == 'paused':
                         continue
                     if not self.owned_process(job) and not self.group_alive(job):
+                        log = Path(job.get('log', ''))
+                        if log.is_file() and self.offsets.get(job['id'], 0) < log.stat().st_size:
+                            continue
                         if code == 0 and not job.get('reported_error') and job.get('turn_completed'):
                             job.update(status='completed', reason='CLI turn completed; evidence still needs independent review')
                         elif code is not None:

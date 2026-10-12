@@ -20,7 +20,8 @@ and review hashes are checked. Changed evidence pins block approval display.
 
 The catalog covers four DLLs in detail. Other extracted DLLs have PE structure
 and generic open research areas. The catalog is a curated record. A worker result
-does not update its approval states automatically. Independent review is required.
+does not update its approval states automatically. Independent review is required. Evidence links include pending reports. A link
+does not grant approval. The current module refreshes during polling.
 
 The console uses existing local Codex and OpenCode logins. It runs fixed Luna,
 Sol, Astra, or Kimi models. No provider fallback is used. CLI availability does
@@ -44,7 +45,9 @@ workers. Restarting the server retains the queue and detects running processes.
 If their completion cannot be verified, their state becomes interrupted.
 
 Usage totals come from reported project session metadata. Cached input is a
-subset, not another addition to the total. Tokens are not a billing estimate.
+subset of normalized input. OpenCode stores cache reads and writes separately;
+these counters are included in normalized input. Its reasoning token count is
+included in normalized output. Codex input already includes its cached input. Tokens are not a billing estimate.
 Account quota is read through the local Codex app server. If that query fails,
 quota is unknown. OpenCode provider quota is not available here. Collaboration
 agents without local CLI process records are not represented as controllable jobs.
@@ -68,3 +71,6 @@ and [app server documentation](https://developers.openai.com/codex/app-server).
 The design record follows Google's
 [Stitch design extraction skill](https://github.com/google-labs-code/stitch-skills/blob/main/plugins/stitch-design/skills/extract-design-md/SKILL.md).
 See [.stitch/DESIGN.md](.stitch/DESIGN.md) for the implemented design system.
+
+OpenCode token normalization follows the installed v2.0.24
+[usage source](https://github.com/anomalyco/opencode/blob/e7a34f09bfd9134dfade5a8ddb843f7030bc9a69/packages/core/src/session/usage.ts).
