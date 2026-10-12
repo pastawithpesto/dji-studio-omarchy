@@ -74,10 +74,8 @@ fn forbidden_path(path: &str) -> bool {
 
 // Ignore Rust comments and literals. FFI declarations and generated bindings are
 // permitted; the rust-cpp macros carry handwritten C++ and are prohibited.
-fn inline_cpp(source: &str) -> bool {
+fn skip_trivia(source: &str, mut index: usize) -> usize {
     let bytes = source.as_bytes();
-    let mut index = 0;
-    let mut previous = "";
     while index < bytes.len() {
         if bytes[index..].starts_with(b"//") {
             while index < bytes.len() && bytes[index] != b'\n' {
@@ -100,6 +98,25 @@ fn inline_cpp(source: &str) -> bool {
                 }
             }
             continue;
+        }
+        let character = source[index..].chars().next().unwrap();
+        if character.is_whitespace() || matches!(character, '\u{200e}' | '\u{200f}') {
+            index += character.len_utf8();
+            continue;
+        }
+        break;
+    }
+    index
+}
+
+fn inline_cpp(source: &str) -> bool {
+    let bytes = source.as_bytes();
+    let mut index = 0;
+    let mut previous = "";
+    while index < bytes.len() {
+        index = skip_trivia(source, index);
+        if index == bytes.len() {
+            break;
         }
         let raw_start = if bytes[index] == b'r' {
             Some(index)
@@ -181,7 +198,13 @@ fn inline_cpp(source: &str) -> bool {
             previous = &source[start..index];
             continue;
         }
-        if bytes[index] == b'!' && matches!(previous, "cpp" | "cpp_class") {
+        if bytes[index] == b'!'
+            && matches!(previous, "cpp" | "cpp_class")
+            && matches!(
+                bytes.get(skip_trivia(source, index + 1)),
+                Some(b'(' | b'[' | b'{')
+            )
+        {
             return true;
         }
         if !bytes[index].is_ascii() {
@@ -210,7 +233,7 @@ fn check() -> Result<(), String> {
     }
     let root_text = std::str::from_utf8(&root_output.stdout)
         .map_err(|error| format!("Invalid repository path encoding: {error}"))?;
-    let root = Path::new(root_text.trim());
+    let root = Path::new(root_text.strip_suffix('\n').unwrap_or(root_text));
     let output = Command::new("git")
         .current_dir(root)
         .args(["ls-files", "--cached", "-z"])
@@ -226,7 +249,7 @@ fn check() -> Result<(), String> {
         if let Some((_, expected)) = REFERENCE_FILES.iter().find(|(name, _)| *name == path) {
             let blob = Command::new("git")
                 .current_dir(root)
-                .args(["hash-object", "--", path])
+                .args(["hash-object", "--no-filters", "--", path])
                 .output()
                 .map_err(|error| format!("Cannot hash reference {path}: {error}"))?;
             if !blob.status.success() || String::from_utf8_lossy(&blob.stdout).trim() != *expected {
@@ -234,7 +257,10 @@ fn check() -> Result<(), String> {
             }
         } else if forbidden_path(path) {
             failures.push(format!("Prohibited source language: {path}"));
-        } else if path.ends_with(".rs") {
+        } else if Path::new(path)
+            .extension()
+            .is_some_and(|extension| extension.eq_ignore_ascii_case("rs"))
+        {
             let source = fs::read_to_string(root.join(path))
                 .map_err(|error| format!("Cannot read {path}: {error}"))?;
             if inline_cpp(&source) {
@@ -286,9 +312,23 @@ mod tests {
             "cpp::cpp! {}",
             "cpp_class! {}",
             "cpp\u{200e}! {}",
+            "cpp! /* a /* b */ c */ {}",
         ] {
             assert!(inline_cpp(source), "{source}");
         }
+    }
+
+    #[test]
+    fn permits_comparison_operators_and_requires_macro_delimiter() {
+        for source in [
+            "let cpp = false; assert!(cpp != true);",
+            "assert!(cpp /* comment */ != true);",
+            "let cpp_class = 1; assert!(cpp_class != 2);",
+        ] {
+            assert!(!inline_cpp(source), "{source}");
+        }
+        assert!(inline_cpp("cpp! // delimiter follows a comment\n[body]"));
+        assert!(inline_cpp("cpp_class! /* comment */ (body)"));
     }
 
     #[test]

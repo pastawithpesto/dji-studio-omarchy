@@ -34,11 +34,17 @@ do not permit new or changed C application code. No directory is exempt.
 
 ## Validation
 
-The Rust guard builds with warnings denied. Four unit tests pass. Direct Clippy
+The Rust guard builds with warnings denied. Five unit tests pass. Direct Clippy
 with warnings denied passes. The real repository passes from its root and from
 the gui directory. Separate temporary Git repositories reject C++ source, a
 header, Python application code and an inline C++ macro. They accept original
 QML, Rust FFI declarations and a separate Python coordination tool. Frozen
 reference records pass unchanged and fail after a one-byte content change.
-All original application resources remain unchanged. Hosted validation and exact
-independent source and milestone reviews remain pending.
+All original application resources remain unchanged. Initial hosted language
+validation passed. Independent review then found two guard defects: Git filters
+could normalize changed reference bytes, and the scanner mistook != for a macro.
+The correction uses git hash-object --no-filters and requires a macro delimiter
+after the bang. Regression cases cover both failures. The correction also scans Rust extensions
+without case sensitivity and preserves spaces in the repository root path.
+Separate temporary Git cases verify all four corrections. Exact corrected hosted
+validation and independent source and milestone reviews remain pending.
