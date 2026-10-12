@@ -1,0 +1,15 @@
+{
+  "end_utc": "2026-10-12T02:06:48.246Z",
+  "source_sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1",
+  "calls": 47,
+  "byte_ranges": 16,
+  "errors": [],
+  "settings": {
+    "GHIDRA_INSTALL_DIR": "/home/violence/Projects/dji-studio-omarchy/tools/ghidra_12.1.4_PUBLIC",
+    "JAVA_HOME": "/home/violence/Projects/dji-studio-omarchy/tools/jdk21/usr/lib/jvm/java-21-openjdk",
+    "GHIDRA_HEADLESS_MAXMEM": "768M",
+    "REA_ANALYSIS_PROVIDER": "ghidra",
+    "REA_GHIDRA_STARTUP_TIMEOUT_MS": "480000"
+  },
+  "packageVersion": "6.4.0"
+}
