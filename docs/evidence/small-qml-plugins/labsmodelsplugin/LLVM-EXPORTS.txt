@@ -1,0 +1,15 @@
+
+File: /home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/qml/Qt/labs/qmlmodels/labsmodelsplugin.dll
+Format: COFF-x86-64
+Arch: x86_64
+AddressSize: 64bit
+Export {
+  Ordinal: 1
+  Name: qt_plugin_instance
+  RVA: 0x1160
+}
+Export {
+  Ordinal: 2
+  Name: qt_plugin_query_metadata_v2
+  RVA: 0x1290
+}

@@ -1,0 +1,130 @@
+{
+  "utc": "2026-10-12T06:28:31.478401+00:00",
+  "targets": [
+    {
+      "name": "labsanimationplugin",
+      "source_sha256": "4b0be3a96703da2a82b91b34f07a6750e6ffdab6ffb3f3966c997cc648b89425",
+      "functions": 103,
+      "ranges": 106,
+      "range_bytes": 4942,
+      "unique_function_bytes": 4942,
+      "pdata_entries_covered": 53,
+      "warnings": 40,
+      "metadata": {
+        "source_sha256": "4b0be3a96703da2a82b91b34f07a6750e6ffdab6ffb3f3966c997cc648b89425",
+        "metadata_address": "0x180007000",
+        "returned_payload_address": "0x18000700c",
+        "returned_payload_length": 101,
+        "header": {
+          "format": 1,
+          "qt_major": 6,
+          "qt_minor": 5,
+          "requirements": 0
+        },
+        "CBOR": {
+          "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+          "3": "QtLabsAnimationPlugin",
+          "uri": [
+            "Qt.labs.animation"
+          ]
+        },
+        "metadata_sha256": "e8cc9eda4eeb7c7cd04909c3dcaa1c51002485668c5e5a314ec73ba3d84f42f9",
+        "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+      },
+      "all_byte_witnesses_pass": true,
+      "provider_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_free_alias_thunks": 2,
+      "internal_guard_dispatch_thunks": 1
+    },
+    {
+      "name": "qmlfolderlistmodelplugin",
+      "source_sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+      "functions": 103,
+      "ranges": 106,
+      "range_bytes": 4942,
+      "unique_function_bytes": 4942,
+      "pdata_entries_covered": 53,
+      "warnings": 40,
+      "metadata": {
+        "source_sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+        "metadata_address": "0x180007000",
+        "returned_payload_address": "0x18000700c",
+        "returned_payload_length": 111,
+        "header": {
+          "format": 1,
+          "qt_major": 6,
+          "qt_minor": 5,
+          "requirements": 0
+        },
+        "CBOR": {
+          "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+          "3": "QmlFolderListModelPlugin",
+          "uri": [
+            "Qt.labs.folderlistmodel"
+          ]
+        },
+        "metadata_sha256": "076d9cb58da1546da1aeea1e507cc503c32545bcb67923f12f8f78a6209e2284",
+        "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+      },
+      "all_byte_witnesses_pass": true,
+      "provider_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_free_alias_thunks": 2,
+      "internal_guard_dispatch_thunks": 1
+    },
+    {
+      "name": "labsmodelsplugin",
+      "source_sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+      "functions": 103,
+      "ranges": 106,
+      "range_bytes": 4942,
+      "unique_function_bytes": 4942,
+      "pdata_entries_covered": 53,
+      "warnings": 40,
+      "metadata": {
+        "source_sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+        "metadata_address": "0x180007000",
+        "returned_payload_address": "0x18000700c",
+        "returned_payload_length": 101,
+        "header": {
+          "format": 1,
+          "qt_major": 6,
+          "qt_minor": 5,
+          "requirements": 0
+        },
+        "CBOR": {
+          "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+          "3": "QtQmlLabsModelsPlugin",
+          "uri": [
+            "Qt.labs.qmlmodels"
+          ]
+        },
+        "metadata_sha256": "406e6aef1b85b3f02185ad2e54077e0d9b3cf64ba2758c7bf9a7ec81756aa011",
+        "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+      },
+      "all_byte_witnesses_pass": true,
+      "provider_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_free_alias_thunks": 2,
+      "internal_guard_dispatch_thunks": 1
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "export_maps_llvm_agree": true,
+  "all_function_provider_witnesses_match": true,
+  "heap_configuration": {
+    "launcher": "src/ghidra/GhidraJavaLaunch.ts:81",
+    "upstream": "4573e8cf35de822bfc5feabcc89ec3717c247c8c",
+    "setting": "GHIDRA_HEADLESS_MAXMEM=768M",
+    "generated_flag": "-Xmx768M",
+    "override_environment_present": {
+      "_JAVA_OPTIONS": false,
+      "JAVA_TOOL_OPTIONS": false,
+      "JDK_JAVA_OPTIONS": false
+    },
+    "live_process_observation": "Own process flag probe occurred after session cleanup; no live JVM observed. Setting and launcher translation checked separately."
+  },
+  "limits": "Offline independent reread of source, captured provider witnesses and decoded data; no vendor execution or new loaded-image verification.",
+  "correction": "THUNK-COUNT-CORRECTION.json"
+}
