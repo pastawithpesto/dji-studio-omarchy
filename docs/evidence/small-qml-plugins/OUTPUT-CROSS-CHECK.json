@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "target": "labsanimationplugin",
+      "all_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_thunks": [
+        {
+          "address": "0x180001374",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180002388"
+        },
+        {
+          "address": "0x18000137c",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180001374"
+        },
+        {
+          "address": "0x180002410",
+          "name": "_guard_dispatch_icall",
+          "target": "0x1800023f0"
+        }
+      ],
+      "binutils_export_rvas": [
+        4448,
+        4752
+      ]
+    },
+    {
+      "target": "qmlfolderlistmodelplugin",
+      "all_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_thunks": [
+        {
+          "address": "0x180001374",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180002388"
+        },
+        {
+          "address": "0x18000137c",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180001374"
+        },
+        {
+          "address": "0x180002410",
+          "name": "_guard_dispatch_icall",
+          "target": "0x1800023f0"
+        }
+      ],
+      "binutils_export_rvas": [
+        4448,
+        4752
+      ]
+    },
+    {
+      "target": "labsmodelsplugin",
+      "all_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_thunks": [
+        {
+          "address": "0x180001374",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180002388"
+        },
+        {
+          "address": "0x18000137c",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180001374"
+        },
+        {
+          "address": "0x180002410",
+          "name": "_guard_dispatch_icall",
+          "target": "0x1800023f0"
+        }
+      ],
+      "binutils_export_rvas": [
+        4448,
+        4752
+      ]
+    }
+  ],
+  "sealed_packet_manifest": "893f58d1d52c670ee8e6dd07e640994c0c75c8713e28659bb85d419dc3e886dd"
+}

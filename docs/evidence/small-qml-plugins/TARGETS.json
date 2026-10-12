@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-12T06:11:17.128327+00:00",
+  "build": "1.0.0.30839",
+  "targets": [
+    {
+      "path": "extracted/1.0.0.30839/qml/Qt/labs/animation/labsanimationplugin.dll",
+      "size": 28856,
+      "sha256": "4b0be3a96703da2a82b91b34f07a6750e6ffdab6ffb3f3966c997cc648b89425",
+      "image_base": "0x180000000",
+      "exports": [
+        {
+          "ordinal": 1,
+          "names": [
+            "qt_plugin_instance"
+          ],
+          "rva": 4448,
+          "va": "0x180001160",
+          "forwarder": null,
+          "kind": "code",
+          "EAT_file_offset": 11400,
+          "target_file_offset": 1376
+        },
+        {
+          "ordinal": 2,
+          "names": [
+            "qt_plugin_query_metadata_v2"
+          ],
+          "rva": 4752,
+          "va": "0x180001290",
+          "forwarder": null,
+          "kind": "code",
+          "EAT_file_offset": 11404,
+          "target_file_offset": 1680
+        }
+      ],
+      "pdata_records": 53
+    },
+    {
+      "path": "extracted/1.0.0.30839/qml/Qt/labs/folderlistmodel/qmlfolderlistmodelplugin.dll",
+      "size": 28856,
+      "sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+      "image_base": "0x180000000",
+      "exports": [
+        {
+          "ordinal": 1,
+          "names": [
+            "qt_plugin_instance"
+          ],
+          "rva": 4448,
+          "va": "0x180001160",
+          "forwarder": null,
+          "kind": "code",
+          "EAT_file_offset": 11416,
+          "target_file_offset": 1376
+        },
+        {
+          "ordinal": 2,
+          "names": [
+            "qt_plugin_query_metadata_v2"
+          ],
+          "rva": 4752,
+          "va": "0x180001290",
+          "forwarder": null,
+          "kind": "code",
+          "EAT_file_offset": 11420,
+          "target_file_offset": 1680
+        }
+      ],
+      "pdata_records": 53
+    },
+    {
+      "path": "extracted/1.0.0.30839/qml/Qt/labs/qmlmodels/labsmodelsplugin.dll",
+      "size": 28856,
+      "sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+      "image_base": "0x180000000",
+      "exports": [
+        {
+          "ordinal": 1,
+          "names": [
+            "qt_plugin_instance"
+          ],
+          "rva": 4448,
+          "va": "0x180001160",
+          "forwarder": null,
+          "kind": "code",
+          "EAT_file_offset": 11400,
+          "target_file_offset": 1376
+        },
+        {
+          "ordinal": 2,
+          "names": [
+            "qt_plugin_query_metadata_v2"
+          ],
+          "rva": 4752,
+          "va": "0x180001290",
+          "forwarder": null,
+          "kind": "code",
+          "EAT_file_offset": 11404,
+          "target_file_offset": 1680
+        }
+      ],
+      "pdata_records": 53
+    }
+  ],
+  "parser_source": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-smallest-dlls-20261012/inventory.py",
+  "parser_sha256": "9abc51bb727236578c1759e21d248cbcbaa75f3eaaa29dc1d82bccb52b671c95",
+  "limit": "Static source inventory only. No vendor execution or loaded-image claim."
+}

@@ -1,0 +1,788 @@
+{
+  "path": "extracted/1.0.0.30839/qml/Qt/labs/qmlmodels/labsmodelsplugin.dll",
+  "size": 28856,
+  "sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+  "image_base": "0x180000000",
+  "entry_rva": 7376,
+  "code_size": 5632,
+  "sections": [
+    {
+      "name": ".text",
+      "virtual_size": 5339,
+      "rva": 4096,
+      "raw_size": 5632,
+      "raw_offset": 1024,
+      "flags": 1610612768,
+      "executable": true
+    },
+    {
+      "name": ".rdata",
+      "virtual_size": 7478,
+      "rva": 12288,
+      "raw_size": 7680,
+      "raw_offset": 6656,
+      "flags": 1073741888,
+      "executable": false
+    },
+    {
+      "name": ".data",
+      "virtual_size": 744,
+      "rva": 20480,
+      "raw_size": 512,
+      "raw_offset": 14336,
+      "flags": 3221225536,
+      "executable": false
+    },
+    {
+      "name": ".pdata",
+      "virtual_size": 636,
+      "rva": 24576,
+      "raw_size": 1024,
+      "raw_offset": 14848,
+      "flags": 1073741888,
+      "executable": false
+    },
+    {
+      "name": ".qtmetad",
+      "virtual_size": 113,
+      "rva": 28672,
+      "raw_size": 512,
+      "raw_offset": 15872,
+      "flags": 1342177344,
+      "executable": false
+    },
+    {
+      "name": ".rsrc",
+      "virtual_size": 1396,
+      "rva": 32768,
+      "raw_size": 1536,
+      "raw_offset": 16384,
+      "flags": 1073741888,
+      "executable": false
+    },
+    {
+      "name": ".reloc",
+      "virtual_size": 144,
+      "rva": 36864,
+      "raw_size": 512,
+      "raw_offset": 17920,
+      "flags": 1107296320,
+      "executable": false
+    }
+  ],
+  "directories": [
+    {
+      "rva": 16992,
+      "size": 128
+    },
+    {
+      "rva": 17120,
+      "size": 160
+    },
+    {
+      "rva": 32768,
+      "size": 1396
+    },
+    {
+      "rva": 24576,
+      "size": 636
+    },
+    {
+      "rva": 18432,
+      "size": 10424
+    },
+    {
+      "rva": 36864,
+      "size": 144
+    },
+    {
+      "rva": 13768,
+      "size": 84
+    },
+    {
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "rva": 14208,
+      "size": 40
+    },
+    {
+      "rva": 13856,
+      "size": 312
+    },
+    {
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "rva": 12288,
+      "size": 528
+    },
+    {
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "rva": 0,
+      "size": 0
+    }
+  ],
+  "exports": [
+    {
+      "ordinal": 1,
+      "names": [
+        "qt_plugin_instance"
+      ],
+      "rva": 4448,
+      "va": "0x180001160",
+      "forwarder": null,
+      "kind": "code",
+      "EAT_file_offset": 11400,
+      "target_file_offset": 1376
+    },
+    {
+      "ordinal": 2,
+      "names": [
+        "qt_plugin_query_metadata_v2"
+      ],
+      "rva": 4752,
+      "va": "0x180001290",
+      "forwarder": null,
+      "kind": "code",
+      "EAT_file_offset": 11404,
+      "target_file_offset": 1680
+    }
+  ],
+  "imports": [
+    {
+      "dll": "Qt6LabsQmlModels.dll",
+      "name": "?qml_register_types_Qt_labs_qmlmodels@@YAXXZ",
+      "ordinal": null,
+      "iat_va": "0x180003118"
+    },
+    {
+      "dll": "Qt6Qml.dll",
+      "name": "?qt_metacall@QQmlEngineExtensionPlugin@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z",
+      "ordinal": null,
+      "iat_va": "0x180003128"
+    },
+    {
+      "dll": "Qt6Qml.dll",
+      "name": "??0QQmlEngineExtensionPlugin@@QEAA@PEAVQObject@@@Z",
+      "ordinal": null,
+      "iat_va": "0x180003130"
+    },
+    {
+      "dll": "Qt6Qml.dll",
+      "name": "??1QQmlEngineExtensionPlugin@@UEAA@XZ",
+      "ordinal": null,
+      "iat_va": "0x180003138"
+    },
+    {
+      "dll": "Qt6Qml.dll",
+      "name": "?initializeEngine@QQmlEngineExtensionPlugin@@UEAAXPEAVQQmlEngine@@PEBD@Z",
+      "ordinal": null,
+      "iat_va": "0x180003140"
+    },
+    {
+      "dll": "Qt6Qml.dll",
+      "name": "?qt_metacast@QQmlEngineExtensionPlugin@@UEAAPEAXPEBD@Z",
+      "ordinal": null,
+      "iat_va": "0x180003148"
+    },
+    {
+      "dll": "Qt6Qml.dll",
+      "name": "?staticMetaObject@QQmlEngineExtensionPlugin@@2UQMetaObject@@B",
+      "ordinal": null,
+      "iat_va": "0x180003150"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?timerEvent@QObject@@MEAAXPEAVQTimerEvent@@@Z",
+      "ordinal": null,
+      "iat_va": "0x1800030c8"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?eventFilter@QObject@@UEAA_NPEAV1@PEAVQEvent@@@Z",
+      "ordinal": null,
+      "iat_va": "0x1800030d0"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?event@QObject@@UEAA_NPEAVQEvent@@@Z",
+      "ordinal": null,
+      "iat_va": "0x1800030d8"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?disconnectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z",
+      "ordinal": null,
+      "iat_va": "0x1800030e0"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?customEvent@QObject@@MEAAXPEAVQEvent@@@Z",
+      "ordinal": null,
+      "iat_va": "0x1800030e8"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z",
+      "ordinal": null,
+      "iat_va": "0x1800030f0"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?childEvent@QObject@@MEAAXPEAVQChildEvent@@@Z",
+      "ordinal": null,
+      "iat_va": "0x1800030f8"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?getAndRef@ExternalRefCountData@QtSharedPointer@@SAPEAU12@PEBVQObject@@@Z",
+      "ordinal": null,
+      "iat_va": "0x180003100"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "name": "?dynamicMetaObject@QObjectData@@QEBAPEAUQMetaObject@@XZ",
+      "ordinal": null,
+      "iat_va": "0x180003108"
+    },
+    {
+      "dll": "VCRUNTIME140.dll",
+      "name": "__C_specific_handler",
+      "ordinal": null,
+      "iat_va": "0x180003160"
+    },
+    {
+      "dll": "VCRUNTIME140.dll",
+      "name": "__std_exception_copy",
+      "ordinal": null,
+      "iat_va": "0x180003168"
+    },
+    {
+      "dll": "VCRUNTIME140.dll",
+      "name": "__std_exception_destroy",
+      "ordinal": null,
+      "iat_va": "0x180003170"
+    },
+    {
+      "dll": "VCRUNTIME140.dll",
+      "name": "_CxxThrowException",
+      "ordinal": null,
+      "iat_va": "0x180003178"
+    },
+    {
+      "dll": "VCRUNTIME140.dll",
+      "name": "memset",
+      "ordinal": null,
+      "iat_va": "0x180003180"
+    },
+    {
+      "dll": "VCRUNTIME140.dll",
+      "name": "__std_type_info_destroy_list",
+      "ordinal": null,
+      "iat_va": "0x180003188"
+    },
+    {
+      "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+      "name": "_callnewh",
+      "ordinal": null,
+      "iat_va": "0x180003198"
+    },
+    {
+      "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+      "name": "malloc",
+      "ordinal": null,
+      "iat_va": "0x1800031a0"
+    },
+    {
+      "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+      "name": "free",
+      "ordinal": null,
+      "iat_va": "0x1800031a8"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_initialize_narrow_environment",
+      "ordinal": null,
+      "iat_va": "0x1800031b8"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_initialize_onexit_table",
+      "ordinal": null,
+      "iat_va": "0x1800031c0"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_crt_atexit",
+      "ordinal": null,
+      "iat_va": "0x1800031c8"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_configure_narrow_argv",
+      "ordinal": null,
+      "iat_va": "0x1800031d0"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_seh_filter_dll",
+      "ordinal": null,
+      "iat_va": "0x1800031d8"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_initterm_e",
+      "ordinal": null,
+      "iat_va": "0x1800031e0"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_initterm",
+      "ordinal": null,
+      "iat_va": "0x1800031e8"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_cexit",
+      "ordinal": null,
+      "iat_va": "0x1800031f0"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_execute_onexit_table",
+      "ordinal": null,
+      "iat_va": "0x1800031f8"
+    },
+    {
+      "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+      "name": "_register_onexit_function",
+      "ordinal": null,
+      "iat_va": "0x180003200"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "CloseHandle",
+      "ordinal": null,
+      "iat_va": "0x180003000"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "InitializeSListHead",
+      "ordinal": null,
+      "iat_va": "0x180003008"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "DisableThreadLibraryCalls",
+      "ordinal": null,
+      "iat_va": "0x180003010"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "GetSystemTimeAsFileTime",
+      "ordinal": null,
+      "iat_va": "0x180003018"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "GetCurrentThreadId",
+      "ordinal": null,
+      "iat_va": "0x180003020"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "GetCurrentProcessId",
+      "ordinal": null,
+      "iat_va": "0x180003028"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "QueryPerformanceCounter",
+      "ordinal": null,
+      "iat_va": "0x180003030"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "IsProcessorFeaturePresent",
+      "ordinal": null,
+      "iat_va": "0x180003038"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "EnterCriticalSection",
+      "ordinal": null,
+      "iat_va": "0x180003040"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "LeaveCriticalSection",
+      "ordinal": null,
+      "iat_va": "0x180003048"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "InitializeCriticalSectionAndSpinCount",
+      "ordinal": null,
+      "iat_va": "0x180003050"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "DeleteCriticalSection",
+      "ordinal": null,
+      "iat_va": "0x180003058"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "SetEvent",
+      "ordinal": null,
+      "iat_va": "0x180003060"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "ResetEvent",
+      "ordinal": null,
+      "iat_va": "0x180003068"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "WaitForSingleObjectEx",
+      "ordinal": null,
+      "iat_va": "0x180003070"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "CreateEventW",
+      "ordinal": null,
+      "iat_va": "0x180003078"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "GetModuleHandleW",
+      "ordinal": null,
+      "iat_va": "0x180003080"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "GetProcAddress",
+      "ordinal": null,
+      "iat_va": "0x180003088"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "RtlLookupFunctionEntry",
+      "ordinal": null,
+      "iat_va": "0x180003090"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "SetUnhandledExceptionFilter",
+      "ordinal": null,
+      "iat_va": "0x180003098"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "UnhandledExceptionFilter",
+      "ordinal": null,
+      "iat_va": "0x1800030a0"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "IsDebuggerPresent",
+      "ordinal": null,
+      "iat_va": "0x1800030a8"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "RtlVirtualUnwind",
+      "ordinal": null,
+      "iat_va": "0x1800030b0"
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "name": "RtlCaptureContext",
+      "ordinal": null,
+      "iat_va": "0x1800030b8"
+    }
+  ],
+  "pdata": [
+    {
+      "start": "0x180001020",
+      "end_exclusive": "0x180001060",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x1800010a0",
+      "end_exclusive": "0x1800010d5",
+      "unwind_rva": 16344
+    },
+    {
+      "start": "0x180001160",
+      "end_exclusive": "0x1800011ad",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x1800011ad",
+      "end_exclusive": "0x180001213",
+      "unwind_rva": 16372
+    },
+    {
+      "start": "0x180001213",
+      "end_exclusive": "0x180001282",
+      "unwind_rva": 16392
+    },
+    {
+      "start": "0x180001338",
+      "end_exclusive": "0x180001374",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x180001384",
+      "end_exclusive": "0x1800013bd",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x1800013c0",
+      "end_exclusive": "0x1800013f4",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x1800013f4",
+      "end_exclusive": "0x180001409",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x18000140c",
+      "end_exclusive": "0x180001434",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x180001434",
+      "end_exclusive": "0x180001449",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x18000144c",
+      "end_exclusive": "0x1800014ac",
+      "unwind_rva": 16448
+    },
+    {
+      "start": "0x1800014ac",
+      "end_exclusive": "0x1800014dc",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x1800014dc",
+      "end_exclusive": "0x1800014f0",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x1800014f0",
+      "end_exclusive": "0x180001539",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x18000153c",
+      "end_exclusive": "0x1800015c7",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x1800015c8",
+      "end_exclusive": "0x180001660",
+      "unwind_rva": 16408
+    },
+    {
+      "start": "0x180001660",
+      "end_exclusive": "0x180001684",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x180001684",
+      "end_exclusive": "0x1800016ad",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x1800016b0",
+      "end_exclusive": "0x1800016ea",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x1800016ec",
+      "end_exclusive": "0x180001703",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x180001710",
+      "end_exclusive": "0x1800017e0",
+      "unwind_rva": 16344
+    },
+    {
+      "start": "0x1800017e0",
+      "end_exclusive": "0x180001808",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x180001808",
+      "end_exclusive": "0x180001868",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x180001868",
+      "end_exclusive": "0x1800018cf",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x1800018d0",
+      "end_exclusive": "0x180001911",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x180001914",
+      "end_exclusive": "0x180001977",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x180001980",
+      "end_exclusive": "0x1800019ab",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x1800019b0",
+      "end_exclusive": "0x180001a00",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x180001a00",
+      "end_exclusive": "0x180001b16",
+      "unwind_rva": 16468
+    },
+    {
+      "start": "0x180001b18",
+      "end_exclusive": "0x180001b9c",
+      "unwind_rva": 16536
+    },
+    {
+      "start": "0x180001b9c",
+      "end_exclusive": "0x180001ccd",
+      "unwind_rva": 16620
+    },
+    {
+      "start": "0x180001cd0",
+      "end_exclusive": "0x180001d0d",
+      "unwind_rva": 16668
+    },
+    {
+      "start": "0x180001d10",
+      "end_exclusive": "0x180001d4c",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x180001d6c",
+      "end_exclusive": "0x180001da8",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x180001dc8",
+      "end_exclusive": "0x180001dfa",
+      "unwind_rva": 16356
+    },
+    {
+      "start": "0x180001e10",
+      "end_exclusive": "0x180001e52",
+      "unwind_rva": 16344
+    },
+    {
+      "start": "0x180001e54",
+      "end_exclusive": "0x180001e74",
+      "unwind_rva": 16684
+    },
+    {
+      "start": "0x180001e74",
+      "end_exclusive": "0x180001e94",
+      "unwind_rva": 16684
+    },
+    {
+      "start": "0x180001eb4",
+      "end_exclusive": "0x180002055",
+      "unwind_rva": 16692
+    },
+    {
+      "start": "0x180002074",
+      "end_exclusive": "0x1800021bf",
+      "unwind_rva": 16708
+    },
+    {
+      "start": "0x1800021c0",
+      "end_exclusive": "0x18000226c",
+      "unwind_rva": 16740
+    },
+    {
+      "start": "0x18000226c",
+      "end_exclusive": "0x18000228f",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x1800022bc",
+      "end_exclusive": "0x1800022d7",
+      "unwind_rva": 16364
+    },
+    {
+      "start": "0x1800022e0",
+      "end_exclusive": "0x18000231c",
+      "unwind_rva": 16344
+    },
+    {
+      "start": "0x18000231c",
+      "end_exclusive": "0x180002358",
+      "unwind_rva": 16344
+    },
+    {
+      "start": "0x1800023f0",
+      "end_exclusive": "0x1800023f2",
+      "unwind_rva": 16728
+    },
+    {
+      "start": "0x180002410",
+      "end_exclusive": "0x180002416",
+      "unwind_rva": 16736
+    },
+    {
+      "start": "0x180002416",
+      "end_exclusive": "0x18000242e",
+      "unwind_rva": 16440
+    },
+    {
+      "start": "0x18000242e",
+      "end_exclusive": "0x180002445",
+      "unwind_rva": 16528
+    },
+    {
+      "start": "0x180002445",
+      "end_exclusive": "0x18000245e",
+      "unwind_rva": 16528
+    },
+    {
+      "start": "0x18000245e",
+      "end_exclusive": "0x180002472",
+      "unwind_rva": 16528
+    },
+    {
+      "start": "0x180002472",
+      "end_exclusive": "0x1800024a8",
+      "unwind_rva": 16660
+    }
+  ]
+}
