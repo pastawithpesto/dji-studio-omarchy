@@ -7,7 +7,7 @@ that recorded tree. This historical count does not describe later main revisions
 
 | Area | State | Next work |
 | --- | --- | --- |
-| Native CLI and experimental Qt GUI | Implemented in bounded parts | Compare with the pinned Windows build and original media |
+| Native CLI and Rust Qt host | Implemented in bounded parts | Implement missing original native services and compare with the pinned Windows build |
 | Complete original resource bundle | 1,826 aliases integrated and reviewed; 577 baseline payloads unchanged | Reuse the bundle, do not repeat extraction |
 | Original QML inventory | 410 QML aliases recovered | Recover missing native registrations and controllers |
 | Original locale catalog | 1,980 keys, 16 locale IDs, 30,537 values recovered | Verify runtime string selection and UI behavior |
@@ -15,9 +15,13 @@ that recorded tree. This historical count does not describe later main revisions
 | Native controller behavior | Window positioning static analysis passed Sol and Astra review; other contracts remain partial | Review each bounded contract before implementation |
 | Full UI, DLL behavior, project compatibility, processing | Incomplete | Continue evidence-based implementation and reference comparisons |
 
-The current GUI loads the experimental `NativeStitchedFlow.qml` entry. The complete
-resource bundle does not establish successful loading of original `Main.qml`.
-Resource preservation and runtime equivalence are separate results.
+The Rust host attempts to load the exact original `Main.qml`. The custom C++ host
+and experimental `NativeStitchedFlow.qml` entry have been removed from the current
+source. Local Qt 6.11.2 reports nine missing native modules after the original
+WindowPositionDetector registration. Full original GUI
+startup remains incomplete. Resource preservation and runtime equivalence are
+separate results. CXX-Qt generates C++ binding code; application source is Rust
+and QML. The historical validation below applies to its recorded source only.
 
 ## PR monitoring
 
