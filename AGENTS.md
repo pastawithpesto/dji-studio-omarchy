@@ -95,6 +95,12 @@ remaining defects and the next useful task.
 
 ## Writing
 
+Use ASD-STE100 Simplified Technical English for all new English text.
+Apply this rule to chat, agent messages, documentation, PRs, issues, code comments,
+and commit messages.
+Use the writing rules and dictionary in the
+[official standard](https://www.asd-ste100.org/).
+
 Use short, complete sentences and active voice.
 Keep technical terms consistent. Do not use em dashes.
 Preserve exact source strings, binary data, addresses and reviewed records.

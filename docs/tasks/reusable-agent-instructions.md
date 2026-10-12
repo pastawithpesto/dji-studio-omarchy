@@ -15,3 +15,12 @@ The PR changes instructions only. It does not change application behavior.
 Validation checks that the worker instructions contain no model names,
 subscription assumptions, staffing count or scheduling directives.
 The local bus routing and launch policy receive separate functional checks.
+
+## Review correction
+
+The review found that the change removed the ASD-STE100 writing rule.
+The correction restores that rule from the prior instructions.
+Model and staffing rules remain in coordinator configuration.
+The branch includes current main366dd125c928ea3bf1c813d6f6b42abc1242e13d.
+Independent source review and milestone verification must inspect the corrected
+exact candidate before merge.
