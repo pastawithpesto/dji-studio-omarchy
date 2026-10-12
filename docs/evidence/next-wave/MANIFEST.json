@@ -1,0 +1,23 @@
+{
+  "records": [
+    {
+      "path": "resource-sol-review.md",
+      "source_workspace_path": "sol-ui-independent-review/next-wave/resources/REVIEW.md",
+      "sha256": "c7d495d8dcb1dd8a2fdf1d9f62f556ea59d5256f96d897abf9f94c41334665a2",
+      "bytes": 9827
+    },
+    {
+      "path": "resource-astra-review.md",
+      "source_workspace_path": "astra-review/next-wave/complete-resources/REVIEW.md",
+      "sha256": "68346c1fbd94c4c865c7233bb7251681c1701cad3b269658131c16be72a4c1df",
+      "bytes": 10034
+    },
+    {
+      "path": "resource-integration.json",
+      "source_workspace_path": "reconstruction/private-github-handoff/RESOURCE-INTEGRATION.json",
+      "sha256": "eb7e4fb7b56153cae85290ad7497cefea0d4b9f10330b5fd6f1ebf4768d63431",
+      "bytes": 425
+    }
+  ],
+  "limits": "Selected reports only. Referenced full local archives and reviewer scripts are not included."
+}
