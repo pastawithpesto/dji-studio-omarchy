@@ -140,6 +140,19 @@ pub struct MltDeque {
     count: u64,
 }
 
+fn valid_index_from_count(count: u64, index: i32, allow_end: bool) -> Option<usize> {
+    if index < 0 {
+        return None;
+    }
+    let count = count as u32 as i32;
+    let in_bounds = if allow_end {
+        index <= count
+    } else {
+        index < count
+    };
+    in_bounds.then_some(index as usize)
+}
+
 impl MltDeque {
     fn reserve_one(&mut self) -> Result<u64, DequeError> {
         let new_count = self.count.checked_add(1).ok_or(DequeError::CountOverflow)?;
@@ -164,16 +177,7 @@ impl MltDeque {
     }
 
     fn valid_index(&self, index: i32, allow_end: bool) -> Option<usize> {
-        if index < 0 {
-            return None;
-        }
-        let index = index as u64;
-        let in_bounds = if allow_end {
-            index <= self.count
-        } else {
-            index < self.count
-        };
-        in_bounds.then_some(index as usize)
+        valid_index_from_count(self.count, index, allow_end)
     }
 
     fn peek_slot(&self, index: usize) -> Option<&Slot> {
@@ -477,7 +481,45 @@ where
 
 #[cfg(test)]
 mod slot_tests {
-    use super::{DequePayloadKind, Slot};
+    use super::{DequePayloadKind, Slot, valid_index_from_count};
+
+    #[test]
+    fn indexed_bounds_match_signed_low_dword_for_64_count_index_cases() {
+        let counts = [
+            0,
+            1,
+            2,
+            0x7fff_ffff,
+            0x8000_0000,
+            0xffff_ffff,
+            0x1_0000_0000,
+            0x1_0000_0001,
+        ];
+        let indices = [i32::MIN, -1, 0, 1, 2, 3, i32::MAX - 1, i32::MAX];
+
+        let mut cases = 0;
+        for count in counts {
+            for index in indices {
+                let signed_count = count as u32 as i32;
+                let expected_strict =
+                    (index >= 0 && index < signed_count).then_some(index as usize);
+                let expected_inclusive =
+                    (index >= 0 && index <= signed_count).then_some(index as usize);
+                assert_eq!(
+                    valid_index_from_count(count, index, false),
+                    expected_strict,
+                    "strict count={count:#018x}, index={index}"
+                );
+                assert_eq!(
+                    valid_index_from_count(count, index, true),
+                    expected_inclusive,
+                    "inclusive count={count:#018x}, index={index}"
+                );
+                cases += 1;
+            }
+        }
+        assert_eq!(cases, 64);
+    }
 
     #[test]
     fn integer_slot_initializes_and_reads_only_four_bytes() {
