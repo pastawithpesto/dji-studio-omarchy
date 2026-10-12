@@ -1,0 +1,92 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_49eb677f0f7e87a24d46c5a8d51ee424576a4201d06bba5bdbcafc83440c1a1f\",\"subject\":{\"name\":\"alibabacloud-oss-cpp-sdk.dll\",\"digest\":{\"sha256\":\"083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1\"},\"format\":\"pe\",\"architecture\":\"x86_64\",\"local_path\":\"/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"shared-library\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v3\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86_64\",\"available_architectures\":[\"x86_64\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"call_relationship_coverage\":\"resolved-call-reference-diagnostics-v1\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"instruction_references\":\"exact-address-incoming-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_assembly\",\"parameters\":{\"procedure\":\"0x1801b4bc0\"},\"raw_result\":{\"value\":\"0x1801b4bc0: PUSH RDI\\n0x1801b4bc2: LEA RDI, [0x1802d6aa0]\\n0x1801b4bc9: MOV R11, R8\\n0x1801b4bcc: MOV R10, RDX\\n0x1801b4bcf: NOT RCX\\n0x1801b4bd2: TEST R8, R8\\n0x1801b4bd5: JZ 0x1801b4bf8\\n0x1801b4bd7: TEST R10B, 0x7\\n0x1801b4bdb: JZ 0x1801b4bf8\\n0x1801b4bdd: MOVZX EAX, byte ptr [R10]\\n0x1801b4be1: INC R10\\n0x1801b4be4: XOR RAX, RCX\\n0x1801b4be7: SHR RCX, 0x8\\n0x1801b4beb: MOVZX EDX, AL\\n0x1801b4bee: XOR RCX, qword ptr [RDI + RDX*0x8]\\n0x1801b4bf2: SUB R11, 0x1\\n0x1801b4bf6: JNZ 0x1801b4bd7\\n0x1801b4bf8: CMP R11, 0x8\\n0x1801b4bfc: JC 0x1801b4cbc\\n0x1801b4c02: MOV qword ptr [RSP + 0x10], RBX\\n0x1801b4c07: MOV RBX, R11\\n0x1801b4c0a: SHR RBX, 0x3\\n0x1801b4c0e: IMUL RAX, RBX, -0x8\\n0x1801b4c12: ADD R11, RAX\\n0x1801b4c15: NOP word ptr [RAX + RAX*0x1]\\n0x1801b4c20: XOR RCX, qword ptr [R10]\\n0x1801b4c23: ADD R10, 0x8\\n0x1801b4c27: MOV RAX, RCX\\n0x1801b4c2a: SHR RAX, 0x30\\n0x1801b4c2e: MOVZX R8D, AL\\n0x1801b4c32: MOV RAX, RCX\\n0x1801b4c35: SHR RAX, 0x28\\n0x1801b4c39: MOVZX EDX, AL\\n0x1801b4c3c: MOV RAX, RCX\\n0x1801b4c3f: SHR RAX, 0x20\\n0x1801b4c43: MOV R9, qword ptr [RDI + R8*0x8 + 0x800]\\n0x1801b4c4b: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1000]\\n0x1801b4c53: MOVZX EDX, AL\\n0x1801b4c56: MOV RAX, RCX\\n0x1801b4c59: SHR RAX, 0x18\\n0x1801b4c5d: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1800]\\n0x1801b4c65: MOVZX EDX, AL\\n0x1801b4c68: MOV RAX, RCX\\n0x1801b4c6b: SHR RAX, 0x10\\n0x1801b4c6f: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2000]\\n0x1801b4c77: MOVZX EDX, AL\\n0x1801b4c7a: MOV RAX, RCX\\n0x1801b4c7d: SHR RAX, 0x8\\n0x1801b4c81: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2800]\\n0x1801b4c89: MOVZX EDX, AL\\n0x1801b4c8c: MOV RAX, RCX\\n0x1801b4c8f: SHR RAX, 0x38\\n0x1801b4c93: XOR R9, qword ptr [RDI + RDX*0x8 + 0x3000]\\n0x1801b4c9b: XOR R9, qword ptr [RDI + RAX*0x8]\\n0x1801b4c9f: MOVZX EAX, CL\\n0x1801b4ca2: MOV RCX, R9\\n0x1801b4ca5: XOR RCX, qword ptr [RDI + RAX*0x8 + 0x3800]\\n0x1801b4cad: SUB RBX, 0x1\\n0x1801b4cb1: JNZ 0x1801b4c20\\n0x1801b4cb7: MOV RBX, qword ptr [RSP + 0x10]\\n0x1801b4cbc: TEST R11, R11\\n0x1801b4cbf: JZ 0x1801b4cdd\\n0x1801b4cc1: MOVZX EAX, byte ptr [R10]\\n0x1801b4cc5: LEA R10, [R10 + 0x1]\\n0x1801b4cc9: XOR RAX, RCX\\n0x1801b4ccc: SHR RCX, 0x8\\n0x1801b4cd0: MOVZX EDX, AL\\n0x1801b4cd3: XOR RCX, qword ptr [RDI + RDX*0x8]\\n0x1801b4cd7: SUB R11, 0x1\\n0x1801b4cdb: JNZ 0x1801b4cc1\\n0x1801b4cdd: NOT RCX\\n0x1801b4ce0: MOV RAX, RCX\\n0x1801b4ce3: POP RDI\\n0x1801b4ce4: RET\",\"limitations\":[]},\"normalized_result\":\"0x1801b4bc0: PUSH RDI\\n0x1801b4bc2: LEA RDI, [0x1802d6aa0]\\n0x1801b4bc9: MOV R11, R8\\n0x1801b4bcc: MOV R10, RDX\\n0x1801b4bcf: NOT RCX\\n0x1801b4bd2: TEST R8, R8\\n0x1801b4bd5: JZ 0x1801b4bf8\\n0x1801b4bd7: TEST R10B, 0x7\\n0x1801b4bdb: JZ 0x1801b4bf8\\n0x1801b4bdd: MOVZX EAX, byte ptr [R10]\\n0x1801b4be1: INC R10\\n0x1801b4be4: XOR RAX, RCX\\n0x1801b4be7: SHR RCX, 0x8\\n0x1801b4beb: MOVZX EDX, AL\\n0x1801b4bee: XOR RCX, qword ptr [RDI + RDX*0x8]\\n0x1801b4bf2: SUB R11, 0x1\\n0x1801b4bf6: JNZ 0x1801b4bd7\\n0x1801b4bf8: CMP R11, 0x8\\n0x1801b4bfc: JC 0x1801b4cbc\\n0x1801b4c02: MOV qword ptr [RSP + 0x10], RBX\\n0x1801b4c07: MOV RBX, R11\\n0x1801b4c0a: SHR RBX, 0x3\\n0x1801b4c0e: IMUL RAX, RBX, -0x8\\n0x1801b4c12: ADD R11, RAX\\n0x1801b4c15: NOP word ptr [RAX + RAX*0x1]\\n0x1801b4c20: XOR RCX, qword ptr [R10]\\n0x1801b4c23: ADD R10, 0x8\\n0x1801b4c27: MOV RAX, RCX\\n0x1801b4c2a: SHR RAX, 0x30\\n0x1801b4c2e: MOVZX R8D, AL\\n0x1801b4c32: MOV RAX, RCX\\n0x1801b4c35: SHR RAX, 0x28\\n0x1801b4c39: MOVZX EDX, AL\\n0x1801b4c3c: MOV RAX, RCX\\n0x1801b4c3f: SHR RAX, 0x20\\n0x1801b4c43: MOV R9, qword ptr [RDI + R8*0x8 + 0x800]\\n0x1801b4c4b: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1000]\\n0x1801b4c53: MOVZX EDX, AL\\n0x1801b4c56: MOV RAX, RCX\\n0x1801b4c59: SHR RAX, 0x18\\n0x1801b4c5d: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1800]\\n0x1801b4c65: MOVZX EDX, AL\\n0x1801b4c68: MOV RAX, RCX\\n0x1801b4c6b: SHR RAX, 0x10\\n0x1801b4c6f: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2000]\\n0x1801b4c77: MOVZX EDX, AL\\n0x1801b4c7a: MOV RAX, RCX\\n0x1801b4c7d: SHR RAX, 0x8\\n0x1801b4c81: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2800]\\n0x1801b4c89: MOVZX EDX, AL\\n0x1801b4c8c: MOV RAX, RCX\\n0x1801b4c8f: SHR RAX, 0x38\\n0x1801b4c93: XOR R9, qword ptr [RDI + RDX*0x8 + 0x3000]\\n0x1801b4c9b: XOR R9, qword ptr [RDI + RAX*0x8]\\n0x1801b4c9f: MOVZX EAX, CL\\n0x1801b4ca2: MOV RCX, R9\\n0x1801b4ca5: XOR RCX, qword ptr [RDI + RAX*0x8 + 0x3800]\\n0x1801b4cad: SUB RBX, 0x1\\n0x1801b4cb1: JNZ 0x1801b4c20\\n0x1801b4cb7: MOV RBX, qword ptr [RSP + 0x10]\\n0x1801b4cbc: TEST R11, R11\\n0x1801b4cbf: JZ 0x1801b4cdd\\n0x1801b4cc1: MOVZX EAX, byte ptr [R10]\\n0x1801b4cc5: LEA R10, [R10 + 0x1]\\n0x1801b4cc9: XOR RAX, RCX\\n0x1801b4ccc: SHR RCX, 0x8\\n0x1801b4cd0: MOVZX EDX, AL\\n0x1801b4cd3: XOR RCX, qword ptr [RDI + RDX*0x8]\\n0x1801b4cd7: SUB R11, 0x1\\n0x1801b4cdb: JNZ 0x1801b4cc1\\n0x1801b4cdd: NOT RCX\\n0x1801b4ce0: MOV RAX, RCX\\n0x1801b4ce3: POP RDI\\n0x1801b4ce4: RET\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Assembly is Ghidra Listing text and does not claim textual equivalence with Hopper output.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_49eb677f0f7e87a24d46c5a8d51ee424576a4201d06bba5bdbcafc83440c1a1f",
+    "subject": {
+      "name": "alibabacloud-oss-cpp-sdk.dll",
+      "digest": {
+        "sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1"
+      },
+      "format": "pe",
+      "architecture": "x86_64",
+      "local_path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "shared-library",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86_64",
+        "available_architectures": [
+          "x86_64"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "instruction_references": "exact-address-incoming-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_assembly",
+    "parameters": {
+      "procedure": "0x1801b4bc0"
+    },
+    "raw_result": {
+      "value": "0x1801b4bc0: PUSH RDI\n0x1801b4bc2: LEA RDI, [0x1802d6aa0]\n0x1801b4bc9: MOV R11, R8\n0x1801b4bcc: MOV R10, RDX\n0x1801b4bcf: NOT RCX\n0x1801b4bd2: TEST R8, R8\n0x1801b4bd5: JZ 0x1801b4bf8\n0x1801b4bd7: TEST R10B, 0x7\n0x1801b4bdb: JZ 0x1801b4bf8\n0x1801b4bdd: MOVZX EAX, byte ptr [R10]\n0x1801b4be1: INC R10\n0x1801b4be4: XOR RAX, RCX\n0x1801b4be7: SHR RCX, 0x8\n0x1801b4beb: MOVZX EDX, AL\n0x1801b4bee: XOR RCX, qword ptr [RDI + RDX*0x8]\n0x1801b4bf2: SUB R11, 0x1\n0x1801b4bf6: JNZ 0x1801b4bd7\n0x1801b4bf8: CMP R11, 0x8\n0x1801b4bfc: JC 0x1801b4cbc\n0x1801b4c02: MOV qword ptr [RSP + 0x10], RBX\n0x1801b4c07: MOV RBX, R11\n0x1801b4c0a: SHR RBX, 0x3\n0x1801b4c0e: IMUL RAX, RBX, -0x8\n0x1801b4c12: ADD R11, RAX\n0x1801b4c15: NOP word ptr [RAX + RAX*0x1]\n0x1801b4c20: XOR RCX, qword ptr [R10]\n0x1801b4c23: ADD R10, 0x8\n0x1801b4c27: MOV RAX, RCX\n0x1801b4c2a: SHR RAX, 0x30\n0x1801b4c2e: MOVZX R8D, AL\n0x1801b4c32: MOV RAX, RCX\n0x1801b4c35: SHR RAX, 0x28\n0x1801b4c39: MOVZX EDX, AL\n0x1801b4c3c: MOV RAX, RCX\n0x1801b4c3f: SHR RAX, 0x20\n0x1801b4c43: MOV R9, qword ptr [RDI + R8*0x8 + 0x800]\n0x1801b4c4b: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1000]\n0x1801b4c53: MOVZX EDX, AL\n0x1801b4c56: MOV RAX, RCX\n0x1801b4c59: SHR RAX, 0x18\n0x1801b4c5d: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1800]\n0x1801b4c65: MOVZX EDX, AL\n0x1801b4c68: MOV RAX, RCX\n0x1801b4c6b: SHR RAX, 0x10\n0x1801b4c6f: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2000]\n0x1801b4c77: MOVZX EDX, AL\n0x1801b4c7a: MOV RAX, RCX\n0x1801b4c7d: SHR RAX, 0x8\n0x1801b4c81: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2800]\n0x1801b4c89: MOVZX EDX, AL\n0x1801b4c8c: MOV RAX, RCX\n0x1801b4c8f: SHR RAX, 0x38\n0x1801b4c93: XOR R9, qword ptr [RDI + RDX*0x8 + 0x3000]\n0x1801b4c9b: XOR R9, qword ptr [RDI + RAX*0x8]\n0x1801b4c9f: MOVZX EAX, CL\n0x1801b4ca2: MOV RCX, R9\n0x1801b4ca5: XOR RCX, qword ptr [RDI + RAX*0x8 + 0x3800]\n0x1801b4cad: SUB RBX, 0x1\n0x1801b4cb1: JNZ 0x1801b4c20\n0x1801b4cb7: MOV RBX, qword ptr [RSP + 0x10]\n0x1801b4cbc: TEST R11, R11\n0x1801b4cbf: JZ 0x1801b4cdd\n0x1801b4cc1: MOVZX EAX, byte ptr [R10]\n0x1801b4cc5: LEA R10, [R10 + 0x1]\n0x1801b4cc9: XOR RAX, RCX\n0x1801b4ccc: SHR RCX, 0x8\n0x1801b4cd0: MOVZX EDX, AL\n0x1801b4cd3: XOR RCX, qword ptr [RDI + RDX*0x8]\n0x1801b4cd7: SUB R11, 0x1\n0x1801b4cdb: JNZ 0x1801b4cc1\n0x1801b4cdd: NOT RCX\n0x1801b4ce0: MOV RAX, RCX\n0x1801b4ce3: POP RDI\n0x1801b4ce4: RET",
+      "limitations": []
+    },
+    "normalized_result": "0x1801b4bc0: PUSH RDI\n0x1801b4bc2: LEA RDI, [0x1802d6aa0]\n0x1801b4bc9: MOV R11, R8\n0x1801b4bcc: MOV R10, RDX\n0x1801b4bcf: NOT RCX\n0x1801b4bd2: TEST R8, R8\n0x1801b4bd5: JZ 0x1801b4bf8\n0x1801b4bd7: TEST R10B, 0x7\n0x1801b4bdb: JZ 0x1801b4bf8\n0x1801b4bdd: MOVZX EAX, byte ptr [R10]\n0x1801b4be1: INC R10\n0x1801b4be4: XOR RAX, RCX\n0x1801b4be7: SHR RCX, 0x8\n0x1801b4beb: MOVZX EDX, AL\n0x1801b4bee: XOR RCX, qword ptr [RDI + RDX*0x8]\n0x1801b4bf2: SUB R11, 0x1\n0x1801b4bf6: JNZ 0x1801b4bd7\n0x1801b4bf8: CMP R11, 0x8\n0x1801b4bfc: JC 0x1801b4cbc\n0x1801b4c02: MOV qword ptr [RSP + 0x10], RBX\n0x1801b4c07: MOV RBX, R11\n0x1801b4c0a: SHR RBX, 0x3\n0x1801b4c0e: IMUL RAX, RBX, -0x8\n0x1801b4c12: ADD R11, RAX\n0x1801b4c15: NOP word ptr [RAX + RAX*0x1]\n0x1801b4c20: XOR RCX, qword ptr [R10]\n0x1801b4c23: ADD R10, 0x8\n0x1801b4c27: MOV RAX, RCX\n0x1801b4c2a: SHR RAX, 0x30\n0x1801b4c2e: MOVZX R8D, AL\n0x1801b4c32: MOV RAX, RCX\n0x1801b4c35: SHR RAX, 0x28\n0x1801b4c39: MOVZX EDX, AL\n0x1801b4c3c: MOV RAX, RCX\n0x1801b4c3f: SHR RAX, 0x20\n0x1801b4c43: MOV R9, qword ptr [RDI + R8*0x8 + 0x800]\n0x1801b4c4b: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1000]\n0x1801b4c53: MOVZX EDX, AL\n0x1801b4c56: MOV RAX, RCX\n0x1801b4c59: SHR RAX, 0x18\n0x1801b4c5d: XOR R9, qword ptr [RDI + RDX*0x8 + 0x1800]\n0x1801b4c65: MOVZX EDX, AL\n0x1801b4c68: MOV RAX, RCX\n0x1801b4c6b: SHR RAX, 0x10\n0x1801b4c6f: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2000]\n0x1801b4c77: MOVZX EDX, AL\n0x1801b4c7a: MOV RAX, RCX\n0x1801b4c7d: SHR RAX, 0x8\n0x1801b4c81: XOR R9, qword ptr [RDI + RDX*0x8 + 0x2800]\n0x1801b4c89: MOVZX EDX, AL\n0x1801b4c8c: MOV RAX, RCX\n0x1801b4c8f: SHR RAX, 0x38\n0x1801b4c93: XOR R9, qword ptr [RDI + RDX*0x8 + 0x3000]\n0x1801b4c9b: XOR R9, qword ptr [RDI + RAX*0x8]\n0x1801b4c9f: MOVZX EAX, CL\n0x1801b4ca2: MOV RCX, R9\n0x1801b4ca5: XOR RCX, qword ptr [RDI + RAX*0x8 + 0x3800]\n0x1801b4cad: SUB RBX, 0x1\n0x1801b4cb1: JNZ 0x1801b4c20\n0x1801b4cb7: MOV RBX, qword ptr [RSP + 0x10]\n0x1801b4cbc: TEST R11, R11\n0x1801b4cbf: JZ 0x1801b4cdd\n0x1801b4cc1: MOVZX EAX, byte ptr [R10]\n0x1801b4cc5: LEA R10, [R10 + 0x1]\n0x1801b4cc9: XOR RAX, RCX\n0x1801b4ccc: SHR RCX, 0x8\n0x1801b4cd0: MOVZX EDX, AL\n0x1801b4cd3: XOR RCX, qword ptr [RDI + RDX*0x8]\n0x1801b4cd7: SUB R11, 0x1\n0x1801b4cdb: JNZ 0x1801b4cc1\n0x1801b4cdd: NOT RCX\n0x1801b4ce0: MOV RAX, RCX\n0x1801b4ce3: POP RDI\n0x1801b4ce4: RET",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Assembly is Ghidra Listing text and does not claim textual equivalence with Hopper output."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

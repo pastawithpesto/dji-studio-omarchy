@@ -1,0 +1,25 @@
+{
+  "clarification": "The41 API-set family DLLs were mapped together. This includes api-ms-win-crt-private-l1-1-0.dll at65576bytes. The43 selected files are not asserted to be exactly the first43 files in byte-size order. The two non-api targets are the smallest two non-api original DLLs. This related-family coverage does not replace the saved complete242-file size order.",
+  "native_size_ranks": [
+    {
+      "path": "extracted/1.0.0.30839/msvcp140_codecvt_ids.dll",
+      "size": 21544,
+      "all_DLL_rank": 40
+    },
+    {
+      "path": "extracted/1.0.0.30839/msvcp140_1.dll",
+      "size": 25136,
+      "all_DLL_rank": 42
+    }
+  ],
+  "larger_family_member": {
+    "path": "extracted/1.0.0.30839/api-ms-win-crt-private-l1-1-0.dll",
+    "size": 65576,
+    "sha256": "6b33bdfb8c6589541d0211eb44b173f8aae5f2df9db82f535cb90a5054d69f49"
+  },
+  "original_report_sha256": "99f9497af4012ebfbfe0c43dbce82006036813e62d0e575d26dd56ebb084cd13",
+  "provider_range_counts": {
+    "msvcp140_codecvt_ids.dll": 55,
+    "msvcp140_1.dll": 97
+  }
+}
