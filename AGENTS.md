@@ -44,6 +44,10 @@ Use --reply-to for answers, reviews and corrections.
 Distinguish a receipt, a completed task, evidence approval and feature completion.
 State a blocker precisely and continue useful work within the approved scope.
 Do not publish credentials or private reasoning.
+For assigned Zcode and DSH headless work, read the
+[headless session procedure](docs/HEADLESS-AGENTS.md).
+Resume the recorded native session from its original working directory.
+Keep native session data private. Do not save raw model streams in task artifacts.
 Share reusable reverse engineering techniques through comms.
 Record proven techniques in [reverse engineering advice](docs/reverse%20engineering%20advice.md).
 Limit each entry to three sentences and exclude file-specific instructions.
@@ -90,6 +94,12 @@ Run checks that are meaningful for the change. Record exact results and limits.
 
 Request independent review of the exact candidate commit and evidence packet.
 Keep the author and reviewer roles separate. Do not approve your own change.
+Use a different model for review by default. Same-model review is permitted only
+when the coordinator confirms that it is the heaviest available OpenAI or
+Anthropic model. Start a new review session for this exception. Do not reuse the
+author conversation. A model name alone does not establish this exception.
+Record the author and reviewer identities, models, session identities, candidate
+commit, and the coordinator's basis for any exception in the review evidence.
 Correct review defects and obtain review again when the candidate changes.
 Verify the reviewed milestone before accepting new claims or publishing a package.
 A build or synthetic test does not establish Windows or camera parity.

@@ -1,0 +1,89 @@
+{
+  "checkedUtc": "2026-10-12T15:01:47.597144+00:00",
+  "runs": [
+    {
+      "tool": "dsh",
+      "cwd": "/home/violence/Work/dji-headless-evidence-20261012/dsh",
+      "nativeSessionId": "session-66a189f5-74cd-4ee7-b527-12c5da001723",
+      "requestedNativeId": null,
+      "exitCode": 0,
+      "hasFinal": true,
+      "startUtc": "2026-10-12T14:42:24.175910+00:00",
+      "endUtc": "2026-10-12T14:52:31.166670+00:00",
+      "privateReasoningRetained": false,
+      "privateDiagnosticsRetained": false
+    },
+    {
+      "tool": "dsh",
+      "cwd": "/home/violence/Work/dji-headless-evidence-20261012/dsh",
+      "nativeSessionId": "session-66a189f5-74cd-4ee7-b527-12c5da001723",
+      "requestedNativeId": "session-66a189f5-74cd-4ee7-b527-12c5da001723",
+      "exitCode": 0,
+      "hasFinal": true,
+      "startUtc": "2026-10-12T14:54:18.929955+00:00",
+      "endUtc": "2026-10-12T14:56:18.479081+00:00",
+      "privateReasoningRetained": false,
+      "privateDiagnosticsRetained": false
+    },
+    {
+      "tool": "zcode",
+      "cwd": "/home/violence/Work/dji-headless-evidence-20261012/zcode",
+      "nativeSessionId": "sess_98ed5b7d-761d-4dec-b807-8381c1aafa0e",
+      "requestedNativeId": null,
+      "exitCode": 0,
+      "hasFinal": true,
+      "startUtc": "2026-10-12T14:46:10.572043+00:00",
+      "endUtc": "2026-10-12T14:54:37.265311+00:00",
+      "privateReasoningRetained": false,
+      "privateDiagnosticsRetained": false
+    },
+    {
+      "tool": "zcode",
+      "cwd": "/home/violence/Work/dji-headless-evidence-20261012/zcode",
+      "nativeSessionId": "sess_98ed5b7d-761d-4dec-b807-8381c1aafa0e",
+      "requestedNativeId": "sess_98ed5b7d-761d-4dec-b807-8381c1aafa0e",
+      "exitCode": 0,
+      "hasFinal": true,
+      "startUtc": "2026-10-12T14:59:24.134680+00:00",
+      "endUtc": "2026-10-12T14:59:52.828193+00:00",
+      "privateReasoningRetained": false,
+      "privateDiagnosticsRetained": false
+    }
+  ],
+  "zcodeNativeModelSelection": {
+    "providerId": "account:zai-individual-coding-plan",
+    "modelId": "GLM-5.3-Flash",
+    "options": {
+      "reasoningLevel": "high"
+    }
+  },
+  "dshConfiguredSelection": {
+    "provider": "deepseek-official",
+    "model": "deepseek-flash",
+    "reasoningEffort": "max",
+    "authority": "versioned CLI overlay and local selection code, not backend model attestation"
+  },
+  "zcodeRecallChecks": {
+    "checkpoint": true,
+    "hexCap": true,
+    "decimalCap": true,
+    "deadlineSentinel": true,
+    "remainingSentinel": true,
+    "clockCounts": true
+  },
+  "dshCorrectionChecks": {
+    "sameNativeId": true,
+    "additiveCorrectionExists": true,
+    "correctedContractIndependentApproval": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/DSH-R1-APPROVAL.md"
+  },
+  "privateReasoningOrDiagnosticsExported": false,
+  "limits": [
+    "Successful continuation does not prove Windows behavior.",
+    "DSH first-turn REA lacked configuredGhidra; independent Sol used newer ownedREA with fresh provider byte verification.",
+    "Zcode plan-mode firstturn remote commands were denied; root separatelyverified freshbase,claims andwatchdog."
+  ],
+  "finalAnswerHashes": {
+    "zcode/turn-02/final.txt": "b734517607474b525a5a0f81d6980a8a82f39c81937b3210ba23e2a8cb9a196c",
+    "dsh/turn-02/final.txt": "2f2e1945d9060b54ea1d5bf62bdf2d85f59b3d21483efdc1fe55c42c7f0addf9"
+  }
+}
