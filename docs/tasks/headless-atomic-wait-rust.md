@@ -43,3 +43,17 @@ Fresh main: `8b147cadd1b92ff52b30cde995429cb04f85eb17`.
 Owned branch: `work/headless-atomic-wait-rust-20261012`.
 Owned worktree: `/home/violence/Work/dji-headless-atomic-wait-rust-20261012`.
 The user warns that the base changes. Recheck it before each source checkpoint.
+
+## Progress
+
+2026-10-12: Implemented `src/atomic_wait.rs` with the two exact export names
+and added one module export to `src/lib.rs`. `tests/atomic_wait.rs` covers the
+11 pinned reference vectors and the reviewed behavior classes. rustfmt passes
+on the three claimed Rust files. Focused `cargo test --test atomic_wait`:
+10 passed, 0 failed. Full locked `cargo test --locked`: 285 passed, 0 failed.
+Base `8b147cadd1b92ff52b30cde995429cb04f85eb17` refetched and confirmed as an
+ancestor of this branch before edits. PR45 claims watchdog passed on head
+`7f57ef2b7ccc0c3ee53de16e842f0561542e1a9d` before edits, run 38265168354.
+Record: `docs/evidence/headless-atomic-wait-rust/REPORT.md`. The candidate
+commit stays on this branch. No push. Independent review of the exact commit
+is the next gate.

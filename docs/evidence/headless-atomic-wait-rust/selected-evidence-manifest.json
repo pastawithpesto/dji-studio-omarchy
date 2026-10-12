@@ -1,0 +1,56 @@
+[
+  {
+    "file": "DSH-FINDINGS.md",
+    "sha256": "ecb83d11d0fea9a406a2b99055f81c8ef6785cfba6f062937bf4ccd2466c293a",
+    "bytes": 22813,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/dsh/FINDINGS.md"
+  },
+  {
+    "file": "DSH-CORRECTION-R1.md",
+    "sha256": "6216e596ea34b262a38499e3002d11fcf00e0d59288ad61d9925acb073086d18",
+    "bytes": 6281,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/dsh/CORRECTION-R1.md"
+  },
+  {
+    "file": "CONTRACT-REVIEW.md",
+    "sha256": "277cc07f612872ed1037d3530ac69c04cc9956e3aeb9b532f9dc0c86ad9e44e3",
+    "bytes": 6399,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/CONTRACT-REVIEW.md"
+  },
+  {
+    "file": "DSH-R1-APPROVAL.md",
+    "sha256": "cd65f121007ab265ac6ab62177cfd8b92ead94207eb8f15120bc7dd87f3000b4",
+    "bytes": 2051,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/DSH-R1-APPROVAL.md"
+  },
+  {
+    "file": "latest-restore-provenance.json",
+    "sha256": "7c78d089b83ab0fa1d32005f90676858863315ad3636fb4841e657896c9878b8",
+    "bytes": 1051,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/latest-restore-provenance.json"
+  },
+  {
+    "file": "latest-restore-comparison.json",
+    "sha256": "28a0d62078c01cd4ae1be58dd2fffd28fadecc41b46ff3fbe112b996be0551de",
+    "bytes": 1428,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/latest-restore-comparison.json"
+  },
+  {
+    "file": "deadline-provider-bytes.json",
+    "sha256": "bba98cc963db3eaf7d27832d87137a13bffdfdd00d551031853ca74899973800",
+    "bytes": 7780,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/latest-__std_atomic_wait_get_deadline-provider-bytes.json"
+  },
+  {
+    "file": "remaining-provider-bytes.json",
+    "sha256": "25c728e9873fa98ebd24783eb64bc3a10b4c81954f35669a0a6abcb3e8d502d7",
+    "bytes": 7964,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/latest-__std_atomic_wait_get_remaining_timeout-provider-bytes.json"
+  },
+  {
+    "file": "LATEST-RESTORE-REVIEW.md",
+    "sha256": "23503fc3012d1e4f8fe967048824dd189909741aeadba7fdafc8fbed8ed2d967",
+    "bytes": 2890,
+    "copiedFrom": "/home/violence/Work/dji-headless-evidence-20261012/atomic-contract-review/LATEST-RESTORE-REVIEW.md"
+  }
+]
