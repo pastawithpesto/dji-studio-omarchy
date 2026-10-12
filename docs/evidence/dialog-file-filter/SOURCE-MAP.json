@@ -1,0 +1,1941 @@
+{
+  "schema_version": 1,
+  "source": {
+    "product_build": "DJI Studio 1.0.0.30839",
+    "file": "Qt6QuickDialogs2Utils.dll",
+    "declared_source_path": "extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll",
+    "size_bytes": 45240,
+    "sha256": "580d8be7657cd4b074b5d4ee43bc8c325d501aea737ef15c13e41f62bd0da263",
+    "architecture": "x86_64 PE32+",
+    "image_base": "0x180000000"
+  },
+  "analysis_tool": {
+    "rea_upstream_commit": "fa87dd2aac3eaeb49875c54e93ec18c98cc92e4d",
+    "rea_package_version": "6.4.0",
+    "running_server": {
+      "name": "rea",
+      "version": "6.4.0"
+    },
+    "node": "v26.9.0",
+    "ghidra": "12.1.4",
+    "heap": "768M",
+    "launcher_sha256": "d9d9ddf93ea61619fb20e619c218a004fb1f17e823f142f0be9f851ca7030480",
+    "runtime_sha256": "9c75ade7e87ed6e2cf3340f2b9d6ea91a3ebaa2f0322c5767ade550271e65c25",
+    "session_mode": "Two sequential owned private stdio sessions. Each used a 768M heap and held the Ghidra import lock."
+  },
+  "export_inventory": {
+    "source": "Independent PE parser record. The complete list was cross-checked against llvm-objdump -p output.",
+    "count": 24,
+    "all_exports": [
+      {
+        "name": "??0QQuickFileNameFilter@@QEAA@PEAVQObject@@@Z",
+        "ordinal": 1,
+        "rva": 7248,
+        "forwarder": false
+      },
+      {
+        "name": "??1QQuickFileNameFilter@@UEAA@XZ",
+        "ordinal": 2,
+        "rva": 7472,
+        "forwarder": false
+      },
+      {
+        "name": "??_7QQuickFileNameFilter@@6B@",
+        "ordinal": 3,
+        "rva": 22536,
+        "forwarder": false
+      },
+      {
+        "name": "??_FQQuickFileNameFilter@@QEAAXXZ",
+        "ordinal": 4,
+        "rva": 8448,
+        "forwarder": false
+      },
+      {
+        "name": "?extensions@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ",
+        "ordinal": 5,
+        "rva": 9504,
+        "forwarder": false
+      },
+      {
+        "name": "?extensionsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z",
+        "ordinal": 6,
+        "rva": 9552,
+        "forwarder": false
+      },
+      {
+        "name": "?globs@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ",
+        "ordinal": 7,
+        "rva": 10416,
+        "forwarder": false
+      },
+      {
+        "name": "?globsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z",
+        "ordinal": 8,
+        "rva": 10464,
+        "forwarder": false
+      },
+      {
+        "name": "?index@QQuickFileNameFilter@@QEBAHXZ",
+        "ordinal": 9,
+        "rva": 10512,
+        "forwarder": false
+      },
+      {
+        "name": "?indexChanged@QQuickFileNameFilter@@QEAAXH@Z",
+        "ordinal": 10,
+        "rva": 10528,
+        "forwarder": false
+      },
+      {
+        "name": "?metaObject@QQuickFileNameFilter@@UEBAPEBUQMetaObject@@XZ",
+        "ordinal": 11,
+        "rva": 10592,
+        "forwarder": false
+      },
+      {
+        "name": "?name@QQuickFileNameFilter@@QEBA?AVQString@@XZ",
+        "ordinal": 12,
+        "rva": 10624,
+        "forwarder": false
+      },
+      {
+        "name": "?nameChanged@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z",
+        "ordinal": 13,
+        "rva": 10656,
+        "forwarder": false
+      },
+      {
+        "name": "?nameFilter@QQuickFileNameFilter@@AEBA?AVQString@@H@Z",
+        "ordinal": 14,
+        "rva": 10704,
+        "forwarder": false
+      },
+      {
+        "name": "?nameFilters@QQuickFileNameFilter@@AEBA?AV?$QList@VQString@@@@XZ",
+        "ordinal": 15,
+        "rva": 10912,
+        "forwarder": false
+      },
+      {
+        "name": "?options@QQuickFileNameFilter@@QEBA?AV?$QSharedPointer@VQFileDialogOptions@@@@XZ",
+        "ordinal": 16,
+        "rva": 11168,
+        "forwarder": false
+      },
+      {
+        "name": "?qt_metacall@QQuickFileNameFilter@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z",
+        "ordinal": 17,
+        "rva": 11216,
+        "forwarder": false
+      },
+      {
+        "name": "?qt_metacast@QQuickFileNameFilter@@UEAAPEAXPEBD@Z",
+        "ordinal": 18,
+        "rva": 11360,
+        "forwarder": false
+      },
+      {
+        "name": "?qt_static_metacall@QQuickFileNameFilter@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z",
+        "ordinal": 19,
+        "rva": 5200,
+        "forwarder": false
+      },
+      {
+        "name": "?setIndex@QQuickFileNameFilter@@QEAAXH@Z",
+        "ordinal": 20,
+        "rva": 12608,
+        "forwarder": false
+      },
+      {
+        "name": "?setOptions@QQuickFileNameFilter@@QEAAXAEBV?$QSharedPointer@VQFileDialogOptions@@@@@Z",
+        "ordinal": 21,
+        "rva": 12672,
+        "forwarder": false
+      },
+      {
+        "name": "?staticMetaObject@QQuickFileNameFilter@@2UQMetaObject@@B",
+        "ordinal": 22,
+        "rva": 22448,
+        "forwarder": false
+      },
+      {
+        "name": "?tr@QQuickFileNameFilter@@SA?AVQString@@PEBD0H@Z",
+        "ordinal": 23,
+        "rva": 12800,
+        "forwarder": false
+      },
+      {
+        "name": "?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z",
+        "ordinal": 24,
+        "rva": 13184,
+        "forwarder": false
+      }
+    ]
+  },
+  "functions": [
+    {
+      "capture_id": "F01",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "??0QQuickFileNameFilter@@QEAA@PEAVQObject@@@Z",
+      "ghidra_name": "??0QQuickFileNameFilter@@QEAA@PEAVQObject@@@Z",
+      "address_va": "0x180001c50",
+      "rva": "0x1c50",
+      "body": {
+        "range_start_va": "0x180001c50",
+        "range_end_va_inclusive": "0x180001ca4",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 85,
+        "contiguous": true,
+        "file_offset": 4176,
+        "sha256": "2d6ba6018a340c263b344ee45c7723c3e651fe4eecb7da7079dd5f08953caa5a",
+        "bytes_hex": "40534883ec20488bd9ff15a1340000488d05a23b0000c74310ffffffff488d4b18488903ff15a635000033c04889433048894338488943404889434848894350488943584889436048894368488bc34883c4205bc3",
+        "ghidra_read_bytes_evidence_id": "ev_1affa175416c7c9eebdc4068dcfb48d948c17152746f42f4e7c6c765f91c95ad"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_d090216d1a10f93ce9c1af3a6c5effb99d2bb3dea396c911c7076e15586461fe",
+        "separate_pseudocode_evidence_id": "ev_1c8f7f130e065f1669f0490a21fe4bc8b0c9b27842ebc753a02e912738e4ce85",
+        "separate_assembly_evidence_id": "ev_7cdff8d0a385bce31aa47ed835aed887f4f5d1978294ed6f9b1e2c3005743a87",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "9d1681cc1372bff4955584daf3fd8fab00036caf01cc16786bc29fa766c07c18",
+        "dossier_assembly_sha256": "3dbdfd8c8ad26cb3055d1f74e62d19b364ee8d487deb6e7b016c875f5a145bae",
+        "separate_assembly_sha256": "9d1f8b13a58c4936a95b7015c5b9ca3435131885fb91a99cc3d8a9dbd070d676",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F02",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?index@QQuickFileNameFilter@@QEBAHXZ",
+      "ghidra_name": "?index@QQuickFileNameFilter@@QEBAHXZ",
+      "address_va": "0x180002910",
+      "rva": "0x2910",
+      "body": {
+        "range_start_va": "0x180002910",
+        "range_end_va_inclusive": "0x180002913",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 4,
+        "contiguous": true,
+        "file_offset": 7440,
+        "sha256": "74032ad0e931f3c4730df99da43479f9f5315cc898c7c8614278631cb2c16a62",
+        "bytes_hex": "8b4110c3",
+        "ghidra_read_bytes_evidence_id": "ev_7ab2f39b1dbff80cdf673b42fb56cc3a5bf7a27b37551f19554faca48a74e5d6"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_b928ce8a3e673453fbda22fccd2d108e76b2aa929294bde6353593564bd03f50",
+        "separate_pseudocode_evidence_id": "ev_35015c7dedfe55f3a2f7e76c3c626c72eb2cfefc4bd3ed834afd078d54130178",
+        "separate_assembly_evidence_id": "ev_edc6bbf9f94d9098f9c5e420cc8c2396f9c6ed1e81558fe512814a23068ad12f",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "2d64a10825e0f4b2e0758ed815d74371e86abffc7a46a08e1eb0fab50e677ca5",
+        "dossier_assembly_sha256": "177b6bf58e2ecc8f7dbd24c1763efef454e99ddda35ac63222a4c4846fa01bfe",
+        "separate_assembly_sha256": "a104f83190a507499e6823753200360b19a7d1333386de6f63c93a749de04404",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F03",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?setIndex@QQuickFileNameFilter@@QEAAXH@Z",
+      "ghidra_name": "?setIndex@QQuickFileNameFilter@@QEAAXH@Z",
+      "address_va": "0x180003140",
+      "rva": "0x3140",
+      "body": {
+        "range_start_va": "0x180003140",
+        "range_end_va_inclusive": "0x18000317c",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 61,
+        "contiguous": true,
+        "file_offset": 9536,
+        "sha256": "ab28b43e4d206b31cd47a24c848ccd9f0651203664ee19a0302143c9ce7cb765",
+        "bytes_hex": "4883ec38395110742f895110488d442448895424484c8d4c2420488d154f26000048894424284533c048c744242000000000ff15002100004883c438c3",
+        "ghidra_read_bytes_evidence_id": "ev_6053b902c9d547294ca637176dc0e3e878894ce582df7be391eb961888c2ed2a"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_e448ec72387c61ebc4b6c48bf45aced568bd765feb4704fc217b6d15e233ff97",
+        "separate_pseudocode_evidence_id": "ev_8f74e0a2e5df63881b87d28477a40ab169fb838b3861b4c7f6780e6616377423",
+        "separate_assembly_evidence_id": "ev_0d97be80e6cf34a3c5f22f5a97c4dd1ac5c6c2e234a205fbeed899702668d25a",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "d982d8e168f6d89e9546a21422877c8d7a5e5b290419cfd8a634287207ab75fd",
+        "dossier_assembly_sha256": "93cbc6fb117ffecb783fb2b67b0284f2c0f48e9e7d6a1cdf51042eadfc812821",
+        "separate_assembly_sha256": "8c000e31225745b7e2350388da7884a0bec526fbad9c31aac8a82eb94536d1da",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F04",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z",
+      "ghidra_name": "?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z",
+      "address_va": "0x180003380",
+      "rva": "0x3380",
+      "body": {
+        "range_start_va": "0x180003380",
+        "range_end_va_inclusive": "0x180003e0c",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 2701,
+        "contiguous": true,
+        "file_offset": 10112,
+        "sha256": "872530d914b32332e8cf471e6e7d5c7562355e17de89eab0a54dbdabba65e5d0",
+        "bytes_hex": "488bc4555356574157488da8c8feffff4881ec100200004c8bfa4c8960d0488d5424684c8968c8488bf1e8f1f6ffff8b4610488d5618488d8d90000000898548010000ff15471e0000488b46384c8d6e30498b4d00488945b0498b4510488945b848894da84885c97409b801000000f00fc101488b46504c8d6648498b0c2448894598498b442410488945a048894d904885c97409b801000000f00fc101498b5f10498bcf48895dc0ff15091d000084c0740433c0eb09498bcfff15b01d00004c89b424f80100004c8b74247048894588488b4424780f29b424e001000048895d804885c07e77488d0440498bde498d3cc64c3bf774670f2875800f1f4400004c8b7310488bcbff15ab1c000084c0740433c0eb09488bcbff15521d00004c897530488945384c3b75c075240f284530488d5580488d4d20660f7f4520660f7f7580ff15781d000084c00f858e0000004883c318483bdf75a74c8b74247048c7c2ffffffff895610488d8d40010000b228ff15791d000041b9010000004533c0498bcf0fb710ff15dc1c0000488d95a8000000498bcf4c8d40ffff15901c0000488d5e18488bcb488d95a8000000ff15c41c0000488d8da8000000ff15c71c0000498b7f10498bcfff15ea1b00000f28b424e001000084c0742c33c0eb314c8b74247048b8abaaaaaaaaaaaa2a492bde48f7eb48c1fa02488bc248c1e83f4803d0e95fffffff498bcfff15611c000048894548488d4d2048897d404d8bc40f284540498bd5660f7f4520e8d1efffff8b461033ff398548010000742c8985400100004c8d4d50488d854001000048897d504533c048894558488d15d1210000488bceff15901c0000488bd3488d8d90000000e869e8ffff84c075224c8d4d6048897d6041b80100000048895d68488d159c210000488bceff155b1c0000498bd5488d4da8e887e1ffff84c075224c8d4d7048897d7041b8020000004c896d78488d156a210000488bceff15291c0000498bd4488d4d90e855e1ffff4c8bac240002000084c0752b4c8d8d800000004889bd8000000041b8030000004c89a588000000488d1527210000488bceff15e61b000065488b0425580000008b0dff5c00004c8ba4240802000041b804000000488b14c8418b04103905435c00000f8ffd060000488d0d1e5c0000ff15a01a000084c00f84a9060000488bceff152f1a0000488b0d085c00004533c948894c24204533c0488d8dc000000033d2488bd8ff158b1b0000488bc8488d5510ff15761b0000488d156f210000488b08c6413000488bc8ff15af1a00004c8bc6488d55c8488d4d08488b00488945c8ff4028ff15d4190000488bc8488d154e210000ff15841a00004c8bc3488d55d0488d4d00488b00488945d0ff4028ff15a9190000488bc8488d152f210000ff15591a0000488bc8498bd7ff15bd190000488bc8488d1523210000ff153d1a0000488d9540010000488d4dd8488b0048898550010000ff4028488b855001000048898540010000ff4028ff1586190000488b8540010000488d1518200000488d8d40010000c6403000ff15ef190000488bc8b228ff153c190000488b442478488d0440498d3cc64c3bf77443498bd6488d8d40010000ff1532190000498d5e18483bdf742a90488d15d11f0000488d8d40010000ff15a4190000488bc8488bd3ff15081900004883c318483bdf75d7b229488d8d40010000ff15d8180000488d9540010000488d4c2460ff15b6180000488d4dd8ff15e4180000488d8d40010000ff15a7180000488d8d50010000ff159a180000488d153b200000488d4c2460ff1538190000488bc8488d152e200000ff15281900008b9548010000488bc8ff15e1190000488bc8488d151f200000ff15091900008b5610488bc8ff15c5190000488bc8488d1513200000ff15ed180000488bc8488d9590000000ff154d180000488bc8488d1503200000ff15cd180000488bc8488d5618ff1530180000488bc8488d15f61f0000ff15b0180000488d9540010000488d8d48010000488b0048898558010000ff4028488b855801000048898540010000ff4028ff15f6170000488b8540010000488d15881e0000488d8d40010000c6403000ff155f180000488bc8b228ff15ac170000488b5db0488b45b8488d0c40488d3ccb483bdf7442488bd3488d8d40010000ff159f1700004883c318483bdf7429488d153f1e0000488d8d40010000ff1512180000488bc8488bd3ff15761700004883c318483bdf75d7b229488d8d40010000ff1546170000488d9540010000488d4c2458ff1524170000488d8d48010000ff154f170000488d8d40010000ff1512170000488d8d58010000ff1505170000488d15061f0000488d4c2458ff15a3170000488d9540010000488d4de0488b004889442430ff4028488b44243048898540010000ff4028ff15f0160000488b8540010000488d15821d0000488d8d40010000c6403000ff1559170000488bc8b228ff15a6160000488b5e38488b4640488d0c40488d3ccb483bdf744a488bd3488d8d40010000ff15991600004883c318483bdf74310f1f840000000000488d15311d0000488d8d40010000ff1504170000488bc8488bd3ff15681600004883c318483bdf75d7b229488d8d40010000ff1538160000488d9540010000488d4c2450ff1516160000488d4de0ff1544160000488d8d40010000ff1507160000488d4c2430ff15fc150000488d150d1e0000488d4c2450ff159a160000488d9540010000488d4de8488b004889442438ff4028488b44243848898540010000ff4028ff15e7150000488b8540010000488d15791c0000488d8d40010000c6403000ff1550160000488bc8b228ff159d150000488b5d98488b45a0488d0c40488d3ccb483bdf7442488bd3488d8d40010000ff15901500004883c318483bdf7429488d15301c0000488d8d40010000ff1503160000488bc8488bd3ff15671500004883c318483bdf75d7b229488d8d40010000ff1537150000488d9540010000488d4c2448ff1515150000488d4de8ff1543150000488d8d40010000ff1506150000488d4c2438ff15fb140000488d151c1d0000488d4c2448ff1599150000488d9540010000488d4df0488b004889442440ff4028488b44244048898540010000ff4028ff15e6140000488b8540010000488d15781b0000488d8d40010000c6403000ff154f150000488bc8b228ff159c140000488b5e50488b4658488d0c40488d3ccb483bdf7442488bd3488d8d40010000ff158f1400004883c318483bdf7429488d152f1b0000488d8d40010000ff1502150000488bc8488bd3ff15661400004883c318483bdf75d7b229488d8d40010000ff1536140000488d9540010000488d4df8ff1515140000488d4df0ff1543140000488d8d40010000ff1506140000488d4c2440ff15fb130000488d4df8ff15f1130000488d4c2448ff15e6130000488d4c2450ff15db130000488d4c2458ff15d0130000488d4c2460ff15c5130000488d4d00ff15bb130000488d4d08ff15b1130000488d4d10ff15a7130000488d4d90e826dfffff488d4da8e81ddfffff488d8d90000000ff1568140000488d4c2468e806dfffff4c8bb424f80100004881c410020000415f5f5e5b5dc3488d0d39550000e8dc050000833d2d550000ff0f85eaf8ffff4533c0488d157d1a0000488d0dfe540000ff1570130000488d0dd9110000e834040000488d0dfd540000e840050000e9b6f8ffff",
+        "ghidra_read_bytes_evidence_id": "ev_a9eac90810fb1ffb34e5ca9881f8560744434eaf91d409e63b212adb5f292ba6"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_158340d4548a3639082e2612dcfceaaddbc670ca03238c1cb0e33493abd8d156",
+        "separate_pseudocode_evidence_id": "ev_72af6e4a308a37ab0c2745f4a991713a0e39a6603fbc9a55e3803acf3726e125",
+        "separate_assembly_evidence_id": "ev_e1c4e1d316ec13cd3559a78a6ad9ed806d4f6a4c0a6be72c70a99b18fa5c7d18",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "81261a5c3e6af0e0869bd5c18362617741f810cd650ad58a678a675ed54c9626",
+        "dossier_assembly_sha256": "e536d16a81d8ae7c10ed2c807e7d8ba56201afc54c34d9b4925114f7c5b5026a",
+        "separate_assembly_sha256": "835884e454e28ee8542bd6198bc6ef40873b3f0c5cc26852873d250ce60bd137",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F05",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?nameFilter@QQuickFileNameFilter@@AEBA?AVQString@@H@Z",
+      "ghidra_name": "?nameFilter@QQuickFileNameFilter@@AEBA?AVQString@@H@Z",
+      "address_va": "0x1800029d0",
+      "rva": "0x29d0",
+      "body": {
+        "range_start_va": "0x1800029d0",
+        "range_end_va_inclusive": "0x180002a9a",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 203,
+        "contiguous": true,
+        "file_offset": 7632,
+        "sha256": "abcf5090f8bfb07cf4c416fbbf76d7804b34da78ad84befcc3411ef76495df74",
+        "bytes_hex": "48895c2410574881ec80000000488b4960488bda4963f84885c97479488d5424504889b42490000000ff15b1280000488d4c2438488bf0ff1513280000483b7e10730c488b4608488d0c7f488d04c8488bd0488d4c2420ff15e3270000488d4c2438ff15d0270000488d542420488bcbff15ba270000488d4c2420ff15b7270000488d4c2450e855f2ffff488bb42490000000eb22488d4c2468ff15b0270000488bd0488bcbff1584270000488d4c2468ff1581270000488bc3488b9c24980000004881c4800000005fc3",
+        "ghidra_read_bytes_evidence_id": "ev_ee39660d62d06395de6b8fe52cd6bc1281e51a7cb0d258d15a0a2f3e5a88b5d1"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_236be351f1ca27cd2d07215d2397b68ac961878f06858dcb037365905ffb76c0",
+        "separate_pseudocode_evidence_id": "ev_de3378c560cad75d3575ec764dbe6276c84e0062f525bd6664dcde279ee41ba7",
+        "separate_assembly_evidence_id": "ev_ad3dc6852816bdceaa4b8eb13428c4e785732dd1ba273bb7c94b2ae4798e2f52",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "a9fef9f5ca3624e6f69588b5bc1a74961008d195b1d12589158f4fddfb918178",
+        "dossier_assembly_sha256": "842881921ac86b32a7e1e3d28e81265373fa5cfadfddc36ab2108f4ef65974fa",
+        "separate_assembly_sha256": "79e538ecef0172c1efe7f1141907f54ebba4934beb014ab3b3f2833a2445f5a1",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F06",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?nameFilters@QQuickFileNameFilter@@AEBA?AV?$QList@VQString@@@@XZ",
+      "ghidra_name": "?nameFilters@QQuickFileNameFilter@@AEBA?AV?$QList@VQString@@@@XZ",
+      "address_va": "0x180002aa0",
+      "rva": "0x2aa0",
+      "body": {
+        "range_start_va": "0x180002aa0",
+        "range_end_va_inclusive": "0x180002b9e",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 255,
+        "contiguous": true,
+        "file_offset": 7840,
+        "sha256": "3723dac710d5d8ca79d749c6d19bf60b83e709da3507fbf72cfd44757b0eff92",
+        "bytes_hex": "41564883ec50488b49604c8bf248895c246833db4889742470895c24604885c97416488d542438ff15e3270000488bc88d7301488b00eb160f57c0488d4c2420f30f7f442428be02000000488bc3498906488b410849894608488b411049894610488919488959084889591040f6c6027469488b4c242083e6fd4885c9745cb8fffffffff00fc10183f801754e488b5c2428488b44243048897c2478488d0c40488d3ccb483bdf74190f1f8000000000488bcbff15af2600004883c318483bdf75ee488b4c2420ba18000000448d42f0ff15e2260000488b7c2478488b5c246840f6c601488b742470740a488d4c2438e81bf1ffff498bc64883c450415ec3",
+        "ghidra_read_bytes_evidence_id": "ev_25086cabf727e6cef4f7182d74f1c45d2366c7aa3b47173419b01a312e99a1c4"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_ea15a19000b0f4144ce6ca5defa7f1ac5c844b751adc0d6aeef40f619125df50",
+        "separate_pseudocode_evidence_id": "ev_69b428baaee577205fcebbbd7a6baf75018768ffb7dafa57214dd51f93927abc",
+        "separate_assembly_evidence_id": "ev_7362d32c29cc293a440ba5808625988e29be7ebdf8f4aa6bc1b9cfd44bdde0e4",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "77bb771fceb831b3ced5af9196b6dcf067b5ba670a66107b9a8d137950a5cdb5",
+        "dossier_assembly_sha256": "467b02e75b5bb6fe814df598fc1efb5457f36b4f8cd7aeeb01b09f0d17d96469",
+        "separate_assembly_sha256": "c6d2b92d35db7e9bbbc54c6e42fbee861e0a88857db89cf92eb1b2f90a8d8074",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F07",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?options@QQuickFileNameFilter@@QEBA?AV?$QSharedPointer@VQFileDialogOptions@@@@XZ",
+      "ghidra_name": "?options@QQuickFileNameFilter@@QEBA?AV?$QSharedPointer@VQFileDialogOptions@@@@XZ",
+      "address_va": "0x180002ba0",
+      "rva": "0x2ba0",
+      "body": {
+        "range_start_va": "0x180002ba0",
+        "range_end_va_inclusive": "0x180002bcf",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 48,
+        "contiguous": true,
+        "file_offset": 8096,
+        "sha256": "441073f73e9cab2653b21ca47f09528162f3ebdc4ab7424732b9b7035de33be5",
+        "bytes_hex": "4c8b4968488b41604889024c894a084d85c9741841b801000000418bc0f0410fc101488b4a08f0440fc14104488bc2c3",
+        "ghidra_read_bytes_evidence_id": "ev_2d62e30d35ea09e22266fefd3a73b511421e80726aed19cacc30a8b5f7bab62f"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_cda7a5c3a2dc5e46b27532aae4b8ab632b18c0eb032e5240dfa204de3a90d1d2",
+        "separate_pseudocode_evidence_id": "ev_1c018de9b700764cd018a42c0e6fd96441d347be6598197bf8bd00bb1ce71913",
+        "separate_assembly_evidence_id": "ev_19e6b4a48875046f985b7f805c160192a7c994268dd5fa369945546f810b998e",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "8f7e03c8d86c821b056e9bc7e14c38856394517b2136c86e291d8078c283e970",
+        "dossier_assembly_sha256": "9d35a746a8cb06df45e9764692f5f09bc2a48c8a0d0f2a01bf26ff2e189d6712",
+        "separate_assembly_sha256": "79a1ac864162620ce271da1f15233ad90beaa2422baca91ae5ba482a1d65f9a5",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F08",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?setOptions@QQuickFileNameFilter@@QEAAXAEBV?$QSharedPointer@VQFileDialogOptions@@@@@Z",
+      "ghidra_name": "?setOptions@QQuickFileNameFilter@@QEAAXAEBV?$QSharedPointer@VQFileDialogOptions@@@@@Z",
+      "address_va": "0x180003180",
+      "rva": "0x3180",
+      "body": {
+        "range_start_va": "0x180003180",
+        "range_end_va_inclusive": "0x1800031f8",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 121,
+        "contiguous": true,
+        "file_offset": 9600,
+        "sha256": "8cb1e31f3364df2b0458da7ad7fc171e7929555551875e2fa298d9938c2756aa",
+        "bytes_hex": "40534883ec204c8b42084c8b0a4d85c07412ba010000008bc2f0410fc100f0410fc15004488b59684c8941684c8949604885db743e48897c2430bfffffffff8bc7f00fc1430483f801750d488b4308488bcbff1588210000f00fc13b83ff01488b7c2430750d488bcb4883c4205be9bd0c00004883c4205bc3",
+        "ghidra_read_bytes_evidence_id": "ev_2a29558c4712a4c24bbe18167b55431ebbfdd53a4494713909f5609187ff1d08"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_fe412def5bd9d487ff45b0895fd5a7c184b4063731884f0603caea6f32ea8853",
+        "separate_pseudocode_evidence_id": "ev_e15d917fa55f5d437bba82c07b3e4fe96edc4b1a255190d1633caac1a75bd349",
+        "separate_assembly_evidence_id": "ev_af267f2861d4057a1f0515b3279be1964d70f873cdbcdc97d690e45ad0c92d5d",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "39ca1673a05ce36cdd26c02fd4e106f9247d245589117ba20f6f61997e0a8f5d",
+        "dossier_assembly_sha256": "5222300997431cea8f3119558e80d60b65ca586aacef9160e60b9869a49885b7",
+        "separate_assembly_sha256": "751b76d3c593ac99f022167b03fe3883a4fd4e134ce3b123d651af67ec441093",
+        "warnings": [
+          "/* WARNING: Function: _guard_dispatch_icall replaced with injection: guard_dispatch_icall */"
+        ],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "Ghidra Listing reports a terminal call at 0x1800031ee to 0x180003eb0 API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free (external=false, thunk=true, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+        ]
+      }
+    },
+    {
+      "capture_id": "F09",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?name@QQuickFileNameFilter@@QEBA?AVQString@@XZ",
+      "ghidra_name": "?name@QQuickFileNameFilter@@QEBA?AVQString@@XZ",
+      "address_va": "0x180002980",
+      "rva": "0x2980",
+      "body": {
+        "range_start_va": "0x180002980",
+        "range_end_va_inclusive": "0x18000299e",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 31,
+        "contiguous": true,
+        "file_offset": 7552,
+        "sha256": "07b33eafe9b73247051b0df9629cc62f703bfd10cf4b41f34c6cf0f6d3b61ff7",
+        "bytes_hex": "40534883ec20488bda488d5118488bcbff157a280000488bc34883c4205bc3",
+        "ghidra_read_bytes_evidence_id": "ev_ec1a2c9dca610fd8ab38439efa58c03b1769f8cf3d4031de3707d93d6809e770"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_fe1a4d920883a6eba8b0a8aabf0b9cbd1be31c3e0a16e2b309484ea4d0298f86",
+        "separate_pseudocode_evidence_id": "ev_82abfdacf4b6d4a7d475fd76ab752d269954ea7f9a06add66dc5af536f1e3800",
+        "separate_assembly_evidence_id": "ev_6cdb95fdede99c58d09b3e5a8db7294650a30ba863b592355e100fbb02d849d8",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "557d787f8fc1c89ad4fe6d1905fb2d5482dd8f879ba1f8854e12e837b1c8d51e",
+        "dossier_assembly_sha256": "aae9c1c4a50101e1faabc10ab50d1077866efb6394c3a7209751e125cb167b3a",
+        "separate_assembly_sha256": "edcc404558a0a8451e50a7435e5e2b12fedaff0551c599463e82f3a88ead1ded",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F10",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?extensions@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ",
+      "ghidra_name": "?extensions@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ",
+      "address_va": "0x180002520",
+      "rva": "0x2520",
+      "body": {
+        "range_start_va": "0x180002520",
+        "range_end_va_inclusive": "0x180002549",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 42,
+        "contiguous": true,
+        "file_offset": 6432,
+        "sha256": "ebcf8a4ddc2613d8eafcc9b0a101eb56acb3bb046e6284c286bef80cd46c84ca",
+        "bytes_hex": "4c8b41304c8902488b413848894208488b4140488942104d85c0740ab801000000f0410fc100488bc2c3",
+        "ghidra_read_bytes_evidence_id": "ev_4ab668d621827f9057cc29e4d7aa156812ced9b4860679caa29f5d2432b63571"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_6bda37767f96e7ceda9f6ad9d4f0514bf3dd0d023d2ff4a58d0d789360778a72",
+        "separate_pseudocode_evidence_id": "ev_b0856ecafc4279bb5c58114beb23bb297dd96c2a9c520b068ce8a9242fcb9f1a",
+        "separate_assembly_evidence_id": "ev_a6ae0f8c1901e1c59b867e05a83e5d5325275c0f2500018fcf847693d498f7c7",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "c13f2db346841c8234a411803157ac62847f5a385cb4703517d3ec39755ed6ff",
+        "dossier_assembly_sha256": "e83937f61021e1a242779c8716d3500e1a231e2e29a2cf313c0227e3dc736c5f",
+        "separate_assembly_sha256": "ef3e1d2d8e16d1a52009e3d6e8ce30aabff5e425597c67c10a3ecf4692164ab6",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F11",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?globs@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ",
+      "ghidra_name": "?globs@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ",
+      "address_va": "0x1800028b0",
+      "rva": "0x28b0",
+      "body": {
+        "range_start_va": "0x1800028b0",
+        "range_end_va_inclusive": "0x1800028d9",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 42,
+        "contiguous": true,
+        "file_offset": 7344,
+        "sha256": "6985c305c75df0388eef70ac5feff65c07563d226192362a5d5b4c8376a775e2",
+        "bytes_hex": "4c8b41484c8902488b415048894208488b4158488942104d85c0740ab801000000f0410fc100488bc2c3",
+        "ghidra_read_bytes_evidence_id": "ev_8b0fe7433f9c076da0406ecb6b7e8e11da54071809666f49862b9a6b00afad19"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_1071f4e9f7d5ce81b14f40f95ff66bed9b6fcc46a6bc05f73e157a69fa9029b1",
+        "separate_pseudocode_evidence_id": "ev_e6c9cdf0134977b8cee0b4ad38fa6c84ce4ebeff0967f76434d6cb91f5c3d25f",
+        "separate_assembly_evidence_id": "ev_eb1fc0196d021439f26cd59008324d362de292cfd3a68bcaf44a0a18730b9d0b",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "4d3f171df6504510b42b8a27cd5f4eef2e2d6208e2136a1a7fc30179b5b47170",
+        "dossier_assembly_sha256": "0a05d8d340e4a92bb3f1f6aa93fa9c09391be8d2b0fbfcecce304d6080c5e6fb",
+        "separate_assembly_sha256": "a7ce341f4c06a9b5534f339ed48af75a17fc749cc1171bdf4a0c75cf5366c851",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F12",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?qt_static_metacall@QQuickFileNameFilter@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z",
+      "ghidra_name": "?qt_static_metacall@QQuickFileNameFilter@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z",
+      "address_va": "0x180001450",
+      "rva": "0x1450",
+      "body": {
+        "range_start_va": "0x180001450",
+        "range_end_va_inclusive": "0x1800016a1",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 594,
+        "contiguous": true,
+        "file_offset": 2128,
+        "sha256": "4dee017a8efcf1a5c9778eaf505fd85d69d51fdd35e6f46a20261f42ab5e17ed",
+        "bytes_hex": "4055488bec4883ec404c8bd185d20f85da0000004585c00f849b0000004183e80174684183e80174354183f8010f85c0010000498b4108448d42034c8d4de0488945e8488d151643000048c745e000000000ff15d03d00004883c4405dc3498b4108488d15f74200004c8d4de0488945e841b80200000048c745e000000000ff15a33d00004883c4405dc3498b4108488d15ca4200004c8d4de0488945e841b80100000048c745e000000000ff15763d00004883c4405dc3498b4108488d159d4200004c8d4de048c745e0000000004533c08b08488d4518894d18498bca488945e8ff15403d00004883c4405dc383fa05756f498b4108498b09488b10488d05cc130000483bd0750cc701000000004883c4405dc3488d0534140000483bd0750db80100000089014883c4405dc3488d05cb0f0000483bd0750cc701020000004883c4405dc3488d0543130000483bd00f859d000000c701030000004883c4405dc383fa010f85ce00000048895c2450498b194585c00f84ad000000442bc27478442bc2742d443bc27563488b4150488b5148488945e8488b4158488945f0488955e04885d27431b801000000f00fc102eb26498b4238488b4930488945e8498b4240488945f048894de04885c97409b801000000f00fc101488d55e0488bcbe87b070000488d4de0e872060000488b5c24504883c4405dc3488d5118488d4de0ff15b93b0000488d55e0488bcbff15943b0000488d4de0ff159a3b0000488b5c24504883c4405dc38b41108903488b5c24504883c4405dc383fa0275b54585c075b0498b018b104883c4405de99e1a0000",
+        "ghidra_read_bytes_evidence_id": "ev_a1603b7362966435169c40903c2bb32c11ddec0ee9fd699fa87a4fa96d746bd0"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_4981022ee9164508500c8c2fd64307e908698c0fda8e0606d61e7b59cefc00b2",
+        "separate_pseudocode_evidence_id": "ev_0d29642fe5f3c093fd33032ec2bf7fccdf6807050b0510c05b0c7ac2fdfa3a0e",
+        "separate_assembly_evidence_id": "ev_f35ea46fec8390093bda30ce65a163f00eaf764f52044c6c0283f08ef60c3b95",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "19948bb4a5abbdd7d67da870e2622a0441970084d1e218c4a09523d92638bb64",
+        "dossier_assembly_sha256": "337a8ff510bcdf070f08123c2e2c26992f4579d04109f34f019aece3298eedb8",
+        "separate_assembly_sha256": "863bc95abae483c1de633ac005995a04d41240966cca851aa7eacd8168338216",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "Ghidra Listing reports a terminal call at 0x18000169d to 0x180003140 QQuickFileNameFilter::setIndex (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+        ]
+      }
+    },
+    {
+      "capture_id": "F13",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?qt_metacall@QQuickFileNameFilter@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z",
+      "ghidra_name": "?qt_metacall@QQuickFileNameFilter@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z",
+      "address_va": "0x180002bd0",
+      "rva": "0x2bd0",
+      "body": {
+        "range_start_va": "0x180002bd0",
+        "range_end_va_inclusive": "0x180002c53",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 132,
+        "contiguous": true,
+        "file_offset": 8144,
+        "sha256": "7693cb7fe8e0e856f865946c3110d957b066ca79c0f7e6129be9ac50d969eddb",
+        "bytes_hex": "48895c240848896c24104889742418574883ec20498bf18bfa488be9ff15062500008bd885c0784785ff750983f8047d3933d2eb2783ff07751183fb047d2b488b0648c70000000000eb1f83ff08771db84e0100000fa3f873138bd74c8bce448bc3488bcde816e8ffff83eb048bc3488b5c2430488b6c2438488b7424404883c4205fc3",
+        "ghidra_read_bytes_evidence_id": "ev_f9893db744a29ec4fde6bcd275c1439a798088375bdb081ca01ce2d565ddbbc2"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_fb621a2ac9c4da981d0c719e9ea368f4df31c6d2174cc3ca5bbab0e71851249a",
+        "separate_pseudocode_evidence_id": "ev_621c01c308f6b629fdcc003e551ee2e641a7900779994f553546216bd31e072d",
+        "separate_assembly_evidence_id": "ev_f6644e0c7a9466d913cc5fce47b97c5a8adf3e4aff98eb0f0a09436f6a3a43fa",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "6b09335b343d8bd47115ec5fadc7de7b2ead15aad957dff4b34a02249c2ed4e4",
+        "dossier_assembly_sha256": "13237e11bf27063a651448da0a2432d6e9a3e97e76618337c0a631a9ed2242ce",
+        "separate_assembly_sha256": "f644edf78b7e1b7e5a086b0796501d47b2d0bb7577b3c01e0ae4b776be3f1426",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F14",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?indexChanged@QQuickFileNameFilter@@QEAAXH@Z",
+      "ghidra_name": "?indexChanged@QQuickFileNameFilter@@QEAAXH@Z",
+      "address_va": "0x180002920",
+      "rva": "0x2920",
+      "body": {
+        "range_start_va": "0x180002920",
+        "range_end_va_inclusive": "0x180002954",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 53,
+        "contiguous": true,
+        "file_offset": 7456,
+        "sha256": "1b219deb5d4b2fefe1c5974dea6f392a09c041a609db6b02da0cd8e05b888c2b",
+        "bytes_hex": "895424104883ec38488d44244848c7442420000000004c8d4c242048894424284533c0488d15662e0000ff15282900004883c438c3",
+        "ghidra_read_bytes_evidence_id": "ev_966b3107619dc74d4fb125df08e5ec40db5a70b18f2afb880916c8bacd02dd21"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_cb40fde9370db18a2e6aeb6afd96c2b67778a937f7dfec887afbe91ba31b094c",
+        "separate_pseudocode_evidence_id": "ev_5c254f18edbb5e7e270b6028c989d61a72cd7cc240e2352d7e8644926c6af9e2",
+        "separate_assembly_evidence_id": "ev_aa01855bc15e1e6a0d29e8c88f77126c63d4d5fee271de1c8051fa604909bef4",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "cd00462fca790fd25d11278be1aaca9060caead220448bf14e275a2f35ae0ead",
+        "dossier_assembly_sha256": "686b668c829793a5364e2c159081c9b4e85874de6e0a0dde688013fcd283ba6b",
+        "separate_assembly_sha256": "ee4bcafa9d08893fa30e6a448cb1f4f5f4d4387d5f6dfa4fe93bff0f19ae497a",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F15",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?nameChanged@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z",
+      "ghidra_name": "?nameChanged@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z",
+      "address_va": "0x1800029a0",
+      "rva": "0x29a0",
+      "body": {
+        "range_start_va": "0x1800029a0",
+        "range_end_va_inclusive": "0x1800029ce",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 47,
+        "contiguous": true,
+        "file_offset": 7584,
+        "sha256": "e9bf7b4f1c86dac36e92729ca04226388dbff004d44a2306c8528e6ea0897f9a",
+        "bytes_hex": "4883ec3848895424284c8d4c2420488d15fb2d000048c74424200000000041b801000000ff15ae2800004883c438c3",
+        "ghidra_read_bytes_evidence_id": "ev_d3693101d05eaae13367c0eb4b329e85dfbf32f5a7e4099fec88d653f53deca2"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_38b2c17f03356cee4bc96f383b6379dd74c15e7c91813c893ad39020f46ab529",
+        "separate_pseudocode_evidence_id": "ev_c9392cf9fab2ee89e98fde6c2f49a9a8e7ae53668db255fbcdfd9a3d9fa86fae",
+        "separate_assembly_evidence_id": "ev_5081d8abaded74b1200132c4816b34af7053ad1b8d9524247943903411ae2461",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "d1c99d0ea3a370d2c1f68dd442091e5c75eabf7ea6d58c144d9d72155f924e48",
+        "dossier_assembly_sha256": "97eb3b92ced1bce2c8727c8c8b13f2be3a9b7468f2481487d8ea9474609e04ab",
+        "separate_assembly_sha256": "049785c17bcd2b68ed114614953e798abf0d56b3985c49d77c1fbd924bc2c4a9",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F16",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?extensionsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z",
+      "ghidra_name": "?extensionsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z",
+      "address_va": "0x180002550",
+      "rva": "0x2550",
+      "body": {
+        "range_start_va": "0x180002550",
+        "range_end_va_inclusive": "0x18000257e",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 47,
+        "contiguous": true,
+        "file_offset": 6480,
+        "sha256": "4c5ad76979350950679f892d7fffdb16da58de14bb6b1471e16c9f84f3c9170d",
+        "bytes_hex": "4883ec3848895424284c8d4c2420488d154b32000048c74424200000000041b802000000ff15fe2c00004883c438c3",
+        "ghidra_read_bytes_evidence_id": "ev_b92b9fa60cca1125e24fec6738fd558a7bc0da55da75c4d3dfbc42ed80b9918f"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_49c059857903bd976bce82397d6222d7e288529daecf6c5968e31a7ec7f14bad",
+        "separate_pseudocode_evidence_id": "ev_4f35f39963884f1f13679ca3597a8e5b6cfce7158189f726e757d053241172a0",
+        "separate_assembly_evidence_id": "ev_80ccbf7c7ba1bec9b6e27fa32c09b87a780c408a129324df6625bff32e2caa72",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "9ecd5e010feebdcf247b0e50fefcf56a50a6acbb27a82d95e0bfc2a4352e8708",
+        "dossier_assembly_sha256": "38aeed0e112f07f2a14f591bf6d926a6ca41900253c310bd6f9827d12a7bc5f7",
+        "separate_assembly_sha256": "78c26e078936179cf0ae38c3e813a5c9c5b81e2c850e86b45fbd8a12c44d621a",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "F17",
+      "attempt": "attempt-02",
+      "kind": "exported_function",
+      "original_name": "?globsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z",
+      "ghidra_name": "?globsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z",
+      "address_va": "0x1800028e0",
+      "rva": "0x28e0",
+      "body": {
+        "range_start_va": "0x1800028e0",
+        "range_end_va_inclusive": "0x18000290e",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 47,
+        "contiguous": true,
+        "file_offset": 7392,
+        "sha256": "69357bc9a682ca646c46833f6cf454f3d2e1bd52bfc04a6e8b983946cc9d2889",
+        "bytes_hex": "4883ec3848895424284c8d4c2420488d15bb2e000048c74424200000000041b803000000ff156e2900004883c438c3",
+        "ghidra_read_bytes_evidence_id": "ev_824e2502e5726073a1dbb34f5f22ac326eb3f23cf17d6eb05196682de380006b"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_cb4955343b8ab33b90ad6e218d7837fc11fadec8d5d6ef612740576ff6b0585f",
+        "separate_pseudocode_evidence_id": "ev_f58372891271dbab88aa06d643fd8a66004b195c4015be3d882ba60d2f677061",
+        "separate_assembly_evidence_id": "ev_9849758315c4be77bdfa6a8211d46217debbde11116ddc54a3b2b4e39209b699",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "917dd9adbc7c5e6450d1af07d6a6443ea1a5abead34b384a235eaceda46e332b",
+        "dossier_assembly_sha256": "ada64111f8faf84b32b571e88981b9ad0252dfbdae4ec107b4e09b4435373337",
+        "separate_assembly_sha256": "cb35a8b5a77b5004228ac693d780178133d4c341880edcfe4adbb7144f277a62",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "H01-FUN_180002580",
+      "attempt": "attempt-03",
+      "kind": "internal_helper",
+      "original_name": null,
+      "ghidra_name": "FUN_180002580",
+      "address_va": "0x180002580",
+      "rva": "0x2580",
+      "body": {
+        "range_start_va": "0x180002580",
+        "range_end_va_inclusive": "0x1800028a0",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 801,
+        "contiguous": true,
+        "file_offset": 6528,
+        "sha256": "9049e73ee6584ae4c365435a866e60f0283000e99bf74561492c166d57149aba",
+        "bytes_hex": "48895c241055565741564157488d6c24904881ec70010000488bf9498bf0488bca4c8bf2e857fdffff488bcee84ffdffffb228488d4c2438ff15b22c00000f10074c8d459048c745900100000033d2488d4de0440fb708488d85a00000006644898da000000041b901000000488945980f2945e0ff153e2c0000b229488d4c243a488bd8ff15662c00000f100749c7c7ffffffff48c745a00100000041b9010000004c8d45a00fb708498bd766898db8000000488d85b8000000488d4df0488945a80f2945f0ff15e42b0000ffc885db0f88340200003bd80f8d2c0200002bc34c8d4424404898488d54244848894424408d43014863c848894c2448488b0fff15cb2b000085c0750b0f57c0f30f7f442460eb1c488b442440488b4f084889442460488b442448488d0c4148894c2468488d442460b2200f1000488d4c243c0f114500ff15a72b000041b901000000c744242001000000488d542470488d4d00440fb700ff153e2b0000488b5c2478488b7d8048c1e7044803fb483bdf0f845f0100000f29b424600100000f1f4400000f1033b22e488d4c243e0f2975d0ff154c2b000041b90100000048c745b0010000004c8d45b0660f7f751033d20fb708488d44243066894c2430488d4d10488945b8ff15e02a00004c8d4424504c897c245048ffc0488d54245866480f7ef14889442458ff15d62a000085c0750e0f57c0488d4520f30f7f4520eb1e488b442450488b4c2458488945c0488b45d8488d0c4848894dc8488d45c00f1000488d4d300f1145d066490f7ec0660f73d80866480f7ec2ff154e2a0000498b56104c8d4530498bcee8b6f2ffff498b064885c074078b0083f8017e104533c94533c033d2498bcee8b7040000488d4d30ff15052a00004c8b03488d4d48488b5308ff15042a0000488b56104c8d4548488bcee86cf2ffff488b064885c074078b0083f8017e104533c94533c033d2488bcee86d040000488d4d48ff15bb2900004883c310483bdf0f85b6feffff0f28b42460010000488b4424704885c0741ef0440fc1384183ff017513488b4c2470418d570f458d4707ff15ce290000488b9c24a80100004881c470010000415f415e5f5e5dc3",
+        "ghidra_read_bytes_evidence_id": "ev_de2fda691a034642bfb2d0f0dd4fbc8622937ac343b354dbefe372961dd6ef24"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_9f58011dd5eae4ad6b1ae9a342821ed1122cbfa6316ac248dc92387ae3469dc7",
+        "separate_pseudocode_evidence_id": "ev_e0a2ce0d5b7fcc437c48d59d324d5a0c9e6e5ab4ad7ed77074ed3db29de0fc4a",
+        "separate_assembly_evidence_id": "ev_bc3757b672b5018a9ab410655a44ce4e21c9237238b4dc679db6acfce1ac799e",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "6704a5b5fd14e65003f4da7edf2381e065f1885ac5a0ac5484ede9fb56a140be",
+        "dossier_assembly_sha256": "49a20eeea4a74fa4fa31e9864c255a61645fbee32999bcd8f857fdbc3319bd2a",
+        "separate_assembly_sha256": "b04ce66d95b0b2787a1a09aa3d2109caeda037028b42a5652514f9cedaee5a74",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "H02-FUN_180001e60",
+      "attempt": "attempt-03",
+      "kind": "internal_helper",
+      "original_name": null,
+      "ghidra_name": "FUN_180001e60",
+      "address_va": "0x180001e60",
+      "rva": "0x1e60",
+      "body": {
+        "range_start_va": "0x180001e60",
+        "range_end_va_inclusive": "0x180001f27",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 200,
+        "contiguous": true,
+        "file_offset": 4704,
+        "sha256": "0342457d109e4079f4f7aa511a282759a857eab6ce8e78b49b253926ffaf73c1",
+        "bytes_hex": "48895c241048896c2418574883ec40488b6a10488bfa488bd9483969100f8593000000488bca4889742450ff15a732000033f684c074048bc6eb09488bcfff154c330000488b7b10488bcb48896c24204889442428ff157d32000084c0750c488bcbff1528330000488bf00f28442420488d54242048897c2430488d4c243048897424380f284c2430660f7f4c2430660f7f442420ff1545330000488b74245084c07412b001488b5c2458488b6c24604883c4405fc3488b5c245832c0488b6c24604883c4405fc3",
+        "ghidra_read_bytes_evidence_id": "ev_245d0cef480f9289b4cae91f687ff87741b22ab9063343027d8331f91ccf2374"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_f4dc48ecdd174e0cc371b64bed756996f577da351ba744d297f7f7763480ae0f",
+        "separate_pseudocode_evidence_id": "ev_de7526dc89b25b31d7b47f5b598692c6a12694926daa7e23bf4fafe167d123a8",
+        "separate_assembly_evidence_id": "ev_c0fbc8a5b5c0d54bd4fc89bdb06990116529e81fa16f66eea6058ee3a8195123",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "d56c4aee7e1c769b5586d98befd542f49d228c63d924d633499214e1c9b8e50d",
+        "dossier_assembly_sha256": "adc327bc6c7927de3785f6a4e9f7ed4c8b136f168bfac3bad98259bf7420f004",
+        "separate_assembly_sha256": "9d4c8f06ebb5419c185a0fb0a12dcc078384da93ff551a179797c40e7353655e",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    },
+    {
+      "capture_id": "H03-FUN_1800017b0",
+      "attempt": "attempt-03",
+      "kind": "internal_helper",
+      "original_name": null,
+      "ghidra_name": "FUN_1800017b0",
+      "address_va": "0x1800017b0",
+      "rva": "0x17b0",
+      "body": {
+        "range_start_va": "0x1800017b0",
+        "range_end_va_inclusive": "0x1800018c6",
+        "range_kind": "Ghidra complete FunctionManager body range, inclusive endpoints",
+        "byte_count": 279,
+        "contiguous": true,
+        "file_offset": 2992,
+        "sha256": "e2f3d3861c37d162d2c5a9f967efaa60dbdd07e9693229b6e1759f46509c3dbb",
+        "bytes_hex": "4883ec68488b4110483b4210740732c04883c468c348895c2470488b590848897c2460488b7a08483bdf7511488b5c2470b001488b7c24604883c468c348896c2478488d0440488d2cc34889b42480000000483bdd0f849a0000000f1f440000488b7710483973100f85a5000000488bcfff151139000084c0740433c0eb09488bcfff15b83900004889742420488bcb488b73104889442428ff15e938000084c0740433c0eb09488bcbff15903900000f28442420488d5424404889442438488d4c245048897424300f284c2430660f7f4c2450660f7f442440ff15b039000084c0742f4883c3184883c718483bdd0f856bffffffb001488bb42480000000488b6c2478488b5c2470488b7c24604883c468c332c0ebe0",
+        "ghidra_read_bytes_evidence_id": "ev_f5a3648445135ba906395573a5385a83bd1b0fb6e12dfd072900870757e6a26e"
+      },
+      "analysis": {
+        "provider": "ghidra",
+        "version": "12.1.4",
+        "dossier_evidence_id": "ev_da9f060409f348a2e3131cc903d969e3037af5d2449d7910b93815b5416fe8ef",
+        "separate_pseudocode_evidence_id": "ev_fb97f00beafeeecd4173560fe3daf6c0725641004de6cca60fb4402547495905",
+        "separate_assembly_evidence_id": "ev_6584711df20c846fbeac5c57ff16d0d9aea12dcdd366ede7b153185dee826cd7",
+        "pseudo_matches_dossier_exactly": true,
+        "dossier_pseudocode_sha256": "0b2a29283b6a97638f4e83ec96e912631a2a1291aade8a1dd4dea9d1a5a8262b",
+        "dossier_assembly_sha256": "84b4296a02b200cf8a65d7f0ca6547405421a510d34d9e96a3d290e0ef2da834",
+        "separate_assembly_sha256": "71828adffb77eb3acd8654dab6e7b17425252b05982986e61ffcd1226936a9f2",
+        "warnings": [],
+        "limitations": [
+          "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+          "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+          "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+        ]
+      }
+    }
+  ],
+  "metadata_and_strings": {
+    "witness": {
+      "address_va": "0x180005520",
+      "length": 1088,
+      "file_offset": 18720,
+      "bytes_hex": "51517569636b46696c654e616d6546696c74657200000000696e74000000000051537472696e670051537472696e674c69737400766f696400000000000000005000000014000000650000000c00000072000000000000007300000005000000790000000b00000085000000040000008a000000110000009c0000000a000000a70000000c000000b40000000500000051517569636b46696c654e616d6546696c74657200696e6465784368616e6765640000696e646578006e616d654368616e676564006e616d6500657874656e73696f6e734368616e67656400657874656e73696f6e7300676c6f62734368616e67656400676c6f6273000000000000000b000000000000000000000000000000040000000e000000040000003200000000000000000000000000000000000000000000000400000001000000010000002600000002000000060000000500000004000000010000002900000002000000060000000700000006000000010000002c00000002000000060000000900000008000000010000002f00000002000000060000000b0000002b00000002000000030000002b0000000a000000050000002b0000000b000000070000002b0000000b000000090000000300000002000000035901000000000000000000050000000a000000015801000100000000000000070000000b000000015801000200000000000000090000000b0000000158010003000000000000000000000000000000c091008001000000009000800100000070900080010000007090008001000000e0900080010000005091008001000000c09100800100000050910080010000000090008001000000509100800100000070900080010000005091008001000000709000800100000000000000000000000000000000000000f013008001000000605500800100000020560080010000005014008001000000000000000000000040570080010000000000000000000000514c6973740000002c20000000000000285c0080010000006029008001000000602c008001000000d02b008001000000f01f008001000000503e008001000000603e008001000000703e008001000000103e008001000000303e008001000000203e008001000000403e00800100000071742e717569636b2e6469616c6f67732e71717569636b66696c656e616d6566696c7465720000007570646174652063616c6c6564206f6e20000000206f6620000000000000000020776974682066696c74657220000000202863757272656e742066696c7465727320617265200000293a0000000000000a202020206f6c6420696e6465783d006e657720696e6465783d0000000000000a202020206f6c64206e616d653d00006e6577206e616d653d000000000000000a202020206f6c6420657874656e73696f6e733d000000006e657720657874656e73696f6e733d000a202020206f6c6420676c6f623d73006e657720676c6f62733d000000000000",
+      "sha256": "4046ed661f70d834fbd99a2e681f21cfd0fb090438a9f1b9bd3b4f05bb2ede4e",
+      "evidence_id": "ev_888d552e42361ab95faba494f7844ec45eb05d8f2858a54a3527b468d06d29d0",
+      "purpose": "StaticMetaObject, class/property/signal name strings, and update diagnostic string region"
+    },
+    "selected_strings": [
+      {
+        "text": "QQuickFileNameFilter",
+        "occurrence_index": 0,
+        "file_offset": "0x4920",
+        "rva": "0x5520",
+        "va": "0x180005520",
+        "nul_terminated_bytes_hex": "51517569636b46696c654e616d6546696c74657200",
+        "sha256": "9c4e94350e307975c348567ff63ed01c62e21dca7ff6009ec2957f73fcd5f3e6"
+      },
+      {
+        "text": "QQuickFileNameFilter",
+        "occurrence_index": 1,
+        "file_offset": "0x49b0",
+        "rva": "0x55b0",
+        "va": "0x1800055b0",
+        "nul_terminated_bytes_hex": "51517569636b46696c654e616d6546696c74657200",
+        "sha256": "9c4e94350e307975c348567ff63ed01c62e21dca7ff6009ec2957f73fcd5f3e6"
+      },
+      {
+        "text": "indexChanged",
+        "occurrence_index": 0,
+        "file_offset": "0x49c5",
+        "rva": "0x55c5",
+        "va": "0x1800055c5",
+        "nul_terminated_bytes_hex": "696e6465784368616e67656400",
+        "sha256": "b9f76501b13ca23f07f1c4009c58d57d309783036fb4c5c74e6ac164e64d7724"
+      },
+      {
+        "text": "index",
+        "occurrence_index": 0,
+        "file_offset": "0x49d3",
+        "rva": "0x55d3",
+        "va": "0x1800055d3",
+        "nul_terminated_bytes_hex": "696e64657800",
+        "sha256": "d04c7f65307d78ea7a5c697a288ea183a37635d0c0126a55e19c9019d1d7266d"
+      },
+      {
+        "text": "nameChanged",
+        "occurrence_index": 0,
+        "file_offset": "0x49d9",
+        "rva": "0x55d9",
+        "va": "0x1800055d9",
+        "nul_terminated_bytes_hex": "6e616d654368616e67656400",
+        "sha256": "04767a1bdf0b0c6e3bc0e3aeb5ff01ba1269fb934e04caff94e9facb8edec43a"
+      },
+      {
+        "text": "name",
+        "occurrence_index": 0,
+        "file_offset": "0x49e5",
+        "rva": "0x55e5",
+        "va": "0x1800055e5",
+        "nul_terminated_bytes_hex": "6e616d6500",
+        "sha256": "182da4ba21ba19c3353926df75ed3f18aabd2d126e1233a9746593b751cddee6"
+      },
+      {
+        "text": "extensionsChanged",
+        "occurrence_index": 0,
+        "file_offset": "0x49ea",
+        "rva": "0x55ea",
+        "va": "0x1800055ea",
+        "nul_terminated_bytes_hex": "657874656e73696f6e734368616e67656400",
+        "sha256": "7a1c6908c4292bc071c39c5a2876a7d0db1526464d29a5bdc70cd655c9d4d37f"
+      },
+      {
+        "text": "extensions",
+        "occurrence_index": 0,
+        "file_offset": "0x49fc",
+        "rva": "0x55fc",
+        "va": "0x1800055fc",
+        "nul_terminated_bytes_hex": "657874656e73696f6e7300",
+        "sha256": "58bcf50352b0ceb82722082dd45dd754976deceaafc6b7449f6e275319e61e77"
+      },
+      {
+        "text": "globsChanged",
+        "occurrence_index": 0,
+        "file_offset": "0x4a07",
+        "rva": "0x5607",
+        "va": "0x180005607",
+        "nul_terminated_bytes_hex": "676c6f62734368616e67656400",
+        "sha256": "29fe9d972d33c9a9dcba5e51fbf2d7a7f6f2014f78d1c2df6b0c81af9cfb6cf2"
+      },
+      {
+        "text": "globs",
+        "occurrence_index": 0,
+        "file_offset": "0x4a14",
+        "rva": "0x5614",
+        "va": "0x180005614",
+        "nul_terminated_bytes_hex": "676c6f627300",
+        "sha256": "2a24c4078d9daab2e279467eb14695fa86a7a8c95dbff43f27cf0a29fefab828"
+      },
+      {
+        "text": "qt.quick.dialogs.qquickfilenamefilter",
+        "occurrence_index": 0,
+        "file_offset": "0x4c60",
+        "rva": "0x5860",
+        "va": "0x180005860",
+        "nul_terminated_bytes_hex": "71742e717569636b2e6469616c6f67732e71717569636b66696c656e616d6566696c74657200",
+        "sha256": "5adaced384256e2c5275f0cf6abfcb4e93729fb66bccf98c2c50df036dbd3f39"
+      },
+      {
+        "text": "update called on ",
+        "occurrence_index": 0,
+        "file_offset": "0x4c88",
+        "rva": "0x5888",
+        "va": "0x180005888",
+        "nul_terminated_bytes_hex": "7570646174652063616c6c6564206f6e2000",
+        "sha256": "7b2b36129f70680f49dd51b5558acbd6f72023a5eced63dcbcd4991381ed5755"
+      },
+      {
+        "text": " of ",
+        "occurrence_index": 0,
+        "file_offset": "0x4c9c",
+        "rva": "0x589c",
+        "va": "0x18000589c",
+        "nul_terminated_bytes_hex": "206f662000",
+        "sha256": "f6b86f7daf71202e5b73e5e2fec31646b721ba5b24abc7fb5feeb7cbd8598be2"
+      },
+      {
+        "text": " with filter ",
+        "occurrence_index": 0,
+        "file_offset": "0x4ca8",
+        "rva": "0x58a8",
+        "va": "0x1800058a8",
+        "nul_terminated_bytes_hex": "20776974682066696c7465722000",
+        "sha256": "d5b94372842159ba0550d9d6340bad4330a67647956a29ad8fc3dde0e3669311"
+      },
+      {
+        "text": " (current filters are ",
+        "occurrence_index": 0,
+        "file_offset": "0x4cb8",
+        "rva": "0x58b8",
+        "va": "0x1800058b8",
+        "nul_terminated_bytes_hex": "202863757272656e742066696c74657273206172652000",
+        "sha256": "97873312180dd2cde7a4121e60bc831520ec393c095b1d9fd77189add14fc12a"
+      },
+      {
+        "text": "    old index=",
+        "occurrence_index": 0,
+        "file_offset": "0x4cd9",
+        "rva": "0x58d9",
+        "va": "0x1800058d9",
+        "nul_terminated_bytes_hex": "202020206f6c6420696e6465783d00",
+        "sha256": "ef6f24b703b34eefd87aaedb85b8067cfb9ee5c3d4d3988ac0b9c90591058f46"
+      },
+      {
+        "text": "new index=",
+        "occurrence_index": 0,
+        "file_offset": "0x4ce8",
+        "rva": "0x58e8",
+        "va": "0x1800058e8",
+        "nul_terminated_bytes_hex": "6e657720696e6465783d00",
+        "sha256": "98dce352e2ba098614389a18d37f701eb2712d08e99114d8e099aafb1aa54156"
+      },
+      {
+        "text": "    old name=",
+        "occurrence_index": 0,
+        "file_offset": "0x4cf9",
+        "rva": "0x58f9",
+        "va": "0x1800058f9",
+        "nul_terminated_bytes_hex": "202020206f6c64206e616d653d00",
+        "sha256": "896a512fccc4537c6fa33cf845aa7a077059691b1f08d23a713c9c740c221f62"
+      },
+      {
+        "text": "new name=",
+        "occurrence_index": 0,
+        "file_offset": "0x4d08",
+        "rva": "0x5908",
+        "va": "0x180005908",
+        "nul_terminated_bytes_hex": "6e6577206e616d653d00",
+        "sha256": "0ed2b56730c4bb853faed3aac2468156b5b380e7e23984019d3396b7ce861535"
+      },
+      {
+        "text": "    old extensions=",
+        "occurrence_index": 0,
+        "file_offset": "0x4d19",
+        "rva": "0x5919",
+        "va": "0x180005919",
+        "nul_terminated_bytes_hex": "202020206f6c6420657874656e73696f6e733d00",
+        "sha256": "16d8ba257003ba271194c15a8ccaa31ed1d529f6bfc86af0fe64fe072d83d25d"
+      },
+      {
+        "text": "new extensions=",
+        "occurrence_index": 0,
+        "file_offset": "0x4d30",
+        "rva": "0x5930",
+        "va": "0x180005930",
+        "nul_terminated_bytes_hex": "6e657720657874656e73696f6e733d00",
+        "sha256": "26ac15f8b6b67a34e46df6ed701df11031279dcf6fa9e7a418231a54a47eeab7"
+      },
+      {
+        "text": "    old glob=s",
+        "occurrence_index": 0,
+        "file_offset": "0x4d41",
+        "rva": "0x5941",
+        "va": "0x180005941",
+        "nul_terminated_bytes_hex": "202020206f6c6420676c6f623d7300",
+        "sha256": "9697e16a9f7950e82e443b62b5f1ca8139cbedace8b3569049b3d967843e0d20"
+      },
+      {
+        "text": "new globs=",
+        "occurrence_index": 0,
+        "file_offset": "0x4d50",
+        "rva": "0x5950",
+        "va": "0x180005950",
+        "nul_terminated_bytes_hex": "6e657720676c6f62733d00",
+        "sha256": "e36f60f9a54d00f1d59cded35b14ecab0cd76f6fa9813cfe08523fd0e201ee95"
+      }
+    ]
+  },
+  "runtime_function_chain_evidence": {
+    "source": "Local parser of the PE exception directory and chained UNWIND_INFO records. The result was cross-checked with llvm-readobj --unwind.",
+    "runtime_function_record_count": 128,
+    "selected_function_groups": [
+      {
+        "start_va": "0x180001450",
+        "spans": [
+          [
+            "0x1450",
+            "0x15bb"
+          ],
+          [
+            "0x15bb",
+            "0x1643"
+          ],
+          [
+            "0x1643",
+            "0x1649"
+          ],
+          [
+            "0x1649",
+            "0x1679"
+          ],
+          [
+            "0x1679",
+            "0x1689"
+          ],
+          [
+            "0x1689",
+            "0x16a2"
+          ]
+        ],
+        "fragment_count": 6,
+        "contiguous_union": true,
+        "start": "0x1450",
+        "end_exclusive": "0x16a2",
+        "chain_root": [
+          "0x1450",
+          "0x15bb",
+          "0x63dc"
+        ]
+      },
+      {
+        "start_va": "0x1800017b0",
+        "spans": [
+          [
+            "0x17b0",
+            "0x17c5"
+          ],
+          [
+            "0x17c5",
+            "0x17ed"
+          ],
+          [
+            "0x17ed",
+            "0x18c3"
+          ],
+          [
+            "0x18c3",
+            "0x18c7"
+          ]
+        ],
+        "fragment_count": 4,
+        "contiguous_union": true,
+        "start": "0x17b0",
+        "end_exclusive": "0x18c7",
+        "chain_root": [
+          "0x17b0",
+          "0x17c5",
+          "0x6644"
+        ]
+      },
+      {
+        "start_va": "0x180001e60",
+        "spans": [
+          [
+            "0x1e60",
+            "0x1e86"
+          ],
+          [
+            "0x1e86",
+            "0x1f04"
+          ],
+          [
+            "0x1f04",
+            "0x1f28"
+          ]
+        ],
+        "fragment_count": 3,
+        "contiguous_union": true,
+        "start": "0x1e60",
+        "end_exclusive": "0x1f28",
+        "chain_root": [
+          "0x1e60",
+          "0x1e86",
+          "0x61e8"
+        ]
+      },
+      {
+        "start_va": "0x180002580",
+        "spans": [
+          [
+            "0x2580",
+            "0x2703"
+          ],
+          [
+            "0x2703",
+            "0x2862"
+          ],
+          [
+            "0x2862",
+            "0x28a1"
+          ]
+        ],
+        "fragment_count": 3,
+        "contiguous_union": true,
+        "start": "0x2580",
+        "end_exclusive": "0x28a1",
+        "chain_root": [
+          "0x2580",
+          "0x2703",
+          "0x65f8"
+        ]
+      },
+      {
+        "start_va": "0x1800029d0",
+        "spans": [
+          [
+            "0x29d0",
+            "0x29f1"
+          ],
+          [
+            "0x29f1",
+            "0x2a65"
+          ],
+          [
+            "0x2a65",
+            "0x2a9b"
+          ]
+        ],
+        "fragment_count": 3,
+        "contiguous_union": true,
+        "start": "0x29d0",
+        "end_exclusive": "0x2a9b",
+        "chain_root": [
+          "0x29d0",
+          "0x29f1",
+          "0x654c"
+        ]
+      },
+      {
+        "start_va": "0x180002aa0",
+        "spans": [
+          [
+            "0x2aa0",
+            "0x2aad"
+          ],
+          [
+            "0x2aad",
+            "0x2b37"
+          ],
+          [
+            "0x2b37",
+            "0x2b7b"
+          ],
+          [
+            "0x2b7b",
+            "0x2b8b"
+          ],
+          [
+            "0x2b8b",
+            "0x2b9f"
+          ]
+        ],
+        "fragment_count": 5,
+        "contiguous_union": true,
+        "start": "0x2aa0",
+        "end_exclusive": "0x2b9f",
+        "chain_root": [
+          "0x2aa0",
+          "0x2aad",
+          "0x64f8"
+        ]
+      },
+      {
+        "start_va": "0x180003180",
+        "spans": [
+          [
+            "0x3180",
+            "0x31b5"
+          ],
+          [
+            "0x31b5",
+            "0x31e6"
+          ],
+          [
+            "0x31e6",
+            "0x31f9"
+          ]
+        ],
+        "fragment_count": 3,
+        "contiguous_union": true,
+        "start": "0x3180",
+        "end_exclusive": "0x31f9",
+        "chain_root": [
+          "0x3180",
+          "0x31b5",
+          "0x641c"
+        ]
+      },
+      {
+        "start_va": "0x180003380",
+        "spans": [
+          [
+            "0x3380",
+            "0x339a"
+          ],
+          [
+            "0x339a",
+            "0x33a3"
+          ],
+          [
+            "0x33a3",
+            "0x3456"
+          ],
+          [
+            "0x3456",
+            "0x355a"
+          ],
+          [
+            "0x355a",
+            "0x355e"
+          ],
+          [
+            "0x355e",
+            "0x3586"
+          ],
+          [
+            "0x3586",
+            "0x3667"
+          ],
+          [
+            "0x3667",
+            "0x36c3"
+          ],
+          [
+            "0x36c3",
+            "0x3e0d"
+          ]
+        ],
+        "fragment_count": 9,
+        "contiguous_union": true,
+        "start": "0x3380",
+        "end_exclusive": "0x3e0d",
+        "chain_root": [
+          "0x3380",
+          "0x339a",
+          "0x6450"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Ghidra pseudocode, imported Qt behavior, and C++ ABI argument interpretation remain bounded observations. The original DLL was not executed.",
+    "The source map includes complete bytes only for the selected function bodies and one related read-only metadata/string region. It does not claim whole-DLL coverage.",
+    "Internal helper labels FUN_180002580, FUN_180001e60, and FUN_1800017b0 are Ghidra function database labels. They are not original exports or source names.",
+    "Assembly renderer text is provider-specific. Exact string equality between dossier assembly and separate assembly is not a required invariant."
+  ],
+  "call_boundary_inventory": {
+    "scope": "Callee labels needed to understand the captured index/property paths. These are provider observations of import or local call boundaries.",
+    "external_import_labels": [
+      {
+        "provider_address": "EXTERNAL:0x32",
+        "provider_name": "QT6CORE.DLL::QArrayData::deallocate",
+        "called_from": [
+          "F06",
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x35",
+        "provider_name": "QT6CORE.DLL::QChar::QChar",
+        "called_from": [
+          "F04",
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0xb",
+        "provider_name": "QT6CORE.DLL::QDebug::QDebug",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x10",
+        "provider_name": "QT6CORE.DLL::QDebug::operator<<",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x22",
+        "provider_name": "QT6CORE.DLL::QDebug::operator<<",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x3b",
+        "provider_name": "QT6CORE.DLL::QDebug::operator<<",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0xd",
+        "provider_name": "QT6CORE.DLL::QDebug::operator<<",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0xc",
+        "provider_name": "QT6CORE.DLL::QDebug::~QDebug",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x11",
+        "provider_name": "QT6CORE.DLL::QDebugStateSaver::QDebugStateSaver",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x12",
+        "provider_name": "QT6CORE.DLL::QDebugStateSaver::~QDebugStateSaver",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x13",
+        "provider_name": "QT6CORE.DLL::QLoggingCategory::QLoggingCategory",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x15",
+        "provider_name": "QT6CORE.DLL::QLoggingCategory::isDebugEnabled",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x39",
+        "provider_name": "QT6CORE.DLL::QMessageLogger::QMessageLogger",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x38",
+        "provider_name": "QT6CORE.DLL::QMessageLogger::debug",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x36",
+        "provider_name": "QT6CORE.DLL::QMetaObject::activate",
+        "called_from": [
+          "F03",
+          "F04",
+          "F12",
+          "F14",
+          "F15",
+          "F16",
+          "F17"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x7",
+        "provider_name": "QT6CORE.DLL::QObject::QObject",
+        "called_from": [
+          "F01"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x9",
+        "provider_name": "QT6CORE.DLL::QObject::parent",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x6",
+        "provider_name": "QT6CORE.DLL::QObject::qt_metacall",
+        "called_from": [
+          "F13"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x27",
+        "provider_name": "QT6CORE.DLL::QString::QString",
+        "called_from": [
+          "F05"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x29",
+        "provider_name": "QT6CORE.DLL::QString::QString",
+        "called_from": [
+          "F04",
+          "F05",
+          "F09",
+          "F12"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x2a",
+        "provider_name": "QT6CORE.DLL::QString::QString",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x2b",
+        "provider_name": "QT6CORE.DLL::QString::QString",
+        "called_from": [
+          "F01",
+          "F05"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x25",
+        "provider_name": "QT6CORE.DLL::QString::data",
+        "called_from": [
+          "F04",
+          "H02-FUN_180001e60",
+          "H03-FUN_1800017b0"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x24",
+        "provider_name": "QT6CORE.DLL::QString::indexOf",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0xe",
+        "provider_name": "QT6CORE.DLL::QString::isNull",
+        "called_from": [
+          "F04",
+          "H02-FUN_180001e60",
+          "H03-FUN_1800017b0"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x1d",
+        "provider_name": "QT6CORE.DLL::QString::left",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x26",
+        "provider_name": "QT6CORE.DLL::QString::operator=",
+        "called_from": [
+          "F04",
+          "F12"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x28",
+        "provider_name": "QT6CORE.DLL::QString::~QString",
+        "called_from": [
+          "F04",
+          "F05",
+          "F06",
+          "F12",
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x2c",
+        "provider_name": "QT6CORE.DLL::QStringView::split",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x31",
+        "provider_name": "QT6CORE.DLL::QtPrivate::QContainerImplHelper::mid",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x2f",
+        "provider_name": "QT6CORE.DLL::QtPrivate::equalStrings",
+        "called_from": [
+          "F04",
+          "H02-FUN_180001e60",
+          "H03-FUN_1800017b0"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x2e",
+        "provider_name": "QT6CORE.DLL::QtPrivate::findString",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x2d",
+        "provider_name": "QT6CORE.DLL::QtPrivate::lastIndexOf",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0xa",
+        "provider_name": "QT6CORE.DLL::operator<<",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      },
+      {
+        "provider_address": "EXTERNAL:0x1",
+        "provider_name": "QT6GUI.DLL::QFileDialogOptions::nameFilters",
+        "called_from": [
+          "F05",
+          "F06"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier"
+      }
+    ],
+    "internal_callee_labels": [
+      {
+        "address_va": "0x180001450",
+        "ghidra_name": "QQuickFileNameFilter::qt_static_metacall",
+        "called_from": [
+          "F13"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": "?qt_static_metacall@QQuickFileNameFilter@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z",
+        "captured_target_id": "F12",
+        "expanded_in_this_packet": true,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x1800017b0",
+        "ghidra_name": "FUN_1800017b0",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": "H03-FUN_1800017b0",
+        "expanded_in_this_packet": true,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180001a90",
+        "ghidra_name": "FUN_180001a90",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180001cb0",
+        "ghidra_name": "FUN_180001cb0",
+        "called_from": [
+          "F04",
+          "F05",
+          "F06",
+          "F12"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180001db0",
+        "ghidra_name": "FUN_180001db0",
+        "called_from": [
+          "F12"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180001e60",
+        "ghidra_name": "FUN_180001e60",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": "H02-FUN_180001e60",
+        "expanded_in_this_packet": true,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180002300",
+        "ghidra_name": "FUN_180002300",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180002580",
+        "ghidra_name": "FUN_180002580",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": "H01-FUN_180002580",
+        "expanded_in_this_packet": true,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180002aa0",
+        "ghidra_name": "QQuickFileNameFilter::nameFilters",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": "?nameFilters@QQuickFileNameFilter@@AEBA?AV?$QList@VQString@@@@XZ",
+        "captured_target_id": "F06",
+        "expanded_in_this_packet": true,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180002cb0",
+        "ghidra_name": "FUN_180002cb0",
+        "called_from": [
+          "H01-FUN_180002580"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180003140",
+        "ghidra_name": "QQuickFileNameFilter::setIndex",
+        "called_from": [
+          "F12"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": "?setIndex@QQuickFileNameFilter@@QEAAXH@Z",
+        "captured_target_id": "F03",
+        "expanded_in_this_packet": true,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180003eb0",
+        "ghidra_name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+        "called_from": [
+          "F08"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180004230",
+        "ghidra_name": "atexit",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180004348",
+        "ghidra_name": "_Init_thread_footer",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x1800043a8",
+        "ghidra_name": "_Init_thread_header",
+        "called_from": [
+          "F04"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      },
+      {
+        "address_va": "0x180004f10",
+        "ghidra_name": "_guard_dispatch_icall",
+        "called_from": [
+          "F08"
+        ],
+        "classification_source": "Ghidra FunctionManager dossier",
+        "exported_name": null,
+        "captured_target_id": null,
+        "expanded_in_this_packet": false,
+        "note": "Target body is not analyzed here unless expanded_in_this_packet is true."
+      }
+    ],
+    "limitations": [
+      "Ghidra external labels do not supply implementation semantics for Qt imports.",
+      "Internal callees not listed as captured are boundary labels only. Their behavior is outside the bounded target.",
+      "EXTERNAL:* values are Ghidra external-space identifiers, not virtual addresses in the source DLL."
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll:	file format coff-x86-64
+
+Disassembly of section .text:
+
+0000000180003380 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z>:
+180003380: 48 8b c4                    	movq	%rsp, %rax
+180003383: 55                          	pushq	%rbp
+180003384: 53                          	pushq	%rbx
+180003385: 56                          	pushq	%rsi
+180003386: 57                          	pushq	%rdi
+180003387: 41 57                       	pushq	%r15
+180003389: 48 8d a8 c8 fe ff ff        	leaq	-0x138(%rax), %rbp
+180003390: 48 81 ec 10 02 00 00        	subq	$0x210, %rsp            # imm = 0x210
+180003397: 4c 8b fa                    	movq	%rdx, %r15
+18000339a: 4c 89 60 d0                 	movq	%r12, -0x30(%rax)
+18000339e: 48 8d 54 24 68              	leaq	0x68(%rsp), %rdx
+1800033a3: 4c 89 68 c8                 	movq	%r13, -0x38(%rax)
+1800033a7: 48 8b f1                    	movq	%rcx, %rsi
+1800033aa: e8 f1 f6 ff ff              	callq	0x180002aa0 <?nameFilters@QQuickFileNameFilter@@AEBA?AV?$QList@VQString@@@@XZ>
+1800033af: 8b 46 10                    	movl	0x10(%rsi), %eax
+1800033b2: 48 8d 56 18                 	leaq	0x18(%rsi), %rdx
+1800033b6: 48 8d 8d 90 00 00 00        	leaq	0x90(%rbp), %rcx
+1800033bd: 89 85 48 01 00 00           	movl	%eax, 0x148(%rbp)
+1800033c3: ff 15 47 1e 00 00           	callq	*0x1e47(%rip)           # 0x180005210
+1800033c9: 48 8b 46 38                 	movq	0x38(%rsi), %rax
+1800033cd: 4c 8d 6e 30                 	leaq	0x30(%rsi), %r13
+1800033d1: 49 8b 4d 00                 	movq	(%r13), %rcx
+1800033d5: 48 89 45 b0                 	movq	%rax, -0x50(%rbp)
+1800033d9: 49 8b 45 10                 	movq	0x10(%r13), %rax
+1800033dd: 48 89 45 b8                 	movq	%rax, -0x48(%rbp)
+1800033e1: 48 89 4d a8                 	movq	%rcx, -0x58(%rbp)
+1800033e5: 48 85 c9                    	testq	%rcx, %rcx
+1800033e8: 74 09                       	je	0x1800033f3 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x73>
+1800033ea: b8 01 00 00 00              	movl	$0x1, %eax
+1800033ef: f0                          	lock
+1800033f0: 0f c1 01                    	xaddl	%eax, (%rcx)
+1800033f3: 48 8b 46 50                 	movq	0x50(%rsi), %rax
+1800033f7: 4c 8d 66 48                 	leaq	0x48(%rsi), %r12
+1800033fb: 49 8b 0c 24                 	movq	(%r12), %rcx
+1800033ff: 48 89 45 98                 	movq	%rax, -0x68(%rbp)
+180003403: 49 8b 44 24 10              	movq	0x10(%r12), %rax
+180003408: 48 89 45 a0                 	movq	%rax, -0x60(%rbp)
+18000340c: 48 89 4d 90                 	movq	%rcx, -0x70(%rbp)
+180003410: 48 85 c9                    	testq	%rcx, %rcx
+180003413: 74 09                       	je	0x18000341e <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x9e>
+180003415: b8 01 00 00 00              	movl	$0x1, %eax
+18000341a: f0                          	lock
+18000341b: 0f c1 01                    	xaddl	%eax, (%rcx)
+18000341e: 49 8b 5f 10                 	movq	0x10(%r15), %rbx
+180003422: 49 8b cf                    	movq	%r15, %rcx
+180003425: 48 89 5d c0                 	movq	%rbx, -0x40(%rbp)
+180003429: ff 15 09 1d 00 00           	callq	*0x1d09(%rip)           # 0x180005138
+18000342f: 84 c0                       	testb	%al, %al
+180003431: 74 04                       	je	0x180003437 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0xb7>
+180003433: 33 c0                       	xorl	%eax, %eax
+180003435: eb 09                       	jmp	0x180003440 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0xc0>
+180003437: 49 8b cf                    	movq	%r15, %rcx
+18000343a: ff 15 b0 1d 00 00           	callq	*0x1db0(%rip)           # 0x1800051f0
+180003440: 4c 89 b4 24 f8 01 00 00     	movq	%r14, 0x1f8(%rsp)
+180003448: 4c 8b 74 24 70              	movq	0x70(%rsp), %r14
+18000344d: 48 89 45 88                 	movq	%rax, -0x78(%rbp)
+180003451: 48 8b 44 24 78              	movq	0x78(%rsp), %rax
+180003456: 0f 29 b4 24 e0 01 00 00     	movaps	%xmm6, 0x1e0(%rsp)
+18000345e: 48 89 5d 80                 	movq	%rbx, -0x80(%rbp)
+180003462: 48 85 c0                    	testq	%rax, %rax
+180003465: 7e 77                       	jle	0x1800034de <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x15e>
+180003467: 48 8d 04 40                 	leaq	(%rax,%rax,2), %rax
+18000346b: 49 8b de                    	movq	%r14, %rbx
+18000346e: 49 8d 3c c6                 	leaq	(%r14,%rax,8), %rdi
+180003472: 4c 3b f7                    	cmpq	%rdi, %r14
+180003475: 74 67                       	je	0x1800034de <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x15e>
+180003477: 0f 28 75 80                 	movaps	-0x80(%rbp), %xmm6
+18000347b: 0f 1f 44 00 00              	nopl	(%rax,%rax)
+180003480: 4c 8b 73 10                 	movq	0x10(%rbx), %r14
+180003484: 48 8b cb                    	movq	%rbx, %rcx
+180003487: ff 15 ab 1c 00 00           	callq	*0x1cab(%rip)           # 0x180005138
+18000348d: 84 c0                       	testb	%al, %al
+18000348f: 74 04                       	je	0x180003495 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x115>
+180003491: 33 c0                       	xorl	%eax, %eax
+180003493: eb 09                       	jmp	0x18000349e <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x11e>
+180003495: 48 8b cb                    	movq	%rbx, %rcx
+180003498: ff 15 52 1d 00 00           	callq	*0x1d52(%rip)           # 0x1800051f0
+18000349e: 4c 89 75 30                 	movq	%r14, 0x30(%rbp)
+1800034a2: 48 89 45 38                 	movq	%rax, 0x38(%rbp)
+1800034a6: 4c 3b 75 c0                 	cmpq	-0x40(%rbp), %r14
+1800034aa: 75 24                       	jne	0x1800034d0 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x150>
+1800034ac: 0f 28 45 30                 	movaps	0x30(%rbp), %xmm0
+1800034b0: 48 8d 55 80                 	leaq	-0x80(%rbp), %rdx
+1800034b4: 48 8d 4d 20                 	leaq	0x20(%rbp), %rcx
+1800034b8: 66 0f 7f 45 20              	movdqa	%xmm0, 0x20(%rbp)
+1800034bd: 66 0f 7f 75 80              	movdqa	%xmm6, -0x80(%rbp)
+1800034c2: ff 15 78 1d 00 00           	callq	*0x1d78(%rip)           # 0x180005240
+1800034c8: 84 c0                       	testb	%al, %al
+1800034ca: 0f 85 8e 00 00 00           	jne	0x18000355e <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x1de>
+1800034d0: 48 83 c3 18                 	addq	$0x18, %rbx
+1800034d4: 48 3b df                    	cmpq	%rdi, %rbx
+1800034d7: 75 a7                       	jne	0x180003480 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x100>
+1800034d9: 4c 8b 74 24 70              	movq	0x70(%rsp), %r14
+1800034de: 48 c7 c2 ff ff ff ff        	movq	$-0x1, %rdx
+1800034e5: 89 56 10                    	movl	%edx, 0x10(%rsi)
+1800034e8: 48 8d 8d 40 01 00 00        	leaq	0x140(%rbp), %rcx
+1800034ef: b2 28                       	movb	$0x28, %dl
+1800034f1: ff 15 79 1d 00 00           	callq	*0x1d79(%rip)           # 0x180005270
+1800034f7: 41 b9 01 00 00 00           	movl	$0x1, %r9d
+1800034fd: 45 33 c0                    	xorl	%r8d, %r8d
+180003500: 49 8b cf                    	movq	%r15, %rcx
+180003503: 0f b7 10                    	movzwl	(%rax), %edx
+180003506: ff 15 dc 1c 00 00           	callq	*0x1cdc(%rip)           # 0x1800051e8
+18000350c: 48 8d 95 a8 00 00 00        	leaq	0xa8(%rbp), %rdx
+180003513: 49 8b cf                    	movq	%r15, %rcx
+180003516: 4c 8d 40 ff                 	leaq	-0x1(%rax), %r8
+18000351a: ff 15 90 1c 00 00           	callq	*0x1c90(%rip)           # 0x1800051b0
+180003520: 48 8d 5e 18                 	leaq	0x18(%rsi), %rbx
+180003524: 48 8b cb                    	movq	%rbx, %rcx
+180003527: 48 8d 95 a8 00 00 00        	leaq	0xa8(%rbp), %rdx
+18000352e: ff 15 c4 1c 00 00           	callq	*0x1cc4(%rip)           # 0x1800051f8
+180003534: 48 8d 8d a8 00 00 00        	leaq	0xa8(%rbp), %rcx
+18000353b: ff 15 c7 1c 00 00           	callq	*0x1cc7(%rip)           # 0x180005208
+180003541: 49 8b 7f 10                 	movq	0x10(%r15), %rdi
+180003545: 49 8b cf                    	movq	%r15, %rcx
+180003548: ff 15 ea 1b 00 00           	callq	*0x1bea(%rip)           # 0x180005138
+18000354e: 0f 28 b4 24 e0 01 00 00     	movaps	0x1e0(%rsp), %xmm6
+180003556: 84 c0                       	testb	%al, %al
+180003558: 74 2c                       	je	0x180003586 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x206>
+18000355a: 33 c0                       	xorl	%eax, %eax
+18000355c: eb 31                       	jmp	0x18000358f <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x20f>
+18000355e: 4c 8b 74 24 70              	movq	0x70(%rsp), %r14
+180003563: 48 b8 ab aa aa aa aa aa aa 2a       	movabsq	$0x2aaaaaaaaaaaaaab, %rax # imm = 0x2AAAAAAAAAAAAAAB
+18000356d: 49 2b de                    	subq	%r14, %rbx
+180003570: 48 f7 eb                    	imulq	%rbx
+180003573: 48 c1 fa 02                 	sarq	$0x2, %rdx
+180003577: 48 8b c2                    	movq	%rdx, %rax
+18000357a: 48 c1 e8 3f                 	shrq	$0x3f, %rax
+18000357e: 48 03 d0                    	addq	%rax, %rdx
+180003581: e9 5f ff ff ff              	jmp	0x1800034e5 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x165>
+180003586: 49 8b cf                    	movq	%r15, %rcx
+180003589: ff 15 61 1c 00 00           	callq	*0x1c61(%rip)           # 0x1800051f0
+18000358f: 48 89 45 48                 	movq	%rax, 0x48(%rbp)
+180003593: 48 8d 4d 20                 	leaq	0x20(%rbp), %rcx
+180003597: 48 89 7d 40                 	movq	%rdi, 0x40(%rbp)
+18000359b: 4d 8b c4                    	movq	%r12, %r8
+18000359e: 0f 28 45 40                 	movaps	0x40(%rbp), %xmm0
+1800035a2: 49 8b d5                    	movq	%r13, %rdx
+1800035a5: 66 0f 7f 45 20              	movdqa	%xmm0, 0x20(%rbp)
+1800035aa: e8 d1 ef ff ff              	callq	0x180002580 <?extensionsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z+0x30>
+1800035af: 8b 46 10                    	movl	0x10(%rsi), %eax
+1800035b2: 33 ff                       	xorl	%edi, %edi
+1800035b4: 39 85 48 01 00 00           	cmpl	%eax, 0x148(%rbp)
+1800035ba: 74 2c                       	je	0x1800035e8 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x268>
+1800035bc: 89 85 40 01 00 00           	movl	%eax, 0x140(%rbp)
+1800035c2: 4c 8d 4d 50                 	leaq	0x50(%rbp), %r9
+1800035c6: 48 8d 85 40 01 00 00        	leaq	0x140(%rbp), %rax
+1800035cd: 48 89 7d 50                 	movq	%rdi, 0x50(%rbp)
+1800035d1: 45 33 c0                    	xorl	%r8d, %r8d
+1800035d4: 48 89 45 58                 	movq	%rax, 0x58(%rbp)
+1800035d8: 48 8d 15 d1 21 00 00        	leaq	0x21d1(%rip), %rdx      # 0x1800057b0 <?staticMetaObject@QQuickFileNameFilter@@2UQMetaObject@@B>
+1800035df: 48 8b ce                    	movq	%rsi, %rcx
+1800035e2: ff 15 90 1c 00 00           	callq	*0x1c90(%rip)           # 0x180005278
+1800035e8: 48 8b d3                    	movq	%rbx, %rdx
+1800035eb: 48 8d 8d 90 00 00 00        	leaq	0x90(%rbp), %rcx
+1800035f2: e8 69 e8 ff ff              	callq	0x180001e60 <??1QQuickFileNameFilter@@UEAA@XZ+0x130>
+1800035f7: 84 c0                       	testb	%al, %al
+1800035f9: 75 22                       	jne	0x18000361d <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x29d>
+1800035fb: 4c 8d 4d 60                 	leaq	0x60(%rbp), %r9
+1800035ff: 48 89 7d 60                 	movq	%rdi, 0x60(%rbp)
+180003603: 41 b8 01 00 00 00           	movl	$0x1, %r8d
+180003609: 48 89 5d 68                 	movq	%rbx, 0x68(%rbp)
+18000360d: 48 8d 15 9c 21 00 00        	leaq	0x219c(%rip), %rdx      # 0x1800057b0 <?staticMetaObject@QQuickFileNameFilter@@2UQMetaObject@@B>
+180003614: 48 8b ce                    	movq	%rsi, %rcx
+180003617: ff 15 5b 1c 00 00           	callq	*0x1c5b(%rip)           # 0x180005278
+18000361d: 49 8b d5                    	movq	%r13, %rdx
+180003620: 48 8d 4d a8                 	leaq	-0x58(%rbp), %rcx
+180003624: e8 87 e1 ff ff              	callq	0x1800017b0 <?qt_static_metacall@QQuickFileNameFilter@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z+0x360>
+180003629: 84 c0                       	testb	%al, %al
+18000362b: 75 22                       	jne	0x18000364f <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x2cf>
+18000362d: 4c 8d 4d 70                 	leaq	0x70(%rbp), %r9
+180003631: 48 89 7d 70                 	movq	%rdi, 0x70(%rbp)
+180003635: 41 b8 02 00 00 00           	movl	$0x2, %r8d
+18000363b: 4c 89 6d 78                 	movq	%r13, 0x78(%rbp)
+18000363f: 48 8d 15 6a 21 00 00        	leaq	0x216a(%rip), %rdx      # 0x1800057b0 <?staticMetaObject@QQuickFileNameFilter@@2UQMetaObject@@B>
+180003646: 48 8b ce                    	movq	%rsi, %rcx
+180003649: ff 15 29 1c 00 00           	callq	*0x1c29(%rip)           # 0x180005278
+18000364f: 49 8b d4                    	movq	%r12, %rdx
+180003652: 48 8d 4d 90                 	leaq	-0x70(%rbp), %rcx
+180003656: e8 55 e1 ff ff              	callq	0x1800017b0 <?qt_static_metacall@QQuickFileNameFilter@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z+0x360>
+18000365b: 4c 8b ac 24 00 02 00 00     	movq	0x200(%rsp), %r13
+180003663: 84 c0                       	testb	%al, %al
+180003665: 75 2b                       	jne	0x180003692 <?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z+0x312>
+180003667: 4c 8d 8d 80 00 00 00        	leaq	0x80(%rbp), %r9
+18000366e: 48 89 bd 80 00 00 00        	movq	%rdi, 0x80(%rbp)
+180003675: 41 b8 03 00 00 00           	movl	$0x3, %r8d
+18000367b: 4c 89 a5 88 00 00 00        	movq	%r12, 0x88(%rbp)
+180003682: 48 8d 15 27 21 00 00        	leaq	0x2127(%rip), %rdx      # 0x1800057b0 <?staticMetaObject@QQuickFileNameFilter@@2UQMetaObject@@B>
+180003689: 48 8b ce                    	movq	%rsi, %rcx
+18000368c: ff 15 e6 1b 00 00           	callq	*0x1be6(%rip)           # 0x180005278
