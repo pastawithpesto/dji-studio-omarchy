@@ -45,7 +45,8 @@ jobs:
           set -euo pipefail
           source_dir="$RUNNER_TEMP/ffmpeg-9.0.1"
           git clone --depth 1 --branch n9.0.1 https://github.com/FFmpeg/FFmpeg.git "$source_dir"
-          test "$(git -C "$source_dir" rev-parse HEAD)" = 501bb49457b9dfb25d6a208832e0a6e6cd53108d
+          test "$(git -C "$source_dir" rev-parse refs/tags/n9.0.1)" = 501bb49457b9dfb25d6a208832e0a6e6cd53108d
+          test "$(git -C "$source_dir" rev-parse HEAD)" = bf1b838f2ab88b4f8fd83443325c782ea0e0f7fa
           cd "$source_dir"
           ./configure --disable-autodetect --disable-doc --disable-debug --disable-ffmpeg --disable-ffplay --disable-network
           make -j2 ffprobe
