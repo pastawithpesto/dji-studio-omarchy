@@ -1,5 +1,5 @@
 {
-  "source": "Exact copies of the independently authored sealed original-DLL fixture. No Wine execution by Rust author.",
+  "source": "Exact copied original-DLL fixture and provenance. README.md adapts handoff instructions to the selected repository packet; other copied artifacts are unchanged. No Wine execution by Rust author.",
   "fixture_sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624",
   "source_dll_sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1",
   "files": [
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "8c85a91a565572c1618842dd834de5e7e6080c0b318267434c8d2cd9e61518b4",
-      "bytes": 2497
+      "sha256": "54f1b5d130644b5925b8b531060031ec29e4646c2c188685574fd7356003bef9",
+      "bytes": 2772
     },
     {
       "path": "SEAL-RECEIPT.json",
@@ -58,5 +58,10 @@
       "sha256": "84986c36099d60e06b9c5e50ae2c85b9755454ba0bdad9e69b39fde8abd14dd2",
       "bytes": 6971
     }
-  ]
+  ],
+  "documentation_adaptation": {
+    "path": "README.md",
+    "original_source_sha256": "8c85a91a565572c1618842dd834de5e7e6080c0b318267434c8d2cd9e61518b4",
+    "reason": "Distinguish original raw output order from traced replay input order; point to the committed manifest."
+  }
 }

@@ -38,5 +38,10 @@ arrays in the fixture, generate the initial inputs with
 `python3 build_fixture.py prepare`, and run the PE in the recorded
 `wineprefix`. Then run `python3 build_fixture.py extend-joins`, copy
 `join-cases.tsv` to `cases.tsv`, and run the PE again. Both commands and all
-tool hashes are recorded in the receipt. `initial-cases.tsv` preserves the
-exact first-pass input order. `SHA256SUMS.txt` pins the handoff files.
+tool hashes are recorded in the receipt.
+
+`initial-cases.tsv` records the traced replay input corpus and order: 3,153
+ComputeCRC64 rows followed by 576 CombineCRC64 rows. The original primary
+`observed.tsv` preserves a different order: 3,081 ComputeCRC64 rows, then
+576 CombineCRC64 rows, then the remaining 72 ComputeCRC64 rows. Results agree
+by case ID and all fields. `fixture-manifest.json` pins the committed files.
