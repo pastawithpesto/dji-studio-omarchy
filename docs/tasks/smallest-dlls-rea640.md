@@ -52,6 +52,8 @@ evidence bundles and matching snapshots saved, and the owned sessions closed.
 
 Read REPORT.md and FINDINGS.json with mandatory SCOPE-CLARIFICATION.json and
 COUNT-CORRECTION.json in the local evidence packet. The original report remains
-immutable. Independent static evidence review is in progress. Selected evidence
-publication remains pending that exact disposition. This is not a whole CRT,
+immutable. Independent static evidence review and milestone verification passed for the
+exact combined corrected packet. Selected reports are in
+[docs/evidence/smallest-dlls](../evidence/smallest-dlls/README.md). This publication
+index is separate from the accepted static packet identity. This is not a whole CRT,
 external Windows implementation, Rust adapter or runtime equivalence claim.
