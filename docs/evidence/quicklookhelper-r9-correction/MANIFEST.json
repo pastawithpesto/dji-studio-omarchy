@@ -1,0 +1,73 @@
+{
+  "schema": "quicklookhelper-selected-r9-manifest-v1",
+  "decision": "author selected correction; independent review pending",
+  "source_sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b",
+  "payloads": [
+    {
+      "path": "CHECKS.json",
+      "bytes": 1264,
+      "sha256": "c6cc53dab5c8ba48aadad445d0a467e5bfe4d5eab0e4e80d5f9f95b15cb8af38"
+    },
+    {
+      "path": "OBJDUMP-180001753.txt",
+      "bytes": 234,
+      "sha256": "e319d50980cb89323e234396cda22ddbdc35fe8e725ab0c4a8f4a07232066768"
+    },
+    {
+      "path": "OBJDUMP-1800025b0.txt",
+      "bytes": 12194,
+      "sha256": "8f7096097df9926fb335544e0238502ab160083a943153e069e3b0e814c03e09"
+    },
+    {
+      "path": "OBJDUMP-180006aa0.txt",
+      "bytes": 627,
+      "sha256": "90cbbdfa656c831303df9f68a557f531b284db56100e12ac46a0a9238eb31a3b"
+    },
+    {
+      "path": "ORIGINAL-BYTE-WITNESSES.json",
+      "bytes": 8645,
+      "sha256": "0442dd7aa9388a3c4b0f8889171983931ba3182f8bdc1e96b50fed91512afc18"
+    },
+    {
+      "path": "ORIGINAL-PINS.json",
+      "bytes": 6028,
+      "sha256": "73d07885ae40726d47ec8440982683e7f757a800e488ab9151025a45bc0b79b4"
+    },
+    {
+      "path": "PRESERVATION-CHECKS.json",
+      "bytes": 36261,
+      "sha256": "e876b53ac6ee959230dd11fce50a96767c02bee6974b1badba2ea79b6bd8aa08"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 6014,
+      "sha256": "c3c88414adeccbea356c3cffa56695ac877e7b9682afc60bc055cb3352490c2b"
+    },
+    {
+      "path": "SOURCE-BASE.json",
+      "bytes": 561,
+      "sha256": "9aefbe1d75da9d80ead865e0dc66052015bfd8eb0c8b4560d2cb1c31b928e0e3"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 2834,
+      "sha256": "3eadefd5765b3f8b3e31082e3bf54e95d0250f94260cb4024bdb8ed19e60a8e6"
+    },
+    {
+      "path": "saved/180001753-ASSEMBLY.json",
+      "bytes": 6717,
+      "sha256": "ccc8dcb5e23c6b882d87f6ceab40fbe981311d543640a4d609137edda8c40a81"
+    },
+    {
+      "path": "saved/1800025b0-ASSEMBLY.json",
+      "bytes": 38036,
+      "sha256": "071bc8c22ef3bb641bfa3717043e1680b25b8a8e7d4077cc4c4aee19bb838a50"
+    },
+    {
+      "path": "saved/180006aa0-ASSEMBLY.json",
+      "bytes": 8720,
+      "sha256": "f3b7678b021626c8fee0d8ccdceee8a6d4e0a3a07a514bee9fd66722ac7ee095"
+    }
+  ],
+  "self_hash_excluded": true
+}
