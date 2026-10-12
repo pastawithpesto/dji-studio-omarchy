@@ -1,0 +1,96 @@
+name: Linux CLI validation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/linux-cli-ci.yml
+      - Cargo.toml
+      - Cargo.lock
+      - descriptors/**
+      - src/**
+      - tests/**
+  pull_request:
+    paths:
+      - .github/workflows/linux-cli-ci.yml
+      - Cargo.toml
+      - Cargo.lock
+      - descriptors/**
+      - src/**
+      - tests/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: linux-cli-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  cli:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Get source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ffmpeg make gcc pkg-config nasm yasm
+
+      - name: Build pinned FFprobe with base64 output
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_dir="$RUNNER_TEMP/ffmpeg-9.0.1"
+          git clone --depth 1 --branch n9.0.1 https://github.com/FFmpeg/FFmpeg.git "$source_dir"
+          test "$(git -C "$source_dir" rev-parse refs/tags/n9.0.1)" = 501bb49457b9dfb25d6a208832e0a6e6cd53108d
+          test "$(git -C "$source_dir" rev-parse HEAD)" = bf1b838f2ab88b4f8fd83443325c782ea0e0f7fa
+          cd "$source_dir"
+          ./configure --disable-autodetect --disable-doc --disable-debug --disable-ffmpeg --disable-ffplay --disable-network
+          make -j2 ffprobe
+          sudo install -m 0755 ffprobe /usr/bin/ffprobe
+          /usr/bin/ffprobe -version
+          /usr/bin/ffprobe -h full 2>&1 | grep -F -- '-data_dump_format' > /dev/null
+
+      - name: Select Rust toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          rustup toolchain install 1.90.0 --profile minimal
+          rustup default 1.90.0
+          rustc --version
+          cargo --version
+
+      - name: Run Rust tests
+        run: cargo test --locked
+
+      - name: Build CLI
+        run: cargo build --locked
+
+      - name: Export stitched test video
+        shell: bash
+        run: |
+          set -euo pipefail
+          work="$RUNNER_TEMP/dji-cli-smoke"
+          mkdir "$work"
+          ffmpeg -hide_banner -loglevel error -f lavfi -i 'testsrc2=size=256x128:rate=2' -frames:v 2 -c:v libx264 -pix_fmt yuv420p "$work/input.mp4"
+          timeout 180s target/debug/dji-reframe "$work/input.mp4" "$work/output.mp4"
+          test -s "$work/output.mp4"
+          /usr/bin/ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height -of json "$work/output.mp4" > "$work/output.json"
+          python3 - "$work/output.json" <<'PY'
+          import json
+          import sys
+
+          with open(sys.argv[1], encoding='utf-8') as source:
+              streams = json.load(source)['streams']
+          assert len(streams) == 1, streams
+          stream = streams[0]
+          assert (stream['codec_name'], stream['width'], stream['height']) == ('h264', 1920, 1080), stream
+          PY
+          ffmpeg -hide_banner -loglevel error -i "$work/output.mp4" -frames:v 1 -f null -
