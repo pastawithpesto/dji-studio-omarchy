@@ -382,12 +382,19 @@ class QueueTests(unittest.TestCase):
         self.assertEqual(restored.jobs[job['id']]['status'], 'interrupted')
         self.assertEqual(restored.jobs[job['id']]['usage']['input_tokens'], 7)
 
+    def test_external_process_start_time_rejects_pid_reuse(self):
+        with patch('data.Path.read_text', return_value='btime 1000\n'), patch('data.start_ticks', return_value='100'), patch('data.os.sysconf', return_value=100):
+            self.assertTrue(data.process_start_matches(77, '1970-01-01T00:16:41+00:00'))
+            self.assertFalse(data.process_start_matches(77, '1970-01-01T00:18:41+00:00'))
+            self.assertFalse(data.process_start_matches(77, None))
+            self.assertFalse(data.process_start_matches(77, '1970-01-01T00:16:41'))
+
     def test_live_external_worker_does_not_override_blocked_original_hash(self):
         app = object.__new__(server.App)
         app.project = self.project
         app.catalog = SimpleNamespace(module=lambda ident: {'parts': [{'id': 'internals', 'research': 'blocked', 'owner_feature': 'thumbnailprovider-kimi-k3', 'statusSource': 'Original DLL hash differs from the catalog pin'}]})
         app.queue = SimpleNamespace(snapshot=lambda: [], external_blocker=lambda *args: 'Active assignment')
-        with patch('server.load_json', return_value={'state': 'launched', 'pid': 77}), patch('server.workers', return_value=[{'pid': 77, 'model': 'nvidia/moonshotai/kimi-k3#high'}]):
+        with patch('server.process_start_matches', return_value=True), patch('server.load_json', return_value={'state': 'launched', 'pid': 77}), patch('server.workers', return_value=[{'pid': 77, 'model': 'nvidia/moonshotai/kimi-k3#high'}]):
             result = app.module('ThumbnailProvider.dll')
         self.assertEqual(result['parts'][0]['research'], 'blocked')
         self.assertIn('Original DLL hash', result['parts'][0]['statusSource'])

@@ -1,5 +1,6 @@
 """Local source-backed inventory, bounded evidence states and observed usage."""
 import copy
+import datetime
 import hashlib
 import json
 import os
@@ -40,6 +41,18 @@ def alive(pid, ticks=None):
         fields = Path(f'/proc/{int(pid)}/stat').read_text().rsplit(')', 1)[1].split()
         return fields[0] != 'Z' and (ticks is None or fields[19] == str(ticks))
     except (OSError, ValueError, IndexError):
+        return False
+
+
+def process_start_matches(pid, recorded_utc):
+    try:
+        expected = datetime.datetime.fromisoformat(recorded_utc.replace('Z', '+00:00'))
+        if expected.tzinfo is None:
+            return False
+        boot = next(int(line.split()[1]) for line in Path('/proc/stat').read_text().splitlines() if line.startswith('btime '))
+        actual = boot + int(start_ticks(pid)) / os.sysconf('SC_CLK_TCK')
+        return abs(actual - expected.timestamp()) < 2
+    except (OSError, ValueError, TypeError, AttributeError, StopIteration):
         return False
 
 

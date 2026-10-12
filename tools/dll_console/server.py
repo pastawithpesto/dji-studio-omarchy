@@ -14,7 +14,7 @@ import subprocess
 import threading
 import time
 from urllib.parse import parse_qs, urlsplit
-from data import Catalog, MODELS, activity, alive, load_json, observed_usage, workers
+from data import Catalog, MODELS, activity, alive, load_json, observed_usage, process_start_matches, workers
 from jobs import Queue, utc
 
 
@@ -143,7 +143,7 @@ class App:
                 for part in result['parts']:
                     if part.get('owner_feature') == 'thumbnailprovider-kimi-k3':
                         dispatch = load_json(self.project / 'reconstruction/kimi-thumbnailprovider-20261012/DISPATCH.json', {})
-                        active = dispatch.get('state') == 'launched' and any(w['pid'] == dispatch.get('pid') and 'kimi-k3' in w['model'] for w in workers())
+                        active = dispatch.get('state') == 'launched' and process_start_matches(dispatch.get('pid'), dispatch.get('started_utc')) and any(w['pid'] == dispatch.get('pid') and 'kimi-k3' in w['model'] for w in workers())
                         part['owner'] = 'Kimi K3 High · ' + ('running' if active else 'recorded assignment')
                         if active and part['research'] in ('missing', 'unreviewed'):
                             part['research'] = 'running'
