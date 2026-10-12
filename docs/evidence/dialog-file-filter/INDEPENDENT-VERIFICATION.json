@@ -69,7 +69,8 @@
     "count": 20,
     "body_byte_total": 5793,
     "source_matches_ghidra": true,
-    "separate_pseudocode_matches_dossier": 20,
+    "capture_recorded_pseudocode_equality_count": 20,
+    "pseudocode_comparison_recomputed_by_this_script": false,
     "functions": [
       {
         "capture_id": "F01",
@@ -78,8 +79,7 @@
         "file_offset": 4176,
         "byte_count": 85,
         "sha256": "2d6ba6018a340c263b344ee45c7723c3e651fe4eecb7da7079dd5f08953caa5a",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F02",
@@ -88,8 +88,7 @@
         "file_offset": 7440,
         "byte_count": 4,
         "sha256": "74032ad0e931f3c4730df99da43479f9f5315cc898c7c8614278631cb2c16a62",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F03",
@@ -98,8 +97,7 @@
         "file_offset": 9536,
         "byte_count": 61,
         "sha256": "ab28b43e4d206b31cd47a24c848ccd9f0651203664ee19a0302143c9ce7cb765",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F04",
@@ -108,8 +106,7 @@
         "file_offset": 10112,
         "byte_count": 2701,
         "sha256": "872530d914b32332e8cf471e6e7d5c7562355e17de89eab0a54dbdabba65e5d0",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F05",
@@ -118,8 +115,7 @@
         "file_offset": 7632,
         "byte_count": 203,
         "sha256": "abcf5090f8bfb07cf4c416fbbf76d7804b34da78ad84befcc3411ef76495df74",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F06",
@@ -128,8 +124,7 @@
         "file_offset": 7840,
         "byte_count": 255,
         "sha256": "3723dac710d5d8ca79d749c6d19bf60b83e709da3507fbf72cfd44757b0eff92",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F07",
@@ -138,8 +133,7 @@
         "file_offset": 8096,
         "byte_count": 48,
         "sha256": "441073f73e9cab2653b21ca47f09528162f3ebdc4ab7424732b9b7035de33be5",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F08",
@@ -148,8 +142,7 @@
         "file_offset": 9600,
         "byte_count": 121,
         "sha256": "8cb1e31f3364df2b0458da7ad7fc171e7929555551875e2fa298d9938c2756aa",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F09",
@@ -158,8 +151,7 @@
         "file_offset": 7552,
         "byte_count": 31,
         "sha256": "07b33eafe9b73247051b0df9629cc62f703bfd10cf4b41f34c6cf0f6d3b61ff7",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F10",
@@ -168,8 +160,7 @@
         "file_offset": 6432,
         "byte_count": 42,
         "sha256": "ebcf8a4ddc2613d8eafcc9b0a101eb56acb3bb046e6284c286bef80cd46c84ca",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F11",
@@ -178,8 +169,7 @@
         "file_offset": 7344,
         "byte_count": 42,
         "sha256": "6985c305c75df0388eef70ac5feff65c07563d226192362a5d5b4c8376a775e2",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F12",
@@ -188,8 +178,7 @@
         "file_offset": 2128,
         "byte_count": 594,
         "sha256": "4dee017a8efcf1a5c9778eaf505fd85d69d51fdd35e6f46a20261f42ab5e17ed",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F13",
@@ -198,8 +187,7 @@
         "file_offset": 8144,
         "byte_count": 132,
         "sha256": "7693cb7fe8e0e856f865946c3110d957b066ca79c0f7e6129be9ac50d969eddb",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F14",
@@ -208,8 +196,7 @@
         "file_offset": 7456,
         "byte_count": 53,
         "sha256": "1b219deb5d4b2fefe1c5974dea6f392a09c041a609db6b02da0cd8e05b888c2b",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F15",
@@ -218,8 +205,7 @@
         "file_offset": 7584,
         "byte_count": 47,
         "sha256": "e9bf7b4f1c86dac36e92729ca04226388dbff004d44a2306c8528e6ea0897f9a",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F16",
@@ -228,8 +214,7 @@
         "file_offset": 6480,
         "byte_count": 47,
         "sha256": "4c5ad76979350950679f892d7fffdb16da58de14bb6b1471e16c9f84f3c9170d",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "F17",
@@ -238,8 +223,7 @@
         "file_offset": 7392,
         "byte_count": 47,
         "sha256": "69357bc9a682ca646c46833f6cf454f3d2e1bd52bfc04a6e8b983946cc9d2889",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "H01-FUN_180002580",
@@ -248,8 +232,7 @@
         "file_offset": 6528,
         "byte_count": 801,
         "sha256": "9049e73ee6584ae4c365435a866e60f0283000e99bf74561492c166d57149aba",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "H02-FUN_180001e60",
@@ -258,8 +241,7 @@
         "file_offset": 4704,
         "byte_count": 200,
         "sha256": "0342457d109e4079f4f7aa511a282759a857eab6ce8e78b49b253926ffaf73c1",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       },
       {
         "capture_id": "H03-FUN_1800017b0",
@@ -268,10 +250,15 @@
         "file_offset": 2992,
         "byte_count": 279,
         "sha256": "e2f3d3861c37d162d2c5a9f967efaa60dbdd07e9693229b6e1759f46509c3dbb",
-        "original_bytes_equal_ghidra_witness": true,
-        "separate_pseudocode_equals_dossier": true
+        "original_bytes_equal_ghidra_witness": true
       }
     ]
+  },
+  "pseudocode_reconciliation": {
+    "function_count": 20,
+    "stored_exact_match_records": 20,
+    "raw_text_included_in_source_map": false,
+    "method": "Each separate pseudocode result was compared with its dossier pseudocode in the local capture packet. This portable source-byte verifier does not recalculate that text comparison."
   },
   "metadata_and_strings": {
     "region_address_va": "0x180005520",

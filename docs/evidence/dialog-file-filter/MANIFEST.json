@@ -1,0 +1,64 @@
+{
+  "capture": {
+    "complete_function_body_bytes": 5793,
+    "exported_functions": 17,
+    "metadata_string_span_bytes": 1088,
+    "raw_analysis_local_only": true,
+    "required_helpers": 3,
+    "selected_strings": 23
+  },
+  "files": {
+    "INDEPENDENT-VERIFICATION.json": {
+      "sha256": "9fb5c48713fb3afc2ad7a7521aac4ccfcbd1a3ddcf4ae79e0b7de48f607af292",
+      "size_bytes": 13542
+    },
+    "REPORT.md": {
+      "sha256": "96467217c435458fb1f355237d07e30555d019c743d8eecb889e618e8d2add42",
+      "size_bytes": 13971
+    },
+    "SOURCE-MAP.json": {
+      "sha256": "efe04342d5ef2e7ae00687b68094214221220c21f920978c4646979710d4e944",
+      "size_bytes": 92494
+    },
+    "VERIFICATION-HISTORY.json": {
+      "sha256": "10663610ac596846bb2def7125bc8a2a7b34814071959c4122e401f4b4207dca",
+      "size_bytes": 2327
+    },
+    "llvm-exports.txt": {
+      "sha256": "98aa9309f19e0c7a1867e0892a0233eea02a4da08ffa58c7c31fb77b7550326f",
+      "size_bytes": 9901
+    },
+    "llvm-qt-static-metacall.txt": {
+      "sha256": "a32ae86e23d529961b2d4e5df8b5b937bb18fe550a64bc9f75ba30905313b5d5",
+      "size_bytes": 12442
+    },
+    "llvm-setIndex.txt": {
+      "sha256": "30da81d6179010845414ae7d0523297c36634e9b9e4ea0984f09bf92b64d4c37",
+      "size_bytes": 1187
+    },
+    "llvm-update-path.txt": {
+      "sha256": "22ea6a8f6d9341ce22fd4a6d4df249db63abb30115a434b5e1197dbd2f79b770",
+      "size_bytes": 13673
+    },
+    "verify_source_map.py": {
+      "sha256": "c5d37aa1adc20a8cd33b3e0f02e6c158f87df3f839ad6ca0ca8e870b469e8c55",
+      "size_bytes": 19832
+    }
+  },
+  "format": "dialog-file-filter-evidence-manifest-v1",
+  "source": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll",
+    "sha256": "580d8be7657cd4b074b5d4ee43bc8c325d501aea737ef15c13e41f62bd0da263",
+    "size_bytes": 45240
+  },
+  "tools": {
+    "ghidra_heap_mib": 768,
+    "ghidra_version": "12.1.4",
+    "java_major": 21,
+    "llvm_objdump_version": "22.1.8",
+    "node_version": "26.9.0",
+    "rea_package_version": "6.4.0",
+    "rea_running_server_version": "6.4.0",
+    "rea_upstream_commit": "fa87dd2aac3eaeb49875c54e93ec18c98cc92e4d"
+  }
+}
