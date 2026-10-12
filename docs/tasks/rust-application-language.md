@@ -28,3 +28,17 @@ Owned branch work/rust-application-language-law-20261012. Plan-only source is cl
 The gate checks source files and known inline C++ macros. Review must also check
 that application behavior stays in Rust and original QML remains unchanged.
 This is a source policy. It does not remove Qt's external C++ implementation.
+Three existing C research files remain frozen at their exact main blob IDs.
+They are two decompiler outputs and a historical DLL reference harness. They
+do not permit new or changed C application code. No directory is exempt.
+
+## Validation
+
+The Rust guard builds with warnings denied. Four unit tests pass. Direct Clippy
+with warnings denied passes. The real repository passes from its root and from
+the gui directory. Separate temporary Git repositories reject C++ source, a
+header, Python application code and an inline C++ macro. They accept original
+QML, Rust FFI declarations and a separate Python coordination tool. Frozen
+reference records pass unchanged and fail after a one-byte content change.
+All original application resources remain unchanged. Hosted validation and exact
+independent source and milestone reviews remain pending.
