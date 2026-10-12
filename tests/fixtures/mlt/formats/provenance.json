@@ -1,0 +1,33 @@
+{
+  "original_distribution": "1.0.0.30839",
+  "dll": "mltframework-win.dll",
+  "dll_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+  "contract_sha256": "4690c7e09b66742bf3d0a7f36b5b8fe84f063a22567a7e2d79a04a9872cc5704",
+  "independent_contract_review_sha256": "83cdc7329a0ba4f2d439b7e3c008bcb3fed0e23ef91f84a79f7e7a9c6b1be104",
+  "baseline_reference_manifest": "161dde5718d667e458f2f5b269627590b744e818d3c8e3d09e560b6cd0b41cf6",
+  "additional_reference_manifest": "eb521071706d318b42dbe6289a7bfc1d5354b8b46adb3f7a0a8a63102da4253e",
+  "observation": "Original DLL with original native MSVC dependencies under Wine11.17; Wine built-in UCRT/OS services remain. Deterministic repeated baseline outputs. Not a Windows comparison.",
+  "case_counts": {
+    "baseline_formats": 1612,
+    "additional": 29
+  },
+  "extra_image_id_cases": [
+    "",
+    "INVALID",
+    "RGB24",
+    "rgb24_suffix",
+    "rgb24\u0000suffix",
+    "not-a-format"
+  ],
+  "audio_samples": "u64 fixtures record full RAX; source C prototype unresolved, Rust preserves measured register bits rather than claiming recovered C ABI.",
+  "files": [
+    {
+      "path": "additional-cases.json",
+      "sha256": "943819945deac1f6b1223f086e71132a0315bf949d483d8860b01adb006f1c37"
+    },
+    {
+      "path": "original-cases.json",
+      "sha256": "0228e263d545ff35fa3058eb58983b4df0aed1852aed32ab2f173e491944647e"
+    }
+  ]
+}
