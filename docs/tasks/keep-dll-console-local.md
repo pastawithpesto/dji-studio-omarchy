@@ -16,3 +16,7 @@ verification pass. Coordinate the main merge with the active repository owner.
 
 Deleting files in a later commit does not erase earlier Git history.
 This task does not rewrite history or change repository visibility.
+
+The exact thirteen-file local copy is preserved outside Git. Its hashes and
+lengths match the previously tracked files. The existing local server, proxy,
+job records and research artifacts remain in their original local locations.
