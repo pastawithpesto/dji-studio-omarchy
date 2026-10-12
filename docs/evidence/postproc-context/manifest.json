@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-12T07:03:58Z",
+  "source": {
+    "build": "DJI Studio 1.0.0.30839",
+    "name": "postproc-58.dll",
+    "size_bytes": 99512,
+    "sha256": "fcb300de9e4702545991c4487e0ee90728090f22f3639c4bf6adc0bd4a03617b"
+  },
+  "scope": "Bounded public context construction/free policy plus identity, version, and license exports; no whole-DLL or pixel/filter equivalence.",
+  "files": [
+    {
+      "path": "docs/tasks/postproc-context.md",
+      "size_bytes": 3744,
+      "sha256": "8bd9842b570b42018d38c75891c93150eda2710d9e8148afdd6c29ddd3a5d2a4"
+    },
+    {
+      "path": "docs/evidence/postproc-context/report.md",
+      "size_bytes": 9321,
+      "sha256": "fc471add83011d6e69d1bfe6d87c89d2a9f01151ef76c35b73988a7c1c99e6b3"
+    },
+    {
+      "path": "docs/evidence/postproc-context/source-map.json",
+      "size_bytes": 84162,
+      "sha256": "43859a88e7fc4951745ddeddb73b7270fc6c3c0a9760b9d09472fd664b3dc9f3"
+    },
+    {
+      "path": "docs/evidence/postproc-context/validation.json",
+      "size_bytes": 5440,
+      "sha256": "da10129e4215c7716ef630a71fa953e8b72a186e8886465b54d035574e0e303c"
+    },
+    {
+      "path": "docs/evidence/postproc-context/tool-pins.json",
+      "size_bytes": 3139,
+      "sha256": "e53f8eac5c6870f9a612cc0b6a72013371c65899cc6d088d5ed549af02d780b0"
+    },
+    {
+      "path": "docs/evidence/postproc-context/validate_packet.py",
+      "size_bytes": 16820,
+      "sha256": "d5df0f99c19a7a4d42b46e73a85611febb1400c6bd5bb34591c696815a52a7c3"
+    }
+  ],
+  "self_hash_note": "This manifest does not include its own digest; hash the manifest file after generation."
+}
