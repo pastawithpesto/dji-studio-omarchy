@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-10-12T06:22:56.562985+00:00",
+  "source_hash": true,
+  "code_spans": 17,
+  "data_spans": 3,
+  "erratum_seal_matches": 50,
+  "erratum_review_seal_matches": 70,
+  "commands": [
+    {
+      "argv": [
+        "objdump",
+        "-d",
+        "-Mintel",
+        "--start-address=0x180006aa0",
+        "--stop-address=0x180006abc",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/QuickLookHelper.dll"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "objdump",
+        "-d",
+        "-Mintel",
+        "--start-address=0x180001753",
+        "--stop-address=0x180001758",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/QuickLookHelper.dll"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "objdump",
+        "-d",
+        "-Mintel",
+        "--start-address=0x1800025b0",
+        "--stop-address=0x1800028b7",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/QuickLookHelper.dll"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "objdump_version": "GNU objdump (GNU Binutils) 2.47",
+  "result": "PASS for selected identities and offline byte checks; not evidence approval"
+}
