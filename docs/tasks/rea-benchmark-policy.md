@@ -35,3 +35,13 @@ review of the exact documentation commit. Do not claim a new benchmark ran.
 
 Keep the PR in draft until the required review is complete. No application code,
 vendor execution, merge or release is part of this task.
+
+## Independent review correction
+
+Astra requested changes to commit `072e61e938ce484ea84118492affd06078d21225`.
+The sealed review hash is
+`69413d49bcefe4dc0b048a752c6e97c804fcce9aefe79141d6cde54c123f7ab4`.
+The correction defines all selected DLLs and N pairs, separate mode decisions,
+precise measurement boundaries and resource units, mandatory complete data, and
+an ordered rejection and inconclusive decision with a declared noise rule.
+The corrected candidate requires a new exact-commit review. No benchmark ran.

@@ -45,19 +45,28 @@ unconditional instructions. Retain the last validated baseline until acceptance.
    plan before measuring. Pin the baseline instructions, candidate instructions,
    tool identities, host, heap limits, source files, targets and output checks.
    Change one optimization at a time.
-2. Select at least three small DLLs that represent the intended workload. Pin
-   their complete hashes. Use at least five measured baseline/candidate pairs
-   per DLL. Alternate order to reduce order bias. Keep settings and workload
+2. Select at least three small DLLs that represent the intended workload. Freeze
+   the DLL set and pair count N before measuring. Pin their complete hashes.
+   Use N >= 5 measured baseline/candidate pairs per DLL. Alternate order to reduce
+   order bias. Keep settings and workload
    equivalent within each pair. Record warm-ups separately. Do not discard slow
    runs or failures from the results.
 3. Test fresh analysis and saved evidence inspection separately. Compare both
    methods on the same task. A cached retrieval is not a new decompilation.
    Use separate owned snapshots for fresh runs. State cache conditions and other
    host activity. Never flush peer caches or stop peer work to improve a score.
-4. Measure end-to-end wall time, including setup, required verification and
-   reporting. Also record import, first analysis, retrieval, byte checks, CPU,
-   peak memory, failures and timeouts when available. Report every run, each
-   DLL's median and range, and the sum of the three per-DLL wall-time medians.
+4. Declare identical pipeline boundaries before timing. Start before client
+   startup and source verification. Stop after required output checks, report
+   writes and owned-session cleanup. Record tool installation and harness
+   preparation separately. Measure import, first analysis, retrieval and byte
+   checks as stages. Record complete wall time, CPU, peak memory, failures and
+   timeouts for every run. Report units and process scope. Linux wait4 CPU is
+   user plus system seconds; ru_maxrss is a process/descendant maximum in KiB,
+   not summed simultaneous memory. Measure total memory separately if the grant
+   limits it. Verify heap limits separately from resident memory.
+   Report every run and each DLL's median and range. Aggregate the sum of all
+   selected DLLs' wall-time medians. Keep fresh-analysis and saved-inspection
+   decisions separate. Never pool their timings.
 5. Check the same required outputs, coverage, source bytes, provenance and
    warnings for every pair. Preserve raw pseudocode and assembly. Investigate
    differences rather than hiding them with normalization. Missing evidence,
@@ -65,19 +74,30 @@ unconditional instructions. Retain the last validated baseline until acceptance.
 
 ## Accept, reject and discard
 
-Use these default thresholds. A task owner may set different limits in the
-recorded plan before the first run. Never change limits to rescue a result.
+Use these default thresholds and decision order. A task owner may set different
+limits and a noise rule in the recorded plan before the first run. Never change
+the DLL set, pair count, limits or noise rule to rescue a result.
 
-- Accept only if all correctness checks pass, the sum of per-DLL wall-time
-  medians improves by at least 10%, and the candidate is faster in at least four
-  of five pairs for each DLL. No DLL's median may regress by more than 5%.
-- Require no new failures or timeouts. CPU and peak memory must stay within the
-  resource grant and may not regress by more than 10% against the corresponding
-  baseline medians. Missing resource measurements leave that part unverified.
-  Do not claim full acceptance until required measurements are available.
-- A correctness defect, failure, resource breach or threshold failure rejects
-  the optimization. No measurable gain also rejects it. If noise or missing
-  data prevents a decision, mark it inconclusive and keep the baseline active.
+1. A correctness defect, new failure, new timeout or resource-grant breach
+   rejects the optimization immediately, even when measurements are noisy.
+   A failed baseline run makes performance comparison incomplete; preserve it.
+2. Otherwise, missing required wall, CPU, memory, failure or verification data
+   makes the decision inconclusive. The default noise rule also makes a mode
+   inconclusive if any DLL's baseline or candidate wall-time sample has a median
+   absolute deviation greater than 10% of its median. Record workload changes
+   that make runs incomparable. Keep the baseline active for inconclusive data.
+3. For complete comparable data below the noise limit, accept only if all checks
+   pass and the sum of all selected per-DLL wall-time medians improves by at
+   least 10%. Require at least ceil(0.8*N) strictly faster candidate pairs for
+   each DLL. Ties do not count as wins. No DLL's wall-time median may regress by
+   more than 5%. Each DLL's CPU and peak-memory medians may not regress by more
+   than 10% against their corresponding baseline medians. Apply these limits
+   separately for each tested mode. A threshold failure or no measurable gain
+   rejects the optimization for that mode. Acceptance applies only to the tested
+   targets, workload, mode, tool versions and resource limits.
+
+After the decision:
+
 - On rejection, stop using the candidate. Remove its directive from active
   instructions or mark it explicitly disabled with the benchmark record and
   reason. Restore the last validated baseline. Preserve rejected instructions,
