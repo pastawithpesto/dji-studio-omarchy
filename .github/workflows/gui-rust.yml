@@ -67,9 +67,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             qt6-base-dev qt6-declarative-dev qt6-5compat-dev \
+            qml6-module-qtqml qml6-module-qtqml-models \
             qt6-qpa-plugins qml6-module-qtquick qml6-module-qtquick-controls \
+            qml6-module-qtquick-templates \
             qml6-module-qtquick-layouts qml6-module-qtquick-window \
-            qml6-module-qtqml-workerscript libclang-dev
+            qml6-module-qtqml-workerscript qml6-module-qt5compat-graphicaleffects \
+            libclang-dev
           qmake6 -query QT_VERSION
       - name: Build Rust Qt application source
         run: |

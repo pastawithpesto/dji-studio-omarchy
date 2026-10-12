@@ -10,8 +10,9 @@ unfinished.
 
 The internal crate and executable name `original-qml-host` is an independent
 implementation name. It is not an original DJI product name. The registration
-callback runs after application creation and before engine creation. The combined
-candidate must connect that callback to the supported original native types.
+callback runs after application creation and before engine creation. It registers
+the original WindowPositionDetector module and type at version 1.0 through the
+Rust Qt adapter in `rust/qt`.
 
 ## Build and check the Rust host
 
@@ -45,7 +46,7 @@ Main load, to expose further import errors. It returns failure if registration
 or root creation fails.
 
 The local Qt 6.11.2 host build passed. The focused runtime test passed. The exact
-original Main check exited 1 with the following actual import errors. Source
+combined original Main check exited 1 with the following actual import errors. Source
 lines refer to `original/resources/qml/Main.qml`. Each import has version 1.0.
 
 | Line | Missing module |
@@ -56,15 +57,15 @@ lines refer to `original/resources/qml/Main.qml`. Each import has version 1.0.
 | 19 | UserGuideTypeModel |
 | 20 | BusinessLogger |
 | 21 | BusinessLog |
-| 22 | WindowPositionDetector |
 | 23 | ViewModeAnalyzeController |
 | 24 | ProjectStateController |
 | 25 | SettingPanelViewModel |
 
 These are first-stage errors. They do not prove that all other imports, types,
 context objects, singletons, or startup actions work. Further errors can appear
-after these modules exist. The registered WindowPositionDetector boundary and
-its native screen access require a separate check. On this computer,
+after these modules exist. The WindowPositionDetector import now resolves.
+Its separate QML test checks the original method names, null arguments, a real
+QWindow, and reset with the offscreen platform. On this computer,
 `QT_FORCE_STDERR_LOGGING=1` sends Qt diagnostics to captured stderr.
 
 ## Binding boundary
@@ -82,8 +83,11 @@ provides import paths and root-creation signals. Official
 [Qt Bridge 0.3 documentation](https://doc-snapshots.qt.io/qtbridge-rust/qtbridge/index.html)
 requires Qt 6.10 or later. Its public `QApp` API does not expose the engine or
 root-creation signal needed here. Its runtime uses CXX-Qt internally. The direct
-CXX-Qt host makes the failure check available. Native QWindow and QScreen support
-requires a separate verified boundary.
+CXX-Qt host makes the failure check available. The Rust adapter binds native
+QWindow and QScreen methods against installed Qt headers. Autocxx generates
+the exact screen pointer/list aliases. CXX-Qt-Lib supplies the list storage and
+operations; the application does not guess their layout. See the
+[adapter checks and limits](rust/qt/README.md).
 
 ## Historical package boundary
 

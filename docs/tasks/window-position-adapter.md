@@ -6,7 +6,9 @@ Do not add C++ application code or invent replacement screens and controllers.
 
 This task replaces the earlier C++ adapter direction. Historical C++ work and
 its test records remain evidence. They do not make the current GUI compliant.
-The existing experimental GUI is still a migration target.
+The custom C++ host, simplified screen, and their build/tests have been removed
+from the current source. Their exact files and historical records remain
+preserved. The original resource bundle and frozen provenance records are unchanged.
 
 ## Current Rust implementation
 
@@ -27,21 +29,36 @@ Use the independently approved method and Qt geometry records listed in
 binary without a resource grant. Original binary behavior and native Qt
 integration remain separate obligations.
 
-## Remaining integration
+## Rust Qt and QML integration
 
-Register the exact original WindowPositionDetector module and type at version
-1.0 from Rust. Preserve the names isWindowCompletelyOnScreen and
-resetWindowToBestScreen and their original QWindow argument boundary.
-Use original QML entry points and resource aliases. Replace the C++ host and
-independently authored experimental screen as their original interfaces become
-supported. Missing services must remain unresolved instead of success stubs.
+`gui/rust/qt` registers the exact original WindowPositionDetector module and type
+at version 1.0. It preserves isWindowCompletelyOnScreen and
+resetWindowToBestScreen with their original QWindow argument boundary. Native
+screen enumeration retains list order and null entries. Autocxx generates
+pointer/list aliases from installed Qt headers. CXX-Qt-Lib supplies the native
+list storage and operations. No handwritten C++ or guessed container layout is used.
 
-Validate the actual Rust/QML boundary on a new test-owned window. Verify thread,
-object lifetime, screen-list order, null entries and lazy fallback. Native Qt
-platform APIs are an integration boundary; Windows DPI and Wayland movement
-remain unverified. Preserve failed runs. Obtain independent source review and
-separate milestone verification before any merge.
+`gui/rust/host` creates the Qt application and engine from Rust. It compiles the
+unchanged original resource collection and loads `qrc:/qml/Main.qml`. The native
+type registration runs before engine creation. Missing services cause actual Qt
+errors. The host adds no replacement screen, placeholder controller or media UI.
 
-The pure policy crate has no GUI startup or media parity claim. Do not use its
-passing tests as proof that original Main.qml or the complete application works.
+The adapter checks cover native list storage, eight ordered-call cases, and a
+QML test with null arguments and a real test-owned window. The host checks cover
+an original resource, the original Config import, load failure and event-loop
+exit. Local checks use Qt 6.11.2. Hosted Qt API checks use the Ubuntu distribution
+version. Neither version establishes Windows or full original GUI parity.
+
+## Remaining work
+
+The combined host reports nine missing original native modules. Recover their
+contracts and implement the supported behavior in Rust. Further missing types,
+context objects and startup actions can appear after those modules exist.
+Native object lifetime and GUI-thread requirements remain binding preconditions.
+Windows DPI, Wayland movement, media linkage, project behavior and reference UI
+comparison remain unverified. Preserve failed runs. Obtain independent source
+review and separate milestone verification before any merge.
+
+Passing policy and Qt boundary checks do not prove successful original Main
+startup or complete application behavior.
 Active disjoint implementation PRs and the serial merge queue retain ownership.

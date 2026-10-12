@@ -17,7 +17,8 @@ that recorded tree. This historical count does not describe later main revisions
 
 The Rust host attempts to load the exact original `Main.qml`. The custom C++ host
 and experimental `NativeStitchedFlow.qml` entry have been removed from the current
-source. Local Qt 6.11.2 reports ten missing native modules. Full original GUI
+source. Local Qt 6.11.2 reports nine missing native modules after the original
+WindowPositionDetector registration. Full original GUI
 startup remains incomplete. Resource preservation and runtime equivalence are
 separate results. CXX-Qt generates C++ binding code; application source is Rust
 and QML. The historical validation below applies to its recorded source only.
