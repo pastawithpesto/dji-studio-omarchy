@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-12T06:35:09.501425+00:00",
+  "initial_manifest_sha256": "893f58d1d52c670ee8e6dd07e640994c0c75c8713e28659bb85d419dc3e886dd",
+  "initial_report_sha256": "85a070ebd53aaf34470310ee8ed1df1b50dea914995ae118b5ed6bf184a1468a",
+  "defect": "Initial report called all31 provider thunks per DLL import thunks. Three have internal immediate targets.",
+  "correct_scope": "Per DLL:31 total thunks,28 direct external thunks,2 internal free alias chains and1 internal guard-dispatch thunk. All remain included in103 captured executable functions. No bytes or coverage count changed.",
+  "checks": [
+    {
+      "target": "labsanimationplugin",
+      "all_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_thunks": [
+        {
+          "address": "0x180001374",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180002388"
+        },
+        {
+          "address": "0x18000137c",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180001374"
+        },
+        {
+          "address": "0x180002410",
+          "name": "_guard_dispatch_icall",
+          "target": "0x1800023f0"
+        }
+      ],
+      "binutils_export_rvas": [
+        4448,
+        4752
+      ]
+    },
+    {
+      "target": "qmlfolderlistmodelplugin",
+      "all_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_thunks": [
+        {
+          "address": "0x180001374",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180002388"
+        },
+        {
+          "address": "0x18000137c",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180001374"
+        },
+        {
+          "address": "0x180002410",
+          "name": "_guard_dispatch_icall",
+          "target": "0x1800023f0"
+        }
+      ],
+      "binutils_export_rvas": [
+        4448,
+        4752
+      ]
+    },
+    {
+      "target": "labsmodelsplugin",
+      "all_thunks": 31,
+      "direct_external_thunks": 28,
+      "internal_thunks": [
+        {
+          "address": "0x180001374",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180002388"
+        },
+        {
+          "address": "0x18000137c",
+          "name": "API-MS-WIN-CRT-HEAP-L1-1-0.DLL::free",
+          "target": "0x180001374"
+        },
+        {
+          "address": "0x180002410",
+          "name": "_guard_dispatch_icall",
+          "target": "0x1800023f0"
+        }
+      ],
+      "binutils_export_rvas": [
+        4448,
+        4752
+      ]
+    }
+  ],
+  "limits": "Original report, findings, offline records and failed assumption are preserved. Corrected records are additive."
+}

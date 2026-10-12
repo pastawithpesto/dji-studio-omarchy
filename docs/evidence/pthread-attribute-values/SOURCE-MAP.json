@@ -1,0 +1,361 @@
+{
+  "source": {
+    "source": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/pthreadVC2.dll",
+    "sha256": "66efd5e61c970b73d323efac88c82d7fbe22b842385e55271dd8e5adbf02e71b",
+    "bytes": 68792,
+    "build": "DJI Studio 1.0.0.30839"
+  },
+  "export_inventory_count": 120,
+  "selected_exports": [
+    {
+      "name": "pthread_attr_getdetachstate",
+      "ordinal": 4,
+      "rva": 4288,
+      "body_va": "0x1800010c0",
+      "end_exclusive": "0x1800010e8",
+      "file_offset": 1216,
+      "length": 40,
+      "sha256": "fb4e70e3e44aab8e97505231ff0932c5f554d36a406630472a5cee9d5814066e"
+    },
+    {
+      "name": "pthread_attr_getinheritsched",
+      "ordinal": 5,
+      "rva": 4336,
+      "body_va": "0x1800010f0",
+      "end_exclusive": "0x180001118",
+      "file_offset": 1264,
+      "length": 40,
+      "sha256": "4b35723325428a503ba0990f3789899130586cf06d9922aae8d02c44d4c3dad3"
+    },
+    {
+      "name": "pthread_attr_getschedpolicy",
+      "ordinal": 7,
+      "rva": 4432,
+      "body_va": "0x180001150",
+      "end_exclusive": "0x18000117a",
+      "file_offset": 1360,
+      "length": 42,
+      "sha256": "e053d4b48f679e086e042aed8bfb9682d214e1e7ac2ce513f59451d1d1049d4a"
+    },
+    {
+      "name": "pthread_attr_setdetachstate",
+      "ordinal": 12,
+      "rva": 4688,
+      "body_va": "0x180001250",
+      "end_exclusive": "0x180001276",
+      "file_offset": 1616,
+      "length": 38,
+      "sha256": "367a70eeaf6a4eae1d7b850fb967851e8ed91917530ccf32fc4fe20af0165604"
+    },
+    {
+      "name": "pthread_attr_setinheritsched",
+      "ordinal": 13,
+      "rva": 4736,
+      "body_va": "0x180001280",
+      "end_exclusive": "0x1800012a6",
+      "file_offset": 1664,
+      "length": 38,
+      "sha256": "0f6d1cf4f73c6fcc2c9149dfd968eb0dd1ee46d4905402a9dd4addefa931b984"
+    },
+    {
+      "name": "pthread_attr_setschedpolicy",
+      "ordinal": 15,
+      "rva": 4848,
+      "body_va": "0x1800012f0",
+      "end_exclusive": "0x180001315",
+      "file_offset": 1776,
+      "length": 37,
+      "sha256": "9de47e9742131c1d7ced7c3f33162623d182348331e2800611b9e9e2deea1a9e"
+    }
+  ],
+  "provider": {
+    "source_sha256": "66efd5e61c970b73d323efac88c82d7fbe22b842385e55271dd8e5adbf02e71b",
+    "checks": [
+      {
+        "name": "pthread_attr_getdetachstate",
+        "address": "0x1800010c0",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x1800010c0",
+              "end": "0x1800010e7"
+            }
+          ],
+          "total_bytes": 40,
+          "span_bytes": 40,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x1800010c0",
+            "length": 40,
+            "file_offset": 1216,
+            "sha256": "fb4e70e3e44aab8e97505231ff0932c5f554d36a406630472a5cee9d5814066e",
+            "evidence_id": "ev_22e37b845f7e24e1eb9ec227b92f3d9e769bad8de4c92967c188338ea42580a3"
+          }
+        ],
+        "evidence_ids": [
+          "ev_45ba91e19343dcca9167d147c9ae951ef02b4fcbd39b4902dfd8083b7698b51e",
+          "ev_cd2307a04beefa29a4d41ee9fd8c0af1b7cb0b0ed6da9a38a11d2d138e5f2116",
+          "ev_0ca11d409bc8838240b430cedb916d53041b681e96e7f233ae6916f19fc574b4"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels."
+        ]
+      },
+      {
+        "name": "pthread_attr_getinheritsched",
+        "address": "0x1800010f0",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x1800010f0",
+              "end": "0x180001117"
+            }
+          ],
+          "total_bytes": 40,
+          "span_bytes": 40,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x1800010f0",
+            "length": 40,
+            "file_offset": 1264,
+            "sha256": "4b35723325428a503ba0990f3789899130586cf06d9922aae8d02c44d4c3dad3",
+            "evidence_id": "ev_eba01985d2c1363189b4140da6d379d5314d8953a1d82986833a0559efa37cda"
+          }
+        ],
+        "evidence_ids": [
+          "ev_6fcc94c90cc37ee032d15a88b091037a881dc201890ac659af980a4b0c883d3c",
+          "ev_e87034923ed5315b36e452ebad1296a8bf3bd1582c4cec1e9ef636afb74b3a0d",
+          "ev_de76ce31fdb36c2981dc99115f6f6092b95e75b6f7e703600404518bd39ce4cb"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels."
+        ]
+      },
+      {
+        "name": "pthread_attr_getschedpolicy",
+        "address": "0x180001150",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001150",
+              "end": "0x180001179"
+            }
+          ],
+          "total_bytes": 42,
+          "span_bytes": 42,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x180001150",
+            "length": 42,
+            "file_offset": 1360,
+            "sha256": "e053d4b48f679e086e042aed8bfb9682d214e1e7ac2ce513f59451d1d1049d4a",
+            "evidence_id": "ev_6eb2f9e2c9ebddbe08f325084698e34252382cd818ee65da255422d4b2e6284a"
+          }
+        ],
+        "evidence_ids": [
+          "ev_4383723ee315c9980a20f5223aa005f99e2f084a8c672ea9e34cf54802abd3e4",
+          "ev_c040fd44bcaae6228f993fd3b0857925acf3dfc26811f808cadaae2c91c6e5ec",
+          "ev_88aeec6a924eb6f6bb0d67d5aec16af8754cfaf673b48c5ba0fcaf96f612743b"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels."
+        ]
+      },
+      {
+        "name": "pthread_attr_setdetachstate",
+        "address": "0x180001250",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001250",
+              "end": "0x180001275"
+            }
+          ],
+          "total_bytes": 38,
+          "span_bytes": 38,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x180001250",
+            "length": 38,
+            "file_offset": 1616,
+            "sha256": "367a70eeaf6a4eae1d7b850fb967851e8ed91917530ccf32fc4fe20af0165604",
+            "evidence_id": "ev_f0b11b50e74b1ebfa3ac64bad2fa4d395c97a8219d0d326f7d79817d694d850a"
+          }
+        ],
+        "evidence_ids": [
+          "ev_50035fbfde2b709157f839c21ab99055acdc0d095201234b9b98bc9f6b46a170",
+          "ev_a29a8d7b7eb6d6e1298c04aa6f11a91a699020adf34e638a8e510d0bf8fe63c0",
+          "ev_150db4871501b10c363c777e4b09a31bdd85a22958c1886b4a964cd34e5ec0af"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels."
+        ]
+      },
+      {
+        "name": "pthread_attr_setinheritsched",
+        "address": "0x180001280",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001280",
+              "end": "0x1800012a5"
+            }
+          ],
+          "total_bytes": 38,
+          "span_bytes": 38,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x180001280",
+            "length": 38,
+            "file_offset": 1664,
+            "sha256": "0f6d1cf4f73c6fcc2c9149dfd968eb0dd1ee46d4905402a9dd4addefa931b984",
+            "evidence_id": "ev_379c9d156ae7cfaf4adf2c65b025fd3b7786435d1a4d7b7fd2d01092f15272dc"
+          }
+        ],
+        "evidence_ids": [
+          "ev_9af4fd66bc27d2110d4cf866052183adb0dfe1fc4772fefb109c3727058ae97e",
+          "ev_49d6a0d2b8d829698a9070922bb8dcd5e7f6e88fb2b11a388645ae0f267485f7",
+          "ev_9300e017dfc40545675df93781f2af34c9d91faffc7c56ec92384bb93edb3485"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels."
+        ]
+      },
+      {
+        "name": "pthread_attr_setschedpolicy",
+        "address": "0x1800012f0",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x1800012f0",
+              "end": "0x180001314"
+            }
+          ],
+          "total_bytes": 37,
+          "span_bytes": 37,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x1800012f0",
+            "length": 37,
+            "file_offset": 1776,
+            "sha256": "9de47e9742131c1d7ced7c3f33162623d182348331e2800611b9e9e2deea1a9e",
+            "evidence_id": "ev_44dd12cdcb585c31eb64b3a61b96fa9406813111e18b7ed5144c9a252e61edf5"
+          }
+        ],
+        "evidence_ids": [
+          "ev_8c91974e2183b0282937accf2fa11f7d9e21a7219efcfd25e0a4fbbec473d9d5",
+          "ev_86d7db629a2213f617232d0b4f1a1b3f7fca8f2bae69b4e4948c26970c86db8d",
+          "ev_87a00708a92191b333213d1b4b991eae7f8ef28c4a10ea1ea9ea6f8256232c59"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels."
+        ]
+      }
+    ],
+    "scope": "Original source bytes and static function recovery only; no vendor execution"
+  },
+  "tools": {
+    "upstream_commit": "fa87dd2aac3eaeb49875c54e93ec18c98cc92e4d",
+    "package_version": "6.4.0",
+    "server": {
+      "name": "rea",
+      "version": "6.4.0"
+    },
+    "node": "v26.9.0",
+    "ghidra": "12.1.4",
+    "heap": "768M",
+    "launcher_sha256": "d9d9ddf93ea61619fb20e619c218a004fb1f17e823f142f0be9f851ca7030480",
+    "runtime_sha256": "9c75ade7e87ed6e2cf3340f2b9d6ea91a3ebaa2f0322c5767ade550271e65c25",
+    "kind": "Single baseline analysis; no optimization adoption claim"
+  },
+  "source_base": {
+    "repository": "pastawithpesto/dji-studio-omarchy",
+    "worktree": "/home/violence/Work/dji-pthread-attributes-research-20261012",
+    "branch": "research/pthread-attributes-20261012",
+    "HEAD": "2f6b6cbef40551baffb8b0d24a54df16a9e50221",
+    "fresh_main": "07c36b496bc6bb4cd49806f55db7cc3b8078e7b0",
+    "check_utc": "2026-10-12T06:43:20.354272+00:00",
+    "main_ancestor": true,
+    "status": ""
+  },
+  "validation_script_sha256": "40f474093a38ad83f16d141f288e9d29233eaf085b61e2ac9e37e963ae5584be",
+  "limits": "Bounded original-byte static research and synthetic memory models, no DLL execution"
+}

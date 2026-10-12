@@ -1,0 +1,11 @@
+{
+  "initial_manifest_sha256": "0b96b36912ee4f971f72989d45d4813eb6a22c9ba17ada60496c3a8e95fb1643",
+  "initial_report_sha256": "869b8e6b686c73f7bdfc07beaba9604db33f40f0cc51116032da0a2ddd71b465",
+  "published_report_sha256": "902cbc7a34c9a2b0bbd19a841ea399cb3d46a5ab5358a695b7533721fa754f12",
+  "old": "Those rows include 24 padding bytes between the wrapper and an adjacent entry.\nThe model executes only the 8-byte wrapper and 218-byte helper spans.",
+  "new": "The two modeled spans contain 55 instruction rows. The intervening 24 bytes\ncontain 19 `int3` padding bytes and a separate 5-byte relative jump at\n`0x180001780`. That unexported entry is not assigned an original function name.\nThe model executes only the 8-byte wrapper and 218-byte helper spans.",
+  "reason": "The 24-byte interval includes a 5-byte jump; it is not all padding.",
+  "validation_changed": false,
+  "source_changed": false,
+  "created_utc": "2026-10-12T06:10:19.505595+00:00"
+}
