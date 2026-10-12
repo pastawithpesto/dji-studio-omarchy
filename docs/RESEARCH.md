@@ -1,6 +1,7 @@
 # Reverse engineering procedure
 
 Use REA with Ghidra where available.
+Read the [REA workflow and benchmark policy](REA-WORKFLOW.md).
 Use the latest upstream REA from the [official repository](https://github.com/morluto/rea).
 At task start and resume, fetch its default branch and update an owned
 installation to the newest upstream commit before new analysis.
