@@ -86,7 +86,7 @@ the DLL set, pair count, limits or noise rule to rescue a result.
    inconclusive if any DLL's baseline or candidate wall-time sample has a median
    absolute deviation greater than 10% of its median. Record workload changes
    that make runs incomparable. Keep the baseline active for inconclusive data.
-3. For complete comparable data below the noise limit, accept only if all checks
+3. For complete comparable data that passes the declared noise rule, accept only if all checks
    pass and the sum of all selected per-DLL wall-time medians improves by at
    least 10%. Require at least ceil(0.8*N) strictly faster candidate pairs for
    each DLL. Ties do not count as wins. No DLL's wall-time median may regress by
