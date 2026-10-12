@@ -20,7 +20,7 @@ Plan only. Keep this PR in draft while work is in progress.
 
 ## Review
 
-Follow [the review and status guide](../docs/PR-REVIEW.md).
+Follow [the review and status guide](https://github.com/pastawithpesto/dji-studio-omarchy/blob/main/docs/PR-REVIEW.md).
 The uploader arranges independent review and sends the evidence to root.
 The author must not approve their own work.
 For revmnds PRs, root records owner approval and `agent-review/verified`
