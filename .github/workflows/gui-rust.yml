@@ -52,7 +52,7 @@ jobs:
       QT_QPA_PLATFORM: offscreen
       QT_FORCE_STDERR_LOGGING: "1"
       QMAKE: /usr/bin/qmake6
-      CARGO_TARGET_DIR: ${{ runner.temp }}/gui-qt-target
+      CARGO_TARGET_DIR: /tmp/gui-qt-target
     steps:
       - name: Get source
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
