@@ -1,0 +1,906 @@
+[
+  {
+    "packet": "initial-author-erratum",
+    "matches": 50,
+    "total": 50,
+    "entries": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 5438,
+        "sha256": "a3a7804bb0c2011af14abb9837e8c82eb5741abd3f313488a2cac43a1e08c98c",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "coordination/latest-open-pr-claims.json",
+        "bytes": 33470,
+        "sha256": "6bb4981cb21b4720c3cdfbc7dbc95e0b175003626bd6ac6c425d030bfb0fa898",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "coordination/protocol.json",
+        "bytes": 3825,
+        "sha256": "b25a8f631b6e523daf34ab2f3d3a19d9ccb21151e13a8d204973f9c2d82480f5",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "extracted/1.0.0.30839/QuickLookHelper.dll",
+        "bytes": 128696,
+        "sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "native/AGENTS.md",
+        "bytes": 5440,
+        "sha256": "0374e8ecc89faa6398182700e6632bf20c30500db35ab417a67468f286ad72ae",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "native/CONTRIBUTING.md",
+        "bytes": 2505,
+        "sha256": "fc2c81b0421cbd09029c158fa87985f0b5b15cd3e07046054940c21dbd2c83fd",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "native/START-HERE.md",
+        "bytes": 1752,
+        "sha256": "09461d323442b92cb848af83a80e84d45ec382aea1f50b5d01527f1f386f31de",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "native/docs/RESEARCH.md",
+        "bytes": 2435,
+        "sha256": "6d31b218dbc96d3d45e0d6e715534b58999b1848e7732d6ab4ee0573437036c6",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "native/docs/STATUS.md",
+        "bytes": 2257,
+        "sha256": "f6e93677061b7146e82a674c54c924b44ba82ff41a81eaa97e9185978286bba1",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/ORIGINAL-OBJDUMP.txt",
+        "bytes": 1768221,
+        "sha256": "73021718dcb1cf909d45f64874d8fde0ee44485171d5d420d704e5c1e842ded6",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/ORIGINAL-PE-ACCOUNTING.json",
+        "bytes": 117935,
+        "sha256": "cc6005e2903a66bcf816229d57c2dd442c2bf17e8669c534432d508eb54b4688",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/SOURCE-BASE.json",
+        "bytes": 451,
+        "sha256": "eae880fe1a187aa2ef4b4d4996e7772d29e49d4e675636122e8db75568c3c3da",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/SOURCE.json",
+        "bytes": 453,
+        "sha256": "4f6b86b7bbe7fe4e1213a379ec8eb3f758a5daf71a6e733d26a153ea067e3797",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/exports-author/MANIFEST.json",
+        "bytes": 9444,
+        "sha256": "59e126d9751d08a5f7311cfcef8e8156372ba9f435cfa53ce1366b04fa476d68",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/exports-author/REPORT.md",
+        "bytes": 11353,
+        "sha256": "0fd7d707648cd4b072145376f2bbc137498decbee1826b1446959c206f237ceb",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/exports-author/findings.json",
+        "bytes": 7806,
+        "sha256": "b7ed6147ce98f2485d8c7c87ff3188dd10f6fcf0447eb1e329ce0d34bb61e081",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/MANIFEST.json",
+        "bytes": 6899,
+        "sha256": "1827ae94b511ed3e1d978b3f2d97d53f7e8769beeee9e5330369621514b1c481",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/ORIGINAL-CHECKS.json",
+        "bytes": 691043,
+        "sha256": "0295e09eef9b9cb52e10142bb69de5781cd5805fc6366ff544d73f75faf20ce2",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/PR21-CHECKPOINT.json",
+        "bytes": 15337,
+        "sha256": "81745dadf5a3926fca468771e2ad10cce15fdb758f072cbedd1f489715e62fa9",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/REPORT.md",
+        "bytes": 19118,
+        "sha256": "6214956a2ec40d459564d80735e23ac3a8a9332c7ce8f8c62e8bf9332c9c5579",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/WATCHDOG-FINAL.json",
+        "bytes": 1023,
+        "sha256": "144d064d482418598494d5d61909d145cffd3565c65a23de65193fb8b6b91223",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/findings.json",
+        "bytes": 49109,
+        "sha256": "90ee902fb200d42909b044eaf0aa7cfd7663cb0016d43eff98a957c9ea31716b",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/methods-author/MANIFEST.json",
+        "bytes": 94358,
+        "sha256": "5490f25e2c3f9721f9d4f5df44d30e75c4ed89f663ad453ce2c625569a8b601f",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/methods-author/REPORT.md",
+        "bytes": 7074,
+        "sha256": "bcbd53c6725910c17be80e36968c26b9a1b22f8369f43ac3b6b0d5b9df7cf7d8",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/methods-author/findings.json",
+        "bytes": 250996,
+        "sha256": "9dff9c372fd692ec37f23b4ef1b84a82e0fbc8415b06052f29374630c5e9d452",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800016ae/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "696c0dd9334a488069a2f6c733c91c27550ad21bed167fb6a426ecf49f6d312d",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800016ae/PSEUDO.json",
+        "bytes": 7874,
+        "sha256": "ceb3c30981c368a62d3dbf2d0182512fbbfff00ce54d526613c3501762c5b01a",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180001753/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "ccc8dcb5e23c6b882d87f6ceab40fbe981311d543640a4d609137edda8c40a81",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800025b0/ASSEMBLY.json",
+        "bytes": 38036,
+        "sha256": "071bc8c22ef3bb641bfa3717043e1680b25b8a8e7d4077cc4c4aee19bb838a50",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180002fb0/ASSEMBLY.json",
+        "bytes": 12451,
+        "sha256": "a24200aff4ba60874eb3b8213d509a8a51629b3a7950469192c52f874c6a4ee2",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180002fb0/PSEUDO.json",
+        "bytes": 9324,
+        "sha256": "6fa50a43f4e8aa5f82732dfe067d838036b8550873231b107e09e11e4ddfa50c",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b30/ASSEMBLY.json",
+        "bytes": 7515,
+        "sha256": "5aa2f585feb130cae52a706c54ef828fcd05cd18ef43eef2ccf97c4c2a60b282",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b30/PSEUDO.json",
+        "bytes": 7710,
+        "sha256": "018f0ed9fd4ef4c3804b5a51cc73dc3170af207c94ec61322710df4548e6206a",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b60/ASSEMBLY.json",
+        "bytes": 11857,
+        "sha256": "6d079a1bc39134a826f4c3d945cb41289f2f5dd7e370bad8476573a0e465c728",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b60/PSEUDO.json",
+        "bytes": 10034,
+        "sha256": "e1c21cf6f357f46de2df5aac1542b8e7db326663dc12d9ecc8fac8d41de2f6be",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180004ea0/ASSEMBLY.json",
+        "bytes": 8073,
+        "sha256": "5451c04e5f50e9c9c78dd39b5f6d71ae04e75b36c83b207e4d482692984c0f35",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180004ea0/PSEUDO.json",
+        "bytes": 7708,
+        "sha256": "37a4bf3df7884dad4010ec468aca8a94b794785049eb2a65d6113295ebabbba3",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800060f0/ASSEMBLY.json",
+        "bytes": 13238,
+        "sha256": "caa9ed03e6502e1f3964e5f6ff5c8bc9c2fda0ae1dfc38e4893edac1f20a794b",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800064d0/ASSEMBLY.json",
+        "bytes": 10539,
+        "sha256": "71b2d525383022c4fbfaf4af7b26dd39bc3a025d203e842cadc76834c2629f2e",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800064d0/PSEUDO.json",
+        "bytes": 9660,
+        "sha256": "c304012e2aab66dd26e6070630e91b2848d658d687baa125ce4d0ad3571b812d",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180006aa0/ASSEMBLY.json",
+        "bytes": 8720,
+        "sha256": "f3b7678b021626c8fee0d8ccdceee8a6d4e0a3a07a514bee9fd66722ac7ee095",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180006da0/ASSEMBLY.json",
+        "bytes": 12838,
+        "sha256": "2720b9d01fa3899d045fe85c0d00c34ef215717e1f6ae88472be8883b2940bb0",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000bb50/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "b51ee0883a62deb0365565f915ee0277c28c2282703c48139389ce9dec656da7",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9e2/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "99ef28102ad1d01929cc7689be2bae75046b893806699b5711750d5c6a32b0e3",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9e8/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "852eddd0443dad975eb8fc5b857a67a9115a918faa317cef768bf06198c78d35",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9f4/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "4f96cf6ce48d5a52580b1f9272724750502e47de5c4c63f8b9ac1fe6db24f2f1",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9fa/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "6901a994fce72f79e809674e49ad1141b195db62a1aa917fc9a901af06b0c91a",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000da00/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "e077c919dd13e5966d66bab8d1a84de42a9bb3cb8911746007b843307e455f24",
+        "role": "input",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/REPORT.md",
+        "bytes": 8169,
+        "sha256": "12835129d9e5d15f67bf07951947a9b7a5080d70367a60dd53b5f3cce12ccebf",
+        "role": "output",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/findings.json",
+        "bytes": 18805,
+        "sha256": "0bad4f4ff9c4088ce8b735b3b75082436c4ea7c34d02f31d5b565c6b6ee693c8",
+        "role": "output",
+        "group": "immutable_payloads",
+        "matches": true
+      }
+    ]
+  },
+  {
+    "packet": "initial-erratum-review",
+    "matches": 70,
+    "total": 70,
+    "entries": [
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/CLAIM-OBJDUMP.txt",
+        "bytes": 39475,
+        "sha256": "28bcd85a1737cef856702c844c9e393689d5f2a2fbfdf7ed9205384c157fec38",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/IDENTITY-CHECKS.json",
+        "bytes": 271872,
+        "sha256": "be3aaca984f638af758a503d3dcf32c926ff2efbeb0a90584ae2c6e417f5d60d",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/INBOX-FINAL.json",
+        "bytes": 119460,
+        "sha256": "2578958fb944518b90f49364b88a81d3365947b0437c4c746c1d798bd3fd20bb",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/INBOX-START.json",
+        "bytes": 118559,
+        "sha256": "3430f24ca835082a6a7bfdbd350101e69b02a8c52e10d17ae9cf7eec49eea1b6",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/JOIN-CHECKS.json",
+        "bytes": 3401,
+        "sha256": "aa5e346487063f49f50d9d34cc908d6ff71ea1e4c27e913cab4a0af41cd523cb",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/OPEN-PRS-FINAL.json",
+        "bytes": 46543,
+        "sha256": "04ca00a68a734a1f6e5be443c4642b5d5c364762c186026c46e0b47154039069",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/OPEN-PRS-START.json",
+        "bytes": 46543,
+        "sha256": "56f9652899496f57c49f027f97489d95ab6c74882353fe75ad6c1ecf409acf57",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/ORIGINAL-CHECKS.json",
+        "bytes": 44652,
+        "sha256": "9fcc86751eae5be20ae9ee7c5f2c10315909924a3ca5772a26e8571afd48d637",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/PR-PROGRESS-START.md",
+        "bytes": 1004,
+        "sha256": "e5664b76e5965220287060f4bd6dfb3f61ab6243e35efa282eea2f7adce7c4d0",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/PR21-FINAL.json",
+        "bytes": 1532,
+        "sha256": "0a93963ae03d99a43fa84eb799225985f1fbd397bcb23c39a222e209131cf72d",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/PR21-START.json",
+        "bytes": 1532,
+        "sha256": "0a93963ae03d99a43fa84eb799225985f1fbd397bcb23c39a222e209131cf72d",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/REPORT.md",
+        "bytes": 8698,
+        "sha256": "088186c5f35e086bc038e813582d8ce9c5498e0533310d6d569b59a51552feff",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/SOURCE-BASE.json",
+        "bytes": 475,
+        "sha256": "046f8cac4196d92a36b048fa48cacb091833cebf7c792892ffe9642f59aaed12",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/WATCHDOG-FINAL.json",
+        "bytes": 7575,
+        "sha256": "152a8ea620cfbd13665ea6023dd99dae45b54cc667fb6758f39f708e8c9b8da3",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/WATCHDOG-START.json",
+        "bytes": 7575,
+        "sha256": "9bdd8bb05f8ec13a3496a075ce1b387003797071e40143b6cbc1b6c4c88094a6",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/AGENTS.md",
+        "bytes": 5438,
+        "sha256": "a3a7804bb0c2011af14abb9837e8c82eb5741abd3f313488a2cac43a1e08c98c",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/coordination/REA-WORKFLOW.md",
+        "bytes": 8212,
+        "sha256": "13599676a8690041acd0531f06d57f013697d95c576c55ba5911cecc65d65757",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/coordination/protocol.json",
+        "bytes": 3825,
+        "sha256": "b25a8f631b6e523daf34ab2f3d3a19d9ccb21151e13a8d204973f9c2d82480f5",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/native/AGENTS.md",
+        "bytes": 5440,
+        "sha256": "0374e8ecc89faa6398182700e6632bf20c30500db35ab417a67468f286ad72ae",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/native/AUTHORS.md",
+        "bytes": 3249,
+        "sha256": "7497e17563284e0b5ed6b3517af2c040da784880814e1dc776728acd6e871c4b",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/native/CONTRIBUTING.md",
+        "bytes": 2505,
+        "sha256": "fc2c81b0421cbd09029c158fa87985f0b5b15cd3e07046054940c21dbd2c83fd",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/native/START-HERE.md",
+        "bytes": 1752,
+        "sha256": "09461d323442b92cb848af83a80e84d45ec382aea1f50b5d01527f1f386f31de",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/native/docs/RESEARCH.md",
+        "bytes": 2435,
+        "sha256": "6d31b218dbc96d3d45e0d6e715534b58999b1848e7732d6ab4ee0573437036c6",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/context/native/docs/STATUS.md",
+        "bytes": 2257,
+        "sha256": "f6e93677061b7146e82a674c54c924b44ba82ff41a81eaa97e9185978286bba1",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/findings.json",
+        "bytes": 25659,
+        "sha256": "257cfa3808b3568425829def7d079689878bf53b6da706224f2f477c0a737c65",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-erratum-review/review_check.py",
+        "bytes": 7862,
+        "sha256": "30430349bff2bce78054bdfa73075dafd348d61f50c5d6f207d7437791011ec6",
+        "group": "immutable_payloads",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/REPORT.md",
+        "bytes": 8169,
+        "sha256": "12835129d9e5d15f67bf07951947a9b7a5080d70367a60dd53b5f3cce12ccebf",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/findings.json",
+        "bytes": 18805,
+        "sha256": "0bad4f4ff9c4088ce8b735b3b75082436c4ea7c34d02f31d5b565c6b6ee693c8",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/MANIFEST.json",
+        "bytes": 30934,
+        "sha256": "71e8e36bb819c2ddbd716135933cab8531e788f696c595061c3220a5425bc2ee",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/REPORT.md",
+        "bytes": 19118,
+        "sha256": "6214956a2ec40d459564d80735e23ac3a8a9332c7ce8f8c62e8bf9332c9c5579",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/findings.json",
+        "bytes": 49109,
+        "sha256": "90ee902fb200d42909b044eaf0aa7cfd7663cb0016d43eff98a957c9ea31716b",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/independent-review/MANIFEST.json",
+        "bytes": 6899,
+        "sha256": "1827ae94b511ed3e1d978b3f2d97d53f7e8769beeee9e5330369621514b1c481",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/exports-author/REPORT.md",
+        "bytes": 11353,
+        "sha256": "0fd7d707648cd4b072145376f2bbc137498decbee1826b1446959c206f237ceb",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/exports-author/findings.json",
+        "bytes": 7806,
+        "sha256": "b7ed6147ce98f2485d8c7c87ff3188dd10f6fcf0447eb1e329ce0d34bb61e081",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/exports-author/MANIFEST.json",
+        "bytes": 9444,
+        "sha256": "59e126d9751d08a5f7311cfcef8e8156372ba9f435cfa53ce1366b04fa476d68",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/methods-author/REPORT.md",
+        "bytes": 7074,
+        "sha256": "bcbd53c6725910c17be80e36968c26b9a1b22f8369f43ac3b6b0d5b9df7cf7d8",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/methods-author/findings.json",
+        "bytes": 250996,
+        "sha256": "9dff9c372fd692ec37f23b4ef1b84a82e0fbc8415b06052f29374630c5e9d452",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/methods-author/MANIFEST.json",
+        "bytes": 94358,
+        "sha256": "5490f25e2c3f9721f9d4f5df44d30e75c4ed89f663ad453ce2c625569a8b601f",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000bb50/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "b51ee0883a62deb0365565f915ee0277c28c2282703c48139389ce9dec656da7",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180004ea0/ASSEMBLY.json",
+        "bytes": 8073,
+        "sha256": "5451c04e5f50e9c9c78dd39b5f6d71ae04e75b36c83b207e4d482692984c0f35",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180004ea0/PSEUDO.json",
+        "bytes": 7708,
+        "sha256": "37a4bf3df7884dad4010ec468aca8a94b794785049eb2a65d6113295ebabbba3",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800016ae/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "696c0dd9334a488069a2f6c733c91c27550ad21bed167fb6a426ecf49f6d312d",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800016ae/PSEUDO.json",
+        "bytes": 7874,
+        "sha256": "ceb3c30981c368a62d3dbf2d0182512fbbfff00ce54d526613c3501762c5b01a",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180006aa0/ASSEMBLY.json",
+        "bytes": 8720,
+        "sha256": "f3b7678b021626c8fee0d8ccdceee8a6d4e0a3a07a514bee9fd66722ac7ee095",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180001753/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "ccc8dcb5e23c6b882d87f6ceab40fbe981311d543640a4d609137edda8c40a81",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800025b0/ASSEMBLY.json",
+        "bytes": 38036,
+        "sha256": "071bc8c22ef3bb641bfa3717043e1680b25b8a8e7d4077cc4c4aee19bb838a50",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180006da0/ASSEMBLY.json",
+        "bytes": 12838,
+        "sha256": "2720b9d01fa3899d045fe85c0d00c34ef215717e1f6ae88472be8883b2940bb0",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9f4/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "4f96cf6ce48d5a52580b1f9272724750502e47de5c4c63f8b9ac1fe6db24f2f1",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000da00/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "e077c919dd13e5966d66bab8d1a84de42a9bb3cb8911746007b843307e455f24",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800064d0/ASSEMBLY.json",
+        "bytes": 10539,
+        "sha256": "71b2d525383022c4fbfaf4af7b26dd39bc3a025d203e842cadc76834c2629f2e",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800064d0/PSEUDO.json",
+        "bytes": 9660,
+        "sha256": "c304012e2aab66dd26e6070630e91b2848d658d687baa125ce4d0ad3571b812d",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180002fb0/ASSEMBLY.json",
+        "bytes": 12451,
+        "sha256": "a24200aff4ba60874eb3b8213d509a8a51629b3a7950469192c52f874c6a4ee2",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180002fb0/PSEUDO.json",
+        "bytes": 9324,
+        "sha256": "6fa50a43f4e8aa5f82732dfe067d838036b8550873231b107e09e11e4ddfa50c",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b30/ASSEMBLY.json",
+        "bytes": 7515,
+        "sha256": "5aa2f585feb130cae52a706c54ef828fcd05cd18ef43eef2ccf97c4c2a60b282",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b30/PSEUDO.json",
+        "bytes": 7710,
+        "sha256": "018f0ed9fd4ef4c3804b5a51cc73dc3170af207c94ec61322710df4548e6206a",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b60/ASSEMBLY.json",
+        "bytes": 11857,
+        "sha256": "6d079a1bc39134a826f4c3d945cb41289f2f5dd7e370bad8476573a0e465c728",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/180003b60/PSEUDO.json",
+        "bytes": 10034,
+        "sha256": "e1c21cf6f357f46de2df5aac1542b8e7db326663dc12d9ecc8fac8d41de2f6be",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9fa/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "6901a994fce72f79e809674e49ad1141b195db62a1aa917fc9a901af06b0c91a",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9e2/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "99ef28102ad1d01929cc7689be2bae75046b893806699b5711750d5c6a32b0e3",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/18000d9e8/ASSEMBLY.json",
+        "bytes": 6765,
+        "sha256": "852eddd0443dad975eb8fc5b857a67a9115a918faa317cef768bf06198c78d35",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/procedures/1800060f0/ASSEMBLY.json",
+        "bytes": 13238,
+        "sha256": "caa9ed03e6502e1f3964e5f6ff5c8bc9c2fda0ae1dfc38e4893edac1f20a794b",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/quicklookhelper-rea640-20261011/procedures/18000158c/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "c4eaff197fc4559acd8be06bc09be56700cdb593b920f76b54eea63e8accd376",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/quicklookhelper-rea640-20261011/procedures/1800016a9/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "e46150cf0819fbbe67cee12a497b16f6439889b14d902d6f2595288b84874b71",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/quicklookhelper-rea640-20261011/procedures/18000143d/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "b5492d2b5c859b7ce5835e6091173b1a1c4829a68d8594311a5c378483df07f8",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/quicklookhelper-rea640-20261011/procedures/1800013b1/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "d4de5f01c98c0391978cf561d1434a1ec74cb3a20e6f574d24f605fea0aa7375",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/quicklookhelper-rea640-20261011/procedures/1800017da/ASSEMBLY.json",
+        "bytes": 6717,
+        "sha256": "29b26a1f3e80fb5a53f797b22a84c516f34b6cfcde04568de1ce9e273148e65f",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/QuickLookHelper.dll",
+        "bytes": 128696,
+        "sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b",
+        "group": "frozen_input_witnesses",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/REPORT.md",
+        "bytes": 8169,
+        "sha256": "12835129d9e5d15f67bf07951947a9b7a5080d70367a60dd53b5f3cce12ccebf",
+        "group": "candidate_hashes",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/findings.json",
+        "bytes": 18805,
+        "sha256": "0bad4f4ff9c4088ce8b735b3b75082436c4ea7c34d02f31d5b565c6b6ee693c8",
+        "group": "candidate_hashes",
+        "matches": true
+      },
+      {
+        "path": "reconstruction/quicklookhelper-rea640-20261011/initial-author-erratum/MANIFEST.json",
+        "bytes": 30934,
+        "sha256": "71e8e36bb819c2ddbd716135933cab8531e788f696c595061c3220a5425bc2ee",
+        "group": "candidate_hashes",
+        "matches": true
+      }
+    ]
+  }
+]
