@@ -1,0 +1,34 @@
+{
+  "reference_packet": "reconstruction/root-mlt-complete-rea640-20261011/reference-deque",
+  "reference_manifest_file": "original-reference-MANIFEST.json",
+  "reference_manifest_sha256": "f3eea0eb95fd1858db1bc3325c40998ed756f61407b59cfcde6828210b9d826c",
+  "original_dll_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+  "environment": "Native original DLL called through Wine 11.17 with native MSVC dependencies and Wine builtin UCRT/OS services.",
+  "case_file": {
+    "path": "original-DEQUE-CASES.json",
+    "sha256": "8fa90ecdd9a82cde0f1602e62b6f6c55b2de613d21230c7c108f40e678281509",
+    "records": 481
+  },
+  "raw_output_file": {
+    "path": "original-WINE-DEQUE-FINAL.jsonl",
+    "sha256": "5cdc5c19d5690419a53fbb60014f76ac56caf067d383de40a8aa8635a601741e",
+    "records": 481
+  },
+  "groups": {
+    "null": 24,
+    "pointer": 365,
+    "int": 32,
+    "double": 32,
+    "sorted": 28
+  },
+  "explicit_limits": [
+    "Typed int groups compare only lower32 value bits and do not read upper stack bytes.",
+    "Pointer values are opaque and are never dereferenced.",
+    "Double and pointer groups use fully initialized eight-byte values.",
+    "init.created and close.completed are event metadata, not integer return values.",
+    "The sorted comparator compares low-byte keys and records existing/candidate order."
+  ],
+  "omitted_artifacts": [
+    "The reference C caller and executable remain in the root evidence packet. This fixture copies only the immutable records and manifest. No reference program code is ported into the Rust application."
+  ]
+}
