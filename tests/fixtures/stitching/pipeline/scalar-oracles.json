@@ -1,0 +1,26 @@
+{
+  "provenance": {
+    "build": "DJI Studio 1.0.0.30839",
+    "original_source": "extracted/1.0.0.30839/stitch_with_sym.dll",
+    "original_source_sha256": "82c9e7f0c51b5a2d7c13597022326bdaee2dfd92824bd67790336029d55a67a8",
+    "reviewed_contract_sha256": "844661a879fc91c77907685a7821588f61039206b181a01d13b8c84bdec1414f",
+    "independent_review_sha256": "2c4d8f548916a01d809f5617ce04cbf94c20dca245b742faf2465b2fd7151bb6",
+    "independent_scalar_oracles_path": "sol-ghidra-review/stitching-rust-swarm-20261011-2107/002-independent-scalar-oracles.json",
+    "independent_scalar_oracles_sha256": "587940dc1429bb91468e340ab7bec5641886149f86977d66769f2a88186869d3",
+    "method": "Exact binary-rational cases and source-ordered binary32 oracle results. These are scalar equations, not GPU or Windows observations."
+  },
+  "linear_exact_output_bits": ["3f000000", "00000000", "3f000000", "3f000000"],
+  "band_exact_weight_bits": ["3f000000", "3f000000"],
+  "band_low_cap_probe_weight_bits": ["3f800000", "3f466666"],
+  "buffer_exact": {"mask_index": 7, "current_y_bits": "40600000"},
+  "band_color_four_component_output_bits": ["3f800000", "40933333", "41033333", "413ccccc"],
+  "gaussian_constant_output_bits": ["3f7fffaf", "3f7fffaf", "3f7fffaf", "3f7fffaf"],
+  "gaussian_asymmetric_output_bits": ["3bf39c60", "3bf39c60", "3bf39c60", "3bf39c60"],
+  "independent_derivations": {
+    "band_low_cap_probe": "len=400; floor(len/2)=200; low length caps at110 and has endpoints145..255; current_y=145 gives low weight1. High length uses band_step200 and endpoints100..300; 1-binary32(45/200) has bits3f466666.",
+    "band_color_four_component": "Weights are low_left=1 and high_left=0. Low mix is [1,1,1,1]. High mix selects [0,2,4,6]. Apply binary32 1.8 and add the low mix in source order; expected bits are listed above. The alpha component is included.",
+    "gaussian_constant": "The reviewed exact decimal polynomial is199999/200000. Source-ordered binary32 accumulation yields bits3f7fffaf.",
+    "gaussian_asymmetric": "The reviewed source-ordered binary32 oracle uses the pinned 25 exact binary-rational samples and yields bits3bf39c60 per component."
+  },
+  "tolerance": "Zero for each listed binary32 result."
+}
