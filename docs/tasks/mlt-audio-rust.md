@@ -38,3 +38,21 @@ boundaries and explicit Rust buffer policy, run debug/release/fmt/Clippy, then
 obtain independent exact-commit review and milestone. Preserve original names
 and other authors' files. No entireDLL, graph/thread/plugin, UI/media/Windows
 parity, merge or release claim.
+
+## Implemented candidate
+
+Independent exact contract approval:
+f39f754a06d779d7381fd90014ee4ac4a1cb9c720113e1a19b8a9e38c676ed61.
+Contract: e24341b731c2c75701460e00b59f07fa24710231e929c6fc3ec929144e7ff8af.
+The three exact-name APIs are implemented in Rust. All1364 original cases match
+in debug and release. Six tests pass in each profile, including safe atomic
+bounds errors, unused-count bypass, distinct wrapping count paths and prefix
+preservation. Formatting and test Clippy with warnings denied pass.
+
+The source sample timing conversion uses INT64_MIN for masked invalid values.
+The Rust code checks the source conversion interval before casting. Its volume
+loop includes NaN gain, and the clear byte count remains independent of loop
+count. Zero byte count can occur after wrapping even for INT32_MIN samples.
+AudioBufferError and its byte-count fields are independent safe Rust policy.
+No pointer, floating-exception flag, arbitrary rounding-mode or C ABI parity is
+claimed. Exact source code review and milestone verification are still required.
