@@ -1,0 +1,247 @@
+{
+  "purpose": "Clone-portable selected evidence. Full local packet remains immutable outside the source repository.",
+  "source_sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1",
+  "static_contract_review_sha256": "24c6336adf1698ecf12d26132c5449c20b72098cf0d03c97f0e6060c0fe54d0c",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4822,
+      "sha256": "a12dc9fc77a401ef89bd3467496d83840c7f109adbeca83e29a22a661c940d05"
+    },
+    {
+      "path": "author-packet-manifest.json",
+      "bytes": 16977,
+      "sha256": "8f6603278c37329d44d11d77ccc057125824d2ffdd877a2f93dc1e3bb866fbb9"
+    },
+    {
+      "path": "contract.md",
+      "bytes": 7833,
+      "sha256": "5e0bf31515b7630513a05ba6ca9c28328863de6106d7c9fed51746ffb21958f5"
+    },
+    {
+      "path": "original-byte-capture.json",
+      "bytes": 9163,
+      "sha256": "fe1bc5388dd94552c2aad4ba075df859c3f89903efb60f4857b0405da18061c4"
+    },
+    {
+      "path": "pdata.json",
+      "bytes": 783,
+      "sha256": "78f88a05c6f3863a99df5205c28600c973f706dd67d66bcecc5b2e945ac12def"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 21572,
+      "sha256": "dd4b3a6f029958b01dc31ce181ca8501a8a03d42b211c68b9d8f0386871deb73"
+    },
+    {
+      "path": "rea/BYTE-CHECKS.json",
+      "bytes": 5420,
+      "sha256": "af6a1291c2c4679ced65111bda38a1c8029c576ea229b4d75513718a251db242"
+    },
+    {
+      "path": "rea/CombineCRC64/ASSEMBLY.json",
+      "bytes": 15629,
+      "sha256": "1ae59de8162de3e03cb572d44b1adae064e75fd47d5a6e13c9359299ec3ee05b"
+    },
+    {
+      "path": "rea/CombineCRC64/INFO.json",
+      "bytes": 13692,
+      "sha256": "392306f1ceb92a944057e88388007ff621dd5e3e268c7ad8f05a977f9ede4706"
+    },
+    {
+      "path": "rea/CombineCRC64/PSEUDO.json",
+      "bytes": 12314,
+      "sha256": "22ff325a82256085b707fc96bd74e4b6fbd36befda8d346e892f8aca4e057dc7"
+    },
+    {
+      "path": "rea/CombineCRC64-body-PROVIDER-BYTES.json",
+      "bytes": 9894,
+      "sha256": "7c73483081e0c59e2a3cf6d6a66b51fcbfad3da68946ac3dff1feb65f72ee6f9"
+    },
+    {
+      "path": "rea/CombineCRC64-jump-1b4640-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "586ccc86620d0f8737560301cec2370ff872a838aedc9b9149786e7f890fef9a"
+    },
+    {
+      "path": "rea/CombineCRC64-jump-55c4-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "d178ce380e3aff487e1a841a2a39890ad66c56ff20e8ca7e0c0709d47bd151fd"
+    },
+    {
+      "path": "rea/CombineCRC64-jump-61bd-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "df73659a8b1991dff4b1ae78a7286172bbf02e4c3c5c4582a62d1c87aa919a2d"
+    },
+    {
+      "path": "rea/CombineCRC64-jump-800a0-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "8ab3f527e54baa29a070b2029a46a946f965bfd5f6a765931d15c20046ceace3"
+    },
+    {
+      "path": "rea/ComputeCRC64/ASSEMBLY.json",
+      "bytes": 16671,
+      "sha256": "a217c8b659e30e641dd57bd7a35240dc581e99e639d8ec09aafbd0e804f6cc74"
+    },
+    {
+      "path": "rea/ComputeCRC64/INFO.json",
+      "bytes": 9760,
+      "sha256": "2f0b7f76a14befd3b512b5db5bc4105a5189177f22c327227454b9ce18abdda3"
+    },
+    {
+      "path": "rea/ComputeCRC64/PSEUDO.json",
+      "bytes": 13100,
+      "sha256": "08a08e0dd88af8cd043a8ac9b4444c2bcd4c53a3347cb9f1109245a30944fb3c"
+    },
+    {
+      "path": "rea/ComputeCRC64-body-PROVIDER-BYTES.json",
+      "bytes": 9886,
+      "sha256": "c111af69aad129eae7e758a8060d7bdb5c6656d220048c2b91076f7e3ed65ad3"
+    },
+    {
+      "path": "rea/ComputeCRC64-jump-1b4610-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "35c2a69dccf9d9e178a67a9e7fe9ad02f546225b29f25f78e2e7bc5e17842e60"
+    },
+    {
+      "path": "rea/ComputeCRC64-jump-80160-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "cedd6950bf34b8f8d2e9844256fc40369f7ce9ee74f8dc4bd13c69526423e7f4"
+    },
+    {
+      "path": "rea/ComputeCRC64-jump-c9a0-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "a49e3ea992a4eb22ec5d91eb0f38e98e49aab05bfd968fa2cc2fb01fd78c5a3c"
+    },
+    {
+      "path": "rea/ComputeCRC64-jump-d878-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "7072245b66425c7b1f6f5ce03646a251ca15796125ce49f8c030a43a4615f04e"
+    },
+    {
+      "path": "rea/RESULT.json",
+      "bytes": 558,
+      "sha256": "425fc31b73bb55ccc9b063f2015f162f45092afde62b828848bcbfceba3eaac8"
+    },
+    {
+      "path": "rea/SERVER.json",
+      "bytes": 556,
+      "sha256": "c6c8f996af5824f2566b41089a722ee9ac6aff8609b48ba956d191210e73c4fa"
+    },
+    {
+      "path": "rea/matrix-square/ASSEMBLY.json",
+      "bytes": 8947,
+      "sha256": "5216f5df18baa2f1d4b77ad04d8e062a4bf425dce07b40ff9c7f350bf15a0a82"
+    },
+    {
+      "path": "rea/matrix-square/INFO.json",
+      "bytes": 9244,
+      "sha256": "9436778d322eb359a74bb0b2ac7a65d12b4f4816533a7b60c2ec93cf1be28d57"
+    },
+    {
+      "path": "rea/matrix-square/PSEUDO.json",
+      "bytes": 8852,
+      "sha256": "b648a228edc8fb80c1600bec292e63eb1a41ec6b9e1f3436e473d532983c86dd"
+    },
+    {
+      "path": "rea/matrix-square-PROVIDER-BYTES.json",
+      "bytes": 8028,
+      "sha256": "097c27533959419a6cfe36f7a9f59babe5edf687be3ef768b4d9c22e48a01407"
+    },
+    {
+      "path": "rea/matrix-times/ASSEMBLY.json",
+      "bytes": 8115,
+      "sha256": "9996fb50dcedf512d7b77e95ac2c6e689b4ba39838c241de678377e109635169"
+    },
+    {
+      "path": "rea/matrix-times/INFO.json",
+      "bytes": 9244,
+      "sha256": "48fae4978ed9bb9737a82efad9f38a7f29f303e1b70fd8e25032210e3062e593"
+    },
+    {
+      "path": "rea/matrix-times/PSEUDO.json",
+      "bytes": 8422,
+      "sha256": "23b3b8c3bbb3203f943b5b6f82350f37b37590523a712ff7679da5a5d1b0c17f"
+    },
+    {
+      "path": "rea/matrix-times-PROVIDER-BYTES.json",
+      "bytes": 7732,
+      "sha256": "aaa9bdbeedec7e0df61bd91569d475de223ff403a53cc643eb8df5a7d44f0ebe"
+    },
+    {
+      "path": "rea/table-generator/ASSEMBLY.json",
+      "bytes": 20315,
+      "sha256": "d6a0456fcb85d124dc659f2aa6698e0a5e37c6e4441f5ddcd8b04d7d02284f8b"
+    },
+    {
+      "path": "rea/table-generator/INFO.json",
+      "bytes": 10748,
+      "sha256": "c86c0f39ca147c862249bdbb88a3c4e0fd9aafbc453cf541f372dbcdf59ac976"
+    },
+    {
+      "path": "rea/table-generator/PSEUDO.json",
+      "bytes": 15248,
+      "sha256": "d484ff5ed3731cfa41604305bfc0bf210ad2d399019652d36e43551c9262513d"
+    },
+    {
+      "path": "rea/table-generator-PROVIDER-BYTES.json",
+      "bytes": 10742,
+      "sha256": "2e3caab7cd9408c16d2f008fcd13bc31decb11cee6c618e1bd01c8f32009ea6a"
+    },
+    {
+      "path": "rea/table-init/ASSEMBLY.json",
+      "bytes": 8292,
+      "sha256": "6a15cd72a2335291699bd5bb11977299c3a64126d8a0af9b5dab814bac5a9200"
+    },
+    {
+      "path": "rea/table-init/INFO.json",
+      "bytes": 10293,
+      "sha256": "42c56c7aaf6840ddfe246c1f22c6e7cf8da00949fbdd9785680fbef07797a0d1"
+    },
+    {
+      "path": "rea/table-init/PSEUDO.json",
+      "bytes": 8651,
+      "sha256": "c562cab3b9b0eb69c9f05f522a43258a781c33bbd25bb4d9025c24a48903b525"
+    },
+    {
+      "path": "rea/table-init-PROVIDER-BYTES.json",
+      "bytes": 7628,
+      "sha256": "1f8dbb51b36136eb1f5b90e182f277129497e8df3dd23530272616eb62e805f1"
+    },
+    {
+      "path": "rea/table-init-jump-PROVIDER-BYTES.json",
+      "bytes": 7562,
+      "sha256": "a34deea25d116aca70401f50ebea9bb8a79a6b0ecc859e278609b85f40303d6f"
+    },
+    {
+      "path": "rea/table-init-pointer-PROVIDER-BYTES.json",
+      "bytes": 7586,
+      "sha256": "1bbfbfc4f18d96815a5be88f59b2eb7956a8d703da15ddd34e1384bdd6d11d3d"
+    },
+    {
+      "path": "runtime-loader-manifest.json",
+      "bytes": 14994,
+      "sha256": "b3d03808aba2cc5ad5b5a8f09802791dc23281b5fbb16de3f580213f3dad6cc7"
+    },
+    {
+      "path": "runtime-trace-receipt.json",
+      "bytes": 3249,
+      "sha256": "c945b0b1e5fc9a493e7f2a10ebb384ae72a4353c3007438455f884ff8c450209"
+    },
+    {
+      "path": "static-contract-review.json",
+      "bytes": 4079,
+      "sha256": "24c6336adf1698ecf12d26132c5449c20b72098cf0d03c97f0e6060c0fe54d0c"
+    },
+    {
+      "path": "static-contract-review.md",
+      "bytes": 2830,
+      "sha256": "793dd1ff6c8a02a9c1f043eadcc8fa8701e817115f6c74d7921db7db78934e76"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 5956,
+      "sha256": "d37311ce68e433c09fbeb5baf615db8a357b5a0bd8993050065b7896fbf817f9"
+    }
+  ]
+}
