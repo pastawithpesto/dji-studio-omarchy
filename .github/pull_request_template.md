@@ -1,5 +1,10 @@
 <!-- work-claim {"owner":"YOUR_LOGIN","paths":["docs/tasks/REPLACE.md"],"task":"REPLACE"} -->
 
+Write for human reviewers first.
+Follow [the GitHub writing rules](https://github.com/pastawithpesto/dji-studio-omarchy/blob/main/docs/GITHUB-COMMUNICATION.md).
+Use short sentences and consistent terms.
+Put extra agent details under **Note for LLMs**.
+
 ## Task reservation
 
 Owner: @YOUR_LOGIN
