@@ -1,0 +1,750 @@
+{
+  "fixture_kind": "approved_static_contract_cases",
+  "reference_build": "1.0.0.30839",
+  "original_source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+  "contract_packet": {
+    "path": "reconstruction/root-mlt-complete-rea640-20261011/luna-property-container/02-contracts",
+    "manifest_sha256": "677048dd35f52ba14b3170fe7b0d3fe22eb1f818b2ed2896bf353718452c2c48",
+    "catalog_sha256": "a475bf83886b5e8b5850c1d39975533669e318fe997dc7160671619c60f58e6b",
+    "supported_contracts_sha256": "e6ac14123bf402aee2a4c8be0497a157f0966c734fb1666e13fa7a76545090fe",
+    "insert_transfer_supplement_sha256": "e80c1cbe7fc57dd7892c7b7bda53e80380a4edff7693bd58a73aa14872c52120"
+  },
+  "independent_review": {
+    "path": "reconstruction/root-mlt-complete-rea640-20261011/contract-review/002-property-container/REVIEW.json",
+    "sha256": "0d37a6244d9a923c3a1fbf1bd8917dde83479362be3df5653ade171a4640076a",
+    "review_manifest_sha256": "949ac2a89b80f48e377f2f708ffab17f46b44e4a15e94ffd7884c127e185737c",
+    "approved_api_names": [
+      "mlt_deque_close",
+      "mlt_deque_count",
+      "mlt_deque_init",
+      "mlt_deque_insert",
+      "mlt_deque_insert_at",
+      "mlt_deque_peek",
+      "mlt_deque_peek_back",
+      "mlt_deque_peek_back_double",
+      "mlt_deque_peek_back_int",
+      "mlt_deque_peek_front",
+      "mlt_deque_peek_front_double",
+      "mlt_deque_peek_front_int",
+      "mlt_deque_pop_back",
+      "mlt_deque_pop_back_double",
+      "mlt_deque_pop_back_int",
+      "mlt_deque_pop_front",
+      "mlt_deque_pop_front_double",
+      "mlt_deque_pop_front_int",
+      "mlt_deque_push_back",
+      "mlt_deque_push_back_double",
+      "mlt_deque_push_back_int",
+      "mlt_deque_push_front",
+      "mlt_deque_push_front_double",
+      "mlt_deque_push_front_int",
+      "mlt_deque_remove_at"
+    ]
+  },
+  "limits": [
+    "Static-contract cases only. Root original-DLL sequence fixtures are pending and must be compared before final review.",
+    "Normal-return branches and same-kind typed operations only.",
+    "Pointer ownership, callback reentrancy, C prototype, STL allocation and exception behavior, malformed inner Impl, and Windows ABI are excluded.",
+    "Tagged entries and explicit safe errors are Rust adaptations, not original MLT behavior."
+  ],
+  "api_exports": [
+    {
+      "name": "mlt_deque_close",
+      "address": "0x180017200",
+      "ordinal": 1916,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_ebc85a1e76c6e6a618c0d1506665df85a217638cd550de13435ba2c6b9d9de75",
+      "assembly_sha256": "84bd2337ae8238d610a7590ce75b1415374101e20a90f951dc51ac7909609dfe",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017200",
+            "end": "0x180017224"
+          }
+        ],
+        "body_bytes": 37,
+        "body_sha256": "513728b9d29712039bc716234b09bbdc679244f7f4751ad0255134c890f2cc44",
+        "instruction_count": 12,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017200/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper is accepted. The wrapper and Impl storage are released. No user-value cleanup is visible; pointer payload ownership remains unknown."
+    },
+    {
+      "name": "mlt_deque_count",
+      "address": "0x180017230",
+      "ordinal": 1917,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_77ef7d4fe1de67155fe2f130cd6a2e12911bc00d674bdd5158d15d8af5332856",
+      "assembly_sha256": "2ee2f47e4e6bd0a45271306a35bd4dfad4a2edecac63521a7d12a56fd946b796",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017230",
+            "end": "0x18001723c"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "3fe45dccbfa1d98915b652fe6fbc1b662cae0d48a9dadca5e473e2ec78a5fda9",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017230/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 0. Otherwise read the internal qword count and expose its signed low dword."
+    },
+    {
+      "name": "mlt_deque_init",
+      "address": "0x180017240",
+      "ordinal": 1918,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_a91c7217a241508e9e65e10e14ce2a363c530d1c5e80de1ee29a5f977cf91fda",
+      "assembly_sha256": "2082acb8d78cd20f7c17c28445045e319da85594dc54ed27ed9b3068a04dee18",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017240",
+            "end": "0x180017263"
+          }
+        ],
+        "body_bytes": 36,
+        "body_sha256": "75e95240d8b40ceff6242d1f58b59b2cd1891ffe04e65eb04692f6a6f4a9511a",
+        "instruction_count": 10,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017240/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Construct the wrapper and Impl. No exported allocation-failure result is established. Rust try_reserve failure is an independent safety error."
+    },
+    {
+      "name": "mlt_deque_insert",
+      "address": "0x180017270",
+      "ordinal": 1919,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_9998e1ee7e45b896f2ae6d6ed19870a4ea2657f6349c3708a513f4ee8b3fda87",
+      "assembly_sha256": "523e44ecbaf8d9e6c3a480bfdd536cbf16f36124d66e3f0a4850d956d313008c",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017270",
+            "end": "0x180017283"
+          }
+        ],
+        "body_bytes": 20,
+        "body_sha256": "aa641ebb4af18479962d82bcb26e96dad0dbdfb21fa45f121aeeef7d500f141d",
+        "instruction_count": 6,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017270/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or comparator returns 1. Binary search calls comparator(existing first qword, candidate). Negative advances the lower bound; zero or positive narrows the upper bound. Insert before the first nonnegative result, including before equals; return 0."
+    },
+    {
+      "name": "mlt_deque_insert_at",
+      "address": "0x180017290",
+      "ordinal": 1920,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_04be9a408691fdc79287f40ac2d8acf459531653ea96ab72027f9b691fd92b2a",
+      "assembly_sha256": "f7d44127d205fea7f09f52182adc2c3b6b595383732c95ab999bb126b634c776",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017290",
+            "end": "0x18001729d"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "0ed1de9283cb4ef50672a5a05a25703b44910c283ca9b03eda3c03dffdfe319f",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017290/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Accept signed index 0 through count inclusive, insert pointer payload and return 0. Invalid index returns 1. Null payload is accepted."
+    },
+    {
+      "name": "mlt_deque_peek",
+      "address": "0x1800172a0",
+      "ordinal": 1921,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_20e5137ab8ef908358f76753414b370a3a9c65014a367cef6347aa5ed0c51e94",
+      "assembly_sha256": "55a67a0655b5ecdb684f760251b008e0728311113d4fdf00aff266c1e8d60540",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800172a0",
+            "end": "0x1800172ac"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "e735a2b0e133c5e0994abf0b519eddc12ef0bff536249c5186ede027db1929d1",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800172a0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or signed index outside 0 <= index < count returns null. Valid index returns the pointer payload. No element tag exists in MLT."
+    },
+    {
+      "name": "mlt_deque_peek_back",
+      "address": "0x1800172b0",
+      "ordinal": 1922,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_67fa180017ca1102fdd723f0c4c702cce5537f845e48241c8d39d698bb40c552",
+      "assembly_sha256": "3eaeb32b124be705df46057c819904e9f2b72ac32e833b04239adb14aa260e6c",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800172b0",
+            "end": "0x1800172bc"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "824e84500b83b869c47c2b54f2fb60021430ab0dc865faf2c692aca48fe3e141",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800172b0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns null. Otherwise read the back payload as an eight-byte pointer."
+    },
+    {
+      "name": "mlt_deque_peek_back_double",
+      "address": "0x1800172c0",
+      "ordinal": 1923,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_5a58ffcba07c3e3796d14282028817f7d6107c92c1ab5f198680c47fa9458296",
+      "assembly_sha256": "5fc5229896965a0dab3b0ec9aa6ddc0ce7be1534fe0fa20c93dd5d51944ae330",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800172c0",
+            "end": "0x1800172cd"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "febd81c3106e189748b5bc5b5162e5f49abab66beabeb6401df3b2545e466e9b",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800172c0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0.0. Otherwise read eight payload bytes as a double."
+    },
+    {
+      "name": "mlt_deque_peek_back_int",
+      "address": "0x1800172d0",
+      "ordinal": 1924,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_f817027576d1449367eba8e649461d81401b74f0f041ef9e06377f6f42d2508b",
+      "assembly_sha256": "c9ca5f517e479905f6ec1ef9d4ce31b11d68e6367ae433273ff5b1f555ca7eaf",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800172d0",
+            "end": "0x1800172dc"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "bedfdb441951a1689def490083e653dae23bce8a9b9c34de92494bb284e678f7",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800172d0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0. Otherwise read four payload bytes as a signed int; upper four bytes are undefined."
+    },
+    {
+      "name": "mlt_deque_peek_front",
+      "address": "0x1800172e0",
+      "ordinal": 1925,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_676ed1f88e2a5fbed8d3e73a3458367c911fc40eb7c8a44d86350d6ed303a0ce",
+      "assembly_sha256": "1d0696feeaae425f85185f4efa84df1813e4d70a6fe7a46e79ffab44a0b7d7d2",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800172e0",
+            "end": "0x1800172ec"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "90c625c07a2640c8c65e08b2d25b403e7f47987d5b0c76587cb44b6abf00620c",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800172e0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns null. Otherwise read the front payload as an eight-byte pointer."
+    },
+    {
+      "name": "mlt_deque_peek_front_double",
+      "address": "0x1800172f0",
+      "ordinal": 1926,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_f9c856d6cddaa8c7636e8b3e262d667f049a44c870ab00e780109aa5fff84624",
+      "assembly_sha256": "63addf1c41caf509645d938892ad642edd479dc89c2970a19e5407cc2a3829d0",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800172f0",
+            "end": "0x1800172fd"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "c896d371ed731f84a4b608af0615f89dfbdd922388240075c0ddaf430edc77f7",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800172f0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0.0. Otherwise read eight payload bytes as a double."
+    },
+    {
+      "name": "mlt_deque_peek_front_int",
+      "address": "0x180017300",
+      "ordinal": 1927,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_0ebde53231bd2d56971b0abe3d6390ad6ea71d8acf9ec8e238c961e64e9dcafb",
+      "assembly_sha256": "8ac03e389e95208034f97afab4b0280fec3f02a32b870263f7ffb77b341f17bc",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017300",
+            "end": "0x18001730c"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "2f473b70b64c1625df2b6eab10fb824c69acc1b083b9f0f8b18fdec10d1d280e",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017300/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0. Otherwise read four payload bytes as a signed int; upper four bytes are undefined."
+    },
+    {
+      "name": "mlt_deque_pop_back",
+      "address": "0x180017310",
+      "ordinal": 1928,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_6d4ec191d585b03fac7f75cc9fc5cd1ecb993874b3b2887cc6bbf042824120b2",
+      "assembly_sha256": "fa7e0dfedb230e7fbaea6627e09e5646336add71186efbd90784266bb3023531",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017310",
+            "end": "0x18001731c"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "0b017ea68572ce340ec263a0ca21bb235915065bc98d5a65ed6f4c08aedb27e9",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017310/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns null. Otherwise read the back as an eight-byte pointer and remove that entry."
+    },
+    {
+      "name": "mlt_deque_pop_back_double",
+      "address": "0x180017320",
+      "ordinal": 1929,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_72fe349efbf4d9596e7fe81116d52f6b01c4d27c80842089a5fd69bfc92cba3a",
+      "assembly_sha256": "28826aff293601cd8fd0f9261d422328e63452c0a893390b9a433d4ab70f4499",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017320",
+            "end": "0x18001732d"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "a024e1dedec4b4532a691e06034146aabf938755fd8c0442b3ba700b9434ad16",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017320/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0.0. Otherwise read eight back-entry bytes as a double and remove that entry."
+    },
+    {
+      "name": "mlt_deque_pop_back_int",
+      "address": "0x180017330",
+      "ordinal": 1930,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_58ddd6696da3cb43872cfcfb0c4e78f4a80af77adc342cac1e533159f8773511",
+      "assembly_sha256": "8b78148dad637829c8fa0300d2391e18643c50b763a137df86d58c217acf6523",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017330",
+            "end": "0x18001733c"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "b01dc5ca0d67023a951f7b99fa08b1bb47020f1ee6f14056aad017ce5ce6698c",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017330/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0. Otherwise read four back-entry bytes as a signed int and remove that entry."
+    },
+    {
+      "name": "mlt_deque_pop_front",
+      "address": "0x180017340",
+      "ordinal": 1931,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_cd25ddfbbbc8dda7bc8d98136f402f4b709285b7b92328f293f9ecbacc0eeca1",
+      "assembly_sha256": "2e934b1fd14de6da3ebab192ac8bff00142092cb1c318198834ae81b351a16cc",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017340",
+            "end": "0x18001734c"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "b092364c5552ac879b9f0dab505b769b75b337b00f52bb6bbc5f0e37ff283077",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017340/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns null. Otherwise read the front as an eight-byte pointer and remove that entry."
+    },
+    {
+      "name": "mlt_deque_pop_front_double",
+      "address": "0x180017350",
+      "ordinal": 1932,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_98eefa9f3550eae655f7aa86184741b9a00775cdd09657448523849a93d5a2e2",
+      "assembly_sha256": "c87e7ca0a4144c51eb47028f0515cff289f7393d03d1d2c454612442f96c589c",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017350",
+            "end": "0x18001735d"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "8ab9d62ad11d2f71314aeebf5e7f5e21c247cdbe0a097ef57f5487db228a24c1",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017350/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0.0. Otherwise read eight front-entry bytes as a double and remove that entry."
+    },
+    {
+      "name": "mlt_deque_pop_front_int",
+      "address": "0x180017360",
+      "ordinal": 1933,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_ffe5b2129cdaed14a756d6fa1f907b96e379d6fcd73c0fecb3a4a5544dabbd89",
+      "assembly_sha256": "c3b83e08dce35227b3251643cd42607d2fc9fe8aef064349902f99651af5154a",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017360",
+            "end": "0x18001736c"
+          }
+        ],
+        "body_bytes": 13,
+        "body_sha256": "bbcb1ba5a16ff82ba5ec5dec3c4f9924d21bef1f0109c5306c2397545ca5e5cf",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017360/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper or empty deque returns 0. Otherwise read four front-entry bytes as a signed int and remove that entry."
+    },
+    {
+      "name": "mlt_deque_push_back",
+      "address": "0x180017370",
+      "ordinal": 1934,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_6b4916ca6e5c4861daa0c7bbe43b13a8faa716256cba2b3808a060ffdb2bf382",
+      "assembly_sha256": "3ba7211d2eca88b94d4e5ae0f28f3c416ed5aaaf9fc356073be6971165b11881",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017370",
+            "end": "0x18001737d"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "16e12fd8683557cf16101d9baa27724858e15f5aa06cc94a4fabda98a986b0fe",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017370/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Otherwise append the eight-byte pointer payload and return 0. A null payload is accepted."
+    },
+    {
+      "name": "mlt_deque_push_back_double",
+      "address": "0x180017380",
+      "ordinal": 1935,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_928ba3c1cb9c56a6a80b36889767fc4f826bb30bee603a3f05c930399246c3e5",
+      "assembly_sha256": "eaf035d8d2aaf0e0935b1ccbcb1e571cad9c7fb83de2466edb1f2dfbb0b8342b",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017380",
+            "end": "0x18001738d"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "9f141bdd2ec8b3480efc17f11cd09cbfc32775844a7015e81fcb0664beadd5f1",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017380/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Otherwise append all eight double representation bytes and return 0."
+    },
+    {
+      "name": "mlt_deque_push_back_int",
+      "address": "0x180017390",
+      "ordinal": 1936,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_b6d8c60a663ecf48ab90201d50140990cf77e48232e7bd27921ce1a095b71856",
+      "assembly_sha256": "2d1b948ec614a4faceb55a390c9ec79e6c358cea8a6ebe0ab84d92647bbd2f86",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x180017390",
+            "end": "0x18001739d"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "df4f63754df8d8d5c497704f25fa967e0c981b19d85bcf163514dcecd1d81dff",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/180017390/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Otherwise append the signed int in the low four payload bytes and return 0; the upper four bytes are not initialized by this path."
+    },
+    {
+      "name": "mlt_deque_push_front",
+      "address": "0x1800173a0",
+      "ordinal": 1937,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_436eb2c0b5b25fe19881e0dedf61c8ad003564931db9a383259b47b70980b3c6",
+      "assembly_sha256": "e98586bc79a2fd0bcb333728cf92f346b51838829e582284b94f6c3ee225970f",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800173a0",
+            "end": "0x1800173ad"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "93ea9014ba03aaade9ade512641b23cab81211e61738430ed852af39708053eb",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800173a0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Otherwise prepend the eight-byte pointer payload and return 0. A null payload is accepted."
+    },
+    {
+      "name": "mlt_deque_push_front_double",
+      "address": "0x1800173b0",
+      "ordinal": 1938,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_73532c2e951d8c7a9add12ceb2a0e7b734b0c7ef5aac37bc422a781a62d5331d",
+      "assembly_sha256": "4bf16c3514a6f6199141a924e40d1046c0e309b9fdd8eeb20734919239ffc96c",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800173b0",
+            "end": "0x1800173bd"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "196f27475062bde7d02177a325a6f990f6d980c4d31cf5fd3c3e9698f1c1eb5c",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800173b0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Otherwise prepend all eight double representation bytes and return 0."
+    },
+    {
+      "name": "mlt_deque_push_front_int",
+      "address": "0x1800173c0",
+      "ordinal": 1939,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_505964446b7b61adc70ac46a2aa260f80e3090ef6610dc8054b272e13cc7e5d2",
+      "assembly_sha256": "a30e5cbfb7ed52e43424e144950d564efda5a319f2d723060dc66461f8f54b2f",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800173c0",
+            "end": "0x1800173cd"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "5fb43e40bf93fc1336ebb26266c681e47f299c9452690fb3b2f2d67123a76f11",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800173c0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Otherwise prepend the signed int in the low four payload bytes and return 0; the upper four bytes are not initialized by this path."
+    },
+    {
+      "name": "mlt_deque_remove_at",
+      "address": "0x1800173d0",
+      "ordinal": 1940,
+      "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+      "assembly_evidence_id": "ev_42d47d26cc95bc03b1adb624e79b89797952f7841a38648e7533119d27ff7e52",
+      "assembly_sha256": "e4b4fd6b7d2adb73c95bb4ad67f8e3a39f088c60b510f79b0b09017740c01a63",
+      "original_byte_check": {
+        "ranges_inclusive": [
+          {
+            "start": "0x1800173d0",
+            "end": "0x1800173dd"
+          }
+        ],
+        "body_bytes": 14,
+        "body_sha256": "f7543452d6c5ce74d27cdfc91e272dc094edfe469f616126119a0ac6dca0b41c",
+        "instruction_count": 5,
+        "all_decoded": true,
+        "decoded_instruction_bytes_match": true,
+        "instruction_starts_equal": true
+      },
+      "assembly_artifact_path": "reconstruction/root-mlt-complete-rea640-20261011/procedures/1800173d0/assembly.json",
+      "assembly_artifact_hash_verified": true,
+      "approved_normal_return_contract": "Null wrapper returns 1. Accept signed index 0 <= index < count, erase one entry and return 0. Invalid index returns 1."
+    }
+  ],
+  "case_groups": [
+    {
+      "name": "empty_and_null_wrapper",
+      "assertions": [
+        "count is zero for a null wrapper",
+        "pointer peek/pop returns null for null or empty deque",
+        "double peek/pop returns 0.0 for null or empty deque",
+        "integer peek/pop returns 0 for null or empty deque",
+        "push on a null wrapper returns 1",
+        "insert_at and remove_at on a null wrapper return 1"
+      ]
+    },
+    {
+      "name": "pointer_fifo_and_front_back",
+      "assertions": [
+        "front and back pushes preserve order",
+        "indexed pointer peek accepts 0 <= index < count",
+        "invalid signed index returns null",
+        "pointer pops return selected payload and update count",
+        "null pointer payload is accepted"
+      ]
+    },
+    {
+      "name": "typed_slot_widths",
+      "assertions": [
+        "double payload preserves all eight representation bytes",
+        "integer push/read uses exactly four payload bytes",
+        "mixed-kind reads are outside approval and rejected by the Rust safety adaptation"
+      ]
+    },
+    {
+      "name": "insert_remove_bounds",
+      "assertions": [
+        "insert_at accepts 0 <= index <= count",
+        "remove_at accepts 0 <= index < count",
+        "negative signed indices and out-of-range indices return 1",
+        "removing final element resets count to zero"
+      ]
+    },
+    {
+      "name": "sorted_insert",
+      "assertions": [
+        "callback receives existing entry word then candidate word",
+        "negative comparison advances lower bound",
+        "zero or positive comparison narrows upper bound",
+        "equivalent entries insert before the first equivalent"
+      ]
+    }
+  ],
+  "independent_original_byte_recheck": {
+    "dll_path": "extracted/1.0.0.30839/mltframework-win.dll",
+    "dll_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+    "pe_image_base": "0x180000000",
+    "pe_section_count": 6,
+    "mapping": "Mapped each saved full-body inclusive VA range to file-backed PE raw bytes and recomputed length and SHA-256. Compared all 25 export bodies with the independent review FULL-BODY-CHECKS.json and exact catalog assembly artifact pins.",
+    "full_body_checks_path": "reconstruction/root-mlt-complete-rea640-20261011/contract-review/002-property-container/FULL-BODY-CHECKS.json",
+    "full_body_checks_sha256": "d40d909bafbf130c0e66c0c884475b41c4e2b5b47d101caa0fa68d036bdf79d6",
+    "export_bodies_checked": 25,
+    "total_export_body_bytes": 391,
+    "sorted_insert_internal": {
+      "address": "0x180005b80",
+      "ranges_inclusive": [
+        {
+          "start": "0x180005b80",
+          "end": "0x180005cd2"
+        }
+      ],
+      "body_bytes": 339,
+      "body_sha256": "813c6bd61ad5d950e88ea3263017e48e76ef850530545ae05492fb89674ae2ca",
+      "instruction_count": 86,
+      "decoded_instruction_bytes_match": true
+    }
+  }
+}
