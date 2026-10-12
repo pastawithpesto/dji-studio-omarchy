@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "provenance": "Independent arbitrary-precision arithmetic from original scalar contract. No Rust or vendor execution.",
+  "original_sha256": "006190faece698a6fffc6da68eacff3a996f75b1d6e362515cf2fa21bd58587d",
+  "contract_sha256": "815f466606b6f5f35729ec9796254071d83160238015457b2e7c78955f7df943",
+  "hash_vectors": [
+    {
+      "name": "empty",
+      "key_hex": "",
+      "expected_hash": "cbf29ce484222325"
+    },
+    {
+      "name": "ascii_a",
+      "key_hex": "61",
+      "expected_hash": "af63dc4c8601ec8c"
+    },
+    {
+      "name": "ascii_foo",
+      "key_hex": "666f6f",
+      "expected_hash": "dcb27518fed9d577"
+    },
+    {
+      "name": "ascii_foobar",
+      "key_hex": "666f6f626172",
+      "expected_hash": "85944171f73967e8"
+    },
+    {
+      "name": "ascii_hello",
+      "key_hex": "68656c6c6f",
+      "expected_hash": "a430d84680aabd0b"
+    },
+    {
+      "name": "embedded_nul",
+      "key_hex": "610062",
+      "expected_hash": "e5d29919042666b2"
+    },
+    {
+      "name": "zero",
+      "key_hex": "00",
+      "expected_hash": "af63bd4c8601b7df"
+    },
+    {
+      "name": "high_bit",
+      "key_hex": "80",
+      "expected_hash": "af643d4c8602915f"
+    },
+    {
+      "name": "all_ones_byte",
+      "key_hex": "ff",
+      "expected_hash": "af64724c8602eb6e"
+    },
+    {
+      "name": "mixed_high",
+      "key_hex": "007f80ff01",
+      "expected_hash": "33d792c97c1aa604"
+    },
+    {
+      "name": "all_byte_values",
+      "key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+      "expected_hash": "4242dc5249c33625"
+    },
+    {
+      "name": "long_high_bytes",
+      "key_hex": "ff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000feff8000fe",
+      "expected_hash": "543842803e94cb25"
+    }
+  ],
+  "bucket_vectors": [
+    {
+      "requested": "0",
+      "outcome": "layout",
+      "count": "1",
+      "mask": "0"
+    },
+    {
+      "requested": "1",
+      "outcome": "layout",
+      "count": "2",
+      "mask": "1"
+    },
+    {
+      "requested": "2",
+      "outcome": "layout",
+      "count": "2",
+      "mask": "1"
+    },
+    {
+      "requested": "3",
+      "outcome": "layout",
+      "count": "4",
+      "mask": "3"
+    },
+    {
+      "requested": "4",
+      "outcome": "layout",
+      "count": "4",
+      "mask": "3"
+    },
+    {
+      "requested": "7",
+      "outcome": "layout",
+      "count": "8",
+      "mask": "7"
+    },
+    {
+      "requested": "8",
+      "outcome": "layout",
+      "count": "8",
+      "mask": "7"
+    },
+    {
+      "requested": "9",
+      "outcome": "layout",
+      "count": "16",
+      "mask": "15"
+    },
+    {
+      "requested": "255",
+      "outcome": "layout",
+      "count": "256",
+      "mask": "255"
+    },
+    {
+      "requested": "256",
+      "outcome": "layout",
+      "count": "256",
+      "mask": "255"
+    },
+    {
+      "requested": "257",
+      "outcome": "layout",
+      "count": "512",
+      "mask": "511"
+    },
+    {
+      "requested": "511",
+      "outcome": "layout",
+      "count": "512",
+      "mask": "511"
+    },
+    {
+      "requested": "512",
+      "outcome": "layout",
+      "count": "512",
+      "mask": "511"
+    },
+    {
+      "requested": "513",
+      "outcome": "layout",
+      "count": "1024",
+      "mask": "1023"
+    },
+    {
+      "requested": "4294967295",
+      "outcome": "layout",
+      "count": "4294967296",
+      "mask": "4294967295"
+    },
+    {
+      "requested": "4294967296",
+      "outcome": "layout",
+      "count": "4294967296",
+      "mask": "4294967295"
+    },
+    {
+      "requested": "4294967297",
+      "outcome": "layout",
+      "count": "8589934592",
+      "mask": "8589934591"
+    },
+    {
+      "requested": "288230376151711743",
+      "outcome": "layout",
+      "count": "288230376151711744",
+      "mask": "288230376151711743"
+    },
+    {
+      "requested": "288230376151711744",
+      "outcome": "layout",
+      "count": "288230376151711744",
+      "mask": "288230376151711743"
+    },
+    {
+      "requested": "288230376151711745",
+      "outcome": "layout",
+      "count": "576460752303423488",
+      "mask": "576460752303423487"
+    },
+    {
+      "requested": "576460752303423487",
+      "outcome": "layout",
+      "count": "576460752303423488",
+      "mask": "576460752303423487"
+    },
+    {
+      "requested": "576460752303423488",
+      "outcome": "layout",
+      "count": "576460752303423488",
+      "mask": "576460752303423487"
+    },
+    {
+      "requested": "576460752303423489",
+      "outcome": "too_large"
+    },
+    {
+      "requested": "9223372036854775808",
+      "outcome": "too_large"
+    },
+    {
+      "requested": "18446744073709551615",
+      "outcome": "too_large"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "evidence_kind": "observed_wine_loader_trace_for_original_export_harness",
+  "trace_sha256": "44eca73b3920fbd841cdfe5600039ada6ea81e3e692af23beae8aab59f1f459f",
+  "runtime_trace_run": {
+    "command": [
+      "env",
+      "WINEPREFIX=/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/runtime-trace/wineprefix",
+      "WINEDEBUG=+loaddll",
+      "wine",
+      "./original_exports.exe",
+      ">",
+      "observed-loader-trace.tsv",
+      "2>",
+      "loaddll.trace.log"
+    ],
+    "working_directory": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/runtime-trace",
+    "runtime_stdout_sha256": "d17be8e7eee85e93dcdb60ada27906077e20f2790464a2248f4b3b8d328918f4",
+    "sealed_reference_stdout_sha256": "f67abd8001e3bf57b955f8af4f3d1d8d99a0d0523749e52f7079ef3c5071692c",
+    "stdout_rows": 3729,
+    "results_match_sealed_fixture_by_case_id_and_all_fields": true,
+    "result_case_count_equals_reference": true
+  },
+  "harness_artifact_sha256": {
+    "original_exports.c": "84986c36099d60e06b9c5e50ae2c85b9755454ba0bdad9e69b39fde8abd14dd2",
+    "original_exports.obj": "110f117e9eb13fb3113928dc744dc37fc90e20bbedf4a55376f775073f8759ec",
+    "original_exports.exe": "27e125faf08e9bc57122fa4e2425dfae740df98d28e6597be6f761ea0f600c4d",
+    "cases.tsv": "a28252e6002a2baae0397c1cfce64848cb1a39e200ca48656f6db192b78db38a"
+  },
+  "harness_process_trace_id": "0024",
+  "load_event_count_in_harness_process": 26,
+  "unique_loaded_modules": 26,
+  "module_identity_rule": {
+    "native": "Resolve Z: paths into the host filesystem and hash the loaded PE file.",
+    "builtin": "Resolve the module basename under /usr/lib/wine/x86_64-windows and hash that Wine implementation. If a Z: request path exists, also record its vendor-file hash separately."
+  },
+  "modules": [
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\reconstruction\\\\root-oss-crc64-rust-20261012\\\\reference\\\\runtime-trace\\\\original_exports.exe",
+      "load_kind": "native",
+      "image_base": "0000000140000000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/runtime-trace/original_exports.exe",
+      "requested_file_sha256": "27e125faf08e9bc57122fa4e2425dfae740df98d28e6597be6f761ea0f600c4d",
+      "implementation_path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/runtime-trace/original_exports.exe",
+      "implementation_sha256": "27e125faf08e9bc57122fa4e2425dfae740df98d28e6597be6f761ea0f600c4d"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\ntdll.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFFBA0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/ntdll.dll",
+      "implementation_sha256": "58a0471704ba48ce2b47f5c687860fed629a5450c45792cb42d2196fd001d959"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\kernelbase.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFF320000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/kernelbase.dll",
+      "implementation_sha256": "cfa499342b1504ad2816b564722ac58de8e499feff6ac427003265a894dedd62"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\kernel32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFF9C0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/kernel32.dll",
+      "implementation_sha256": "5032b5aacd45346e395f1eb648c4ad973695d7893b1843f1bfbb1aea99c0a45e"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\ucrtbase.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFE910000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/ucrtbase.dll",
+      "requested_file_sha256": "0a2be4a529a46fe0579150e205af3518988a58e70000dd4053bae541e98fc3f2",
+      "implementation_path": "/usr/lib/wine/x86_64-windows/ucrtbase.dll",
+      "implementation_sha256": "fbde963fccc2ed54e63c40cab315ca0dc82d406ee0ae69d412b473f790eab24a"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\WS2_32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFE510000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/ws2_32.dll",
+      "implementation_sha256": "679dccfbb517966f52b1dd57ab5c3f4e3994fa007ad33ba8122efbed03736e42"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\msvcrt.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFEE20000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/msvcrt.dll",
+      "implementation_sha256": "d11a7aba52418da4db1ff5db362409db4ed71c2caf554e37619d85b4edd64afc"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\sechost.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFED70000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/sechost.dll",
+      "implementation_sha256": "8c9e909cab849f112be9343ff3b1c9c575ee1015f81eb9c652cb69783ced3ef0"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\advapi32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFF1D0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/advapi32.dll",
+      "implementation_sha256": "d74251e109dd2b15781bab28bd7614ab025de7871ca8aa27c507fccf32736b86"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\win32u.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFD150000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/win32u.dll",
+      "implementation_sha256": "2fe00e820aaeb3272e358cc98f0d5b4e3c2e962b7bbcdbb7ce13f20b2976f9f4"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\user32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFD1B0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/user32.dll",
+      "implementation_sha256": "cd0099d0b366b8563ad02c52dfbcd7ec0ba980da9a3030e864e671fa1f04cc3c"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\GDI32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFD7F0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/gdi32.dll",
+      "implementation_sha256": "b3610e6665be1d746e361c752bbd47fb9dd48d83ebb02b1383d2bf31fe328920"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\MSVCR120.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFCCD0000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/msvcr120.dll",
+      "requested_file_sha256": "d28c7ab34842b6149609bd4e6b566ddab8b891f0d5062480a253ef20a6a2caaa",
+      "implementation_path": "/usr/lib/wine/x86_64-windows/msvcr120.dll",
+      "implementation_sha256": "ba692fc6555e87735f547371ad37daf4146b831a07bf60b4e371c3df29904125"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\LIBEAY32.dll",
+      "load_kind": "native",
+      "image_base": "00006FFFFDAC0000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/libeay32.dll",
+      "requested_file_sha256": "2e695baa1c88b999d98b9dfb3aa2142c37f7cc6a7af61cd7dcc1be5294f6b61a",
+      "implementation_path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/libeay32.dll",
+      "implementation_sha256": "2e695baa1c88b999d98b9dfb3aa2142c37f7cc6a7af61cd7dcc1be5294f6b61a"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\cryptbase.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFE5E0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/cryptbase.dll",
+      "implementation_sha256": "41bb46530bb6f4c3a581185555d29c3689d7cf25dc43a47dbd58a800e770c2b6"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\bcrypt.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFC950000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/bcrypt.dll",
+      "implementation_sha256": "243405afdf826067c132543b249a3020526d60dcc6a8aef9e441a3df5ba75080"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\WLDAP32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFC620000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/wldap32.dll",
+      "implementation_sha256": "68bd7f875cfb75270f9396d8414a11d906007a9625f7ab3f0139344dab14f936"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\ncrypt.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFC1D0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/ncrypt.dll",
+      "implementation_sha256": "05adc17b9ca14c6f7018c4f4c3834ed54b6e642f0a7a21ca531ff53f9b7bf97a"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\CRYPT32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFC210000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/crypt32.dll",
+      "implementation_sha256": "58b542d2287eddbd0a1eb9f414283d5e99d5bf075b18a1c110c1d0060acb9dc9"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\VCRUNTIME140.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFC1A0000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/vcruntime140.dll",
+      "requested_file_sha256": "270ba17bf89cc2eb6e6ce536eb78e4614ab5499f653ab7e07fe9e3d33bf3b6e3",
+      "implementation_path": "/usr/lib/wine/x86_64-windows/vcruntime140.dll",
+      "implementation_sha256": "2bfd505029e64cdbadf742a252f4e2968e5ad0343f98856cd9f97521656dc3e3"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\libcurl.dll",
+      "load_kind": "native",
+      "image_base": "00006FFFFCBF0000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/libcurl.dll",
+      "requested_file_sha256": "f8cabd17c34bddcb247db148959075246ffe7f4c0ac78df1daacadf92d406cb0",
+      "implementation_path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/libcurl.dll",
+      "implementation_sha256": "f8cabd17c34bddcb247db148959075246ffe7f4c0ac78df1daacadf92d406cb0"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\MSVCP140.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFBD90000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/msvcp140.dll",
+      "requested_file_sha256": "75872c426555ac8af55b5a7f6d4aea8831af74353b22612850a2bfc40e3b67e1",
+      "implementation_path": "/usr/lib/wine/x86_64-windows/msvcp140.dll",
+      "implementation_sha256": "782d029a6a96e39657056940681566989570d8f6c7e486e4ef518533524d3f0c"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\VCRUNTIME140_1.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFBD40000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/vcruntime140_1.dll",
+      "requested_file_sha256": "f3754fc6ec87bcf84e05f3287b5de7bd305a30a0e1db7d478cb6353600682784",
+      "implementation_path": "/usr/lib/wine/x86_64-windows/vcruntime140_1.dll",
+      "implementation_sha256": "80a80c13d866326f097bf05406e890736c7267b15ee0e9897a62677abc66dfd8"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\alibabacloud-oss-cpp-sdk.dll",
+      "load_kind": "native",
+      "image_base": "00006FFFFDCE0000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll",
+      "requested_file_sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1",
+      "implementation_path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll",
+      "implementation_sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1"
+    },
+    {
+      "wine_trace_path": "C:\\\\windows\\\\system32\\\\imm32.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFBCA0000",
+      "requested_path_resolved": null,
+      "requested_file_sha256": null,
+      "implementation_path": "/usr/lib/wine/x86_64-windows/imm32.dll",
+      "implementation_sha256": "af9bbef327c2b6a2af9a445580ac2779d1f83e61bcc3ee62c2cce563adc01d53"
+    },
+    {
+      "wine_trace_path": "Z:\\\\home\\\\violence\\\\Projects\\\\dji-studio-omarchy\\\\extracted\\\\1.0.0.30839\\\\concrt140.dll",
+      "load_kind": "builtin",
+      "image_base": "00006FFFFBBE0000",
+      "requested_path_resolved": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/concrt140.dll",
+      "requested_file_sha256": "39b2df43ab2bc455aa1f46a33440d0880e9bc781c4e03c6081251b56e543f608",
+      "implementation_path": "/usr/lib/wine/x86_64-windows/concrt140.dll",
+      "implementation_sha256": "c48cabf85955ec2e1f27fe217f533779bbdaae32f431a0281bf9fea3ddeed7e2"
+    }
+  ],
+  "unresolved_implementation_files": [],
+  "native_windows_parity_claimed": false,
+  "limitations": [
+    "The trace identifies Wine native versus builtin loader selection in this harness process.",
+    "This does not establish which modules a DJI Studio Windows process loads on native Windows.",
+    "Wine service and desktop-process modules are excluded. Only the harness process is listed."
+  ]
+}
