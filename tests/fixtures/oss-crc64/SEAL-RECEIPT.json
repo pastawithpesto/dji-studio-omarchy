@@ -1,0 +1,149 @@
+{
+  "evidence_kind": "receipt_for_observed_original_dll_fixture",
+  "created_unix_utc": 1791771473,
+  "source_dll": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll",
+    "bytes": 3130552,
+    "sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1"
+  },
+  "fixture": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/ORIGINAL-EXPORT-FIXTURE.json",
+    "bytes": 1186675,
+    "sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624"
+  },
+  "pe_export_and_chain_report": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/PE-EXPORT-AND-CHAIN.json",
+    "sha256": "b75e37e94c9b4654af305e44f5f31d30b7706ce1bec2361b5623ba53bbd305a8"
+  },
+  "synthetic_oracle": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/SYNTHETIC-ORACLE-CHECK.json",
+    "sha256": "b9412ec9f7762adc1b74fbcc56abc7d0c46a5b99c5d4706d1b92370fadcc17c1",
+    "must_be_labeled_synthetic": true
+  },
+  "export_call_counts": {
+    "ComputeCRC64": 3153,
+    "CombineCRC64": 600,
+    "total": 3753
+  },
+  "tool_versions_and_binary_sha256": [
+    {
+      "name": "clang",
+      "path": "/usr/bin/clang",
+      "resolved_path": "/usr/bin/clang-22",
+      "sha256": "67ad17f2e61ed725abd3cefdd3fa1c24dc5c09ec3ed064dc03c0798e66fe8955",
+      "version": "clang version 22.1.8\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin"
+    },
+    {
+      "name": "lld-link",
+      "path": "/usr/bin/lld-link",
+      "resolved_path": "/usr/bin/lld-link",
+      "sha256": "9e1bdb76898ce194ecc7db4faa8c4f8f2cc0a407a54865172d2097cf836cc962",
+      "version": "LLD 22.1.8"
+    },
+    {
+      "name": "llvm-readobj",
+      "path": "/usr/bin/llvm-readobj",
+      "resolved_path": "/usr/bin/llvm-readobj",
+      "sha256": "a91f794619200fe146cb23cd3287e493613315e458a6ece75c6c30fceef1f089",
+      "version": "LLVM (http://llvm.org/):\n  LLVM version 22.1.8\n  Optimized build."
+    },
+    {
+      "name": "wine",
+      "path": "/usr/bin/wine",
+      "resolved_path": "/usr/bin/wine",
+      "sha256": "ef72bf18759898fff0c0aaa7b04b13893aefe0f21738de150ebcb2a361be5b7f",
+      "version": "wine-11.17"
+    },
+    {
+      "name": "wineboot",
+      "path": "/usr/bin/wineboot",
+      "resolved_path": "/usr/bin/wine",
+      "sha256": "ef72bf18759898fff0c0aaa7b04b13893aefe0f21738de150ebcb2a361be5b7f"
+    },
+    {
+      "name": "wineserver",
+      "path": "/usr/bin/wineserver",
+      "resolved_path": "/usr/bin/wineserver",
+      "sha256": "083137482d5d081daec597946a8376ee8b53f9beb7189af092581efa74f24476"
+    },
+    {
+      "name": "python3",
+      "path": "/usr/bin/python3",
+      "resolved_path": "/usr/bin/python3.14",
+      "sha256": "d78f9cf7178ecff09963551399855543c297f37ac207e626228bfe43cb26a70c",
+      "version": "Python 3.14.7"
+    }
+  ],
+  "raw_input_and_output_files": [
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/initial-cases.tsv",
+      "bytes": 158164,
+      "sha256": "a28252e6002a2baae0397c1cfce64848cb1a39e200ca48656f6db192b78db38a",
+      "line_count": 3729
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/join-cases.tsv",
+      "bytes": 1584,
+      "sha256": "01db1476e78be50453035b27dc0a328b05d584ebae6a1c536733b14b7bd6f640",
+      "line_count": 24
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/observed.tsv",
+      "bytes": 212947,
+      "sha256": "f67abd8001e3bf57b955f8af4f3d1d8d99a0d0523749e52f7079ef3c5071692c",
+      "line_count": 3729
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/join-observed.tsv",
+      "bytes": 1896,
+      "sha256": "49a4a1c95ee08bffe51ea90fcb8148124237c7889f24fddb5e5dd6482699df93",
+      "line_count": 24
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": null
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/join-run.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": null
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/wineboot.stderr",
+      "bytes": 1108,
+      "sha256": "8ba7b550059ad052c03cd58c8c295e534939d279a8a8f046223ca3159c8bea2d",
+      "line_count": null
+    }
+  ],
+  "retained_failed_probes": [
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/failed-probe-offset-bug-raw.stdout.tsv",
+      "sha256": "016a7c8befb25cf290a04b2acd664082a5d02bdb3bb4da778706db8f6b907a5a",
+      "reason": "First attempt filled bytes at the base pointer, while the call used base+offset."
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/failed-probe-offset-bug-join-raw.stdout.tsv",
+      "sha256": "77e727024954e5781aa3748ba8cae0c2733945b32751d30928fae51e3bc75c12",
+      "reason": "Join outputs from the same initial alignment bug."
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/failed-probe-invalid-suffix-raw.stdout.tsv",
+      "sha256": "31ea506bf51fa7de6eb30b7159a880cbe9135fb18d9eadefe6f931e595f3e878",
+      "reason": "Compute payloads were correctly aligned, but suffix data restarted at pattern index zero."
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-oss-crc64-rust-20261012/reference/failed-probe-invalid-suffix-join-raw.stdout.tsv",
+      "sha256": "084e700ae63b4b70fc44195b175d3bdfa8966d8e846a0bc29efdf294c671e93a",
+      "reason": "Join outputs from the invalid suffix input description."
+    }
+  ],
+  "limits": [
+    "Wine execution is observed under Wine 11.17 and does not establish native Windows parity.",
+    "The harness called only the two named CRC exports with valid scalar values and bounded buffers.",
+    "PE import dependencies are recorded statically. No per-module Wine builtin/native load trace was captured.",
+    "The synthetic cross-check is separate evidence and is not original-export output."
+  ]
+}

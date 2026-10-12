@@ -1,0 +1,165 @@
+{
+  "reference_build": "DJI Studio 1.0.0.30839",
+  "source_binary": {
+    "path": "extracted/1.0.0.30839/VinceEditor.dll",
+    "sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42"
+  },
+  "contract_sha256": "844661a879fc91c77907685a7821588f61039206b181a01d13b8c84bdec1414f",
+  "records": [
+    {
+      "resource_path": "102/mask_fisheye_master.bin",
+      "fixture_path": "102/mask_fisheye_master.bin",
+      "source_sha256": "424ce1a41c7f6527825907470a2d20bf7d07fa3d18bd9f0ea84d069e4ecd577d",
+      "input_bytes": 18779,
+      "version": 2,
+      "width": 1920,
+      "height": 1920,
+      "expanded_bytes": 3686400,
+      "expanded_sha256": "4aefee1d6cc10a9574d827c9102704d21bcdbd9a45eb0edaed385624b7644703"
+    },
+    {
+      "resource_path": "102/mask_fisheye_slave.bin",
+      "fixture_path": "102/mask_fisheye_slave.bin",
+      "source_sha256": "1af0ddd3ac480424cbcaf2c01ecde282abfdd1f077cff8ecb1705b272f1f8b0b",
+      "input_bytes": 18699,
+      "version": 2,
+      "width": 1920,
+      "height": 1920,
+      "expanded_bytes": 3686400,
+      "expanded_sha256": "72ac29ba357777efff29f093e55b4267f0ac9510d69aa77f028d2a5588534a1b"
+    },
+    {
+      "resource_path": "530/dynamic_mask_fisheye_master.bin",
+      "fixture_path": "530/dynamic_mask_fisheye_master.bin",
+      "source_sha256": "22e4ae20a6dff318239a434693ac54e995ef981dbbf66cd373d0885e0651c6de",
+      "input_bytes": 38544,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "88fd09e2401887a97fde8e3a4d5ca12a29486bd272df8049c0dddbc507e57056"
+    },
+    {
+      "resource_path": "530/dynamic_mask_fisheye_slave.bin",
+      "fixture_path": "530/dynamic_mask_fisheye_slave.bin",
+      "source_sha256": "ed35acb29f356c5d999f703f4b88dffb5a20ca327f67d953ad9e20fcebfe84a0",
+      "input_bytes": 37179,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "da39971579f083ee8f3de52a0633d69d40e50c69dde903d6d0da5b21d669e1bc"
+    },
+    {
+      "resource_path": "530/mask_fisheye_master.bin",
+      "fixture_path": "530/mask_fisheye_master.bin",
+      "source_sha256": "56607c8df07154162b5d64a873334d9c88ff192be0b05cf01dc2d371e0cc9cbb",
+      "input_bytes": 38804,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "c311aa5e38311de515d1214226e6b06edbab909a03c8b90b35269cacb01d1cf1"
+    },
+    {
+      "resource_path": "530/mask_fisheye_slave.bin",
+      "fixture_path": "530/mask_fisheye_slave.bin",
+      "source_sha256": "d249152de8e52818134cc2b5b8a34fdc2c779e32925578ac80688c6bce4c75c7",
+      "input_bytes": 37439,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "caaa7e4b2a9601a8bded0ee4da5dfd2041dee280e74fef17ca71581c723ce6be"
+    },
+    {
+      "resource_path": "above_water/mask_fisheye_master.bin",
+      "fixture_path": "above_water/mask_fisheye_master.bin",
+      "source_sha256": "186a291dc1ae6edc23313f6031f249ad559e515b5def5246715e06e5c287fc32",
+      "input_bytes": 403159,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "ea2e474b7bd93b27fd5afd2048241655664d6754cc48ea2e88152ddd1ba045cc"
+    },
+    {
+      "resource_path": "above_water/mask_fisheye_slave.bin",
+      "fixture_path": "above_water/mask_fisheye_slave.bin",
+      "source_sha256": "bab4e0f209cdbb9358b407aa0a7a4473bec09361d9f8037b9e8c3e4c896a29dd",
+      "input_bytes": 391949,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "9a21f5c32ea2bc8cf0d542ce9d0cf7191d73c17c2b60cc07bb8ce881ed21eec3"
+    },
+    {
+      "resource_path": "default/mask_fisheye_master.bin",
+      "fixture_path": "default/mask_fisheye_master.bin",
+      "source_sha256": "186a291dc1ae6edc23313f6031f249ad559e515b5def5246715e06e5c287fc32",
+      "input_bytes": 403159,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "ea2e474b7bd93b27fd5afd2048241655664d6754cc48ea2e88152ddd1ba045cc"
+    },
+    {
+      "resource_path": "default/mask_fisheye_slave.bin",
+      "fixture_path": "default/mask_fisheye_slave.bin",
+      "source_sha256": "bab4e0f209cdbb9358b407aa0a7a4473bec09361d9f8037b9e8c3e4c896a29dd",
+      "input_bytes": 391949,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "9a21f5c32ea2bc8cf0d542ce9d0cf7191d73c17c2b60cc07bb8ce881ed21eec3"
+    },
+    {
+      "resource_path": "lens_protector/mask_fisheye_master.bin",
+      "fixture_path": "lens_protector/mask_fisheye_master.bin",
+      "source_sha256": "e00c81c170173204b4387b54e3a7a43694ba230fa262a9f20631b8e1851314df",
+      "input_bytes": 190134,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "1d98d33f30bfef10138689d7c677d7f34ca8ae191698623ac9cdcaf80e330db9"
+    },
+    {
+      "resource_path": "lens_protector/mask_fisheye_slave.bin",
+      "fixture_path": "lens_protector/mask_fisheye_slave.bin",
+      "source_sha256": "4dc177a37c550a5f06013dee1b4eb342b44e2f3fc3ed212c11f2785edfecbcad",
+      "input_bytes": 186114,
+      "version": 2,
+      "width": 3840,
+      "height": 3840,
+      "expanded_bytes": 14745600,
+      "expanded_sha256": "615deee25beca7d8596b2ade8842c033f9d16a526d31210cfe476f8220d1233a"
+    },
+    {
+      "resource_path": "under_water/mask_fisheye_master.bin",
+      "fixture_path": "under_water/mask_fisheye_master.bin",
+      "source_sha256": "cab0b4d84dfc3ec89030c828f4fcb05dc9a44688eaa2291fd1792f6bbb99c010",
+      "input_bytes": 17839,
+      "version": 2,
+      "width": 1920,
+      "height": 1920,
+      "expanded_bytes": 3686400,
+      "expanded_sha256": "1a4bbf7c87cca13bf94cfe2c86678978ba90c8cf2f1d4177b33cab336ec7e93b"
+    },
+    {
+      "resource_path": "under_water/mask_fisheye_slave.bin",
+      "fixture_path": "under_water/mask_fisheye_slave.bin",
+      "source_sha256": "4d7571270f537c51aca5fcb6443449716efd13f92486d69f9ed6c6107d442888",
+      "input_bytes": 18069,
+      "version": 2,
+      "width": 1920,
+      "height": 1920,
+      "expanded_bytes": 3686400,
+      "expanded_sha256": "bb7403d31084307116f6d10635017e2a0ea9017ca41ec7069b3457e0299c03e7"
+    }
+  ],
+  "limits": "Original masks are copied from the external extraction. No executable or DLL is included."
+}
