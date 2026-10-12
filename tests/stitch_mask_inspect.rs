@@ -14,6 +14,7 @@ fn tool() -> &'static Path {
         let executable = root
             .join("target")
             .join(format!("mask-inspect-cli-test-{}", std::process::id()));
+        fs::create_dir_all(executable.parent().unwrap()).unwrap();
         let result = Command::new("/usr/bin/rustc")
             .args(["--edition=2024", "-O", "-D", "warnings"])
             .arg(root.join("tools/stitch_mask_inspect.rs"))
@@ -37,6 +38,7 @@ impl Temporary {
         let path = Path::new(env!("CARGO_MANIFEST_DIR"))
             .join("target")
             .join(format!("mask-inspect-{}-{name}", std::process::id()));
+        fs::create_dir_all(path.parent().unwrap()).unwrap();
         fs::create_dir(&path).unwrap();
         Self(path)
     }
