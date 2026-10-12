@@ -1,0 +1,163 @@
+{
+  "source": {
+    "source": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/zlib.dll",
+    "sha256": "45aafddc3e0b0efabe80e75b259e3111d92e6c096c6756e51d8b9221ed3c90ca",
+    "bytes": 140472,
+    "build": "DJI Studio 1.0.0.30839"
+  },
+  "export_inventory_count": 86,
+  "export": {
+    "name": "adler32_combine",
+    "ordinal": 2,
+    "rva": 4111
+  },
+  "entry_chain": [
+    {
+      "name": "export",
+      "address": "0x18000100f",
+      "file_offset": 1039,
+      "length": 5,
+      "bytes_hex": "e95c070000",
+      "sha256": "23fab2fd7a2b98d9656843d5cbe4ef678ace8421b61a165557bc590e69483507"
+    },
+    {
+      "name": "signed_length_wrapper",
+      "address": "0x180001770",
+      "file_offset": 2928,
+      "length": 8,
+      "bytes_hex": "4d63c0e918000000",
+      "sha256": "8d0f909def12365826099e38022449d2dca73fa2552de5a1d7a4679a37c1ca45"
+    }
+  ],
+  "helper": "0x180001790",
+  "provider_verification": {
+    "source_sha256": "45aafddc3e0b0efabe80e75b259e3111d92e6c096c6756e51d8b9221ed3c90ca",
+    "checks": [
+      {
+        "name": "signed_length_wrapper",
+        "address": "0x180001770",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001770",
+              "end": "0x180001777"
+            }
+          ],
+          "total_bytes": 8,
+          "span_bytes": 8,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x180001770",
+            "length": 8,
+            "file_offset": 2928,
+            "sha256": "8d0f909def12365826099e38022449d2dca73fa2552de5a1d7a4679a37c1ca45",
+            "evidence_id": "ev_1a3df1baf2abecc4196019eb42b3e275ac494940bbadf40e3153a591c08dbed6"
+          }
+        ],
+        "evidence_ids": [
+          "ev_af48ea5eece17859a1c6745836f57dafa221a8e3f416a5a86bddac416ba1205a",
+          "ev_f30543b31ea763ba44dfffd7841102f986a81ad94728642ef4aa593193fd0056",
+          "ev_6cacca0ab7f9136891678cd9bda8e28e42ccf860b300f7a8a8d12767842d8299"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels.",
+          "Ghidra Listing reports a terminal call at 0x180001773 to 0x180001790 FUN_180001790 (external=false, thunk=false, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+        ]
+      },
+      {
+        "name": "combine_helper",
+        "address": "0x180001790",
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x180001790",
+              "end": "0x180001869"
+            }
+          ],
+          "total_bytes": 218,
+          "span_bytes": 218,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "witnesses": [
+          {
+            "address": "0x180001790",
+            "length": 218,
+            "file_offset": 2960,
+            "sha256": "f270dac7a8e35efb169710d855b7fc22409c3c92470c781905f1e518ec0f1a51",
+            "evidence_id": "ev_1fcc73b37c802267aa1118a105e3f94604ca2552d4f2e8c1c0ff60e926767882"
+          }
+        ],
+        "evidence_ids": [
+          "ev_73034e856807c51698001b96bf242831282467d607c374c43f1c17776ddff2aa",
+          "ev_2c45815f5798590dd51080965af901275566b1deb6fec315a0d5a0e5ed53a74c",
+          "ev_16828f058584273179ca15efe65a2d8a658da9714e16b9a3e745cfefe25ac822"
+        ],
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+          "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+          "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+          "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels."
+        ]
+      }
+    ],
+    "scope": "Original source bytes and static function recovery only; no vendor execution"
+  },
+  "tools": {
+    "upstream_commit": "69e097a8ca256ab97ee4b2883739447784a5f90e",
+    "package_version": "6.4.0",
+    "server": {
+      "name": "rea",
+      "version": "6.4.0"
+    },
+    "node": "v26.9.0",
+    "ghidra": "12.1.4",
+    "heap": "768M",
+    "launcher_sha256": "d9d9ddf93ea61619fb20e619c218a004fb1f17e823f142f0be9f851ca7030480",
+    "runtime_sha256": "312cffd1ec6dcdc31e7da677c25121affb47e32a9ca697af072d5d4ffe1507c1",
+    "kind": "Single baseline analysis; no optimization adoption claim"
+  },
+  "source_base": {
+    "repository": "pastawithpesto/dji-studio-omarchy",
+    "worktree": "/home/violence/Work/dji-zlib-adler-research-20261012",
+    "branch": "research/zlib-adler-combine-20261012",
+    "HEAD": "9b11fc97a06f4e4d35ef14c2cbf0331888ddce71",
+    "fresh_main": "88dd9cd280a7a454c536c6d7d1c9d1184d07b65c",
+    "checked_utc": "2026-10-12T06:08:52.899791+00:00",
+    "main_ancestor": true,
+    "status": ""
+  },
+  "limits": "Static original-byte recovery and finite model validation; no vendor execution.",
+  "initial_packet_manifest_sha256": "0b96b36912ee4f971f72989d45d4813eb6a22c9ba17ada60496c3a8e95fb1643",
+  "publication_correction": {
+    "initial_manifest_sha256": "0b96b36912ee4f971f72989d45d4813eb6a22c9ba17ada60496c3a8e95fb1643",
+    "initial_report_sha256": "869b8e6b686c73f7bdfc07beaba9604db33f40f0cc51116032da0a2ddd71b465",
+    "published_report_sha256": "902cbc7a34c9a2b0bbd19a841ea399cb3d46a5ab5358a695b7533721fa754f12",
+    "old": "Those rows include 24 padding bytes between the wrapper and an adjacent entry.\nThe model executes only the 8-byte wrapper and 218-byte helper spans.",
+    "new": "The two modeled spans contain 55 instruction rows. The intervening 24 bytes\ncontain 19 `int3` padding bytes and a separate 5-byte relative jump at\n`0x180001780`. That unexported entry is not assigned an original function name.\nThe model executes only the 8-byte wrapper and 218-byte helper spans.",
+    "reason": "The 24-byte interval includes a 5-byte jump; it is not all padding.",
+    "validation_changed": false,
+    "source_changed": false,
+    "created_utc": "2026-10-12T06:10:19.505595+00:00"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-12T06:46:24.743607+00:00",
+  "superseded_publication_candidate": "85eb2e2a832d4c031bf654b7cc806251fa63decc",
+  "review": "https://github.com/pastawithpesto/dji-studio-omarchy/pull/37#issuecomment-6119168839",
+  "raw_manifest_sha256": "893f58d1d52c670ee8e6dd07e640994c0c75c8713e28659bb85d419dc3e886dd",
+  "scope": "Publication consistency and address wording only. No new decompilation, changed source binary or changed captured code/data. Initial seal and first corrected records remain unchanged.",
+  "corrections": [
+    "Each target now records 31 provider thunks: 28 direct external thunks, two internal free alias thunks and one internal guard dispatch thunk. Removed the stale import_thunks=31 per-target field.",
+    "Constructor-like body 0x180001020 loads local thunk address 0x1800012b0; that thunk jumps through IAT slot 0x180003118. No registration call occurs in the constructor-like body."
+  ],
+  "records": [
+    {
+      "previous": "FINDINGS-CORRECTED.json",
+      "previous_sha256": "ebc2e1b188c04a7a257f501a26400d91380b2113b7a381e30815afd196e7c6e4",
+      "corrected": "FINDINGS-R2.json",
+      "corrected_sha256": "06ea40b4e9eb2e97c91fd7e086283eb4c906f9686c732274b14aa0ec827d715b"
+    },
+    {
+      "previous": "REPORT-CORRECTED.md",
+      "previous_sha256": "9607756a9553dc6551dd6277316ce6aa4cb9c72641c67fcc28f7891d5d2fa8ac",
+      "corrected": "REPORT-R2.md",
+      "corrected_sha256": "3d650faa6e2deed4d9bfa79b541008746e751895a56fe5560a23de1d97d763d9"
+    }
+  ]
+}
