@@ -45,3 +45,9 @@ Repeat only the checks affected by a change, and label reused results clearly.
 Keep the original report and failed probes unchanged.
 Write a separate correction that identifies the error and supporting evidence.
 Obtain independent review of the corrected claim before you use it for implementation.
+
+## Check field writes after a copy
+
+Trace each store between an object copy and the next consumer call.
+Record each changed field offset, write width, and source value.
+Verify each store against the original instructions before you state the consumer contract.
