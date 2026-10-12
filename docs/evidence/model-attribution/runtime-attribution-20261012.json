@@ -1,0 +1,78 @@
+{
+  "observed_utc": "2026-10-12T14:35:27.348557+00:00",
+  "source_base": "8b147cadd1b92ff52b30cde995429cb04f85eb17",
+  "scope": "Authorship identity and saved output existence. This record does not approve the research claims.",
+  "records": [
+    {
+      "name": "Kimi K3",
+      "session_id": "ses_ed23e8e35ffeK4ky7hthfAFcWn",
+      "provider": "nvidia",
+      "model": "moonshotai/kimi-k3",
+      "variant": "high",
+      "session_title": "Reversing ThumbnailProvider.dll vtables and stream tracing",
+      "attribution_basis": "Stored OpenCode session and assistant model metadata; matching saved contribution outputs and addressed comms.",
+      "contribution_artifacts": [
+        {
+          "path": "reconstruction/kimi-thumbnailprovider-20261012/analysis/001-com-vtables/REPORT.md",
+          "bytes": 8310,
+          "sha256": "3d6f0e36f908663430046c054a330b1345c4f32d03cb0849fb3a77e9ba57625b"
+        },
+        {
+          "path": "reconstruction/kimi-thumbnailprovider-20261012/analysis/002-stream-thumbnail/REPORT.md",
+          "bytes": 18336,
+          "sha256": "8376a295ceb4139540cd2443be002073bbcf12879c3e0b7ce889cdf466c03d2a"
+        },
+        {
+          "path": "reconstruction/kimi-thumbnailprovider-20261012/analysis/003-coverage/REPORT.md",
+          "bytes": 10241,
+          "sha256": "d4f3d4ee2afa38b4c0c1f2db0f69cd5bd9b9a9ea195c2ed52626f74879d4a947"
+        }
+      ],
+      "comms_records": [
+        2878,
+        2924
+      ],
+      "review_status": "Separate independent review remains pending for these authored research packets.",
+      "terminal_result": "stop",
+      "terminal_error_type": null
+    },
+    {
+      "name": "Qwen3.8-Flash",
+      "session_id": "ses_ed5970594ffeVomNd2x5bog32E",
+      "provider": "alibaba",
+      "model": "qwen3.8-flash",
+      "variant": "default",
+      "session_title": "Instruction 1709 receipt and task continuation",
+      "attribution_basis": "Stored OpenCode session and assistant model metadata; matching saved contribution outputs and addressed comms.",
+      "contribution_artifacts": [
+        {
+          "path": "qwen-review/continuous-20261011/packet-001/WORKLIST.json",
+          "bytes": 7461,
+          "sha256": "43083f7e0e8b9f69ca35bbeb63c49e0c2d52ae8730710078a2b42ab02f573e16"
+        },
+        {
+          "path": "qwen-review/continuous-20261011/packet-002/models-mnn-batch1.json",
+          "bytes": 2738,
+          "sha256": "565d0a66f841b4ba01e7c69b1c4d88fb54a3a83d454e4cc867ee672723e5134e"
+        },
+        {
+          "path": "qwen-review/continuous-20261011/packet-002/models-bin-masks-batch2.json",
+          "bytes": 5455,
+          "sha256": "ae209fcf3cc5fcbd0cb3642729598d0f3988581105166dfd900fa457404cd999"
+        },
+        {
+          "path": "qwen-review/continuous-20261011/packet-003/url-scan-raw.json",
+          "bytes": 1315527,
+          "sha256": "da3b9e6bf02e4d1dd9997f2a3bfd1527127b95191ddd7fb6dc057b0b99f8eb5e"
+        }
+      ],
+      "comms_records": [
+        1737,
+        1740
+      ],
+      "review_status": "Separate independent review remains pending for these authored research packets.",
+      "terminal_result": "error",
+      "terminal_error_type": "provider.invalid-request"
+    }
+  ]
+}
