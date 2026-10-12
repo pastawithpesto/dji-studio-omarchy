@@ -1,0 +1,32 @@
+{
+  "initial_local_packet": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-zlib-adler-combine-20261012",
+  "initial_manifest_sha256": "0b96b36912ee4f971f72989d45d4813eb6a22c9ba17ada60496c3a8e95fb1643",
+  "files": [
+    {
+      "path": "ORACLE-ENVIRONMENT.json",
+      "bytes": 1191,
+      "sha256": "c13d9e83771e6a41c64b4edaedfc29e5e246f326982d0879bd51da629af7dc7f"
+    },
+    {
+      "path": "PUBLICATION-CORRECTION.json",
+      "bytes": 960,
+      "sha256": "b467f44ed0fd6c05cb7efd391535e12e3e3432b6f09ba0a7329af5bc2a89c8b3"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 7111,
+      "sha256": "902cbc7a34c9a2b0bbd19a841ea399cb3d46a5ab5358a695b7533721fa754f12"
+    },
+    {
+      "path": "SOURCE-MAP.json",
+      "bytes": 8939,
+      "sha256": "db9e223fc6b88164a6dc1c9ec09c6079a49be9b98a19deed7834f19207e0dba9"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 7126,
+      "sha256": "8d2476009b07510d6b9f32a536bd51adf381e332911d04254b676273e649d466"
+    }
+  ],
+  "scope": "Additive corrected publication; original packet preserved"
+}
