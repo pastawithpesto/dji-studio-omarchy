@@ -23,18 +23,49 @@ CXX-Qt-Lib and CXX-Qt-Build to 0.10.0. The author checks use Qt 6.11.2 and Rust
 ```sh
 CARGO_TARGET_DIR=/absolute/owned/host-target RUSTC=/usr/bin/rustc QMAKE=/usr/bin/qmake6 \
   /usr/bin/cargo build --manifest-path gui/rust/host/Cargo.toml --locked
-QT_QPA_PLATFORM=offscreen /absolute/owned/host-target/debug/original-qml-host --check
-QT_QPA_PLATFORM=offscreen CARGO_TARGET_DIR=/absolute/owned/host-target \
+QT_QPA_PLATFORM=offscreen QT_FORCE_STDERR_LOGGING=1 \
+  /absolute/owned/host-target/debug/original-qml-host --check
+QT_QPA_PLATFORM=offscreen QT_FORCE_STDERR_LOGGING=1 CARGO_TARGET_DIR=/absolute/owned/host-target \
   RUSTC=/usr/bin/rustc QMAKE=/usr/bin/qmake6 /usr/bin/cargo test \
   --manifest-path gui/rust/host/Cargo.toml --locked --test qt_runtime
 ```
 
-`--check` loads the original root and exits without the event loop. Normal launch
+`--check` is an internal diagnostic flag. It loads the original root and exits
+without the event loop. `--help` prints command syntax. Other arguments exit 2.
+Use environment variables for Qt platform selection. Normal launch
 enters the Qt event loop only after root creation succeeds. This error handling
 is independent launcher policy. Qt prints its actual source locations and import
 errors. The host does not suppress them. A test checks a real original resource,
 the original Config module, the missing-resource signal, and event-loop exit.
 Test-only QML is not application UI.
+
+The registration callback returns an explicit result. Normal launch stops on a
+registration error. `--check` reports that error and still attempts the original
+Main load, to expose further import errors. It returns failure if registration
+or root creation fails.
+
+The local Qt 6.11.2 host build passed. The focused runtime test passed. The exact
+original Main check exited 1 with the following actual import errors. Source
+lines refer to `original/resources/qml/Main.qml`. Each import has version 1.0.
+
+| Line | Missing module |
+| --- | --- |
+| 8 | FpsDetect |
+| 9 | CloudAlbumManager |
+| 18 | UserGuideMaskManager |
+| 19 | UserGuideTypeModel |
+| 20 | BusinessLogger |
+| 21 | BusinessLog |
+| 22 | WindowPositionDetector |
+| 23 | ViewModeAnalyzeController |
+| 24 | ProjectStateController |
+| 25 | SettingPanelViewModel |
+
+These are first-stage errors. They do not prove that all other imports, types,
+context objects, singletons, or startup actions work. Further errors can appear
+after these modules exist. The registered WindowPositionDetector boundary and
+its native screen access require a separate check. On this computer,
+`QT_FORCE_STDERR_LOGGING=1` sends Qt diagnostics to captured stderr.
 
 ## Binding boundary
 

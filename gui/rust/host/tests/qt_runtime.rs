@@ -4,12 +4,11 @@ use std::sync::{
     atomic::{AtomicBool, Ordering},
 };
 
-#[test]
-fn resources_imports_failure_signal_and_event_loop() {
-    // One application and one test thread own all Qt objects in this process.
+fn main() {
+    // The main thread owns the application and all Qt objects.
     let mut app = QGuiApplication::new();
     assert!(!app.is_null());
-    cxx_qt::init_crate!(original_qml_host);
+    original_qml_host::initialize_resources();
     let mut engine = QQmlApplicationEngine::new();
     engine.pin_mut().add_import_path(&QString::from("qrc:/"));
     let created = Arc::new(AtomicBool::new(false));
@@ -26,7 +25,7 @@ fn resources_imports_failure_signal_and_event_loop() {
     );
     created.store(false, Ordering::Release);
     engine.pin_mut().load_data(
-        &QByteArray::from(&b"import QtQml\nimport Config 1.0\nQtObject { property color originalColor: Colors.transparent }"[..]),
+        &QByteArray::from(&b"import QtQuick\nimport Config 1.0\nQtObject { property color originalColor: Colors.transparent }"[..]),
         &QUrl::from("qrc:/host-import-test.qml"),
     );
     assert!(
@@ -46,4 +45,5 @@ fn resources_imports_failure_signal_and_event_loop() {
     );
     assert!(created.load(Ordering::Acquire));
     assert_eq!(app.pin_mut().exec(), 0);
+    println!("PASS: original resource, Config import, load failure, Qt event loop exit");
 }
