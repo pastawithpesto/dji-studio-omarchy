@@ -1,3 +1,68 @@
+# Rust host for the original QML
+
+The Rust host is in `rust/host`. It loads the exact original entry
+`qrc:/qml/Main.qml` and adds the original import root `qrc:/`. Its build uses
+`original/original.qrc` without a resource or QML change. That collection has
+1,826 unique aliases and 410 QML files. The launcher has no replacement screen
+or placeholder native controller. Missing modules cause an error and exit 1.
+This is host infrastructure. Original Main startup and full GUI behavior remain
+unfinished.
+
+The internal crate and executable name `original-qml-host` is an independent
+implementation name. It is not an original DJI product name. The registration
+callback runs after application creation and before engine creation. The combined
+candidate must connect that callback to the supported original native types.
+
+## Build and check the Rust host
+
+Requires system Rust, a C++17 compiler, Qt 6 with Core, Gui and Qml development
+files, and the QML modules imported by the source. This candidate pins CXX-Qt,
+CXX-Qt-Lib and CXX-Qt-Build to 0.10.0. The author checks use Qt 6.11.2 and Rust
+1.98.1. Use an owned target directory outside the source tree.
+
+```sh
+CARGO_TARGET_DIR=/absolute/owned/host-target RUSTC=/usr/bin/rustc QMAKE=/usr/bin/qmake6 \
+  /usr/bin/cargo build --manifest-path gui/rust/host/Cargo.toml --locked
+QT_QPA_PLATFORM=offscreen /absolute/owned/host-target/debug/original-qml-host --check
+QT_QPA_PLATFORM=offscreen CARGO_TARGET_DIR=/absolute/owned/host-target \
+  RUSTC=/usr/bin/rustc QMAKE=/usr/bin/qmake6 /usr/bin/cargo test \
+  --manifest-path gui/rust/host/Cargo.toml --locked --test qt_runtime
+```
+
+`--check` loads the original root and exits without the event loop. Normal launch
+enters the Qt event loop only after root creation succeeds. This error handling
+is independent launcher policy. Qt prints its actual source locations and import
+errors. The host does not suppress them. A test checks a real original resource,
+the original Config module, the missing-resource signal, and event-loop exit.
+Test-only QML is not application UI.
+
+## Binding boundary
+
+Application and test source is Rust. Original UI source is QML. CXX-Qt generates
+C++ bridge code. Qt's `rcc` generates resource C++. CXX-Qt-Lib includes upstream
+C++ wrappers, and Qt itself is C++. Thus this is not a wholly C++-free stack. The
+host adds no handwritten `.cpp`, `.h`, or inline C++ payload.
+
+The current official [CXX-Qt releases](https://github.com/KDAB/cxx-qt/releases)
+list 0.10.0. The [builder API](https://docs.rs/cxx-qt-build/0.10.0/cxx_qt_build/struct.CxxQtBuilder.html)
+provides `.qrc` resource compilation. The
+[engine API](https://docs.rs/cxx-qt-lib/0.10.0/cxx_qt_lib/struct.QQmlApplicationEngine.html)
+provides import paths and root-creation signals. Official
+[Qt Bridge 0.3 documentation](https://doc-snapshots.qt.io/qtbridge-rust/qtbridge/index.html)
+requires Qt 6.10 or later. Its public `QApp` API does not expose the engine or
+root-creation signal needed here. Its runtime uses CXX-Qt internally. The direct
+CXX-Qt host makes the failure check available. Native QWindow and QScreen support
+requires a separate verified boundary.
+
+## Existing experimental package
+
+The following record concerns the prior C++ host and independent screen. It does
+not describe this Rust host. The frozen backend identity check remains in place.
+The source audit found mismatches for `.gitignore`, `Cargo.toml`, and `src/lib.rs`;
+the existing builder stopped at `.gitignore`. This host does not repin or bypass
+that check. A standalone host build does not prove that the existing package
+builds or that the full GUI works.
+
 # Experimental native stitched workflow
 
 This is the unchanged Qt 6.11.2 C++/QML composition from standalone GUI2dc6ae8 (independent approval795), reused through prior unioneb444938. Author grant1030 repins the builder to exact approved backend e03c38da6e430214f7a41cb0ecbd063e4ac29178 (254 files, independent combined metadata/finite-DOM approval1024). All254 backend files are frozen in backend-source-manifest.json; GUI host/QML/tests/resources and Rust processing bytes remain unchanged. Metadata and finite-DOM modules introduce no new GUI controls or project workflow. Exact current GUI/source/package review is separate and required before publication. It does not implement original Main, native services/controllers, projects, timeline, export queue, camera stitching, gestures or cloud workflows. Layout, transport and default rendering remain independent design choices, not recovered vendor internals or same-UI claims.
