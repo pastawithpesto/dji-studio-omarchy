@@ -1,0 +1,81 @@
+{
+  "schema": "quicklookhelper-selected-r9-correction-v1",
+  "author": {
+    "role": "author21",
+    "routing_identity": "sol-3",
+    "instruction": 3243,
+    "model": "gpt-6.1-sol",
+    "reasoning": "high",
+    "mode": "Standard/default",
+    "fast": false,
+    "original_erratum_author": "luna-a-2",
+    "original_methods_author": "luna-b-3"
+  },
+  "status": "selected_author_packet_complete_independent_review_pending",
+  "source": {
+    "artifact": "QuickLookHelper.dll",
+    "build": "DJI Studio 1.0.0.30839",
+    "size": 128696,
+    "sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b",
+    "path": "extracted/1.0.0.30839/QuickLookHelper.dll",
+    "rea_version": "6.4.0",
+    "ghidra_version": "12.1.4",
+    "evidence_mode": "reuse of exact saved evidence; no new import"
+  },
+  "correction_id": "methods.slot-1-dataflow",
+  "supersedes_only": "The unqualified no-R9-read sentence in the original initial erratum report and findings. Frozen originals remain unchanged.",
+  "corrected_claim": "No direct read of the incoming forwarded byte is established before replacement in the recorded body paths. Body0x1800025b0 writes its own R9 constant0x7ffffffffffffff at0x180002613 and0x1800026a4, then reads R9 at0x18000261d/0x18000262c/0x180002637/0x1800026ae. These reads follow local constant definitions.",
+  "unresolved": [
+    "incoming forwarded byte meaning",
+    "semantic fourth argument",
+    "transitive callee behavior",
+    "pointer validity",
+    "return type",
+    "runtime effects",
+    "full DLL coverage",
+    "UI",
+    "processing output",
+    "project compatibility",
+    "failure behavior",
+    "Windows comparison"
+  ],
+  "history": {
+    "review2798": "changes_requested; six other corrections approved within bounds",
+    "astra_audit": "6118743343",
+    "original_decisions": {
+      "total": 47,
+      "approved": 35,
+      "changes_requested": 7,
+      "unresolved": 5
+    },
+    "initial_unresolved_records": 335,
+    "historical_methods_instruction_mismatches": [
+      "AGENTS.md",
+      "native/AGENTS.md",
+      "native/docs/RESEARCH.md"
+    ],
+    "separate_configuration_approvals": [
+      "C1",
+      "C2"
+    ],
+    "separate_hooks_approval": [
+      "H1"
+    ],
+    "failed_probe_preserved": true
+  },
+  "other_six_approved_correction_ids": [
+    "exports.evidence-id-free-route",
+    "methods.vtable-addresses",
+    "methods.interface-constructor-label",
+    "methods.slot-6-join-argument",
+    "methods.dependency-0x1800064d0",
+    "methods.import-query-performance-counter"
+  ],
+  "evidence_refs": [
+    "ORIGINAL-PINS.json",
+    "ORIGINAL-BYTE-WITNESSES.json",
+    "CHECKS.json",
+    "PRESERVATION-CHECKS.json"
+  ],
+  "limits": "Selected static correction only. No vendor execution, live REA, import, semantic argument recovery, application or feature completion."
+}
