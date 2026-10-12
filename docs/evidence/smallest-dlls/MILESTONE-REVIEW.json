@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "worker": "sol-milestone",
+  "instruction": 2963,
+  "reply_to": 2960,
+  "author": "root",
+  "independent_code_evidence_reviewer": "sol-2",
+  "verified_utc": "2026-10-12T04:36:14.475851+00:00",
+  "decision": "Exact bounded static milestone complete with mandatory immutable scope and count corrections.",
+  "input_pins": {
+    "reconstruction/root-smallest-dlls-20261012/REPORT.md": "99f9497af4012ebfbfe0c43dbce82006036813e62d0e575d26dd56ebb084cd13",
+    "reconstruction/root-smallest-dlls-20261012/FINDINGS.json": "1ad1672ae85a6efa78fc38912a5a2913a00e3001e8c5655fd5602b8b81e572f6",
+    "reconstruction/root-smallest-dlls-20261012/MANIFEST.json": "a38866c0c54a9b78cf280ba4fe1dd1e2d8ce6e9d5f4f0ee07d7beac5294cf831",
+    "reconstruction/root-smallest-dlls-20261012/SCOPE-CLARIFICATION.json": "188c6acf9a83a5eada1e0881a2052f32600d4f4989b46c1d2f2018a1c4f8f2b0",
+    "reconstruction/root-smallest-dlls-20261012/COUNT-CORRECTION.json": "75e534acd7e51d0b5fa61dcb8fca8137aa55a0018a19cbe1f0c6eba6351b5d5a",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.json": "c0d372ccd05ef571847548b11cbf413eb0f4475cd14b9ef5235cc9b4aa9ab591",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.md": "57391358b2e097e351b612c643ecc3e66e8b55756d5a731a29ec0d1ad7f36337",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/INPUT-MANIFEST.json": "7249b4069ac5cd8c60205364d9ea5000a5d8db22516ea41db9aed9529759daf6",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/OUTPUT-MANIFEST.json": "162f2fe6b0c854f578ef3d25a359b95bf56d887b3ca83a0e0edc077dccd9d371"
+  },
+  "accepted_boundary": {
+    "original_build": "1.0.0.30839",
+    "original_files": 43,
+    "author_immutable_files": 1175,
+    "independent_input_entries": 1221,
+    "independent_output_entries": 257,
+    "forwarding_libraries": 41,
+    "exact_forwarding_routes": 2960,
+    "selection": "All41 API-set family members, including65576-byte crt-private, plus two smallest non-api libraries. Not the first43 DLLs in size order.",
+    "non_api_ranks": [
+      {
+        "original_name": "msvcp140_codecvt_ids.dll",
+        "bytes": 21544,
+        "overall_rank": 40,
+        "non_api_rank": 1
+      },
+      {
+        "original_name": "msvcp140_1.dll",
+        "bytes": 25136,
+        "overall_rank": 42,
+        "non_api_rank": 2
+      }
+    ],
+    "body_summary": [
+      {
+        "library": "msvcp140_codecvt_ids.dll",
+        "bodies": 53,
+        "ranges": 55,
+        "bytes": 3034,
+        "instruction_witnesses": 833
+      },
+      {
+        "library": "msvcp140_1.dll",
+        "bodies": 93,
+        "ranges": 97,
+        "bytes": 3949,
+        "instruction_witnesses": 1083
+      }
+    ],
+    "bodies": 146,
+    "inclusive_ranges": 152,
+    "body_bytes": 6983,
+    "independent_instruction_witnesses": 1916,
+    "codecvt_data_exports": 4,
+    "original_resource_apis": 7,
+    "bounded_reviewed_claims": 73,
+    "unconditional_approved_claims": 72,
+    "resolved_original_wording_defects": 1,
+    "unresolved_obligation_rows": 5,
+    "contracts": "Seven original export contracts and nine internal machine contracts retain exact saved witnesses in CONTRACT-BOUNDARY.json.",
+    "critical_limits": [
+      "XCHG stores new null and returns old pointer or distinct zero fallback. Instruction atomicity does not establish object lifetime or higher-level threading.",
+      "RAX successful allocation return is machine behavior despite void pseudocode. It is not a recovered complete C++ prototype.",
+      "Comparison assigns AL only. Upper RAX remains unspecified. RET0 encodedc20000 is zero stack adjustment, not a zero RAX promise.",
+      "Unsigned alignment<=16 includes0 in the static branch. Alignment validity and external allocator signatures remain unresolved.",
+      "After zero handler result, UINT64_MAX first selects bad_array_new_length construction. Other sizes first call bad_alloc construction. Exact stores, strings, RTTI and IAT routes support labels. External no-return, fallthrough after unexpected return, unwind and full exception ABI remain unproved.",
+      "Four initially zero data IDs do not establish consumer runtime invariants. No conversion algorithm is exported.",
+      "Provider body capture does not establish complete CRT or executable behavior coverage."
+    ]
+  },
+  "per_claim_authority": "CLAIM-AUTHORITY.json",
+  "checks": "CHECKS.json",
+  "identity_checks": "IDENTITY-CHECKS.json",
+  "remaining_obligations": [
+    {
+      "id": "external_semantics",
+      "claim": "External handler, allocator, exception and Windows target implementation behavior remains unobserved.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "types_ABI",
+      "claim": "Full resource object types, field ownership, exception layout/ABI, consumer locale ID invariants and C++ threading/lifetime semantics remain unresolved.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "terminal_no_return",
+      "claim": "Ghidra terminal-call observations and hasNoReturn metadata do not prove external calls cannot return or throw exactly as modeled. Void allocation pseudocode is not a return contract.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "full_CRT",
+      "claim": "Full CRT/runtime semantic review remains incomplete despite complete provider-body capture.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    },
+    {
+      "id": "reconstruction_parity",
+      "claim": "Rust reconstruction, Windows behavior and whole-app/media/UI/project parity are outside this static review.",
+      "disposition": "unresolved",
+      "evidence": [
+        "msvcp140_1.dll-TYPE-AND-LIMIT-LEDGER.json",
+        "msvcp140_codecvt_ids.dll-TYPE-AND-LIMIT-LEDGER.json"
+      ],
+      "limitations": "Static source facts only."
+    }
+  ],
+  "source_tuples": [
+    {
+      "repository": "https://github.com/pastawithpesto/dji-studio-omarchy.git",
+      "worktree": "/home/violence/Projects/dji-studio-omarchy/native",
+      "branch": "main",
+      "HEAD": "91f1fd620a7a0aea74db49a03be240ee59681401",
+      "fresh_main": "366dd125c928ea3bf1c813d6f6b42abc1242e13d",
+      "check_utc": "2026-10-12T04:32:54.042012+00:00",
+      "main_is_ancestor": false,
+      "ancestry_exit": 1,
+      "status": "dirty",
+      "status_porcelain": " M AGENTS.md\n M AUTHORS.md\n M docs/RESEARCH.md\n?? source-worktrees/\n"
+    },
+    {
+      "repository": "https://github.com/pastawithpesto/dji-studio-omarchy.git",
+      "worktree": "/home/violence/Projects/dji-studio-omarchy/source-worktrees/root-smallest-dlls-20261012",
+      "branch": "work/root-smallest-dlls-20261012",
+      "HEAD": "dca1183afb16deedef535267b2da2acac9364610",
+      "fresh_main": "366dd125c928ea3bf1c813d6f6b42abc1242e13d",
+      "check_utc": "2026-10-12T04:32:54.063016+00:00",
+      "main_is_ancestor": false,
+      "ancestry_exit": 1,
+      "status": "clean",
+      "status_porcelain": ""
+    }
+  ],
+  "PR32": {
+    "url": "https://github.com/pastawithpesto/dji-studio-omarchy/pull/32",
+    "remote_head": "81f2f120a701931dc368bf63687a79647f102507",
+    "watchdog": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-12T03:59:56Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/pastawithpesto/dji-studio-omarchy/actions/runs/38201949711/job/114657079975",
+        "name": "claims",
+        "startedAt": "2026-10-12T03:59:36Z",
+        "status": "COMPLETED",
+        "workflowName": "PR work watchdog"
+      }
+    ],
+    "open_claims": "OPEN-PRS-FINAL.json",
+    "local_author_head": "dca1183afb16deedef535267b2da2acac9364610",
+    "local_head_delta": "Only docs/tasks/smallest-dlls-rea640.md changed since reviewed plan81f2f120. Later source candidate remains outside this evidence gate.",
+    "source_base_limit": "Fresh main366dd125 is not an ancestor of either current HEAD. Original static pins remain exact. This gate does not approve source integration or publication."
+  },
+  "tool_boundary": "Reuse saved upstreama1b5d51a8dfb7fff6272d91270c16b95555c2643 REA package/server6.4.0 and Ghidra12.1.4 evidence offline. No new analysis, installation or current live-server claim.",
+  "scope_compliance": "Write only owned milestone-review and authorized bus/PR review records. No imports, provider sessions, vendor execution, author/peer scripts, application/source/config/process/session edits, scope expansion, merge or release.",
+  "completion_limit": "PASS certifies exact static evidence gate only. Reconstruction, full DLL semantics, Rust, Windows equivalence, media, UI, project compatibility and failure parity remain unresolved."
+}

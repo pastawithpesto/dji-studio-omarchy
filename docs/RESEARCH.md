@@ -1,12 +1,20 @@
 # Reverse engineering procedure
 
-Use RAE with Ghidra where available. Verify the connector, version, and access
-before you assign a task. Tool names and sessions depend on the local setup.
-Do not assume that another computer has the same RAE service.
+Use REA with Ghidra where available.
+Read the [REA workflow and benchmark policy](REA-WORKFLOW.md).
+Use the latest upstream REA from the [official repository](https://github.com/morluto/rea).
+At task start and resume, fetch its default branch and update an owned
+installation to the newest upstream commit before new analysis.
+Record the upstream commit, package version and running MCP server version.
+Preserve other workers' installations and active sessions.
+Keep saved evidence pinned to the tool version that produced it.
+Verify the connector, version and access before you assign a task.
+Tool names and sessions depend on the local setup.
+Do not assume that another computer has the same REA service.
 
 1. Read open PR claims and the evidence index. Reserve one precise target.
 2. Pin the binary build and SHA-256. Check that the evidence uses the same file.
-3. Reuse matching Ghidra projects, RAE sessions, snapshots, and exported evidence.
+3. Reuse matching Ghidra projects, REA sessions, snapshots, and exported evidence.
    Ask the owner before you import a binary again. Do not stop another session.
 4. Resolve callers, imports, exports, thunks, types, and units as needed.
    Check decompiled results against original bytes and disassembly.
@@ -22,7 +30,7 @@ Do not assume that another computer has the same RAE service.
 | VinceEditor.dll | `9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42` |
 | nle_core.dll | `3b5d3931c5a0b0796ea5a0072a0102bc6f38d24c94ad56cb62abe31e3d7e99b1` |
 
-The private repository contains source, recovered resources, fixtures, and selected
+The public repository contains source, recovered resources, fixtures, and selected
 handoff records. Original executables, DLLs, full Ghidra projects, models, and the
 complete local evidence archive are not included. Request a required artifact from
 the maintainer by path and SHA-256 before you repeat analysis. Some historical

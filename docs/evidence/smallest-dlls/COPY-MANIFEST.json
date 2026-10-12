@@ -1,0 +1,60 @@
+{
+  "kind": "exact selected evidence copies and publication index",
+  "copies": [
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/REPORT.md",
+      "published": "docs/evidence/smallest-dlls/REPORT.md",
+      "sha256": "99f9497af4012ebfbfe0c43dbce82006036813e62d0e575d26dd56ebb084cd13"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/FINDINGS.json",
+      "published": "docs/evidence/smallest-dlls/FINDINGS.json",
+      "sha256": "1ad1672ae85a6efa78fc38912a5a2913a00e3001e8c5655fd5602b8b81e572f6"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/SCOPE-CLARIFICATION.json",
+      "published": "docs/evidence/smallest-dlls/SCOPE-CLARIFICATION.json",
+      "sha256": "188c6acf9a83a5eada1e0881a2052f32600d4f4989b46c1d2f2018a1c4f8f2b0"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/COUNT-CORRECTION.json",
+      "published": "docs/evidence/smallest-dlls/COUNT-CORRECTION.json",
+      "sha256": "75e534acd7e51d0b5fa61dcb8fca8137aa55a0018a19cbe1f0c6eba6351b5d5a"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.json",
+      "published": "docs/evidence/smallest-dlls/INDEPENDENT-REVIEW.json",
+      "sha256": "c0d372ccd05ef571847548b11cbf413eb0f4475cd14b9ef5235cc9b4aa9ab591"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.md",
+      "published": "docs/evidence/smallest-dlls/INDEPENDENT-REVIEW.md",
+      "sha256": "57391358b2e097e351b612c643ecc3e66e8b55756d5a731a29ec0d1ad7f36337"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/independent-review/OUTPUT-MANIFEST.json",
+      "published": "docs/evidence/smallest-dlls/INDEPENDENT-OUTPUT-MANIFEST.json",
+      "sha256": "162f2fe6b0c854f578ef3d25a359b95bf56d887b3ca83a0e0edc077dccd9d371"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/milestone-review/REVIEW.json",
+      "published": "docs/evidence/smallest-dlls/MILESTONE-REVIEW.json",
+      "sha256": "e034866b4cab2789a471aea808744508f9ef2444350e3c439420312164d57347"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/milestone-review/REVIEW.md",
+      "published": "docs/evidence/smallest-dlls/MILESTONE-REVIEW.md",
+      "sha256": "9bb4c96ca88db2acf99f3d2f1b1933662bc1c395b6d06d2f9b614fb8ad3baf84"
+    },
+    {
+      "source": "reconstruction/root-smallest-dlls-20261012/milestone-review/MANIFEST.json",
+      "published": "docs/evidence/smallest-dlls/MILESTONE-MANIFEST.json",
+      "sha256": "dfab63d5dd520f2e9aef7cb22783e544da731e9dd64f0b066d7968ee5f0ca20a"
+    },
+    {
+      "source": "new publication README",
+      "published": "docs/evidence/smallest-dlls/README.md",
+      "sha256": "1836b9c41d9860681facb1c90bb50c31297bbe6525f6cdc8868162eac809eca8"
+    }
+  ]
+}

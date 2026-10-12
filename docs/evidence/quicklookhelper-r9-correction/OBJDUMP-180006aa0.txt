@@ -1,0 +1,15 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/QuickLookHelper.dll:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000180006aa0 <.text+0x5aa0>:
+   180006aa0:	48 83 c1 08          	add    rcx,0x8
+   180006aa4:	48 3b ca             	cmp    rcx,rdx
+   180006aa7:	74 12                	je     0x180006abb
+   180006aa9:	4c 8b 42 08          	mov    r8,QWORD PTR [rdx+0x8]
+   180006aad:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+   180006ab0:	44 0f b6 4c 24 08    	movzx  r9d,BYTE PTR [rsp+0x8]
+   180006ab6:	e9 98 ac ff ff       	jmp    0x180001753
+   180006abb:	c3                   	ret

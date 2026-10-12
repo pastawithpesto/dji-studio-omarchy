@@ -1,0 +1,92 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_731119bf0f58b0b89f048803c06797734ed17101e2ff485c09ae777bc268ca3c\",\"subject\":{\"name\":\"QuickLookHelper.dll\",\"digest\":{\"sha256\":\"c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b\"},\"format\":\"pe\",\"architecture\":\"x86_64\",\"local_path\":\"/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/QuickLookHelper.dll\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"shared-library\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v3\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86_64\",\"available_architectures\":[\"x86_64\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"2f8e96b5753c9076371d59a3c3682f610a66fa4834dc6dc5f556e707a6b8c2cf\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_assembly\",\"parameters\":{\"procedure\":\"0x180006aa0\"},\"raw_result\":{\"value\":\"0x180006aa0: ADD RCX, 0x8\\n0x180006aa4: CMP RCX, RDX\\n0x180006aa7: JZ 0x180006abb\\n0x180006aa9: MOV R8, qword ptr [RDX + 0x8]\\n0x180006aad: MOV RDX, qword ptr [RDX]\\n0x180006ab0: MOVZX R9D, byte ptr [RSP + 0x8]\\n0x180006ab6: JMP 0x180001753\\n0x180006abb: RET\",\"limitations\":[\"Ghidra Listing reports a terminal call at 0x180006ab6 to 0x180001753 thunk_FUN_1800025b0 (external=false, thunk=true, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation.\"]},\"normalized_result\":\"0x180006aa0: ADD RCX, 0x8\\n0x180006aa4: CMP RCX, RDX\\n0x180006aa7: JZ 0x180006abb\\n0x180006aa9: MOV R8, qword ptr [RDX + 0x8]\\n0x180006aad: MOV RDX, qword ptr [RDX]\\n0x180006ab0: MOVZX R9D, byte ptr [RSP + 0x8]\\n0x180006ab6: JMP 0x180001753\\n0x180006abb: RET\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Assembly is Ghidra Listing text and does not claim textual equivalence with Hopper output.\",\"Ghidra Listing reports a terminal call at 0x180006ab6 to 0x180001753 thunk_FUN_1800025b0 (external=false, thunk=true, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_731119bf0f58b0b89f048803c06797734ed17101e2ff485c09ae777bc268ca3c",
+    "subject": {
+      "name": "QuickLookHelper.dll",
+      "digest": {
+        "sha256": "c49e03bee7bfed1a1b9d6c982afdce43bb32c8dfe023ee29b55865243e59255b"
+      },
+      "format": "pe",
+      "architecture": "x86_64",
+      "local_path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/QuickLookHelper.dll"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "shared-library",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86_64",
+        "available_architectures": [
+          "x86_64"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "2f8e96b5753c9076371d59a3c3682f610a66fa4834dc6dc5f556e707a6b8c2cf"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_assembly",
+    "parameters": {
+      "procedure": "0x180006aa0"
+    },
+    "raw_result": {
+      "value": "0x180006aa0: ADD RCX, 0x8\n0x180006aa4: CMP RCX, RDX\n0x180006aa7: JZ 0x180006abb\n0x180006aa9: MOV R8, qword ptr [RDX + 0x8]\n0x180006aad: MOV RDX, qword ptr [RDX]\n0x180006ab0: MOVZX R9D, byte ptr [RSP + 0x8]\n0x180006ab6: JMP 0x180001753\n0x180006abb: RET",
+      "limitations": [
+        "Ghidra Listing reports a terminal call at 0x180006ab6 to 0x180001753 thunk_FUN_1800025b0 (external=false, thunk=true, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+      ]
+    },
+    "normalized_result": "0x180006aa0: ADD RCX, 0x8\n0x180006aa4: CMP RCX, RDX\n0x180006aa7: JZ 0x180006abb\n0x180006aa9: MOV R8, qword ptr [RDX + 0x8]\n0x180006aad: MOV RDX, qword ptr [RDX]\n0x180006ab0: MOVZX R9D, byte ptr [RSP + 0x8]\n0x180006ab6: JMP 0x180001753\n0x180006abb: RET",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Assembly is Ghidra Listing text and does not claim textual equivalence with Hopper output.",
+      "Ghidra Listing reports a terminal call at 0x180006ab6 to 0x180001753 thunk_FUN_1800025b0 (external=false, thunk=true, hasNoReturn=false); fallthrough is excluded by Ghidra's flow model. The reason for the terminal flow is not established by this observation."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

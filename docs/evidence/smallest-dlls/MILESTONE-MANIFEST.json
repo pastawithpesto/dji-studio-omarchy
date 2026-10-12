@@ -1,0 +1,207 @@
+{
+  "kind": "immutable_bounded_static_milestone",
+  "worker": "sol-milestone",
+  "instruction": 2963,
+  "created_utc": "2026-10-12T04:36:14.475851+00:00",
+  "excludes_self": true,
+  "state_policy": "Completion state is sealed at finite completion. Do not mutate completed payloads. Use a new additive record for any later correction.",
+  "input_seals": {
+    "reconstruction/root-smallest-dlls-20261012/REPORT.md": "99f9497af4012ebfbfe0c43dbce82006036813e62d0e575d26dd56ebb084cd13",
+    "reconstruction/root-smallest-dlls-20261012/FINDINGS.json": "1ad1672ae85a6efa78fc38912a5a2913a00e3001e8c5655fd5602b8b81e572f6",
+    "reconstruction/root-smallest-dlls-20261012/MANIFEST.json": "a38866c0c54a9b78cf280ba4fe1dd1e2d8ce6e9d5f4f0ee07d7beac5294cf831",
+    "reconstruction/root-smallest-dlls-20261012/SCOPE-CLARIFICATION.json": "188c6acf9a83a5eada1e0881a2052f32600d4f4989b46c1d2f2018a1c4f8f2b0",
+    "reconstruction/root-smallest-dlls-20261012/COUNT-CORRECTION.json": "75e534acd7e51d0b5fa61dcb8fca8137aa55a0018a19cbe1f0c6eba6351b5d5a",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.json": "c0d372ccd05ef571847548b11cbf413eb0f4475cd14b9ef5235cc9b4aa9ab591",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/REVIEW.md": "57391358b2e097e351b612c643ecc3e66e8b55756d5a731a29ec0d1ad7f36337",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/INPUT-MANIFEST.json": "7249b4069ac5cd8c60205364d9ea5000a5d8db22516ea41db9aed9529759daf6",
+    "reconstruction/root-smallest-dlls-20261012/independent-review/OUTPUT-MANIFEST.json": "162f2fe6b0c854f578ef3d25a359b95bf56d887b3ca83a0e0edc077dccd9d371"
+  },
+  "outputs": [
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/CHECKS.json",
+      "bytes": 29011,
+      "sha256": "b5a762de797844146f786ccf39bbc77a07a8caa43cab718f033bfb04da353289"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/CLAIM-AUTHORITY.json",
+      "bytes": 114922,
+      "sha256": "5d3c1b7c5cb804a5c7c25a44455ade941988af7687d9c13bdea79e7bced1395c"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/CONTINUATION-STATE.json",
+      "bytes": 988,
+      "sha256": "30f50c464cae4a09d09fd3dc89834d7954fd6614749df5ba75a39bcda509974e"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/CONTRACT-BOUNDARY.json",
+      "bytes": 37459,
+      "sha256": "99621d964ab3cbe6c5a1a6178adccee5953c335e6a61636fd56dfd8a1ea9f4f1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/FAILED-PROBES.json",
+      "bytes": 1514,
+      "sha256": "f105685364205684e386095da568ac287329aff653b0a66b57990e8638413b5b"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/IDENTITY-CHECKS.json",
+      "bytes": 1028425,
+      "sha256": "35408402fa6d15bb8a1445fb1d04cde66ba62aee92de9bb63fc362cf8ee7f7da"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/INBOX-FINAL.json",
+      "bytes": 887132,
+      "sha256": "8914e90b3bcdb1fea125925119398854dbef62653e35ca1a48dd7244faf79104"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/INBOX-START.json",
+      "bytes": 884856,
+      "sha256": "ceb7ebf4256d0d0dd9f890980ea8e8f388b04576fd235daf9ba96f2ecf7406bf"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/OPEN-PRS-FINAL.json",
+      "bytes": 37543,
+      "sha256": "7932cc5d61cc1e7f2924a7c4e57561de37ff5cd4637622c4af2285c056121631"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/OPEN-PRS-START.json",
+      "bytes": 39501,
+      "sha256": "f4ee916ae9f493842102931873c5c8a1fe52020889e6204bde19124afc69d645"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/PR32-FINAL.json",
+      "bytes": 7280,
+      "sha256": "b65849d3298f37a3b7ba3d347230d22b3adb7b9b4cab6d91b96b358a0d594605"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/PR32-START.json",
+      "bytes": 7280,
+      "sha256": "b65849d3298f37a3b7ba3d347230d22b3adb7b9b4cab6d91b96b358a0d594605"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/REVIEW.json",
+      "bytes": 9402,
+      "sha256": "e034866b4cab2789a471aea808744508f9ef2444350e3c439420312164d57347"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/REVIEW.md",
+      "bytes": 8193,
+      "sha256": "9bb4c96ca88db2acf99f3d2f1b1933662bc1c395b6d06d2f9b614fb8ad3baf84"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/SOURCE-TUPLES-FINAL.json",
+      "bytes": 1049,
+      "sha256": "01ff4ca5670f68f2f45ba91ad56d186cf60333582681f657a46bdaeed8eecdbd"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/SOURCE-TUPLES-START.json",
+      "bytes": 1048,
+      "sha256": "25ab024378349657492bf8c540945caa8142aebb866d27335233dcbab717ebfd"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/context-AGENTS.md",
+      "bytes": 5438,
+      "sha256": "a3a7804bb0c2011af14abb9837e8c82eb5741abd3f313488a2cac43a1e08c98c"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/context-coordination_protocol.json",
+      "bytes": 3825,
+      "sha256": "b25a8f631b6e523daf34ab2f3d3a19d9ccb21151e13a8d204973f9c2d82480f5"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/context-native_AGENTS.md",
+      "bytes": 5440,
+      "sha256": "0374e8ecc89faa6398182700e6632bf20c30500db35ab417a67468f286ad72ae"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/context-native_CONTRIBUTING.md",
+      "bytes": 2505,
+      "sha256": "fc2c81b0421cbd09029c158fa87985f0b5b15cd3e07046054940c21dbd2c83fd"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/context-native_START-HERE.md",
+      "bytes": 1752,
+      "sha256": "09461d323442b92cb848af83a80e84d45ec382aea1f50b5d01527f1f386f31de"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/context-native_docs_RESEARCH.md",
+      "bytes": 2435,
+      "sha256": "6d31b218dbc96d3d45e0d6e715534b58999b1848e7732d6ab4ee0573437036c6"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/context-native_docs_STATUS.md",
+      "bytes": 2257,
+      "sha256": "f6e93677061b7146e82a674c54c924b44ba82ff41a81eaa97e9185978286bba1"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/directory-assumption-CHECKS.json",
+      "bytes": 29052,
+      "sha256": "f2db62f344ececcb4cb7693ca162268640554a96ffc267b8dbff07bb524b26fb"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/directory-assumption-verify.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/directory-assumption-verify.stdout",
+      "bytes": 4534,
+      "sha256": "c1f859195718c10bbdf5e60891aef3b3b7f937ac62e8ea4ba85a9107d991395a"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/directory-assumption-verify_milestone.py",
+      "bytes": 12234,
+      "sha256": "22aa9832c7167eb419792311d70b452e195508ea5283893ca203ef20fedd6149"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/seal_review.py",
+      "bytes": 14855,
+      "sha256": "a5f9037b8be642218fca5d554f59fd67264d9f012db5d8b4c55d3ae1ab4f4a56"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/verify-milestone-initial.py",
+      "bytes": 12204,
+      "sha256": "a5131b43484e39385a0bf40f59c8e9f09f4e6513b3e92757fd4607188d91da86"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/verify-milestone-initial.stderr",
+      "bytes": 279,
+      "sha256": "62619096eafb8d618d90a30a1f874809d83716bce0a4202b63183eefcaa4bb51"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/verify.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/verify.stdout",
+      "bytes": 305,
+      "sha256": "fcd859c618ac82b3048345ff1c63af493769b7bf5b1bc134883e0b55695535ea"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/verify_milestone.py",
+      "bytes": 12249,
+      "sha256": "3d6eb7c84d3c341f0bffb2b91bc705aa78dde35c6f2fc76e3541f591cef0c3dc"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/watchdog-final-heartbeat.json",
+      "bytes": 1023,
+      "sha256": "7fe9352505ee4c399d936a426202d40c094fba9a8df77acb511edbc8bd849659"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/watchdog-final-state.json",
+      "bytes": 909734,
+      "sha256": "8269730db21546c0300bcca324f43a1e3eb9729e93d9781e647172a1e3d283c7"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/watchdog-heartbeat.json",
+      "bytes": 1023,
+      "sha256": "ab605eff14832b6b6659de01df1ce4606cce7d47282ef3759e606caf9a9bb8eb"
+    },
+    {
+      "path": "reconstruction/root-smallest-dlls-20261012/milestone-review/watchdog-state.json",
+      "bytes": 944979,
+      "sha256": "b4a02134fcb7f53d8e12ca5c5da4f44a5c4289ac8bf78e2b043a7833b9201b90"
+    }
+  ],
+  "delivery_policy": "Bus and PR receipts are additive transport records outside this immutable payload manifest."
+}

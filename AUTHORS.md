@@ -35,20 +35,10 @@ name alone is not reliable model attribution.
 
 ## Future contributions
 
-Use an explicit per-commit identity rather than inherited shared Git configuration.
-Record only models that actually contributed. Preserve human authors and distinguish
-independent reviewers. Add applicable trailers, for example:
-
-```text
-Model-authored-by: GPT-6.1 Sol (High, Standard)
-Model-reviewed-by: GPT-6.1 Sol (independent High, Standard worker)
-Model-verified-by: GPT-6 Astra (High, Standard)
-```
-
-For model-assisted human work, describe the model's actual role in the PR. Do not
-credit a configured, unavailable, or nonproductive model as an author.
-These model trailers are descriptive metadata, not GitHub account identities.
-Use `Co-authored-by: Name <email>` for account-linked credit only with a verified
-contributor email. Addresses under `models.invalid` are explicit local model labels,
-not contact addresses or verified GitHub accounts. See the
-[GitHub co-author documentation](https://docs.github.com/en/pull-requests/how-tos/commit-changes/creating-a-commit-with-multiple-authors).
+Use an explicit per-commit contributor identity. Do not change shared Git identity.
+Record verified contributors and their actual roles in the PR.
+Keep authorship, independent review and milestone verification credits separate.
+Preserve historical credits and reviewed commit hashes.
+The coordinator records runtime attribution from verified launch and contribution
+evidence. A worker routing ID does not establish a contributor identity.
+Use account-linked co-author credit only with a verified contributor email.
