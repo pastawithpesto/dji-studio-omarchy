@@ -1,0 +1,44 @@
+{
+  "format": "additive static producer evidence manifest",
+  "scope": "PR48 reserved docs/tasks/stitching-stereo-pair-producer.md and docs/evidence/stitching-stereo-pair-producer/**",
+  "created_utc": "2026-10-12T19:53:36Z",
+  "source_checkout": {
+    "repository": "/home/violence/Work/stitching-cache-verification-20261012/source",
+    "branch": "research/stitching-stereo-pair-producer-20261012",
+    "head": "886e01f255877967c6cbd6b360e72f3dee4ec28e",
+    "origin_main": "13357262099643200bffa435bce7a14528cf8d14",
+    "dirty": false
+  },
+  "source_files": {
+    "VinceEditor.dll": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+    "dual_fisheye_video_eis_win.dll": "e35f7397b9b6ad9b9e453ff01bc1f34e3ea9470bd6bc2a6b5bbdd637dac4e09a"
+  },
+  "artifact_count": 5,
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "size_bytes": 4663,
+      "sha256": "bbfa4f3f82956ae73b778852b9556d6c700b861712cfdb3f73ae5bceb7295584"
+    },
+    {
+      "path": "PE-WITNESSES.json",
+      "size_bytes": 10129,
+      "sha256": "036668c651edae8c854d39a959fc1466249259dec926e7bd8333c33f4773ab2e"
+    },
+    {
+      "path": "verify_producer_witnesses.py",
+      "size_bytes": 13273,
+      "sha256": "94474480ec7ff246123222a20ac3d2bac99885b6b29fda12d370b2dfa06162b8"
+    },
+    {
+      "path": "helper.objdump.txt",
+      "size_bytes": 4671,
+      "sha256": "6fb1a788060f9155d03bbe6a7f55c03ffab1ba2f836733ace7a56175c03d055e"
+    },
+    {
+      "path": "verify-run.log",
+      "size_bytes": 1225,
+      "sha256": "cfd2b32d0d1e0e9b65ab3a0e0dd5c9fdf66ef1c3e6500ce062af1945656b8945"
+    }
+  ]
+}

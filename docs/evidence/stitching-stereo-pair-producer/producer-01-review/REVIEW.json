@@ -1,0 +1,24 @@
+{
+  "reviewer": "/root",
+  "role": "independent static evidence reviewer, separate from Luna author",
+  "manifest_sha256": "ca04689f688e4b78c083fcde33d5f6c3395b3b983c1f8246c1a76b51ddb37419",
+  "report_sha256": "bbfa4f3f82956ae73b778852b9556d6c700b861712cfdb3f73ae5bceb7295584",
+  "all_manifest_artifacts_match": true,
+  "full_source_sha256_match": true,
+  "independent_import": {
+    "dll": "dual_fisheye_video_eis_win.dll",
+    "symbol": "?EisGetStereoPair@DUALFISHEYEVIDEOEIS@@YA?AUdata_feed_stereo_pair@@PEAXHAEBUFrameMetaOfIMU@1@11JJJUSensorTemperature@1@HUFlightPoseNavi@1@@Z",
+    "iat_va": "0x180670988"
+  },
+  "export_and_section_check": "Independent PE parser confirms ordinal 26, RVA 0x1474, virtual-only .text",
+  "caller_and_helper_bytes_match": true,
+  "helper_assembly_independent_regeneration_matches": true,
+  "verdict": "APPROVED for bounded static facts only",
+  "limits": [
+    "No indirect side-effect proof",
+    "No units or field semantics established",
+    "No vendor execution or loaded module proof",
+    "No application or Windows parity approval",
+    "Verifier is a historical local snapshot and requires its pinned checkout and saved artifacts"
+  ]
+}

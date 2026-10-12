@@ -1,0 +1,198 @@
+{
+  "VinceEditor.dll": {
+    "sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+    "sections": [
+      {
+        "name": ".text",
+        "virtual_size": 6738783,
+        "rva": 4096,
+        "raw_size": 6738944,
+        "raw_pointer": 1024
+      },
+      {
+        "name": ".rdata",
+        "virtual_size": 3704238,
+        "rva": 6746112,
+        "raw_size": 3704320,
+        "raw_pointer": 6739968
+      },
+      {
+        "name": ".data",
+        "virtual_size": 200489,
+        "rva": 10452992,
+        "raw_size": 110080,
+        "raw_pointer": 10444288
+      },
+      {
+        "name": ".pdata",
+        "virtual_size": 344268,
+        "rva": 10653696,
+        "raw_size": 344576,
+        "raw_pointer": 10554368
+      },
+      {
+        "name": "_RDATA",
+        "virtual_size": 48,
+        "rva": 11001856,
+        "raw_size": 512,
+        "raw_pointer": 10898944
+      },
+      {
+        "name": ".rsrc",
+        "virtual_size": 2536,
+        "rva": 11005952,
+        "raw_size": 2560,
+        "raw_pointer": 10899456
+      },
+      {
+        "name": ".reloc",
+        "virtual_size": 45080,
+        "rva": 11010048,
+        "raw_size": 45568,
+        "raw_pointer": 10902016
+      }
+    ],
+    "image_base": "0x180000000",
+    "witnesses": [
+      {
+        "va": "0x18013cd75",
+        "file_offset": 1294709,
+        "length": 3,
+        "hex": "4c8bf9",
+        "sha256": "029e1662d11564e4f157bb48861cf792b7e01d0fdbccf2b54ce37092176f605c"
+      },
+      {
+        "va": "0x18013d187",
+        "file_offset": 1295751,
+        "length": 8,
+        "hex": "41c7472480070000",
+        "sha256": "7c95c252b446ef2e4ccb0bb67be9694a4d1c552d7e1f8dadd157fceae6a520b6"
+      },
+      {
+        "va": "0x18013d18f",
+        "file_offset": 1295759,
+        "length": 8,
+        "hex": "41c7472880070000",
+        "sha256": "5b1c7b49a95092e358711fbc27c71b1ab1e204f54b2d037e440081700588454f"
+      },
+      {
+        "va": "0x18013d424",
+        "file_offset": 1296420,
+        "length": 4,
+        "hex": "418b4f28",
+        "sha256": "60c54ffbc4c3a35684dba1edeabea2adc5949b11eb09e46920a6223251e81e63"
+      },
+      {
+        "va": "0x18013d42e",
+        "file_offset": 1296430,
+        "length": 4,
+        "hex": "418b5724",
+        "sha256": "431428fce96b460ac73aa1237e404f845da6f6ecfdd90b0984decd29225af694"
+      },
+      {
+        "va": "0x180137740",
+        "file_offset": 1272640,
+        "length": 360,
+        "hex": "48895c24104889742418574883ec20488bd94883b9a8060000007528b978000000e8ee43510048894424304885c0740d488b5330488bc8e864bcffff90488983a8060000c78310080000f0000000c78314080000f00000008b0de2118f0065488b042558000000ba880a0000488b0cc88b040a3905c7f58d000f8fa200000048c7c6ffffffff4883bb0008000000753ab80400000048f7259cf58d00480f40c6488bc8e89817eeff48898300080000488b3d82f58d004c8d04bd0000000033d2488bc8e8d2645100eb07488b3d67f58d004883bb08080000007534b80400000048f7e7480f40c6488bc8e85117eeff488983080800004c8b053bf58d004e8d04850000000033d2488bc8e88b64510033c0488b5c2438488b7424404883c4205fc3488d0d18f58d00e887495100833d0cf58d00ff0f8545ffffff4863931408000048638310080000480fafd048c1e203488915e1f48d00488d0de2f48d00e8f1485100e917ffffff",
+        "sha256": "0167f0255bc5f65e2dc88afc03cced2b95aad720249e53bd66a4c88936269407"
+      }
+    ],
+    "helper_pdata": [
+      "0x137740",
+      "0x1378a8",
+      "0x7d6f78"
+    ]
+  },
+  "dual_fisheye_video_eis_win.dll": {
+    "sha256": "e35f7397b9b6ad9b9e453ff01bc1f34e3ea9470bd6bc2a6b5bbdd637dac4e09a",
+    "sections": [
+      {
+        "name": ".text",
+        "virtual_size": 195662,
+        "rva": 4096,
+        "raw_size": 0,
+        "raw_pointer": 0
+      },
+      {
+        "name": ".rdata",
+        "virtual_size": 33278,
+        "rva": 200704,
+        "raw_size": 0,
+        "raw_pointer": 0
+      },
+      {
+        "name": ".data",
+        "virtual_size": 3209,
+        "rva": 237568,
+        "raw_size": 0,
+        "raw_pointer": 0
+      },
+      {
+        "name": ".pdata",
+        "virtual_size": 4788,
+        "rva": 241664,
+        "raw_size": 0,
+        "raw_pointer": 0
+      },
+      {
+        "name": ".idata",
+        "virtual_size": 6206,
+        "rva": 249856,
+        "raw_size": 0,
+        "raw_pointer": 0
+      },
+      {
+        "name": ".00cfg",
+        "virtual_size": 337,
+        "rva": 258048,
+        "raw_size": 0,
+        "raw_pointer": 0
+      },
+      {
+        "name": ".vmp0",
+        "virtual_size": 4680325,
+        "rva": 262144,
+        "raw_size": 0,
+        "raw_pointer": 0
+      },
+      {
+        "name": ".vmp1",
+        "virtual_size": 848,
+        "rva": 4943872,
+        "raw_size": 1024,
+        "raw_pointer": 1024
+      },
+      {
+        "name": ".vmp2",
+        "virtual_size": 8247312,
+        "rva": 4947968,
+        "raw_size": 8247808,
+        "raw_pointer": 2048
+      },
+      {
+        "name": ".rsrc",
+        "virtual_size": 469,
+        "rva": 13197312,
+        "raw_size": 512,
+        "raw_pointer": 8249856
+      },
+      {
+        "name": ".reloc",
+        "virtual_size": 156,
+        "rva": 13201408,
+        "raw_size": 512,
+        "raw_pointer": 8250368
+      }
+    ],
+    "image_base": "0x180000000",
+    "exports": [
+      {
+        "name": "?EisGetStereoPair@DUALFISHEYEVIDEOEIS@@YA?AUdata_feed_stereo_pair@@PEAXHAEBUFrameMetaOfIMU@1@11JJJUSensorTemperature@1@HUFlightPoseNavi@1@@Z",
+        "ordinal": 26,
+        "rva": "0x1474",
+        "va": "0x180001474",
+        "raw_backed": false
+      }
+    ]
+  }
+}

@@ -46,3 +46,25 @@ gate. This task cannot establish complete stitching or full vendor parity.
 The two local cache modes are measured separately with three fixed small QML DLLs
 and five alternating pairs per DLL. The benchmark has its own local evidence
 scope. It does not establish stitching image correctness or a stitching speedup.
+
+## Bounded result
+
+The current-main audit passed all 22 focused stitching tests in debug and
+release. Full stitching remains incomplete. The audit and its separate hash
+review are in `docs/evidence/stitching-stereo-pair-producer/`.
+
+The finite producer task is complete. The original EIS export has no raw body
+bytes at its RVA. The caller writes the literal `0x780` to `[R15+0x24]` and
+`[R15+0x28]`, then later reads those fields. The complete intervening helper has
+no direct access to those two offsets. Indirect effects remain unknown.
+
+The immutable author packet is in `producer-01/`. The separate static review
+is in `producer-01-review/`. These are relative to this task's evidence path.
+The review approves only those static facts. It does not assign units or field
+meanings, approve Rust changes, or establish Windows parity.
+
+Next useful task: trace the construction of the caller object in a new bounded
+static scope. A complete EIS producer needs a separately pinned authentic
+implementation source. The real camera and Windows export files are also
+required for the image comparison. Keep this PR in draft pending its required
+exact-candidate review and milestone verification.

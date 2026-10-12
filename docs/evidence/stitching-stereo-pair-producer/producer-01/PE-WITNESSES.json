@@ -1,0 +1,309 @@
+{
+  "format": "static original PE byte witnesses; no image loading or vendor execution",
+  "created_utc": "2026-10-12T19:53:31Z",
+  "source_checkout": {
+    "repository": "/home/violence/Work/stitching-cache-verification-20261012/source",
+    "branch": "research/stitching-stereo-pair-producer-20261012",
+    "head": "886e01f255877967c6cbd6b360e72f3dee4ec28e",
+    "origin_main": "13357262099643200bffa435bce7a14528cf8d14",
+    "dirty": false,
+    "producer_plan_path": "docs/tasks/stitching-stereo-pair-producer.md"
+  },
+  "sources": {
+    "VinceEditor.dll": {
+      "sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+      "size_bytes": 10958008,
+      "image_base": "0x180000000",
+      "machine": "0x8664",
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 6738783,
+          "rva": 4096,
+          "raw_size": 6738944,
+          "raw": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 3704238,
+          "rva": 6746112,
+          "raw_size": 3704320,
+          "raw": 6739968
+        },
+        {
+          "name": ".data",
+          "virtual_size": 200489,
+          "rva": 10452992,
+          "raw_size": 110080,
+          "raw": 10444288
+        },
+        {
+          "name": ".pdata",
+          "virtual_size": 344268,
+          "rva": 10653696,
+          "raw_size": 344576,
+          "raw": 10554368
+        },
+        {
+          "name": "_RDATA",
+          "virtual_size": 48,
+          "rva": 11001856,
+          "raw_size": 512,
+          "raw": 10898944
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 2536,
+          "rva": 11005952,
+          "raw_size": 2560,
+          "raw": 10899456
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 45080,
+          "rva": 11010048,
+          "raw_size": 45568,
+          "raw": 10902016
+        }
+      ]
+    },
+    "dual_fisheye_video_eis_win.dll": {
+      "sha256": "e35f7397b9b6ad9b9e453ff01bc1f34e3ea9470bd6bc2a6b5bbdd637dac4e09a",
+      "size_bytes": 8261304,
+      "image_base": "0x180000000",
+      "machine": "0x8664",
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_size": 195662,
+          "rva": 4096,
+          "raw_size": 0,
+          "raw": 0
+        },
+        {
+          "name": ".rdata",
+          "virtual_size": 33278,
+          "rva": 200704,
+          "raw_size": 0,
+          "raw": 0
+        },
+        {
+          "name": ".data",
+          "virtual_size": 3209,
+          "rva": 237568,
+          "raw_size": 0,
+          "raw": 0
+        },
+        {
+          "name": ".pdata",
+          "virtual_size": 4788,
+          "rva": 241664,
+          "raw_size": 0,
+          "raw": 0
+        },
+        {
+          "name": ".idata",
+          "virtual_size": 6206,
+          "rva": 249856,
+          "raw_size": 0,
+          "raw": 0
+        },
+        {
+          "name": ".00cfg",
+          "virtual_size": 337,
+          "rva": 258048,
+          "raw_size": 0,
+          "raw": 0
+        },
+        {
+          "name": ".vmp0",
+          "virtual_size": 4680325,
+          "rva": 262144,
+          "raw_size": 0,
+          "raw": 0
+        },
+        {
+          "name": ".vmp1",
+          "virtual_size": 848,
+          "rva": 4943872,
+          "raw_size": 1024,
+          "raw": 1024
+        },
+        {
+          "name": ".vmp2",
+          "virtual_size": 8247312,
+          "rva": 4947968,
+          "raw_size": 8247808,
+          "raw": 2048
+        },
+        {
+          "name": ".rsrc",
+          "virtual_size": 469,
+          "rva": 13197312,
+          "raw_size": 512,
+          "raw": 8249856
+        },
+        {
+          "name": ".reloc",
+          "virtual_size": 156,
+          "rva": 13201408,
+          "raw_size": 512,
+          "raw": 8250368
+        }
+      ]
+    }
+  },
+  "eis_get_stereo_pair_export": {
+    "decorated_name_ascii": "?EisGetStereoPair@DUALFISHEYEVIDEOEIS@@YA?AUdata_feed_stereo_pair@@PEAXHAEBUFrameMetaOfIMU@1@11JJJUSensorTemperature@1@HUFlightPoseNavi@1@@Z",
+    "ordinal": 26,
+    "rva": "0x1474",
+    "va": "0x180001474",
+    "section": {
+      "name": ".text",
+      "virtual_size": 195662,
+      "rva": 4096,
+      "raw_size": 0,
+      "raw": 0
+    },
+    "raw_file_offset": null,
+    "raw_body_bytes_available": false,
+    "finding": "Export metadata resolves the function entry to RVA 0x1474 in .text; .text has VirtualSize 0x2fc4e and RawDataSize 0, so this original PE contains no raw bytes for the export body."
+  },
+  "vince_editor_import": [
+    "dual_fisheye_video_eis_win.dll",
+    {
+      "symbol": "?EisGetStereoPair@DUALFISHEYEVIDEOEIS@@YA?AUdata_feed_stereo_pair@@PEAXHAEBUFrameMetaOfIMU@1@11JJJUSensorTemperature@1@HUFlightPoseNavi@1@@Z",
+      "iat_va": "0x180670988"
+    }
+  ],
+  "caller_landmarks": [
+    {
+      "label": "incoming_rcx_copied_to_r15",
+      "va": "0x18013cd75",
+      "file_offset": "0x13c175",
+      "bytes_hex": "4c8bf9"
+    },
+    {
+      "label": "R15_plus_24_written_0x780",
+      "va": "0x18013d187",
+      "file_offset": "0x13c587",
+      "bytes_hex": "41c7472480070000"
+    },
+    {
+      "label": "R15_plus_28_written_0x780",
+      "va": "0x18013d18f",
+      "file_offset": "0x13c58f",
+      "bytes_hex": "41c7472880070000"
+    },
+    {
+      "label": "helper_called_with_R15_as_RC",
+      "va": "0x18013d23f",
+      "file_offset": "0x13c63f",
+      "bytes_hex": "498bcfe8f9a4ffff"
+    },
+    {
+      "label": "R15_plus_28_loaded_for_record",
+      "va": "0x18013d424",
+      "file_offset": "0x13c824",
+      "bytes_hex": "418b4f28"
+    },
+    {
+      "label": "R15_plus_24_loaded_for_record",
+      "va": "0x18013d42e",
+      "file_offset": "0x13c82e",
+      "bytes_hex": "418b5724"
+    },
+    {
+      "label": "Eis_IAT_indirect_call",
+      "va": "0x18013d409",
+      "file_offset": "0x13c809",
+      "bytes_hex": "ff1579355300"
+    }
+  ],
+  "saved_caller_asm_field_scan": {
+    "mention_count": 14,
+    "direct_stores": [
+      "   18013d187:\t41 c7 47 24 80 07 00 \tmovl   $0x780,0x24(%r15)",
+      "   18013d18f:\t41 c7 47 28 80 07 00 \tmovl   $0x780,0x28(%r15)"
+    ],
+    "interpretation": "The hash-pinned saved caller disassembly shows exactly two direct stores to these offsets; other mentions are loads."
+  },
+  "caller_continuous_ranges": [
+    {
+      "label": "R15 field initialization",
+      "start_va": "0x18013d187",
+      "end_va_exclusive": "0x18013d197",
+      "file_offset": "0x13c587",
+      "length_bytes": 16,
+      "sha256": "7797c2f67bf69708321d6cac755761c6fb333694c8dcc44375f6aca60df76022",
+      "bytes_hex": "41c747248007000041c7472880070000"
+    },
+    {
+      "label": "helper call with R15",
+      "start_va": "0x18013d23f",
+      "end_va_exclusive": "0x18013d247",
+      "file_offset": "0x13c63f",
+      "length_bytes": 8,
+      "sha256": "31578664562018c9da181715dd6adb0063369426284fe38c7c85e7658eb9a64a",
+      "bytes_hex": "498bcfe8f9a4ffff"
+    },
+    {
+      "label": "later loads from R15 fields",
+      "start_va": "0x18013d424",
+      "end_va_exclusive": "0x18013d438",
+      "file_offset": "0x13c824",
+      "length_bytes": 20,
+      "sha256": "807ba29fe3e84683bd40c9f58f25728616b902bfc5476837382754a819fdcfd2",
+      "bytes_hex": "418b4f28898ddc110000418b57248995d8110000"
+    }
+  ],
+  "helper": {
+    "va": "0x180137740",
+    "runtime_function_record": {
+      "file_offset": "0xa1e778",
+      "begin_rva": "0x137740",
+      "end_rva": "0x1378a8",
+      "unwind_rva": "0x7d6f78"
+    },
+    "file_offset": "0x136b40",
+    "length_bytes": 360,
+    "sha256": "0167f0255bc5f65e2dc88afc03cced2b95aad720249e53bd66a4c88936269407",
+    "bytes_hex": "48895c24104889742418574883ec20488bd94883b9a8060000007528b978000000e8ee43510048894424304885c0740d488b5330488bc8e864bcffff90488983a8060000c78310080000f0000000c78314080000f00000008b0de2118f0065488b042558000000ba880a0000488b0cc88b040a3905c7f58d000f8fa200000048c7c6ffffffff4883bb0008000000753ab80400000048f7259cf58d00480f40c6488bc8e89817eeff48898300080000488b3d82f58d004c8d04bd0000000033d2488bc8e8d2645100eb07488b3d67f58d004883bb08080000007534b80400000048f7e7480f40c6488bc8e85117eeff488983080800004c8b053bf58d004e8d04850000000033d2488bc8e88b64510033c0488b5c2438488b7424404883c4205fc3488d0d18f58d00e887495100833d0cf58d00ff0f8545ffffff4863931408000048638310080000480fafd048c1e203488915e1f48d00488d0de2f48d00e8f1485100e917ffffff",
+    "observation": "Complete .pdata-bounded helper body has direct object accesses at offsets +0x6a8, +0x810, +0x814, +0x800, +0x808; no direct access at +0x24 or +0x28. Its nested callees are not independently proven side-effect-free."
+  },
+  "saved_evidence": {
+    "reconstruction/root-luna-high-research-20261012/independent-review/STITCHING-CHECKS.json": {
+      "sha256": "de72eca8af9eb99957f32c4dc6623b6af9d03bf9d162b24e8914c1e554945657",
+      "size_bytes": 6926
+    },
+    "reconstruction/root-luna-high-research-20261012/independent-review/stitching-caller.objdump.txt": {
+      "sha256": "e2bb81db6589143ef68d36d68719f985199169cfb03df4300b32e5b4ff6c6ff3",
+      "size_bytes": 59888
+    },
+    "reconstruction/root-luna-high-research-20261012/stitching/correction-01/REPORT.md": {
+      "sha256": "6a9ea2e5d8bdaa03d97c7177db9ee14a7ace597e1fd0bb7d4fb67082d44ade38",
+      "size_bytes": 2912
+    },
+    "reconstruction/root-luna-high-research-20261012/stitching/correction-01/MANIFEST.json": {
+      "sha256": "c7743cbc0691959589b6ae2ec84042e88fbd8cca784ebc34bda4094a281a64b9",
+      "size_bytes": 1341
+    },
+    "reconstruction/root-luna-high-research-20261012/stitching/correction-01/SEAL.json": {
+      "sha256": "6b7efc6de8b9d321233a65699fb3218f6a7ed6879fa6f69e6f43b21bc64bcf35",
+      "size_bytes": 220
+    },
+    "helper.objdump.txt": {
+      "sha256": "6fb1a788060f9155d03bbe6a7f55c03ffab1ba2f836733ace7a56175c03d055e",
+      "size_bytes": 4671
+    }
+  },
+  "checks": {
+    "source_hashes_match": true,
+    "exact_export_found_once": true,
+    "export_has_no_raw_section_backing": true,
+    "exact_import_found_once_at_iat_0x180670988": true,
+    "caller_landmarks_match": true,
+    "helper_bounds_match_pdata": true,
+    "prior_packet_pins_match": true
+  }
+}
