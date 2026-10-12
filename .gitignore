@@ -1,1 +1,4 @@
 /target/
+
+# Keep the reverse-engineering command center local.
+/tools/dll_console/

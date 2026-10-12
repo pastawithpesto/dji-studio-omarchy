@@ -1,0 +1,171 @@
+{
+  "checked_utc": "2026-10-12T02:25:25.521586+00:00",
+  "repository": "pastawithpesto/dji-studio-omarchy",
+  "worktree": "/home/violence/Projects/dji-studio-omarchy/source-worktrees/root-oss-crc64-rust-20261012",
+  "branch": "work/oss-crc64-rust-20261012",
+  "base_commit": "7b499137ad475c64ada9997781d847de65d02a08",
+  "fresh_main": "91f1fd620a7a0aea74db49a03be240ee59681401",
+  "fresh_main_ancestor": true,
+  "open_claims_read": 25,
+  "scope_overlaps": [],
+  "checks": [
+    {
+      "name": "format",
+      "command": [
+        "/usr/bin/rustfmt",
+        "--edition",
+        "2024",
+        "--check",
+        "src/oss_crc64.rs",
+        "tests/oss_crc64.rs"
+      ],
+      "environment_overrides": {},
+      "start_utc": "2026-10-12T02:25:23.105770+00:00",
+      "end_utc": "2026-10-12T02:25:23.142122+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "standalone-library",
+      "command": [
+        "/usr/bin/rustc",
+        "--edition",
+        "2024",
+        "--crate-type",
+        "lib",
+        "src/oss_crc64.rs",
+        "-D",
+        "warnings",
+        "-o",
+        "target/liboss_crc64_standalone.rlib"
+      ],
+      "environment_overrides": {},
+      "start_utc": "2026-10-12T02:25:23.142367+00:00",
+      "end_utc": "2026-10-12T02:25:23.204671+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "debug-tests",
+      "command": [
+        "/usr/bin/cargo",
+        "test",
+        "--locked",
+        "--offline",
+        "--test",
+        "oss_crc64"
+      ],
+      "environment_overrides": {},
+      "start_utc": "2026-10-12T02:25:23.204905+00:00",
+      "end_utc": "2026-10-12T02:25:24.247693+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "69fddc2bfed77df10dafe59e4b9869d76002f7c468e750499a52acb9b9d4bb1f",
+      "stderr_sha256": "7729dc746267af494783a2bbc587c56b3fc08f3f4878aec4771d7b49b38cd664",
+      "tests_passed": 11
+    },
+    {
+      "name": "release-tests",
+      "command": [
+        "/usr/bin/cargo",
+        "test",
+        "--release",
+        "--locked",
+        "--offline",
+        "--test",
+        "oss_crc64"
+      ],
+      "environment_overrides": {},
+      "start_utc": "2026-10-12T02:25:24.247953+00:00",
+      "end_utc": "2026-10-12T02:25:25.414552+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "64493e939bb5972c44b7d6dcba2060b10cc2d48da3ef402b8b58e6f73eb4a921",
+      "stderr_sha256": "2fdd13018e806bcda451de9faffdbac969496b89885c68d09fa31df29eac8aeb",
+      "tests_passed": 11
+    },
+    {
+      "name": "cargo-clippy",
+      "command": [
+        "/usr/bin/cargo-clippy",
+        "clippy",
+        "--locked",
+        "--offline",
+        "--test",
+        "oss_crc64",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "environment_overrides": {
+        "CARGO": "/usr/bin/cargo",
+        "RUSTC": "/usr/bin/rustc",
+        "CLIPPY_DRIVER": "/usr/bin/clippy-driver"
+      },
+      "start_utc": "2026-10-12T02:25:25.414815+00:00",
+      "end_utc": "2026-10-12T02:25:25.514774+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8c233a54790c4800d3dd585436af679aa838da259bfdb129412e2d51cdb75cdc"
+    },
+    {
+      "name": "whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "environment_overrides": {},
+      "start_utc": "2026-10-12T02:25:25.514996+00:00",
+      "end_utc": "2026-10-12T02:25:25.521314+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "all_checks_pass": true,
+  "versions": {
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01) (Arch Linux rust 1:1.98.1-1)",
+    "cargo": "cargo 1.98.1 (797e8a9bc 2026-08-05) (Arch Linux rust 1:1.98.1-1)",
+    "rustfmt": "rustfmt 1.9.0",
+    "clippy-driver": "clippy 0.1.98"
+  },
+  "code_sha256": {
+    "src/oss_crc64.rs": "8a63a962e1eaa440f7bbe9fede2311076e2b468d1e01f6e5d400122f119e01b8",
+    "tests/oss_crc64.rs": "cfdcad0355e15c5d036cbc045c34aa0cee41d61d209ee0201581dd373ea3b723"
+  },
+  "original_fixture_sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624",
+  "original_cases": {
+    "ComputeCRC64": 3153,
+    "CombineCRC64": 600,
+    "valid_joins": 24
+  },
+  "independent_property_tests": 8,
+  "reference_integrity": {
+    "fixture_sha256": "f9215b491f62b2a4cefc945c6f8f30b155b12d90c76699c3a12ddbe4fb862624",
+    "compute_payload_hashes_checked": 3153,
+    "mismatches": [],
+    "fixture_files_checked": 11,
+    "file_mismatches": []
+  },
+  "retained_failed_probe": {
+    "command": [
+      "cargo",
+      "clippy",
+      "--locked",
+      "--offline",
+      "--test",
+      "oss_crc64",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "environment_overrides": {
+      "PATH": "/usr/bin:/bin"
+    },
+    "exit_code": 1,
+    "observed_stderr": "error: rustup could not choose a version of cargo-clippy to run, because one wasn't specified explicitly, and no default is configured.\nhelp: run 'rustup default stable' to download the latest stable release of Rust and set it as your default toolchain.\n",
+    "correction": "Run the actual installed cargo-clippy entry point with explicit installed CARGO, RUSTC and CLIPPY_DRIVER; no global toolchain changes."
+  },
+  "limits": "Focused two-function module and exact Wine arithmetic fixture only. Parent library registration and exact code/reference review remain separate gates. No Windows, foreign ABI, whole SDK, network, UI, media, camera or project parity."
+}
