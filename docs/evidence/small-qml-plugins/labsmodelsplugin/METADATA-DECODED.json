@@ -1,0 +1,21 @@
+{
+  "source_sha256": "58c00865d5e4eceb7c304c0f20f3154aa369ae8f75e2cd97a7452ea55efe9950",
+  "metadata_address": "0x180007000",
+  "returned_payload_address": "0x18000700c",
+  "returned_payload_length": 101,
+  "header": {
+    "format": 1,
+    "qt_major": 6,
+    "qt_minor": 5,
+    "requirements": 0
+  },
+  "CBOR": {
+    "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+    "3": "QtQmlLabsModelsPlugin",
+    "uri": [
+      "Qt.labs.qmlmodels"
+    ]
+  },
+  "metadata_sha256": "406e6aef1b85b3f02185ad2e54077e0d9b3cf64ba2758c7bf9a7ec81756aa011",
+  "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+}
