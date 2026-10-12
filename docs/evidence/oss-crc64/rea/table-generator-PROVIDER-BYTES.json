@@ -1,0 +1,102 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_9666b02004fb6afb2cc20d8cfac01befbeab1b36b91a05fb4bcbd409e55ded1e\",\"subject\":{\"name\":\"alibabacloud-oss-cpp-sdk.dll\",\"digest\":{\"sha256\":\"083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1\"},\"format\":\"pe\",\"architecture\":\"x86_64\",\"local_path\":\"/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"shared-library\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v3\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86_64\",\"available_architectures\":[\"x86_64\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"call_relationship_coverage\":\"resolved-call-reference-diagnostics-v1\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"instruction_references\":\"exact-address-incoming-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"read_bytes\",\"parameters\":{\"address\":\"0x1801b49c0\",\"length\":400},\"raw_result\":{\"address\":\"0x1801b49c0\",\"requested_bytes\":400,\"returned_bytes\":400,\"bytes_hex\":\"48895c2408488974241048897c241841ba000100004c8bc9418bfa4533db488bd948be420f87d795576cc90f1f440000410fb6c3488d5b08498bd348d1ea488bca4833ce2401480f44ca488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e84c8bc04c33c680e2014c0f44c0498bc848d1e9488bc14833c64180e001480f44c149ffc3488943f84883ef010f854fffffff498d81001000000f1f840000000000488b9000f0ffff488d40080fb6ca48c1ea08493314c90fb6ca488990f8f7ffff48c1ea08493314c90fb6ca488950f848c1ea08493314c90fb6ca488990f807000048c1ea08493314c90fb6ca488990f80f000048c1ea08493314c90fb6ca488990f817000048c1ea08493314c9488990f81f00000fb6ca48c1ea08493314c9488990f82700004983ea010f8570ffffff488b5c2408488b742410488b7c2418c3\",\"complete\":true},\"normalized_result\":{\"address\":\"0x1801b49c0\",\"requested_bytes\":400,\"returned_bytes\":400,\"bytes_hex\":\"48895c2408488974241048897c241841ba000100004c8bc9418bfa4533db488bd948be420f87d795576cc90f1f440000410fb6c3488d5b08498bd348d1ea488bca4833ce2401480f44ca488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e84c8bc04c33c680e2014c0f44c0498bc848d1e9488bc14833c64180e001480f44c149ffc3488943f84883ef010f854fffffff498d81001000000f1f840000000000488b9000f0ffff488d40080fb6ca48c1ea08493314c90fb6ca488990f8f7ffff48c1ea08493314c90fb6ca488950f848c1ea08493314c90fb6ca488990f807000048c1ea08493314c90fb6ca488990f80f000048c1ea08493314c90fb6ca488990f817000048c1ea08493314c9488990f81f00000fb6ca48c1ea08493314c9488990f82700004983ea010f8570ffffff488b5c2408488b742410488b7c2418c3\",\"complete\":true},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Bytes reflect Ghidra's initialized memory, including loader fixups. Reads stop at an unmapped or uninitialized byte and report completeness explicitly.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_9666b02004fb6afb2cc20d8cfac01befbeab1b36b91a05fb4bcbd409e55ded1e",
+    "subject": {
+      "name": "alibabacloud-oss-cpp-sdk.dll",
+      "digest": {
+        "sha256": "083397c9bfadbb1afbea296fa8a3e15403e147aebdb842d8ae55e614794891a1"
+      },
+      "format": "pe",
+      "architecture": "x86_64",
+      "local_path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/alibabacloud-oss-cpp-sdk.dll"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "shared-library",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86_64",
+        "available_architectures": [
+          "x86_64"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "instruction_references": "exact-address-incoming-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "read_bytes",
+    "parameters": {
+      "address": "0x1801b49c0",
+      "length": 400
+    },
+    "raw_result": {
+      "address": "0x1801b49c0",
+      "requested_bytes": 400,
+      "returned_bytes": 400,
+      "bytes_hex": "48895c2408488974241048897c241841ba000100004c8bc9418bfa4533db488bd948be420f87d795576cc90f1f440000410fb6c3488d5b08498bd348d1ea488bca4833ce2401480f44ca488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e84c8bc04c33c680e2014c0f44c0498bc848d1e9488bc14833c64180e001480f44c149ffc3488943f84883ef010f854fffffff498d81001000000f1f840000000000488b9000f0ffff488d40080fb6ca48c1ea08493314c90fb6ca488990f8f7ffff48c1ea08493314c90fb6ca488950f848c1ea08493314c90fb6ca488990f807000048c1ea08493314c90fb6ca488990f80f000048c1ea08493314c90fb6ca488990f817000048c1ea08493314c9488990f81f00000fb6ca48c1ea08493314c9488990f82700004983ea010f8570ffffff488b5c2408488b742410488b7c2418c3",
+      "complete": true
+    },
+    "normalized_result": {
+      "address": "0x1801b49c0",
+      "requested_bytes": 400,
+      "returned_bytes": 400,
+      "bytes_hex": "48895c2408488974241048897c241841ba000100004c8bc9418bfa4533db488bd948be420f87d795576cc90f1f440000410fb6c3488d5b08498bd348d1ea488bca4833ce2401480f44ca488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e8488bc84833ce80e201480f44c8488bc148d1e8488bd04833d680e101480f44d0488bc248d1e84c8bc04c33c680e2014c0f44c0498bc848d1e9488bc14833c64180e001480f44c149ffc3488943f84883ef010f854fffffff498d81001000000f1f840000000000488b9000f0ffff488d40080fb6ca48c1ea08493314c90fb6ca488990f8f7ffff48c1ea08493314c90fb6ca488950f848c1ea08493314c90fb6ca488990f807000048c1ea08493314c90fb6ca488990f80f000048c1ea08493314c90fb6ca488990f817000048c1ea08493314c9488990f81f00000fb6ca48c1ea08493314c9488990f82700004983ea010f8570ffffff488b5c2408488b742410488b7c2418c3",
+      "complete": true
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Bytes reflect Ghidra's initialized memory, including loader fixups. Reads stop at an unmapped or uninitialized byte and report completeness explicitly."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

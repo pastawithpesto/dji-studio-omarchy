@@ -1,0 +1,31 @@
+{
+  "base": "http://127.0.0.1:8765",
+  "GET /api/state": {
+    "csrf": "session nonce for X-Console-Token on POST",
+    "updated_at": "UTC ISO timestamp",
+    "modules": [{"id": "QuickLookHelper.dll", "name": "QuickLookHelper.dll", "bytes": 128696, "category": "application"}],
+    "models": [{"id": "luna", "name": "Luna High", "backend": "codex", "available": true}],
+    "workers": [{"pid": 1, "model": "Kimi K3 High", "kind": "opencode", "scope": "ThumbnailProvider", "owned": false}],
+    "slots": {"active": 1, "limit": 3},
+    "jobs": [{"id": "uuid", "dll": "QuickLookHelper.dll", "parts": ["hooks"], "model": "luna", "action": "review", "status": "queued", "created_at": "UTC", "updated_at": "UTC", "summary": "Selected scope", "usage": {}, "reason": "Waiting for a CLI slot"}],
+    "usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0, "cached_tokens": 0, "sessions": [], "limits": null, "limits_updated_at": null, "note": "Reported project sessions; no inferred provider quota or billing"},
+    "activity": [{"id": 1, "time": "UTC", "sender": "root", "kind": "review", "feature": "quicklook", "body": "Public project status"}]
+  },
+  "GET /api/module?id=URL_ENCODED_ID": {
+    "id": "QuickLookHelper.dll", "name": "QuickLookHelper.dll", "path": "extracted/1.0.0.30839/QuickLookHelper.dll", "bytes": 128696,
+    "sha256": "original source digest", "exports": [{"name": "OriginalExport", "va": "0x180001410", "ordinal": 1, "forwarder": null}],
+    "sections": [{"name": ".text", "rva": 4096, "va": "0x180001000", "virtual_size": 1000, "raw_size": 1024, "flags": 1610612768}],
+    "parts": [{"id": "hooks", "label": "Keyboard hook", "group": "Input", "detail": "Bounded scope", "addresses": ["0x1800067a0"], "research": "reviewed", "implementation": "missing", "reference": "missing", "missing": ["Dynamic callback meaning"], "evidence": [{"path": "reconstruction/example/REVIEW.md", "label": "Independent review"}], "owner": null, "statusSource": "Exact bounded review"}],
+    "notes": "Tracked areas are not a full-DLL completion percentage."
+  },
+  "POST /api/preview": {
+    "request": {"dll": "QuickLookHelper.dll", "parts": ["hooks"], "model": "luna", "action": "research", "notes": "Optional user directions"},
+    "response": {"prompt": "Exact generated assignment", "scope_blocker": null, "selection_summary": "Keyboard hook"}
+  },
+  "POST /api/jobs": {"request": "Same as preview", "response": {"job": "New durable queued job"}},
+  "POST /api/jobs/ID/pause": {"response": {"job": "Only console-owned job is paused; artifacts retained"}},
+  "POST /api/jobs/ID/resume": {"response": {"job": "Paused or failed job queued on its exact original model"}},
+  "GET /api/artifact?path=URL_ENCODED_PATH": {"text": "Allowlisted source evidence. Approval is a separate part state. No arbitrary filesystem browse or reasoning logs."},
+  "errors": {"error": "Human-readable message; HTTP 400/403/404/409"},
+  "frontend": "Buildless HTML/CSS/JS, static/index.html, static/app.js, static/style.css. No dependencies, external fonts or image fetches. All supplied data rendered as text, never raw HTML. Research states reviewed/unreviewed/missing/running/blocked. Implementation states missing/branch/integrated. Reference states missing/wine/validated. Model ids luna, sol, astra, kimi. Fixed phase selectors research/review. Poll every 8 seconds; preserve selection and user edits. Do not show fake percent-complete or quota."
+}
