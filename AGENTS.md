@@ -44,6 +44,9 @@ Use --reply-to for answers, reviews and corrections.
 Distinguish a receipt, a completed task, evidence approval and feature completion.
 State a blocker precisely and continue useful work within the approved scope.
 Do not publish credentials or private reasoning.
+Share reusable reverse engineering techniques through comms.
+Record proven techniques in [reverse engineering advice](docs/reverse%20engineering%20advice.md).
+Limit each entry to three sentences and exclude file-specific instructions.
 
 ## Original names and UI
 
