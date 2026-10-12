@@ -2,6 +2,8 @@
 
 This record identifies verified model contributions and keeps authorship separate
 from independent review. Credits apply to the stated work, not full application parity.
+Verified attribution identifies the author of a saved contribution. It does not
+approve the contribution. Each research packet keeps its separate review status.
 The GitHub maintainer is [pastawithpesto](https://github.com/pastawithpesto).
 
 | Model | Verified role | Evidence |
@@ -10,6 +12,8 @@ The GitHub maintainer is [pastawithpesto](https://github.com/pastawithpesto).
 | GPT-6 Luna, High | Resource recovery and packaging; corrected layout, startup, registration, and SDK provenance records | [PR 1](https://github.com/pastawithpesto/dji-studio-omarchy/pull/1), source `632efe2a3e63296f30a980606d424284d8876a3c`; [PR 3](https://github.com/pastawithpesto/dji-studio-omarchy/pull/3#issuecomment-6106354815) |
 | GPT-6 Astra, High | Review report author and independent milestone verifier | [PR 4 review record](https://github.com/pastawithpesto/dji-studio-omarchy/pull/4#issuecomment-6106482696), milestone 1476; original UI milestones 1448 to 1450 |
 | GLM-5.3-Flash, High | Resource SDK static analysis and correction reports through ZCode with saved Ghidra/RAE evidence | Resource SDK v3 record 1417, independent review 1431, combined provenance approval 1446 |
+| Kimi K3, High, through NVIDIA | ThumbnailProvider static research report author; independent review is pending for the three internal packets | [PR 27](https://github.com/pastawithpesto/dji-studio-omarchy/pull/27), [runtime attribution and report pins](docs/evidence/model-attribution/README.md), records 2878 and 2924 |
+| Qwen3.8-Flash, through Alibaba | Companion asset inventory and embedded URL survey author; caller and download behavior remain unresolved | [runtime attribution and output pins](docs/evidence/model-attribution/README.md), records 1737 and 1740 |
 
 Recovered DJI resource content retains its original provenance. Luna's credit is
 for recovery, packaging, and analysis, not original authorship of those assets.
