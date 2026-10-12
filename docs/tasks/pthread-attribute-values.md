@@ -36,3 +36,17 @@ Initial fresh main: `d96457e01f4aa2d6f264a5b9b90942e1aa89e1b4`, checked at
 `2026-10-12T06:26:06Z`. Worktree:
 `/home/violence/Work/dji-pthread-attributes-research-20261012`.
 Branch: `research/pthread-attributes-20261012`.
+
+## Delivered packet
+
+All six selected bodies are recovered with complete source-byte witnesses.
+The instruction model passed 4320 synthetic-memory cases. The report preserves
+the scheduling-policy getter's numeric output-address threshold, the policy
+setter's 129 return, 32-bit accepted-value checks and alias behavior.
+The first client-timeout failure stays local with its original harness and logs.
+The successful retry uses the documented SDK timeout argument.
+
+The complete raw packet is local at
+`reconstruction/root-pthread-attributes-20261012`. The published artifact pins
+link its immutable manifest. The candidate remains unapproved pending independent
+review. No vendor execution or merge occurred.
