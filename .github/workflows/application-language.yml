@@ -1,0 +1,32 @@
+name: Application language
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rust-and-original-qml:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Get source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Select Rust toolchain
+        run: |
+          rustup toolchain install 1.90.0 --profile minimal
+          rustup default 1.90.0
+      - name: Check the guard and application source
+        run: |
+          rustc --edition=2024 -D warnings --test tools/check_application_language.rs \
+            -o "$RUNNER_TEMP/application-language-tests"
+          "$RUNNER_TEMP/application-language-tests"
+          rustc --edition=2024 -D warnings tools/check_application_language.rs \
+            -o "$RUNNER_TEMP/application-language"
+          "$RUNNER_TEMP/application-language"
