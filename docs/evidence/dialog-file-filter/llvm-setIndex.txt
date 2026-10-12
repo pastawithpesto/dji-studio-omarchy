@@ -1,0 +1,20 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll:	file format coff-x86-64
+
+Disassembly of section .text:
+
+0000000180003140 <?setIndex@QQuickFileNameFilter@@QEAAXH@Z>:
+180003140: 48 83 ec 38                 	subq	$0x38, %rsp
+180003144: 39 51 10                    	cmpl	%edx, 0x10(%rcx)
+180003147: 74 2f                       	je	0x180003178 <?setIndex@QQuickFileNameFilter@@QEAAXH@Z+0x38>
+180003149: 89 51 10                    	movl	%edx, 0x10(%rcx)
+18000314c: 48 8d 44 24 48              	leaq	0x48(%rsp), %rax
+180003151: 89 54 24 48                 	movl	%edx, 0x48(%rsp)
+180003155: 4c 8d 4c 24 20              	leaq	0x20(%rsp), %r9
+18000315a: 48 8d 15 4f 26 00 00        	leaq	0x264f(%rip), %rdx      # 0x1800057b0 <?staticMetaObject@QQuickFileNameFilter@@2UQMetaObject@@B>
+180003161: 48 89 44 24 28              	movq	%rax, 0x28(%rsp)
+180003166: 45 33 c0                    	xorl	%r8d, %r8d
+180003169: 48 c7 44 24 20 00 00 00 00  	movq	$0x0, 0x20(%rsp)
+180003172: ff 15 00 21 00 00           	callq	*0x2100(%rip)           # 0x180005278
+180003178: 48 83 c4 38                 	addq	$0x38, %rsp
+18000317c: c3                          	retq
