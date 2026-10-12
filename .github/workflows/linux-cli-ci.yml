@@ -2,6 +2,8 @@ name: Linux CLI validation
 
 on:
   push:
+    branches:
+      - main
     paths:
       - .github/workflows/linux-cli-ci.yml
       - Cargo.toml
