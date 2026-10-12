@@ -1,0 +1,206 @@
+{
+  "utc": "2026-10-12T06:46:24.743607+00:00",
+  "raw_packet_manifest_sha256": "893f58d1d52c670ee8e6dd07e640994c0c75c8713e28659bb85d419dc3e886dd",
+  "files": [
+    {
+      "source": "REPORT-R2.md",
+      "destination": "REPORT.md",
+      "bytes": 7471,
+      "sha256": "3d650faa6e2deed4d9bfa79b541008746e751895a56fe5560a23de1d97d763d9"
+    },
+    {
+      "source": "FINDINGS-R2.json",
+      "destination": "FINDINGS.json",
+      "bytes": 5453,
+      "sha256": "06ea40b4e9eb2e97c91fd7e086283eb4c906f9686c732274b14aa0ec827d715b"
+    },
+    {
+      "source": "OFFLINE-VERIFICATION-CORRECTED.json",
+      "destination": "OFFLINE-VERIFICATION.json",
+      "bytes": 4912,
+      "sha256": "a02846bcc391d0a40d7017d474e4044dd03d56e8486f0a888840a22b7e58cd82"
+    },
+    {
+      "source": "TARGETS.json",
+      "destination": "TARGETS.json",
+      "bytes": 3060,
+      "sha256": "398859b78564632363451d8fae60e09005e6a7b35ef453e6bdbf582d557e288b"
+    },
+    {
+      "source": "ANALYSIS-SUMMARY.json",
+      "destination": "ANALYSIS-SUMMARY.json",
+      "bytes": 2387,
+      "sha256": "590f87dfa1e960bb2d435cc6e0e45296537b1a446348808ebbbf09f5071d7d98"
+    },
+    {
+      "source": "DATA-VERIFICATION.json",
+      "destination": "DATA-VERIFICATION.json",
+      "bytes": 4031,
+      "sha256": "fbb7b4e81ed3a7849c711e7fcced2665391e9a74430a5e9186aef61c8f7c8b13"
+    },
+    {
+      "source": "OUTPUT-CROSS-CHECK.json",
+      "destination": "OUTPUT-CROSS-CHECK.json",
+      "bytes": 2057,
+      "sha256": "87305dfe80fd7ac4ad2bca686764ee85d163fc1682613bc3b676bfd14fb9d6ca"
+    },
+    {
+      "source": "THUNK-COUNT-CORRECTION.json",
+      "destination": "THUNK-COUNT-CORRECTION.json",
+      "bytes": 2676,
+      "sha256": "c0c15af60964a3099f9a3dff3bb4a85d5beb229fd98fe741abe45a38382a9dde"
+    },
+    {
+      "source": "labsanimationplugin/PE-MAP.json",
+      "destination": "labsanimationplugin/PE-MAP.json",
+      "bytes": 17166,
+      "sha256": "114a2ed6e65fc8fe4c339266a2ea4ce6b36459354ef3b3d98334c8ce6ad836cd"
+    },
+    {
+      "source": "labsanimationplugin/FUNCTION-INDEX.json",
+      "destination": "labsanimationplugin/FUNCTION-INDEX.json",
+      "bytes": 119375,
+      "sha256": "4c10cd343c2a954d598d66392c9f77c6a11345e1c9294a482eae6f7d3faf54d2"
+    },
+    {
+      "source": "labsanimationplugin/METADATA-DECODED.json",
+      "destination": "labsanimationplugin/METADATA-DECODED.json",
+      "bytes": 698,
+      "sha256": "23bcd149ab291a15d7b2d5a97731f969e3fa91cf8e1bdaf8721f3678504239bd"
+    },
+    {
+      "source": "labsanimationplugin/LLVM-EXPORTS.txt",
+      "destination": "labsanimationplugin/LLVM-EXPORTS.txt",
+      "bytes": 309,
+      "sha256": "f345270caa4028bf1dd7f3a88dbc9a5d7682d73ae0ef21eb0beffbcaa4fe4823"
+    },
+    {
+      "source": "labsanimationplugin/procedures/0x180001160.pseudo.c",
+      "destination": "labsanimationplugin/qt_plugin_instance.pseudo.txt",
+      "bytes": 1563,
+      "sha256": "50436179d04c181209014f502c623c35b055b65b510d01f5839f1ed04fbae04b"
+    },
+    {
+      "source": "labsanimationplugin/procedures/0x180001160.ghidra.asm",
+      "destination": "labsanimationplugin/qt_plugin_instance.assembly.txt",
+      "bytes": 2219,
+      "sha256": "c4cb284acb695f3afc685c74d690adfd8ef7863421e8ea8b63b0c687c1db846d"
+    },
+    {
+      "source": "labsanimationplugin/procedures/0x180001290.pseudo.c",
+      "destination": "labsanimationplugin/qt_plugin_query_metadata_v2.pseudo.txt",
+      "bytes": 202,
+      "sha256": "64a67b94a141a30dcc410fe0c1499e27508d1e971df1f7532333c7dfe59e7f6b"
+    },
+    {
+      "source": "labsanimationplugin/procedures/0x180001290.ghidra.asm",
+      "destination": "labsanimationplugin/qt_plugin_query_metadata_v2.assembly.txt",
+      "bytes": 161,
+      "sha256": "ba947280cfabc64e5bcebae278e7ead35e5c276f9053f8d5fa3115ff82e8c4ae"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/PE-MAP.json",
+      "destination": "qmlfolderlistmodelplugin/PE-MAP.json",
+      "bytes": 17189,
+      "sha256": "9aeeb85900ca5bef268941e9619068dc8adc70b395b50a596f2c5a7e09fe484a"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/FUNCTION-INDEX.json",
+      "destination": "qmlfolderlistmodelplugin/FUNCTION-INDEX.json",
+      "bytes": 119387,
+      "sha256": "279a3efc53e2ce00e1edf6d03151dbcdf15b99fd9ef3473c16b6045754fd0b59"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/METADATA-DECODED.json",
+      "destination": "qmlfolderlistmodelplugin/METADATA-DECODED.json",
+      "bytes": 707,
+      "sha256": "ad2f4c5e663d157197864fd859cdb85758da6ded1231536dc8f9e31c15ba87fe"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/LLVM-EXPORTS.txt",
+      "destination": "qmlfolderlistmodelplugin/LLVM-EXPORTS.txt",
+      "bytes": 320,
+      "sha256": "40e341caf6c565aac69d6b941505501cb072c9e7e89bebc1b0446003e637c5e3"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/procedures/0x180001160.pseudo.c",
+      "destination": "qmlfolderlistmodelplugin/qt_plugin_instance.pseudo.txt",
+      "bytes": 1569,
+      "sha256": "b8715d13ea00d0334cab0f86778cba24463da3a5924e4db23eab4ccbbfff4bdb"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/procedures/0x180001160.ghidra.asm",
+      "destination": "qmlfolderlistmodelplugin/qt_plugin_instance.assembly.txt",
+      "bytes": 2219,
+      "sha256": "cd49b8b9f31665d41291d7d511b82ffa54d69dfe805c14342e854d8fe6ef986d"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/procedures/0x180001290.pseudo.c",
+      "destination": "qmlfolderlistmodelplugin/qt_plugin_query_metadata_v2.pseudo.txt",
+      "bytes": 202,
+      "sha256": "da2341fc31d999675e787ae47ef26977d93f5bdb5c5de97cfb06ddb46cd0908e"
+    },
+    {
+      "source": "qmlfolderlistmodelplugin/procedures/0x180001290.ghidra.asm",
+      "destination": "qmlfolderlistmodelplugin/qt_plugin_query_metadata_v2.assembly.txt",
+      "bytes": 161,
+      "sha256": "b65eb53c1279180f5be6d047db9adc3ca40548d46cbbf689f49fafe085a9d41b"
+    },
+    {
+      "source": "labsmodelsplugin/PE-MAP.json",
+      "destination": "labsmodelsplugin/PE-MAP.json",
+      "bytes": 17163,
+      "sha256": "65e06e489f59ff48fc2bd0cd57730085dcb1bb90c2bdfbba7b2e92865ba9e005"
+    },
+    {
+      "source": "labsmodelsplugin/FUNCTION-INDEX.json",
+      "destination": "labsmodelsplugin/FUNCTION-INDEX.json",
+      "bytes": 119375,
+      "sha256": "cb343e017f4fdcbf071e115aeff39aec0b8be7b694f2d27a6c7fbbeb835e50e8"
+    },
+    {
+      "source": "labsmodelsplugin/METADATA-DECODED.json",
+      "destination": "labsmodelsplugin/METADATA-DECODED.json",
+      "bytes": 698,
+      "sha256": "98dbb0bf9bfa1ad4a3fab395b8bceb4c149bbb62f517fd3f8a55321fc7878d2e"
+    },
+    {
+      "source": "labsmodelsplugin/LLVM-EXPORTS.txt",
+      "destination": "labsmodelsplugin/LLVM-EXPORTS.txt",
+      "bytes": 306,
+      "sha256": "40a19a066f26dbe9554cbbe08f193a6517748419c61f26b8e3a876dd61065f08"
+    },
+    {
+      "source": "labsmodelsplugin/procedures/0x180001160.pseudo.c",
+      "destination": "labsmodelsplugin/qt_plugin_instance.pseudo.txt",
+      "bytes": 1563,
+      "sha256": "b7617b9f5392ea52bd55ca5660a0f756289dcb301141121a5f2556726866e4d9"
+    },
+    {
+      "source": "labsmodelsplugin/procedures/0x180001160.ghidra.asm",
+      "destination": "labsmodelsplugin/qt_plugin_instance.assembly.txt",
+      "bytes": 2219,
+      "sha256": "c4cb284acb695f3afc685c74d690adfd8ef7863421e8ea8b63b0c687c1db846d"
+    },
+    {
+      "source": "labsmodelsplugin/procedures/0x180001290.pseudo.c",
+      "destination": "labsmodelsplugin/qt_plugin_query_metadata_v2.pseudo.txt",
+      "bytes": 202,
+      "sha256": "64a67b94a141a30dcc410fe0c1499e27508d1e971df1f7532333c7dfe59e7f6b"
+    },
+    {
+      "source": "labsmodelsplugin/procedures/0x180001290.ghidra.asm",
+      "destination": "labsmodelsplugin/qt_plugin_query_metadata_v2.assembly.txt",
+      "bytes": 161,
+      "sha256": "ba947280cfabc64e5bcebae278e7ead35e5c276f9053f8d5fa3115ff82e8c4ae"
+    },
+    {
+      "source": "PUBLICATION-CORRECTION-R2.json",
+      "destination": "PUBLICATION-CORRECTION-R2.json",
+      "bytes": 1507,
+      "sha256": "a136eaa255428f0b803b934c528e9b9dca815df01d5d44680ef1c5136dab2800"
+    }
+  ],
+  "scope": "Selected corrected report, indexes, original identities and two export disassemblies/pseudocode per DLL. No binary or full snapshot copied.",
+  "supersedes_manifest_sha256": "9fd8e8a810ed622927d9bcda2cb71f021ba90f44d79f1eb84023ec033a9872b3"
+}

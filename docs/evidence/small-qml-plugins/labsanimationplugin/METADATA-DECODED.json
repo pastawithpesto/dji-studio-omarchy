@@ -1,0 +1,21 @@
+{
+  "source_sha256": "4b0be3a96703da2a82b91b34f07a6750e6ffdab6ffb3f3966c997cc648b89425",
+  "metadata_address": "0x180007000",
+  "returned_payload_address": "0x18000700c",
+  "returned_payload_length": 101,
+  "header": {
+    "format": 1,
+    "qt_major": 6,
+    "qt_minor": 5,
+    "requirements": 0
+  },
+  "CBOR": {
+    "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+    "3": "QtLabsAnimationPlugin",
+    "uri": [
+      "Qt.labs.animation"
+    ]
+  },
+  "metadata_sha256": "e8cc9eda4eeb7c7cd04909c3dcaa1c51002485668c5e5a314ec73ba3d84f42f9",
+  "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+}

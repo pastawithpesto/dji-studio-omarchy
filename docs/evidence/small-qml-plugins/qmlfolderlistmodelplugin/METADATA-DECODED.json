@@ -1,0 +1,21 @@
+{
+  "source_sha256": "96d89490eecaf907264fbbb77689f5e5f8a0a50f809f80c842748ef3ebbe7960",
+  "metadata_address": "0x180007000",
+  "returned_payload_address": "0x18000700c",
+  "returned_payload_length": 111,
+  "header": {
+    "format": 1,
+    "qt_major": 6,
+    "qt_minor": 5,
+    "requirements": 0
+  },
+  "CBOR": {
+    "2": "org.qt-project.Qt.QQmlEngineExtensionInterface",
+    "3": "QmlFolderListModelPlugin",
+    "uri": [
+      "Qt.labs.folderlistmodel"
+    ]
+  },
+  "metadata_sha256": "076d9cb58da1546da1aeea1e507cc503c32545bcb67923f12f8f78a6209e2284",
+  "limits": "Header meaning checked against official Qt6.5.3 definitions. This does not identify patch version or prove external Qt runtime behavior."
+}
