@@ -28,17 +28,23 @@ cargo run -- INPUT OUTPUT
 ```
 
 The CLI projects video that is already stitched. The output path must not exist.
-The GUI requires CMake 3.24 or later, Python 3, and Qt 6.11.2 with Core, Gui, Qml,
-Quick, QuickControls2, Multimedia, Svg, and Test modules.
-Use a new output directory for each build.
+The Rust GUI host loads the original QML resource bundle. Original application
+startup is incomplete because native DJI modules are missing. The custom C++
+host and its simplified screen have been removed from the current source.
+
+Local host checks use Qt 6.11.2 with Core, Gui, Qml and the QML import modules.
+CXX-Qt generates binding code during the build. Qt and this generated code use
+C++; application source is Rust and QML. Use an external build directory.
 
 ```sh
-python3 gui/build.py --output /absolute/path/to/new-build
-/absolute/path/to/new-build/bundle/native-stitched-flow
+CARGO_TARGET_DIR=/absolute/path/to/new-build QMAKE=/usr/bin/qmake6 \
+  cargo build --manifest-path gui/rust/host/Cargo.toml --locked
+QT_FORCE_STDERR_LOGGING=1 QT_QPA_PLATFORM=offscreen \
+  /absolute/path/to/new-build/debug/original-qml-host --check
 ```
 
-See [GUI build details](gui/README.md). Historical validation in that file does
-not establish full parity. Current status is in [STATUS.md](docs/STATUS.md).
+The check returns failure while original native services remain unavailable.
+See [GUI build details](gui/README.md) and [current status](docs/STATUS.md).
 
 ## Repository language
 
