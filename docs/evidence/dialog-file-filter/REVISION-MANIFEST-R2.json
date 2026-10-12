@@ -1,0 +1,70 @@
+{
+  "files": {
+    "docs/evidence/dialog-file-filter/CORRECTION-R1.md": {
+      "sha256": "01eb39e3a2e9f04fbce1d345e2ed5f83877ed112a122a1b50ff85f2786373659",
+      "size_bytes": 5637
+    },
+    "docs/evidence/dialog-file-filter/CORRECTION-R2.md": {
+      "sha256": "105c015b288a1b098e0d76392228dbdc857cd5d35007326b5483c9d0db635266",
+      "size_bytes": 1850
+    },
+    "docs/evidence/dialog-file-filter/INDEPENDENT-VERIFICATION.json": {
+      "sha256": "9fb5c48713fb3afc2ad7a7521aac4ccfcbd1a3ddcf4ae79e0b7de48f607af292",
+      "size_bytes": 13542
+    },
+    "docs/evidence/dialog-file-filter/MANIFEST.json": {
+      "sha256": "c3d0c02dc4bda50ee2109084f299c6167942231afce3659dfcdea5ad8b44f943",
+      "size_bytes": 2164
+    },
+    "docs/evidence/dialog-file-filter/REPORT.md": {
+      "sha256": "96467217c435458fb1f355237d07e30555d019c743d8eecb889e618e8d2add42",
+      "size_bytes": 13971
+    },
+    "docs/evidence/dialog-file-filter/REVISION-MANIFEST-R1.json": {
+      "sha256": "de8bbf08de26181efead6e349f6f7878902ab674f7d58ef3bb0cd80fe7867565",
+      "size_bytes": 2428
+    },
+    "docs/evidence/dialog-file-filter/SOURCE-MAP.json": {
+      "sha256": "efe04342d5ef2e7ae00687b68094214221220c21f920978c4646979710d4e944",
+      "size_bytes": 92494
+    },
+    "docs/tasks/dialog-file-filter.md": {
+      "sha256": "ef02a2a9c3eb8fe4c0370e17838b91f049c8d879a95c08883ef9c195e3d0a159",
+      "size_bytes": 5200
+    }
+  },
+  "format": "dialog-file-filter-revision-manifest-v2",
+  "purpose": "Correct only the R1 printed H01 byte-block transcription, source-span endpoint, byte count, and digest. Preserve R1 arithmetic interpretation and all earlier artifacts.",
+  "revision": "R2",
+  "source": {
+    "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll",
+    "sha256": "580d8be7657cd4b074b5d4ee43bc8c325d501aea737ef15c13e41f62bd0da263",
+    "size_bytes": 45240
+  },
+  "supersedes": {
+    "field": "printed source-byte witness only: bytes, inclusive end VA, byte count, and digest",
+    "original_manifest_sha256": "c3d0c02dc4bda50ee2109084f299c6167942231afce3659dfcdea5ad8b44f943",
+    "original_report_sha256": "96467217c435458fb1f355237d07e30555d019c743d8eecb889e618e8d2add42",
+    "preserves": "R1 signed-width guard and start/length arithmetic interpretation and examples",
+    "prior_correction": "docs/evidence/dialog-file-filter/CORRECTION-R1.md",
+    "prior_correction_sha256": "01eb39e3a2e9f04fbce1d345e2ed5f83877ed112a122a1b50ff85f2786373659"
+  },
+  "witness": {
+    "byte_count": 43,
+    "corrected_instruction_va_inclusive": [
+      "0x18000264c",
+      "0x180002676"
+    ],
+    "function": "H01-FUN_180002580",
+    "function_source_map_sha256": "efe04342d5ef2e7ae00687b68094214221220c21f920978c4646979710d4e944",
+    "function_va_inclusive": [
+      "0x180002580",
+      "0x1800028a0"
+    ],
+    "hex_round_trip_verified": true,
+    "independent_disassembler": "LLVM llvm-objdump 22.1.8",
+    "sha256": "4a2901e3091bcff3ebd228dfa910d02c18c631cc2000499741dca24e336f2043",
+    "source_file_offset": "0x1a4c",
+    "source_map_slice_equality_verified": true
+  }
+}

@@ -1,0 +1,228 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll:	file format coff-x86-64
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Thu Jun 25 01:06:48 2026
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      29
+SizeOfCode              0000000000004000
+SizeOfInitializedData   0000000000004400
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     0000000000004820
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       6
+MinorImageVersion       5
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             0000d000
+SizeOfHeaders           00000400
+CheckSum                0001709b
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00004160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+					GUARD_CF
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 0000000000006820 00000674 Export Directory [.edata (or where ever we found it)]
+Entry 1 0000000000006e94 0000008c Import Directory [parts of .idata]
+Entry 2 000000000000b000 0000057c Resource Directory [.rsrc]
+Entry 3 000000000000a000 00000600 Exception Directory [.pdata]
+Entry 4 0000000000008800 000028b8 Security Directory
+Entry 5 000000000000c000 000000c0 Base Relocation Directory [.reloc]
+Entry 6 0000000000005a40 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000005c00 00000028 Thread Storage Directory [.tls]
+Entry a 0000000000005aa0 00000138 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 0000000000005000 00000350 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+TLS directory:
+  StartAddressOfRawData: 0x000001800061d8
+  EndAddressOfRawData: 0x000001800061e0
+  AddressOfIndex: 0x000001800093a0
+  AddressOfCallBacks: 0x000001800053a8
+  SizeOfZeroFill: 0
+  Characteristics: 3145728
+  Alignment: 4
+
+
+The Import Tables:
+  lookup 000071d0 time 00000000 fwd 00000000 name 000072b2 addr 000052b0
+
+    DLL Name: Qt6Gui.dll
+    Hint/Ord  Name
+        6251  ?nameFilters@QFileDialogOptions@@QEBA?AV?$QList@VQString@@@@XZ
+
+  lookup 00006ff8 time 00000000 fwd 00000000 name 00007cf2 addr 000050d8
+
+    DLL Name: Qt6Core.dll
+    Hint/Ord  Name
+        1337  ??6QDataStream@@QEAAAEAV0@H@Z
+        4048  ?isDeviceTransactionStarted@QDataStream@@QEBA_NXZ
+        3178  ?dynamicMetaObject@QObjectData@@QEBAPEAUQMetaObject@@XZ
+        5407  ?qt_metacast@QObject@@UEAAPEAXPEBD@Z
+        5354  ?qt_metacall@QObject@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+         415  ??0QObject@@QEAA@PEAV0@@Z
+         834  ??1QObject@@UEAA@XZ
+        5004  ?parent@QObject@@QEBAPEAV1@XZ
+        1283  ??6@YA?AVQDebug@@V0@PEBVQObject@@@Z
+         206  ??0QDebug@@QEAA@$$QEAV0@@Z
+         777  ??1QDebug@@QEAA@XZ
+        1351  ??6QDebug@@QEAAAEAV0@D@Z
+        4192  ?isNull@QString@@QEBA_NXZ
+        1219  ??5QDataStream@@QEAAAEAV0@AEAH@Z
+        1350  ??6QDebug@@QEAAAEAV0@AEBVQString@@@Z
+         211  ??0QDebugStateSaver@@QEAA@AEAVQDebug@@@Z
+         778  ??1QDebugStateSaver@@QEAA@XZ
+         367  ??0QLoggingCategory@@QEAA@PEBDW4QtMsgType@@@Z
+         823  ??1QLoggingCategory@@QEAA@XZ
+        4032  ?isDebugEnabled@QLoggingCategory@@QEBA_NXZ
+        2433  ?childEvent@QObject@@MEAAXPEAVQChildEvent@@@Z
+        2624  ?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
+        2867  ?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
+        3136  ?disconnectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
+        3340  ?event@QObject@@UEAA_NPEAVQEvent@@@Z
+        3356  ?eventFilter@QObject@@UEAA_NPEAV1@PEAVQEvent@@@Z
+        6838  ?timerEvent@QObject@@MEAAXPEAVQTimerEvent@@@Z
+        4503  ?left@QString@@QEBA?AV1@_J@Z
+        5796  ?resetStatus@QDataStream@@QEAAXXZ
+        6343  ?setStatus@QDataStream@@QEAAXW4Status@1@@Z
+        6686  ?status@QDataStream@@QEBA?AW4Status@1@XZ
+        1202  ??5@YAAEAVQDataStream@@AEAV0@AEAVQString@@@Z
+        1361  ??6QDebug@@QEAAAEAV0@PEBD@Z
+        1317  ??6@YAAEAVQDataStream@@AEAV0@AEBVQString@@@Z
+        3824  ?indexOf@QString@@QEBA_JVQChar@@_JW4CaseSensitivity@Qt@@@Z
+        2992  ?data@QString@@QEBAPEBVQChar@@XZ
+        1122  ??4QString@@QEAAAEAV0@$$QEAV0@@Z
+         521  ??0QString@@QEAA@$$QEAV0@@Z
+         869  ??1QString@@QEAA@XZ
+         522  ??0QString@@QEAA@AEBV0@@Z
+         525  ??0QString@@QEAA@PEBVQChar@@_J@Z
+         528  ??0QString@@QEAA@XZ
+        6523  ?split@QStringView@@QEBA?AV?$QList@VQStringView@@@@VQChar@@V?$QFlags@W4SplitBehaviorFlags@Qt@@@@W4CaseSensitivity@Qt@@@Z
+        4487  ?lastIndexOf@QtPrivate@@YA_JVQStringView@@_J0W4CaseSensitivity@Qt@@@Z
+        3491  ?findString@QtPrivate@@YA_JVQStringView@@_J0W4CaseSensitivity@Qt@@@Z
+        3288  ?equalStrings@QtPrivate@@YA_NVQStringView@@0@Z
+        2586  ?compareStrings@QtPrivate@@YAHVQStringView@@0W4CaseSensitivity@Qt@@@Z
+        4725  ?mid@QContainerImplHelper@QtPrivate@@SA?AW4CutResult@12@_JPEA_J1@Z
+        3042  ?deallocate@QArrayData@@SAXPEAU1@_J1@Z
+        5588  ?reallocateUnaligned@QArrayData@@SA?AU?$pair@PEAUQArrayData@@PEAX@std@@PEAU1@PEAX_J2W4AllocationOption@1@@Z
+        2039  ?allocate@QArrayData@@SAPEAXPEAPEAU1@_J11W4AllocationOption@1@@Z
+         159  ??0QChar@@QEAA@UQLatin1Char@@@Z
+        1938  ?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z
+        7214  ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
+        3045  ?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
+         369  ??0QMessageLogger@@QEAA@PEBDH00@Z
+        6652  ?staticMetaObject@QObject@@2UQMetaObject@@B
+        1354  ??6QDebug@@QEAAAEAV0@H@Z
+
+  lookup 000071e0 time 00000000 fwd 00000000 name 00007d4a addr 000052c0
+
+    DLL Name: VCRUNTIME140.dll
+    Hint/Ord  Name
+          61  memmove
+           8  __C_specific_handler
+          37  __std_type_info_destroy_list
+          62  memset
+
+  lookup 00007208 time 00000000 fwd 00000000 name 00007e34 addr 000052e8
+
+    DLL Name: api-ms-win-crt-heap-l1-1-0.dll
+    Hint/Ord  Name
+          24  free
+
+  lookup 00007218 time 00000000 fwd 00000000 name 00007e54 addr 000052f8
+
+    DLL Name: api-ms-win-crt-runtime-l1-1-0.dll
+    Hint/Ord  Name
+          24  _configure_narrow_argv
+          51  _initialize_narrow_environment
+          52  _initialize_onexit_table
+          60  _register_onexit_function
+          34  _execute_onexit_table
+          30  _crt_atexit
+          22  _cexit
+          54  _initterm
+          55  _initterm_e
+          63  _seh_filter_dll
+
+  lookup 00006f20 time 00000000 fwd 00000000 name 000080c2 addr 00005000
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+         157  CloseHandle
+         922  InitializeSListHead
+         343  EnterCriticalSection
+        1008  LeaveCriticalSection
+         918  InitializeCriticalSectionAndSpinCount
+         303  DeleteCriticalSection
+        1372  SetEvent
+        1280  ResetEvent
+        1574  WaitForSingleObjectEx
+         217  CreateEventW
+         677  GetModuleHandleW
+         733  GetProcAddress
+        1289  RtlCaptureContext
+        1297  RtlLookupFunctionEntry
+        1304  RtlVirtualUnwind
+        1531  UnhandledExceptionFilter
+        1464  SetUnhandledExceptionFilter
+         577  GetCurrentProcess
+        1496  TerminateProcess
+         952  IsProcessorFeaturePresent
+         944  IsDebuggerPresent
+        1153  QueryPerformanceCounter
+         578  GetCurrentProcessId
+         582  GetCurrentThreadId
+         794  GetSystemTimeAsFileTime
+         322  DisableThreadLibraryCalls
+
+Export Table:
+ DLL name: Qt6QuickDialogs2Utils.dll
+ Ordinal base: 1
+ Ordinal      RVA  Name
+       1   0x1c50  ??0QQuickFileNameFilter@@QEAA@PEAVQObject@@@Z
+       2   0x1d30  ??1QQuickFileNameFilter@@UEAA@XZ
+       3   0x5808  ??_7QQuickFileNameFilter@@6B@
+       4   0x2100  ??_FQQuickFileNameFilter@@QEAAXXZ
+       5   0x2520  ?extensions@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ
+       6   0x2550  ?extensionsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z
+       7   0x28b0  ?globs@QQuickFileNameFilter@@QEBA?AV?$QList@VQString@@@@XZ
+       8   0x28e0  ?globsChanged@QQuickFileNameFilter@@QEAAXAEBV?$QList@VQString@@@@@Z
+       9   0x2910  ?index@QQuickFileNameFilter@@QEBAHXZ
+      10   0x2920  ?indexChanged@QQuickFileNameFilter@@QEAAXH@Z
+      11   0x2960  ?metaObject@QQuickFileNameFilter@@UEBAPEBUQMetaObject@@XZ
+      12   0x2980  ?name@QQuickFileNameFilter@@QEBA?AVQString@@XZ
+      13   0x29a0  ?nameChanged@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z
+      14   0x29d0  ?nameFilter@QQuickFileNameFilter@@AEBA?AVQString@@H@Z
+      15   0x2aa0  ?nameFilters@QQuickFileNameFilter@@AEBA?AV?$QList@VQString@@@@XZ
+      16   0x2ba0  ?options@QQuickFileNameFilter@@QEBA?AV?$QSharedPointer@VQFileDialogOptions@@@@XZ
+      17   0x2bd0  ?qt_metacall@QQuickFileNameFilter@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+      18   0x2c60  ?qt_metacast@QQuickFileNameFilter@@UEAAPEAXPEBD@Z
+      19   0x1450  ?qt_static_metacall@QQuickFileNameFilter@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z
+      20   0x3140  ?setIndex@QQuickFileNameFilter@@QEAAXH@Z
+      21   0x3180  ?setOptions@QQuickFileNameFilter@@QEAAXAEBV?$QSharedPointer@VQFileDialogOptions@@@@@Z
+      22   0x57b0  ?staticMetaObject@QQuickFileNameFilter@@2UQMetaObject@@B
+      23   0x3200  ?tr@QQuickFileNameFilter@@SA?AVQString@@PEBD0H@Z
+      24   0x3380  ?update@QQuickFileNameFilter@@QEAAXAEBVQString@@@Z

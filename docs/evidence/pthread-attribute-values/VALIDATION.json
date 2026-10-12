@@ -1,0 +1,256 @@
+{
+  "source_sha256": "66efd5e61c970b73d323efac88c82d7fbe22b842385e55271dd8e5adbf02e71b",
+  "instruction_rows_verified": 85,
+  "selected_bytes": 235,
+  "cases_per_function": {
+    "pthread_attr_getdetachstate": 720,
+    "pthread_attr_getinheritsched": 720,
+    "pthread_attr_getschedpolicy": 720,
+    "pthread_attr_setdetachstate": 720,
+    "pthread_attr_setinheritsched": 720,
+    "pthread_attr_setschedpolicy": 720
+  },
+  "cases_passed": 4320,
+  "input_result_digest_sha256": "39028554bcf319ba4df4395900a32ee11a97bf315d24bf6b01abd458162b7a46",
+  "samples": [
+    {
+      "name": "pthread_attr_getdetachstate",
+      "argument": 0,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_getdetachstate",
+      "argument": 1,
+      "return": 0,
+      "changed_addresses": [
+        "0x1",
+        "0x2",
+        "0x3",
+        "0x4"
+      ]
+    },
+    {
+      "name": "pthread_attr_getdetachstate",
+      "argument": 2,
+      "return": 0,
+      "changed_addresses": [
+        "0x2",
+        "0x3",
+        "0x4",
+        "0x5"
+      ]
+    },
+    {
+      "name": "pthread_attr_getdetachstate",
+      "argument": 3,
+      "return": 0,
+      "changed_addresses": [
+        "0x3",
+        "0x4",
+        "0x5",
+        "0x6"
+      ]
+    },
+    {
+      "name": "pthread_attr_getdetachstate",
+      "argument": 12288,
+      "return": 0,
+      "changed_addresses": [
+        "0x3000",
+        "0x3001",
+        "0x3002",
+        "0x3003"
+      ]
+    },
+    {
+      "name": "pthread_attr_getinheritsched",
+      "argument": 0,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_getinheritsched",
+      "argument": 1,
+      "return": 0,
+      "changed_addresses": [
+        "0x1",
+        "0x2",
+        "0x3",
+        "0x4"
+      ]
+    },
+    {
+      "name": "pthread_attr_getinheritsched",
+      "argument": 2,
+      "return": 0,
+      "changed_addresses": [
+        "0x2",
+        "0x3",
+        "0x4",
+        "0x5"
+      ]
+    },
+    {
+      "name": "pthread_attr_getinheritsched",
+      "argument": 3,
+      "return": 0,
+      "changed_addresses": [
+        "0x3",
+        "0x4",
+        "0x5",
+        "0x6"
+      ]
+    },
+    {
+      "name": "pthread_attr_getinheritsched",
+      "argument": 12288,
+      "return": 0,
+      "changed_addresses": [
+        "0x3000",
+        "0x3001",
+        "0x3002",
+        "0x3003"
+      ]
+    },
+    {
+      "name": "pthread_attr_getschedpolicy",
+      "argument": 0,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_getschedpolicy",
+      "argument": 1,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_getschedpolicy",
+      "argument": 2,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_getschedpolicy",
+      "argument": 3,
+      "return": 0,
+      "changed_addresses": [
+        "0x3",
+        "0x4",
+        "0x5",
+        "0x6"
+      ]
+    },
+    {
+      "name": "pthread_attr_getschedpolicy",
+      "argument": 12288,
+      "return": 0,
+      "changed_addresses": [
+        "0x3000",
+        "0x3001",
+        "0x3002",
+        "0x3003"
+      ]
+    },
+    {
+      "name": "pthread_attr_setdetachstate",
+      "argument": 0,
+      "return": 0,
+      "changed_addresses": [
+        "0x2018",
+        "0x2019",
+        "0x201a",
+        "0x201b"
+      ]
+    },
+    {
+      "name": "pthread_attr_setdetachstate",
+      "argument": 1,
+      "return": 0,
+      "changed_addresses": [
+        "0x2018",
+        "0x2019",
+        "0x201a",
+        "0x201b"
+      ]
+    },
+    {
+      "name": "pthread_attr_setdetachstate",
+      "argument": 2,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_setdetachstate",
+      "argument": 4294967295,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_setinheritsched",
+      "argument": 0,
+      "return": 0,
+      "changed_addresses": [
+        "0x2020",
+        "0x2021",
+        "0x2022",
+        "0x2023"
+      ]
+    },
+    {
+      "name": "pthread_attr_setinheritsched",
+      "argument": 1,
+      "return": 0,
+      "changed_addresses": [
+        "0x2020",
+        "0x2021",
+        "0x2022",
+        "0x2023"
+      ]
+    },
+    {
+      "name": "pthread_attr_setinheritsched",
+      "argument": 2,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_setinheritsched",
+      "argument": 4294967295,
+      "return": 22,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_setschedpolicy",
+      "argument": 0,
+      "return": 0,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_setschedpolicy",
+      "argument": 1,
+      "return": 129,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_setschedpolicy",
+      "argument": 2,
+      "return": 129,
+      "changed_addresses": []
+    },
+    {
+      "name": "pthread_attr_setschedpolicy",
+      "argument": 4294967295,
+      "return": 129,
+      "changed_addresses": []
+    }
+  ],
+  "method": "Original instruction interpreter compared with separately stated field/write contracts in synthetic memory",
+  "limits": [
+    "Finite model validation, not vendor execution.",
+    "Synthetic mapped memory includes addresses1/2/3 to test numeric pointer branches, not actual valid Windows pointer claims.",
+    "Aliased outputs are included; arbitrary unmapped pointers are outside the modeled input domain.",
+    "No scheduling or full pthread parity claim."
+  ]
+}

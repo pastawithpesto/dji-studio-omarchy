@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_sha256": "580d8be7657cd4b074b5d4ee43bc8c325d501aea737ef15c13e41f62bd0da263",
+  "records": [
+    {
+      "id": "rea-attempt-01",
+      "status": "failed_capture_preserved_locally",
+      "time_utc": "2026-10-12T06:47:39.212Z",
+      "error": "Error: ??0QQuickFileNameFilter@@QEAA@PEAVQObject@@@Z: separate assembly disagrees with dossier",
+      "cause": "The harness compared separate procedure_assembly output with the dossier assembly field as exact text. Those are different provider renderings. This text-equality assertion was not a valid source-code or byte comparison.",
+      "correction": "Attempt 02 retained exact pseudocode equality checks. It did not require assembly text equality. It still read each complete function body and compared every byte with the original PE file.",
+      "raw_record": "/home/violence/Projects/dji-studio-omarchy/reconstruction/luna-dialogutils-20261012/attempt-01/FAILURE.json"
+    },
+    {
+      "id": "independent-pdata-parser-iteration-01",
+      "status": "failed_oracle_revision",
+      "error": "FAIL: UNWIND_INFO chain spans differ for 0x180002aa0",
+      "cause": "The first independent parser grouped only direct CHAININFO children of the primary RUNTIME_FUNCTION row. This omitted chained fragments whose parent is a prior fragment.",
+      "correction": "The final verifier follows nested CHAININFO parent rows recursively. It then verified all eight selected groups and their contiguous union against the captured Ghidra body ranges.",
+      "source_bytes_mismatched": false
+    },
+    {
+      "id": "rea-attempt-02",
+      "status": "passed_capture",
+      "functions": 17,
+      "pseudocode_matches_dossier": 17,
+      "complete_body_bytes_match_original": 17,
+      "details": "Captured the selected exported QQuickFileNameFilter functions, including update and setIndex."
+    },
+    {
+      "id": "rea-attempt-03",
+      "status": "passed_capture",
+      "internal_helpers": 3,
+      "complete_body_bytes_match_original": 3,
+      "data_regions": 1,
+      "details": "Captured the three update comparison and parsing helpers and one 1088-byte metadata and string range."
+    }
+  ],
+  "final_result": "The final source verifier passes. The two earlier failures were validation-harness defects. Neither is used as a behavior claim."
+}

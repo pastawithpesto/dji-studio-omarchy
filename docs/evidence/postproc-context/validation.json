@@ -1,0 +1,215 @@
+{
+  "status": "pass",
+  "validated_at_utc": "2026-10-12T07:00:36Z",
+  "binary": {
+    "path_argument": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/postproc-58.dll",
+    "size_bytes": 99512,
+    "sha256": "fcb300de9e4702545991c4487e0ee90728090f22f3639c4bf6adc0bd4a03617b",
+    "machine": "0x8664",
+    "pe32_plus": true,
+    "export_count": 10
+  },
+  "export_comparison": {
+    "llvm_pe_parser_vs_source_map": "all 10 exact names, ordinals, and RVAs match",
+    "ghidra": "each export name appears exactly once at its matching VA"
+  },
+  "body_witnesses": [
+    {
+      "name": "postproc_version",
+      "export_stub": "match",
+      "target": "0x18000b930",
+      "body_length": 6,
+      "body_sha256": "a24275eee4cd257339c49babb183f7de76c9ce778e177b6e89b9e0275e791a77",
+      "provider_equals_source": true
+    },
+    {
+      "name": "postproc_configuration",
+      "export_stub": "match",
+      "target": "0x18000b910",
+      "body_length": 8,
+      "body_sha256": "59dd4d67dfd226204924959ae2dbaa011058a64e02a72be826811fb600e5266c",
+      "provider_equals_source": true
+    },
+    {
+      "name": "postproc_license",
+      "export_stub": "match",
+      "target": "0x18000b920",
+      "body_length": 8,
+      "body_sha256": "98e7f4e803c8cedaf5f0f7e45b3e013f09853954c9e4710f72b081bc99edfc4e",
+      "provider_equals_source": true
+    },
+    {
+      "name": "pp_free_context",
+      "export_stub": "match",
+      "target": "0x180009340",
+      "body_length": 199,
+      "body_sha256": "c2b06a5666b8bc5560e6bae9c1a6b60dd47c84a0ad745b369cd3e203839939e1",
+      "provider_equals_source": true
+    },
+    {
+      "name": "pp_get_context",
+      "export_stub": "match",
+      "target": "0x180009450",
+      "body_length": 233,
+      "body_sha256": "884128b8952271cfe06e29b1e30dce92d7a0b0585c8a2df0ac0b377046de6bbd",
+      "provider_equals_source": true
+    }
+  ],
+  "identity_checks": {
+    "postproc_version_hex": "0x3a0164",
+    "postproc_version_decimal": 3801444,
+    "strings": [
+      {
+        "name": "postproc_configuration",
+        "va": "0x180012ba0",
+        "length_excluding_nul": 1791,
+        "sha256": "6793c5e6ddca7a58d043a832eef348bc0d98f7650af40ac3990db65099557e8c",
+        "exact": true
+      },
+      {
+        "name": "postproc_license",
+        "va": "0x18001341d",
+        "length_excluding_nul": 29,
+        "sha256": "c0dc3a30a495b1a6f579bdf5943f4b19c35162e27a097906865e1b99db9d4927",
+        "exact": true
+      },
+      {
+        "name": "postproc_ffversion",
+        "va": "0x180012b78",
+        "length_excluding_nul": 20,
+        "sha256": "52dbedf434f30b80368b6595be3db1db42207d58a1eb10620b39027e34b6113f",
+        "exact": true
+      }
+    ]
+  },
+  "context_checks": {
+    "requested_allocation_bytes": 1376,
+    "allocation_failure_branch_returns_null": true,
+    "initializer_call_target": "0x18000a970",
+    "width_formula_vectors": [
+      {
+        "input": 0,
+        "aligned": 0,
+        "helper_dimension": 2
+      },
+      {
+        "input": 1,
+        "aligned": 16,
+        "helper_dimension": 3
+      },
+      {
+        "input": 15,
+        "aligned": 16,
+        "helper_dimension": 3
+      },
+      {
+        "input": 16,
+        "aligned": 16,
+        "helper_dimension": 3
+      },
+      {
+        "input": 17,
+        "aligned": 32,
+        "helper_dimension": 4
+      },
+      {
+        "input": 31,
+        "aligned": 32,
+        "helper_dimension": 4
+      },
+      {
+        "input": 32,
+        "aligned": 32,
+        "helper_dimension": 4
+      },
+      {
+        "input": 33,
+        "aligned": 48,
+        "helper_dimension": 5
+      }
+    ],
+    "configuration_flag_vectors": [
+      {
+        "input": "0x0",
+        "fields_0x520_0x524_cpu": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "input": "0x8",
+        "fields_0x520_0x524_cpu": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "input": "0x29",
+        "fields_0x520_0x524_cpu": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "input": "0x3b",
+        "fields_0x520_0x524_cpu": [
+          3,
+          3,
+          0
+        ]
+      },
+      {
+        "input": "0x10000000",
+        "fields_0x520_0x524_cpu": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "input": "0x80000",
+        "fields_0x520_0x524_cpu": [
+          1,
+          1,
+          "av_get_cpu_flags()"
+        ]
+      }
+    ],
+    "free_member_pointer_fields": {
+      "first_loop": {
+        "start": "0x28",
+        "count": 3,
+        "stride": 8
+      },
+      "second_loop": {
+        "start": "0x40",
+        "count": 3,
+        "stride": 8
+      },
+      "single_fields": [
+        "0x08",
+        "0x10",
+        "0x58",
+        "0x60",
+        "0x68",
+        "0x4c0",
+        "0x4c8",
+        "0x4d0"
+      ]
+    },
+    "free_member_pointer_count": 14,
+    "static_av_free_call_instructions": 10,
+    "zero_context_bytes_before_final_free": 1376,
+    "final_av_free_tail_target": "0x18000b942",
+    "null_context_guard_observed": false,
+    "dll_executed": false
+  },
+  "limits": [
+    "The finite vectors test a direct transcription of captured x86-64 arithmetic; they do not execute the DLL.",
+    "The initializer at 0x18000a970 and AVUTIL/VCRUNTIME implementations are outside this packet.",
+    "Context field roles, source-level types, caller obligations, and pointer alias behavior remain unknown."
+  ]
+}

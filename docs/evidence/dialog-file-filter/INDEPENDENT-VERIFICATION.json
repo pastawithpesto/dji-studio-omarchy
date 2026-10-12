@@ -1,0 +1,466 @@
+{
+  "status": "PASS",
+  "source": {
+    "path_argument": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/Qt6QuickDialogs2Utils.dll",
+    "size_bytes": 45240,
+    "sha256": "580d8be7657cd4b074b5d4ee43bc8c325d501aea737ef15c13e41f62bd0da263",
+    "image_base": "0x180000000"
+  },
+  "independent_pe_parse": {
+    "machine": "0x8664",
+    "sections": [
+      {
+        "name": ".text",
+        "virtual_size": 16350,
+        "rva": 4096,
+        "raw_size": 16384,
+        "raw_offset": 1024
+      },
+      {
+        "name": ".rdata",
+        "virtual_size": 12496,
+        "rva": 20480,
+        "raw_size": 12800,
+        "raw_offset": 17408
+      },
+      {
+        "name": ".data",
+        "virtual_size": 2392,
+        "rva": 36864,
+        "raw_size": 1024,
+        "raw_offset": 30208
+      },
+      {
+        "name": ".pdata",
+        "virtual_size": 1536,
+        "rva": 40960,
+        "raw_size": 1536,
+        "raw_offset": 31232
+      },
+      {
+        "name": ".rsrc",
+        "virtual_size": 1404,
+        "rva": 45056,
+        "raw_size": 1536,
+        "raw_offset": 32768
+      },
+      {
+        "name": ".reloc",
+        "virtual_size": 192,
+        "rva": 49152,
+        "raw_size": 512,
+        "raw_offset": 34304
+      }
+    ],
+    "export_count": 24,
+    "exports_match_source_map": true,
+    "exception_directory_rva": "0xa000",
+    "exception_directory_size": "0x600",
+    "runtime_function_record_count": 128
+  },
+  "llvm_export_check": {
+    "tool": "llvm-objdump -p",
+    "version": "22.1.8",
+    "output_sha256": "98aa9309f19e0c7a1867e0892a0233eea02a4da08ffa58c7c31fb77b7550326f",
+    "export_count": 24,
+    "matches_pe_parser_and_source_map": true
+  },
+  "function_byte_witnesses": {
+    "count": 20,
+    "body_byte_total": 5793,
+    "source_matches_ghidra": true,
+    "capture_recorded_pseudocode_equality_count": 20,
+    "pseudocode_comparison_recomputed_by_this_script": false,
+    "functions": [
+      {
+        "capture_id": "F01",
+        "address_va": "0x180001c50",
+        "rva": "0x1c50",
+        "file_offset": 4176,
+        "byte_count": 85,
+        "sha256": "2d6ba6018a340c263b344ee45c7723c3e651fe4eecb7da7079dd5f08953caa5a",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F02",
+        "address_va": "0x180002910",
+        "rva": "0x2910",
+        "file_offset": 7440,
+        "byte_count": 4,
+        "sha256": "74032ad0e931f3c4730df99da43479f9f5315cc898c7c8614278631cb2c16a62",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F03",
+        "address_va": "0x180003140",
+        "rva": "0x3140",
+        "file_offset": 9536,
+        "byte_count": 61,
+        "sha256": "ab28b43e4d206b31cd47a24c848ccd9f0651203664ee19a0302143c9ce7cb765",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F04",
+        "address_va": "0x180003380",
+        "rva": "0x3380",
+        "file_offset": 10112,
+        "byte_count": 2701,
+        "sha256": "872530d914b32332e8cf471e6e7d5c7562355e17de89eab0a54dbdabba65e5d0",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F05",
+        "address_va": "0x1800029d0",
+        "rva": "0x29d0",
+        "file_offset": 7632,
+        "byte_count": 203,
+        "sha256": "abcf5090f8bfb07cf4c416fbbf76d7804b34da78ad84befcc3411ef76495df74",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F06",
+        "address_va": "0x180002aa0",
+        "rva": "0x2aa0",
+        "file_offset": 7840,
+        "byte_count": 255,
+        "sha256": "3723dac710d5d8ca79d749c6d19bf60b83e709da3507fbf72cfd44757b0eff92",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F07",
+        "address_va": "0x180002ba0",
+        "rva": "0x2ba0",
+        "file_offset": 8096,
+        "byte_count": 48,
+        "sha256": "441073f73e9cab2653b21ca47f09528162f3ebdc4ab7424732b9b7035de33be5",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F08",
+        "address_va": "0x180003180",
+        "rva": "0x3180",
+        "file_offset": 9600,
+        "byte_count": 121,
+        "sha256": "8cb1e31f3364df2b0458da7ad7fc171e7929555551875e2fa298d9938c2756aa",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F09",
+        "address_va": "0x180002980",
+        "rva": "0x2980",
+        "file_offset": 7552,
+        "byte_count": 31,
+        "sha256": "07b33eafe9b73247051b0df9629cc62f703bfd10cf4b41f34c6cf0f6d3b61ff7",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F10",
+        "address_va": "0x180002520",
+        "rva": "0x2520",
+        "file_offset": 6432,
+        "byte_count": 42,
+        "sha256": "ebcf8a4ddc2613d8eafcc9b0a101eb56acb3bb046e6284c286bef80cd46c84ca",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F11",
+        "address_va": "0x1800028b0",
+        "rva": "0x28b0",
+        "file_offset": 7344,
+        "byte_count": 42,
+        "sha256": "6985c305c75df0388eef70ac5feff65c07563d226192362a5d5b4c8376a775e2",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F12",
+        "address_va": "0x180001450",
+        "rva": "0x1450",
+        "file_offset": 2128,
+        "byte_count": 594,
+        "sha256": "4dee017a8efcf1a5c9778eaf505fd85d69d51fdd35e6f46a20261f42ab5e17ed",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F13",
+        "address_va": "0x180002bd0",
+        "rva": "0x2bd0",
+        "file_offset": 8144,
+        "byte_count": 132,
+        "sha256": "7693cb7fe8e0e856f865946c3110d957b066ca79c0f7e6129be9ac50d969eddb",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F14",
+        "address_va": "0x180002920",
+        "rva": "0x2920",
+        "file_offset": 7456,
+        "byte_count": 53,
+        "sha256": "1b219deb5d4b2fefe1c5974dea6f392a09c041a609db6b02da0cd8e05b888c2b",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F15",
+        "address_va": "0x1800029a0",
+        "rva": "0x29a0",
+        "file_offset": 7584,
+        "byte_count": 47,
+        "sha256": "e9bf7b4f1c86dac36e92729ca04226388dbff004d44a2306c8528e6ea0897f9a",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F16",
+        "address_va": "0x180002550",
+        "rva": "0x2550",
+        "file_offset": 6480,
+        "byte_count": 47,
+        "sha256": "4c5ad76979350950679f892d7fffdb16da58de14bb6b1471e16c9f84f3c9170d",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "F17",
+        "address_va": "0x1800028e0",
+        "rva": "0x28e0",
+        "file_offset": 7392,
+        "byte_count": 47,
+        "sha256": "69357bc9a682ca646c46833f6cf454f3d2e1bd52bfc04a6e8b983946cc9d2889",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "H01-FUN_180002580",
+        "address_va": "0x180002580",
+        "rva": "0x2580",
+        "file_offset": 6528,
+        "byte_count": 801,
+        "sha256": "9049e73ee6584ae4c365435a866e60f0283000e99bf74561492c166d57149aba",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "H02-FUN_180001e60",
+        "address_va": "0x180001e60",
+        "rva": "0x1e60",
+        "file_offset": 4704,
+        "byte_count": 200,
+        "sha256": "0342457d109e4079f4f7aa511a282759a857eab6ce8e78b49b253926ffaf73c1",
+        "original_bytes_equal_ghidra_witness": true
+      },
+      {
+        "capture_id": "H03-FUN_1800017b0",
+        "address_va": "0x1800017b0",
+        "rva": "0x17b0",
+        "file_offset": 2992,
+        "byte_count": 279,
+        "sha256": "e2f3d3861c37d162d2c5a9f967efaa60dbdd07e9693229b6e1759f46509c3dbb",
+        "original_bytes_equal_ghidra_witness": true
+      }
+    ]
+  },
+  "pseudocode_reconciliation": {
+    "function_count": 20,
+    "stored_exact_match_records": 20,
+    "raw_text_included_in_source_map": false,
+    "method": "Each separate pseudocode result was compared with its dossier pseudocode in the local capture packet. This portable source-byte verifier does not recalculate that text comparison."
+  },
+  "metadata_and_strings": {
+    "region_address_va": "0x180005520",
+    "region_file_offset": 18720,
+    "region_bytes": 1088,
+    "source_matches_ghidra": true,
+    "selected_strings_verified": 23,
+    "strings": [
+      {
+        "text": "QQuickFileNameFilter",
+        "file_offset": "0x4920",
+        "verified": true
+      },
+      {
+        "text": "QQuickFileNameFilter",
+        "file_offset": "0x49b0",
+        "verified": true
+      },
+      {
+        "text": "indexChanged",
+        "file_offset": "0x49c5",
+        "verified": true
+      },
+      {
+        "text": "index",
+        "file_offset": "0x49d3",
+        "verified": true
+      },
+      {
+        "text": "nameChanged",
+        "file_offset": "0x49d9",
+        "verified": true
+      },
+      {
+        "text": "name",
+        "file_offset": "0x49e5",
+        "verified": true
+      },
+      {
+        "text": "extensionsChanged",
+        "file_offset": "0x49ea",
+        "verified": true
+      },
+      {
+        "text": "extensions",
+        "file_offset": "0x49fc",
+        "verified": true
+      },
+      {
+        "text": "globsChanged",
+        "file_offset": "0x4a07",
+        "verified": true
+      },
+      {
+        "text": "globs",
+        "file_offset": "0x4a14",
+        "verified": true
+      },
+      {
+        "text": "qt.quick.dialogs.qquickfilenamefilter",
+        "file_offset": "0x4c60",
+        "verified": true
+      },
+      {
+        "text": "update called on ",
+        "file_offset": "0x4c88",
+        "verified": true
+      },
+      {
+        "text": " of ",
+        "file_offset": "0x4c9c",
+        "verified": true
+      },
+      {
+        "text": " with filter ",
+        "file_offset": "0x4ca8",
+        "verified": true
+      },
+      {
+        "text": " (current filters are ",
+        "file_offset": "0x4cb8",
+        "verified": true
+      },
+      {
+        "text": "    old index=",
+        "file_offset": "0x4cd9",
+        "verified": true
+      },
+      {
+        "text": "new index=",
+        "file_offset": "0x4ce8",
+        "verified": true
+      },
+      {
+        "text": "    old name=",
+        "file_offset": "0x4cf9",
+        "verified": true
+      },
+      {
+        "text": "new name=",
+        "file_offset": "0x4d08",
+        "verified": true
+      },
+      {
+        "text": "    old extensions=",
+        "file_offset": "0x4d19",
+        "verified": true
+      },
+      {
+        "text": "new extensions=",
+        "file_offset": "0x4d30",
+        "verified": true
+      },
+      {
+        "text": "    old glob=s",
+        "file_offset": "0x4d41",
+        "verified": true
+      },
+      {
+        "text": "new globs=",
+        "file_offset": "0x4d50",
+        "verified": true
+      }
+    ]
+  },
+  "pdata_chain_checks": {
+    "selected_groups_verified": 8,
+    "groups": [
+      {
+        "start_va": "0x180001450",
+        "fragment_count": 6,
+        "start_rva": "0x1450",
+        "end_rva_exclusive": "0x16a2",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      },
+      {
+        "start_va": "0x1800017b0",
+        "fragment_count": 4,
+        "start_rva": "0x17b0",
+        "end_rva_exclusive": "0x18c7",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      },
+      {
+        "start_va": "0x180001e60",
+        "fragment_count": 3,
+        "start_rva": "0x1e60",
+        "end_rva_exclusive": "0x1f28",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      },
+      {
+        "start_va": "0x180002580",
+        "fragment_count": 3,
+        "start_rva": "0x2580",
+        "end_rva_exclusive": "0x28a1",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      },
+      {
+        "start_va": "0x1800029d0",
+        "fragment_count": 3,
+        "start_rva": "0x29d0",
+        "end_rva_exclusive": "0x2a9b",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      },
+      {
+        "start_va": "0x180002aa0",
+        "fragment_count": 5,
+        "start_rva": "0x2aa0",
+        "end_rva_exclusive": "0x2b9f",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      },
+      {
+        "start_va": "0x180003180",
+        "fragment_count": 3,
+        "start_rva": "0x3180",
+        "end_rva_exclusive": "0x31f9",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      },
+      {
+        "start_va": "0x180003380",
+        "fragment_count": 9,
+        "start_rva": "0x3380",
+        "end_rva_exclusive": "0x3e0d",
+        "contiguous": true,
+        "matches_ghidra_function_body": true
+      }
+    ],
+    "source": "PE exception directory and UNWIND_INFO CHAININFO records parsed from the source file"
+  },
+  "setIndex_finite_branch_check": {
+    "compare": "CMP dword ptr [RCX+0x10], EDX",
+    "equality_branch_target_offset": 56,
+    "target_bytes_hex": "4883c438c3",
+    "changed_value_store": "MOV dword ptr [RCX+0x10], EDX",
+    "static_metaobject_rva": "0x57b0",
+    "indirect_call_iat_target_va": "0x180005278",
+    "details": "The equality branch reaches the epilogue. The unequal branch writes the 32-bit field and reaches the captured activation call path."
+  }
+}
