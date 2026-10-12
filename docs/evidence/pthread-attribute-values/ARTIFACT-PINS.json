@@ -1,0 +1,26 @@
+{
+  "local_root": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-pthread-attributes-20261012",
+  "local_manifest_sha256": "a9f53c5a25a59ecf003a9d7c2ac6ec5a8dcadc6ae86ae6ba946adb6db3c03352",
+  "published_files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 7137,
+      "sha256": "f61a232c37baa74af0b36c0964169f25757dcb960610e3d24d0ba275bb65587b"
+    },
+    {
+      "path": "SEAL.json",
+      "bytes": 214,
+      "sha256": "a59929b234539809801b063faf4bc81ace5d7f66f980e04b906f3b5920a25009"
+    },
+    {
+      "path": "SOURCE-MAP.json",
+      "bytes": 19711,
+      "sha256": "34494164937bc389d581e254d2a1846db1d2f880d773a617daf7651c947171ff"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 5570,
+      "sha256": "86e36bd84ff815c6d0a5725107e87bfd14c6b9122a9ffd84e30dcb35c35801e9"
+    }
+  ]
+}
