@@ -1,0 +1,23 @@
+{
+  "original_source": "mltframework-win.dll, distribution1.0.0.30839",
+  "source_sha256": "59a83da5816e60a196289801f877b2740f9b3f5ff7b22adf638045ea2aa8e05c",
+  "reference_manifest": "11f1bff1c04068c82e4105aba0d9c2c0abeafcd04184168f2c5f8d897734ac80",
+  "contract": "e24341b731c2c75701460e00b59f07fa24710231e929c6fc3ec929144e7ff8af",
+  "independent_contract_review": "f39f754a06d779d7381fd90014ee4ac4a1cb9c720113e1a19b8a9e38c676ed61",
+  "original_cases_sha256": "6041f4d653ec933ce17aa65329c18e479ed0f3e182eeecfea35649e5b0da37d6",
+  "cases": 1364,
+  "volume_original_samples": [
+    -32768,
+    32767,
+    0,
+    1,
+    -1,
+    2,
+    -2,
+    123,
+    -123,
+    30000,
+    -30000
+  ],
+  "runtime": "Original native DLL/MSVC underWine11.17, Wine builtin UCRT/OS, default nearest-even masked SSE. Not Windows or FENV flag parity. Safe buffer policy is independent."
+}
