@@ -10,6 +10,10 @@ See [the bounded report](../evidence/dialog-file-filter/REPORT.md), [source map]
 
 Evidence manifest SHA-256: `c3d0c02dc4bda50ee2109084f299c6167942231afce3659dfcdea5ad8b44f943`.
 
+## Correction R1
+
+The original report and its manifest remain unchanged. Read the [H01 signed-width correction](../evidence/dialog-file-filter/CORRECTION-R1.md) with the report: R1 supersedes the earlier H01 parse-guard and middle-view start/length wording with the captured signed low-32-bit guard and wrapped arithmetic. The [revision manifest](../evidence/dialog-file-filter/REVISION-MANIFEST-R1.json) pins the correction, this updated task record, and the original packet hashes.
+
 ## Source and tools
 
 - Repository: `pastawithpesto/dji-studio-omarchy`
