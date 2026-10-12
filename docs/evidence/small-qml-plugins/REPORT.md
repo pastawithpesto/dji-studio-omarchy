@@ -22,7 +22,7 @@ The exported factory at0x180001160 uses the CRT thread-local initialization guar
 
 The cleanup callback atomically decrements the saved reference counter and frees its record when the prior counter is1. Do not infer complete Qt object lifetime or concurrent-call safety from this wrapper. Qt reference helper behavior, allocator/CRT outcomes and external QObject behavior remain outside this packet.
 
-At0x180001020 the constructor-like body calls the base constructor, writes both vtable pointers, and loads the module-registration import address into RAX. It does not call that import. The decompiler renders a return value; that rendering is not an original C++ constructor declaration. Importing or returning an address does not establish that module registration executes here.
+At 0x180001020 the constructor-like body calls the base constructor, writes both vtable pointers, and loads the local module-registration thunk address 0x1800012b0 into RAX. That thunk jumps through IAT slot 0x180003118 to the imported module-registration function. The constructor-like body does not call the thunk or the imported registration function. The decompiler renders a return value; that rendering is not an original C++ constructor declaration. Loading or returning this address does not establish that module registration executes here.
 
 The observed registration imports are `qml_register_types_Qt_labs_animation`, `qml_register_types_Qt_labs_folderlistmodel` and `qml_register_types_Qt_labs_qmlmodels`, from Qt6LabsAnimation.dll, Qt6LabsFolderListModel.dll and Qt6LabsQmlModels.dll respectively. Their implementations are external to these small plugins. This packet does not recover the animation or model algorithms in those larger DLLs.
 
@@ -45,3 +45,5 @@ Forty functions per DLL preserve Ghidra jumptable/indirect-transfer warnings, in
 ## Additive count correction
 
 The initial sealed report called every provider thunk an import thunk. The corrected count above distinguishes28 direct external targets, two internal free aliases and one internal guard dispatcher per DLL. The initial report, failed assumption and raw manifest remain unchanged. See THUNK-COUNT-CORRECTION.json. No source bytes or309-function coverage count changed.
+
+The additive publication correction is recorded in `PUBLICATION-CORRECTION-R2.json`. Earlier reports and the initial raw seal remain preserved.

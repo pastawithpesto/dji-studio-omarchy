@@ -1,18 +1,18 @@
 {
-  "utc": "2026-10-12T06:35:09.559396+00:00",
+  "utc": "2026-10-12T06:46:24.743607+00:00",
   "raw_packet_manifest_sha256": "893f58d1d52c670ee8e6dd07e640994c0c75c8713e28659bb85d419dc3e886dd",
   "files": [
     {
-      "source": "REPORT-CORRECTED.md",
+      "source": "REPORT-R2.md",
       "destination": "REPORT.md",
-      "bytes": 7157,
-      "sha256": "9607756a9553dc6551dd6277316ce6aa4cb9c72641c67fcc28f7891d5d2fa8ac"
+      "bytes": 7471,
+      "sha256": "3d650faa6e2deed4d9bfa79b541008746e751895a56fe5560a23de1d97d763d9"
     },
     {
-      "source": "FINDINGS-CORRECTED.json",
+      "source": "FINDINGS-R2.json",
       "destination": "FINDINGS.json",
-      "bytes": 5090,
-      "sha256": "ebc2e1b188c04a7a257f501a26400d91380b2113b7a381e30815afd196e7c6e4"
+      "bytes": 5453,
+      "sha256": "06ea40b4e9eb2e97c91fd7e086283eb4c906f9686c732274b14aa0ec827d715b"
     },
     {
       "source": "OFFLINE-VERIFICATION-CORRECTED.json",
@@ -193,7 +193,14 @@
       "destination": "labsmodelsplugin/qt_plugin_query_metadata_v2.assembly.txt",
       "bytes": 161,
       "sha256": "ba947280cfabc64e5bcebae278e7ead35e5c276f9053f8d5fa3115ff82e8c4ae"
+    },
+    {
+      "source": "PUBLICATION-CORRECTION-R2.json",
+      "destination": "PUBLICATION-CORRECTION-R2.json",
+      "bytes": 1507,
+      "sha256": "a136eaa255428f0b803b934c528e9b9dca815df01d5d44680ef1c5136dab2800"
     }
   ],
-  "scope": "Selected corrected report, indexes, original identities and two export disassemblies/pseudocode per DLL. No binary or full snapshot copied."
+  "scope": "Selected corrected report, indexes, original identities and two export disassemblies/pseudocode per DLL. No binary or full snapshot copied.",
+  "supersedes_manifest_sha256": "9fd8e8a810ed622927d9bcda2cb71f021ba90f44d79f1eb84023ec033a9872b3"
 }
