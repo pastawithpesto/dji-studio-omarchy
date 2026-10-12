@@ -1,12 +1,19 @@
 # Reverse engineering procedure
 
-Use RAE with Ghidra where available. Verify the connector, version, and access
-before you assign a task. Tool names and sessions depend on the local setup.
-Do not assume that another computer has the same RAE service.
+Use REA with Ghidra where available.
+Use the latest upstream REA from the [official repository](https://github.com/morluto/rea).
+At task start and resume, fetch its default branch and update an owned
+installation to the newest upstream commit before new analysis.
+Record the upstream commit, package version and running MCP server version.
+Preserve other workers' installations and active sessions.
+Keep saved evidence pinned to the tool version that produced it.
+Verify the connector, version and access before you assign a task.
+Tool names and sessions depend on the local setup.
+Do not assume that another computer has the same REA service.
 
 1. Read open PR claims and the evidence index. Reserve one precise target.
 2. Pin the binary build and SHA-256. Check that the evidence uses the same file.
-3. Reuse matching Ghidra projects, RAE sessions, snapshots, and exported evidence.
+3. Reuse matching Ghidra projects, REA sessions, snapshots, and exported evidence.
    Ask the owner before you import a binary again. Do not stop another session.
 4. Resolve callers, imports, exports, thunks, types, and units as needed.
    Check decompiled results against original bytes and disassembly.
