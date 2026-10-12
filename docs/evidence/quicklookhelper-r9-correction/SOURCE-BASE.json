@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/pastawithpesto/dji-studio-omarchy.git",
+  "worktree": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-sol-pr25-pr21-20261012/author21/source",
+  "branch": "work/sol3-pr21-r9-correction-20261012",
+  "head_before_correction": "e5509c6c50c8f5ebb583a1399e4a4a4ed11be028",
+  "fresh_main": "d96457e01f4aa2d6f264a5b9b90942e1aa89e1b4",
+  "checked_utc": "2026-10-12T06:24:39.596174+00:00",
+  "main_ancestor": true,
+  "status_before_correction": "clean",
+  "old_pr_head": "779a9c4336355b6fb5aee50975997dc1adf39c3b"
+}

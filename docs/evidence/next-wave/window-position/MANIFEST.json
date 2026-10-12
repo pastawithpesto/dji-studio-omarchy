@@ -1,0 +1,25 @@
+{
+  "reference_build": "1.0.0.30839",
+  "source_exe_sha256": "e8732b263ea6486680a3007349b9c06a37cfb64c8797610743fd3b3831b0faf4",
+  "records": [
+    {
+      "file": "AUTHOR.md",
+      "sha256": "e2656e1fdac02ba295a1e85626d66fe666c9777cdc200a78c6f26da85f85989c",
+      "bytes": 9697,
+      "original_workspace_path": "sol-ghidra-review/next-wave/window-position-methods/REPORT.md"
+    },
+    {
+      "file": "SOL-REVIEW.md",
+      "sha256": "792c09fcf1e99c544fb630b24a1aaeb240329c5129b5598fcb363c306076605d",
+      "bytes": 7786,
+      "original_workspace_path": "sol-ui-independent-review/next-wave/window-position-methods/REVIEW.md"
+    },
+    {
+      "file": "ASTRA-REVIEW.md",
+      "sha256": "2452e474ad7dee1d3eb6794bcb2e12e9b03c7823545f4759180213fd6bb642a0",
+      "bytes": 8637,
+      "original_workspace_path": "astra-review/reverse-wave-20261011/window-position-milestone/REVIEW.md"
+    }
+  ],
+  "limits": "Exact selected reports only. Full binary, RAE snapshots, disassembly and local manifests remain in the maintainer archive. This is not a self-contained reproduction package."
+}
