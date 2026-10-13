@@ -144,6 +144,10 @@ Driver stages are retained in each measurement record.
 ## Preparation and review
 
 Preparation was outside the timed trials.
+Comparable totals for installation, driver preparation and agent setup were not captured.
+Total agent start-to-delivery time was also not reliably captured.
+Worker summaries show the measured worker lifecycle only.
+They do not show total agent task time. Preparation history is recorded below.
 Three earlier native warm-ups and eight final source/dossier checks were separate.
 An initial saved-input check failed because the baseline expected plain Evidence,
 while the input was an MCP wrapper. Both methods then received the same exact

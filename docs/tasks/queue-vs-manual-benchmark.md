@@ -48,5 +48,7 @@ No default optimization is adopted. Queue source and application source are unch
 The [evidence packet](../evidence/queue-vs-manual-benchmark/README.md) has the plan,
 all measurements, independent calculation reviews, source pins and limitations.
 The test excludes model reasoning and token latency. It covers one function per DLL.
+Total agent start-to-delivery time and comparable setup totals were not captured.
+Worker lifecycle summaries do not establish total agent time.
 CLI import and first-analysis clocks are combined. Full policy-stage acceptance,
 Astra milestone verification, merge and application parity remain unclaimed.
