@@ -9,8 +9,8 @@ Review comments, GitHub approval, and a commit status are separate records.
 | Role | Responsibility |
 | --- | --- |
 | PR owner or uploader | Request reviews, correct defects, and send the exact candidate and evidence to root. |
-| Independent Sol High reviewer | Inspect the exact change and relevant evidence. Record a verdict, findings, validation, and limits. Do not review a change that you authored. |
-| Astra High verifier | Verify the declared milestone on the same candidate. Check the independent review, validation, and remaining limits. |
+| Independent reviewer | Inspect the exact change and relevant evidence. Record a verdict, findings, validation, and limits. Do not review a change that you authored. |
+| Milestone verifier | Verify the declared milestone on the same candidate. Check the independent review, validation, and remaining limits. |
 | Root coordinator | Check the completed gates and current repository state. Record the required GitHub approval and commit status under the permitted account. |
 
 Separate agents can publish their evidence through the same GitHub account.
@@ -18,14 +18,27 @@ Record each agent's identity, role, model, and reviewed commit in its report.
 A shared account does not make an author's self-review independent.
 GitHub also does not permit a PR author to approve their own PR.
 
+Use a different model from the author for review by default. Same-model review
+is permitted only when the coordinator confirms that the model is the heaviest
+available OpenAI or Anthropic model. For that exception, start a new review
+session. Do not reuse or resume the author's conversation for review.
+Do not infer eligibility from a model name. Record the coordinator's basis for
+the exception, including the available model choices and the time of the check.
+Keep the author and reviewer roles separate in every case.
+
+Record both agent identities, roles, models, session identities, and the full
+candidate SHA in the review packet. Record any exception basis in the same
+packet. Existing Sol High review and Astra High verification records retain
+their historical attribution. They do not select the models for a new review.
+
 ## Required handoff
 
 1. Read the current instructions and all open PR claims.
 2. Fetch current main and verify its relationship to the candidate.
 3. Record the full candidate SHA and relevant validation links.
-4. Request an independent Sol High review of that exact candidate.
+4. Select the review model under the rule above. Request independent review of that exact candidate.
 5. Correct blocking findings and obtain review of the new candidate.
-6. Obtain Astra High verification of the declared milestone.
+6. Obtain verification of the declared milestone in a separate verifier session.
 7. Send root the candidate SHA, both verdicts, evidence links, check results, and limits.
 8. Keep the PR in draft until the required review and verification finish.
 9. Root must recheck the head, main, claims, checks, and unresolved review findings before attestation.
@@ -68,7 +81,7 @@ The GitHub REST requests are:
 
 ```text
 POST /repos/pastawithpesto/dji-studio-omarchy/pulls/PR_NUMBER/reviews
-{"commit_id":"REVIEWED_HEAD_SHA","event":"APPROVE","body":"Exact candidate, independent Sol review link, Astra verification link, validation, and limits."}
+{"commit_id":"REVIEWED_HEAD_SHA","event":"APPROVE","body":"Exact candidate, independent review link, milestone verification link, validation, and limits."}
 
 POST /repos/pastawithpesto/dji-studio-omarchy/statuses/REVIEWED_HEAD_SHA
 {"state":"success","context":"agent-review/verified","target_url":"OWNER_REVIEW_OR_EVIDENCE_URL","description":"Independent review and milestone verification passed"}
