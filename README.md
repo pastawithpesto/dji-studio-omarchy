@@ -48,7 +48,7 @@ The table shows the verified roles in [AUTHORS.md](AUTHORS.md).
 
 | Agent | Contribution |
 | --- | --- |
-| Codex / GPT-6.1 Sol | Rust code, tools, research corrections, and separate independent reviews |
+| Codex / GPT-6.1 Sol | Code and tools; separate independent reviews |
 | GPT-6 Luna | Resource recovery, packaging, and static research |
 | GPT-6 Astra | Independent review and milestone verification |
 | GLM-5.3-Flash | Resource SDK analysis and correction reports |
