@@ -1,0 +1,19 @@
+{
+  "observed_utc": "2026-10-12T14:49:47.136Z",
+  "commit": "e4d3e1399d9cd4932653e7015a1bf8589e56029d",
+  "package_version": "6.4.0",
+  "running_server": {
+    "name": "rea",
+    "version": "6.4.0"
+  },
+  "entry": "/home/violence/Work/dji-headless-rea-e4d3e139-20261012/scripts/rea.mjs",
+  "entry_sha256": "25ef01e0ed78abf3786cc44684f751ac0d9c45897be210c6af2e26c7aa656eee",
+  "dist_main_sha256": "aeff2d1250fbe4bd5f6ac3ae9d5acaf3912263bfe27be31beaf5deed8f121c91",
+  "source": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/msvcp140_atomic_wait.dll",
+  "source_sha256": "ae430f3b65c5fc88643b30a344289bfda29811279379c1537cec19983c0938ae",
+  "snapshot": "/home/violence/Projects/dji-studio-omarchy/reconstruction/luna-atomic-wait-20261012/analysis.snapshot.json",
+  "snapshot_sha256": "9c03192eed52b16b3159ffbbde1cedb3749fe3e2814bbff038dd998e1189bea3",
+  "heap": "768M",
+  "grant": 3729,
+  "scope": "One fresh owned Ghidra startup/import under shared flock. The two saved dossiers are reused. Provider byte reads use the new image."
+}

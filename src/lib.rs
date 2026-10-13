@@ -25,3 +25,5 @@ pub mod stitch_mask;
 pub mod stitch_warp;
 
 pub mod stitching;
+
+pub mod atomic_wait;
