@@ -37,3 +37,16 @@ It does not prove Windows or camera parity.
 Session reuse and batching remain optional experiments under docs/REA-WORKFLOW.md.
 No speed improvement or default optimization adoption is claimed.
 Keep the PR in draft until the required gates pass.
+
+## Candidate result
+
+The author candidate implements saved-evidence collection and explicit live REA
+function queries. It seals each attempt and checks original inputs before resume.
+It retains failed attempts, raw output and source-independent historical reports.
+Linux process cleanup covers owned detached descendants.
+
+Root repeated all 29 control tests. They pass.
+The saved original-DLL integration and resume pass.
+The current matching-profile CLI snapshot adapter and resume pass.
+The public integration packet is in docs/evidence/rea-analysis-queue/.
+Independent exact-candidate review and hosted final-head checks remain separate.

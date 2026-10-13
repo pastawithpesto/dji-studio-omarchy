@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "reference": {
+    "sha256": "d6d6b75f637a325f06f82c2f4065f92d66e5f74559432efa9780c3da75bab9e8",
+    "size": 115384,
+    "build": "1.0.0.30839"
+  },
+  "binary_name": "bugly_extra_handler.dll",
+  "address": "0x180001010",
+  "original_body": {
+    "bytes": 56,
+    "sha256": "334551578b95fc2b1bbda216d69534577d3c39b5ee8a9cc27506ac1b61b195ac",
+    "file_offset": 1040,
+    "mapping": "Independent PE .text mapping. Supplied mapping provenance requires review."
+  },
+  "historical_saved_dossier": {
+    "sha256": "d7b928b6f64887df7aee65ae576666348457d1908baa4cba16ebcc7520f08495",
+    "evidence_id": "ev_09d2ab700045003bdb5daca14fbc3a02050fe7e705f6f2530dd31d0441826598",
+    "producer_rea_version": "6.4.0",
+    "producer_mcp_server_version": "6.4.0",
+    "producer_rea_commit": null,
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "2f8e96b5753c9076371d59a3c3682f610a66fa4834dc6dc5f556e707a6b8c2cf"
+  },
+  "current_tool": {
+    "rea_commit": "37b7550ecc916acc8619fa72e5c05af45702733f",
+    "rea_version": "6.4.0",
+    "node": "v26.8.1",
+    "command": [
+      "node",
+      "/home/violence/Work/dji-rea-analysis-queue-toolchain-20261012/scripts/rea.mjs"
+    ]
+  },
+  "checks": [
+    {
+      "name": "saved dossier collection and resume",
+      "exit_code": 0,
+      "resumed": true,
+      "same_attempt": true,
+      "coverage": {
+        "assembly": true,
+        "body_bytes": 56,
+        "body_ranges": true,
+        "independent_behavior_review": "pending",
+        "mapping_status": "supplied_provenance",
+        "pseudocode": true,
+        "runtime_parity": "unverified",
+        "source_byte_match": true,
+        "whole_body_witness": true,
+        "witness_bytes": 56
+      }
+    },
+    {
+      "name": "current CLI function analysis",
+      "result": "New original-source dossier produced. Queue rejected the historical profile pin. Failure and complete output were retained.",
+      "process_exit": 0,
+      "queue_exit": 1,
+      "observed_java_processes": 1,
+      "heap768M_observed": true
+    },
+    {
+      "name": "current matching snapshot adapter",
+      "exit_code": 0,
+      "mode": "live_cli_snapshot_or_import",
+      "evidence_id": "ev_8bc6f3a1d32240c0df04d661146aba92359b7c50086c87c1e450a2e30b7ae32d",
+      "profile_digest": "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb",
+      "coverage": {
+        "assembly": true,
+        "body_bytes": 56,
+        "body_ranges": true,
+        "independent_behavior_review": "pending",
+        "mapping_status": "supplied_provenance",
+        "pseudocode": true,
+        "runtime_parity": "unverified",
+        "source_byte_match": true,
+        "whole_body_witness": true,
+        "witness_bytes": 56
+      },
+      "result": "Snapshot replay. No new decompilation claimed for this retrieval."
+    }
+  ],
+  "preserved_failures": [
+    "Global --format=json rejected before import. Adapter now uses separate argv tokens.",
+    "Current analysis profile differs from the historical profile. Queue rejects mismatched expected profile."
+  ],
+  "local_artifact_sha256": {
+    "source-check.json": "854bd105ad7093fd0d0170e6c5d9386834b42987254fb5b5f2fd21b270a0b1d4",
+    "saved-manifest.json": "8bff78d26a8c518f7467a51efcc9b122ee73ed13ccf7586ca1c1db7f7e12c56c",
+    "live-manifest.json": "81b044ae8603c0ec46c521d5dcbde52efdefc88edb8ca847560c551dba68b8b4",
+    "current-snapshot-manifest.json": "5f458870709344b2490e4ae0c18ed7b9ab6736284c029ada8f4ca80da2a60b37",
+    "live-run/jobs/bugly-live-callback/000001/stdout.raw": "c73c9190cd9e0079212672fe560f64be865b9d9d343f3d51a54e858b47b88d19",
+    "live-run/jobs/bugly-live-callback/000002/stdout.raw": "c349fd39bb740a5d2fe58dec20ad0a2810bba0f167d956827e7d6d67fa705994",
+    "live-run/jobs/bugly-live-callback/000002/snapshot.json": "64eb9c5576cc1bb73f444de30f45629d583d61e49355aaafadefb89ec78f2c2c",
+    "live-lock-grant-000002-final.json": "ea0d4f432cf0ee1b1cb66817591046c8fff54b45bd3327588309083c748e7ebf",
+    "current-snapshot-run/reports/000001.json": "2528ea1abff595d6764e05ccdb71549a028d490698882e7dffe3ffeb5004d4e5",
+    "root-unit-tests.log": "173aa80108e4012e8ed970f510419f2874947a25e3abbc556a7cae38a69b8b15",
+    "saved-final.stdout": "a5a83bcf6fcdf89cc84315f6b2dc27e20334b43c3dd47b036592ef0382b43870",
+    "current-final.stdout": "3d9b31d1a0135b2c4522bed557e169756ba0adab838c97af3ca593182126eb69",
+    "historical-report.stdout": "d25e05c2cfdb14cedb073d7b84b7d9690c1a78d719ed3e4fa164dc1461efb4c3"
+  },
+  "local_evidence_directory": "/home/violence/Work/dji-rea-analysis-queue-integration-20261012",
+  "limits": [
+    "Original binaries, raw dossiers, native snapshots and runtime trees stay local.",
+    "Collected evidence is not an approved behavior contract.",
+    "Source-byte matching does not prove decompiler semantics.",
+    "No benchmark acceptance, speedup or default optimization adoption.",
+    "No vendor execution, Windows comparison or application parity."
+  ],
+  "author_candidate": "7e4bcc329918c02138213e5f263cdecb2ca5c18f",
+  "queue_sha256": "3f882a52ec95da0595dd460ef2650a025b586022d7ea2894291c0e7bb8ea0dc5",
+  "final_validation": {
+    "checked_utc": "2026-10-13T01:07:54.992926+00:00",
+    "python_version": "Python 3.14.7",
+    "unit_tests": 29,
+    "unit_exit": 0,
+    "saved_resume_exit": 0,
+    "current_snapshot_resume_exit": 0,
+    "historical_report_exit": 0
+  }
+}
