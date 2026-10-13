@@ -1,0 +1,37 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+00000001802818a0 <.text+0x2808a0>:
+   1802818a0:	40 53                	rex push %rbx
+   1802818a2:	48 83 ec 20          	sub    $0x20,%rsp
+   1802818a6:	48 89 91 88 00 00 00 	mov    %rdx,0x88(%rcx)
+   1802818ad:	48 8b d9             	mov    %rcx,%rbx
+   1802818b0:	48 85 d2             	test   %rdx,%rdx
+   1802818b3:	74 41                	je     0x1802818f6
+   1802818b5:	48 83 b9 98 00 00 00 	cmpq   $0x0,0x98(%rcx)
+   1802818bc:	00 
+   1802818bd:	75 53                	jne    0x180281912
+   1802818bf:	e8 ff 06 22 00       	call   0x1804a1fc3
+   1802818c4:	4c 8d 0d c5 fd ff ff 	lea    -0x23b(%rip),%r9        # 0x180281690
+   1802818cb:	48 8b d3             	mov    %rbx,%rdx
+   1802818ce:	4c 8d 05 bb 48 43 00 	lea    0x4348bb(%rip),%r8        # 0x1806b6190
+   1802818d5:	48 8b c8             	mov    %rax,%rcx
+   1802818d8:	e8 e0 06 22 00       	call   0x1804a1fbd
+   1802818dd:	48 8b c8             	mov    %rax,%rcx
+   1802818e0:	48 89 83 98 00 00 00 	mov    %rax,0x98(%rbx)
+   1802818e7:	e8 49 0a 22 00       	call   0x1804a2335
+   1802818ec:	48 83 bb 88 00 00 00 	cmpq   $0x0,0x88(%rbx)
+   1802818f3:	00 
+   1802818f4:	75 1c                	jne    0x180281912
+   1802818f6:	48 8b 8b 98 00 00 00 	mov    0x98(%rbx),%rcx
+   1802818fd:	48 85 c9             	test   %rcx,%rcx
+   180281900:	74 10                	je     0x180281912
+   180281902:	e8 34 0a 22 00       	call   0x1804a233b
+   180281907:	48 c7 83 98 00 00 00 	movq   $0x0,0x98(%rbx)
+   18028190e:	00 00 00 00 
+   180281912:	48 83 c4 20          	add    $0x20,%rsp
+   180281916:	5b                   	pop    %rbx
+   180281917:	c3                   	ret

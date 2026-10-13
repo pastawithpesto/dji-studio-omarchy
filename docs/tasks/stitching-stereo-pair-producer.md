@@ -100,3 +100,17 @@ claim. Identify the getter's exact source member and one supported writer path.
 Check its connection to the outer stereo-pair caller. Stop at the first unresolved
 selection or external producer. Keep runtime behavior and field units unknown
 unless separate evidence proves them. No agent or application change is needed.
+
+The producer-03 author packet is complete. The eight-byte getter returns member
+`+0x88`. A setup path reads the original `effect` property, calls a factory, and
+passes the result to a writer for that member. The factory queries
+`mlt_properties_get_data` on global `0x180a175c8` and tail-jumps through the result.
+The byte verifier passes for 1,424 captured bytes, 13 fixed anchors, and six exact
+imports. A changed expected anchor is rejected. The new packet also verifies
+the producer-02 seal and all its files. Independent review remains pending.
+
+Next bounded target: prove the initialization and registration stored through
+global `0x180a175c8`, then bind the selected `effect` value to the actual function
+pointer. Do not join a name match to the constructor without the stored pointer
+and selected call edge. The caller's live instance and later mutations remain
+unknown. Full stitching, EIS math, and Windows/camera comparison remain open.

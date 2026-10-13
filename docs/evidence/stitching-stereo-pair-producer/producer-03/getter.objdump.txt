@@ -1,0 +1,9 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000180281760 <.text+0x280760>:
+   180281760:	48 8b 81 88 00 00 00 	mov    0x88(%rcx),%rax
+   180281767:	c3                   	ret

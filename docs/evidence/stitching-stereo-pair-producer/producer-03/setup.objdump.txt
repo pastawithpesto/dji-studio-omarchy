@@ -1,0 +1,59 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000180228190 <.text+0x227190>:
+   180228190:	48 89 5c 24 08       	mov    %rbx,0x8(%rsp)
+   180228195:	57                   	push   %rdi
+   180228196:	48 83 ec 20          	sub    $0x20,%rsp
+   18022819a:	48 8b fa             	mov    %rdx,%rdi
+   18022819d:	48 8b d9             	mov    %rcx,%rbx
+   1802281a0:	e8 bb 95 05 00       	call   0x180281760
+   1802281a5:	48 85 c0             	test   %rax,%rax
+   1802281a8:	0f 85 a2 00 00 00    	jne    0x180228250
+   1802281ae:	48 8d 15 53 4b 45 00 	lea    0x454b53(%rip),%rdx        # 0x18067cd08
+   1802281b5:	48 8b cb             	mov    %rbx,%rcx
+   1802281b8:	e8 3a 9d 27 00       	call   0x1804a1ef7
+   1802281bd:	33 d2                	xor    %edx,%edx
+   1802281bf:	48 8b c8             	mov    %rax,%rcx
+   1802281c2:	e8 59 53 04 00       	call   0x18026d520
+   1802281c7:	48 8b d0             	mov    %rax,%rdx
+   1802281ca:	48 8b cb             	mov    %rbx,%rcx
+   1802281cd:	e8 ce 96 05 00       	call   0x1802818a0
+   1802281d2:	48 8d 15 ab 1b 45 00 	lea    0x451bab(%rip),%rdx        # 0x180679d84
+   1802281d9:	48 8b cb             	mov    %rbx,%rcx
+   1802281dc:	e8 16 9d 27 00       	call   0x1804a1ef7
+   1802281e1:	48 85 c0             	test   %rax,%rax
+   1802281e4:	75 2b                	jne    0x180228211
+   1802281e6:	48 8d 15 db 72 4a 00 	lea    0x4a72db(%rip),%rdx        # 0x1806cf4c8
+   1802281ed:	48 8b cb             	mov    %rbx,%rcx
+   1802281f0:	e8 02 9d 27 00       	call   0x1804a1ef7
+   1802281f5:	48 85 c0             	test   %rax,%rax
+   1802281f8:	75 17                	jne    0x180228211
+   1802281fa:	f2 0f 10 15 b6 07 45 	movsd  0x4507b6(%rip),%xmm2        # 0x1806789b8
+   180228201:	00 
+   180228202:	48 8d 15 7b 1b 45 00 	lea    0x451b7b(%rip),%rdx        # 0x180679d84
+   180228209:	48 8b cb             	mov    %rbx,%rcx
+   18022820c:	e8 aa 9c 27 00       	call   0x1804a1ebb
+   180228211:	48 8d 15 04 1b 45 00 	lea    0x451b04(%rip),%rdx        # 0x180679d1c
+   180228218:	48 8b cb             	mov    %rbx,%rcx
+   18022821b:	e8 d7 9c 27 00       	call   0x1804a1ef7
+   180228220:	48 85 c0             	test   %rax,%rax
+   180228223:	75 2b                	jne    0x180228250
+   180228225:	48 8d 15 7c 72 4a 00 	lea    0x4a727c(%rip),%rdx        # 0x1806cf4a8
+   18022822c:	48 8b cb             	mov    %rbx,%rcx
+   18022822f:	e8 c3 9c 27 00       	call   0x1804a1ef7
+   180228234:	48 85 c0             	test   %rax,%rax
+   180228237:	75 17                	jne    0x180228250
+   180228239:	f2 0f 10 15 c7 83 4a 	movsd  0x4a83c7(%rip),%xmm2        # 0x1806d0608
+   180228240:	00 
+   180228241:	48 8d 15 d4 1a 45 00 	lea    0x451ad4(%rip),%rdx        # 0x180679d1c
+   180228248:	48 8b cb             	mov    %rbx,%rcx
+   18022824b:	e8 6b 9c 27 00       	call   0x1804a1ebb
+   180228250:	48 8b 5c 24 30       	mov    0x30(%rsp),%rbx
+   180228255:	48 8b c7             	mov    %rdi,%rax
+   180228258:	48 83 c4 20          	add    $0x20,%rsp
+   18022825c:	5f                   	pop    %rdi
+   18022825d:	c3                   	ret

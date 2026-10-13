@@ -1,0 +1,301 @@
+{
+  "source": {
+    "build": "1.0.0.30839",
+    "name": "VinceEditor.dll",
+    "sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+    "size_bytes": 10958008,
+    "image_base": "0x180000000"
+  },
+  "captures": [
+    {
+      "path": "getter.objdump.txt",
+      "sha256": "43e62a539a185d4e390535557bf9d736a2470fb53d5b065a8001229ccf1f64cd",
+      "start_va": "0x180281760",
+      "end_va_exclusive": "0x180281768",
+      "coverage": "Exact leaf through its first return",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x180281760",
+        "--stop-address=0x180281768",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    },
+    {
+      "path": "writer.objdump.txt",
+      "sha256": "6de70165a05690097f3dce5ff776b69dfea7e09e57d9651ac809ef0b967194a6",
+      "start_va": "0x1802818a0",
+      "end_va_exclusive": "0x180281918",
+      "coverage": "Complete exception-table interval",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x1802818a0",
+        "--stop-address=0x180281918",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    },
+    {
+      "path": "setup.objdump.txt",
+      "sha256": "07ebf3e5b3f0085abec79f2d506a24ecd1d4a752f1ce3a489097f5b45ce2af79",
+      "start_va": "0x180228190",
+      "end_va_exclusive": "0x18022825e",
+      "coverage": "Complete exception-table interval",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x180228190",
+        "--stop-address=0x18022825e",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    },
+    {
+      "path": "factory.objdump.txt",
+      "sha256": "238ffd840238b2dac27902409038475a058daf445bc9364d2f0e87d34a64b99e",
+      "start_va": "0x18026d520",
+      "end_va_exclusive": "0x18026d56c",
+      "coverage": "Complete exception-table interval; nonnull path has an indirect tail jump",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x18026d520",
+        "--stop-address=0x18026d56c",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    },
+    {
+      "path": "outer-prefix.objdump.txt",
+      "sha256": "1113e0b7ec2c78470199efe82ae67f50de20038372fc5c2cc4b6c1e17106cf8a",
+      "start_va": "0x180228260",
+      "end_va_exclusive": "0x180228656",
+      "coverage": "Prefix only, from recorded entry through selected call and following jump; other branch destinations are outside capture",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x180228260",
+        "--stop-address=0x180228656",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "label": "getter",
+      "va": "0x180281760",
+      "file_offset": "0x280b60",
+      "bytes_hex": "488b8188000000c3"
+    },
+    {
+      "label": "writer unconditional entry store",
+      "va": "0x1802818a6",
+      "file_offset": "0x280ca6",
+      "bytes_hex": "48899188000000"
+    },
+    {
+      "label": "setup saves object and checks getter",
+      "va": "0x18022819d",
+      "file_offset": "0x22759d",
+      "bytes_hex": "488bd9e8bb9505004885c00f85a2000000"
+    },
+    {
+      "label": "setup reads effect property",
+      "va": "0x1802281ae",
+      "file_offset": "0x2275ae",
+      "bytes_hex": "488d15534b4500488bcbe83a9d2700"
+    },
+    {
+      "label": "setup selects function and writes result",
+      "va": "0x1802281bd",
+      "file_offset": "0x2275bd",
+      "bytes_hex": "33d2488bc8e859530400488bd0488bcbe8ce960500"
+    },
+    {
+      "label": "factory saves arguments and loads registry",
+      "va": "0x18026d52a",
+      "file_offset": "0x26c92a",
+      "bytes_hex": "488bd9488bfa488b0d91a07a00"
+    },
+    {
+      "label": "factory checks registry and queries data",
+      "va": "0x18026d537",
+      "file_offset": "0x26c937",
+      "bytes_hex": "4885c974234533c0488bd3e850492300"
+    },
+    {
+      "label": "factory forwards arguments to indirect tail jump",
+      "va": "0x18026d547",
+      "file_offset": "0x26c947",
+      "bytes_hex": "4885c07413488bd7488bcb488b5c24304883c4205f48ffe0"
+    },
+    {
+      "label": "factory null result",
+      "va": "0x18026d55f",
+      "file_offset": "0x26c95f",
+      "bytes_hex": "488b5c243033c04883c4205fc3"
+    },
+    {
+      "label": "outer saves input object",
+      "va": "0x1802282bd",
+      "file_offset": "0x2276bd",
+      "bytes_hex": "4c8be1"
+    },
+    {
+      "label": "outer uses getter result",
+      "va": "0x180228325",
+      "file_offset": "0x227725",
+      "bytes_hex": "498bcce8339405004c8bf8"
+    },
+    {
+      "label": "outer null check",
+      "va": "0x180228615",
+      "file_offset": "0x227a15",
+      "bytes_hex": "4d85ff0f842e160000"
+    },
+    {
+      "label": "outer forwards pointer",
+      "va": "0x180228640",
+      "file_offset": "0x227a40",
+      "bytes_hex": "448bc84d8bc5488bd7498bcfe88f1bf7ffe9f6150000"
+    }
+  ],
+  "pdata": [
+    {
+      "target_va": "0x180281760",
+      "containing_records": []
+    },
+    {
+      "target_va": "0x1802818a0",
+      "containing_records": [
+        {
+          "start_va": "0x1802818a0",
+          "end_va_exclusive": "0x180281918",
+          "unwind_rva": "0x7be318"
+        }
+      ]
+    },
+    {
+      "target_va": "0x180228190",
+      "containing_records": [
+        {
+          "start_va": "0x180228190",
+          "end_va_exclusive": "0x18022825e",
+          "unwind_rva": "0x7be320"
+        }
+      ]
+    },
+    {
+      "target_va": "0x18026d520",
+      "containing_records": [
+        {
+          "start_va": "0x18026d520",
+          "end_va_exclusive": "0x18026d56c",
+          "unwind_rva": "0x7be320"
+        }
+      ]
+    },
+    {
+      "target_va": "0x180228260",
+      "containing_records": [
+        {
+          "start_va": "0x180228260",
+          "end_va_exclusive": "0x180229c9b",
+          "unwind_rva": "0x7e9cd0"
+        }
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "va": "0x1802281a0",
+      "target": "0x180281760"
+    },
+    {
+      "va": "0x1802281b8",
+      "target": "0x1804a1ef7"
+    },
+    {
+      "va": "0x1802281c2",
+      "target": "0x18026d520"
+    },
+    {
+      "va": "0x1802281cd",
+      "target": "0x1802818a0"
+    },
+    {
+      "va": "0x18026d542",
+      "target": "0x1804a1e97"
+    },
+    {
+      "va": "0x180228328",
+      "target": "0x180281760"
+    },
+    {
+      "va": "0x18022864c",
+      "target": "0x18019a1e0"
+    }
+  ],
+  "imports": [
+    {
+      "thunk_va": "0x1804a1ef7",
+      "thunk_bytes": "ff250bf51c00",
+      "iat_va": "0x180671408",
+      "dll": "mltframework-win.dll",
+      "symbol": "mlt_properties_get"
+    },
+    {
+      "thunk_va": "0x1804a1e97",
+      "thunk_bytes": "ff25ebf51c00",
+      "iat_va": "0x180671488",
+      "dll": "mltframework-win.dll",
+      "symbol": "mlt_properties_get_data"
+    },
+    {
+      "thunk_va": "0x1804a1fc3",
+      "thunk_bytes": "ff25dff21c00",
+      "iat_va": "0x1806712a8",
+      "dll": "mltframework-win.dll",
+      "symbol": "mlt_service_profile"
+    },
+    {
+      "thunk_va": "0x1804a1fbd",
+      "thunk_bytes": "ff25edf21c00",
+      "iat_va": "0x1806712b0",
+      "dll": "mltframework-win.dll",
+      "symbol": "mlt_events_listen"
+    },
+    {
+      "thunk_va": "0x1804a2335",
+      "thunk_bytes": "ff25d5ea1c00",
+      "iat_va": "0x180670e10",
+      "dll": "mltframework-win.dll",
+      "symbol": "mlt_event_inc_ref"
+    },
+    {
+      "thunk_va": "0x1804a233b",
+      "thunk_bytes": "ff25c7ea1c00",
+      "iat_va": "0x180670e08",
+      "dll": "mltframework-win.dll",
+      "symbol": "mlt_event_close"
+    }
+  ],
+  "strings": [
+    {
+      "va": "0x18067cd08",
+      "text": "effect"
+    },
+    {
+      "va": "0x1806b6190",
+      "text": "render-context-will-destroyed"
+    }
+  ],
+  "prior_packet": {
+    "path": "../producer-02/MANIFEST.json",
+    "sha256": "f32504b782b661c29071c1d2e91a05a6fddbfe425785241b65315eb692562b4d"
+  },
+  "limitations": [
+    "Offline original-file bytes only. No new REA decompilation, vendor execution or runtime object identity.",
+    "The outer prefix is not complete control-flow coverage.",
+    "The imported property lookup and registered function selection remain unresolved.",
+    "Writer side effects through event imports and callbacks are not closed."
+  ]
+}
