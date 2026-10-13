@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "output": "/home/violence/Work/stitching-cache-verification-20261012/luna-producer/PE-WITNESSES.json",
+  "eis_export": {
+    "decorated_name_ascii": "?EisGetStereoPair@DUALFISHEYEVIDEOEIS@@YA?AUdata_feed_stereo_pair@@PEAXHAEBUFrameMetaOfIMU@1@11JJJUSensorTemperature@1@HUFlightPoseNavi@1@@Z",
+    "ordinal": 26,
+    "rva": "0x1474",
+    "va": "0x180001474",
+    "section": {
+      "name": ".text",
+      "virtual_size": 195662,
+      "rva": 4096,
+      "raw_size": 0,
+      "raw": 0
+    },
+    "raw_file_offset": null,
+    "raw_body_bytes_available": false,
+    "finding": "Export metadata resolves the function entry to RVA 0x1474 in .text; .text has VirtualSize 0x2fc4e and RawDataSize 0, so this original PE contains no raw bytes for the export body."
+  },
+  "import": [
+    "dual_fisheye_video_eis_win.dll",
+    {
+      "symbol": "?EisGetStereoPair@DUALFISHEYEVIDEOEIS@@YA?AUdata_feed_stereo_pair@@PEAXHAEBUFrameMetaOfIMU@1@11JJJUSensorTemperature@1@HUFlightPoseNavi@1@@Z",
+      "iat_va": "0x180670988"
+    }
+  ],
+  "helper_range": {
+    "file_offset": "0xa1e778",
+    "begin_rva": "0x137740",
+    "end_rva": "0x1378a8",
+    "unwind_rva": "0x7d6f78"
+  },
+  "landmarks": 7,
+  "caller_ranges": 3
+}

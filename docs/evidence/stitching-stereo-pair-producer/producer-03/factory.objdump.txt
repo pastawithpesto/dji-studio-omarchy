@@ -1,0 +1,31 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+000000018026d520 <.text+0x26c520>:
+   18026d520:	48 89 5c 24 08       	mov    %rbx,0x8(%rsp)
+   18026d525:	57                   	push   %rdi
+   18026d526:	48 83 ec 20          	sub    $0x20,%rsp
+   18026d52a:	48 8b d9             	mov    %rcx,%rbx
+   18026d52d:	48 8b fa             	mov    %rdx,%rdi
+   18026d530:	48 8b 0d 91 a0 7a 00 	mov    0x7aa091(%rip),%rcx        # 0x180a175c8
+   18026d537:	48 85 c9             	test   %rcx,%rcx
+   18026d53a:	74 23                	je     0x18026d55f
+   18026d53c:	45 33 c0             	xor    %r8d,%r8d
+   18026d53f:	48 8b d3             	mov    %rbx,%rdx
+   18026d542:	e8 50 49 23 00       	call   0x1804a1e97
+   18026d547:	48 85 c0             	test   %rax,%rax
+   18026d54a:	74 13                	je     0x18026d55f
+   18026d54c:	48 8b d7             	mov    %rdi,%rdx
+   18026d54f:	48 8b cb             	mov    %rbx,%rcx
+   18026d552:	48 8b 5c 24 30       	mov    0x30(%rsp),%rbx
+   18026d557:	48 83 c4 20          	add    $0x20,%rsp
+   18026d55b:	5f                   	pop    %rdi
+   18026d55c:	48 ff e0             	rex.W jmp *%rax
+   18026d55f:	48 8b 5c 24 30       	mov    0x30(%rsp),%rbx
+   18026d564:	33 c0                	xor    %eax,%eax
+   18026d566:	48 83 c4 20          	add    $0x20,%rsp
+   18026d56a:	5f                   	pop    %rdi
+   18026d56b:	c3                   	ret

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-13T04:51:46.705293+00:00",
+  "repo": "https://github.com/pastawithpesto/dji-studio-omarchy.git",
+  "worktree": "/home/violence/Work/stitching-cache-verification-20261012/source",
+  "branch": "research/stitching-stereo-pair-producer-20261012",
+  "head": "039d1bad1c0e2b0cf5405dfcf6b53606ebbdff2d",
+  "main": "d922d46337150db102cef675073cfa392ef92bbc",
+  "main_is_ancestor": true,
+  "status": "M docs/tasks/stitching-stereo-pair-producer.md"
+}

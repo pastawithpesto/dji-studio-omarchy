@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "source_sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+  "captures": 5,
+  "capture_bytes_checked": 1424,
+  "capture_byte_rows": 344,
+  "fixed_anchors": 13,
+  "direct_calls": 7,
+  "pdata_queries": 5,
+  "imports": 6,
+  "original_strings": 2,
+  "prior_packet_pins": 14,
+  "review_status": "Author validation only; independent review pending",
+  "limits": "Original-file static checks. No new decompilation, vendor execution, live object identity, units, or image parity."
+}

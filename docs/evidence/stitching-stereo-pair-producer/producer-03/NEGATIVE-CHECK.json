@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "mutation": "Changed one expected getter anchor byte in an owned temporary packet copy",
+  "expected_rejection": "Anchor bytes differ: getter",
+  "exit_code": 1,
+  "original_source_changed": false,
+  "original_packet_changed": false
+}

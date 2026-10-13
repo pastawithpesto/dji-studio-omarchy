@@ -1,0 +1,365 @@
+{
+  "source": {
+    "build": "1.0.0.30839",
+    "name": "VinceEditor.dll",
+    "sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+    "size_bytes": 10958008,
+    "image_base": "0x180000000"
+  },
+  "captures": [
+    {
+      "path": "VinceEditor-0x180198080-body.asm",
+      "sha256": "1f0ac5ff8193c0c3fcfee54b57b7c500799b84acb2b4623d1030dfc3ca4a3006",
+      "start_va": "0x180198080",
+      "end_va_exclusive": "0x18019952b",
+      "method": "Unchanged saved objdump capture, checked against its frozen manifest and original bytes",
+      "original_path": "/home/violence/Projects/dji-studio-omarchy/sol-calibration-review/swarm-20261010-2154/stitch-mask-provider-producer/VinceEditor-0x180198080-body.asm"
+    },
+    {
+      "path": "VinceEditor-0x180134840-body.asm",
+      "sha256": "0057543b667be1b009191c4dd61c162368e3aa93e6201d85c53a8c5873512cd4",
+      "start_va": "0x180134840",
+      "end_va_exclusive": "0x180134c28",
+      "method": "Unchanged saved objdump capture, checked against its frozen manifest and original bytes",
+      "original_path": "/home/violence/Projects/dji-studio-omarchy/sol-calibration-review/swarm-20261010-2154/stitch-mask-provider-producer/VinceEditor-0x180134840-body.asm"
+    },
+    {
+      "path": "VinceEditor-0x1801476a0-exact-leaf.asm",
+      "sha256": "2a023a4b489bc94c3219fa1f4e52f37d9a24fe978a84fca1460d0f23f41729c0",
+      "start_va": "0x1801476a0",
+      "end_va_exclusive": "0x1801476d2",
+      "method": "Unchanged saved objdump capture, checked against its frozen manifest and original bytes",
+      "original_path": "/home/violence/Projects/dji-studio-omarchy/sol-calibration-review/swarm-20261010-2154/stitch-mask-provider-producer/VinceEditor-0x1801476a0-exact-leaf.asm"
+    },
+    {
+      "path": "caller.objdump.txt",
+      "sha256": "c7d67a03676d20c14869a2dd565977aecefacdc3355d47298e9137cf8c849b36",
+      "start_va": "0x18019a1e0",
+      "end_va_exclusive": "0x18019a291",
+      "method": "New offline objdump capture",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x18019a1e0",
+        "--stop-address=0x18019a291",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    },
+    {
+      "path": "setter-760.objdump.txt",
+      "sha256": "11b352218425985f103b76c95b8bf533ec32bf1b78d8dc5f7a8a5edc279d20d3",
+      "start_va": "0x1801439b0",
+      "end_va_exclusive": "0x1801439b7",
+      "method": "New offline objdump capture",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x1801439b0",
+        "--stop-address=0x1801439b7",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    },
+    {
+      "path": "setter-764.objdump.txt",
+      "sha256": "3216106bb511fef7e6fa1a9404a66f4d1857d4b279ada8c0e215251bb465255b",
+      "start_va": "0x1801439c0",
+      "end_va_exclusive": "0x1801439c7",
+      "method": "New offline objdump capture",
+      "command": [
+        "objdump",
+        "-d",
+        "--start-address=0x1801439c0",
+        "--stop-address=0x1801439c7",
+        "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll"
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "label": "caller preserves owner",
+      "va": "0x18019a203",
+      "file_offset": "0x199603",
+      "bytes_hex": "488bd9"
+    },
+    {
+      "label": "caller null check source",
+      "va": "0x18019a228",
+      "file_offset": "0x199628",
+      "bytes_hex": "488b8b500400004885c97433"
+    },
+    {
+      "label": "caller first setter",
+      "va": "0x18019a234",
+      "file_offset": "0x199634",
+      "bytes_hex": "8b9368040000e87197faff"
+    },
+    {
+      "label": "caller second setter",
+      "va": "0x18019a23f",
+      "file_offset": "0x19963f",
+      "bytes_hex": "8b9388040000488b8b50040000e86f97faff"
+    },
+    {
+      "label": "caller forwards arguments and pointer",
+      "va": "0x18019a251",
+      "file_offset": "0x199651",
+      "bytes_hex": "448bce4c8bc5498bd6488b8b50040000e8aa2afaff"
+    },
+    {
+      "label": "first leaf setter",
+      "va": "0x1801439b0",
+      "file_offset": "0x142db0",
+      "bytes_hex": "899160070000c3"
+    },
+    {
+      "label": "second leaf setter",
+      "va": "0x1801439c0",
+      "file_offset": "0x142dc0",
+      "bytes_hex": "899164070000c3"
+    },
+    {
+      "label": "owner preserves pointer",
+      "va": "0x1801980b8",
+      "file_offset": "0x1974b8",
+      "bytes_hex": "488bf9"
+    },
+    {
+      "label": "owner identity pointer store",
+      "va": "0x1801980c6",
+      "file_offset": "0x1974c6",
+      "bytes_hex": "488d053b235200488907"
+    },
+    {
+      "label": "owner requests size",
+      "va": "0x1801980fe",
+      "file_offset": "0x1974fe",
+      "bytes_hex": "b9500a0000e84c3a4b00"
+    },
+    {
+      "label": "owner conditional constructor",
+      "va": "0x18019810d",
+      "file_offset": "0x19750d",
+      "bytes_hex": "4885c07413488b9748040000488bc8e81fc7f9ff"
+    },
+    {
+      "label": "owner stores constructor result or null",
+      "va": "0x180198121",
+      "file_offset": "0x197521",
+      "bytes_hex": "33c9eb0433c98bc148898750040000"
+    },
+    {
+      "label": "parent calls base initializer",
+      "va": "0x18013484a",
+      "file_offset": "0x133c4a",
+      "bytes_hex": "488bd9e84e2e0100"
+    },
+    {
+      "label": "parent identity pointer store",
+      "va": "0x180134852",
+      "file_offset": "0x133c52",
+      "bytes_hex": "488d0537a25700488903"
+    },
+    {
+      "label": "parent returns entry pointer",
+      "va": "0x180134c1f",
+      "file_offset": "0x13401f",
+      "bytes_hex": "488bc34883c4205bc3"
+    },
+    {
+      "label": "base zero register and identity pointer",
+      "va": "0x1801476a0",
+      "file_offset": "0x146aa0",
+      "bytes_hex": "4533c0488d050ea05600488901"
+    },
+    {
+      "label": "base zeros both dwords and stores provider",
+      "va": "0x1801476c2",
+      "file_offset": "0x146ac2",
+      "bytes_hex": "488bc14c8941244489412c48895130c3"
+    },
+    {
+      "label": "stereo-pair entry preserves object",
+      "va": "0x18013cd75",
+      "file_offset": "0x13c175",
+      "bytes_hex": "4c8bf9"
+    },
+    {
+      "label": "stereo-pair writes literals",
+      "va": "0x18013d187",
+      "file_offset": "0x13c587",
+      "bytes_hex": "41c747248007000041c7472880070000"
+    },
+    {
+      "label": "stereo-pair reads field 28",
+      "va": "0x18013d424",
+      "file_offset": "0x13c824",
+      "bytes_hex": "418b4f28"
+    },
+    {
+      "label": "stereo-pair reads field 24",
+      "va": "0x18013d42e",
+      "file_offset": "0x13c82e",
+      "bytes_hex": "418b5724"
+    },
+    {
+      "label": "outer caller receives unresolved owner",
+      "va": "0x180228328",
+      "file_offset": "0x227728",
+      "bytes_hex": "e8339405004c8bf8"
+    },
+    {
+      "label": "outer caller passes owner onward",
+      "va": "0x180228649",
+      "file_offset": "0x227a49",
+      "bytes_hex": "498bcfe88f1bf7ff"
+    }
+  ],
+  "pdata": [
+    {
+      "target_va": "0x180198080",
+      "containing_records": [
+        {
+          "start_va": "0x180198080",
+          "end_va_exclusive": "0x18019952b",
+          "unwind_rva": "0x7dfe44"
+        }
+      ]
+    },
+    {
+      "target_va": "0x180134840",
+      "containing_records": [
+        {
+          "start_va": "0x180134840",
+          "end_va_exclusive": "0x180134c28",
+          "unwind_rva": "0x7d6244"
+        }
+      ]
+    },
+    {
+      "target_va": "0x1801476a0",
+      "containing_records": []
+    },
+    {
+      "target_va": "0x18019a1e0",
+      "containing_records": [
+        {
+          "start_va": "0x18019a1e0",
+          "end_va_exclusive": "0x18019a291",
+          "unwind_rva": "0x7e0054"
+        }
+      ]
+    },
+    {
+      "target_va": "0x1801439b0",
+      "containing_records": []
+    },
+    {
+      "target_va": "0x1801439c0",
+      "containing_records": []
+    },
+    {
+      "target_va": "0x18013cd10",
+      "containing_records": [
+        {
+          "start_va": "0x18013cd10",
+          "end_va_exclusive": "0x18013e030",
+          "unwind_rva": "0x7d68a4"
+        }
+      ]
+    },
+    {
+      "target_va": "0x18022864c",
+      "containing_records": [
+        {
+          "start_va": "0x180228260",
+          "end_va_exclusive": "0x180229c9b",
+          "unwind_rva": "0x7e9cd0"
+        }
+      ]
+    }
+  ],
+  "rtti": [
+    {
+      "vtable_va": "0x1806ba408",
+      "col_pointer_bytes": "48127a8001000000",
+      "col_va": "0x1807a1248",
+      "col_bytes": "01000000000000000000000008b1a00070127a0048127a00",
+      "type_descriptor_va": "0x180a0b108",
+      "type_name": ".?AVPanoramaEffect@@",
+      "limitation": "Supplemental original RTTI identity. It does not prove live dispatch or field semantics."
+    },
+    {
+      "vtable_va": "0x1806aea90",
+      "col_pointer_bytes": "58097a8001000000",
+      "col_va": "0x1807a0958",
+      "col_bytes": "01000000000000000000000058aba00080097a0058097a00",
+      "type_descriptor_va": "0x180a0ab58",
+      "type_name": ".?AVPanoRenderer@@",
+      "limitation": "Supplemental original RTTI identity. It does not prove live dispatch or field semantics."
+    },
+    {
+      "vtable_va": "0x1806b16b8",
+      "col_pointer_bytes": "d8097a8001000000",
+      "col_va": "0x1807a09d8",
+      "col_bytes": "01000000000000000000000060a6a000e0ff7900d8097a00",
+      "type_descriptor_va": "0x180a0a660",
+      "type_name": ".?AVRenderer@@",
+      "limitation": "Supplemental original RTTI identity. It does not prove live dispatch or field semantics."
+    }
+  ],
+  "saved_dependencies": [
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/sol-calibration-review/swarm-20261010-2154/stitch-mask-provider-producer/ARTIFACT-IDENTITIES.json",
+      "sha256": "a94595fd2e50046d7421268fad2bc41a8fcebb1a98863e0f619cfad0aeee3008",
+      "size_bytes": 13903
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/sol-calibration-review/swarm-20261010-2154/stitch-mask-provider-producer/REPORT.md",
+      "sha256": "fab19693554b4d6816bfdd2f5cd5a63976f387502c59d075e95c762c3fc262b2",
+      "size_bytes": 13641
+    },
+    {
+      "path": "/home/violence/Projects/dji-studio-omarchy/reconstruction/root-luna-high-research-20261012/independent-review/stitching-caller.objdump.txt",
+      "sha256": "e2bb81db6589143ef68d36d68719f985199169cfb03df4300b32e5b4ff6c6ff3",
+      "size_bytes": 59888
+    },
+    {
+      "path": "/home/violence/Work/stitching-cache-verification-20261012/source/docs/evidence/stitching-stereo-pair-producer/producer-01/MANIFEST.json",
+      "sha256": "ca04689f688e4b78c083fcde33d5f6c3395b3b983c1f8246c1a76b51ddb37419",
+      "size_bytes": 1598
+    }
+  ],
+  "objdump_version": "GNU objdump (GNU Binutils) 2.47",
+  "navigation": {
+    "target": "0x18013cd10",
+    "source_sha256": "9450a9631b40037ec8c9bbd874f56e455264ed408a93d66168235b68c4383e42",
+    "rows": [
+      {
+        "kind": "relative candidate",
+        "section": ".text",
+        "va": "0x18019a261",
+        "bounds": [
+          [
+            "0x18019a1e0",
+            "0x18019a291",
+            "0x7e0054"
+          ]
+        ],
+        "bytes": "e8aa2afaff"
+      },
+      {
+        "kind": "rva",
+        "section": ".pdata",
+        "va": "0x180a36c8c",
+        "bounds": []
+      }
+    ]
+  },
+  "limitations": [
+    "Original-file offline evidence only. No VinceEditor REA import, new decompilation or vendor execution.",
+    "A raw opcode match is a navigation candidate until the containing entry disassembly validates it.",
+    "An exception-table interval does not establish whole-function control-flow coverage.",
+    "Constructor and matching member-load paths do not prove the same live object, absence of replacement, or field units.",
+    "Author validation is not independent review."
+  ]
+}

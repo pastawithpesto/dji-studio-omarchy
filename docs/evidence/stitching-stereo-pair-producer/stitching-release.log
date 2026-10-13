@@ -1,0 +1,41 @@
+    Finished `release` profile [optimized] target(s) in 0.02s
+     Running tests/stitch_mask.rs (/home/violence/Work/stitching-cache-verification-20261012/luna-audit/target/release/deps/stitch_mask-350c1d5ca8aa8411)
+
+running 5 tests
+test accepts_every_byte_value_and_adjacent_equal_runs ... ok
+test all_original_masks_match_input_pins_and_expanded_oracles ... ok
+test reports_header_errors_at_contract_offsets ... ok
+test reports_truncated_runs_negative_counts_and_extent_errors ... ok
+test requires_eof_after_zero_and_checks_allocation_limit_before_expansion ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.98s
+
+     Running tests/stitch_warp.rs (/home/violence/Work/stitching-cache-verification-20261012/luna-audit/target/release/deps/stitch_warp-28db35a369e6ba3d)
+
+running 8 tests
+test approved_rational_fixture_preserves_unequal_dimensions ... ok
+test dimension_policy_checks_both_sizes_and_accepts_exact_float_limit ... ok
+test finite_input_overflow_returns_no_partial_coordinates ... ok
+test nonfinite_values_are_rejected_in_every_supplied_scalar ... ok
+test uv_domain_and_error_precedence_follow_declared_native_policy ... ok
+test x_correction_is_single_step_without_modulo_or_clamp ... ok
+test y_validity_includes_boundaries_and_preserves_outside_values ... ok
+test zero_flow_keeps_inclusive_coordinate_endpoints ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/stitching.rs (/home/violence/Work/stitching-cache-verification-20261012/luna-audit/target/release/deps/stitching-9fabc834044c5a41)
+
+running 9 tests
+test ai_dimensions_keep_exact_signed_predicate_and_error_order ... ok
+test band_color_matches_independent_four_component_oracle_without_clamping ... ok
+test band_step_controls_high_level_and_low_level_caps_at_110 ... ok
+test band_weights_match_exact_and_negative_length_cases ... ok
+test buffer_coordinates_clamp_the_right_endpoint_and_preserve_half_texel_offset ... ok
+test dimensions_domains_and_nonfinite_failures_use_the_checked_policy ... ok
+test gaussian_matches_reviewed_constant_and_asymmetric_oracles ... ok
+test linear_blend_matches_independent_exact_case_and_endpoints ... ok
+test linear_collapsed_height_one_interval_is_not_reclamped ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

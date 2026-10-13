@@ -1,0 +1,54 @@
+{
+  "author": "root, solo at user request",
+  "review_status": "unreviewed",
+  "files": {
+    "NEGATIVE-CHECK.json": {
+      "sha256": "24012cef71482efeb50d1f804f1372d5c2d5626d0175f1eb6c35e839661d4cb9",
+      "size_bytes": 259
+    },
+    "REPORT.md": {
+      "sha256": "dc4d674d15bf6dd9cd4e0f47ef739bf4cf7648794fb0277dbdf7447ec8435655",
+      "size_bytes": 5751
+    },
+    "SOURCE-CHECKPOINT.json": {
+      "sha256": "f3729bad41a35f5fc0f010c5bd5791d284bc52d34fdf46494d87fac04a13e93e",
+      "size_bytes": 416
+    },
+    "VALIDATION.json": {
+      "sha256": "2aca0f2f95df7a525d67ef24ee8451f231f914d4b704d3195f714a9364678864",
+      "size_bytes": 525
+    },
+    "WITNESSES.json": {
+      "sha256": "1a8cfbb889626c575f1f272d51e25dd838e7e511dfd048cf4d20921ff1b0ba48",
+      "size_bytes": 8388
+    },
+    "factory.objdump.txt": {
+      "sha256": "238ffd840238b2dac27902409038475a058daf445bc9364d2f0e87d34a64b99e",
+      "size_bytes": 1478
+    },
+    "getter.objdump.txt": {
+      "sha256": "43e62a539a185d4e390535557bf9d736a2470fb53d5b065a8001229ccf1f64cd",
+      "size_bytes": 277
+    },
+    "outer-prefix.objdump.txt": {
+      "sha256": "1113e0b7ec2c78470199efe82ae67f50de20038372fc5c2cc4b6c1e17106cf8a",
+      "size_bytes": 13214
+    },
+    "pe_read.py": {
+      "sha256": "c4ecc8b32b5e13b019915ecaa01ab2f35ac5b1918d143f5f02167e3554c239b1",
+      "size_bytes": 4037
+    },
+    "setup.objdump.txt": {
+      "sha256": "07ebf3e5b3f0085abec79f2d506a24ecd1d4a752f1ce3a489097f5b45ce2af79",
+      "size_bytes": 3165
+    },
+    "verify.py": {
+      "sha256": "c2d4d9fc2a97711bdb3e098b01d9378b20582a03e38a4421a643b9f1aecfabf5",
+      "size_bytes": 5047
+    },
+    "writer.objdump.txt": {
+      "sha256": "6de70165a05690097f3dce5ff776b69dfea7e09e57d9651ac809ef0b967194a6",
+      "size_bytes": 1763
+    }
+  }
+}

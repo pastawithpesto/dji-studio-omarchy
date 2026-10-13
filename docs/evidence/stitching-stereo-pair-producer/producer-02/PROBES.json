@@ -1,0 +1,8 @@
+{
+  "limits": [
+    "The first test command named three nonexistent test files. Vitest selected only the cache and client files, so that command passed 41 tests. Separate commands ran the 49 provider, 7 environment, and 3 error tests. Total: 100.",
+    "A lookup for the historical SOURCE.json failed because that file is absent. The existing ARTIFACT-IDENTITIES.json and original source hash supply the reused capture pins.",
+    "The full linear disassembly and outer caller probes are private navigation artifacts. They are not complete function recovery or coverage claims."
+  ],
+  "private_navigation_root": "/home/violence/Work/stitching-caller-object-20261013"
+}
