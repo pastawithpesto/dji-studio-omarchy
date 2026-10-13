@@ -1,0 +1,70 @@
+{
+  "side": "manual",
+  "mode": "fresh",
+  "target": "crashpad_wer",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "crashpad_wer",
+    "--mode",
+    "fresh",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/016-fresh-crashpad_wer-p3-manual"
+  ],
+  "started_utc": "2026-10-13T02:41:11Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0019212791230529547,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "c935efe9951364fbe4cd9be1207d461ae9141b85b6b1679349e2dcc35567b0e0",
+    "raw_evidence_sha256": "965f61cc55b735007fdb47e9ffecca1027b9f15eee002d9f950f8a5f8b77e051",
+    "report_sha256": "612414871dd8d2f45159fc82c5cf8b3fe991fd4fa9fa39a8b25ab81d95e65856",
+    "evidence_id": "ev_1fbb7765ce41c8a365811a9ba1521c538fd6c988a03c395da484dd3deb16db73",
+    "witness_bytes": 68,
+    "stages": [
+      {
+        "stage": "source_and_witness_inputs",
+        "elapsed_seconds": 0.00033614388667047024
+      },
+      {
+        "stage": "direct_cli_function",
+        "elapsed_seconds": 16.992959445808083,
+        "exit_code": 0,
+        "termination": null
+      },
+      {
+        "stage": "driver_total",
+        "elapsed_seconds": 17.58594557084143
+      }
+    ]
+  },
+  "wall_seconds": 17.669730416033417,
+  "cpu_user_seconds": 31.83497,
+  "cpu_system_seconds": 1.938766,
+  "wait4_max_process_rss_kib": 665240,
+  "peak_sampled_aggregate_rss_bytes": 1051987968,
+  "peak_sampled_descendant_rss_bytes": 1029771264,
+  "memory_samples": 762,
+  "java_heap_arguments": [
+    "-Xmx768M"
+  ],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:41:28Z",
+  "cpu_workflow_user_seconds": 30.490348,
+  "cpu_workflow_system_seconds": 1.511268,
+  "cpu_monitor_user_seconds": 1.3446219999999975,
+  "cpu_monitor_system_seconds": 0.42749799999999993,
+  "trial": {
+    "id": "016-fresh-crashpad_wer-p3-manual",
+    "mode": "fresh",
+    "target": "crashpad_wer",
+    "pair": 3,
+    "side": "manual"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

@@ -1,0 +1,493 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T02:49:26.001954+00:00",
+  "actual_task": "/root/sol61_queue_benchmark",
+  "addendum_to": "FINAL-OWN-RESULTS-AND-MANUAL-EQUIVALENCE.json",
+  "addendum_to_sha256": "936eda9a4fa5b449a468ddc635f17b47b76a3b51f15cd3e246ce8652e98a08ec",
+  "difference": "The report limitations arrays differ only because the queue summary removes duplicate strings. The manual summary concatenates the two raw warning arrays.",
+  "resolution": "All thirty raw Evidence objects match exactly by pair, including both original warning arrays. All unique warnings remain in both summaries and keep their first-occurrence order. No trial record was changed, no Evidence was normalized, and no analysis was rerun.",
+  "all30_duplicates_only": true,
+  "checks": [
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "manual_report_sha256": "8baa63b9f10c8fbf32b33f6c56a91fcfcf52e2d0811160df7dab281afc2c4571",
+      "queue_report_sha256": "e7558d7b35a8b61cbc08740b378746a47dc31577c99fa9ab54e60721703663ac",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "manual_report_sha256": "612414871dd8d2f45159fc82c5cf8b3fe991fd4fa9fa39a8b25ab81d95e65856",
+      "queue_report_sha256": "7db9f8bfa44a54ec99dc4ed203e917be2c9cd32bef5be9b7dcd35e60cec83e70",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "manual_report_sha256": "5ece77a80e90a8187807c6f0ba5b5145c7bfe0c081d71f767e3b8df4658b41e5",
+      "queue_report_sha256": "2324036409f323474318dae8eb92a9453191cd8e588c208ad75b06c4ed32d590",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "manual_report_sha256": "8baa63b9f10c8fbf32b33f6c56a91fcfcf52e2d0811160df7dab281afc2c4571",
+      "queue_report_sha256": "9f03ede5e6de24845bfa09daa99f8359a6214122139987446db0a0578a9d4616",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "manual_report_sha256": "612414871dd8d2f45159fc82c5cf8b3fe991fd4fa9fa39a8b25ab81d95e65856",
+      "queue_report_sha256": "b1fe3edb83c604528630a00b64cf11406acdb6be38c870957112b92a241ff7e9",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "manual_report_sha256": "5ece77a80e90a8187807c6f0ba5b5145c7bfe0c081d71f767e3b8df4658b41e5",
+      "queue_report_sha256": "df5176ccb60df83e34729b49baaa0093efbf408ff927557e44d087e20d0c7ef8",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "manual_report_sha256": "8baa63b9f10c8fbf32b33f6c56a91fcfcf52e2d0811160df7dab281afc2c4571",
+      "queue_report_sha256": "76ece523e83f59dfe83c285cd37a89afe1ebfdb952b954efec4451073eee58a4",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "manual_report_sha256": "612414871dd8d2f45159fc82c5cf8b3fe991fd4fa9fa39a8b25ab81d95e65856",
+      "queue_report_sha256": "f97f66fb3c2e049d1fb67036827f6576a7e7cf63fd110cc09eb2f4c761609d67",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "manual_report_sha256": "5ece77a80e90a8187807c6f0ba5b5145c7bfe0c081d71f767e3b8df4658b41e5",
+      "queue_report_sha256": "68663b1e62dfe7e248ac2f43f448c17e6c076b47dd87c189eb1992fe546e11b4",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "manual_report_sha256": "8baa63b9f10c8fbf32b33f6c56a91fcfcf52e2d0811160df7dab281afc2c4571",
+      "queue_report_sha256": "43d84852e22bd8f6568a72216b553bb33c6b4478a013db7a2f0691cecf93af31",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "manual_report_sha256": "612414871dd8d2f45159fc82c5cf8b3fe991fd4fa9fa39a8b25ab81d95e65856",
+      "queue_report_sha256": "eb3924bea811f697ea1350253158d9f64db5ff2246b2a8fc5f22f702455967d0",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "manual_report_sha256": "5ece77a80e90a8187807c6f0ba5b5145c7bfe0c081d71f767e3b8df4658b41e5",
+      "queue_report_sha256": "108f58e165229109efd32f523a64f8afe93d1e5aa788803eea0efeb0e39f620a",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "manual_report_sha256": "8baa63b9f10c8fbf32b33f6c56a91fcfcf52e2d0811160df7dab281afc2c4571",
+      "queue_report_sha256": "ca9f8a8f7c884acc0e7b7c831259079c90e8b539b0d4551745ed0dbed5bc64f0",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "manual_report_sha256": "612414871dd8d2f45159fc82c5cf8b3fe991fd4fa9fa39a8b25ab81d95e65856",
+      "queue_report_sha256": "7496f5f85aa497e62f3c48ee71aabe51b20a083eda126666f92e4544156cf58a",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "manual_report_sha256": "5ece77a80e90a8187807c6f0ba5b5145c7bfe0c081d71f767e3b8df4658b41e5",
+      "queue_report_sha256": "abc5afa954d74594797710e64d4feb2f45b7890f3580102803e341268b1c8539",
+      "raw_warning_count": 13,
+      "queue_summary_unique_warning_count": 12,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "manual_report_sha256": "57e9c27f516385b012a8cd3d3ef8f474ef0d37cfa963641139b580690967cb53",
+      "queue_report_sha256": "d3ff2a6fe41701f031af5d1379b027da312a0a3a9c7a8e48f60cd01b184e5bad",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "manual_report_sha256": "93fb0858f0fe7d1cf16ffd4a497498327e1cf1cfe28ec8f92fb22cced853df32",
+      "queue_report_sha256": "aecc0a21495abb25042c2815fe5f1a75e82725b860f19ebc83a2cdb4a2d2c00b",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "manual_report_sha256": "44233dc9e362d2c7c0fe8ddec4045fc948db7596a5723d18b5b0e0c27730eba5",
+      "queue_report_sha256": "a602eafb223a0d3bb729f4dbe4b57859df2bcd49747b85fbab1893a10d16ee77",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "manual_report_sha256": "57e9c27f516385b012a8cd3d3ef8f474ef0d37cfa963641139b580690967cb53",
+      "queue_report_sha256": "5c786ec0129da22a418badb11291cb3637ae071938e79995b4fd84424984bd19",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "manual_report_sha256": "93fb0858f0fe7d1cf16ffd4a497498327e1cf1cfe28ec8f92fb22cced853df32",
+      "queue_report_sha256": "0695b0f4341fe5525f5cdd35a92d22447179870f9139780e428cad057a24be2d",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "manual_report_sha256": "44233dc9e362d2c7c0fe8ddec4045fc948db7596a5723d18b5b0e0c27730eba5",
+      "queue_report_sha256": "7b09e5a56e524a6474a1a4845c24288f2dc241bf2957bfaf7505dfc10e567d15",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "manual_report_sha256": "57e9c27f516385b012a8cd3d3ef8f474ef0d37cfa963641139b580690967cb53",
+      "queue_report_sha256": "4ecadeae00ac939146ed7ba0013ec3b8fd1bc6092f49ce6a70b1e2683f385ee7",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "manual_report_sha256": "93fb0858f0fe7d1cf16ffd4a497498327e1cf1cfe28ec8f92fb22cced853df32",
+      "queue_report_sha256": "601814e2a0e9d055077510ec5871575103aa29a779ee7ec506a7ca092a41993a",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "manual_report_sha256": "44233dc9e362d2c7c0fe8ddec4045fc948db7596a5723d18b5b0e0c27730eba5",
+      "queue_report_sha256": "d707e3cc2f0b5167e2f3ad92067a9f77bda22fab35107ed8206e0e4ecd49a53e",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "manual_report_sha256": "57e9c27f516385b012a8cd3d3ef8f474ef0d37cfa963641139b580690967cb53",
+      "queue_report_sha256": "1e57c1d359f391dafaafc37192d31cf4ffd1e339b78c5dca789015724018bdee",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "manual_report_sha256": "93fb0858f0fe7d1cf16ffd4a497498327e1cf1cfe28ec8f92fb22cced853df32",
+      "queue_report_sha256": "f4b3721ac44098e95a97fa3d3971d697ce541fb9e8f86bf5ba02ca8c47c0c593",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "manual_report_sha256": "44233dc9e362d2c7c0fe8ddec4045fc948db7596a5723d18b5b0e0c27730eba5",
+      "queue_report_sha256": "8c9a8df42f85a7455c913d6963d7d459074befb829b03528cd3dfd1eb42c6a50",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "manual_report_sha256": "57e9c27f516385b012a8cd3d3ef8f474ef0d37cfa963641139b580690967cb53",
+      "queue_report_sha256": "425a857752f5a97d8cb9277a44ea3646cb354eb5215bab27cb290222651482b8",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "manual_report_sha256": "93fb0858f0fe7d1cf16ffd4a497498327e1cf1cfe28ec8f92fb22cced853df32",
+      "queue_report_sha256": "d516b059be37fb8e86736487ea2d2149109e913ed537b2186a1401ce56675bd1",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "manual_report_sha256": "44233dc9e362d2c7c0fe8ddec4045fc948db7596a5723d18b5b0e0c27730eba5",
+      "queue_report_sha256": "3772346554ba94459ed7cd883067a2020ff68bbc31a7c18ceceadee2a83a3539",
+      "raw_warning_count": 14,
+      "queue_summary_unique_warning_count": 13,
+      "duplicates": [
+        {
+          "text": "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+          "raw_count": 2,
+          "queue_summary_count": 1
+        }
+      ]
+    }
+  ],
+  "decision": "This resolves the observed warning-summary difference. It is not approval of queue performance or adoption."
+}

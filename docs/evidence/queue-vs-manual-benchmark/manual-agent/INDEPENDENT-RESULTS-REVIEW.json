@@ -1,0 +1,811 @@
+{
+  "utc": "2026-10-13T02:50:55.578251+00:00",
+  "review_scope": "Independent arithmetic and queue output review of the recorded frozen benchmark; no reruns",
+  "pins": [
+    {
+      "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/PLAN.json",
+      "sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+    },
+    {
+      "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+      "sha256": "41d6f44dea7007534b065c25dbbcf781c9a94ddb298b5e1cc06ced1e841cef53"
+    },
+    {
+      "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/RESULTS.json",
+      "sha256": "b9e6123529ca3ede690a26e264e69863682120e4699680c036bcfaa6d9c70e83"
+    },
+    {
+      "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/analyze.py",
+      "sha256": "6d88b89b69388f56377334cfdbba4aa110ab5971e226bf64dde26db2c7baac7c"
+    }
+  ],
+  "measurements_verified": 60,
+  "pairs_verified": 30,
+  "pair_count_per_dll_mode": 5,
+  "modes": [
+    {
+      "mode": "fresh",
+      "manual_sum_wall_medians_seconds": 70.73978140298277,
+      "queue_sum_wall_medians_seconds": 71.07694422407076,
+      "queue_slower_percent": 0.47662406414188396,
+      "target_details": [
+        {
+          "target": "ThumbnailProvider",
+          "queue_faster_pairs": 3,
+          "wall_improvement_fraction": -0.02032720737092575,
+          "cpu_regression_fraction": 0.03824644290413337,
+          "memory_regression_fraction": 0.004885478633215534,
+          "noise_pass": true
+        },
+        {
+          "target": "crashpad_wer",
+          "queue_faster_pairs": 2,
+          "wall_improvement_fraction": -0.04834592983212693,
+          "cpu_regression_fraction": 0.054123841540178796,
+          "memory_regression_fraction": 0.025078552989685976,
+          "noise_pass": true
+        },
+        {
+          "target": "bugly_extra_handler",
+          "queue_faster_pairs": 4,
+          "wall_improvement_fraction": 0.043257863640286165,
+          "cpu_regression_fraction": -0.010566111769750197,
+          "memory_regression_fraction": 0.024489126273766315,
+          "noise_pass": true
+        }
+      ],
+      "quantitative_gate_issues": [
+        "Aggregate wall improvement below10%",
+        "Queue wins fewer than80% of pairs for a DLL"
+      ],
+      "quantitative_thresholds_pass": false
+    },
+    {
+      "mode": "saved",
+      "manual_sum_wall_medians_seconds": 0.2583349868655205,
+      "queue_sum_wall_medians_seconds": 0.5692783300764859,
+      "queue_slower_percent": 120.36439468914479,
+      "target_details": [
+        {
+          "target": "ThumbnailProvider",
+          "queue_faster_pairs": 0,
+          "wall_improvement_fraction": -1.2122634784303363,
+          "cpu_regression_fraction": 1.2900348313652197,
+          "memory_regression_fraction": 0.5338943863867567,
+          "noise_pass": true
+        },
+        {
+          "target": "crashpad_wer",
+          "queue_faster_pairs": 0,
+          "wall_improvement_fraction": -1.1981956551972468,
+          "cpu_regression_fraction": 1.3463912767553219,
+          "memory_regression_fraction": 0.5265486725663717,
+          "noise_pass": true
+        },
+        {
+          "target": "bugly_extra_handler",
+          "queue_faster_pairs": 0,
+          "wall_improvement_fraction": -1.2005626043560853,
+          "cpu_regression_fraction": 1.327425399419539,
+          "memory_regression_fraction": 0.5287229137851543,
+          "noise_pass": true
+        }
+      ],
+      "quantitative_gate_issues": [
+        "Aggregate wall improvement below10%",
+        "Queue wins fewer than80% of pairs for a DLL",
+        "A DLL wall median regresses more than5%",
+        "A DLL CPU median regresses more than10%",
+        "A DLL observed peak-memory median regresses more than10%"
+      ],
+      "quantitative_thresholds_pass": false
+    }
+  ],
+  "warning_projection": [
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "manual_count": 13,
+      "queue_count": 12,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    },
+    {
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "manual_count": 14,
+      "queue_count": 13,
+      "strings_retained_identically": true,
+      "limitation_lists_identical": false,
+      "manual_duplicates": 1,
+      "queue_duplicates": 0
+    }
+  ],
+  "report_object_identity_claim": false,
+  "warning_note": "Raw Evidence objects match exactly. The baseline concatenates limitation lists and can repeat strings. The queue report removes duplicates. Derived report objects are not fully identical. Both retain the same warning strings.",
+  "scope_limits": [
+    "One bounded function in each of three small DLLs",
+    "Fresh and saved results remain separate",
+    "Repeated scripts measure workflow processing, not fully manual human or agent reasoning speed",
+    "Warm filesystem/tool caches; no cold-cache claim",
+    "20ms sampled aggregate RSS is not exact unique physical-memory peak",
+    "wait4 RSS remains maximum-process KiB and is not summed",
+    "CLI import and first analysis remain combined",
+    "No vendor execution, Windows parity or full-policy adoption attestation"
+  ],
+  "disposition": "Recorded arithmetic and bounded queue correctness checks pass. Queue fails frozen quantitative speed gate in both modes. No default adoption authorized.",
+  "recorded_resource_checks": [
+    {
+      "trial": "001-fresh-ThumbnailProvider-p1-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "002-fresh-ThumbnailProvider-p1-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "003-fresh-crashpad_wer-p1-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "004-fresh-crashpad_wer-p1-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "005-fresh-bugly_extra_handler-p1-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "006-fresh-bugly_extra_handler-p1-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "007-fresh-ThumbnailProvider-p2-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "008-fresh-ThumbnailProvider-p2-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "009-fresh-crashpad_wer-p2-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "010-fresh-crashpad_wer-p2-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "011-fresh-bugly_extra_handler-p2-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "012-fresh-bugly_extra_handler-p2-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "013-fresh-ThumbnailProvider-p3-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "014-fresh-ThumbnailProvider-p3-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "015-fresh-crashpad_wer-p3-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "016-fresh-crashpad_wer-p3-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "017-fresh-bugly_extra_handler-p3-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "018-fresh-bugly_extra_handler-p3-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "019-fresh-ThumbnailProvider-p4-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "020-fresh-ThumbnailProvider-p4-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "021-fresh-crashpad_wer-p4-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "022-fresh-crashpad_wer-p4-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "023-fresh-bugly_extra_handler-p4-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "024-fresh-bugly_extra_handler-p4-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "025-fresh-ThumbnailProvider-p5-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "026-fresh-ThumbnailProvider-p5-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "027-fresh-crashpad_wer-p5-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "028-fresh-crashpad_wer-p5-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "029-fresh-bugly_extra_handler-p5-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "030-fresh-bugly_extra_handler-p5-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": [
+        "-Xmx768M"
+      ]
+    },
+    {
+      "trial": "031-saved-ThumbnailProvider-p1-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "032-saved-ThumbnailProvider-p1-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "033-saved-crashpad_wer-p1-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "034-saved-crashpad_wer-p1-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "035-saved-bugly_extra_handler-p1-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "036-saved-bugly_extra_handler-p1-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "037-saved-ThumbnailProvider-p2-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "038-saved-ThumbnailProvider-p2-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "039-saved-crashpad_wer-p2-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "040-saved-crashpad_wer-p2-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "041-saved-bugly_extra_handler-p2-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "042-saved-bugly_extra_handler-p2-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "043-saved-ThumbnailProvider-p3-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "044-saved-ThumbnailProvider-p3-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "045-saved-crashpad_wer-p3-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "046-saved-crashpad_wer-p3-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "047-saved-bugly_extra_handler-p3-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "048-saved-bugly_extra_handler-p3-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "049-saved-ThumbnailProvider-p4-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "050-saved-ThumbnailProvider-p4-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "051-saved-crashpad_wer-p4-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "052-saved-crashpad_wer-p4-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "053-saved-bugly_extra_handler-p4-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "054-saved-bugly_extra_handler-p4-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "055-saved-ThumbnailProvider-p5-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "056-saved-ThumbnailProvider-p5-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "057-saved-crashpad_wer-p5-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "058-saved-crashpad_wer-p5-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "059-saved-bugly_extra_handler-p5-manual",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    },
+    {
+      "trial": "060-saved-bugly_extra_handler-p5-queue",
+      "resource_limits_pass": true,
+      "java_heap_arguments": []
+    }
+  ]
+}

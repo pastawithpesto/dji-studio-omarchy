@@ -1,0 +1,11 @@
+{
+  "previous_tool_commit": "ca2d15b3ee965bd7ab27204cdf4b96b117d148c1",
+  "current_tool_commit": "f254f5ac2b804b353a711264bb178f43fdf07867",
+  "native_source_diff": "empty",
+  "reason": "New changes add Android package-summary inspection. Ghidra bridge, provider and direct binary session sources are unchanged. Fresh preflight validates actual current result profile.",
+  "warmup_profiles": [
+    "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb",
+    "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb",
+    "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb"
+  ]
+}

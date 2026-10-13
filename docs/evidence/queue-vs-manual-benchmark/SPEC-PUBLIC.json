@@ -1,0 +1,231 @@
+{
+  "original_spec_sha256": "41d6f44dea7007534b065c25dbbcf781c9a94ddb298b5e1cc06ced1e841cef53",
+  "derivative_limit": "Body bytes replaced by lengths and hashes. This is not the frozen executable spec. Original spec remains in the private archive.",
+  "spec": {
+    "schema_version": 1,
+    "python": "/usr/bin/python3.14",
+    "pairs_per_dll_per_mode": 5,
+    "targets": [
+      {
+        "id": "ThumbnailProvider",
+        "name": "ThumbnailProvider.dll",
+        "function_name": "DllCanUnloadNow",
+        "binary": {
+          "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/ThumbnailProvider.dll",
+          "sha256": "48d296e96d4e8626d477597afc6fb80c4752920eb5f529957ec36b085c0367a3",
+          "build": "1.0.0.30839"
+        },
+        "size_bytes": 180408,
+        "address": "0x180001410",
+        "body_ranges": [
+          {
+            "start": "0x180001410",
+            "end": "0x18000141b"
+          }
+        ],
+        "saved_evidence": {
+          "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/shared-inputs/ThumbnailProvider-saved-evidence.json",
+          "sha256": "86550665f0c071061d79923db4560f51fd2ade4a2a6cac8db331b525ddc83994"
+        },
+        "byte_witnesses": [
+          {
+            "address": "0x180001410",
+            "file_offset": 2064,
+            "provenance": "Original file bytes independently mapped through PE sections; supplied historical body ranges. No fresh loaded-image read.",
+            "length_bytes": 12,
+            "sha256": "9949af5afc85551542ee9b12bbdd83c61cd2247fd869e921da6dbc6de45a010c"
+          }
+        ],
+        "producers": {
+          "saved": {
+            "rea_commit": null,
+            "rea_version": "6.4.0",
+            "mcp_server_version": "6.4.0",
+            "provider": {
+              "id": "ghidra",
+              "name": "Ghidra",
+              "version": "12.1.4"
+            },
+            "analysis_profile_digest": "2f8e96b5753c9076371d59a3c3682f610a66fa4834dc6dc5f556e707a6b8c2cf"
+          },
+          "fresh": {
+            "rea_commit": "f254f5ac2b804b353a711264bb178f43fdf07867",
+            "rea_version": "6.4.0",
+            "mcp_server_version": null,
+            "provider": {
+              "id": "ghidra",
+              "name": "Ghidra",
+              "version": "12.1.4"
+            },
+            "analysis_profile_digest": "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb"
+          }
+        }
+      },
+      {
+        "id": "crashpad_wer",
+        "name": "crashpad_wer.dll",
+        "function_name": "OutOfProcessExceptionEventCallback",
+        "binary": {
+          "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/crashpad_wer.dll",
+          "sha256": "c9111ab3c7f3d318a00e001c6a10a1c56d191f10291fc4eaf0d9bb86e4f2933a",
+          "build": "1.0.0.30839"
+        },
+        "size_bytes": 48824,
+        "address": "0x180001790",
+        "body_ranges": [
+          {
+            "start": "0x180001790",
+            "end": "0x1800017d3"
+          }
+        ],
+        "saved_evidence": {
+          "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/shared-inputs/crashpad_wer-saved-evidence.json",
+          "sha256": "a66dbb532366c5987eab01cd87acfb7c7324946a708fa22d5924cbdd43d63490"
+        },
+        "byte_witnesses": [
+          {
+            "address": "0x180001790",
+            "file_offset": 2960,
+            "provenance": "Original file bytes independently mapped through PE sections; supplied historical body ranges. No fresh loaded-image read.",
+            "length_bytes": 68,
+            "sha256": "ebaeed650b3b4a29da3eb3d201a73eceaa58607dd54606478700caff5fb32bbe"
+          }
+        ],
+        "producers": {
+          "saved": {
+            "rea_commit": null,
+            "rea_version": "6.4.0",
+            "mcp_server_version": "6.4.0",
+            "provider": {
+              "id": "ghidra",
+              "name": "Ghidra",
+              "version": "12.1.4"
+            },
+            "analysis_profile_digest": "2f8e96b5753c9076371d59a3c3682f610a66fa4834dc6dc5f556e707a6b8c2cf"
+          },
+          "fresh": {
+            "rea_commit": "f254f5ac2b804b353a711264bb178f43fdf07867",
+            "rea_version": "6.4.0",
+            "mcp_server_version": null,
+            "provider": {
+              "id": "ghidra",
+              "name": "Ghidra",
+              "version": "12.1.4"
+            },
+            "analysis_profile_digest": "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb"
+          }
+        }
+      },
+      {
+        "id": "bugly_extra_handler",
+        "name": "bugly_extra_handler.dll",
+        "function_name": "OutOfProcessExceptionEventCallback",
+        "binary": {
+          "path": "/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/bugly_extra_handler.dll",
+          "sha256": "d6d6b75f637a325f06f82c2f4065f92d66e5f74559432efa9780c3da75bab9e8",
+          "build": "1.0.0.30839"
+        },
+        "size_bytes": 115384,
+        "address": "0x180001010",
+        "body_ranges": [
+          {
+            "start": "0x180001010",
+            "end": "0x180001047"
+          }
+        ],
+        "saved_evidence": {
+          "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/shared-inputs/bugly_extra_handler-saved-evidence.json",
+          "sha256": "0856af5dbc35d9ee321d6dee04125b4be4499c0a47e1497d4a1c28db4e7adbc4"
+        },
+        "byte_witnesses": [
+          {
+            "address": "0x180001010",
+            "file_offset": 1040,
+            "provenance": "Original file bytes independently mapped through PE sections; supplied historical body ranges. No fresh loaded-image read.",
+            "length_bytes": 56,
+            "sha256": "334551578b95fc2b1bbda216d69534577d3c39b5ee8a9cc27506ac1b61b195ac"
+          }
+        ],
+        "producers": {
+          "saved": {
+            "rea_commit": null,
+            "rea_version": "6.4.0",
+            "mcp_server_version": "6.4.0",
+            "provider": {
+              "id": "ghidra",
+              "name": "Ghidra",
+              "version": "12.1.4"
+            },
+            "analysis_profile_digest": "2f8e96b5753c9076371d59a3c3682f610a66fa4834dc6dc5f556e707a6b8c2cf"
+          },
+          "fresh": {
+            "rea_commit": "f254f5ac2b804b353a711264bb178f43fdf07867",
+            "rea_version": "6.4.0",
+            "mcp_server_version": null,
+            "provider": {
+              "id": "ghidra",
+              "name": "Ghidra",
+              "version": "12.1.4"
+            },
+            "analysis_profile_digest": "1974e8b97d53c06a1572c109c6497629fdd8513abc4625ca30722f223f0b47bb"
+          }
+        }
+      }
+    ],
+    "queue": {
+      "path": "/home/violence/Work/dji-rea-analysis-queue-20261012/tools/rea_analysis_queue.py",
+      "commit": "4f8a94a71451da5c99e6b4335d99bb6b94eba4bc",
+      "sha256": "3f882a52ec95da0595dd460ef2650a025b586022d7ea2894291c0e7bb8ea0dc5"
+    },
+    "runner": {
+      "argv": [
+        "/usr/bin/node",
+        "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/toolchain/scripts/rea.mjs"
+      ],
+      "repository": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/toolchain",
+      "rea_commit": "f254f5ac2b804b353a711264bb178f43fdf07867",
+      "rea_version": "6.4.0",
+      "files": [
+        {
+          "path": "/usr/bin/node",
+          "sha256": "20003adecf3985e53e4a7c21d94ab671ce9f97ee7bace265171665781e0fc6bf"
+        },
+        {
+          "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/toolchain/scripts/rea.mjs",
+          "sha256": "bd03934ce18583154b6c244d177a302ee239f56a2d35a8d089e89c12f99f0777"
+        }
+      ],
+      "runtime_tree": {
+        "path": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/toolchain/dist",
+        "sha256": "2857036d7aeee9b8fa82c12b4f20664a631169b204cd0a077ab74037cf88c98c"
+      },
+      "environment": {
+        "GHIDRA_INSTALL_DIR": "/home/violence/Projects/dji-studio-omarchy/tools/ghidra_12.1.4_PUBLIC",
+        "JAVA_HOME": "/home/violence/Projects/dji-studio-omarchy/tools/jdk21/usr/lib/jvm/java-21-openjdk",
+        "GHIDRA_HEADLESS_MAXMEM": "768M",
+        "REA_GHIDRA_STARTUP_TIMEOUT_MS": "180000"
+      }
+    },
+    "resource_grant": {
+      "allow_fresh_import": true,
+      "authorization": "Root measured benchmark bus4047. Frozen alternating schedule, existing import lock, one provider, JVM768M. No vendor execution.",
+      "job_ids": [
+        "ThumbnailProvider",
+        "crashpad_wer",
+        "bugly_extra_handler"
+      ],
+      "timeout_seconds": 180,
+      "max_output_bytes": 16777216,
+      "address_space_mb": 65536,
+      "cpu_seconds": 180
+    },
+    "limits": {
+      "pipeline_timeout_seconds": 210,
+      "aggregate_rss_bytes": 2147483648
+    },
+    "drivers": {
+      "queue": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/queue-agent/queue-driver.py",
+      "manual": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py"
+    }
+  }
+}

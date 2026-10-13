@@ -1,0 +1,71 @@
+{
+  "side": "queue",
+  "mode": "saved",
+  "target": "ThumbnailProvider",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/queue-agent/queue-driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "ThumbnailProvider",
+    "--mode",
+    "saved",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/049-saved-ThumbnailProvider-p4-queue"
+  ],
+  "started_utc": "2026-10-13T02:47:31Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0006578520406037569,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "b9bc50936af597949d7c500bc3374e339a2dc4fd9df3debf94139a020a635f0d",
+    "raw_evidence_sha256": "9df57ef44fcabe7d27737898d4c637f1e9e17cbbd43e616db88afad65e0d8066",
+    "report_sha256": "1e57c1d359f391dafaafc37192d31cf4ffd1e339b78c5dca789015724018bdee",
+    "evidence_id": "ev_1a0b9a835052b38a9a9129b84da70748541b75e2af7171f15d9bd845a31918c8",
+    "witness_bytes": 12,
+    "stages": [
+      {
+        "stage": "queue_source_checks",
+        "wall_seconds": 0.009960809024050832
+      },
+      {
+        "stage": "manifest_generation",
+        "wall_seconds": 0.000370232155546546
+      },
+      {
+        "stage": "queue_child",
+        "wall_seconds": 0.0997364791110158,
+        "returncode": 0
+      },
+      {
+        "stage": "required_report_write",
+        "wall_seconds": 0.0007414740975946188
+      }
+    ]
+  },
+  "wall_seconds": 0.18916106410324574,
+  "cpu_user_seconds": 0.134966,
+  "cpu_system_seconds": 0.032951,
+  "wait4_max_process_rss_kib": 23860,
+  "peak_sampled_aggregate_rss_bytes": 67825664,
+  "peak_sampled_descendant_rss_bytes": 45551616,
+  "memory_samples": 10,
+  "java_heap_arguments": [],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:47:32Z",
+  "cpu_workflow_user_seconds": 0.130052,
+  "cpu_workflow_system_seconds": 0.031684,
+  "cpu_monitor_user_seconds": 0.004914000000000002,
+  "cpu_monitor_system_seconds": 0.0012670000000000042,
+  "trial": {
+    "id": "049-saved-ThumbnailProvider-p4-queue",
+    "mode": "saved",
+    "target": "ThumbnailProvider",
+    "pair": 4,
+    "side": "queue"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

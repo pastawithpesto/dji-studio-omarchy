@@ -35,3 +35,18 @@ Record tool installation, harness preparation and agent setup separately.
 Preserve every failure, timeout and slow run.
 Apply docs/REA-WORKFLOW.md acceptance and noise rules per mode.
 Cross-check output equivalence and require independent result review.
+
+## Result
+
+All 60 frozen trials passed. All 30 paired full Evidence objects match exactly.
+Fresh aggregate wall medians were 70.739781 seconds direct and 71.076944 seconds
+with the queue. Saved aggregates were 0.258335 and 0.569278 seconds.
+The queue fails the frozen speed thresholds in both modes.
+Keep the direct workflow as the baseline for this measured task.
+No default optimization is adopted. Queue source and application source are unchanged.
+
+The [evidence packet](../evidence/queue-vs-manual-benchmark/README.md) has the plan,
+all measurements, independent calculation reviews, source pins and limitations.
+The test excludes model reasoning and token latency. It covers one function per DLL.
+CLI import and first-analysis clocks are combined. Full policy-stage acceptance,
+Astra milestone verification, merge and application parity remain unclaimed.

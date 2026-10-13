@@ -1,0 +1,62 @@
+{
+  "side": "manual",
+  "mode": "saved",
+  "target": "ThumbnailProvider",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "ThumbnailProvider",
+    "--mode",
+    "saved",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/055-saved-ThumbnailProvider-p5-manual"
+  ],
+  "started_utc": "2026-10-13T02:47:33Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0005364969838410616,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "b9bc50936af597949d7c500bc3374e339a2dc4fd9df3debf94139a020a635f0d",
+    "raw_evidence_sha256": "86550665f0c071061d79923db4560f51fd2ade4a2a6cac8db331b525ddc83994",
+    "report_sha256": "57e9c27f516385b012a8cd3d3ef8f474ef0d37cfa963641139b580690967cb53",
+    "evidence_id": "ev_1a0b9a835052b38a9a9129b84da70748541b75e2af7171f15d9bd845a31918c8",
+    "witness_bytes": 12,
+    "stages": [
+      {
+        "stage": "source_and_witness_inputs",
+        "elapsed_seconds": 0.0007180280517786741
+      },
+      {
+        "stage": "driver_total",
+        "elapsed_seconds": 0.0026873440947383642
+      }
+    ]
+  },
+  "wall_seconds": 0.085477797081694,
+  "cpu_user_seconds": 0.060327999999999986,
+  "cpu_system_seconds": 0.010987,
+  "wait4_max_process_rss_kib": 21596,
+  "peak_sampled_aggregate_rss_bytes": 44290048,
+  "peak_sampled_descendant_rss_bytes": 21938176,
+  "memory_samples": 5,
+  "java_heap_arguments": [],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:47:33Z",
+  "cpu_workflow_user_seconds": 0.05807799999999999,
+  "cpu_workflow_system_seconds": 0.010312,
+  "cpu_monitor_user_seconds": 0.002249999999999995,
+  "cpu_monitor_system_seconds": 0.0006750000000000003,
+  "trial": {
+    "id": "055-saved-ThumbnailProvider-p5-manual",
+    "mode": "saved",
+    "target": "ThumbnailProvider",
+    "pair": 5,
+    "side": "manual"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

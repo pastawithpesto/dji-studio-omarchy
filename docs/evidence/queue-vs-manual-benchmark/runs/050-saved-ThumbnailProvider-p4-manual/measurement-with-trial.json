@@ -1,0 +1,62 @@
+{
+  "side": "manual",
+  "mode": "saved",
+  "target": "ThumbnailProvider",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "ThumbnailProvider",
+    "--mode",
+    "saved",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/050-saved-ThumbnailProvider-p4-manual"
+  ],
+  "started_utc": "2026-10-13T02:47:32Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0005771489813923836,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "b9bc50936af597949d7c500bc3374e339a2dc4fd9df3debf94139a020a635f0d",
+    "raw_evidence_sha256": "86550665f0c071061d79923db4560f51fd2ade4a2a6cac8db331b525ddc83994",
+    "report_sha256": "57e9c27f516385b012a8cd3d3ef8f474ef0d37cfa963641139b580690967cb53",
+    "evidence_id": "ev_1a0b9a835052b38a9a9129b84da70748541b75e2af7171f15d9bd845a31918c8",
+    "witness_bytes": 12,
+    "stages": [
+      {
+        "stage": "source_and_witness_inputs",
+        "elapsed_seconds": 0.0007158678490668535
+      },
+      {
+        "stage": "driver_total",
+        "elapsed_seconds": 0.0026653429958969355
+      }
+    ]
+  },
+  "wall_seconds": 0.08572619105689228,
+  "cpu_user_seconds": 0.06086099999999999,
+  "cpu_system_seconds": 0.012873,
+  "wait4_max_process_rss_kib": 21588,
+  "peak_sampled_aggregate_rss_bytes": 44326912,
+  "peak_sampled_descendant_rss_bytes": 21958656,
+  "memory_samples": 5,
+  "java_heap_arguments": [],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:47:32Z",
+  "cpu_workflow_user_seconds": 0.05882,
+  "cpu_workflow_system_seconds": 0.011806,
+  "cpu_monitor_user_seconds": 0.002040999999999994,
+  "cpu_monitor_system_seconds": 0.0010670000000000002,
+  "trial": {
+    "id": "050-saved-ThumbnailProvider-p4-manual",
+    "mode": "saved",
+    "target": "ThumbnailProvider",
+    "pair": 4,
+    "side": "manual"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

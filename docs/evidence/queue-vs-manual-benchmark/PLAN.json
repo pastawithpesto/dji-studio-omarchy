@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T02:28:53.995404+00:00",
+  "purpose": "Two GPT-6.1 Sol High workers compare the reviewed queue and a direct REA workflow with identical required outputs.",
+  "workers": {
+    "queue": "/root/sol61_queue_benchmark",
+    "manual": "/root/sol61_manual_benchmark"
+  },
+  "model": "GPT-6.1 Sol High",
+  "N": 5,
+  "modes": [
+    "fresh",
+    "saved"
+  ],
+  "schedule": [
+    {
+      "id": "001-fresh-ThumbnailProvider-p1-manual",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "side": "manual"
+    },
+    {
+      "id": "002-fresh-ThumbnailProvider-p1-queue",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "side": "queue"
+    },
+    {
+      "id": "003-fresh-crashpad_wer-p1-queue",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "side": "queue"
+    },
+    {
+      "id": "004-fresh-crashpad_wer-p1-manual",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "side": "manual"
+    },
+    {
+      "id": "005-fresh-bugly_extra_handler-p1-manual",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "side": "manual"
+    },
+    {
+      "id": "006-fresh-bugly_extra_handler-p1-queue",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "side": "queue"
+    },
+    {
+      "id": "007-fresh-ThumbnailProvider-p2-queue",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "side": "queue"
+    },
+    {
+      "id": "008-fresh-ThumbnailProvider-p2-manual",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "side": "manual"
+    },
+    {
+      "id": "009-fresh-crashpad_wer-p2-manual",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "side": "manual"
+    },
+    {
+      "id": "010-fresh-crashpad_wer-p2-queue",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "side": "queue"
+    },
+    {
+      "id": "011-fresh-bugly_extra_handler-p2-queue",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "side": "queue"
+    },
+    {
+      "id": "012-fresh-bugly_extra_handler-p2-manual",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "side": "manual"
+    },
+    {
+      "id": "013-fresh-ThumbnailProvider-p3-manual",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "side": "manual"
+    },
+    {
+      "id": "014-fresh-ThumbnailProvider-p3-queue",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "side": "queue"
+    },
+    {
+      "id": "015-fresh-crashpad_wer-p3-queue",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "side": "queue"
+    },
+    {
+      "id": "016-fresh-crashpad_wer-p3-manual",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "side": "manual"
+    },
+    {
+      "id": "017-fresh-bugly_extra_handler-p3-manual",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "side": "manual"
+    },
+    {
+      "id": "018-fresh-bugly_extra_handler-p3-queue",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "side": "queue"
+    },
+    {
+      "id": "019-fresh-ThumbnailProvider-p4-queue",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "side": "queue"
+    },
+    {
+      "id": "020-fresh-ThumbnailProvider-p4-manual",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "side": "manual"
+    },
+    {
+      "id": "021-fresh-crashpad_wer-p4-manual",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "side": "manual"
+    },
+    {
+      "id": "022-fresh-crashpad_wer-p4-queue",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "side": "queue"
+    },
+    {
+      "id": "023-fresh-bugly_extra_handler-p4-queue",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "side": "queue"
+    },
+    {
+      "id": "024-fresh-bugly_extra_handler-p4-manual",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "side": "manual"
+    },
+    {
+      "id": "025-fresh-ThumbnailProvider-p5-manual",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "side": "manual"
+    },
+    {
+      "id": "026-fresh-ThumbnailProvider-p5-queue",
+      "mode": "fresh",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "side": "queue"
+    },
+    {
+      "id": "027-fresh-crashpad_wer-p5-queue",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "side": "queue"
+    },
+    {
+      "id": "028-fresh-crashpad_wer-p5-manual",
+      "mode": "fresh",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "side": "manual"
+    },
+    {
+      "id": "029-fresh-bugly_extra_handler-p5-manual",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "side": "manual"
+    },
+    {
+      "id": "030-fresh-bugly_extra_handler-p5-queue",
+      "mode": "fresh",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "side": "queue"
+    },
+    {
+      "id": "031-saved-ThumbnailProvider-p1-manual",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "side": "manual"
+    },
+    {
+      "id": "032-saved-ThumbnailProvider-p1-queue",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 1,
+      "side": "queue"
+    },
+    {
+      "id": "033-saved-crashpad_wer-p1-queue",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "side": "queue"
+    },
+    {
+      "id": "034-saved-crashpad_wer-p1-manual",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 1,
+      "side": "manual"
+    },
+    {
+      "id": "035-saved-bugly_extra_handler-p1-manual",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "side": "manual"
+    },
+    {
+      "id": "036-saved-bugly_extra_handler-p1-queue",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 1,
+      "side": "queue"
+    },
+    {
+      "id": "037-saved-ThumbnailProvider-p2-queue",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "side": "queue"
+    },
+    {
+      "id": "038-saved-ThumbnailProvider-p2-manual",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 2,
+      "side": "manual"
+    },
+    {
+      "id": "039-saved-crashpad_wer-p2-manual",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "side": "manual"
+    },
+    {
+      "id": "040-saved-crashpad_wer-p2-queue",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 2,
+      "side": "queue"
+    },
+    {
+      "id": "041-saved-bugly_extra_handler-p2-queue",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "side": "queue"
+    },
+    {
+      "id": "042-saved-bugly_extra_handler-p2-manual",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 2,
+      "side": "manual"
+    },
+    {
+      "id": "043-saved-ThumbnailProvider-p3-manual",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "side": "manual"
+    },
+    {
+      "id": "044-saved-ThumbnailProvider-p3-queue",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 3,
+      "side": "queue"
+    },
+    {
+      "id": "045-saved-crashpad_wer-p3-queue",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "side": "queue"
+    },
+    {
+      "id": "046-saved-crashpad_wer-p3-manual",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 3,
+      "side": "manual"
+    },
+    {
+      "id": "047-saved-bugly_extra_handler-p3-manual",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "side": "manual"
+    },
+    {
+      "id": "048-saved-bugly_extra_handler-p3-queue",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 3,
+      "side": "queue"
+    },
+    {
+      "id": "049-saved-ThumbnailProvider-p4-queue",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "side": "queue"
+    },
+    {
+      "id": "050-saved-ThumbnailProvider-p4-manual",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 4,
+      "side": "manual"
+    },
+    {
+      "id": "051-saved-crashpad_wer-p4-manual",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "side": "manual"
+    },
+    {
+      "id": "052-saved-crashpad_wer-p4-queue",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 4,
+      "side": "queue"
+    },
+    {
+      "id": "053-saved-bugly_extra_handler-p4-queue",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "side": "queue"
+    },
+    {
+      "id": "054-saved-bugly_extra_handler-p4-manual",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 4,
+      "side": "manual"
+    },
+    {
+      "id": "055-saved-ThumbnailProvider-p5-manual",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "side": "manual"
+    },
+    {
+      "id": "056-saved-ThumbnailProvider-p5-queue",
+      "mode": "saved",
+      "target": "ThumbnailProvider",
+      "pair": 5,
+      "side": "queue"
+    },
+    {
+      "id": "057-saved-crashpad_wer-p5-queue",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "side": "queue"
+    },
+    {
+      "id": "058-saved-crashpad_wer-p5-manual",
+      "mode": "saved",
+      "target": "crashpad_wer",
+      "pair": 5,
+      "side": "manual"
+    },
+    {
+      "id": "059-saved-bugly_extra_handler-p5-manual",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "side": "manual"
+    },
+    {
+      "id": "060-saved-bugly_extra_handler-p5-queue",
+      "mode": "saved",
+      "target": "bugly_extra_handler",
+      "pair": 5,
+      "side": "queue"
+    }
+  ],
+  "python": "/usr/bin/python3.14",
+  "drivers": {
+    "queue": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/queue-agent/queue-driver.py",
+    "manual": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py"
+  },
+  "queue_commit": "4f8a94a71451da5c99e6b4335d99bb6b94eba4bc",
+  "tool_commit": "f254f5ac2b804b353a711264bb178f43fdf07867",
+  "code_sha256": {
+    "measure.py": "ca9eccd11bcea4844ef517ee96bfc29b219c9c64e687b9089d7385ecd3a1722a",
+    "run-worker.py": "28d208c73ac50319a04a034694e0e357c4df236b2827fbe5bad115d4850772de",
+    "manual-agent/manual_driver.py": "e65c523f9ef99745158ad5ff3e4fa920ef1bffb8306adf3f3506e110cca4c62d",
+    "queue-agent/queue-driver.py": "70ad8601062b2567a45fe0aa26f9f70b0c77907d81d5fa1d9467487d0f10bc1f"
+  },
+  "spec_sha256": "41d6f44dea7007534b065c25dbbcf781c9a94ddb298b5e1cc06ced1e841cef53",
+  "import_lock": "/home/violence/Projects/dji-studio-omarchy/coordination/ghidra-import.lock",
+  "pipeline_boundaries": {
+    "start": "Before driver startup, source verification and REA client startup.",
+    "stop": "After worker output checks/report writes, common independent output validation and owned-child cleanup.",
+    "excluded": [
+      "Tool installation and harness/driver preparation",
+      "Shared metadata extraction/profile discovery",
+      "Worker scheduling/resource-lock wait",
+      "Model reasoning, token latency and interactive agent scheduling"
+    ]
+  },
+  "metrics": {
+    "wall": "Complete measured pipeline seconds; includes common verification.",
+    "cpu": "wait4 user+system of worker and reaped descendants, plus common checker CPU. Observer CPU recorded separately.",
+    "memory": "20ms sampled summed RSS of common monitor plus observed owned descendants; not unique physical memory or exact peak. wait4 maximum-process RSS separately, never summed.",
+    "native_stages": "CLI wall combines import and first analysis; JVM appearance and heap recorded separately. Fine-grained import/analysis split is not established.",
+    "policy_stage_limit": "Import and first native analysis are combined. This benchmark does not attest full default-adoption policy acceptance."
+  },
+  "required_outputs": [
+    "Complete source hash and exact original-file body witness match",
+    "Exact function/profile/provider/operation",
+    "Full unmodified REA Evidence, pseudocode, assembly, warnings and provenance",
+    "Whole declared body ranges and byte coverage",
+    "Raw CLI output or exact shared saved Evidence retained",
+    "Required report written and no surviving owned process"
+  ],
+  "cache_conditions": [
+    "Fresh trials start with absent owned snapshot and no supplied saved dossier.",
+    "Filesystem/tool caches warmed by preparation. Not a cold OS cache experiment.",
+    "Saved trials use exactly the same frozen plain Evidence input for both methods.",
+    "Every trial uses a new output directory. No completed queue result is reused.",
+    "No cache flushing, peer process stops or peer file changes."
+  ],
+  "failure_rule": "Preserve all records. Any failed pipeline aborts the remaining schedule and makes comparison incomplete or rejects candidate correctness. Never rerun a measured failure as if absent.",
+  "acceptance_rules": {
+    "minimum_aggregate_wall_improvement": 0.1,
+    "required_strictly_faster_pairs_per_dll": 4,
+    "maximum_per_dll_wall_regression": 0.05,
+    "maximum_per_dll_cpu_or_peak_memory_regression": 0.1,
+    "maximum_median_absolute_deviation_fraction": 0.1,
+    "fresh_and_saved_decisions": "Separate. Never pool.",
+    "default_adoption": "Not authorized. This benchmark reports a bounded result only."
+  },
+  "host": {
+    "uname": [
+      "Linux",
+      "omarchy",
+      "7.2.5-3-omarchy",
+      "#1 SMP PREEMPT_DYNAMIC Mon, 14 Sep 2026 19:55:01 +0000",
+      "x86_64"
+    ],
+    "cpu_count": 4,
+    "loadavg_at_plan": [
+      1.27880859375,
+      1.1787109375,
+      0.966796875
+    ]
+  },
+  "limits": {
+    "pipeline_timeout_seconds": 210,
+    "aggregate_rss_bytes": 2147483648
+  },
+  "scope_limits": [
+    "One bounded function per each of three small DLLs. Not full reverse engineering.",
+    "Repeating scripted direct verification measures pipeline processing, not human typing or agent inference speed.",
+    "Agent preparation and all recorded failures are reported separately.",
+    "No Windows behavior, camera parity or vendor execution.",
+    "A speed threshold result alone does not adopt a default optimization."
+  ],
+  "frozen_utc": "2026-10-13T02:34:34.828098+00:00",
+  "grant_bus_id": 4047,
+  "prefreeze_checks": "Eight real source/dossier preflights pass strict common checker. Three independent target mapping audits per worker pass. Initial preparation failures retained separately."
+}

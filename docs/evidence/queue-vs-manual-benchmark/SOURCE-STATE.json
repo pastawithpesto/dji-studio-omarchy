@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-13T02:54:10.429467+00:00",
+  "repository": "https://github.com/pastawithpesto/dji-studio-omarchy",
+  "worktree": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/source",
+  "branch": "docs/queue-manual-benchmark-20261012",
+  "plan_commit": "5a6eed12fe2af747afda3b7cc67decc0d1675b89",
+  "fresh_main": "7a5d360342267cce0d05670a413c893407ec8d04",
+  "main_is_ancestor": true,
+  "status_before_packet_edit": "clean",
+  "open_claims_count": 10,
+  "scope_conflicts": [],
+  "rea_frozen_commit": "f254f5ac2b804b353a711264bb178f43fdf07867",
+  "rea_post_run_fetched_main": "a2d8b94dd50dab8d966239dd63ab84718aa8b4b4",
+  "rea_runtime_unchanged": true,
+  "rea_limit": "Measurements apply to the pinned latest-at-freeze commit. Newer upstream fetched after completion was not built or measured."
+}

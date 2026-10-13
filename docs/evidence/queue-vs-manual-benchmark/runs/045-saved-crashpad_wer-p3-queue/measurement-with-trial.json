@@ -1,0 +1,71 @@
+{
+  "side": "queue",
+  "mode": "saved",
+  "target": "crashpad_wer",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/queue-agent/queue-driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "crashpad_wer",
+    "--mode",
+    "saved",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/045-saved-crashpad_wer-p3-queue"
+  ],
+  "started_utc": "2026-10-13T02:47:30Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0005778709892183542,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "dcff8329ecc9b40a902e7caa4e8c8b3f4c33612eefd05699c90e773c60d34871",
+    "raw_evidence_sha256": "244c9a5f14f7cb6f775fdb15cf59395bf2882fba9a8e8077070396a43298f95b",
+    "report_sha256": "601814e2a0e9d055077510ec5871575103aa29a779ee7ec506a7ca092a41993a",
+    "evidence_id": "ev_5cd4ea2e716646cdd8d0bc023ea0d9c6e9384de7afd7493ad5ec20d8776e96cb",
+    "witness_bytes": 68,
+    "stages": [
+      {
+        "stage": "queue_source_checks",
+        "wall_seconds": 0.009840634884312749
+      },
+      {
+        "stage": "manifest_generation",
+        "wall_seconds": 0.0003991571720689535
+      },
+      {
+        "stage": "queue_child",
+        "wall_seconds": 0.0995512860827148,
+        "returncode": 0
+      },
+      {
+        "stage": "required_report_write",
+        "wall_seconds": 0.0011482860427349806
+      }
+    ]
+  },
+  "wall_seconds": 0.18932789796963334,
+  "cpu_user_seconds": 0.130954,
+  "cpu_system_seconds": 0.034770999999999996,
+  "wait4_max_process_rss_kib": 23720,
+  "peak_sampled_aggregate_rss_bytes": 67772416,
+  "peak_sampled_descendant_rss_bytes": 45436928,
+  "memory_samples": 10,
+  "java_heap_arguments": [],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:47:31Z",
+  "cpu_workflow_user_seconds": 0.12676500000000002,
+  "cpu_workflow_system_seconds": 0.03318599999999999,
+  "cpu_monitor_user_seconds": 0.0041889999999999705,
+  "cpu_monitor_system_seconds": 0.001585000000000003,
+  "trial": {
+    "id": "045-saved-crashpad_wer-p3-queue",
+    "mode": "saved",
+    "target": "crashpad_wer",
+    "pair": 3,
+    "side": "queue"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

@@ -1,0 +1,62 @@
+{
+  "side": "manual",
+  "mode": "saved",
+  "target": "bugly_extra_handler",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "bugly_extra_handler",
+    "--mode",
+    "saved",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/047-saved-bugly_extra_handler-p3-manual"
+  ],
+  "started_utc": "2026-10-13T02:47:31Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0005040450487285852,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "b90d48b3ab43b45cd606e144af9a749f4502f0cf0e109ea58f13c7424138b6b2",
+    "raw_evidence_sha256": "0856af5dbc35d9ee321d6dee04125b4be4499c0a47e1497d4a1c28db4e7adbc4",
+    "report_sha256": "44233dc9e362d2c7c0fe8ddec4045fc948db7596a5723d18b5b0e0c27730eba5",
+    "evidence_id": "ev_09d2ab700045003bdb5daca14fbc3a02050fe7e705f6f2530dd31d0441826598",
+    "witness_bytes": 56,
+    "stages": [
+      {
+        "stage": "source_and_witness_inputs",
+        "elapsed_seconds": 0.0005060669500380754
+      },
+      {
+        "stage": "driver_total",
+        "elapsed_seconds": 0.0027758448850363493
+      }
+    ]
+  },
+  "wall_seconds": 0.08644281816668808,
+  "cpu_user_seconds": 0.059287000000000006,
+  "cpu_system_seconds": 0.014894999999999999,
+  "wait4_max_process_rss_kib": 21664,
+  "peak_sampled_aggregate_rss_bytes": 44421120,
+  "peak_sampled_descendant_rss_bytes": 22183936,
+  "memory_samples": 5,
+  "java_heap_arguments": [],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:47:31Z",
+  "cpu_workflow_user_seconds": 0.057322000000000005,
+  "cpu_workflow_system_seconds": 0.013885,
+  "cpu_monitor_user_seconds": 0.0019650000000000015,
+  "cpu_monitor_system_seconds": 0.0010099999999999987,
+  "trial": {
+    "id": "047-saved-bugly_extra_handler-p3-manual",
+    "mode": "saved",
+    "target": "bugly_extra_handler",
+    "pair": 3,
+    "side": "manual"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

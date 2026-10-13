@@ -1,0 +1,10 @@
+{
+  "corrects": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/QUEUE-RECORDED-CORRECTNESS-REVIEW.json",
+  "original_review_sha256": "5c43ca407bf62dd85fccf6df836376e97a05d1f8060df0c0c3fe070fe47b7361",
+  "scope": "Derived report limitations only",
+  "report_objects_fully_identical": false,
+  "pairs_with_different_limitation_lists": 30,
+  "explanation": "The required comparable source/function/profile/bytes/pseudocode/assembly fields match. Manual concatenation repeats limitation strings. Queue report removes duplicate limitation strings. Both preserve every distinct raw warning. Full raw Evidence objects match exactly.",
+  "independent_results_review": "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/INDEPENDENT-RESULTS-REVIEW.json",
+  "independent_results_review_sha256": "8c208875dc3cd893429e25d96d1efcc7217868d462f454a013612670f08d04e9"
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T02:50:36.827233+00:00",
+  "actual_task": "/root/sol61_queue_benchmark",
+  "analyze_py_sha256": "6d88b89b69388f56377334cfdbba4aa110ab5971e226bf64dde26db2c7baac7c",
+  "results_sha256": "b9e6123529ca3ede690a26e264e69863682120e4699680c036bcfaa6d9c70e83",
+  "status": "Recorded calculations independently verified. Both modes fail frozen speed thresholds.",
+  "completed_measurements_checked": 60,
+  "measurement_pins": "All sixty match root summary pins.",
+  "modes": [
+    {
+      "mode": "fresh",
+      "manual_sum_wall_medians_seconds": 70.73978140298277,
+      "queue_sum_wall_medians_seconds": 71.07694422407076,
+      "queue_slower_percent": 0.47662406414188396,
+      "targets": [
+        {
+          "target": "ThumbnailProvider",
+          "manual_wall_median": 27.97197950608097,
+          "queue_wall_median": 28.540571734076366,
+          "queue_wins": 3,
+          "noise_pass": true,
+          "wall_regression_fraction": 0.02032720737092575,
+          "cpu_regression_fraction": 0.03824644290413337,
+          "memory_regression_fraction": 0.004885478633215534
+        },
+        {
+          "target": "crashpad_wer",
+          "manual_wall_median": 17.669730416033417,
+          "queue_wall_median": 18.52398996287957,
+          "queue_wins": 2,
+          "noise_pass": true,
+          "wall_regression_fraction": 0.04834592983212693,
+          "cpu_regression_fraction": 0.054123841540178796,
+          "memory_regression_fraction": 0.025078552989685976
+        },
+        {
+          "target": "bugly_extra_handler",
+          "manual_wall_median": 25.098071480868384,
+          "queue_wall_median": 24.012382527114823,
+          "queue_wins": 4,
+          "noise_pass": true,
+          "wall_regression_fraction": -0.043257863640286165,
+          "cpu_regression_fraction": -0.010566111769750197,
+          "memory_regression_fraction": 0.024489126273766315
+        }
+      ],
+      "quantitative_thresholds_pass": false
+    },
+    {
+      "mode": "saved",
+      "manual_sum_wall_medians_seconds": 0.2583349868655205,
+      "queue_sum_wall_medians_seconds": 0.5692783300764859,
+      "queue_slower_percent": 120.36439468914479,
+      "targets": [
+        {
+          "target": "ThumbnailProvider",
+          "manual_wall_median": 0.08550566690973938,
+          "queue_wall_median": 0.18916106410324574,
+          "queue_wins": 0,
+          "noise_pass": true,
+          "wall_regression_fraction": 1.2122634784303363,
+          "cpu_regression_fraction": 1.2900348313652197,
+          "memory_regression_fraction": 0.5338943863867567
+        },
+        {
+          "target": "crashpad_wer",
+          "manual_wall_median": 0.08638650178909302,
+          "queue_wall_median": 0.18989443290047348,
+          "queue_wins": 0,
+          "noise_pass": true,
+          "wall_regression_fraction": 1.1981956551972468,
+          "cpu_regression_fraction": 1.3463912767553219,
+          "memory_regression_fraction": 0.5265486725663717
+        },
+        {
+          "target": "bugly_extra_handler",
+          "manual_wall_median": 0.08644281816668808,
+          "queue_wall_median": 0.19022283307276666,
+          "queue_wins": 0,
+          "noise_pass": true,
+          "wall_regression_fraction": 1.2005626043560853,
+          "cpu_regression_fraction": 1.327425399419539,
+          "memory_regression_fraction": 0.5287229137851543
+        }
+      ],
+      "quantitative_thresholds_pass": false
+    }
+  ],
+  "warning_summary_addendum": "WARNING-REPORT-DIFFERENCE-ADDENDUM.json",
+  "limitations": [
+    "This review checks arithmetic, records and opposite-side Evidence preservation. It does not approve own driver source or performance adoption.",
+    "One function per three DLLs, N=5 per side, per mode.",
+    "Fresh and saved modes are separate.",
+    "Workflow processing excludes model reasoning, scheduler wait and preparation.",
+    "Import and first-analysis stage times are combined.",
+    "RSS is sampled summed resident memory at20ms, not unique physical memory or exact peak.",
+    "wait4 RSS is a maximum process/descendant value in KiB, not a simultaneous total.",
+    "The51.23551229503937second manual ThumbnailProvider fresh sample is retained; MAD remains below the frozen10percent rule.",
+    "No resumed sealed queue result was measured. New output directories include queue startup, source/tool checks, sealing and reporting overhead.",
+    "Raw Evidence matches exactly. Warning summary difference is duplicate removal only.",
+    "No Windows parity, full-DLL coverage, vendor execution or default adoption is established."
+  ]
+}

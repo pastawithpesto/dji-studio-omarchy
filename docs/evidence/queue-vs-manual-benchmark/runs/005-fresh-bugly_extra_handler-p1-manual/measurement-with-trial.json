@@ -1,0 +1,70 @@
+{
+  "side": "manual",
+  "mode": "fresh",
+  "target": "bugly_extra_handler",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "bugly_extra_handler",
+    "--mode",
+    "fresh",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/005-fresh-bugly_extra_handler-p1-manual"
+  ],
+  "started_utc": "2026-10-13T02:36:48Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0019374839030206203,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "6033dc572e6820097451099b321b5b454983c8a29c964a13f4af11ed7c1f1077",
+    "raw_evidence_sha256": "3b94105f2a88f5b5ae614e023d18b661ae4d8501b7c2c05569cbe39b446c42ac",
+    "report_sha256": "5ece77a80e90a8187807c6f0ba5b5145c7bfe0c081d71f767e3b8df4658b41e5",
+    "evidence_id": "ev_8bc6f3a1d32240c0df04d661146aba92359b7c50086c87c1e450a2e30b7ae32d",
+    "witness_bytes": 56,
+    "stages": [
+      {
+        "stage": "source_and_witness_inputs",
+        "elapsed_seconds": 0.001984220929443836
+      },
+      {
+        "stage": "direct_cli_function",
+        "elapsed_seconds": 24.45876413094811,
+        "exit_code": 0,
+        "termination": null
+      },
+      {
+        "stage": "driver_total",
+        "elapsed_seconds": 25.053567287977785
+      }
+    ]
+  },
+  "wall_seconds": 25.141441469080746,
+  "cpu_user_seconds": 49.563313,
+  "cpu_system_seconds": 2.8597279999999996,
+  "wait4_max_process_rss_kib": 739804,
+  "peak_sampled_aggregate_rss_bytes": 1135423488,
+  "peak_sampled_descendant_rss_bytes": 1113264128,
+  "memory_samples": 1069,
+  "java_heap_arguments": [
+    "-Xmx768M"
+  ],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:37:13Z",
+  "cpu_workflow_user_seconds": 47.606345000000005,
+  "cpu_workflow_system_seconds": 2.2626249999999994,
+  "cpu_monitor_user_seconds": 1.9569679999999963,
+  "cpu_monitor_system_seconds": 0.5971030000000002,
+  "trial": {
+    "id": "005-fresh-bugly_extra_handler-p1-manual",
+    "mode": "fresh",
+    "target": "bugly_extra_handler",
+    "pair": 1,
+    "side": "manual"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

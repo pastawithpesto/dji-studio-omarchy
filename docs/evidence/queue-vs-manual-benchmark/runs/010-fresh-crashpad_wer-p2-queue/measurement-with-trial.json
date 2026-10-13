@@ -1,0 +1,73 @@
+{
+  "side": "queue",
+  "mode": "fresh",
+  "target": "crashpad_wer",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/queue-agent/queue-driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "crashpad_wer",
+    "--mode",
+    "fresh",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/010-fresh-crashpad_wer-p2-queue"
+  ],
+  "started_utc": "2026-10-13T02:38:49Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.001873682951554656,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "c935efe9951364fbe4cd9be1207d461ae9141b85b6b1679349e2dcc35567b0e0",
+    "raw_evidence_sha256": "003791f463b654feab643e5f1bf09944664b504594c0ccab17f422ce95b447fd",
+    "report_sha256": "b1fe3edb83c604528630a00b64cf11406acdb6be38c870957112b92a241ff7e9",
+    "evidence_id": "ev_1fbb7765ce41c8a365811a9ba1521c538fd6c988a03c395da484dd3deb16db73",
+    "witness_bytes": 68,
+    "stages": [
+      {
+        "stage": "queue_source_checks",
+        "wall_seconds": 0.009923734003677964
+      },
+      {
+        "stage": "manifest_generation",
+        "wall_seconds": 0.0003535919822752476
+      },
+      {
+        "stage": "queue_child",
+        "wall_seconds": 18.42599207907915,
+        "returncode": 0
+      },
+      {
+        "stage": "required_report_write",
+        "wall_seconds": 0.001152814831584692
+      }
+    ]
+  },
+  "wall_seconds": 18.52398996287957,
+  "cpu_user_seconds": 33.758239999999994,
+  "cpu_system_seconds": 2.265351,
+  "wait4_max_process_rss_kib": 772100,
+  "peak_sampled_aggregate_rss_bytes": 1184702464,
+  "peak_sampled_descendant_rss_bytes": 1162498048,
+  "memory_samples": 790,
+  "java_heap_arguments": [
+    "-Xmx768M"
+  ],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:39:07Z",
+  "cpu_workflow_user_seconds": 32.327935,
+  "cpu_workflow_system_seconds": 1.7925869999999997,
+  "cpu_monitor_user_seconds": 1.430304999999997,
+  "cpu_monitor_system_seconds": 0.4727640000000002,
+  "trial": {
+    "id": "010-fresh-crashpad_wer-p2-queue",
+    "mode": "fresh",
+    "target": "crashpad_wer",
+    "pair": 2,
+    "side": "queue"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

@@ -1,0 +1,62 @@
+{
+  "side": "manual",
+  "mode": "saved",
+  "target": "crashpad_wer",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/manual-agent/manual_driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "crashpad_wer",
+    "--mode",
+    "saved",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/046-saved-crashpad_wer-p3-manual"
+  ],
+  "started_utc": "2026-10-13T02:47:31Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0006365238223224878,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "dcff8329ecc9b40a902e7caa4e8c8b3f4c33612eefd05699c90e773c60d34871",
+    "raw_evidence_sha256": "a66dbb532366c5987eab01cd87acfb7c7324946a708fa22d5924cbdd43d63490",
+    "report_sha256": "93fb0858f0fe7d1cf16ffd4a497498327e1cf1cfe28ec8f92fb22cced853df32",
+    "evidence_id": "ev_5cd4ea2e716646cdd8d0bc023ea0d9c6e9384de7afd7493ad5ec20d8776e96cb",
+    "witness_bytes": 68,
+    "stages": [
+      {
+        "stage": "source_and_witness_inputs",
+        "elapsed_seconds": 0.0003289179876446724
+      },
+      {
+        "stage": "driver_total",
+        "elapsed_seconds": 0.002393192145973444
+      }
+    ]
+  },
+  "wall_seconds": 0.08633234002627432,
+  "cpu_user_seconds": 0.05895,
+  "cpu_system_seconds": 0.012837000000000001,
+  "wait4_max_process_rss_kib": 21628,
+  "peak_sampled_aggregate_rss_bytes": 44511232,
+  "peak_sampled_descendant_rss_bytes": 22102016,
+  "memory_samples": 5,
+  "java_heap_arguments": [],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:47:31Z",
+  "cpu_workflow_user_seconds": 0.055869999999999996,
+  "cpu_workflow_system_seconds": 0.012809999999999998,
+  "cpu_monitor_user_seconds": 0.0030800000000000063,
+  "cpu_monitor_system_seconds": 2.7000000000002716e-05,
+  "trial": {
+    "id": "046-saved-crashpad_wer-p3-manual",
+    "mode": "saved",
+    "target": "crashpad_wer",
+    "pair": 3,
+    "side": "manual"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}

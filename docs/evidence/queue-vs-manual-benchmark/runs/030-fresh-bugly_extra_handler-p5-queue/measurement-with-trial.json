@@ -1,0 +1,73 @@
+{
+  "side": "queue",
+  "mode": "fresh",
+  "target": "bugly_extra_handler",
+  "command": [
+    "/usr/bin/python3.14",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/queue-agent/queue-driver.py",
+    "--spec",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/SPEC.json",
+    "--target",
+    "bugly_extra_handler",
+    "--mode",
+    "fresh",
+    "--output",
+    "/home/violence/Work/dji-queue-vs-manual-benchmark-20261012/runs/030-fresh-bugly_extra_handler-p5-queue"
+  ],
+  "started_utc": "2026-10-13T02:47:02Z",
+  "sample_interval_seconds": 0.02,
+  "memory_scope": "monitor plus all observed owned descendants",
+  "cleanup_seconds": 0.0019313390366733074,
+  "surviving_processes": [],
+  "returncode": 0,
+  "verification": {
+    "evidence_sha256": "6033dc572e6820097451099b321b5b454983c8a29c964a13f4af11ed7c1f1077",
+    "raw_evidence_sha256": "11cb126c7a2a8dc2a7802c874a53445107c37e64d341f0afaf801fdc58e610bd",
+    "report_sha256": "abc5afa954d74594797710e64d4feb2f45b7890f3580102803e341268b1c8539",
+    "evidence_id": "ev_8bc6f3a1d32240c0df04d661146aba92359b7c50086c87c1e450a2e30b7ae32d",
+    "witness_bytes": 56,
+    "stages": [
+      {
+        "stage": "queue_source_checks",
+        "wall_seconds": 0.01103966892696917
+      },
+      {
+        "stage": "manifest_generation",
+        "wall_seconds": 0.0003700018860399723
+      },
+      {
+        "stage": "queue_child",
+        "wall_seconds": 25.087532439967617,
+        "returncode": 0
+      },
+      {
+        "stage": "required_report_write",
+        "wall_seconds": 0.0011476441286504269
+      }
+    ]
+  },
+  "wall_seconds": 25.174693507840857,
+  "cpu_user_seconds": 50.465085,
+  "cpu_system_seconds": 3.150077,
+  "wait4_max_process_rss_kib": 752116,
+  "peak_sampled_aggregate_rss_bytes": 1161252864,
+  "peak_sampled_descendant_rss_bytes": 1138950144,
+  "memory_samples": 1034,
+  "java_heap_arguments": [
+    "-Xmx768M"
+  ],
+  "errors": [],
+  "finished_utc": "2026-10-13T02:47:27Z",
+  "cpu_workflow_user_seconds": 48.336274,
+  "cpu_workflow_system_seconds": 2.53005,
+  "cpu_monitor_user_seconds": 2.128810999999999,
+  "cpu_monitor_system_seconds": 0.6200269999999999,
+  "trial": {
+    "id": "030-fresh-bugly_extra_handler-p5-queue",
+    "mode": "fresh",
+    "target": "bugly_extra_handler",
+    "pair": 5,
+    "side": "queue"
+  },
+  "plan_sha256": "e4d90d76079e44675085f1852a4abb99a607457ffe6c4d01da94ed3bd2868580"
+}
