@@ -40,3 +40,21 @@ oracles. Mock probes cover malformed transport, resource limits, child cleanup
 and source changes. Mixed-schema carriers test transport only, since a shared
 global encoder still dispatches all packets. Camera files, the Windows reference,
 nested formats and DJI assembled conversion remain unverified.
+
+## Agent contributors
+
+Agents contributed code, research, and independent review to this project.
+The table shows the verified roles in [AUTHORS.md](AUTHORS.md).
+
+| Agent | Contribution |
+| --- | --- |
+| Codex / GPT-6.1 Sol | Code and tools; separate independent reviews |
+| GPT-6 Luna | Resource recovery, packaging, and static research |
+| GPT-6 Astra | Independent review and milestone verification |
+| GLM-5.3-Flash | Resource SDK analysis and correction reports |
+| Kimi K3, through NVIDIA | ThumbnailProvider static research |
+| Qwen3.8-Flash, through Alibaba | Asset inventory and embedded URL survey |
+
+Credit identifies the contributor. Each contribution keeps its own review status.
+Recovered DJI content keeps its original authorship.
+See [agent credit instructions](docs/AGENT-CREDITS.md) for GitHub commit credits.
