@@ -1,0 +1,130 @@
+{
+  "upstream_commit": "c74142e6bdcd9e43ede7472b1554d9347c44aa1c",
+  "source_sha256": "58796e123063a18779ca29d8e86a1f9cabfbffe20369a8cb233c3d6a12f13b6f",
+  "runtime": "/home/violence/Work/rea-cache-continuation-20261013/scripts/rea.mjs",
+  "files": {
+    "src/ghidra/GhidraClient.ts": "a524300c7f093a05f875fa4bfeb49ece9d2e4bd4fb72268d4d539dfef795b2c7",
+    "src/ghidra/GhidraLauncher.ts": "5807095f3695ff3425499639794af6f721764bf7bfcd771993789b40c6fd989d",
+    "src/ghidra/GhidraProviderCapabilities.ts": "fce2980b648ead6d289e76d8b79738372a0f1ab4603bdce838e6d19627556d44",
+    "src/ghidra/GhidraProviderClient.ts": "50349487972f9eced4d16606a64ce34d2956a0a608b3cbd044e869aedadcce78",
+    "src/ghidra/GhidraPersistentCache.ts": "600b53f768c0885f212482c646e4311a1f8bcda187574bcedda836ca3122ffbc",
+    "src/ghidra/GhidraPersistentCache.test.ts": "af4b3bf4bec9bd60170adabf8f2f1fc1a240b3dafdbbeb51bf82695c63f2a377",
+    "bridge/ghidra/ReaGhidraSaveAnalysis.java": "7d66d02ad4473217af3605310cc550686104891944132c5fba5b0c84c2f3b842",
+    "tests/boundary/providers/ghidra/ghidraClient.test.ts": "d887cbef2299867611431c6ec7c17e920b05a3dc95ddb9035abd1a7f2fcd2749"
+  },
+  "test_result": "100 focused tests passed: 35 client, 6 cache, 49 provider, 7 launcher environment, 3 session errors",
+  "limits": [
+    "Cache hashing and file copy can delay cancellation",
+    "Cache assumes pinned unchanged Ghidra, Java, runtime and bridge installations",
+    "This newer repaired build was not the measured benchmark candidate",
+    "No default adoption or global launcher/DS restart"
+  ],
+  "local_commit": "00155c6844c8d741543175a0cbd01aee19ef4bc6",
+  "smoke_result": "Real MCP cold/warm single-function smoke passed. Full normalized output, original source bytes, cache provenance, server identity and owned cleanup match.",
+  "running_mcp_identity": {
+    "package": {
+      "name": "rea-agents",
+      "version": "6.4.0",
+      "root_path": "/home/violence/Work/rea-cache-continuation-20261013",
+      "build_commit": "c74142e6bdcd9e43ede7472b1554d9347c44aa1c+local-cache-58796e12"
+    },
+    "server": {
+      "name": "rea",
+      "version": "6.4.0",
+      "started_at": "2026-10-13T04:53:33.515Z",
+      "command_path": "/home/violence/Work/rea-cache-continuation-20261013/scripts/rea.mjs"
+    },
+    "sdk": {
+      "server": "2.3.1",
+      "client_test": "2.3.1",
+      "core": "2.3.1"
+    },
+    "negotiated_protocol_version": "2025-11-25",
+    "client": {
+      "name": "rea-persistent-cache-benchmark",
+      "version": "1"
+    },
+    "skill": {
+      "name": "reverse-engineer-anything",
+      "expected_version": "41"
+    },
+    "catalog": {
+      "counts": {
+        "cli_commands": 138,
+        "mcp_tools": 187,
+        "mcp_prompts": 6
+      },
+      "digests": {
+        "tools_sha256": "0d946b82d329a6c66410578ab8faab91deb7f65aacd918693b1d98b766d50f79",
+        "prompts_sha256": "5296f0301566cadaf89243e774512011f11045af36d48405f76a3ff9a8947ac2",
+        "combined_sha256": "be28dbccd007df720e1bbc1f0fd8399e996f509cd4fdd6815d0f1f82eb175984"
+      }
+    },
+    "protocol_features": {
+      "progress": true,
+      "cancellation": true,
+      "elicitation": false
+    },
+    "alignment": {
+      "state": "aligned",
+      "reasons": [],
+      "remediation": null
+    }
+  },
+  "ghidra_version": "12.1.4",
+  "java_version": "21.0.12.1",
+  "heap_limit": "1G",
+  "global_launcher_changed": false,
+  "measured_benchmark_runtime_changed": false,
+  "cold_warm_result": {
+    "upstream": "c74142e6bdcd9e43ede7472b1554d9347c44aa1c",
+    "build_identity": "c74142e6bdcd9e43ede7472b1554d9347c44aa1c+local-cache-58796e12",
+    "full_outputs_match": true,
+    "source_before_after_match": true,
+    "cold_warm_provenance_correct": true,
+    "cleanup_passed": true,
+    "scope": "One fixed function in qtquick2plugin.dll; smoke test only, no benchmark decision"
+  },
+  "cache_provenance": {
+    "cold_reused": false,
+    "warm_reused": true
+  },
+  "validation_artifacts": {
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/READY.json": {
+      "sha256": "c99cd59ccc678e7001435ba08337d3baf00917a916dd15aeaddd3dbad94eaa37",
+      "size_bytes": 1809
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/build.log": {
+      "sha256": "0d3198184c190424d4de69371b3f718bdff3abc8d9c32b25207bacad228c5628",
+      "size_bytes": 496
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/focused-tests.log": {
+      "sha256": "a72af0de999f4011270934db709343b7b82fe6272f1efc45c588ed48f409d358",
+      "size_bytes": 1499
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/provider-tests.log": {
+      "sha256": "bae4e1626525edc0fb8b65e3b1a8f6ad532124c40cd2942e570918589d926423",
+      "size_bytes": 366
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/errors-tests.log": {
+      "sha256": "fc6b4ecd68871ccdd1f82591627d5a10ce10ef4ea069dbfb77212d68cab5363a",
+      "size_bytes": 280
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/run-smoke.py": {
+      "sha256": "462cd05fb6e6d6ad0ae7c7f457af05da8a65bb177ca9fc18af0faba2600bd1bf",
+      "size_bytes": 2488
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/c74142e-smoke/cold.json": {
+      "sha256": "d7e3a8dfca669f84b177f5e300719e90374af98e1495da24a9e7ede7e670c639",
+      "size_bytes": 77915
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/c74142e-smoke/warm.json": {
+      "sha256": "492a3e377ee6f788082fe0a241992449c015d20adf13f9201964413db26f8564",
+      "size_bytes": 78439
+    },
+    "/home/violence/Work/rea-cache-continuation-20261013/local-validation/c74142e-smoke/RESULT.json": {
+      "sha256": "fe0344b81bb61ab6fe0aa7eb771d75918bc312bf40cb23bdddf9c13cf36de426",
+      "size_bytes": 374
+    }
+  }
+}

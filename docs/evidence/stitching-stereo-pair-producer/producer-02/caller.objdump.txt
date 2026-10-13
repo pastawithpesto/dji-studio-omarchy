@@ -1,0 +1,50 @@
+
+/home/violence/Projects/dji-studio-omarchy/extracted/1.0.0.30839/VinceEditor.dll:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+000000018019a1e0 <.text+0x1991e0>:
+   18019a1e0:	48 89 5c 24 08       	mov    %rbx,0x8(%rsp)
+   18019a1e5:	48 89 6c 24 10       	mov    %rbp,0x10(%rsp)
+   18019a1ea:	48 89 74 24 18       	mov    %rsi,0x18(%rsp)
+   18019a1ef:	48 89 7c 24 20       	mov    %rdi,0x20(%rsp)
+   18019a1f4:	41 56                	push   %r14
+   18019a1f6:	48 83 ec 30          	sub    $0x30,%rsp
+   18019a1fa:	41 8b f1             	mov    %r9d,%esi
+   18019a1fd:	49 8b e8             	mov    %r8,%rbp
+   18019a200:	4c 8b f2             	mov    %rdx,%r14
+   18019a203:	48 8b d9             	mov    %rcx,%rbx
+   18019a206:	48 8d b9 78 05 00 00 	lea    0x578(%rcx),%rdi
+   18019a20d:	48 89 7c 24 20       	mov    %rdi,0x20(%rsp)
+   18019a212:	c6 44 24 28 00       	movb   $0x0,0x28(%rsp)
+   18019a217:	48 8b cf             	mov    %rdi,%rcx
+   18019a21a:	e8 45 30 4b 00       	call   0x18064d264
+   18019a21f:	85 c0                	test   %eax,%eax
+   18019a221:	75 66                	jne    0x18019a289
+   18019a223:	c6 44 24 28 01       	movb   $0x1,0x28(%rsp)
+   18019a228:	48 8b 8b 50 04 00 00 	mov    0x450(%rbx),%rcx
+   18019a22f:	48 85 c9             	test   %rcx,%rcx
+   18019a232:	74 33                	je     0x18019a267
+   18019a234:	8b 93 68 04 00 00    	mov    0x468(%rbx),%edx
+   18019a23a:	e8 71 97 fa ff       	call   0x1801439b0
+   18019a23f:	8b 93 88 04 00 00    	mov    0x488(%rbx),%edx
+   18019a245:	48 8b 8b 50 04 00 00 	mov    0x450(%rbx),%rcx
+   18019a24c:	e8 6f 97 fa ff       	call   0x1801439c0
+   18019a251:	44 8b ce             	mov    %esi,%r9d
+   18019a254:	4c 8b c5             	mov    %rbp,%r8
+   18019a257:	49 8b d6             	mov    %r14,%rdx
+   18019a25a:	48 8b 8b 50 04 00 00 	mov    0x450(%rbx),%rcx
+   18019a261:	e8 aa 2a fa ff       	call   0x18013cd10
+   18019a266:	90                   	nop
+   18019a267:	48 8b cf             	mov    %rdi,%rcx
+   18019a26a:	48 8b 5c 24 40       	mov    0x40(%rsp),%rbx
+   18019a26f:	48 8b 6c 24 48       	mov    0x48(%rsp),%rbp
+   18019a274:	48 8b 74 24 50       	mov    0x50(%rsp),%rsi
+   18019a279:	48 8b 7c 24 58       	mov    0x58(%rsp),%rdi
+   18019a27e:	48 83 c4 30          	add    $0x30,%rsp
+   18019a282:	41 5e                	pop    %r14
+   18019a284:	e9 e1 2f 4b 00       	jmp    0x18064d26a
+   18019a289:	8b c8                	mov    %eax,%ecx
+   18019a28b:	e8 e0 2f 4b 00       	call   0x18064d270
+   18019a290:	cc                   	int3

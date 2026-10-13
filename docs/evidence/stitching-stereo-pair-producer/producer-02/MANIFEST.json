@@ -1,0 +1,62 @@
+{
+  "author": "root, solo at user request",
+  "review_status": "unreviewed",
+  "files": {
+    "PROBES.json": {
+      "sha256": "c464b8d6923aa462ff9189a7f2cf72bcef7ed4e5dbeeb5ef64d3a44934e1caa5",
+      "size_bytes": 670
+    },
+    "REA-RUNTIME.json": {
+      "sha256": "e8189ba8ac94da646f918cbc8beeb341dc9d92c1f01fd74f41bb81725b5ac1a8",
+      "size_bytes": 5869
+    },
+    "REPORT.md": {
+      "sha256": "0a56b718a009437cd73c8a344909c82235fc962ea8d0067efb19d1dcf142682f",
+      "size_bytes": 5688
+    },
+    "SOURCE-CHECKPOINT.json": {
+      "sha256": "feeeebb4f32202662d2e5956cdf1bc3a5a2db7436d91354e4f4934125c149208",
+      "size_bytes": 462
+    },
+    "VALIDATION.json": {
+      "sha256": "9e80af5f9b194fef23d26357c522b4dad546a7f23ae8a912eb44c1f4f035893b",
+      "size_bytes": 514
+    },
+    "VinceEditor-0x180134840-body.asm": {
+      "sha256": "0057543b667be1b009191c4dd61c162368e3aa93e6201d85c53a8c5873512cd4",
+      "size_bytes": 11029
+    },
+    "VinceEditor-0x1801476a0-exact-leaf.asm": {
+      "sha256": "2a023a4b489bc94c3219fa1f4e52f37d9a24fe978a84fca1460d0f23f41729c0",
+      "size_bytes": 1001
+    },
+    "VinceEditor-0x180198080-body.asm": {
+      "sha256": "1f0ac5ff8193c0c3fcfee54b57b7c500799b84acb2b4623d1030dfc3ca4a3006",
+      "size_bytes": 68609
+    },
+    "WITNESSES.json": {
+      "sha256": "a780664c6d9e007a50ebedc7ddf020784d9fcb179ed3fb30568f217d6e7f1b49",
+      "size_bytes": 11768
+    },
+    "caller.objdump.txt": {
+      "sha256": "c7d67a03676d20c14869a2dd565977aecefacdc3355d47298e9137cf8c849b36",
+      "size_bytes": 2545
+    },
+    "pe_read.py": {
+      "sha256": "c4ecc8b32b5e13b019915ecaa01ab2f35ac5b1918d143f5f02167e3554c239b1",
+      "size_bytes": 4037
+    },
+    "setter-760.objdump.txt": {
+      "sha256": "11b352218425985f103b76c95b8bf533ec32bf1b78d8dc5f7a8a5edc279d20d3",
+      "size_bytes": 278
+    },
+    "setter-764.objdump.txt": {
+      "sha256": "3216106bb511fef7e6fa1a9404a66f4d1857d4b279ada8c0e215251bb465255b",
+      "size_bytes": 278
+    },
+    "verify.py": {
+      "sha256": "e6bd00c1d0686182e0fd974a9bb46f4e649cc0bb8f4e27751df5645a1ce68073",
+      "size_bytes": 6015
+    }
+  }
+}

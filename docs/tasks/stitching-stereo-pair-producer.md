@@ -68,3 +68,35 @@ static scope. A complete EIS producer needs a separately pinned authentic
 implementation source. The real camera and Windows export files are also
 required for the image comparison. Keep this PR in draft pending its required
 exact-candidate review and milestone verification.
+
+## Solo continuation: producer-02
+
+The user requested continuation without agents. Root will author one new packet
+in `producer-02/` under the existing evidence claim. Preserve `producer-01/` and
+its review. Trace the incoming object for function `0x18013cd10` through saved
+evidence and original PE bytes. Check direct call sites, exported identities,
+and constructor edges where the bytes support them. Record unresolved aliases
+and indirect dispatch. Do not assign field meanings from names alone.
+
+First update the owned REA cache runtime to the fetched upstream commit. Keep
+the measured runtime and its benchmark results unchanged. Reuse saved evidence
+before a new import. Pin any new offline checks separately from REA output.
+Check source hashes, instruction bytes, function bounds, and the precise object
+dataflow. An unresolved constructor is an acceptable finite research boundary.
+No application change is part of this continuation. Independent review remains
+pending; root will not approve this new author packet or start another agent.
+
+The producer-02 author packet is complete. It joins the constructor store at
+owner `+0x450` to the stereo-pair caller's member load. The base initializer
+zeros one qword across child offsets `+0x24` and `+0x28`. Its byte verifier passes
+for 6,532 captured bytes and 23 fixed anchors. Live identity and field meanings
+remain unknown. The packet has no independent review.
+
+## Solo continuation: producer-03
+
+The user asked to continue. Preserve producer-02 and trace the returned pointer
+from helper `0x180281760`. Use an additive `producer-03/` packet under the same
+claim. Identify the getter's exact source member and one supported writer path.
+Check its connection to the outer stereo-pair caller. Stop at the first unresolved
+selection or external producer. Keep runtime behavior and field units unknown
+unless separate evidence proves them. No agent or application change is needed.
