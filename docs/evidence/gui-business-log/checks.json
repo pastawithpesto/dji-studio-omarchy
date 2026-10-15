@@ -1,0 +1,80 @@
+{
+  "checked_utc": "2026-10-13T05:09:24.189515+00:00",
+  "source_main": "d922d46337150db102cef675073cfa392ef92bbc",
+  "main_is_ancestor": true,
+  "original_resource_git_tree": "cadcae161e59fd5bedcd653657c8341fa5c4a064",
+  "original_resources_unchanged": true,
+  "versions": {
+    "rustc": "1.98.1",
+    "qt": "6.11.2",
+    "cxx_qt": "0.10.0",
+    "autocxx": "0.30.0",
+    "cxx": "1.0.205",
+    "objdump": "2.47"
+  },
+  "static_contract_review": {
+    "bus_id": 4095,
+    "reviewer": "sol-2",
+    "status": "approved",
+    "contract_sha256": "0b4dde26612ce7e5b65dd9d38b5a93bbb5bd0e75d64ecceaed7bdbcdf795842d"
+  },
+  "checks": [
+    {
+      "name": "locked Cargo tests",
+      "result": "pass",
+      "unit_tests": 2,
+      "qml_runtime_executables": 1,
+      "original_enum_values": 30,
+      "doctests": 0,
+      "log": "crate-test-exact-final.log",
+      "log_sha256": "d914635c88a4a2b274290d499fd2b212a8aa1a636d6cd2c5c98204b117986b8f"
+    },
+    {
+      "name": "system cargo-clippy all targets with warnings denied",
+      "result": "pass",
+      "log": "clippy-final.log",
+      "log_sha256": "3bf7c06f81ad100c0fc08a6e2fc31a96c154bba8c0f2c913e6b76e0319bc60be"
+    },
+    {
+      "name": "rustfmt",
+      "result": "pass"
+    },
+    {
+      "name": "application-language check",
+      "result": "pass",
+      "log": "application-language-check-current.log",
+      "log_sha256": "69d15cc171fc37be79741b5f62fd36d31fd87980b05a43d51e7671a8ee5d0029"
+    },
+    {
+      "name": "Git whitespace check",
+      "result": "pass"
+    }
+  ],
+  "native_surface": [
+    "BusinessLog1.0 import",
+    "Stream/Events: all30 original values",
+    "original nested enum expressions",
+    "no named zero keys",
+    "exact enums only creation error",
+    "version2.0 rejection",
+    "two enum records",
+    "zero methods/properties/constructors",
+    "no superclass"
+  ],
+  "policy": "Serial flock, CARGO_BUILD_JOBS=1, external shared target, system Rust/Qt, offscreen Qt, forced stderr. RUSTDOC uses the system executable. Clippy uses the direct system cargo-clippy executable.",
+  "preserved_failures": [
+    "autocxx Qt::QMetaObject name confusion",
+    "private generated ffi module",
+    "rustup rustdoc shim",
+    "cargo subcommand selected rustup cargo-clippy shim",
+    "generated Qt enum naming lint"
+  ],
+  "limits": [
+    "No vendor execution or Windows comparison.",
+    "Rust size/alignment is not a Qt enum metatype check.",
+    "Original Qt6.5.3/revision11 has no QMetaEnum::metaType surface.",
+    "Separate BusinessLogger and on-demand metatype edges remain separate.",
+    "No C++ ABI, complete Qt-version, full Main startup, or Windows parity claim.",
+    "Independent exact candidate code review is still required."
+  ]
+}

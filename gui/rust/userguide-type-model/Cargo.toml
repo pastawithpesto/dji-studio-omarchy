@@ -1,0 +1,28 @@
+[package]
+name = "userguide-type-model"
+version = "0.1.0"
+edition = "2024"
+publish = false
+autotests = false
+links = "userguide_type_model"
+
+[dependencies]
+autocxx = "=0.30.0"
+cxx = "=1.0.205"
+cxx-qt = "=0.10.0"
+cxx-qt-lib = { version = "=0.10.0", features = ["qt_gui", "qt_qml"] }
+
+[build-dependencies]
+cxx-qt-build = "=0.10.0"
+autocxx-build = "=0.30.0"
+
+[workspace]
+members = ["vendor/cxx-qt-gen"]
+default-members = ["."]
+
+[[test]]
+name = "qt_runtime"
+harness = false
+
+[patch.crates-io]
+cxx-qt-gen = { path = "vendor/cxx-qt-gen" }

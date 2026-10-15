@@ -1,0 +1,9 @@
+{
+  "generator": "unmodified cxx-qt-gen0.10.0",
+  "archive_sha256": "a6de19cacc58672a9fb70fad66e3d62b6aeb4b2f323b6251aeb99b50c6b6aa0c",
+  "stock_lock_sha256": "d6b926d68bd495d49ec253411cce6597832b67790ba229e250bd6347093da088",
+  "fixture_sha256": "f80ad0d83bac9da84fded223c00ef1b45e65613b5d17bf21b0384ed142449f43",
+  "private_comparison_sha256": "663d57fc80600b6b478a07818db0a72a816d4ba83d7f5916165c0f2b9740e9c0",
+  "raw_output": "write_rust(...).to_string() with upstream qenum input and directory/file_ident",
+  "limits": "One default qenum fixture under pinned dependency graph; released formatted snapshots retained unchanged."
+}

@@ -1,0 +1,22 @@
+[package]
+name = "business-log-qt"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+autocxx = "=0.30.0"
+cxx = "=1.0.205"
+cxx-qt = "=0.10.0"
+cxx-qt-lib = { version = "=0.10.0", features = ["qt_qml"] }
+libc = "0.2"
+
+[build-dependencies]
+cxx-build = "=1.0.205"
+autocxx-build = "=0.30.0"
+
+[workspace]
+
+[[test]]
+name = "qt_runtime"
+harness = false

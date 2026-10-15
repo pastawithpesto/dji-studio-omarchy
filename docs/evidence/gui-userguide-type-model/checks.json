@@ -1,0 +1,71 @@
+{
+  "checked_utc": "2026-10-13T06:36:53.974817+00:00",
+  "code_candidate": "fa9f46fd9399c06bec98c3a277fcedcdf1527f7a",
+  "main": "d922d46337150db102cef675073cfa392ef92bbc",
+  "main_is_ancestor": true,
+  "original_resource_tree": "cadcae161e59fd5bedcd653657c8341fa5c4a064",
+  "original_resources_unchanged": true,
+  "versions": {
+    "rustc": "1.98.1",
+    "Qt": "6.11.2",
+    "CXX-Qt": "0.10.0",
+    "CXX": "1.0.205",
+    "original_Qt": "6.5.3"
+  },
+  "checks": [
+    {
+      "name": "focused unscoped generator tests",
+      "result": "pass",
+      "count": 4,
+      "log": "patched-qt-runtime-r12.log",
+      "log_sha256": "fb0c5e321935797f5765b20e5ba331634910d8529256dc8025b7726f136c44ed"
+    },
+    {
+      "name": "exact ordered native QML/metadata and application all-target Clippy --no-deps -Dwarnings",
+      "result": "pass",
+      "log": "final-ordered-checks.log",
+      "log_sha256": "0c6e08cb9abbf9f772a16e8f6f30a2bc7877827c5aa6acba739478ef0eb57d9c"
+    },
+    {
+      "name": "application-language check",
+      "result": "pass",
+      "log": "application-language-final.log",
+      "log_sha256": "69d15cc171fc37be79741b5f62fd36d31fd87980b05a43d51e7671a8ee5d0029"
+    },
+    {
+      "name": "rustfmt and Git whitespace",
+      "result": "pass"
+    }
+  ],
+  "native_assertions": [
+    "both exact enum names before any enum lookup/engine",
+    "same registered/native enum IDs",
+    "enum size4 alignment4 flags0x14",
+    "all16 original flat QML values",
+    "distinct creatable instances of both original names",
+    "both live EnumType records unscoped/nonflag with all names/values",
+    "zero local methods/properties/constructors",
+    "exact one QML.Element class-info row per type",
+    "repeated register_types and subsequent engines",
+    "unsupported major rejected; valid major remains usable",
+    "Rust metadata storage equals native GCC class layout before use"
+  ],
+  "scope_reviews": [
+    4094,
+    4119,
+    4140,
+    4232
+  ],
+  "exact_candidate_review": "pending final Sol3 review",
+  "native_layout_proof_sha256": "4d63a7771415716c466a2f020d9753431e21fd4103d2eb91c0a920b54b06c4e2",
+  "stock_default_comparison_sha256": "663d57fc80600b6b478a07818db0a72a816d4ba83d7f5916165c0f2b9740e9c0",
+  "preserved_failure_index_sha256": "cfbd3af8a106d704df1b9f8b860ef9ca40b23b659c95dbf463097d30122f67a8",
+  "lint_scope": "Whole workspace strict Clippy fails two unchanged upstream generator lints. Application package all targets/no-deps passes. Known Qt C++ header/deprecated API warnings remain in native logs.",
+  "limits": [
+    "extra modern QML.Element row and grouped EnumType objects",
+    "engine-free eager callback/private Qt and module-protection adapter policy",
+    "unsupported major reports protected-module error, not original Windows diagnostic",
+    "Qt6.11.2/64-bit/GCC private-value layout only",
+    "no vendor execution, Windows, full QObject metadata/ABI, full Main startup or whole GUI parity"
+  ]
+}

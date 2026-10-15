@@ -1,0 +1,400 @@
+[
+  {
+    "path": "gui/original/resources/Controls/SelectableText.qml",
+    "sha256": "53fcd68109d26f1b5f4e1baa110e5a43637f1770f1dd45188436dc54b3e5984c",
+    "references": [
+      {
+        "line": 6,
+        "text": "import UserGuideTypeModel 1.0"
+      },
+      {
+        "line": 69,
+        "text": "if(editorManager.isInUserGuideStatus && mask.userGuideType === UserGuideType.REGIONKEYFRAME && mask.visible){"
+      }
+    ]
+  },
+  {
+    "path": "gui/original/resources/qml/Main.qml",
+    "sha256": "ca96f270f65ce8ebb5ffe0038e00ea6d39f46df62f57511dd2a4f363b62c477e",
+    "references": [
+      {
+        "line": 19,
+        "text": "import UserGuideTypeModel 1.0"
+      },
+      {
+        "line": 51,
+        "text": "userGuideType: UserGuideType.UNKOWN"
+      },
+      {
+        "line": 62,
+        "text": "if (mask.visible === false && mask.userGuideType === UserGuideType.OVERALL) {"
+      },
+      {
+        "line": 90,
+        "text": "mask.userGuideType = UserGuideType.OVERALL;"
+      },
+      {
+        "line": 99,
+        "text": "mask.userGuideType = UserGuideType.SUPER_SLOW;"
+      },
+      {
+        "line": 106,
+        "text": "mask.userGuideType = UserGuideType.TRACKING;"
+      },
+      {
+        "line": 113,
+        "text": "mask.userGuideType = UserGuideType.KEYFRAMESTART;"
+      },
+      {
+        "line": 120,
+        "text": "mask.userGuideType = UserGuideType.REGIONKEYFRAMESTART;"
+      },
+      {
+        "line": 127,
+        "text": "mask.userGuideType = UserGuideType.TRANSITION_EFFECT;"
+      },
+      {
+        "line": 136,
+        "text": "mask.userGuideType = UserGuideType.FRAMECROP;"
+      }
+    ]
+  },
+  {
+    "path": "gui/original/resources/qml/controller/PanoramaPanel.qml",
+    "sha256": "16ed6b497e2f0966daae53a9d377871af34d51ba4a2a80b698e14d3a0da4e5fb",
+    "references": [
+      {
+        "line": 11,
+        "text": "import UserGuideTypeModel 1.0"
+      }
+    ]
+  },
+  {
+    "path": "gui/original/resources/qml/controller/UserGuideMask.qml",
+    "sha256": "9142d534ad4ff5b356a8604f5f2414747d51ed7f0c320b0e654364bc0b546bdd",
+    "references": [
+      {
+        "line": 11,
+        "text": "import UserGuideTypeModel 1.0"
+      },
+      {
+        "line": 18,
+        "text": "property var userGuideType : UserGuideType.UNKOWN"
+      },
+      {
+        "line": 95,
+        "text": "if( keyFrameGuide.isEnterStep3Model && mask.userGuideType === UserGuideType.KEYFRAME){"
+      },
+      {
+        "line": 101,
+        "text": "if( regionKeyFrameGuide.isEnterStep3Model && mask.userGuideType === UserGuideType.REGIONKEYFRAME){"
+      },
+      {
+        "line": 143,
+        "text": "if(userGuideMaskManager.userGuideType === UserGuideType.KEYFRAME ||"
+      },
+      {
+        "line": 144,
+        "text": "userGuideMaskManager.userGuideType === UserGuideType.TRANSITION_EFFECT ||"
+      },
+      {
+        "line": 145,
+        "text": "userGuideMaskManager.userGuideType === UserGuideType.TRACKING ||"
+      },
+      {
+        "line": 146,
+        "text": "userGuideMaskManager.userGuideType === UserGuideType.REGIONKEYFRAME ||"
+      },
+      {
+        "line": 147,
+        "text": "userGuideMaskManager.userGuideType === UserGuideType.KEYFRAMESTART ||"
+      },
+      {
+        "line": 148,
+        "text": "userGuideMaskManager.userGuideType === UserGuideType.SUPER_SLOW){"
+      },
+      {
+        "line": 215,
+        "text": "if(rect.name === actionableItemName.playerContainer && userGuideMaskManager.userGuideType === UserGuideType.OVERALL){"
+      },
+      {
+        "line": 302,
+        "text": "if (mask.userGuideType !== UserGuideType.SUPER_SLOW) {"
+      },
+      {
+        "line": 438,
+        "text": "visible: userGuideType === UserGuideType.OVERALL"
+      },
+      {
+        "line": 507,
+        "text": "if(mask.userGuideType !== UserGuideType.OVERALL){"
+      },
+      {
+        "line": 521,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 526,
+        "text": "if(mask.userGuideType !== UserGuideType.OVERALL) return;"
+      },
+      {
+        "line": 550,
+        "text": "visible: userGuideType === UserGuideType.KEYFRAMESTART"
+      },
+      {
+        "line": 563,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.KEYFRAMESTART;"
+      },
+      {
+        "line": 573,
+        "text": "mask.userGuideType = UserGuideType.KEYFRAME;"
+      },
+      {
+        "line": 574,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.KEYFRAME;"
+      },
+      {
+        "line": 611,
+        "text": "visible: userGuideType === UserGuideType.KEYFRAME"
+      },
+      {
+        "line": 648,
+        "text": "mask.userGuideType = UserGuideType.KEYFRAME;"
+      },
+      {
+        "line": 663,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 692,
+        "text": "if(mask.visible === true && userGuideMaskManager.userGuideType === UserGuideType.KEYFRAME"
+      },
+      {
+        "line": 914,
+        "text": "if(UserGuideType.KEYFRAME === userGuideMaskManager.userGuideType)"
+      },
+      {
+        "line": 920,
+        "text": "if(UserGuideType.KEYFRAME === userGuideMaskManager.userGuideType){"
+      },
+      {
+        "line": 933,
+        "text": "visible: userGuideType === UserGuideType.TRANSITION_EFFECT"
+      },
+      {
+        "line": 943,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.TRANSITION_EFFECT;"
+      },
+      {
+        "line": 953,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 1011,
+        "text": "if(UserGuideType.TRANSITION_EFFECT === userGuideMaskManager.userGuideType){"
+      },
+      {
+        "line": 1013,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 1028,
+        "text": "visible: userGuideType === UserGuideType.REGIONKEYFRAMESTART"
+      },
+      {
+        "line": 1042,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.REGIONKEYFRAMESTART;"
+      },
+      {
+        "line": 1056,
+        "text": "mask.userGuideType = UserGuideType.REGIONKEYFRAME;"
+      },
+      {
+        "line": 1057,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.REGIONKEYFRAME;"
+      },
+      {
+        "line": 1077,
+        "text": "mask.userGuideType = UserGuideType.REGIONKEYFRAME;"
+      },
+      {
+        "line": 1078,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.REGIONKEYFRAME;"
+      },
+      {
+        "line": 1130,
+        "text": "if(mask.visible === true && userGuideMaskManager.userGuideType === UserGuideType.REGIONKEYFRAMESTART"
+      },
+      {
+        "line": 1137,
+        "text": "mask.userGuideType = UserGuideType.REGIONKEYFRAME;"
+      },
+      {
+        "line": 1138,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.REGIONKEYFRAME;"
+      },
+      {
+        "line": 1153,
+        "text": "visible: userGuideType === UserGuideType.REGIONKEYFRAME"
+      },
+      {
+        "line": 1225,
+        "text": "if(UserGuideType.REGIONKEYFRAME === userGuideMaskManager.userGuideType){"
+      },
+      {
+        "line": 1232,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 1258,
+        "text": "if(mask.visible === true && userGuideMaskManager.userGuideType === UserGuideType.REGIONKEYFRAME"
+      },
+      {
+        "line": 1434,
+        "text": "if(UserGuideType.REGIONKEYFRAME === userGuideMaskManager.userGuideType)"
+      },
+      {
+        "line": 1440,
+        "text": "if(UserGuideType.REGIONKEYFRAME === userGuideMaskManager.userGuideType){"
+      },
+      {
+        "line": 1449,
+        "text": "if(UserGuideType.REGIONKEYFRAME === userGuideMaskManager.userGuideType && regionKeyFrameGuide.curStep > 4){"
+      },
+      {
+        "line": 1454,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 1470,
+        "text": "visible: userGuideType === UserGuideType.TRACKING && curStep === 3"
+      },
+      {
+        "line": 1621,
+        "text": "visible: userGuideType === UserGuideType.FRAMECROP && curStep === 0"
+      },
+      {
+        "line": 1644,
+        "text": "visible: userGuideType === UserGuideType.SUPER_SLOW && curStep === 0"
+      },
+      {
+        "line": 1661,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 1712,
+        "text": "if (mask.userGuideType !== UserGuideType.SUPER_SLOW) {"
+      },
+      {
+        "line": 1723,
+        "text": "visible: userGuideType === UserGuideType.OVERALL && (overallGuide.curStep === 1 || overallGuide.curStep === 2)"
+      },
+      {
+        "line": 1904,
+        "text": "visible: userGuideType === UserGuideType.TRACKING && (trackingGuide.curStep === 0)"
+      },
+      {
+        "line": 2054,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2059,
+        "text": "if(userGuideMaskManager.userGuideType === UserGuideType.OVERALL){"
+      },
+      {
+        "line": 2060,
+        "text": "if(userGuideMaskManager.guideStep === 1 && userGuideMaskManager.userGuideType === UserGuideType.OVERALL){"
+      },
+      {
+        "line": 2078,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2080,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2094,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2096,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2110,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2112,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2126,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2128,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2140,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      },
+      {
+        "line": 2157,
+        "text": "userGuideMaskManager.userGuideType = UserGuideType.TRACKING"
+      },
+      {
+        "line": 2162,
+        "text": "mask.userGuideType = UserGuideType.UNKOWN;"
+      }
+    ]
+  },
+  {
+    "path": "gui/original/resources/qml/player/PlayerController.qml",
+    "sha256": "2ae91090a164c0ff2c16565b15e7e77cf4ad1fc3c25fa6648d637e90c3cae584",
+    "references": [
+      {
+        "line": 14,
+        "text": "import UserGuideTypeModel 1.0"
+      },
+      {
+        "line": 751,
+        "text": "&& (UserGuideType.KEYFRAME === mask.userGuideType || UserGuideType.REGIONKEYFRAME === mask.userGuideType)"
+      }
+    ]
+  },
+  {
+    "path": "gui/original/resources/qml/track/TrackToolsBar.qml",
+    "sha256": "6a21d3030d25fe1d81f02b3a3eb1d67d980ff35f736680af211e1e24cae1d3e6",
+    "references": [
+      {
+        "line": 20,
+        "text": "import UserGuideTypeModel 1.0"
+      },
+      {
+        "line": 339,
+        "text": "if(mask.userGuideType === UserGuideType.REGIONKEYFRAME){"
+      }
+    ]
+  },
+  {
+    "path": "gui/original/resources/qml/user_guide/KeyFrameGuide.qml",
+    "sha256": "960505a0b70cd44c18c845004f8cab26cece9c4c8c998c77e1f9717a79377d8b",
+    "references": [
+      {
+        "line": 6,
+        "text": "import UserGuideTypeModel 1.0"
+      },
+      {
+        "line": 198,
+        "text": "if(curStep === 4 && mask.userGuideType === UserGuideType.REGIONKEYFRAME){"
+      },
+      {
+        "line": 203,
+        "text": "if(curStep === 6 && mask.userGuideType === UserGuideType.KEYFRAME){"
+      }
+    ]
+  }
+]

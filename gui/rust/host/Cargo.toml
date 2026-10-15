@@ -6,6 +6,9 @@ publish = false
 
 [dependencies]
 window-position-detector-qt = { path = "../qt" }
+fpsdetect-qt = { path = "../fpsdetect/qt" }
+userguide-type-model = { path = "../userguide-type-model" }
+business-log-qt = { path = "../business-log" }
 cxx-qt = "=0.10.0"
 cxx-qt-lib = { version = "=0.10.0", features = ["qt_gui", "qt_qml"] }
 
@@ -17,3 +20,6 @@ name = "qt_runtime"
 harness = false
 
 [workspace]
+
+[patch.crates-io]
+cxx-qt-gen = { path = "../userguide-type-model/vendor/cxx-qt-gen" }

@@ -1,0 +1,25 @@
+[package]
+name = "fpsdetect-qt"
+version = "0.1.0"
+edition = "2024"
+publish = false
+links = "fpsdetect_qt"
+
+[dependencies]
+fpsdetect = { path = ".." }
+cxx = "=1.0.205"
+cxx-qt = "=0.10.0"
+cxx-qt-lib = { version = "=0.10.0", features = ["qt_gui", "qt_qml"] }
+
+[build-dependencies]
+cxx-qt-build = "=0.10.0"
+
+[workspace]
+
+[features]
+test-fixture = []
+
+[[test]]
+name = "qt_runtime"
+harness = false
+required-features = ["test-fixture"]

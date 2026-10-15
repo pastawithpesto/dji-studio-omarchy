@@ -14,6 +14,9 @@ fn main() {
     };
     std::process::exit(original_qml_host::run(check_only, || {
         window_position_detector_qt::register_types();
+        fpsdetect_qt::register_types();
+        userguide_type_model::register_types();
+        business_log_qt::register_types().map_err(|error| error.to_string())?;
         Ok(())
     }));
 }
