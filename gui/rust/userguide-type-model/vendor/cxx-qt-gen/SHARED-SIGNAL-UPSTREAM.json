@@ -1,0 +1,10 @@
+{
+  "package": "cxx-qt",
+  "version": "0.10.0",
+  "source": "https://crates.io/api/v1/crates/cxx-qt/0.10.0/download",
+  "archive_sha256": "af6a52cbe33f8a23c6cc7dafb628819b89af6536102c3976f5efc33a038d4a82",
+  "file": "src/signalhandler.rs",
+  "file_sha256": "9bf43f72fb6d112bb602783daf47a354d05973a86c8e3491197556ce1479ced0",
+  "observed_storage": "repr(transparent) struct CxxQtSignalHandler<T> { closure: Box<T::FnType> }",
+  "limits": "Storage reference only. Shared callback behavior is a local generator extension. Native checks and independent review are required."
+}

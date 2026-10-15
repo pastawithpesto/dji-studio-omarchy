@@ -1,0 +1,100 @@
+{
+  "utc": "2026-10-13T07:05:04.331168+00:00",
+  "reference_build": "DJI Studio 1.0.0.30839",
+  "original_executable_sha256": "e8732b263ea6486680a3007349b9c06a37cfb64c8797610743fd3b3831b0faf4",
+  "native_code_candidate": "d00cb302463da5aa3e4c601fceed13dcfcd94075",
+  "module_candidates": {
+    "BusinessLog": "1f0d0a22f68e30702b75aac95881c070d51fb0ab",
+    "UserGuideTypeModel": "a9f1b4e994d3080d70d69064aba94a78ef806668",
+    "FpsDetect": "f1bd48d118784d6ee3ff5b9106fa28f3847a74cc"
+  },
+  "reviews": {
+    "BusinessLog": 4198,
+    "UserGuideTypeModel": 4265,
+    "FpsDetect": 4273,
+    "host_source": 4263,
+    "host_native_evidence": 4271
+  },
+  "combined_host": {
+    "exit_code": 0,
+    "build_time": "13m42s",
+    "checks": [
+      "three native modules in one engine",
+      "selected original native values",
+      "original Config singleton values",
+      "original Config import",
+      "missing resource failure",
+      "Qt event loop exit"
+    ]
+  },
+  "original_main": {
+    "exit_code": 1,
+    "root_created": false,
+    "resolved_native_imports": [
+      "FpsDetect 1.0",
+      "UserGuideTypeModel 1.0",
+      "BusinessLog 1.0"
+    ],
+    "remaining_top_level_native_imports": [
+      "SettingPanelViewModel",
+      "ProjectStateController",
+      "ViewModeAnalyzeController",
+      "BusinessLogger",
+      "UserGuideMaskManager",
+      "CloudAlbumManager"
+    ],
+    "remaining_count": 6,
+    "limit": "Main stops at import resolution. Nested type/context failures remain unmeasured."
+  },
+  "compiler_tests": {
+    "shared_signal": 3,
+    "signal_qualification": 2,
+    "unscoped_option": 4
+  },
+  "logs": {
+    "combined-compiler-check-01.log": {
+      "sha256": "4dde573539ff78fe1206d485973c9b6aa1c76cd0df6843367d97c488286b8319",
+      "bytes": 2974
+    },
+    "combined-compiler-check-02.log": {
+      "sha256": "f486e711ef27b370a166498b7229d0a31b7aebba5fed90a6d73a9bb04f1bc3ab",
+      "bytes": 1455
+    },
+    "combined-host-check-01.log": {
+      "sha256": "f63f9f222024113425ded9eff3dcf908520205cf59634fdc7126b02d8f3b7d63",
+      "bytes": 10095
+    },
+    "original-main-check-01.log": {
+      "sha256": "ed94017bb2fe4625f349c0d7199397b00488a7099cde14a7876bd1edb02cb084",
+      "bytes": 524
+    }
+  },
+  "original_resources": {
+    "aliases": 1826,
+    "qml_aliases": 410,
+    "unchanged": true,
+    "trees": {
+      "gui/original": "cadcae161e59fd5bedcd653657c8341fa5c4a064",
+      "gui/resources/original": "9aeef9852afa083b0f401424c5991addee0cb734",
+      "gui/original/original.qrc": "7e5ecc78ae8a2a72fe24189b290d248e7122f97e"
+    }
+  },
+  "source_checks": {
+    "host_direct_system_rustfmt": "pass",
+    "tracked_application_language": "pass",
+    "git_diff_check": "pass"
+  },
+  "failed_tool_setup": {
+    "combined-compiler-check-01.log": "Unconfigured rustup rustfmt shim; identical source passed with system rustfmt.",
+    "HOST-LOCK-INITIAL-FAILURE.json": "First lock command found rustup rustc shim; system tools generated locked graph.",
+    "HOST-FORMAT-HELPER-FAILURE.json": "Cargo selected rustup cargo-fmt helper; direct system rustfmt passed."
+  },
+  "limits": [
+    "Module checks use Linux Qt6.11.2; no vendor execution or Windows comparison.",
+    "Guide and FPS have one modern QML.Element class-info row; original local metadata has zero.",
+    "Original Main stops at six missing top-level imports; nested types/context are unmeasured.",
+    "No full GUI, graphics, camera, project or QObject ABI parity.",
+    "FPS retains one generated dead-code warning; no dependency-wide Qt Clippy claim."
+  ],
+  "local_only": true
+}

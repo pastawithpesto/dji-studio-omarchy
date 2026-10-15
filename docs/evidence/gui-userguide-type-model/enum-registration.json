@@ -1,0 +1,33 @@
+{
+  "source_sha256": "e8732b263ea6486680a3007349b9c06a37cfb64c8797610743fd3b3831b0faf4",
+  "original_contract_review": 4140,
+  "private_contract_sha256": "61fe9f1942bd66fca306b04867cf8e14d4b58ca51e9cc4e6aff456870246d60d",
+  "imports_sha256": "47e6dc7f5107413afe389002940db9c5c32ff6fe4210355997dbc98d204d4dfb",
+  "interfaces": [
+    {
+      "type_name": "UserGuideType::EnumType",
+      "string_registration_body": "0x14063f290",
+      "interface_registration_body": "0x140641930",
+      "interface_va": "0x14349bc50",
+      "interface_sha256": "d5bafae0da77a76436f82e5dcbcd7ad001098297bd5b2da8a23330391ab123b0",
+      "revision": 1,
+      "alignment": 4,
+      "size": 4,
+      "flags": "0x14",
+      "limits": "Separate explicit metatype registration edge. This is not a QMetaEnum::metaType slot in revision11."
+    },
+    {
+      "type_name": "MoueseEventType::EnumType",
+      "string_registration_body": "0x14063f1a0",
+      "interface_registration_body": "0x1406417b0",
+      "interface_va": "0x14349bce0",
+      "interface_sha256": "a77236419319cf9b0653867b61436d4c34f61946bc46ad7e15757d97e236e416",
+      "revision": 1,
+      "alignment": 4,
+      "size": 4,
+      "flags": "0x14",
+      "limits": "Separate explicit metatype registration edge. This is not a QMetaEnum::metaType slot in revision11."
+    }
+  ],
+  "native_lookup": "Both original names are checked before ANY enum lookup or engine. Then native IDs/layout/signed flags are verified."
+}

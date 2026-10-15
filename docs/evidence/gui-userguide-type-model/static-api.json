@@ -1,0 +1,206 @@
+{
+  "source_sha256": "e8732b263ea6486680a3007349b9c06a37cfb64c8797610743fd3b3831b0faf4",
+  "literal_strings": {
+    "0x141eb1578": "UserGuideType",
+    "0x141eb1588": "UserGuideTypeModel",
+    "0x141eb15a0": "MoueseEventType",
+    "0x141eb15b8": "UserGuideType::EnumType",
+    "0x141eb15d8": "MoueseEventType::EnumType"
+  },
+  "metaobjects": [
+    {
+      "metaobject_va": "0x142fcd7f0",
+      "metaobject_hex": "00000000000000005f4408400100000020d0fa4201000000c0d7fa4201000000f3d30740010000000000000000000000e850f942010000000000000000000000",
+      "string_table_va": "0x142fad020",
+      "metadata_va": "0x142fad7c0",
+      "header": [
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        14,
+        0,
+        0,
+        0,
+        0
+      ],
+      "class_name": "UserGuideType",
+      "methods": 0,
+      "properties": 0,
+      "constructors": 0,
+      "enum_count": 1,
+      "enums": [
+        {
+          "name": "EnumType",
+          "alias": "EnumType",
+          "flags": 0,
+          "row_va": "0x142fad7f8",
+          "row_hex": "0100000001000000000000000a00000013000000",
+          "entries": [
+            {
+              "name": "OVERALL",
+              "value": 0,
+              "row_va": "0x142fad80c",
+              "row_hex": "0200000000000000"
+            },
+            {
+              "name": "KEYFRAME",
+              "value": 1,
+              "row_va": "0x142fad814",
+              "row_hex": "0300000001000000"
+            },
+            {
+              "name": "TRANSITION_EFFECT",
+              "value": 2,
+              "row_va": "0x142fad81c",
+              "row_hex": "0400000002000000"
+            },
+            {
+              "name": "TRACKING",
+              "value": 3,
+              "row_va": "0x142fad824",
+              "row_hex": "0500000003000000"
+            },
+            {
+              "name": "FRAMECROP",
+              "value": 4,
+              "row_va": "0x142fad82c",
+              "row_hex": "0600000004000000"
+            },
+            {
+              "name": "REGIONKEYFRAME",
+              "value": 5,
+              "row_va": "0x142fad834",
+              "row_hex": "0700000005000000"
+            },
+            {
+              "name": "REGIONKEYFRAMESTART",
+              "value": 6,
+              "row_va": "0x142fad83c",
+              "row_hex": "0800000006000000"
+            },
+            {
+              "name": "KEYFRAMESTART",
+              "value": 7,
+              "row_va": "0x142fad844",
+              "row_hex": "0900000007000000"
+            },
+            {
+              "name": "SUPER_SLOW",
+              "value": 8,
+              "row_va": "0x142fad84c",
+              "row_hex": "0a00000008000000"
+            },
+            {
+              "name": "UNKOWN",
+              "value": 9,
+              "row_va": "0x142fad854",
+              "row_hex": "0b00000009000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metaobject_va": "0x142fcdbb0",
+      "metaobject_hex": "00000000000000005f44084001000000003efc42010000009045fc4201000000014204400100000000000000000000000800fa42010000000000000000000000",
+      "string_table_va": "0x142fc3e00",
+      "metadata_va": "0x142fc4590",
+      "header": [
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        14,
+        0,
+        0,
+        0,
+        0
+      ],
+      "class_name": "MoueseEventType",
+      "methods": 0,
+      "properties": 0,
+      "constructors": 0,
+      "enum_count": 1,
+      "enums": [
+        {
+          "name": "EnumType",
+          "alias": "EnumType",
+          "flags": 0,
+          "row_va": "0x142fc45c8",
+          "row_hex": "0100000001000000000000000600000013000000",
+          "entries": [
+            {
+              "name": "CLICK",
+              "value": 0,
+              "row_va": "0x142fc45dc",
+              "row_hex": "0200000000000000"
+            },
+            {
+              "name": "HOVER",
+              "value": 1,
+              "row_va": "0x142fc45e4",
+              "row_hex": "0300000001000000"
+            },
+            {
+              "name": "WHEEL",
+              "value": 2,
+              "row_va": "0x142fc45ec",
+              "row_hex": "0400000002000000"
+            },
+            {
+              "name": "PRESS",
+              "value": 3,
+              "row_va": "0x142fc45f4",
+              "row_hex": "0500000003000000"
+            },
+            {
+              "name": "REALSE",
+              "value": 4,
+              "row_va": "0x142fc45fc",
+              "row_hex": "0600000004000000"
+            },
+            {
+              "name": "DRAG",
+              "value": 5,
+              "row_va": "0x142fc4604",
+              "row_hex": "0700000005000000"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "selected_imports": [
+    {
+      "dll": "Qt6Qml.dll",
+      "symbol": "?qmlregister@QQmlPrivate@@YAHW4RegistrationType@1@PEAX@Z",
+      "iat_va": "0x1436e1f20"
+    },
+    {
+      "dll": "Qt6Core.dll",
+      "symbol": "??0QObject@@QEAA@PEAV0@@Z",
+      "iat_va": "0x1436e0490"
+    }
+  ],
+  "registration": {
+    "uri": "UserGuideTypeModel",
+    "major": 1,
+    "minor": 0,
+    "kind": "creatable QObject",
+    "types": [
+      "UserGuideType",
+      "MoueseEventType"
+    ]
+  }
+}

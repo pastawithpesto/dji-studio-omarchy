@@ -1,0 +1,193 @@
+{
+  "source": {
+    "build": "1.0.0.30839",
+    "sha256": "e8732b263ea6486680a3007349b9c06a37cfb64c8797610743fd3b3831b0faf4"
+  },
+  "registration": {
+    "uri": "BusinessLog",
+    "major": 1,
+    "minor": 0,
+    "type_name": "BusinessLog",
+    "kind": "qmlRegisterUncreatableMetaObject",
+    "reason": "enums only",
+    "metaobject": "0x1430cc950",
+    "call": "0x14068b1e7"
+  },
+  "metadata": {
+    "revision": 11,
+    "methods": 0,
+    "properties": 0,
+    "constructors": 0,
+    "class_info": 0,
+    "enum_count": 2,
+    "superclass": null,
+    "static_metacall": null
+  },
+  "enums": [
+    {
+      "name": "Stream",
+      "scoped": true,
+      "is_flag": false,
+      "underlying_signed": true,
+      "width_bytes": 4,
+      "alignment_bytes": 4,
+      "metatype_interface": "0x1434e7530",
+      "entries": [
+        {
+          "name": "UNKNOWN",
+          "value": -1
+        },
+        {
+          "name": "APP_LAUNCH",
+          "value": 1
+        },
+        {
+          "name": "DEVICE_CONNECTION",
+          "value": 2
+        },
+        {
+          "name": "PLAYER_PREVIEW",
+          "value": 3
+        },
+        {
+          "name": "DRAFT_SAVE",
+          "value": 4
+        },
+        {
+          "name": "PROJECT_OPEN",
+          "value": 5
+        },
+        {
+          "name": "DRAFT_COVER_UPDATE",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "scoped": true,
+      "is_flag": false,
+      "underlying_signed": true,
+      "width_bytes": 4,
+      "alignment_bytes": 4,
+      "metatype_interface": "0x1434e7650",
+      "entries": [
+        {
+          "name": "UNKNOWN",
+          "value": -1
+        },
+        {
+          "name": "STREAM_START",
+          "value": 1
+        },
+        {
+          "name": "MAIN_START",
+          "value": 2
+        },
+        {
+          "name": "PRE_CONFIGURE",
+          "value": 3
+        },
+        {
+          "name": "INIT_APP",
+          "value": 4
+        },
+        {
+          "name": "INIT_ENGINE",
+          "value": 5
+        },
+        {
+          "name": "INIT_SENTRY",
+          "value": 6
+        },
+        {
+          "name": "CONFIGURE_MLT",
+          "value": 7
+        },
+        {
+          "name": "INIT_EVENT_TRACKER",
+          "value": 8
+        },
+        {
+          "name": "CONFIGURE_PROJECT",
+          "value": 9
+        },
+        {
+          "name": "REGISTER_META_TYPE",
+          "value": 10
+        },
+        {
+          "name": "LOAD_EDITOR_QML",
+          "value": 11
+        },
+        {
+          "name": "EDITOR_QML_LOAD_COMPLETED",
+          "value": 12
+        },
+        {
+          "name": "APP_WINDOW_SHOWED",
+          "value": 13
+        },
+        {
+          "name": "PROJECT_FILE_PREPARED",
+          "value": 14
+        },
+        {
+          "name": "PROJECT_DRAMA_PREPARED",
+          "value": 15
+        },
+        {
+          "name": "PROJECT_VERIFIED",
+          "value": 16
+        },
+        {
+          "name": "PROJECT_DRAMA_READ",
+          "value": 17
+        },
+        {
+          "name": "PROJECT_RESOURCE_READY",
+          "value": 18
+        },
+        {
+          "name": "PROJECT_ACTIVATED",
+          "value": 19
+        },
+        {
+          "name": "STREAM_END",
+          "value": 20
+        },
+        {
+          "name": "STREAM_TIMEOUT",
+          "value": 21
+        },
+        {
+          "name": "STREAM_CANCEL",
+          "value": 22
+        }
+      ]
+    }
+  ],
+  "qml_uses": [
+    {
+      "path": "qml/Main.qml",
+      "line": 20,
+      "text": "import BusinessLogger 1.0"
+    },
+    {
+      "path": "qml/Main.qml",
+      "line": 21,
+      "text": "import BusinessLog 1.0"
+    },
+    {
+      "path": "qml/Main.qml",
+      "line": 692,
+      "text": "                var timestamp = Date.now() - BusinessLogger.getAbandonElapsed();"
+    },
+    {
+      "path": "qml/Main.qml",
+      "line": 693,
+      "text": "                BusinessLogger.log(BusinessLog.Stream.APP_LAUNCH, BusinessLog.Events.LOAD_EDITOR_QML, \"\", timestamp);"
+    }
+  ],
+  "audit_qml_file_count": 410
+}
